@@ -1,0 +1,63 @@
+experiment:
+  name: qwen2.5_1.5b_layer23_oproj_rank2_direct_gradient
+  seed: 42
+  primary_metric: held_out_raw_gradient_mean_cosine
+model:
+  name: Qwen2.5-1.5B-Instruct
+  path: /mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  dtype: float32
+  forward_autocast_bfloat16: false
+  hidden_layer_zero_based: 23
+  hidden_states_tuple_index: 24
+  hidden_token: last_prompt_token
+  max_sequence_length: 4096
+tokenizer:
+  path: /mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+data:
+  math_train_path: data/MATH/train/train-00000-of-00001.parquet
+  math500_path: data/MATH-500/test.jsonl
+  predictor_train_size: 2000
+  candidate_test_size: 1000
+  target_size: 500
+  stratify_by:
+  - type
+  - level
+lora:
+  checkpoint: init
+  rank: 2
+  alpha: 4
+  dropout: 0.0
+  bias: none
+  target_modules:
+  - o_proj
+  target_layers:
+  - 23
+warmup:
+  size: 128
+  steps: 32
+  batch_size: 4
+  learning_rate: 0.0001
+  max_grad_norm: 1.0
+  weight_decay: 0.0
+  source: unused_math_train
+loss:
+  supervised_tokens: assistant_solution_only
+  reduction: response_token_mean
+  backward_scale: 1.0
+gradient_sketch:
+  enabled: false
+predictor:
+  hidden_normalization: train_only_standard_scaler
+  model:
+  - ridge
+  target: full_raw_lora_a_plus_b_gradient
+metrics:
+  gradient_prediction:
+  - cosine
+  - r2_uniform
+  - r2_variance_weighted
+  - mse
+  - relative_mse
+  - norm_correlation

@@ -1,0 +1,15 @@
+# Core training and analysis dependencies. Install a CUDA-compatible PyTorch
+# build for your system when the default pip build is not appropriate.
+torch
+transformers
+peft
+numpy
+scipy
+scikit-learn
+pyarrow
+PyYAML
+tqdm
+
+# Benchmark evaluation
+math-verify
+vllm
