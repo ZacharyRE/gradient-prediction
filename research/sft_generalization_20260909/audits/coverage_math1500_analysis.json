@@ -1,0 +1,494 @@
+{
+  "time": 1789005061.745322,
+  "script_sha256": "734ac09d57ee44d9fc194c3ed8b8515bd05b98e388934f357045cd30a20735b8",
+  "prospective_plan_sha256": "5579b7840fe0a13606eea1fcacccac8fe44a3210df1733ba5923b14dddd128d7",
+  "frozen_sha256": "50ebc512e4cec6dcb7257fffa9a071bc6d968fa98da4ae228f15471971c774de",
+  "scoring_audit_sha256": "10196bba359f61dd3044b4a0b2db922b6e3eff0c790a8929a61f30fd15af4b4b",
+  "seed": 43,
+  "n": 1500,
+  "results": {
+    "raw": {
+      "base_correct": 818,
+      "models": {
+        "base": {
+          "correct": 818,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "avg_teacher7_1234_s43_epoch4": {
+          "correct": 845,
+          "vs_base": {
+            "delta_pp": 1.7999999999999998,
+            "ci95_pp": [
+              -0.2,
+              3.7349999999999763
+            ],
+            "wins": 127,
+            "losses": 100
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 859,
+          "vs_base": {
+            "delta_pp": 2.7333333333333334,
+            "ci95_pp": [
+              0.6666666666666667,
+              4.866666666666666
+            ],
+            "wins": 143,
+            "losses": 102
+          }
+        },
+        "avg_teacher7_expansion_combined_1234_s43_epoch4": {
+          "correct": 852,
+          "vs_base": {
+            "delta_pp": 2.2666666666666666,
+            "ci95_pp": [
+              0.26666666666666666,
+              4.266666666666667
+            ],
+            "wins": 133,
+            "losses": 99
+          }
+        },
+        "teacher7_expansion_combined_lr5e5_s43_epoch4": {
+          "correct": 833,
+          "vs_base": {
+            "delta_pp": 1.0,
+            "ci95_pp": [
+              -1.0666666666666667,
+              3.0666666666666664
+            ],
+            "wins": 128,
+            "losses": 113
+          }
+        },
+        "avg_teacher7_expansion_repeat_control_1234_s43_epoch4": {
+          "correct": 829,
+          "vs_base": {
+            "delta_pp": 0.7333333333333333,
+            "ci95_pp": [
+              -1.4000000000000001,
+              2.8666666666666667
+            ],
+            "wins": 137,
+            "losses": 126
+          }
+        },
+        "teacher7_expansion_repeat_control_lr5e5_s43_epoch4": {
+          "correct": 793,
+          "vs_base": {
+            "delta_pp": -1.6666666666666667,
+            "ci95_pp": [
+              -3.8666666666666667,
+              0.5333333333333333
+            ],
+            "wins": 124,
+            "losses": 149
+          }
+        },
+        "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4": {
+          "correct": 774,
+          "vs_base": {
+            "delta_pp": -2.933333333333333,
+            "ci95_pp": [
+              -5.2,
+              -0.7333333333333333
+            ],
+            "wins": 124,
+            "losses": 168
+          }
+        },
+        "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4": {
+          "correct": 774,
+          "vs_base": {
+            "delta_pp": -2.933333333333333,
+            "ci95_pp": [
+              -5.2,
+              -0.6666666666666667
+            ],
+            "wins": 126,
+            "losses": 170
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "hypothesis": "Coverage with averaging, equal4145 training slots",
+          "treatment_correct": 852,
+          "control_correct": 829,
+          "delta_pp": 1.5333333333333332,
+          "ci95_pp": [
+            -0.5333333333333333,
+            3.733333333333334
+          ],
+          "wins": 143,
+          "losses": 120
+        },
+        {
+          "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+          "hypothesis": "Coverage without averaging, equal4145 training slots",
+          "treatment_correct": 833,
+          "control_correct": 793,
+          "delta_pp": 2.666666666666667,
+          "ci95_pp": [
+            0.6,
+            4.8
+          ],
+          "wins": 150,
+          "losses": 110
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+          "hypothesis": "Generated vs raw new targets on identical questions, both averaged",
+          "treatment_correct": 852,
+          "control_correct": 774,
+          "delta_pp": 5.2,
+          "ci95_pp": [
+            3.1333333333333333,
+            7.2666666666666675
+          ],
+          "wins": 164,
+          "losses": 86
+        },
+        {
+          "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+          "hypothesis": "Generated vs raw new targets on identical questions, both epoch4",
+          "treatment_correct": 833,
+          "control_correct": 774,
+          "delta_pp": 3.933333333333333,
+          "ci95_pp": [
+            1.7999999999999998,
+            6.066666666666666
+          ],
+          "wins": 161,
+          "losses": 102
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 852,
+          "control_correct": 833,
+          "delta_pp": 1.2666666666666666,
+          "ci95_pp": [
+            -0.4,
+            2.933333333333333
+          ],
+          "wins": 91,
+          "losses": 72
+        },
+        {
+          "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 829,
+          "control_correct": 793,
+          "delta_pp": 2.4,
+          "ci95_pp": [
+            0.4,
+            4.333333333333334
+          ],
+          "wins": 132,
+          "losses": 96
+        },
+        {
+          "treatment": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+          "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 774,
+          "control_correct": 774,
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -1.7333333333333332,
+            1.7333333333333332
+          ],
+          "wins": 87,
+          "losses": 87
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_1234_s43_epoch4",
+          "hypothesis": "Practical expanded/cleaned-core/longer-exposure recipe vs old average; multiple factors change",
+          "treatment_correct": 852,
+          "control_correct": 845,
+          "delta_pp": 0.46666666666666673,
+          "ci95_pp": [
+            -1.4666666666666666,
+            2.4
+          ],
+          "wins": 112,
+          "losses": 105
+        },
+        {
+          "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "control": "avg_teacher7_1234_s43_epoch4",
+          "hypothesis": "Longer repetition exposure and5conservative core exclusions vs old average; not pure exposure-only",
+          "treatment_correct": 829,
+          "control_correct": 845,
+          "delta_pp": -1.0666666666666667,
+          "ci95_pp": [
+            -3.1333333333333333,
+            1.0
+          ],
+          "wins": 113,
+          "losses": 129
+        }
+      ]
+    },
+    "strict": {
+      "base_correct": 815,
+      "models": {
+        "base": {
+          "correct": 815,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "avg_teacher7_1234_s43_epoch4": {
+          "correct": 844,
+          "vs_base": {
+            "delta_pp": 1.9333333333333333,
+            "ci95_pp": [
+              -0.0016666666666651508,
+              3.8666666666666667
+            ],
+            "wins": 127,
+            "losses": 98
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 857,
+          "vs_base": {
+            "delta_pp": 2.8000000000000003,
+            "ci95_pp": [
+              0.8,
+              4.866666666666666
+            ],
+            "wins": 142,
+            "losses": 100
+          }
+        },
+        "avg_teacher7_expansion_combined_1234_s43_epoch4": {
+          "correct": 852,
+          "vs_base": {
+            "delta_pp": 2.466666666666667,
+            "ci95_pp": [
+              0.46666666666666673,
+              4.468333333333309
+            ],
+            "wins": 134,
+            "losses": 97
+          }
+        },
+        "teacher7_expansion_combined_lr5e5_s43_epoch4": {
+          "correct": 831,
+          "vs_base": {
+            "delta_pp": 1.0666666666666667,
+            "ci95_pp": [
+              -1.0,
+              3.0666666666666664
+            ],
+            "wins": 128,
+            "losses": 112
+          }
+        },
+        "avg_teacher7_expansion_repeat_control_1234_s43_epoch4": {
+          "correct": 829,
+          "vs_base": {
+            "delta_pp": 0.9333333333333335,
+            "ci95_pp": [
+              -1.1333333333333333,
+              3.0666666666666664
+            ],
+            "wins": 138,
+            "losses": 124
+          }
+        },
+        "teacher7_expansion_repeat_control_lr5e5_s43_epoch4": {
+          "correct": 792,
+          "vs_base": {
+            "delta_pp": -1.5333333333333332,
+            "ci95_pp": [
+              -3.733333333333334,
+              0.6666666666666667
+            ],
+            "wins": 124,
+            "losses": 147
+          }
+        },
+        "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4": {
+          "correct": 772,
+          "vs_base": {
+            "delta_pp": -2.8666666666666667,
+            "ci95_pp": [
+              -5.133333333333334,
+              -0.6666666666666667
+            ],
+            "wins": 123,
+            "losses": 166
+          }
+        },
+        "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4": {
+          "correct": 773,
+          "vs_base": {
+            "delta_pp": -2.8000000000000003,
+            "ci95_pp": [
+              -5.066666666666666,
+              -0.6
+            ],
+            "wins": 126,
+            "losses": 168
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "hypothesis": "Coverage with averaging, equal4145 training slots",
+          "treatment_correct": 852,
+          "control_correct": 829,
+          "delta_pp": 1.5333333333333332,
+          "ci95_pp": [
+            -0.5349999999999985,
+            3.733333333333334
+          ],
+          "wins": 143,
+          "losses": 120
+        },
+        {
+          "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+          "hypothesis": "Coverage without averaging, equal4145 training slots",
+          "treatment_correct": 831,
+          "control_correct": 792,
+          "delta_pp": 2.6,
+          "ci95_pp": [
+            0.5333333333333333,
+            4.666666666666667
+          ],
+          "wins": 149,
+          "losses": 110
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+          "hypothesis": "Generated vs raw new targets on identical questions, both averaged",
+          "treatment_correct": 852,
+          "control_correct": 772,
+          "delta_pp": 5.333333333333334,
+          "ci95_pp": [
+            3.266666666666666,
+            7.3999999999999995
+          ],
+          "wins": 165,
+          "losses": 85
+        },
+        {
+          "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+          "hypothesis": "Generated vs raw new targets on identical questions, both epoch4",
+          "treatment_correct": 831,
+          "control_correct": 773,
+          "delta_pp": 3.8666666666666667,
+          "ci95_pp": [
+            1.7333333333333332,
+            6.0
+          ],
+          "wins": 160,
+          "losses": 102
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 852,
+          "control_correct": 831,
+          "delta_pp": 1.4000000000000001,
+          "ci95_pp": [
+            -0.26666666666666666,
+            3.0666666666666664
+          ],
+          "wins": 92,
+          "losses": 71
+        },
+        {
+          "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 829,
+          "control_correct": 792,
+          "delta_pp": 2.466666666666667,
+          "ci95_pp": [
+            0.46666666666666673,
+            4.3999999999999995
+          ],
+          "wins": 132,
+          "losses": 95
+        },
+        {
+          "treatment": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+          "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+          "hypothesis": "Within-run fixed epoch1..4 update average vs epoch4",
+          "treatment_correct": 772,
+          "control_correct": 773,
+          "delta_pp": -0.06666666666666667,
+          "ci95_pp": [
+            -1.7349999999999983,
+            1.6
+          ],
+          "wins": 85,
+          "losses": 86
+        },
+        {
+          "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "control": "avg_teacher7_1234_s43_epoch4",
+          "hypothesis": "Practical expanded/cleaned-core/longer-exposure recipe vs old average; multiple factors change",
+          "treatment_correct": 852,
+          "control_correct": 844,
+          "delta_pp": 0.5333333333333333,
+          "ci95_pp": [
+            -1.4000000000000001,
+            2.466666666666667
+          ],
+          "wins": 112,
+          "losses": 104
+        },
+        {
+          "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+          "control": "avg_teacher7_1234_s43_epoch4",
+          "hypothesis": "Longer repetition exposure and5conservative core exclusions vs old average; not pure exposure-only",
+          "treatment_correct": 829,
+          "control_correct": 844,
+          "delta_pp": -1.0,
+          "ci95_pp": [
+            -3.0666666666666664,
+            1.0
+          ],
+          "wins": 113,
+          "losses": 128
+        }
+      ]
+    }
+  },
+  "scope": "Historically reused selected-development validation, single seed43, all six pilots retained, intervals unadjusted. Does not establish multi-seed efficacy. Same-source scale controls match slots/horizon but not all target-token counts."
+}

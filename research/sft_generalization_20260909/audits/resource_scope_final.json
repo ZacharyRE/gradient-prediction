@@ -1,0 +1,377 @@
+{
+  "time": 1789044119.464021,
+  "deadline": 1789053400,
+  "script_sha256": "18dd5a181a4c2b6510c616e14af766643173b57dafd4ccde4e6eac31d8fb6a0e",
+  "commands_sha256": "3cd07163e88361cb3659bec0be68216532c8dddd85862f440eb242d953029c82",
+  "command_records": 91,
+  "declared_gpus": [
+    "1",
+    "2",
+    "3"
+  ],
+  "training": [
+    {
+      "name": "sample_expansion_repeat_control_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "b7bb04a5331bddbc7e7f05acaf59cb746238aa40991498306b14640d82c9136f"
+    },
+    {
+      "name": "teacher32_all_all16_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "2f95871bacea05251f7489aba84377330585502a809c064ed68767ea25d0209b"
+    },
+    {
+      "name": "sample_all_lr1e5_s45",
+      "gpu": "1",
+      "manifest_sha256": "2aa1d79160db53f0a7f14319a172f70cdbf7ca8269896139be76d11efbbd2218"
+    },
+    {
+      "name": "teacher_all_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "5deeacf7cd08d2109958f8bd098f3e9ea3bdb4247c45da3301af8dbeb741bb6a"
+    },
+    {
+      "name": "teacher7_expansion_rawnew_control_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "32322be79d5db9cc9d82905dfe699cd934c0779dbb766459a1280cc4b6664a3d"
+    },
+    {
+      "name": "teacher32_all_qkvo16_dft_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "5bba4c16722681bcc35777638e27a09c456b6fc36a9c8761ec091a4d28808a0a"
+    },
+    {
+      "name": "sample_all_shortcos2_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "778b0373d80e4142fe4c787d591b81b4a61f01f58ca0ae73451603c533977f6e"
+    },
+    {
+      "name": "sample_all_all16_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "de51c9ad7e1df2a05c01d999141aa70aaff84232e99edf4c3f1cccf1c21e5b5d"
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s44",
+      "gpu": "1",
+      "manifest_sha256": "004009b9d42a11b1f8d0a413029e8e5e02d81e6e2cd7dc1e3313880a1f76d935"
+    },
+    {
+      "name": "teacher_math7_all_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "34fe0dde4671f221373461b0daf5783b572ea9d30c61ecf3693dd9b4bc5772df"
+    },
+    {
+      "name": "sample_all_dft_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "a79dc161520ad079d5cb19e0394d6df2b8d04351dca9b6370cb19c8cc86ad3dd"
+    },
+    {
+      "name": "sample_multi_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "628aade046e759914257f46306e2bfa2a64cd001e929deff0871c66ae898d0f4"
+    },
+    {
+      "name": "teacher_all_dftkl01_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "a37bf19aeb034c6bc91e34d92166e6a1030ad6787c209c408ff9ab77fbef5a19"
+    },
+    {
+      "name": "sample_augmented_lr1e5_s43_serial_replay",
+      "gpu": "1",
+      "manifest_sha256": "f334ba1742e12a588634b6aa6ee7e9d992ba5d88a302490d44ee106e6ac86dcb"
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s47",
+      "gpu": "1",
+      "manifest_sha256": "931670b2130817e96b6e3a954eeeb828accfae3d732338c287cb04da40023f1e"
+    },
+    {
+      "name": "teacher_all_lr5e5_extended_s43",
+      "gpu": "1",
+      "manifest_sha256": "bee83d1a0ee05d5037da51691bd4278b763643c5d0a6cb3007c9469564962b70"
+    },
+    {
+      "name": "greedy_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "1f7aacb313e85aa41b6cecb1b760325204831cce08f4c42730979e30c9d03a3f"
+    },
+    {
+      "name": "sample_augmented_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "9aae31e1dceb3e226e4788390dbae68b42ab95ab390e3ead6b8518d6e9709d3c"
+    },
+    {
+      "name": "nll_noguided_random_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "74f6e19e00dfa63a115618a20c36896f3c6887b1d1abf221db81e5bf70e9d703"
+    },
+    {
+      "name": "sample_matchedraw_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "4bd63223ff00c541d37bfb9d2544d2e53f041b33a5acc9a2c3f74dc779eb3690"
+    },
+    {
+      "name": "sample_all_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "5f62d3173ca57161dff20e261d90f4cc7a2858fd02a707f9d12f821ce2f33c56"
+    },
+    {
+      "name": "sample_all_lr1e5_s44",
+      "gpu": "1",
+      "manifest_sha256": "ee098cb7ed49767ac46f6ae27bd954ecb2a341f8d5ecbd1ac2ca0af93e8d6375"
+    },
+    {
+      "name": "sample_all_dft_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "7bb619de7e848408f51fbd049e4bd526aa58a4c6614688aaa179291fc9138787"
+    },
+    {
+      "name": "teacher_all_dftkl1_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "5ad5e21d985f607c4d935e2cf236879be693b84d3f6979fcd37c459388167507"
+    },
+    {
+      "name": "sample_keepgreedy_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "d9afa9c447bf01335da618dcff504577a6526d1c66aff3defbc04977c6f87708"
+    },
+    {
+      "name": "nll_noguided_min_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "6f11876fe9ab72cbbebf28390c27b6b0086c288a6ec5c8d33b53a3e25024c507"
+    },
+    {
+      "name": "teacher32_common_teacher7_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "5a36e48d44745e91c89d502946689fd0fb64f58e10fc1bbb6b08ce4f45169fa0"
+    },
+    {
+      "name": "teacher32_all_qkvo16_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "93c908b8c110ea2cd2cd39838fefbc95552e7726cc0b7d1591bf7d7647b087d8"
+    },
+    {
+      "name": "teacher_all_all16_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "dcb39adea1ab60f2c6441a7f5e17580544f584fcd6d19f83a7e8fb9f8048ea3a"
+    },
+    {
+      "name": "teacher_all_shortcos4_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "574535cb84af67e9f3b3af2e4369d4c51bbb75bd4723be0629279ccf1c679394"
+    },
+    {
+      "name": "teacher_all_lr5e5_s44",
+      "gpu": "1",
+      "manifest_sha256": "57083e1a3e3188d42ca4a0bf3e4457cbaaf6450aa06927454fbff468c9d05602"
+    },
+    {
+      "name": "sample_greedy_budget_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "30cd346c80e18ac42e2a28d97cff5e57304c80c1bfe43f6d29249ea82a171163"
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s46",
+      "gpu": "1",
+      "manifest_sha256": "59e0c45c8325d8fdc6f65e1ddc4a0ec1ad0f2d3e7d3c8d934d3d8c1b0910759a"
+    },
+    {
+      "name": "teacher_all_lr1e4_s43",
+      "gpu": "1",
+      "manifest_sha256": "5d22a696c8ae9cf6c8cc1f7b0ed76278031cb2a04cd881d6e7256f899849a13d"
+    },
+    {
+      "name": "teacher_common_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "224c0899a2f7f12b5f7967c3436b28554397a0511cd00aba79f0976c391feaa8"
+    },
+    {
+      "name": "teacher_common_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "90a39b87cbec245332af5e263dfa8e81a3d83f39898de37799d553d0d3c918d7"
+    },
+    {
+      "name": "teacher32_all_all16_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "af075729348223e266a746e4fd40cde86393f1d50da78abf4540d291ac46e747"
+    },
+    {
+      "name": "teacher7_expansion_repeat_control_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "2f91b46472b05d32acc4ca499c90c9539581aa36d1325222814dd7713b080eca"
+    },
+    {
+      "name": "teacher_all_lr5e5_s46",
+      "gpu": "1",
+      "manifest_sha256": "fe0be1bcd44449a929ef15bbec20cf359c8ef829e5e1d7ecbede73f73c1b7309"
+    },
+    {
+      "name": "teacher_all_qkvo64_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "6632359b2e7b659aaa8edf7e70c8bd981d584f59cffc4bff528dc52eb97f15e8"
+    },
+    {
+      "name": "teacher_all_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "2c1ef9f2837bc2d09249740b9f0d919d6f484bce045a605d2ba4e1ec427526e5"
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "721c9678e599c16ba097867a89e3a741c1e044aa6d3aa7b1905b27e72b0e61c9"
+    },
+    {
+      "name": "teacher7_common_teacher32_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "b5705a551d3d2b6cd7f33d612f53ad37f9ad3a43d969aec4dc0891499f2c1bba"
+    },
+    {
+      "name": "sample_repeat_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "8db3a214316002dbf1b25e7ea1bfda4845af2ec3e267f205d58e474493eec3fe"
+    },
+    {
+      "name": "teacher32_plain_markup_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "803d0edbaeda251fc1356e47aae363d5d0ab71fac3bbbd52219fede134b44a49"
+    },
+    {
+      "name": "teacher32_all_qkvo16_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "a1bde8c43debd66adfbf28803e4ea808a08756bd7101ec1ebb15eaa3e69b50b9"
+    },
+    {
+      "name": "sample_all_all16_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "a83a5826daa0bc536e66a278e9be04c19d49478925d510fe4eee5946708ef9d4"
+    },
+    {
+      "name": "sample_all_lr1e4_s43",
+      "gpu": "1",
+      "manifest_sha256": "363c1e19683bfac82df88d2fb93f665382858498fcdc96be553b9a21994ec2f3"
+    },
+    {
+      "name": "teacher_math7_all_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "61035b614d6afd4cac7ba4bce674b234f1890d7ec641629ba9ec39eb5d635dc3"
+    },
+    {
+      "name": "greedy_example_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "a12ca94a70d5338e231f5146523b8c0beb4faadff282b0ebab2bf64cae5e0d34"
+    },
+    {
+      "name": "teacher_all_lr5e5_s45",
+      "gpu": "1",
+      "manifest_sha256": "03bff0f15440b7fb0bbeb0ca5bb8912760578cb58b069185558bc0d53e9a25e3"
+    },
+    {
+      "name": "teacher_all_qkvo64_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "b013cbbf9c2a2f37f4bc96167b1d43a5bb088a2121351861ef7637263c54c602"
+    },
+    {
+      "name": "teacher_keepgreedy_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "29f1a0032cd28f4317c9d83dda3b13bc87f0c59df12bf028055826f95b53dc6d"
+    },
+    {
+      "name": "teacher_all_kl1_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "96510a2e5c3492ff45266f820c28426123733e1f705bcd585188ad285ec3a859"
+    },
+    {
+      "name": "sample_common_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "c1c1ac672d6ad7a8b1e052c1c89be5342228a9cf08d3ee07ccb62f297555c36e"
+    },
+    {
+      "name": "teacher_all_all16_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "e9f1fc0b6cba3861dc125e30eadc43d6f930983ea3425762a8eb602a51cf6601"
+    },
+    {
+      "name": "teacher_all_kl01_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "049b4c147da7bb45180c09fbdb2bdd38bff26d2de66901e10b8f548fff749e3a"
+    },
+    {
+      "name": "teacher_all_lr5e5_s47",
+      "gpu": "1",
+      "manifest_sha256": "894252c0ddfd5dd80dd8e905d873328202c0c012e85fce42194e7586d7739ec8"
+    },
+    {
+      "name": "teacher_all_dftkl0_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "63b0c63b3a52b340c8364311477f373222bf006eb49123fed8062f993157a739"
+    },
+    {
+      "name": "teacher_all_kl0_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "cd02aa9530ba40e9e819726e68c6063a76bd7dd038127f3197feef61bebba166"
+    },
+    {
+      "name": "teacher32_plain_markup_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "7fb4d27d4da7a7a3aef0079bc7f7e9173ac9665e77f4c41317794b798bd7b606"
+    },
+    {
+      "name": "sample_augmented_rawhard_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "8014566a6f002e7bfc1e93682918f5d5c3f9c279766246adc2ffd55d140f1b8e"
+    },
+    {
+      "name": "sample_common_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "95abe4aacc5c25767396133f5e9e8518507898f2b3b5d287577aa63f80557df6"
+    },
+    {
+      "name": "nll_noguided_min_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "158a78bb2bebc082065f40838d3959c08132bec2b8e6ce024cf39d03512bd679"
+    },
+    {
+      "name": "teacher_matchedraw_lr5e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "12762f14e58b37730dc95b956786dcd89e13144d86f50c4aa615340ffcb1618a"
+    },
+    {
+      "name": "teacher32_all_qkvo16_dft_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "733ea6fb7db5917a1d4fced9965ba5327aca3e12cf916782f275620fa921a72f"
+    },
+    {
+      "name": "sample_expansion_combined_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "d65983d851389f50801500ce57bbda977344aae4d7801bd9e9defd785194d2dd"
+    },
+    {
+      "name": "nll_noguided_random_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "307d4eb4378c3c767f1ddaf8203928a85d64204a925189ce51fe08065e0ee9a9"
+    },
+    {
+      "name": "greedy_lr1e4_s43",
+      "gpu": "1",
+      "manifest_sha256": "e8b745b6b19cc3521077ad4c33e994a5dd30e20a2526b94e5b19cbe933161f87"
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s45",
+      "gpu": "1",
+      "manifest_sha256": "7aafaf7006dcf0e38629a6dbd60776a860fbf770f18e3fc5ae417585034ace0a"
+    },
+    {
+      "name": "sample_all_lr1e5_s43",
+      "gpu": "1",
+      "manifest_sha256": "1c4f97a5ad329242e9e9090354e1b372eacb2b1e769d9f072d7d70143a29f8d5"
+    }
+  ],
+  "live_own_worker_allocations": [],
+  "authorized_maximum_simultaneous_gpus": 3,
+  "authorization_sha256": "0f1ea9ce28bc6e31683b4978c484807bd1c1861c6e4fe83e130f398726d50b23",
+  "post_authorization_monitor_sha256": "f63266697c1a4fb12e7c2b806bcde465ec5af50063e5aec7c99d769da0c27b0d",
+  "post_authorization_sample_count": 720,
+  "max_post_authorization_observed_gpus": 3,
+  "passed": true,
+  "scope": "All recorded training usedGPUs1/3. Inference commands may additionally useGPU2 only after the explicit user3-GPU authorization. Current own allocations and all available post-authorization process samples respect the amendedmaximum3; samples do not prove continuous historical ownership between polls. Both resource logs containwhole-deviceutilization includingforeignwork and are not this studyFLOPs. No foreign process signaled or private environment recorded."
+}

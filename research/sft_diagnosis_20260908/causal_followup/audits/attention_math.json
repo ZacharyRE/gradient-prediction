@@ -1,0 +1,159 @@
+{
+  "records": [
+    {
+      "name": "fp32_eager",
+      "dtype": "float32",
+      "attention": "eager",
+      "backend": "math",
+      "purposeful_arithmetic_probe": {
+        "prefix": "<|im_start|>system\nYou are a helpful assistant and an expert mathematician.<|im_end|>\n<|im_start|>user\nSolve the following mathematics problem. Show your reasoning clearly and place only the final answer inside \\boxed{}.\n\nProblem:\nIf $x = 2$ and $y = 5$, then what is the value of $\\frac{x^4+2y^2}{6}$ ?<|im_end|>\n<|im_start|>assistant\nTo find the value of \\(\\frac{x^4 + 2y^2}{6}\\) given \\(x = 2\\) and \\(y = 5\\), we will follow these steps:\n\n1. Substitute the given values of \\(x\\) and \\(y\\) into the expression.\n2. Calculate the value of \\(x^4\\).\n3. Calculate the value of \\(2y^2\\).\n4. Add the results from steps 2 and 3.\n5. Divide the result from step 4 by 6.\n\nLet's go through these steps in detail:\n\n1. Substitute \\(x = 2\\) and \\(y = 5\\) into the expression:\n   \\[\n   \\frac{x^4 + 2y^2}{6} = \\frac{2^4 + 2 \\cdot 5^2}{6}\n   \\]\n\n2. Calculate \\(2^4\\):\n   \\[\n   2^4 = 2 \\times 2 \\times 2 \\times 2 = 16\n   \\]\n\n3. Calculate \\(5^2\\):\n   \\[\n   5^2 = 5 \\times 5 = 25\n   \\]\n   Then multiply by 2:\n   \\[\n   2 \\cdot 25 = ",
+        "correct_next_digit": "5",
+        "correct_digit_probability": 0.9999806880950928,
+        "top5": [
+          {
+            "token": "5",
+            "probability": 0.9999806880950928
+          },
+          {
+            "token": "2",
+            "probability": 1.5779223758727312e-05
+          },
+          {
+            "token": "1",
+            "probability": 1.6317563904522103e-06
+          },
+          {
+            "token": "4",
+            "probability": 1.408898697263794e-06
+          },
+          {
+            "token": "6",
+            "probability": 3.4801192327904573e-07
+          }
+        ]
+      },
+      "train_token_loss": 0.7851900485906307,
+      "train_objective_loss": 0.7851900485906307,
+      "supervised_tokens": 2270,
+      "microbatch_supervised_tokens": [
+        565,
+        640,
+        580,
+        485
+      ],
+      "gradient_norm": 0.19352320209649201,
+      "gradient_cosine_vs_fp32": 0.9999999999998959,
+      "gradient_relative_l2_vs_fp32": 0.0
+    },
+    {
+      "name": "bf16_eager",
+      "dtype": "bfloat16",
+      "attention": "eager",
+      "backend": "math",
+      "purposeful_arithmetic_probe": {
+        "prefix": "<|im_start|>system\nYou are a helpful assistant and an expert mathematician.<|im_end|>\n<|im_start|>user\nSolve the following mathematics problem. Show your reasoning clearly and place only the final answer inside \\boxed{}.\n\nProblem:\nIf $x = 2$ and $y = 5$, then what is the value of $\\frac{x^4+2y^2}{6}$ ?<|im_end|>\n<|im_start|>assistant\nTo find the value of \\(\\frac{x^4 + 2y^2}{6}\\) given \\(x = 2\\) and \\(y = 5\\), we will follow these steps:\n\n1. Substitute the given values of \\(x\\) and \\(y\\) into the expression.\n2. Calculate the value of \\(x^4\\).\n3. Calculate the value of \\(2y^2\\).\n4. Add the results from steps 2 and 3.\n5. Divide the result from step 4 by 6.\n\nLet's go through these steps in detail:\n\n1. Substitute \\(x = 2\\) and \\(y = 5\\) into the expression:\n   \\[\n   \\frac{x^4 + 2y^2}{6} = \\frac{2^4 + 2 \\cdot 5^2}{6}\n   \\]\n\n2. Calculate \\(2^4\\):\n   \\[\n   2^4 = 2 \\times 2 \\times 2 \\times 2 = 16\n   \\]\n\n3. Calculate \\(5^2\\):\n   \\[\n   5^2 = 5 \\times 5 = 25\n   \\]\n   Then multiply by 2:\n   \\[\n   2 \\cdot 25 = ",
+        "correct_next_digit": "5",
+        "correct_digit_probability": 0.0010144576663151383,
+        "top5": [
+          {
+            "token": "4",
+            "probability": 0.9817671179771423
+          },
+          {
+            "token": "1",
+            "probability": 0.00849394965916872
+          },
+          {
+            "token": "2",
+            "probability": 0.0074958838522434235
+          },
+          {
+            "token": "5",
+            "probability": 0.0010144576663151383
+          },
+          {
+            "token": "3",
+            "probability": 0.0006152996211312711
+          }
+        ]
+      },
+      "train_token_loss": 0.8166124648722258,
+      "train_objective_loss": 0.8166124648722258,
+      "supervised_tokens": 2270,
+      "microbatch_supervised_tokens": [
+        565,
+        640,
+        580,
+        485
+      ],
+      "gradient_norm": 0.23604751719581793,
+      "gradient_cosine_vs_fp32": 0.7201447456629583,
+      "gradient_relative_l2_vs_fp32": 0.8549763269137608
+    },
+    {
+      "name": "bf16_sdpa_math",
+      "dtype": "bfloat16",
+      "attention": "sdpa",
+      "backend": "math",
+      "purposeful_arithmetic_probe": {
+        "prefix": "<|im_start|>system\nYou are a helpful assistant and an expert mathematician.<|im_end|>\n<|im_start|>user\nSolve the following mathematics problem. Show your reasoning clearly and place only the final answer inside \\boxed{}.\n\nProblem:\nIf $x = 2$ and $y = 5$, then what is the value of $\\frac{x^4+2y^2}{6}$ ?<|im_end|>\n<|im_start|>assistant\nTo find the value of \\(\\frac{x^4 + 2y^2}{6}\\) given \\(x = 2\\) and \\(y = 5\\), we will follow these steps:\n\n1. Substitute the given values of \\(x\\) and \\(y\\) into the expression.\n2. Calculate the value of \\(x^4\\).\n3. Calculate the value of \\(2y^2\\).\n4. Add the results from steps 2 and 3.\n5. Divide the result from step 4 by 6.\n\nLet's go through these steps in detail:\n\n1. Substitute \\(x = 2\\) and \\(y = 5\\) into the expression:\n   \\[\n   \\frac{x^4 + 2y^2}{6} = \\frac{2^4 + 2 \\cdot 5^2}{6}\n   \\]\n\n2. Calculate \\(2^4\\):\n   \\[\n   2^4 = 2 \\times 2 \\times 2 \\times 2 = 16\n   \\]\n\n3. Calculate \\(5^2\\):\n   \\[\n   5^2 = 5 \\times 5 = 25\n   \\]\n   Then multiply by 2:\n   \\[\n   2 \\cdot 25 = ",
+        "correct_next_digit": "5",
+        "correct_digit_probability": 0.9999814033508301,
+        "top5": [
+          {
+            "token": "5",
+            "probability": 0.9999814033508301
+          },
+          {
+            "token": "2",
+            "probability": 1.47389246194507e-05
+          },
+          {
+            "token": "1",
+            "probability": 1.7603135802346515e-06
+          },
+          {
+            "token": "4",
+            "probability": 1.3709336599276867e-06
+          },
+          {
+            "token": "6",
+            "probability": 3.466263081008947e-07
+          }
+        ]
+      },
+      "train_token_loss": 0.7839258508797784,
+      "train_objective_loss": 0.7839258508797784,
+      "supervised_tokens": 2270,
+      "microbatch_supervised_tokens": [
+        565,
+        640,
+        580,
+        485
+      ],
+      "gradient_norm": 0.19004491093261805,
+      "gradient_cosine_vs_fp32": 0.9963079962191286,
+      "gradient_relative_l2_vs_fp32": 0.08703067323203661
+    }
+  ],
+  "indices": [
+    895,
+    656,
+    1329,
+    1911,
+    1352,
+    626,
+    1377,
+    1414,
+    603,
+    738,
+    1754,
+    720,
+    1831,
+    437,
+    1855,
+    849
+  ],
+  "initial_AB_identical": true,
+  "script_sha256": "0933c607162155519384eab6fb4e94bf3369f1f3fb7e7615b3a0d200101ac7b3"
+}

@@ -1,0 +1,1902 @@
+{
+  "time": 1789009857.1975305,
+  "script_sha256": "74dd7b8b8b9b4e41c8549ed67202cd6c882d158edfd55b9bda8efe86d4947101",
+  "helper_sha256": "87228146441ae29a496624e84c38582a826a899e1f299aa18be53bc427622088",
+  "dataset_sha256": "5fcc5c27f789b43eaee9295dee05dd9a8fb04cca1340e1264afc5538efe18c68",
+  "passed": true,
+  "n_numeric": 191,
+  "n_symbolic": 81,
+  "n_scientific_literals": 58,
+  "numeric_references": [
+    {
+      "index": 0,
+      "answer": "1.6",
+      "numeric_value": 1.6,
+      "positive": "1.6000000000000001",
+      "negative": "3.2000000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 1,
+      "answer": "4.5e33",
+      "numeric_value": 4.5e+33,
+      "positive": "4.5e+33",
+      "negative": "9.0000000000000001e+33",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 2,
+      "answer": "41.8",
+      "numeric_value": 41.8,
+      "positive": "41.799999999999997",
+      "negative": "83.599999999999994",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 3,
+      "answer": "20.39",
+      "numeric_value": 20.39,
+      "positive": "20.390000000000001",
+      "negative": "40.780000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 4,
+      "answer": "0.006",
+      "numeric_value": 0.006,
+      "positive": "0.0060000000000000001",
+      "negative": "0.012",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 5,
+      "answer": "np.arcsin(10/13)",
+      "numeric_value": 0.8776364192181428,
+      "positive": "0.87763641921814284",
+      "negative": "1.7552728384362857",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 6,
+      "answer": "0.49",
+      "numeric_value": 0.49,
+      "positive": "0.48999999999999999",
+      "negative": "0.97999999999999998",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 7,
+      "answer": "100",
+      "numeric_value": 100.0,
+      "positive": "100",
+      "negative": "200",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 8,
+      "answer": "0.022",
+      "numeric_value": 0.022,
+      "positive": "0.021999999999999999",
+      "negative": "0.043999999999999997",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 9,
+      "answer": "9.6",
+      "numeric_value": 9.6,
+      "positive": "9.5999999999999996",
+      "negative": "19.199999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 10,
+      "answer": "3.83e35",
+      "numeric_value": 3.83e+35,
+      "positive": "3.8299999999999996e+35",
+      "negative": "7.6599999999999993e+35",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 11,
+      "answer": "300",
+      "numeric_value": 300.0,
+      "positive": "300",
+      "negative": "600",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 13,
+      "answer": "8.7e8",
+      "numeric_value": 870000000.0,
+      "positive": "870000000",
+      "negative": "1740000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 14,
+      "answer": "0.003",
+      "numeric_value": 0.003,
+      "positive": "0.0030000000000000001",
+      "negative": "0.0060000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 15,
+      "answer": "4e33",
+      "numeric_value": 4e+33,
+      "positive": "3.9999999999999998e+33",
+      "negative": "7.9999999999999996e+33",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 16,
+      "answer": "4.49",
+      "numeric_value": 4.49,
+      "positive": "4.4900000000000002",
+      "negative": "8.9800000000000004",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 17,
+      "answer": "0.01",
+      "numeric_value": 0.01,
+      "positive": "0.01",
+      "negative": "0.02",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 18,
+      "answer": "3.3e12",
+      "numeric_value": 3300000000000.0,
+      "positive": "3300000000000",
+      "negative": "6600000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 19,
+      "answer": "10",
+      "numeric_value": 10.0,
+      "positive": "10",
+      "negative": "20",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 20,
+      "answer": "6630",
+      "numeric_value": 6630.0,
+      "positive": "6630",
+      "negative": "13260",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 21,
+      "answer": "1.2",
+      "numeric_value": 1.2,
+      "positive": "1.2",
+      "negative": "2.3999999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 22,
+      "answer": "3e6",
+      "numeric_value": 3000000.0,
+      "positive": "3000000",
+      "negative": "6000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 23,
+      "answer": "7e37",
+      "numeric_value": 7e+37,
+      "positive": "7e+37",
+      "negative": "1.4e+38",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 24,
+      "answer": "50",
+      "numeric_value": 50.0,
+      "positive": "50",
+      "negative": "100",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 26,
+      "answer": "7.5e7",
+      "numeric_value": 75000000.0,
+      "positive": "75000000",
+      "negative": "150000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 29,
+      "answer": "1.75",
+      "numeric_value": 1.75,
+      "positive": "1.75",
+      "negative": "3.5",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 31,
+      "answer": "0.33",
+      "numeric_value": 0.33,
+      "positive": "0.33000000000000002",
+      "negative": "0.66000000000000003",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 32,
+      "answer": "27.39",
+      "numeric_value": 27.39,
+      "positive": "27.390000000000001",
+      "negative": "54.780000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 33,
+      "answer": "24.4",
+      "numeric_value": 24.4,
+      "positive": "24.399999999999999",
+      "negative": "48.799999999999997",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 34,
+      "answer": "0.05",
+      "numeric_value": 0.05,
+      "positive": "0.050000000000000003",
+      "negative": "0.10000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 36,
+      "answer": "0.15",
+      "numeric_value": 0.15,
+      "positive": "0.14999999999999999",
+      "negative": "0.29999999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 37,
+      "answer": "2e27",
+      "numeric_value": 2e+27,
+      "positive": "2e+27",
+      "negative": "4.0000000000000001e+27",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 38,
+      "answer": "-1./3",
+      "numeric_value": -0.3333333333333333,
+      "positive": "-0.33333333333333331",
+      "negative": "-0.66666666666666663",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 39,
+      "answer": "0.033",
+      "numeric_value": 0.033,
+      "positive": "0.033000000000000002",
+      "negative": "0.066000000000000003",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 40,
+      "answer": "0.5613",
+      "numeric_value": 0.5613,
+      "positive": "0.56130000000000002",
+      "negative": "1.1226",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 42,
+      "answer": "2.75e11",
+      "numeric_value": 275000000000.0,
+      "positive": "275000000000",
+      "negative": "550000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 43,
+      "answer": "6e13",
+      "numeric_value": 60000000000000.0,
+      "positive": "60000000000000",
+      "negative": "120000000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 44,
+      "answer": "1e-5",
+      "numeric_value": 1e-05,
+      "positive": "1.0000000000000001e-05",
+      "negative": "2.0000000000000002e-05",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 45,
+      "answer": "-10",
+      "numeric_value": -10.0,
+      "positive": "-10",
+      "negative": "-20",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 46,
+      "answer": "15625",
+      "numeric_value": 15625.0,
+      "positive": "15625",
+      "negative": "31250",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 47,
+      "answer": "1e-3",
+      "numeric_value": 0.001,
+      "positive": "0.001",
+      "negative": "0.002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 48,
+      "answer": "3",
+      "numeric_value": 3.0,
+      "positive": "3",
+      "negative": "6",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 49,
+      "answer": "-3./2",
+      "numeric_value": -1.5,
+      "positive": "-1.5",
+      "negative": "-3",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 50,
+      "answer": "2.7778e-6",
+      "numeric_value": 2.7778e-06,
+      "positive": "2.7777999999999999e-06",
+      "negative": "5.5555999999999998e-06",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 51,
+      "answer": "-7",
+      "numeric_value": -7.0,
+      "positive": "-7",
+      "negative": "-14",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 52,
+      "answer": "48",
+      "numeric_value": 48.0,
+      "positive": "48",
+      "negative": "96",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 53,
+      "answer": "16",
+      "numeric_value": 16.0,
+      "positive": "16",
+      "negative": "32",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 54,
+      "answer": "0.192",
+      "numeric_value": 0.192,
+      "positive": "0.192",
+      "negative": "0.38400000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 55,
+      "answer": "0.5978",
+      "numeric_value": 0.5978,
+      "positive": "0.5978",
+      "negative": "1.1956",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 56,
+      "answer": "11000",
+      "numeric_value": 11000.0,
+      "positive": "11000",
+      "negative": "22000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 57,
+      "answer": "0.53",
+      "numeric_value": 0.53,
+      "positive": "0.53000000000000003",
+      "negative": "1.0600000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 58,
+      "answer": "15000",
+      "numeric_value": 15000.0,
+      "positive": "15000",
+      "negative": "30000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 59,
+      "answer": "1538",
+      "numeric_value": 1538.0,
+      "positive": "1538",
+      "negative": "3076",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 60,
+      "answer": "4.4e7",
+      "numeric_value": 44000000.0,
+      "positive": "44000000",
+      "negative": "88000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 65,
+      "answer": "4",
+      "numeric_value": 4.0,
+      "positive": "4",
+      "negative": "8",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 66,
+      "answer": "2",
+      "numeric_value": 2.0,
+      "positive": "2",
+      "negative": "4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 68,
+      "answer": "0",
+      "numeric_value": 0.0,
+      "positive": "0",
+      "negative": "1",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 69,
+      "answer": "-0.875",
+      "numeric_value": -0.875,
+      "positive": "-0.875",
+      "negative": "-1.75",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 75,
+      "answer": "2",
+      "numeric_value": 2.0,
+      "positive": "2",
+      "negative": "4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 79,
+      "answer": "-0.2",
+      "numeric_value": -0.2,
+      "positive": "-0.20000000000000001",
+      "negative": "-0.40000000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 91,
+      "answer": "-8",
+      "numeric_value": -8.0,
+      "positive": "-8",
+      "negative": "-16",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 98,
+      "answer": "-2",
+      "numeric_value": -2.0,
+      "positive": "-2",
+      "negative": "-4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 107,
+      "answer": "2",
+      "numeric_value": 2.0,
+      "positive": "2",
+      "negative": "4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 114,
+      "answer": "20",
+      "numeric_value": 20.0,
+      "positive": "20",
+      "negative": "40",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 120,
+      "answer": "1000",
+      "numeric_value": 1000.0,
+      "positive": "1000",
+      "negative": "2000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 121,
+      "answer": "0.10",
+      "numeric_value": 0.1,
+      "positive": "0.10000000000000001",
+      "negative": "0.20000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 128,
+      "answer": "0.2",
+      "numeric_value": 0.2,
+      "positive": "0.20000000000000001",
+      "negative": "0.40000000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 129,
+      "answer": "1e-8",
+      "numeric_value": 1e-08,
+      "positive": "1e-08",
+      "negative": "2e-08",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 130,
+      "answer": "100",
+      "numeric_value": 100.0,
+      "positive": "100",
+      "negative": "200",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 133,
+      "answer": "99.9",
+      "numeric_value": 99.9,
+      "positive": "99.900000000000006",
+      "negative": "199.80000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 134,
+      "answer": "0.05",
+      "numeric_value": 0.05,
+      "positive": "0.050000000000000003",
+      "negative": "0.10000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 135,
+      "answer": "3e8",
+      "numeric_value": 300000000.0,
+      "positive": "300000000",
+      "negative": "600000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 136,
+      "answer": "1e11",
+      "numeric_value": 100000000000.0,
+      "positive": "100000000000",
+      "negative": "200000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 140,
+      "answer": "10",
+      "numeric_value": 10.0,
+      "positive": "10",
+      "negative": "20",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 141,
+      "answer": "5",
+      "numeric_value": 5.0,
+      "positive": "5",
+      "negative": "10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 142,
+      "answer": "4",
+      "numeric_value": 4.0,
+      "positive": "4",
+      "negative": "8",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 143,
+      "answer": "1",
+      "numeric_value": 1.0,
+      "positive": "1",
+      "negative": "2",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 144,
+      "answer": "8",
+      "numeric_value": 8.0,
+      "positive": "8",
+      "negative": "16",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 145,
+      "answer": "400000",
+      "numeric_value": 400000.0,
+      "positive": "400000",
+      "negative": "800000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 146,
+      "answer": "560",
+      "numeric_value": 560.0,
+      "positive": "560",
+      "negative": "1120",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 147,
+      "answer": "671.02",
+      "numeric_value": 671.02,
+      "positive": "671.01999999999998",
+      "negative": "1342.04",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 148,
+      "answer": "+2",
+      "numeric_value": 2.0,
+      "positive": "2",
+      "negative": "4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 149,
+      "answer": "1.4903e4",
+      "numeric_value": 14903.0,
+      "positive": "14903",
+      "negative": "29806",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 150,
+      "answer": "4.03188",
+      "numeric_value": 4.03188,
+      "positive": "4.0318800000000001",
+      "negative": "8.0637600000000003",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 151,
+      "answer": "566",
+      "numeric_value": 566.0,
+      "positive": "566",
+      "negative": "1132",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 152,
+      "answer": "4100",
+      "numeric_value": 4100.0,
+      "positive": "4100",
+      "negative": "8200",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 153,
+      "answer": "2.78",
+      "numeric_value": 2.78,
+      "positive": "2.7799999999999998",
+      "negative": "5.5599999999999996",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 154,
+      "answer": "0.264",
+      "numeric_value": 0.264,
+      "positive": "0.26400000000000001",
+      "negative": "0.52800000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 155,
+      "answer": "4.4677",
+      "numeric_value": 4.4677,
+      "positive": "4.4676999999999998",
+      "negative": "8.9353999999999996",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 156,
+      "answer": "1.77e-6",
+      "numeric_value": 1.77e-06,
+      "positive": "1.77e-06",
+      "negative": "3.54e-06",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 157,
+      "answer": "1.3",
+      "numeric_value": 1.3,
+      "positive": "1.3",
+      "negative": "2.6000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 158,
+      "answer": "5.47e5",
+      "numeric_value": 547000.0,
+      "positive": "547000",
+      "negative": "1094000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 159,
+      "answer": "1.9",
+      "numeric_value": 1.9,
+      "positive": "1.8999999999999999",
+      "negative": "3.7999999999999998",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 160,
+      "answer": "13.1",
+      "numeric_value": 13.1,
+      "positive": "13.1",
+      "negative": "26.199999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 161,
+      "answer": "4080",
+      "numeric_value": 4080.0,
+      "positive": "4080",
+      "negative": "8160",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 162,
+      "answer": "1.22",
+      "numeric_value": 1.22,
+      "positive": "1.22",
+      "negative": "2.4399999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 163,
+      "answer": "2.19e6",
+      "numeric_value": 2190000.0,
+      "positive": "2190000",
+      "negative": "4380000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 164,
+      "answer": "6.62",
+      "numeric_value": 6.62,
+      "positive": "6.6200000000000001",
+      "negative": "13.24",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 165,
+      "answer": "0.822",
+      "numeric_value": 0.822,
+      "positive": "0.82199999999999995",
+      "negative": "1.6439999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 166,
+      "answer": "1.70e4",
+      "numeric_value": 17000.0,
+      "positive": "17000",
+      "negative": "34000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 167,
+      "answer": "0.5",
+      "numeric_value": 0.5,
+      "positive": "0.5",
+      "negative": "1",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 168,
+      "answer": "35.06",
+      "numeric_value": 35.06,
+      "positive": "35.060000000000002",
+      "negative": "70.120000000000005",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 169,
+      "answer": "1",
+      "numeric_value": 1.0,
+      "positive": "1",
+      "negative": "2",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 170,
+      "answer": "24.310",
+      "numeric_value": 24.31,
+      "positive": "24.309999999999999",
+      "negative": "48.619999999999997",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 171,
+      "answer": "1.87e6",
+      "numeric_value": 1870000.0,
+      "positive": "1870000",
+      "negative": "3740000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 172,
+      "answer": "4.45e15",
+      "numeric_value": 4450000000000000.0,
+      "positive": "4450000000000000",
+      "negative": "8900000000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 173,
+      "answer": "1",
+      "numeric_value": 1.0,
+      "positive": "1",
+      "negative": "2",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 174,
+      "answer": "3.89e-10",
+      "numeric_value": 3.89e-10,
+      "positive": "3.89e-10",
+      "negative": "7.78e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 175,
+      "answer": "9e11",
+      "numeric_value": 900000000000.0,
+      "positive": "900000000000",
+      "negative": "1800000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 176,
+      "answer": "46.08",
+      "numeric_value": 46.08,
+      "positive": "46.079999999999998",
+      "negative": "92.159999999999997",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 177,
+      "answer": "56.0",
+      "numeric_value": 56.0,
+      "positive": "56",
+      "negative": "112",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 178,
+      "answer": "5.89e-7",
+      "numeric_value": 5.89e-07,
+      "positive": "5.8899999999999999e-07",
+      "negative": "1.178e-06",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 179,
+      "answer": "7.4e-12",
+      "numeric_value": 7.4e-12,
+      "positive": "7.4e-12",
+      "negative": "1.48e-11",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 180,
+      "answer": "7.353e14",
+      "numeric_value": 735300000000000.0,
+      "positive": "735300000000000",
+      "negative": "1470600000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 181,
+      "answer": "1.55",
+      "numeric_value": 1.55,
+      "positive": "1.55",
+      "negative": "3.1000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 182,
+      "answer": "1.39e9",
+      "numeric_value": 1390000000.0,
+      "positive": "1390000000",
+      "negative": "2780000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 183,
+      "answer": "9.35e5",
+      "numeric_value": 935000.0,
+      "positive": "935000",
+      "negative": "1870000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 184,
+      "answer": "3.61e-10",
+      "numeric_value": 3.61e-10,
+      "positive": "3.6099999999999999e-10",
+      "negative": "7.2199999999999999e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 185,
+      "answer": "5",
+      "numeric_value": 5.0,
+      "positive": "5",
+      "negative": "10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 186,
+      "answer": "1.45e-5",
+      "numeric_value": 1.45e-05,
+      "positive": "1.45e-05",
+      "negative": "2.9e-05",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 187,
+      "answer": "2.88e16",
+      "numeric_value": 2.88e+16,
+      "positive": "28800000000000000",
+      "negative": "57600000000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 188,
+      "answer": "700",
+      "numeric_value": 700.0,
+      "positive": "700",
+      "negative": "1400",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 189,
+      "answer": "0.13",
+      "numeric_value": 0.13,
+      "positive": "0.13",
+      "negative": "0.26000000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 190,
+      "answer": "8.64",
+      "numeric_value": 8.64,
+      "positive": "8.6400000000000006",
+      "negative": "17.280000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 191,
+      "answer": "1.39e-10",
+      "numeric_value": 1.39e-10,
+      "positive": "1.3900000000000001e-10",
+      "negative": "2.7800000000000002e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 192,
+      "answer": "188",
+      "numeric_value": 188.0,
+      "positive": "188",
+      "negative": "376",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 193,
+      "answer": "6",
+      "numeric_value": 6.0,
+      "positive": "6",
+      "negative": "12",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 194,
+      "answer": "7.26e6",
+      "numeric_value": 7260000.0,
+      "positive": "7260000",
+      "negative": "14520000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 195,
+      "answer": "28.71",
+      "numeric_value": 28.71,
+      "positive": "28.710000000000001",
+      "negative": "57.420000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 196,
+      "answer": "181.3",
+      "numeric_value": 181.3,
+      "positive": "181.30000000000001",
+      "negative": "362.60000000000002",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 197,
+      "answer": "1.24e-8",
+      "numeric_value": 1.24e-08,
+      "positive": "1.24e-08",
+      "negative": "2.48e-08",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 198,
+      "answer": "2.55e-10",
+      "numeric_value": 2.55e-10,
+      "positive": "2.55e-10",
+      "negative": "5.1e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 199,
+      "answer": "900",
+      "numeric_value": 900.0,
+      "positive": "900",
+      "negative": "1800",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 200,
+      "answer": "7.25e-11",
+      "numeric_value": 7.25e-11,
+      "positive": "7.2499999999999995e-11",
+      "negative": "1.4499999999999999e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 201,
+      "answer": "3.61e2",
+      "numeric_value": 361.0,
+      "positive": "361",
+      "negative": "722",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 202,
+      "answer": "1950",
+      "numeric_value": 1950.0,
+      "positive": "1950",
+      "negative": "3900",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 203,
+      "answer": "2415",
+      "numeric_value": 2415.0,
+      "positive": "2415",
+      "negative": "4830",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 204,
+      "answer": "6.4",
+      "numeric_value": 6.4,
+      "positive": "6.4000000000000004",
+      "negative": "12.800000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 205,
+      "answer": "1200",
+      "numeric_value": 1200.0,
+      "positive": "1200",
+      "negative": "2400",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 206,
+      "answer": "1.85e5",
+      "numeric_value": 185000.0,
+      "positive": "185000",
+      "negative": "370000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 207,
+      "answer": "0.554",
+      "numeric_value": 0.554,
+      "positive": "0.55400000000000005",
+      "negative": "1.1080000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 208,
+      "answer": "3.3e-10",
+      "numeric_value": 3.3e-10,
+      "positive": "3.3e-10",
+      "negative": "6.6e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 209,
+      "answer": "928",
+      "numeric_value": 928.0,
+      "positive": "928",
+      "negative": "1856",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 210,
+      "answer": "927.5",
+      "numeric_value": 927.5,
+      "positive": "927.5",
+      "negative": "1855",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 211,
+      "answer": "84.01",
+      "numeric_value": 84.01,
+      "positive": "84.010000000000005",
+      "negative": "168.02000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 212,
+      "answer": "1.5",
+      "numeric_value": 1.5,
+      "positive": "1.5",
+      "negative": "3",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 213,
+      "answer": "5.3e3",
+      "numeric_value": 5300.0,
+      "positive": "5300",
+      "negative": "10600",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 214,
+      "answer": "28.8",
+      "numeric_value": 28.8,
+      "positive": "28.800000000000001",
+      "negative": "57.600000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 215,
+      "answer": "4.46e19",
+      "numeric_value": 4.46e+19,
+      "positive": "4.46e+19",
+      "negative": "8.92e+19",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 216,
+      "answer": "2.68",
+      "numeric_value": 2.68,
+      "positive": "2.6800000000000002",
+      "negative": "5.3600000000000003",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 217,
+      "answer": "700",
+      "numeric_value": 700.0,
+      "positive": "700",
+      "negative": "1400",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 218,
+      "answer": "2.26e-10",
+      "numeric_value": 2.26e-10,
+      "positive": "2.26e-10",
+      "negative": "4.5199999999999999e-10",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 219,
+      "answer": "41.9",
+      "numeric_value": 41.9,
+      "positive": "41.899999999999999",
+      "negative": "83.799999999999997",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 220,
+      "answer": "0.112",
+      "numeric_value": 0.112,
+      "positive": "0.112",
+      "negative": "0.224",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 221,
+      "answer": "0.54",
+      "numeric_value": 0.54,
+      "positive": "0.54000000000000004",
+      "negative": "1.0800000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 222,
+      "answer": "3.21e13",
+      "numeric_value": 32100000000000.0,
+      "positive": "32100000000000",
+      "negative": "64200000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 223,
+      "answer": "2.45e6",
+      "numeric_value": 2450000.0,
+      "positive": "2450000",
+      "negative": "4900000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 224,
+      "answer": "36",
+      "numeric_value": 36.0,
+      "positive": "36",
+      "negative": "72",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 225,
+      "answer": "258",
+      "numeric_value": 258.0,
+      "positive": "258",
+      "negative": "516",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 226,
+      "answer": "1700",
+      "numeric_value": 1700.0,
+      "positive": "1700",
+      "negative": "3400",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 227,
+      "answer": "12.4",
+      "numeric_value": 12.4,
+      "positive": "12.4",
+      "negative": "24.800000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 228,
+      "answer": "5.3e-9",
+      "numeric_value": 5.3e-09,
+      "positive": "5.3000000000000003e-09",
+      "negative": "1.0600000000000001e-08",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 229,
+      "answer": "50.7",
+      "numeric_value": 50.7,
+      "positive": "50.700000000000003",
+      "negative": "101.40000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 230,
+      "answer": "800",
+      "numeric_value": 800.0,
+      "positive": "800",
+      "negative": "1600",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 231,
+      "answer": "100",
+      "numeric_value": 100.0,
+      "positive": "100",
+      "negative": "200",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 232,
+      "answer": "6.5e-2",
+      "numeric_value": 0.065,
+      "positive": "0.065000000000000002",
+      "negative": "0.13",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 233,
+      "answer": "41585",
+      "numeric_value": 41585.0,
+      "positive": "41585",
+      "negative": "83170",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 234,
+      "answer": "1.69",
+      "numeric_value": 1.69,
+      "positive": "1.6899999999999999",
+      "negative": "3.3799999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 235,
+      "answer": "7.02e5",
+      "numeric_value": 702000.0,
+      "positive": "702000",
+      "negative": "1404000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 236,
+      "answer": "1.04e-3",
+      "numeric_value": 0.00104,
+      "positive": "0.0010399999999999999",
+      "negative": "0.0020799999999999998",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 237,
+      "answer": "4",
+      "numeric_value": 4.0,
+      "positive": "4",
+      "negative": "8",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 238,
+      "answer": "3.75e9",
+      "numeric_value": 3750000000.0,
+      "positive": "3750000000",
+      "negative": "7500000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 239,
+      "answer": "8.49e-4",
+      "numeric_value": 0.000849,
+      "positive": "0.00084900000000000004",
+      "negative": "0.0016980000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 240,
+      "answer": "0.7773",
+      "numeric_value": 0.7773,
+      "positive": "0.77729999999999999",
+      "negative": "1.5546",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 241,
+      "answer": "3",
+      "numeric_value": 3.0,
+      "positive": "3",
+      "negative": "6",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 242,
+      "answer": "12.5",
+      "numeric_value": 12.5,
+      "positive": "12.5",
+      "negative": "25",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 246,
+      "answer": "3",
+      "numeric_value": 3.0,
+      "positive": "3",
+      "negative": "6",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 247,
+      "answer": "57",
+      "numeric_value": 57.0,
+      "positive": "57",
+      "negative": "114",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 248,
+      "answer": "8",
+      "numeric_value": 8.0,
+      "positive": "8",
+      "negative": "16",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 253,
+      "answer": "1",
+      "numeric_value": 1.0,
+      "positive": "1",
+      "negative": "2",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 254,
+      "answer": "64",
+      "numeric_value": 64.0,
+      "positive": "64",
+      "negative": "128",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 256,
+      "answer": "6.2",
+      "numeric_value": 6.2,
+      "positive": "6.2000000000000002",
+      "negative": "12.4",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 257,
+      "answer": "75",
+      "numeric_value": 75.0,
+      "positive": "75",
+      "negative": "150",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 258,
+      "answer": "4",
+      "numeric_value": 4.0,
+      "positive": "4",
+      "negative": "8",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 263,
+      "answer": "1.07e16",
+      "numeric_value": 1.07e+16,
+      "positive": "10700000000000000",
+      "negative": "21400000000000000",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 264,
+      "answer": "2.88e-19",
+      "numeric_value": 2.88e-19,
+      "positive": "2.8799999999999998e-19",
+      "negative": "5.7599999999999996e-19",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 265,
+      "answer": "1.325e-27",
+      "numeric_value": 1.325e-27,
+      "positive": "1.325e-27",
+      "negative": "2.65e-27",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 266,
+      "answer": "11.9",
+      "numeric_value": 11.9,
+      "positive": "11.9",
+      "negative": "23.800000000000001",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 267,
+      "answer": "4.6e-24",
+      "numeric_value": 4.6e-24,
+      "positive": "4.6000000000000002e-24",
+      "negative": "9.2000000000000004e-24",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 270,
+      "answer": "24",
+      "numeric_value": 24.0,
+      "positive": "24",
+      "negative": "48",
+      "positive_passed": true,
+      "negative_rejected": true
+    },
+    {
+      "index": 271,
+      "answer": "10.1",
+      "numeric_value": 10.1,
+      "positive": "10.1",
+      "negative": "20.199999999999999",
+      "positive_passed": true,
+      "negative_rejected": true
+    }
+  ],
+  "unit_and_representation_checks": [
+    {
+      "prediction": "\\boxed{4.5e33}",
+      "reference": 4.5e+33,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 4.5e+33,
+        "reason": "literal"
+      }
+    },
+    {
+      "prediction": "\\boxed{4.5\\times10^{33}\\ \\mathrm{erg/s}}",
+      "reference": 4.5e+33,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 4.5e+33,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{x=4.5\\times10^{33}}",
+      "reference": 4.5e+33,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 4.5e+33,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{1e-19}",
+      "reference": 1e-19,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 1e-19,
+        "reason": "literal"
+      }
+    },
+    {
+      "prediction": "\\boxed{2\\times10^{-19}}",
+      "reference": 1e-19,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": 2e-19,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{0}",
+      "reference": 1e-19,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": 0.0,
+        "reason": "literal"
+      }
+    },
+    {
+      "prediction": "\\boxed{1\\times10^{-19}}",
+      "reference": 0.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": 1e-19,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{-1/3}",
+      "reference": -0.3333333333333333,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": -0.3333333333333333,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{\\arcsin(10/13)}",
+      "reference": 0.8776364192181428,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 0.8776364192181428,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{1.6\\text{ cm}}",
+      "reference": 1.6,
+      "expected": true,
+      "actual": true,
+      "parse": {
+        "value": 1.6,
+        "reason": "expression"
+      }
+    },
+    {
+      "prediction": "\\boxed{x+1}",
+      "reference": 1.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": null,
+        "reason": "not_a_constant_number"
+      }
+    },
+    {
+      "prediction": "\\boxed{1+2i}",
+      "reference": 1.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": null,
+        "reason": "not_a_constant_number"
+      }
+    },
+    {
+      "prediction": "\\boxed{1e-400}",
+      "reference": 0.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": null,
+        "reason": "nonzero_literal_underflow"
+      }
+    },
+    {
+      "prediction": "\\boxed{10^{-400}}",
+      "reference": 0.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": null,
+        "reason": "nonzero_expression_underflow"
+      }
+    },
+    {
+      "prediction": "No final answer",
+      "reference": 1.0,
+      "expected": false,
+      "actual": false,
+      "parse": {
+        "value": null,
+        "reason": "no_complete_box"
+      }
+    }
+  ],
+  "legacy_counterexamples": [
+    {
+      "reference": "\\boxed{4.5e33}",
+      "prediction": "\\boxed{4.5\\times10^{33}}",
+      "legacy_correct": false
+    },
+    {
+      "reference": "\\boxed{1\\times10^{-19}}",
+      "prediction": "\\boxed{2\\times10^{-19}}",
+      "legacy_correct": true
+    }
+  ],
+  "primary_rtol": 0.0001,
+  "primary_atol": 0.0,
+  "sensitivity_rtols": [
+    0.01,
+    0.05
+  ],
+  "scope": "Before ANYOOD model outputs. Numeric grading uses lastcompleteboxed, safe scientific notation, finite real evaluation andrelative1e-4withzeroabsolute tolerance. Both original/strict analytic vectors use this numeric score;81symbolic retain respective original/strict scoring. Legacy savedmodel scores remain immutable. Sensitivity1%/5% are tolerance diagnostics, not automaticgroundtruthcertification or posthocsuccesscriteria. Not a replication of all originalOCW extraction/unit/nearzero conventions."
+}

@@ -1,0 +1,1416 @@
+{
+  "time": 1789011930.03893,
+  "reference": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/greedy_lr5e5_s43/initial_adapter/adapter_model.safetensors",
+  "groups": [
+    {
+      "key": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "greedy_example_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "greedy_lr1e4_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "greedy_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "nll_noguided_min_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "nll_noguided_min_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "nll_noguided_random_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "nll_noguided_random_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_dft_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_dft_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_lr1e4_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_all_shortcos2_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_augmented_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_augmented_lr1e5_s43_serial_replay",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_augmented_rawhard_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_common_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_common_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_expansion_combined_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_expansion_repeat_control_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_greedy_budget_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_keepgreedy_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_matchedraw_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_multi_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "sample_repeat_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_all_qkvo16_dft_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_all_qkvo16_dft_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_all_qkvo16_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_all_qkvo16_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_common_teacher7_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_plain_markup_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher32_plain_markup_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher7_common_teacher32_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher7_expansion_combined_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher7_expansion_rawnew_control_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher7_expansion_repeat_control_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_dftkl01_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_dftkl0_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_dftkl1_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_kl01_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_kl0_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_kl1_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_lr1e4_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_all_shortcos4_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_common_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_common_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_keepgreedy_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_matchedraw_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_math7_all_lr1e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        },
+        {
+          "name": "teacher_math7_all_lr5e5_s43",
+          "sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2"
+        }
+      ]
+    },
+    {
+      "key": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "sample_all_all16_lr1e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        },
+        {
+          "name": "sample_all_all16_lr5e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        },
+        {
+          "name": "teacher32_all_all16_lr1e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        },
+        {
+          "name": "teacher32_all_all16_lr5e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        },
+        {
+          "name": "teacher_all_all16_lr1e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        },
+        {
+          "name": "teacher_all_all16_lr5e5_s43",
+          "sha256": "d4f6c13369691af970b64ac5b625020027650d61ba2df463225b2f3167c51a72"
+        }
+      ]
+    },
+    {
+      "key": [
+        44,
+        "qkvo",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "sample_all_lr1e5_s44",
+          "sha256": "c3981a20ed1859a61856af7782b8a1c95ce05e191804b1aa354e688e0e511150"
+        },
+        {
+          "name": "teacher7_expansion_combined_lr5e5_s44",
+          "sha256": "c3981a20ed1859a61856af7782b8a1c95ce05e191804b1aa354e688e0e511150"
+        },
+        {
+          "name": "teacher_all_lr5e5_s44",
+          "sha256": "c3981a20ed1859a61856af7782b8a1c95ce05e191804b1aa354e688e0e511150"
+        }
+      ]
+    },
+    {
+      "key": [
+        45,
+        "qkvo",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "sample_all_lr1e5_s45",
+          "sha256": "e20aedad1c3f55242a115624f6d4e92e2f2065ce62887c1478b59bcea87dfc1a"
+        },
+        {
+          "name": "teacher7_expansion_combined_lr5e5_s45",
+          "sha256": "e20aedad1c3f55242a115624f6d4e92e2f2065ce62887c1478b59bcea87dfc1a"
+        },
+        {
+          "name": "teacher_all_lr5e5_s45",
+          "sha256": "e20aedad1c3f55242a115624f6d4e92e2f2065ce62887c1478b59bcea87dfc1a"
+        }
+      ]
+    },
+    {
+      "key": [
+        46,
+        "qkvo",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "teacher7_expansion_combined_lr5e5_s46",
+          "sha256": "188d85e4d8c714158645e2621f37a441c61e3b28ac4ae89ab070bc63723eb934"
+        },
+        {
+          "name": "teacher_all_lr5e5_s46",
+          "sha256": "188d85e4d8c714158645e2621f37a441c61e3b28ac4ae89ab070bc63723eb934"
+        }
+      ]
+    },
+    {
+      "key": [
+        47,
+        "qkvo",
+        16,
+        16
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "teacher7_expansion_combined_lr5e5_s47",
+          "sha256": "e9282e80b0d67f0b0b4f653a2f934b0ce24ad802ee987d80f31a4f54f2e16fe3"
+        },
+        {
+          "name": "teacher_all_lr5e5_s47",
+          "sha256": "e9282e80b0d67f0b0b4f653a2f934b0ce24ad802ee987d80f31a4f54f2e16fe3"
+        }
+      ]
+    },
+    {
+      "key": [
+        43,
+        "qkvo",
+        64,
+        64
+      ],
+      "all_initial_weight_files_equal": true,
+      "runs": [
+        {
+          "name": "teacher_all_qkvo64_lr1e5_s43",
+          "sha256": "62d318ec0188fcfc0f0cc9fd04c2f5ffbb82df7ffcf7461d991335c91588641b"
+        },
+        {
+          "name": "teacher_all_qkvo64_lr5e5_s43",
+          "sha256": "62d318ec0188fcfc0f0cc9fd04c2f5ffbb82df7ffcf7461d991335c91588641b"
+        }
+      ]
+    }
+  ],
+  "details": [
+    {
+      "name": "greedy_example_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "greedy_lr1e4_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "greedy_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "nll_noguided_min_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "nll_noguided_min_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "nll_noguided_random_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "nll_noguided_random_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_all16_lr1e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_all16_lr5e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_dft_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_dft_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_lr1e4_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_lr1e5_s44",
+      "group": [
+        44,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_lr1e5_s45",
+      "group": [
+        45,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_all_shortcos2_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_augmented_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_augmented_lr1e5_s43_serial_replay",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_augmented_rawhard_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_common_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_common_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_expansion_combined_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_expansion_repeat_control_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_greedy_budget_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_keepgreedy_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_matchedraw_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_multi_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "sample_repeat_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_all16_lr1e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_all16_lr5e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_qkvo16_dft_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_qkvo16_dft_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_qkvo16_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_all_qkvo16_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_common_teacher7_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_plain_markup_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher32_plain_markup_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_common_teacher32_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s44",
+      "group": [
+        44,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s45",
+      "group": [
+        45,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s46",
+      "group": [
+        46,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s47",
+      "group": [
+        47,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_rawnew_control_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher7_expansion_repeat_control_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_all16_lr1e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_all16_lr5e5_s43",
+      "group": [
+        43,
+        "all",
+        16,
+        16
+      ],
+      "n_tensors": 392,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_dftkl01_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_dftkl0_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_dftkl1_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_kl01_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_kl0_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_kl1_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr1e4_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr5e5_s44",
+      "group": [
+        44,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr5e5_s45",
+      "group": [
+        45,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr5e5_s46",
+      "group": [
+        46,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_lr5e5_s47",
+      "group": [
+        47,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_qkvo64_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        64,
+        64
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_qkvo64_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        64,
+        64
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": null,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_all_shortcos4_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_common_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_common_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_keepgreedy_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_matchedraw_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_math7_all_lr1e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    },
+    {
+      "name": "teacher_math7_all_lr5e5_s43",
+      "group": [
+        43,
+        "qkvo",
+        16,
+        16
+      ],
+      "n_tensors": 224,
+      "all_B_zero": true,
+      "shared_reference_attention_exact": true,
+      "parameter_dtypes": [
+        "torch.float32"
+      ]
+    }
+  ],
+  "limitation": "Rank/seed groups differ in initialization. Zero B gives identical mathematical initial update, not an assertion about arbitrary inference kernels."
+}

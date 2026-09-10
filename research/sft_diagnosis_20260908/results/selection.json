@@ -1,0 +1,436 @@
+{
+  "frozen_at": 1788932479.792299,
+  "criterion": "Highest dev500 final-answer accuracy per method; tie earlier step then smaller LR then lexical name. Includes adaptive low-LR and pure-FP32 controls. Base remains the deployment candidate unless improvement is confirmed.",
+  "base_correct": 304,
+  "candidates": [
+    {
+      "name": "lora_all16_lr1e-4_s43_step25",
+      "run_name": "lora_all16_lr1e-4_s43",
+      "step": 25,
+      "correct": 163,
+      "arguments": {
+        "name": "lora_all16_lr1e-4_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 0.0001,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-7_s43_step125",
+      "run_name": "full_lr1e-7_s43",
+      "step": 125,
+      "correct": 154,
+      "arguments": {
+        "name": "full_lr1e-7_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-07,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all64_lr1e-4_s43_step25",
+      "run_name": "lora_all64_lr1e-4_s43",
+      "step": 25,
+      "correct": 162,
+      "arguments": {
+        "name": "lora_all64_lr1e-4_s43",
+        "method": "lora",
+        "rank": 64,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 0.0001,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-5_s43_step125",
+      "run_name": "full_lr1e-5_s43",
+      "step": 125,
+      "correct": 154,
+      "arguments": {
+        "name": "full_lr1e-5_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-6_s43_step25",
+      "run_name": "full_lr1e-6_s43",
+      "step": 25,
+      "correct": 155,
+      "arguments": {
+        "name": "full_lr1e-6_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-06,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-6_fp32_s43_step25",
+      "run_name": "full_lr1e-6_fp32_s43",
+      "step": 25,
+      "correct": 165,
+      "arguments": {
+        "name": "full_lr1e-6_fp32_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-06,
+        "seed": 43,
+        "steps": 25,
+        "save_steps": [
+          25
+        ]
+      },
+      "compute": "float32 without autocast"
+    },
+    {
+      "name": "lora_all16_lr1e-4_s43_step125",
+      "run_name": "lora_all16_lr1e-4_s43",
+      "step": 125,
+      "correct": 173,
+      "arguments": {
+        "name": "lora_all16_lr1e-4_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 0.0001,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all64_lr1e-5_s43_step125",
+      "run_name": "lora_all64_lr1e-5_s43",
+      "step": 125,
+      "correct": 172,
+      "arguments": {
+        "name": "lora_all64_lr1e-5_s43",
+        "method": "lora",
+        "rank": 64,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all16_lr1e-5_s43_step125",
+      "run_name": "lora_all16_lr1e-5_s43",
+      "step": 125,
+      "correct": 178,
+      "arguments": {
+        "name": "lora_all16_lr1e-5_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-5_s43_step25",
+      "run_name": "full_lr1e-5_s43",
+      "step": 25,
+      "correct": 129,
+      "arguments": {
+        "name": "full_lr1e-5_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all64_lr1e-4_s43_step125",
+      "run_name": "lora_all64_lr1e-4_s43",
+      "step": 125,
+      "correct": 170,
+      "arguments": {
+        "name": "lora_all64_lr1e-4_s43",
+        "method": "lora",
+        "rank": 64,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 0.0001,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-6_s43_step125",
+      "run_name": "full_lr1e-6_s43",
+      "step": 125,
+      "correct": 147,
+      "arguments": {
+        "name": "full_lr1e-6_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-06,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "full_lr1e-7_s43_step25",
+      "run_name": "full_lr1e-7_s43",
+      "step": 25,
+      "correct": 159,
+      "arguments": {
+        "name": "full_lr1e-7_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-07,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_qkvo16_lr1e-5_s43_step125",
+      "run_name": "lora_qkvo16_lr1e-5_s43",
+      "step": 125,
+      "correct": 238,
+      "arguments": {
+        "name": "lora_qkvo16_lr1e-5_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "qkvo",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_qkvo16_lr1e-5_s43_step25",
+      "run_name": "lora_qkvo16_lr1e-5_s43",
+      "step": 25,
+      "correct": 298,
+      "arguments": {
+        "name": "lora_qkvo16_lr1e-5_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "qkvo",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all16_lr1e-5_fp32_s43_step25",
+      "run_name": "lora_all16_lr1e-5_fp32_s43",
+      "step": 25,
+      "correct": 205,
+      "arguments": {
+        "name": "lora_all16_lr1e-5_fp32_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 25,
+        "save_steps": [
+          25
+        ]
+      },
+      "compute": "float32 without autocast"
+    },
+    {
+      "name": "lora_all64_lr1e-5_s43_step25",
+      "run_name": "lora_all64_lr1e-5_s43",
+      "step": 25,
+      "correct": 196,
+      "arguments": {
+        "name": "lora_all64_lr1e-5_s43",
+        "method": "lora",
+        "rank": 64,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    {
+      "name": "lora_all16_lr1e-5_s43_step25",
+      "run_name": "lora_all16_lr1e-5_s43",
+      "step": 25,
+      "correct": 224,
+      "arguments": {
+        "name": "lora_all16_lr1e-5_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    }
+  ],
+  "selected": {
+    "lora": {
+      "name": "lora_qkvo16_lr1e-5_s43_step25",
+      "run_name": "lora_qkvo16_lr1e-5_s43",
+      "step": 25,
+      "correct": 298,
+      "arguments": {
+        "name": "lora_qkvo16_lr1e-5_s43",
+        "method": "lora",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "qkvo",
+        "lr": 1e-05,
+        "seed": 43,
+        "steps": 125,
+        "save_steps": [
+          25,
+          125
+        ]
+      },
+      "compute": "bfloat16 autocast"
+    },
+    "full": {
+      "name": "full_lr1e-6_fp32_s43_step25",
+      "run_name": "full_lr1e-6_fp32_s43",
+      "step": 25,
+      "correct": 165,
+      "arguments": {
+        "name": "full_lr1e-6_fp32_s43",
+        "method": "full",
+        "rank": 16,
+        "alpha": 16,
+        "modules": "all",
+        "lr": 1e-06,
+        "seed": 43,
+        "steps": 25,
+        "save_steps": [
+          25
+        ]
+      },
+      "compute": "float32 without autocast"
+    }
+  },
+  "confirmation_seeds": [
+    43,
+    44,
+    45
+  ],
+  "final_sets": [
+    "math_confirmation1000",
+    "gsm_diagnostic300_reused"
+  ],
+  "no_final_scores_examined": true
+}

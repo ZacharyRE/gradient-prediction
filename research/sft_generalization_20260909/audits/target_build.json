@@ -1,0 +1,154 @@
+{
+  "sample": {
+    "total_generations": 16000,
+    "accepted_generations": 8866,
+    "covered_questions": 1567,
+    "rejections": {
+      "incorrect_last_box": 6678,
+      "incomplete": 414,
+      "process_review_excluded_trace": 1,
+      "previous_process_exclusion": 40,
+      "too_long": 1
+    },
+    "coverage_by_level": {
+      "Level 5": 310,
+      "Level 1": 140,
+      "Level 4": 381,
+      "Level 3": 378,
+      "Level 2": 358
+    }
+  },
+  "teacher": {
+    "total_generations": 2000,
+    "accepted_generations": 1551,
+    "covered_questions": 1551,
+    "rejections": {
+      "incorrect_last_box": 417,
+      "incomplete": 27,
+      "previous_process_exclusion": 5
+    },
+    "coverage_by_level": {
+      "Level 5": 329,
+      "Level 1": 138,
+      "Level 4": 364,
+      "Level 3": 373,
+      "Level 2": 347
+    }
+  },
+  "new_review_pair_exclusions": [
+    208,
+    591,
+    1441,
+    1461
+  ],
+  "sample_all": {
+    "n": 1563,
+    "sha256": "cd02dccbd429a822e3ccf78a019fc38286949aac0cd51a45fc61cf816085a1e0",
+    "tokens": 745936
+  },
+  "sample_raw": {
+    "n": 1563,
+    "sha256": "3d58095de7e01f8cbdae734295a68f77f7895471b4bd56493a391eeec0981600",
+    "tokens": 282937
+  },
+  "sample_easy": {
+    "n": 1162,
+    "sha256": "7c86a5ae473ed1731b3e86062295d946cfc7ba486151a0a40350d07cbe05460c",
+    "tokens": 493076
+  },
+  "sample_hard": {
+    "n": 396,
+    "sha256": "5715f078b8d41e7eb6329a7d5cffa09b9fb87114491abc6d23d962c36c880c09",
+    "tokens": 251474
+  },
+  "sample_newly_covered": {
+    "n": 401,
+    "sha256": "580e2731678071dd5415e83c2aa0f5b1b7603f3be36b5072b4e6b51bb9f03069",
+    "tokens": 252860
+  },
+  "sample_matched_greedy": {
+    "n": 1162,
+    "sha256": "3f432c842ffc43dc01472c1a65918899504466826154902c85b4d509007b9c9c",
+    "tokens": 492240
+  },
+  "teacher_all": {
+    "n": 1547,
+    "sha256": "7cd1daa1092fb5d30c136f9aae09c3bee43888f48f6766bb796af58cdfb9df6d",
+    "tokens": 738631
+  },
+  "teacher_raw": {
+    "n": 1547,
+    "sha256": "5ffa8836c98f69e48fca0ab5f46daf1493c6c3b62c8fc0e6ecb9fdd2fc2a2b03",
+    "tokens": 272713
+  },
+  "teacher_easy": {
+    "n": 1141,
+    "sha256": "749b95222c5ff8d98ea285b7ef7da4ef412d635fb01c1ffdaea04fdd1c0bc984",
+    "tokens": 485336
+  },
+  "teacher_hard": {
+    "n": 401,
+    "sha256": "2cca58f710f551a66bafc19c4a397afa9546d0a92e26aabd22238d80af7a77e3",
+    "tokens": 251841
+  },
+  "teacher_newly_covered": {
+    "n": 406,
+    "sha256": "2abde7285c744e91d2bc75d5f3638968dc18daa89d81b375384de496ce272109",
+    "tokens": 253295
+  },
+  "teacher_matched_greedy": {
+    "n": 1141,
+    "sha256": "14c3ea39b63034af0e0a99a0cd227af75e5350e7e1c90f21a63beb46a5246728",
+    "tokens": 479574
+  },
+  "sample_common": {
+    "n": 1429,
+    "sha256": "5490c4e758e759bc27d21d94853ce05c7f231a03100c1dd057061a453cf54c6b",
+    "tokens": 652318
+  },
+  "teacher_common": {
+    "n": 1429,
+    "sha256": "e8b5326e66e81e89646f7b8e45571836e1be16fe234cdcc81f12ef392ad18f13",
+    "tokens": 650957
+  },
+  "sample_multi": {
+    "n": 6252,
+    "sha256": "c831b7c635491a0c3c54e939b77f50fc6876314249c797015431a5cab25dc683",
+    "tokens": 2987891
+  },
+  "sample_repeat": {
+    "n": 6252,
+    "sha256": "75966494e88444fd9bb50f996ee89012913e22dec1bce35ca9f3a13cd4868882",
+    "tokens": 2983744
+  },
+  "sample_augmented": {
+    "n": 1576,
+    "sha256": "50907b8970a9888441d9da6dac67ed12c5d321a380de48e3ba85d0fbdb571d8f",
+    "tokens": 754588
+  },
+  "sample_augmented_rawhard": {
+    "n": 1576,
+    "sha256": "cfd235bdbfd77ba25c7bece8e232a40c6f08712add9fadadabfbbc3bd940a191",
+    "tokens": 605654
+  },
+  "sample_greedy_budget": {
+    "n": 1576,
+    "sha256": "c410f0abbba97f71c3bf37897432f07d0191be2bb0dce2c88fbb7db77f154464",
+    "tokens": 669281
+  },
+  "teacher_augmented": {
+    "n": 1581,
+    "sha256": "7c11fa1e26bf24196af91577114618f8dbca47568daf373f8667c2d0ce73e113",
+    "tokens": 755023
+  },
+  "teacher_augmented_rawhard": {
+    "n": 1581,
+    "sha256": "da70b2adbc6c76d5e7cbe61200695afd51d10db86b0a228ca0fed82bc5393643",
+    "tokens": 601112
+  },
+  "teacher_greedy_budget": {
+    "n": 1581,
+    "sha256": "22587359eb9307832ac8d94dffc6147f702b6d6fdc8d1bd90bcd6bdce8e566bb",
+    "tokens": 670879
+  }
+}

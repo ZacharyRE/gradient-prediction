@@ -1,0 +1,28 @@
+{
+  "time": 1789031862.378997,
+  "all_reviewed": true,
+  "gpu_work_terminal": true,
+  "scope": "Native target-control GPU stage is terminal; other study GPU work continues. Both strict audits, pair statistics, exactcrosscardreplay and fixedcase98 reviewed. One seed, question uncertainty only.",
+  "plan_sha256": "8ff000b2acc59720dde49c28a14817b456fea7eacf838883bb844712ef440c10",
+  "status_sha256": "e4ff1165cc2619b63be24d818021c3d0c2a997e8fe812db517c3b3802396a9db",
+  "analysis_sha256": "29986846c6f1f083e52f88cdc0dc65d326f7eafc7bcb39ecba6f85f487f0d785",
+  "gpu2_native_replay_sha256": "bd6be21d4ab3bfc52525e9a5b2496fdb5eca728622f6b264de33d0095c1f052d",
+  "scoring": {
+    "native": {
+      "audit_sha256": "06da069588a465671cbe81ae9538a3892f5b3630e597cd4182ee5b32056e09b9",
+      "judgments": 640,
+      "warning_count": 0,
+      "all_warning_events_reviewed": true
+    },
+    "vllm": {
+      "audit_sha256": "11b3d861554f58eb23d62abd149b289e6a914e85d0862bf37f69f5acd31296d1",
+      "judgments": 640,
+      "warning_count": 0,
+      "all_warning_events_reviewed": true
+    }
+  },
+  "warning_case_file_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "case98_review_sha256": "2eadb9d6807b1dfefcfe866b9bd6c06a1ab3cf604c48764093febe9bfbe30e83",
+  "report_markdown": "原生复核支持目标替换这一整体干预：学生来源恢复19.53 pp，题目95%区间[10.16,28.91]；7B来源恢复29.69 pp，[21.09,38.28]。严格最后答案框下分别为21.88 pp [12.50,32.03]和29.69 pp [21.09,38.28]。两组HF减vLLM干预效应差的区间均跨零，不能据此证明后端等价。相对各自HF baseline的学生/7B生成目标区间仍跨零，而且只有seed43，因此这不是一般性提升的五seed证据。\n\n预先固定的代数案例98在HF中为baseline9、raw教师0、生成目标教师9。完整检查确认，raw错写倒数和的通分分子，并从零分母作无效推断；比值(2,2,-1)满足原条件，平方和为9。baseline与生成目标的完整推导均成立。旧vLLM raw答案是1，说明同题退化跨后端存在，但错误轨迹不相同。此例展示已有能力的损害及保留，不能估计全体错误率。[逐式核验](audits/native_target_case98_review.json)。\n\n同64题的原生检查也保留了参考CE的反例：两个raw模型CE均低于baseline，但HF正确数为32/28，baseline47；学生生成目标CE更高且正确数同为47，7B生成目标CE更高且为50。不要把“所有生成目标在HF同64题都提高了准确率”写入结论。",
+  "reviewer": "AI research assistant; not independent human expert"
+}

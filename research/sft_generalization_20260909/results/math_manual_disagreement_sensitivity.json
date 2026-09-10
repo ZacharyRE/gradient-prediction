@@ -1,0 +1,266 @@
+{
+  "time": 1789041176.2541857,
+  "script_sha256": "620ce6dee0f41a366db65a24d9391520893fc50647985328479e7d2bc09c5001",
+  "source_sha256": {
+    "audits/math_scoring_disagreement_review_plan.json": "d3b7928e394de21e29d27b96f554397361296b26fae4b361dc17ab9c1c650666",
+    "audits/math_scoring_disagreement_review_decisions.json": "750515703194155608d2c2b3f5b75e834784b81a0fc2448bfe23df6e320e739d",
+    "audits/math_scoring_disagreement_review_cases.jsonl": "69f79de5c4d36e9fbde8338c845a1b608616034e71630fefb8e8b36aa579e103",
+    "audits/scoring_confirmation_math_reused5000.json": "896dbff4d7239b8b49c5a00e3565332e6856e60ecd80212f234f4b6f543549ef",
+    "scripts/analyze_confirmation.py": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+    "results/confirmation_plan.json": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+    "results/evaluation/math_reused5000/base/math_predictions.jsonl": "fcb4c9e420af1c9ae7b05fe6adccb667dbfe8516146b41c0df079dfa46606f91",
+    "results/evaluation/math_reused5000/avg_teacher7_1234_s43_epoch4/math_predictions.jsonl": "7d461cf7a7603e8ac59783a403e67f60cf25a070232178298a17987eaac7466c",
+    "results/evaluation/math_reused5000/avg_teacher7_1234_s44_epoch4/math_predictions.jsonl": "72cc8aeee495ee72a7fc849b5d304c5b6f1606645c2f17acfcccd7d0cd9c3798",
+    "results/evaluation/math_reused5000/avg_teacher7_1234_s45_epoch4/math_predictions.jsonl": "95d0cf29c2baa62274882c6734d42b530f1aa3fb7117d116bc97453a6024929c",
+    "results/evaluation/math_reused5000/avg_teacher7_1234_s46_epoch4/math_predictions.jsonl": "53ad83db21ff50c0958174075ea978f4a598ac58f6644a9043b1664c2d38a523",
+    "results/evaluation/math_reused5000/avg_teacher7_1234_s47_epoch4/math_predictions.jsonl": "ffd12b1aebd4be89cf6212fdc25d9ddfaa7d3461ecd9d2178c8597aefb815bc5"
+  },
+  "all47_reviewed": true,
+  "counts": {
+    "base": {
+      "disagreements": 20,
+      "correct": 16,
+      "incorrect": 2,
+      "unresolved": 2,
+      "categories": {
+        "correct_unboxed_final_answer": 14,
+        "correct_unboxed_final_answer_with_flawed_process": 1,
+        "unresolved_final_answer_after_contradiction": 1,
+        "raw_accepts_incidental_number_no_answer": 1,
+        "unresolved_final_answer_completeness": 1,
+        "incidental_number_without_final_answer": 1,
+        "correct_unboxed_final_answer_incomplete_minimality_proof": 1
+      }
+    },
+    "avg_teacher7_1234_s43_epoch4": {
+      "disagreements": 3,
+      "correct": 0,
+      "incorrect": 3,
+      "unresolved": 0,
+      "categories": {
+        "raw_accepts_incidental_number_no_answer": 2,
+        "incidental_number_without_final_answer": 1
+      }
+    },
+    "avg_teacher7_1234_s44_epoch4": {
+      "disagreements": 7,
+      "correct": 0,
+      "incorrect": 5,
+      "unresolved": 2,
+      "categories": {
+        "unresolved_final_answer_completeness": 1,
+        "raw_accepts_incidental_number_no_answer": 3,
+        "incorrect_explicit_value": 1,
+        "incidental_number_without_final_answer": 1,
+        "unresolved_box_operator_vs_answer_markup": 1
+      }
+    },
+    "avg_teacher7_1234_s45_epoch4": {
+      "disagreements": 8,
+      "correct": 0,
+      "incorrect": 7,
+      "unresolved": 1,
+      "categories": {
+        "raw_accepts_incidental_number_no_answer": 4,
+        "incidental_number_without_final_answer": 1,
+        "unresolved_box_operator_vs_answer_markup": 1,
+        "wrong_unboxed_expression_incidental_matching_factor": 1,
+        "wrong_unboxed_expression_incidental_zero": 1
+      }
+    },
+    "avg_teacher7_1234_s46_epoch4": {
+      "disagreements": 7,
+      "correct": 2,
+      "incorrect": 3,
+      "unresolved": 2,
+      "categories": {
+        "correct_unboxed_equivalent_expression": 1,
+        "raw_accepts_incidental_number_no_answer": 1,
+        "correct_unboxed_final_answer_flawed_process": 1,
+        "unresolved_final_answer_completeness": 1,
+        "incidental_number_without_final_answer": 1,
+        "unresolved_box_operator_vs_answer_markup": 1,
+        "wrong_unboxed_expression_incidental_matching_factor": 1
+      }
+    },
+    "avg_teacher7_1234_s47_epoch4": {
+      "disagreements": 2,
+      "correct": 0,
+      "incorrect": 1,
+      "unresolved": 1,
+      "categories": {
+        "raw_accepts_incidental_number_no_answer": 1,
+        "unresolved_box_operator_vs_answer_markup": 1
+      }
+    }
+  },
+  "unresolved": [
+    {
+      "model": "avg_teacher7_1234_s44_epoch4",
+      "index": 670,
+      "case_id": "math_disagreement_003"
+    },
+    {
+      "model": "base",
+      "index": 1813,
+      "case_id": "math_disagreement_010"
+    },
+    {
+      "model": "base",
+      "index": 2883,
+      "case_id": "math_disagreement_021"
+    },
+    {
+      "model": "avg_teacher7_1234_s46_epoch4",
+      "index": 3339,
+      "case_id": "math_disagreement_026"
+    },
+    {
+      "model": "avg_teacher7_1234_s44_epoch4",
+      "index": 4060,
+      "case_id": "math_disagreement_034"
+    },
+    {
+      "model": "avg_teacher7_1234_s45_epoch4",
+      "index": 4060,
+      "case_id": "math_disagreement_035"
+    },
+    {
+      "model": "avg_teacher7_1234_s46_epoch4",
+      "index": 4060,
+      "case_id": "math_disagreement_036"
+    },
+    {
+      "model": "avg_teacher7_1234_s47_epoch4",
+      "index": 4060,
+      "case_id": "math_disagreement_037"
+    }
+  ],
+  "results": {
+    "full5000": {
+      "conservative_lower": {
+        "n": 5000,
+        "base_correct": 2792,
+        "per_seed_correct": [
+          2819,
+          2826,
+          2836,
+          2833,
+          2836
+        ],
+        "vs_base": {
+          "delta_pp": 0.76,
+          "question_ci95": [
+            -0.20800000000000007,
+            1.7039999999999995
+          ],
+          "seed_question_ci95": [
+            -0.244,
+            1.7680000000000002
+          ],
+          "per_seed_delta_pp": [
+            0.54,
+            0.6799999999999999,
+            0.88,
+            0.8200000000000001,
+            0.88
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "conservative_upper": {
+        "n": 5000,
+        "base_correct": 2790,
+        "per_seed_correct": [
+          2819,
+          2828,
+          2837,
+          2835,
+          2837
+        ],
+        "vs_base": {
+          "delta_pp": 0.8240000000000001,
+          "question_ci95": [
+            -0.13600000000000007,
+            1.764
+          ],
+          "seed_question_ci95": [
+            -0.1800999999999999,
+            1.836
+          ],
+          "per_seed_delta_pp": [
+            0.58,
+            0.76,
+            0.9400000000000001,
+            0.8999999999999999,
+            0.9400000000000001
+          ],
+          "every_seed_positive": true
+        }
+      }
+    },
+    "remaining3500": {
+      "conservative_lower": {
+        "n": 3500,
+        "base_correct": 1976,
+        "per_seed_correct": [
+          1975,
+          1972,
+          1981,
+          1983,
+          1994
+        ],
+        "vs_base": {
+          "delta_pp": 0.14285714285714285,
+          "question_ci95": [
+            -1.0172857142857143,
+            1.2685714285714285
+          ],
+          "seed_question_ci95": [
+            -1.0628571428571427,
+            1.342857142857143
+          ],
+          "per_seed_delta_pp": [
+            -0.028571428571428574,
+            -0.1142857142857143,
+            0.14285714285714285,
+            0.2,
+            0.5142857142857142
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "conservative_upper": {
+        "n": 3500,
+        "base_correct": 1974,
+        "per_seed_correct": [
+          1975,
+          1974,
+          1982,
+          1985,
+          1995
+        ],
+        "vs_base": {
+          "delta_pp": 0.23428571428571432,
+          "question_ci95": [
+            -0.9314285714285713,
+            1.3658571428571409
+          ],
+          "seed_question_ci95": [
+            -0.9714285714285713,
+            1.4342857142857144
+          ],
+          "per_seed_delta_pp": [
+            0.028571428571428574,
+            0.0,
+            0.2285714285714286,
+            0.3142857142857143,
+            0.6
+          ],
+          "every_seed_positive": false
+        }
+      }
+    }
+  },
+  "scope": "Post-outcome, unblinded, partial manual final-answer sensitivity on all47 raw/strict disagreements for frozen primary plus baseline. Agreed judgments elsewhere are retained, not certified mathematically correct. Unresolved cases receive adverse/favorable assignments, with one shared baseline across all seeds. Bounds and their fixed-source paired bootstrap intervals are sensitivity envelopes, not a new prespecified efficacy criterion or a guarantee of universal scoring correctness. Correct final answer does not certify reasoning validity."
+}

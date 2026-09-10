@@ -1,0 +1,371 @@
+{
+  "time": 1789038643.0428257,
+  "utc": "2026-09-10T11:10:43.042863+00:00",
+  "scope": "Execution scheduling only, before any actual OOD predictions. User-authorized maximum3 physicalGPUs1/2/3. GPU1 native500 unchanged. GPU3 current full16 MATH child finishes naturally. GPU2 native controls and existing dev500 baseline/nonzero replay finish naturally; then GPU2 joins shared frozen-main OOD queue instead of starting optional supplementary MATH first. CPU dispatch parents only are paused and retired at verified child-exit0/quiet boundaries; no current GPU inference child is signaled. Twelve original-main OOD groups have priority, then five separately frozen supplementary MATH models and four supplementary OOD groups. All model identities/data/numerical scripts/scorers/analyses/criteria unchanged. Supplement is explicitly time-permitting and incomplete family cannot support efficacy. New dispatched evaluations stop15UTC, superseding original supplemental14UTC execution margin; global15:16:40UTC deadline unchanged. Intentional original CPU parent returncodes must be reconciled with replacement execution, never rewritten as successful original calls. Runtime amendment: the GPU2 replay completed quickly and its original supplementary MATH child had already started before dispatcher capture. No GPU child is interrupted. Capture that existing MATH child instead, let all five models finish naturally, revalidate and reuse the existing1000-output replay, then mark those five queued supplementary MATH tasks explicitly reused. GPU3 was already safely paused at its CPU parent only; resume that audited handoff state. No OOD predictions exist yet. The only retired process at this amendment is the CPU coordinator, which had launched zero tasks. Zombie-reader recovery only: retain v2 error/status and source, resume same pending queue before any OOD outputs, with verified actual MATH child exit0; no existing GPU inference is interrupted.",
+  "maximum_simultaneous_gpus": 3,
+  "allowed_physical_gpus": [
+    "1",
+    "2",
+    "3"
+  ],
+  "execution_script_sha256": "49fbd0df3f66eded176f07810c207b24471f2e4ed57dc660dff5551a7efa6fbe",
+  "primary_plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "supplement_plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "supplement_frozen_sha256": "65ed2724e4920e6eb71c3733d04502e911633c7a4c18af93b4b5c503b388ec9d",
+  "gpu2_execution_amendment_sha256": "0f1ea9ce28bc6e31683b4978c484807bd1c1861c6e4fe83e130f398726d50b23",
+  "unchanged_scripts": {
+    "evaluate.py": "8ad473e78d2dff10db9b3e44fb2a85ffe4c0d20e64ed4d2d9869ea8152ac68ca",
+    "gpu2_authorized_entry.py": "6c5771e47033edc12dacd74c26973018eb46f5600c953a49e4b5ebc39a0bf07f",
+    "common.py": "956ceb32b5b3702cccefecdccbf2aaf4b1d60e7f063e06b63bafd89c34cb6375",
+    "analyze_confirmation.py": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+    "analyze_expanded_supplement.py": "84eedb9169e6374749e63e62aa48691ca65a840024b4705c98617bfac3aed926",
+    "score_sensitivity.py": "eeed6d11d7261fae030dafd80d2a294d862dfa1e84196c7efe6b5215bb48f3f8",
+    "score_minerva_numeric.py": "2f239ae35ee8615a4908cba733c2cdda4200acbc0ebd341bdfae34df24bad7fc",
+    "minerva_numeric.py": "87228146441ae29a496624e84c38582a826a899e1f299aa18be53bc427622088",
+    "native_final_recheck.py": "df0ef69aee1fbf4a7eed8a531f93daf1b4d7687bcaf49805bce0f77f9b27bd26",
+    "native_recheck.py": "b391d97c6d4e8103867ed922dfe642eb10d527858c51e39552968a0f2335ceb6"
+  },
+  "parents": {
+    "3": {
+      "pid": 3105616,
+      "start": "73598086",
+      "script": "final_evaluation_pipeline.py",
+      "child_dataset": "math_reused5000",
+      "manifest": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/confirmation_manifest.json",
+      "purpose": "Unchanged full16 MATH child"
+    },
+    "2": {
+      "pid": 3434001,
+      "start": "74468751",
+      "script": "gpu2_additional_execution.py",
+      "child_dataset": "math_reused5000",
+      "manifest": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/expanded_unaveraged_supplement_manifest.json",
+      "purpose": "Preserve already started original five-model supplementary MATH child, after actual vLLM replay passed"
+    }
+  },
+  "tasks": [
+    {
+      "id": "ood_minerva_teacher7_avg1234",
+      "role": "main",
+      "dataset": "ood_minerva",
+      "names": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4",
+        "avg_teacher7_1234_s44_epoch4",
+        "avg_teacher7_1234_s45_epoch4",
+        "avg_teacher7_1234_s46_epoch4",
+        "avg_teacher7_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_minerva_teacher7_avg1234.json",
+      "manifest_sha256": "46d8c9465cf533c1dc5fdaec4602c86670a64d1b3b2be206032eb061a0993d43"
+    },
+    {
+      "id": "ood_minerva_teacher7_expanded_avg1234",
+      "role": "main",
+      "dataset": "ood_minerva",
+      "names": [
+        "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "avg_teacher7_expansion_combined_1234_s44_epoch4",
+        "avg_teacher7_expansion_combined_1234_s45_epoch4",
+        "avg_teacher7_expansion_combined_1234_s46_epoch4",
+        "avg_teacher7_expansion_combined_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_minerva_teacher7_expanded_avg1234.json",
+      "manifest_sha256": "d6cedf219f6157d090d8c7a924322111d53ed29081715a6428dbbe47ecc15860"
+    },
+    {
+      "id": "ood_minerva_teacher7_epoch4",
+      "role": "main",
+      "dataset": "ood_minerva",
+      "names": [
+        "teacher_all_lr5e5_s43_epoch4",
+        "teacher_all_lr5e5_s44_epoch4",
+        "teacher_all_lr5e5_s45_epoch4",
+        "teacher_all_lr5e5_s46_epoch4",
+        "teacher_all_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_minerva_teacher7_epoch4.json",
+      "manifest_sha256": "0b1ef7e93148181d733a1ff29adb73d8954e4001a0e0cee7dcd0a0a0e4b3b654"
+    },
+    {
+      "id": "ood_olympiad_teacher7_avg1234",
+      "role": "main",
+      "dataset": "ood_olympiad",
+      "names": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4",
+        "avg_teacher7_1234_s44_epoch4",
+        "avg_teacher7_1234_s45_epoch4",
+        "avg_teacher7_1234_s46_epoch4",
+        "avg_teacher7_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_olympiad_teacher7_avg1234.json",
+      "manifest_sha256": "46d8c9465cf533c1dc5fdaec4602c86670a64d1b3b2be206032eb061a0993d43"
+    },
+    {
+      "id": "ood_olympiad_teacher7_expanded_avg1234",
+      "role": "main",
+      "dataset": "ood_olympiad",
+      "names": [
+        "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "avg_teacher7_expansion_combined_1234_s44_epoch4",
+        "avg_teacher7_expansion_combined_1234_s45_epoch4",
+        "avg_teacher7_expansion_combined_1234_s46_epoch4",
+        "avg_teacher7_expansion_combined_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_olympiad_teacher7_expanded_avg1234.json",
+      "manifest_sha256": "d6cedf219f6157d090d8c7a924322111d53ed29081715a6428dbbe47ecc15860"
+    },
+    {
+      "id": "ood_olympiad_teacher7_epoch4",
+      "role": "main",
+      "dataset": "ood_olympiad",
+      "names": [
+        "teacher_all_lr5e5_s43_epoch4",
+        "teacher_all_lr5e5_s44_epoch4",
+        "teacher_all_lr5e5_s45_epoch4",
+        "teacher_all_lr5e5_s46_epoch4",
+        "teacher_all_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_olympiad_teacher7_epoch4.json",
+      "manifest_sha256": "0b1ef7e93148181d733a1ff29adb73d8954e4001a0e0cee7dcd0a0a0e4b3b654"
+    },
+    {
+      "id": "ood_svamp_teacher7_avg1234",
+      "role": "main",
+      "dataset": "ood_svamp",
+      "names": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4",
+        "avg_teacher7_1234_s44_epoch4",
+        "avg_teacher7_1234_s45_epoch4",
+        "avg_teacher7_1234_s46_epoch4",
+        "avg_teacher7_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_svamp_teacher7_avg1234.json",
+      "manifest_sha256": "46d8c9465cf533c1dc5fdaec4602c86670a64d1b3b2be206032eb061a0993d43"
+    },
+    {
+      "id": "ood_svamp_teacher7_expanded_avg1234",
+      "role": "main",
+      "dataset": "ood_svamp",
+      "names": [
+        "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "avg_teacher7_expansion_combined_1234_s44_epoch4",
+        "avg_teacher7_expansion_combined_1234_s45_epoch4",
+        "avg_teacher7_expansion_combined_1234_s46_epoch4",
+        "avg_teacher7_expansion_combined_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_svamp_teacher7_expanded_avg1234.json",
+      "manifest_sha256": "d6cedf219f6157d090d8c7a924322111d53ed29081715a6428dbbe47ecc15860"
+    },
+    {
+      "id": "ood_svamp_teacher7_epoch4",
+      "role": "main",
+      "dataset": "ood_svamp",
+      "names": [
+        "teacher_all_lr5e5_s43_epoch4",
+        "teacher_all_lr5e5_s44_epoch4",
+        "teacher_all_lr5e5_s45_epoch4",
+        "teacher_all_lr5e5_s46_epoch4",
+        "teacher_all_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_svamp_teacher7_epoch4.json",
+      "manifest_sha256": "0b1ef7e93148181d733a1ff29adb73d8954e4001a0e0cee7dcd0a0a0e4b3b654"
+    },
+    {
+      "id": "ood_amc23_teacher7_avg1234",
+      "role": "main",
+      "dataset": "ood_amc23",
+      "names": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4",
+        "avg_teacher7_1234_s44_epoch4",
+        "avg_teacher7_1234_s45_epoch4",
+        "avg_teacher7_1234_s46_epoch4",
+        "avg_teacher7_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_amc23_teacher7_avg1234.json",
+      "manifest_sha256": "46d8c9465cf533c1dc5fdaec4602c86670a64d1b3b2be206032eb061a0993d43"
+    },
+    {
+      "id": "ood_amc23_teacher7_expanded_avg1234",
+      "role": "main",
+      "dataset": "ood_amc23",
+      "names": [
+        "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "avg_teacher7_expansion_combined_1234_s44_epoch4",
+        "avg_teacher7_expansion_combined_1234_s45_epoch4",
+        "avg_teacher7_expansion_combined_1234_s46_epoch4",
+        "avg_teacher7_expansion_combined_1234_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_amc23_teacher7_expanded_avg1234.json",
+      "manifest_sha256": "d6cedf219f6157d090d8c7a924322111d53ed29081715a6428dbbe47ecc15860"
+    },
+    {
+      "id": "ood_amc23_teacher7_epoch4",
+      "role": "main",
+      "dataset": "ood_amc23",
+      "names": [
+        "teacher_all_lr5e5_s43_epoch4",
+        "teacher_all_lr5e5_s44_epoch4",
+        "teacher_all_lr5e5_s45_epoch4",
+        "teacher_all_lr5e5_s46_epoch4",
+        "teacher_all_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_amc23_teacher7_epoch4.json",
+      "manifest_sha256": "0b1ef7e93148181d733a1ff29adb73d8954e4001a0e0cee7dcd0a0a0e4b3b654"
+    },
+    {
+      "id": "supplement_math_s43",
+      "role": "supplement",
+      "dataset": "math_reused5000",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s43_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/supplement_math_s43.json",
+      "manifest_sha256": "aeaee13c413cad964cc70f2088253c124586d9680aa493911946df7f2e45a9d2"
+    },
+    {
+      "id": "supplement_math_s44",
+      "role": "supplement",
+      "dataset": "math_reused5000",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s44_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/supplement_math_s44.json",
+      "manifest_sha256": "f95f70d3b5d6e30dc691128ef0cfbb02d77305b71e7a7e02324e277800d56c73"
+    },
+    {
+      "id": "supplement_math_s45",
+      "role": "supplement",
+      "dataset": "math_reused5000",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s45_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/supplement_math_s45.json",
+      "manifest_sha256": "21206226aadb7bd2f6af31888f08c07ee5c146c1054ce1ab0f9d7699eecf5559"
+    },
+    {
+      "id": "supplement_math_s46",
+      "role": "supplement",
+      "dataset": "math_reused5000",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s46_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/supplement_math_s46.json",
+      "manifest_sha256": "03f453b5879d2eb16a25975c1eced18a7c8cd31ff00d286c358a3e3c36806091"
+    },
+    {
+      "id": "supplement_math_s47",
+      "role": "supplement",
+      "dataset": "math_reused5000",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/supplement_math_s47.json",
+      "manifest_sha256": "bb5b02c8dbcd582ad3afdae6109c60128a89e45939f1053c9813c2c8e619510e"
+    },
+    {
+      "id": "ood_minerva_supplement",
+      "role": "supplement",
+      "dataset": "ood_minerva",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "teacher7_expansion_combined_lr5e5_s44_epoch4",
+        "teacher7_expansion_combined_lr5e5_s45_epoch4",
+        "teacher7_expansion_combined_lr5e5_s46_epoch4",
+        "teacher7_expansion_combined_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_minerva_supplement.json",
+      "manifest_sha256": "32ae4f81d790424b0895913ae6547648155c3651468daff08c2c22ed5f5632eb"
+    },
+    {
+      "id": "ood_olympiad_supplement",
+      "role": "supplement",
+      "dataset": "ood_olympiad",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "teacher7_expansion_combined_lr5e5_s44_epoch4",
+        "teacher7_expansion_combined_lr5e5_s45_epoch4",
+        "teacher7_expansion_combined_lr5e5_s46_epoch4",
+        "teacher7_expansion_combined_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_olympiad_supplement.json",
+      "manifest_sha256": "32ae4f81d790424b0895913ae6547648155c3651468daff08c2c22ed5f5632eb"
+    },
+    {
+      "id": "ood_svamp_supplement",
+      "role": "supplement",
+      "dataset": "ood_svamp",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "teacher7_expansion_combined_lr5e5_s44_epoch4",
+        "teacher7_expansion_combined_lr5e5_s45_epoch4",
+        "teacher7_expansion_combined_lr5e5_s46_epoch4",
+        "teacher7_expansion_combined_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_svamp_supplement.json",
+      "manifest_sha256": "32ae4f81d790424b0895913ae6547648155c3651468daff08c2c22ed5f5632eb"
+    },
+    {
+      "id": "ood_amc23_supplement",
+      "role": "supplement",
+      "dataset": "ood_amc23",
+      "names": [
+        "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "teacher7_expansion_combined_lr5e5_s44_epoch4",
+        "teacher7_expansion_combined_lr5e5_s45_epoch4",
+        "teacher7_expansion_combined_lr5e5_s46_epoch4",
+        "teacher7_expansion_combined_lr5e5_s47_epoch4"
+      ],
+      "manifest": "results/balanced_execution_manifests/ood_amc23_supplement.json",
+      "manifest_sha256": "32ae4f81d790424b0895913ae6547648155c3651468daff08c2c22ed5f5632eb"
+    }
+  ],
+  "dataset_sizes": {
+    "math_reused5000": 5000,
+    "ood_minerva": 272,
+    "ood_olympiad": 266,
+    "ood_svamp": 300,
+    "ood_amc23": 40
+  },
+  "ood_finish_cutoff": 1789052400.0,
+  "global_deadline": 1789053400.0,
+  "reason": "Recent full5000 inference is about47\u201349minutes per averaged model; the original16-model OOD queue onGPU3 plus a separate optional5-model queue risks missing the24h limit. Main-first shared dispatch usesGPU2 early and preserves report time. This schedule is not chosen from OOD scores; none exist.",
+  "observed_recent_full5000": [
+    {
+      "source": "results/evaluation/math_reused5000/avg_teacher7_expansion_combined_1234_s45_epoch4/math_summary.json",
+      "sha256": "2bd6c0bd84b7f6db84ee1d1eaab7d493e7ff8c0f7fdef461494b4965866730e2",
+      "seconds": 2914.7361133098602
+    },
+    {
+      "source": "results/evaluation/math_reused5000/avg_teacher7_expansion_combined_1234_s46_epoch4/math_summary.json",
+      "sha256": "54c2b1252f276ec278d25896d8facb3af12ff8c840d9ae586a455d4929dd5db3",
+      "seconds": 2818.2850551605225
+    },
+    {
+      "source": "results/evaluation/math_reused5000/avg_teacher7_expansion_combined_1234_s47_epoch4/math_summary.json",
+      "sha256": "0bf7bb2453f6bd508586ccbf8a003ec540ebd18347267b674b7ade08081b1658",
+      "seconds": 2810.0588369369507
+    }
+  ],
+  "original_execution_amendment_sha256": "ccf891bca5287cc14a876afd55e776281d18c635f05eda6efcf349f54705bb24",
+  "original_execution_script_sha256": "7d5f267d05a33c83e4030542c1e370ee78d81e7620f0f5e661f866c217c16a25",
+  "resume_state_path": "audits/balanced_ood_execution_before_zombie_read_recovery.json",
+  "resume_state_sha256": "12ace2ff8224f851b947e9980fa02582db260d865db67589ec9b2cd137185553",
+  "retired_cpu_coordinator": {
+    "pid": 3787933,
+    "start": "75435152",
+    "args": [
+      ".venv/bin/python",
+      "research/sft_generalization_20260909/scripts/balanced_ood_execution.py",
+      ""
+    ]
+  },
+  "existing_gpu2_replay_sha256": "5b31d780b6d146bdd3abc015e68e75cbce1ede39659460928d505c62e93f6ddd",
+  "original_utc": "2026-09-10T09:08:31.022082+00:00",
+  "prior_runtime_amendment_sha256": "d06d2397af5ad9ae8300415dfe71b1d632ed3becb54341163de978036b66bd16",
+  "process_reader_contract_sha256": "82468958568ff829de000c43c5f2c5ffcfde99c4562b47e0195ace8980c70a66",
+  "recovery_reason": "v2 reached first actual MATH zombie but its /proc/environ raised PermissionError, collapsing verified exit into missing-process. No OOD tasks launched. v3 reads UID/stat birth/parent/exit for zombies without live env, rejects wrong birth and retains normal live-parent env checks. Both paused CPU parents and original GPU2/native inference remain intact."
+}

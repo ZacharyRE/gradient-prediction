@@ -1,0 +1,41 @@
+{
+  "time": 1789025501.8995597,
+  "passed": true,
+  "n": 256,
+  "matches": [
+    {
+      "alias": "gpu2_native_replay_base",
+      "reference": "base",
+      "n": 128,
+      "alias_sha256": "fa26b018f0a9f0eae824c58eaa4a5aca0c16858407345dce8170f13c1e637b88",
+      "reference_sha256": "fa26b018f0a9f0eae824c58eaa4a5aca0c16858407345dce8170f13c1e637b88",
+      "fields": [
+        "index",
+        "sample_hash",
+        "prediction",
+        "correct",
+        "finish_reason",
+        "generated_tokens"
+      ]
+    },
+    {
+      "alias": "gpu2_native_replay_student",
+      "reference": "sample_all_lr1e5_s43_epoch2",
+      "n": 128,
+      "alias_sha256": "04bad47defe7117675c11b62ebd036d012937b77e7232cf64eafa9081069c9a0",
+      "reference_sha256": "04bad47defe7117675c11b62ebd036d012937b77e7232cf64eafa9081069c9a0",
+      "fields": [
+        "index",
+        "sample_hash",
+        "prediction",
+        "correct",
+        "finish_reason",
+        "generated_tokens"
+      ]
+    }
+  ],
+  "native_plan_sha256": "8ff000b2acc59720dde49c28a14817b456fea7eacf838883bb844712ef440c10",
+  "execution_amendment_sha256": "0f1ea9ce28bc6e31683b4978c484807bd1c1861c6e4fe83e130f398726d50b23",
+  "execution_script_sha256": "e369e117f94ba2d926e49b7421f0da7e52bfda01cb7e1f919aa45471401e128f",
+  "actual_gpu": "2"
+}

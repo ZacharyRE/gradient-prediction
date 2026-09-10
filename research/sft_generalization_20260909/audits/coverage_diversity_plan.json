@@ -1,0 +1,37 @@
+{
+  "time": 1788970124.766921,
+  "status": "Development only; recorded before any outcomes for these controls",
+  "coverage": {
+    "question_pairs": 1576,
+    "interventions": [
+      "Keep old greedy solutions and add verified sampled targets for newly covered questions",
+      "Keep identical questions, replace added targets with raw reference",
+      "Match example count by repeating old greedy targets; question/length composition intentionally differs"
+    ],
+    "limitations": [
+      "Coverage comparison changes training question distribution, not an isolated semantic difficulty variable",
+      "Rawhard and sampled augmentation match questions, initialization, sample exposures and LR schedule but not target length",
+      "Budget repetition uses a deterministic old subset; not a token-budget match"
+    ]
+  },
+  "diversity": {
+    "examples": 6252,
+    "slots_per_question": 4,
+    "interventions": [
+      "Up to four distinct verified sampled solutions, cyclic if fewer",
+      "Repeat chosen single solution on identical question slots"
+    ],
+    "horizon_epochs": 2,
+    "stop_epoch": 1,
+    "horizon_exposures": 12504,
+    "limitations": [
+      "Only multi/repeat pair has exact question-slot and step matching",
+      "Relative to four single-target epochs, final partial batch boundaries differ; do not treat as exact optimizer trajectory match"
+    ]
+  },
+  "learning_rates": [
+    1e-05,
+    5e-05
+  ],
+  "seed": 43
+}

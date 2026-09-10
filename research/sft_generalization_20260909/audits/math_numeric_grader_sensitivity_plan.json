@@ -1,0 +1,20 @@
+{
+  "time": 1789009299.0226285,
+  "dataset": "math_reused5000",
+  "dataset_sha256": "d55465534f6d30f3c62b573c03853b72c26154542f5a1a690c0aacd138f47bb4",
+  "audit_sha256": "b38f154f7b2c8d181b301920b34ddb2704418d5b0719585b9d0601db1b4cf6d6",
+  "sets": {
+    "numeric_false_accept_candidate": [
+      2854
+    ],
+    "numeric_plus_conservative_overlap": [
+      2121,
+      2432,
+      2854,
+      4678
+    ]
+  },
+  "primary_unchanged": true,
+  "reason": "4387scalar numeric golds tested,one acceptsdefinitelywrong2/2004!forgold1/2004!. Dev435numericgolds0falseaccepts. Prospective4999/4996sensitivityexclusions; keepfull5000primary/savedoutputsunaltered. Singleknownwrongperturbationisnotcomprehensivegradercertification.",
+  "scope": "DeclaredbeforeanyfullMATH/OODoutputs. Candidate2854isnotin1500currentvalidation. Inspectactualfinaloutputs forthisrowwithoutoverwritingprimaryscores."
+}

@@ -1,0 +1,205 @@
+{
+  "time": 1788968924.939128,
+  "n_reviewed": 24,
+  "sampling": "8 random easy-student,8 random greedy-wrong student,8 random greedy-wrong teacher; fixed seed; not overall prevalence",
+  "decisions": [
+    {
+      "review_index": 0,
+      "group": "sample_easy",
+      "original_index": 1854,
+      "sample": 2,
+      "decision": "retain",
+      "reason": "Correct divisor formula; five factors requires the fourth power of the smallest prime."
+    },
+    {
+      "review_index": 1,
+      "group": "sample_easy",
+      "original_index": 251,
+      "sample": 4,
+      "decision": "retain",
+      "reason": "Correct product of the four smallest odd primes."
+    },
+    {
+      "review_index": 2,
+      "group": "sample_easy",
+      "original_index": 1693,
+      "sample": 2,
+      "decision": "retain",
+      "reason": "Correct coefficient-of-k cancellation and evaluation."
+    },
+    {
+      "review_index": 3,
+      "group": "sample_easy",
+      "original_index": 1055,
+      "sample": 4,
+      "decision": "retain",
+      "reason": "Correct complement/combinations 1-C(7,3)/C(10,3)."
+    },
+    {
+      "review_index": 4,
+      "group": "sample_easy",
+      "original_index": 1057,
+      "sample": 1,
+      "decision": "retain",
+      "reason": "Correct complete Euclidean remainders; quotient notation interpreted as integer division."
+    },
+    {
+      "review_index": 5,
+      "group": "sample_easy",
+      "original_index": 1369,
+      "sample": 4,
+      "decision": "retain",
+      "reason": "Correct 7*8*8 digit choices."
+    },
+    {
+      "review_index": 6,
+      "group": "sample_easy",
+      "original_index": 1781,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct vector projection coefficient equation."
+    },
+    {
+      "review_index": 7,
+      "group": "sample_easy",
+      "original_index": 1866,
+      "sample": 2,
+      "decision": "retain",
+      "reason": "Correct positive root after squaring; lies in valid domain."
+    },
+    {
+      "review_index": 8,
+      "group": "sample_hard",
+      "original_index": 1194,
+      "sample": 1,
+      "decision": "retain",
+      "reason": "Correct supplied unit conversion and rounding."
+    },
+    {
+      "review_index": 9,
+      "group": "sample_hard",
+      "original_index": 591,
+      "sample": 3,
+      "decision": "exclude_question_from_all_new_pairs",
+      "reason": "Invalid triangle decomposition and invented angles; answer coincides despite incorrect reasoning."
+    },
+    {
+      "review_index": 10,
+      "group": "sample_hard",
+      "original_index": 1441,
+      "sample": 3,
+      "decision": "exclude_question_from_all_new_pairs",
+      "reason": "Confuses x/y substitutions, assumes special case x=y=1/2 without proving general result."
+    },
+    {
+      "review_index": 11,
+      "group": "sample_hard",
+      "original_index": 1461,
+      "sample": 4,
+      "decision": "exclude_question_from_all_new_pairs",
+      "reason": "Fabricates Pascal triangle rows and incorrectly locates 100 in row9/10; final answer happens to be correct."
+    },
+    {
+      "review_index": 12,
+      "group": "sample_hard",
+      "original_index": 913,
+      "sample": 5,
+      "decision": "retain",
+      "reason": "Correct complementary count of incompatible root/mineral pairs."
+    },
+    {
+      "review_index": 13,
+      "group": "sample_hard",
+      "original_index": 1123,
+      "sample": 4,
+      "decision": "retain",
+      "reason": "Correct Vieta square-root transformation; reused b/c names are ambiguous but algebra is valid."
+    },
+    {
+      "review_index": 14,
+      "group": "sample_hard",
+      "original_index": 1051,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct chained 30-60-90 triangles and area sum."
+    },
+    {
+      "review_index": 15,
+      "group": "sample_hard",
+      "original_index": 1290,
+      "sample": 7,
+      "decision": "retain",
+      "reason": "Correct vertex and coefficient calculation."
+    },
+    {
+      "review_index": 16,
+      "group": "teacher_hard",
+      "original_index": 1160,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct ordered die outcomes 8/36."
+    },
+    {
+      "review_index": 17,
+      "group": "teacher_hard",
+      "original_index": 1518,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct maximization of ab at fixed sum and one-variable minimum; globality implicit from convexity/endpoints."
+    },
+    {
+      "review_index": 18,
+      "group": "teacher_hard",
+      "original_index": 1271,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct transformations directly supported by supplied Asymptote functions."
+    },
+    {
+      "review_index": 19,
+      "group": "teacher_hard",
+      "original_index": 1755,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct reroll recurrences and expectation difference."
+    },
+    {
+      "review_index": 20,
+      "group": "teacher_hard",
+      "original_index": 433,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct completing squares and half disk area."
+    },
+    {
+      "review_index": 21,
+      "group": "teacher_hard",
+      "original_index": 208,
+      "sample": 0,
+      "decision": "exclude_question_from_all_new_pairs",
+      "reason": "Wrong center-to-face distance and external-sphere radius; final approximation does not follow from displayed expression."
+    },
+    {
+      "review_index": 22,
+      "group": "teacher_hard",
+      "original_index": 667,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct identification of the consecutive composite block 24..28."
+    },
+    {
+      "review_index": 23,
+      "group": "teacher_hard",
+      "original_index": 1515,
+      "sample": 0,
+      "decision": "retain",
+      "reason": "Correct inclusion-exclusion; intermediate heading wording is loose but calculation is coherent."
+    }
+  ],
+  "excluded_original_indices": [
+    208,
+    591,
+    1441,
+    1461
+  ]
+}

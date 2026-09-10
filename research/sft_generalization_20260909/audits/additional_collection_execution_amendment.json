@@ -1,0 +1,27 @@
+{
+  "time": 1789025971.311231,
+  "scope": "CPU readiness and scheduling only: advance existing supplementary strict scoring once all five predictions for each dataset are complete; advance fixed transition selection once main benchmark analyses are complete. Original nine diagnostic/statistical scripts and all frozen plans unchanged. No scoring thresholds, model selection, GPU placement or deadlines changed.",
+  "original_collector_sha256": "7227a142dd4996c92ec847b447816ce875c3f0790823676fb100af75847896b7",
+  "execution_script_sha256": "af155f2eef67cfc500bff9595a1aac089d02ffc8015a4a8c3b26a2204ffa444e",
+  "primary_plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "supplement_plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "unchanged_dependency_sha256": {
+    "prepare_final_warning_review.py": "b6529ca20203718500e5d77c33c61870e60ada2871821ec3cf124a168e9c7bfb",
+    "prepare_final_transition_review.py": "0610d4b4d05f9fde3e4ad80148d87c797d05e418524e0b0b24b89562c3891664",
+    "analyze_expanded_supplement.py": "84eedb9169e6374749e63e62aa48691ca65a840024b4705c98617bfac3aed926",
+    "prepare_supplement_warning_review.py": "52f933f0157f64c39ba59ce91b307e7ac71447582a3f17a1ca3fad45c9f4c0b8",
+    "analyze_supplement_math_sensitivity.py": "1bbf10f46ae9bc7617ddf3b1acec4ad9138a645ca1ccf3290749a2265b3f9e89",
+    "analyze_final_math_strata.py": "06282b9c6c223775dbf4de1d6aabf2d97d478690a7daa8d7a8c71310785d9ac8",
+    "analyze_math_validation_transfer.py": "a5c0dc9253722de98ba0f007fee027b2303a0440a3fbadd655d137a10ea2518b",
+    "prepare_minerva_unit_review.py": "c7070f1a44f882da80cc41bf2f2aa693ed42fc38979559c3e0f00c528fbbd0fd",
+    "analyze_native_target_controls.py": "31acbb89ec3f588ec535ba18c962d4164ef4271d8afbd99ee40fdac31cf4287d",
+    "score_sensitivity.py": "eeed6d11d7261fae030dafd80d2a294d862dfa1e84196c7efe6b5215bb48f3f8"
+  },
+  "retired_cpu_waiter": {
+    "pid": 3298499,
+    "start": "74105650",
+    "no_children": true,
+    "cuda_empty": true
+  },
+  "previous_status_sha256": "3224b28f7ebab9cce5688309bc3022dc47b6083b46739eb6f7363931a3a46597"
+}

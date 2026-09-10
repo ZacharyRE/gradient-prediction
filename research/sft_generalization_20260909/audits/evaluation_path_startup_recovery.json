@@ -1,0 +1,35 @@
+{
+  "time": 1788993541.6881511,
+  "original_log_sha256": "6976c1939daafd078f91a3479df87c4122da7f6e2641864b558c6cd6ac511b97",
+  "cause": "FileNotFoundError: ninja; helper had not prepended existing .venv/bin to PATH",
+  "original_handoff_returncode": 1,
+  "original_engine_pid": 2508758,
+  "original_engine_dead": true,
+  "quiet_checks": [
+    {
+      "time": 1788993536.4570296,
+      "own_gpu_pids": [],
+      "foreign_gpu_pids": [
+        2506739
+      ],
+      "free_mib": 130272
+    },
+    {
+      "time": 1788993541.688129,
+      "own_gpu_pids": [],
+      "foreign_gpu_pids": [
+        2506739
+      ],
+      "free_mib": 130272
+    }
+  ],
+  "correction": "Prepend existing workspace .venv/bin to PATH; same evaluate.py, manifest, weights and protocol; no dependency installation.",
+  "ninja_path": "/mnt/micron/yixiaore/adapter/.venv/bin/ninja",
+  "ninja_sha256": "696f9628a79d9ce50314cf9556d7cd1a1d1ec52b8fd52828f6f9db1719565b67",
+  "evaluation_script_sha256": "8ad473e78d2dff10db9b3e44fb2a85ffe4c0d20e64ed4d2d9869ea8152ac68ca",
+  "replay_required": true,
+  "preflight_note": "Initial CPUguard check incorrectly looked only in extensionregistry; evaluate.py is already a built-in deadline_guard worker. Corrected before any retry launch.",
+  "resolution": "Recovered unchanged evaluation and passed exact baseline/nonzero replays",
+  "replay_audit": "sampling_restart_protocol_replay.json",
+  "recovered_session_id": 67098
+}

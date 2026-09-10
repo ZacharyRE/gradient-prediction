@@ -1,0 +1,54 @@
+{
+  "time": 1788984085.8289433,
+  "original": "sample_augmented_lr1e5_s43",
+  "serial": "sample_augmented_lr1e5_s43_serial_replay",
+  "same_config": true,
+  "same_source": true,
+  "same_data": true,
+  "exposure_sequence_equal": true,
+  "all_checkpoints_bitwise_equal": true,
+  "comparisons": [
+    {
+      "checkpoint": "initial_adapter",
+      "all_tensors_exactly_equal": true,
+      "original_sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2",
+      "serial_sha256": "09942edcd069ae10ef8882e8fa2f41033ee18422aef733edf8f60129b05da6c2",
+      "different_tensor_count": 0,
+      "differences": []
+    },
+    {
+      "checkpoint": "epoch1",
+      "all_tensors_exactly_equal": true,
+      "original_sha256": "175eacdedde7434fb6f46bf25af2820c7386b00a83fa7347268dff227a9c67a2",
+      "serial_sha256": "175eacdedde7434fb6f46bf25af2820c7386b00a83fa7347268dff227a9c67a2",
+      "different_tensor_count": 0,
+      "differences": []
+    },
+    {
+      "checkpoint": "epoch2",
+      "all_tensors_exactly_equal": true,
+      "original_sha256": "65fbc8c964eaa81f6491768378a797e7ddf5756f90d7b2fd47d42d7fd4244996",
+      "serial_sha256": "65fbc8c964eaa81f6491768378a797e7ddf5756f90d7b2fd47d42d7fd4244996",
+      "different_tensor_count": 0,
+      "differences": []
+    },
+    {
+      "checkpoint": "epoch3",
+      "all_tensors_exactly_equal": true,
+      "original_sha256": "b1b8df8d21bedfd7add951697b5fe7f4bfb9397ebcae7642f51274253f530179",
+      "serial_sha256": "b1b8df8d21bedfd7add951697b5fe7f4bfb9397ebcae7642f51274253f530179",
+      "different_tensor_count": 0,
+      "differences": []
+    },
+    {
+      "checkpoint": "epoch4",
+      "all_tensors_exactly_equal": true,
+      "original_sha256": "77167ac0f8400df8e6ec71bd330d141b4acda1d6ad8e5d448a9449830a3a0ad9",
+      "serial_sha256": "77167ac0f8400df8e6ec71bd330d141b4acda1d6ad8e5d448a9449830a3a0ad9",
+      "different_tensor_count": 0,
+      "differences": []
+    }
+  ],
+  "primary_for_future_coverage_analyses": "sample_augmented_lr1e5_s43_serial_replay",
+  "interpretation": "Dedicated-GPU serial replay is the primary coverage arm. Exact equality, if true, validates the measured checkpoints despite the disclosed handoff incident; it does not certify arbitrary concurrent GPU workloads. If different, retain incident results separately and use serial only."
+}

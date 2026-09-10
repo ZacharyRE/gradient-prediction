@@ -1,0 +1,253 @@
+{
+  "time": 1789043953.5610118,
+  "plan_sha256": "62eb34a0af54b9d14adcfd4ca28b5b1b27916b32d82d2f34990fb3785d80cc39",
+  "analysis_sha256": "f39b937beb2170685db55eeb710cc69cbed9122c68ce1cc779501db0128e003c",
+  "script_sha256": "1bbf10f46ae9bc7617ddf3b1acec4ad9138a645ca1ccf3290749a2265b3f9e89",
+  "results": {
+    "raw": {
+      "exclude_current1500": {
+        "n": 3500,
+        "base_correct": 1976,
+        "per_seed_correct": [
+          1984,
+          1998,
+          1969,
+          1970,
+          1938
+        ],
+        "vs_base": {
+          "delta_pp": -0.12,
+          "question_ci95": [
+            -1.262857142857143,
+            0.9885714285714284
+          ],
+          "seed_question_ci95": [
+            -1.3714285714285714,
+            1.1428571428571428
+          ],
+          "per_seed_delta_pp": [
+            0.2285714285714286,
+            0.6285714285714286,
+            -0.2,
+            -0.17142857142857143,
+            -1.0857142857142856
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "exclude_overlap3": {
+        "n": 4997,
+        "base_correct": 2793,
+        "per_seed_correct": [
+          2816,
+          2825,
+          2801,
+          2795,
+          2791
+        ],
+        "vs_base": {
+          "delta_pp": 0.2521512907744647,
+          "question_ci95": [
+            -0.7124274564738843,
+            1.1967180308184908
+          ],
+          "seed_question_ci95": [
+            -0.7604562737642585,
+            1.2527516509905943
+          ],
+          "per_seed_delta_pp": [
+            0.46027616569941965,
+            0.6403842305383229,
+            0.16009605763458074,
+            0.040024014408645184,
+            -0.040024014408645184
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "exclude_numeric2854": {
+        "n": 4999,
+        "base_correct": 2794,
+        "per_seed_correct": [
+          2817,
+          2826,
+          2803,
+          2796,
+          2792
+        ],
+        "vs_base": {
+          "delta_pp": 0.2560512102420484,
+          "question_ci95": [
+            -0.6961392278455691,
+            1.208241648329666
+          ],
+          "seed_question_ci95": [
+            -0.7601520304060811,
+            1.29625925185037
+          ],
+          "per_seed_delta_pp": [
+            0.4600920184036807,
+            0.640128025605121,
+            0.18003600720144028,
+            0.040008001600320066,
+            -0.040008001600320066
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "exclude_overlap3_and_numeric2854": {
+        "n": 4996,
+        "base_correct": 2793,
+        "per_seed_correct": [
+          2816,
+          2825,
+          2801,
+          2795,
+          2791
+        ],
+        "vs_base": {
+          "delta_pp": 0.2522017614091273,
+          "question_ci95": [
+            -0.7205764611689351,
+            1.208967173738991
+          ],
+          "seed_question_ci95": [
+            -0.77662129703763,
+            1.2770216172938351
+          ],
+          "per_seed_delta_pp": [
+            0.4603682946357086,
+            0.6405124099279423,
+            0.16012810248198558,
+            0.040032025620496396,
+            -0.040032025620496396
+          ],
+          "every_seed_positive": false
+        }
+      }
+    },
+    "strict": {
+      "exclude_current1500": {
+        "n": 3500,
+        "base_correct": 1959,
+        "per_seed_correct": [
+          1977,
+          1994,
+          1968,
+          1965,
+          1934
+        ],
+        "vs_base": {
+          "delta_pp": 0.2457142857142857,
+          "question_ci95": [
+            -0.9142857142857141,
+            1.377142857142857
+          ],
+          "seed_question_ci95": [
+            -1.023,
+            1.5142857142857145
+          ],
+          "per_seed_delta_pp": [
+            0.5142857142857142,
+            1.0,
+            0.2571428571428571,
+            0.17142857142857143,
+            -0.7142857142857143
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "exclude_overlap3": {
+        "n": 4997,
+        "base_correct": 2773,
+        "per_seed_correct": [
+          2807,
+          2821,
+          2798,
+          2790,
+          2786
+        ],
+        "vs_base": {
+          "delta_pp": 0.548328997398439,
+          "question_ci95": [
+            -0.42425455273163903,
+            1.5049029417650588
+          ],
+          "seed_question_ci95": [
+            -0.46427856714028415,
+            1.5569341604962978
+          ],
+          "per_seed_delta_pp": [
+            0.6804082449469682,
+            0.9605763458074845,
+            0.5003001801080648,
+            0.3402041224734841,
+            0.2601560936561937
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "exclude_numeric2854": {
+        "n": 4999,
+        "base_correct": 2774,
+        "per_seed_correct": [
+          2808,
+          2822,
+          2800,
+          2791,
+          2787
+        ],
+        "vs_base": {
+          "delta_pp": 0.552110422084417,
+          "question_ci95": [
+            -0.4200840168033607,
+            1.5043008601720345
+          ],
+          "seed_question_ci95": [
+            -0.4520904180836167,
+            1.5763152630526105
+          ],
+          "per_seed_delta_pp": [
+            0.6801360272054411,
+            0.9601920384076815,
+            0.5201040208041607,
+            0.34006801360272054,
+            0.26005201040208037
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "exclude_overlap3_and_numeric2854": {
+        "n": 4996,
+        "base_correct": 2773,
+        "per_seed_correct": [
+          2807,
+          2821,
+          2798,
+          2790,
+          2786
+        ],
+        "vs_base": {
+          "delta_pp": 0.5484387510008006,
+          "question_ci95": [
+            -0.40842674139311463,
+            1.5092073658927139
+          ],
+          "seed_question_ci95": [
+            -0.4803843074459567,
+            1.577261809447558
+          ],
+          "per_seed_delta_pp": [
+            0.6805444355484388,
+            0.9607686148919135,
+            0.500400320256205,
+            0.3402722177742194,
+            0.2602081665332266
+          ],
+          "every_seed_positive": true
+        }
+      }
+    }
+  },
+  "scope": "Apply unchanged primary predeclared index exclusions to additional fixed unaveraged family. Written after main freeze/generation launch but before any supplemental output; no exclusion selected using supplemental outcomes. Diagnostic sensitivity only; full5000 stays the supplementary primary data endpoint."
+}

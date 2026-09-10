@@ -1,0 +1,43 @@
+{
+  "baseline_correct": 299,
+  "groups": [
+    {
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure2000",
+      "correct": 192,
+      "vs_base": {
+        "delta_pp": -21.4,
+        "ci95_pp": [
+          -25.6,
+          -17.2
+        ],
+        "wrong_to_right": 16,
+        "right_to_wrong": 123,
+        "mcnemar_p": 1.2448774653760878e-21
+      }
+    },
+    {
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure2000",
+      "correct": 174,
+      "vs_base": {
+        "delta_pp": -25.0,
+        "ci95_pp": [
+          -29.2,
+          -20.8
+        ],
+        "wrong_to_right": 11,
+        "right_to_wrong": 136,
+        "mcnemar_p": 1.4404067548348976e-28
+      }
+    }
+  ],
+  "sdpa_vs_eager": {
+    "delta_pp": -3.5999999999999996,
+    "ci95_pp": [
+      -6.800000000000001,
+      -0.4
+    ],
+    "wrong_to_right": 25,
+    "right_to_wrong": 43,
+    "mcnemar_p": 0.038460053348927506
+  }
+}

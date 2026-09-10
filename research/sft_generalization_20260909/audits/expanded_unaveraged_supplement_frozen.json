@@ -1,0 +1,318 @@
+{
+  "time": 1789012974.8902462,
+  "plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "primary_plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "manifest_sha256": "32ae4f81d790424b0895913ae6547648155c3651468daff08c2c22ed5f5632eb",
+  "artifacts": {
+    "teacher7_expansion_combined_lr5e5_s43_epoch4": {
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s43/epoch4",
+      "ready": {
+        "name": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s43/epoch4",
+        "epoch": 4,
+        "train_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "time": 1788999607.2583292
+      },
+      "manifest": {
+        "arguments": {
+          "name": "teacher7_expansion_combined_lr5e5_s43",
+          "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+          "seed": 43,
+          "lr": 5e-05,
+          "batch": 16,
+          "epochs": 8,
+          "stop": 4,
+          "attention": "sdpa",
+          "objective": "token_mean",
+          "modules": "qkvo",
+          "rank": 16,
+          "alpha": 16,
+          "initial_attention": null,
+          "probe_files": [
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+          ],
+          "max_length": 2048,
+          "resume_from": null
+        },
+        "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+        "data_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "script_sha": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+        "examples": 4145,
+        "trainable": 4358144,
+        "start": 1788998606.108291,
+        "gpu": "1",
+        "probe_sha256": {
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl": "b1b1e150404f569f57cca89c8b44c15a5a08aa2bee4f81f5395beb37487ca481",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl": "b2338c5dd0520b71f40de4a818e8c0c3c9cb20101519d0c2e8699d41b62d253a",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl": "2be593a1ed929ad3be968e1385de46efe4744f6a70ef6983ef72b78c9d0d0fb2"
+        }
+      },
+      "manifest_sha256": "721c9678e599c16ba097867a89e3a741c1e044aa6d3aa7b1905b27e72b0e61c9",
+      "files": {
+        "adapter_config.json": "73dd7538d97a6c79398feecca6091e0bd1bee617869d96ae4c4b3691875d64f2",
+        "adapter_model.safetensors": "c128859c56ee0fbe8139463f4c71329eeaab7c9b55849fa0d1e56ed581e586cc",
+        "ready.json": "be54eeaa021cbba3fd85dd48fe4b2ec072b9b7affedbafd9156f1103ce5e659b",
+        "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+        "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      }
+    },
+    "teacher7_expansion_combined_lr5e5_s44_epoch4": {
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch4",
+      "ready": {
+        "name": "teacher7_expansion_combined_lr5e5_s44_epoch4",
+        "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch4",
+        "epoch": 4,
+        "train_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "time": 1789009763.2726772
+      },
+      "manifest": {
+        "arguments": {
+          "name": "teacher7_expansion_combined_lr5e5_s44",
+          "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+          "seed": 44,
+          "lr": 5e-05,
+          "batch": 16,
+          "epochs": 8,
+          "stop": 4,
+          "attention": "sdpa",
+          "objective": "token_mean",
+          "modules": "qkvo",
+          "rank": 16,
+          "alpha": 16,
+          "initial_attention": null,
+          "probe_files": [
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+          ],
+          "max_length": 2048,
+          "resume_from": null
+        },
+        "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+        "data_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "script_sha": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+        "examples": 4145,
+        "trainable": 4358144,
+        "start": 1789008753.2698917,
+        "gpu": "1",
+        "probe_sha256": {
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl": "b1b1e150404f569f57cca89c8b44c15a5a08aa2bee4f81f5395beb37487ca481",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl": "b2338c5dd0520b71f40de4a818e8c0c3c9cb20101519d0c2e8699d41b62d253a",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl": "2be593a1ed929ad3be968e1385de46efe4744f6a70ef6983ef72b78c9d0d0fb2"
+        }
+      },
+      "manifest_sha256": "004009b9d42a11b1f8d0a413029e8e5e02d81e6e2cd7dc1e3313880a1f76d935",
+      "files": {
+        "adapter_config.json": "dbd63bdbca4a6cd6b1d3044808f23d9d7489dfcef08baba58f0bab48643dc14a",
+        "adapter_model.safetensors": "132c9dbf28973749b86d923d951bf5f46665e2da6038c6b5476409aedb8d0cbf",
+        "ready.json": "d627187f3b0f3de8f9012bc3930827910fd78b8c72e7ca37888af40c78eaeed8",
+        "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+        "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      }
+    },
+    "teacher7_expansion_combined_lr5e5_s45_epoch4": {
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch4",
+      "ready": {
+        "name": "teacher7_expansion_combined_lr5e5_s45_epoch4",
+        "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch4",
+        "epoch": 4,
+        "train_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "time": 1789010779.8605218
+      },
+      "manifest": {
+        "arguments": {
+          "name": "teacher7_expansion_combined_lr5e5_s45",
+          "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+          "seed": 45,
+          "lr": 5e-05,
+          "batch": 16,
+          "epochs": 8,
+          "stop": 4,
+          "attention": "sdpa",
+          "objective": "token_mean",
+          "modules": "qkvo",
+          "rank": 16,
+          "alpha": 16,
+          "initial_attention": null,
+          "probe_files": [
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+          ],
+          "max_length": 2048,
+          "resume_from": null
+        },
+        "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+        "data_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "script_sha": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+        "examples": 4145,
+        "trainable": 4358144,
+        "start": 1789009777.4524121,
+        "gpu": "1",
+        "probe_sha256": {
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl": "b1b1e150404f569f57cca89c8b44c15a5a08aa2bee4f81f5395beb37487ca481",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl": "b2338c5dd0520b71f40de4a818e8c0c3c9cb20101519d0c2e8699d41b62d253a",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl": "2be593a1ed929ad3be968e1385de46efe4744f6a70ef6983ef72b78c9d0d0fb2"
+        }
+      },
+      "manifest_sha256": "7aafaf7006dcf0e38629a6dbd60776a860fbf770f18e3fc5ae417585034ace0a",
+      "files": {
+        "adapter_config.json": "77841e7697a69c7cdef99e503294e64f51603f7ff76dad6b1c126ed2c2849a89",
+        "adapter_model.safetensors": "98bbec6d6cdd60ab044f32d71bb18d87fc560fdc076acc5349d4e13deae3cf61",
+        "ready.json": "9b81475563bdc12f8cbcad75785f013616e73000407471af40be2a8a598f1262",
+        "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+        "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      }
+    },
+    "teacher7_expansion_combined_lr5e5_s46_epoch4": {
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch4",
+      "ready": {
+        "name": "teacher7_expansion_combined_lr5e5_s46_epoch4",
+        "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch4",
+        "epoch": 4,
+        "train_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "time": 1789011800.6880755
+      },
+      "manifest": {
+        "arguments": {
+          "name": "teacher7_expansion_combined_lr5e5_s46",
+          "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+          "seed": 46,
+          "lr": 5e-05,
+          "batch": 16,
+          "epochs": 8,
+          "stop": 4,
+          "attention": "sdpa",
+          "objective": "token_mean",
+          "modules": "qkvo",
+          "rank": 16,
+          "alpha": 16,
+          "initial_attention": null,
+          "probe_files": [
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+          ],
+          "max_length": 2048,
+          "resume_from": null
+        },
+        "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+        "data_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "script_sha": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+        "examples": 4145,
+        "trainable": 4358144,
+        "start": 1789010793.922586,
+        "gpu": "1",
+        "probe_sha256": {
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl": "b1b1e150404f569f57cca89c8b44c15a5a08aa2bee4f81f5395beb37487ca481",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl": "b2338c5dd0520b71f40de4a818e8c0c3c9cb20101519d0c2e8699d41b62d253a",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl": "2be593a1ed929ad3be968e1385de46efe4744f6a70ef6983ef72b78c9d0d0fb2"
+        }
+      },
+      "manifest_sha256": "59e0c45c8325d8fdc6f65e1ddc4a0ec1ad0f2d3e7d3c8d934d3d8c1b0910759a",
+      "files": {
+        "adapter_config.json": "30d7f4ad4f5a85d77dc9826e3530cbcb07692608aceacafa688c8654fa23b481",
+        "adapter_model.safetensors": "c71e366d63cd6323fb6097b5b571fcd228e718f5a3e7ab87775295560196625b",
+        "ready.json": "24e38522f596f2f0c8f3aeacf9ee434c35160c20da4339377a2200112c20a19b",
+        "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+        "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      }
+    },
+    "teacher7_expansion_combined_lr5e5_s47_epoch4": {
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch4",
+      "ready": {
+        "name": "teacher7_expansion_combined_lr5e5_s47_epoch4",
+        "adapter": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch4",
+        "epoch": 4,
+        "train_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "time": 1789012852.0707667
+      },
+      "manifest": {
+        "arguments": {
+          "name": "teacher7_expansion_combined_lr5e5_s47",
+          "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+          "seed": 47,
+          "lr": 5e-05,
+          "batch": 16,
+          "epochs": 8,
+          "stop": 4,
+          "attention": "sdpa",
+          "objective": "token_mean",
+          "modules": "qkvo",
+          "rank": 16,
+          "alpha": 16,
+          "initial_attention": null,
+          "probe_files": [
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+            "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+          ],
+          "max_length": 2048,
+          "resume_from": null
+        },
+        "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+        "data_sha": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+        "script_sha": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+        "examples": 4145,
+        "trainable": 4358144,
+        "start": 1789011814.7249684,
+        "gpu": "1",
+        "probe_sha256": {
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl": "b1b1e150404f569f57cca89c8b44c15a5a08aa2bee4f81f5395beb37487ca481",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl": "b2338c5dd0520b71f40de4a818e8c0c3c9cb20101519d0c2e8699d41b62d253a",
+          "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl": "2be593a1ed929ad3be968e1385de46efe4744f6a70ef6983ef72b78c9d0d0fb2"
+        }
+      },
+      "manifest_sha256": "931670b2130817e96b6e3a954eeeb828accfae3d732338c287cb04da40023f1e",
+      "files": {
+        "adapter_config.json": "9725492e31da1366c08752e49a20f8b8de1a1fce89b895c9621927480ccebf34",
+        "adapter_model.safetensors": "bf3740d32c602934bbc224ee64c3ced51a9075c83f6f11efddd616f5016e9a80",
+        "ready.json": "0d2bb24bc27a4e161f5cdaf67f12388f3edd4dd0efbf8f8ddb5ca90be4587fc4",
+        "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+        "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      }
+    }
+  },
+  "recipe_signature": {
+    "arguments": {
+      "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+      "lr": 5e-05,
+      "batch": 16,
+      "epochs": 8,
+      "stop": 4,
+      "attention": "sdpa",
+      "objective": "token_mean",
+      "modules": "qkvo",
+      "rank": 16,
+      "alpha": 16,
+      "initial_attention": null,
+      "probe_files": [
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_raw.jsonl",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_sample.jsonl",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/probe_teacher.jsonl"
+      ],
+      "max_length": 2048,
+      "resume_from": null
+    },
+    "data_sha256": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+    "examples": 4145,
+    "model": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "training_code": {
+      "kind": "standard_fresh_training_with_audited_optional_resume_extension",
+      "source_versions": [
+        "0f50dff505394083520f34e660b4f516c3941e9be5298887f96b0e03a0c7c592",
+        "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c"
+      ],
+      "replay_sha256": "aa36a248786559bb58cf22c8fbd26ab13b4ea1dc92946f29761a27407f8f01a3"
+    },
+    "common_source_sha256": "956ceb32b5b3702cccefecdccbf2aaf4b1d60e7f063e06b63bafd89c34cb6375",
+    "endpoint": 4
+  },
+  "pipeline_sha256": "6acf13125975345632c699adac80caca16e46f6852c6f85d05b41bb7762ab68c",
+  "analysis_sha256": "84eedb9169e6374749e63e62aa48691ca65a840024b4705c98617bfac3aed926",
+  "analysis_integration_sha256": "c339854b54631044375ea42bb9bc17939fe6f7f19e58cdd7049e22dbfd4ee490",
+  "primary_campaign_unchanged": true,
+  "scope": "Additional unaveraged five-seed family; original16-model main campaign and criteria unchanged."
+}

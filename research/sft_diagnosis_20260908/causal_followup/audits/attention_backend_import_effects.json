@@ -1,0 +1,30 @@
+[
+  {
+    "stage": "torch",
+    "cudnn_sdp": true,
+    "flash": true,
+    "efficient": true,
+    "math": true
+  },
+  {
+    "stage": "transformers",
+    "cudnn_sdp": true,
+    "flash": true,
+    "efficient": true,
+    "math": true
+  },
+  {
+    "stage": "peft",
+    "cudnn_sdp": true,
+    "flash": true,
+    "efficient": true,
+    "math": true
+  },
+  {
+    "stage": "vllm",
+    "cudnn_sdp": false,
+    "flash": true,
+    "efficient": true,
+    "math": true
+  }
+]

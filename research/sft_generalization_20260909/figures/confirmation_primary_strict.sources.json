@@ -1,0 +1,17 @@
+{
+  "plan": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/confirmation_plan.json",
+  "plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "analysis": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/confirmation_analysis_strict.json",
+  "analysis_sha256": "140c56ddb85a95d0f516c4f6a53978d65deebf001ae0579630c056ebdbeb2a3a",
+  "script_sha256": "cf33e3cc4d14308b15fa91ff0e7e2433b2cfe6261af9651214fa8a4aa297e703",
+  "primary_family": "teacher7_avg1234",
+  "scoring": "strict_numeric_repaired",
+  "criteria": {
+    "primary_every_seed_above_base": true,
+    "primary_mean_ci_above_zero": true,
+    "primary_seed_question_ci_above_zero": true,
+    "ood_every_seed_above_base": true,
+    "ood_mean_ci_above_zero": true,
+    "ood_seed_question_ci_above_zero": true
+  }
+}

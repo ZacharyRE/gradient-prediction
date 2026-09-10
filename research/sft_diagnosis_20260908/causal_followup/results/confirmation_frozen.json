@@ -1,0 +1,184 @@
+{
+  "time_unix": 1788944650.9742837,
+  "status": "Frozen before any new confirmation generation",
+  "primary_family": "self_eager",
+  "primary_checkpoint_exposure": 1175,
+  "seeds": [
+    43,
+    44,
+    45
+  ],
+  "data_sha256": {
+    "raw": "5a9ab5fe1e90968d14898815ca95a347bb04f2709f56efcf370af269e0f648f8",
+    "self": "26ac14fb792c112934a2e39c9f2b743145b7b4be82c1c8f991cfc056914050f3"
+  },
+  "training_script_sha256": "949d123a2c29692b4290582f3cc2883badce7ca0da6df958af347778e71df974",
+  "evaluation_script_sha256": "f85825feaffe02dbfe9f0a668e79511197f48a604d1d625e09232ecf3efaeb0f",
+  "analysis_script_sha256": "e3963762ddd9ea5881bf22a45b8230a7164944d7037f050b28c132d4fcb40bc8",
+  "confirmation_data_sha256": "c316a44e628973f8cfd098a4bd2d2f23baa670efd3a383153eb37606d3a34435",
+  "development_analysis_sha256": "d2c0afd28cb3801d599bfca39c199e61cd095f1170ab5b3e549a8ca6fe928307",
+  "models": [
+    {
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "family": "raw_sdpa_math",
+      "seed": 43,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43/exposure1175",
+      "adapter_sha256": "5ce40b9d7ffe5728eaf50a5d27faea2507a08366147b5443bd02a6cfcecaa5c8",
+      "adapter_config_sha256": "bbd0251e9a341297453563cf434b226f652ad0232add269b8f9e7b6be485adf8",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "development_summary_sha256": "5c780b0985b75036d4f92f7cff614958cea95df2f369bdcbed62199a45e9c4d3"
+    },
+    {
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "family": "raw_sdpa_math",
+      "seed": 44,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s44/exposure1175",
+      "adapter_sha256": "224359b55171363e0ea5e2332641ada18a96711d52776f1b28b61c32e74bf43e",
+      "adapter_config_sha256": "3901bf417bf54dbc69c5b1332849bfb6ffda278148d948be502ab94ab31ce974",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "development_summary_sha256": "fc0370a64d774d5d3cf7a48f9efe4cc5004beba46a05daca40775fa8996b9eab"
+    },
+    {
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "family": "raw_sdpa_math",
+      "seed": 45,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s45/exposure1175",
+      "adapter_sha256": "5ffab7b94b10976c8fb2a5b0cb343275cee6a8ca5a71f6411281f64d98b9fc61",
+      "adapter_config_sha256": "5875993dd86392881db685b4abc629f9d9826e2c604b4507a78c23ef0477d887",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "development_summary_sha256": "f40f919af7fc0f5b48dd2090e491a7a79ef8c0453d2568f4af12e3768749116e"
+    },
+    {
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "family": "self_sdpa_math",
+      "seed": 43,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s43/exposure1175",
+      "adapter_sha256": "784464f0ceb5e10b0de88a82a40f224c378c0b734080f6e4ffa3507db6271954",
+      "adapter_config_sha256": "5875993dd86392881db685b4abc629f9d9826e2c604b4507a78c23ef0477d887",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "development_summary_sha256": "bc77acaeddd194e1759916d50910c725b929f3ea0d85db18a10c0b4baa22dcfa"
+    },
+    {
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "family": "self_sdpa_math",
+      "seed": 44,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s44/exposure1175",
+      "adapter_sha256": "bd5473e40678bd7b7230d0d8c550481f02884842c7f3cc72b1a2318f08ac16c0",
+      "adapter_config_sha256": "f5a45852719318aa63cfb9911760bb096091d601b87fda02d86bebc2a20cb79e",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "development_summary_sha256": "40addd17335090ccad4c80450abaedea8c7a29eba483523ef89119caaece024a"
+    },
+    {
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "family": "self_sdpa_math",
+      "seed": 45,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s45/exposure1175",
+      "adapter_sha256": "539729d702c40bb894c812a30ea92198e9605a7f91eddb9b04a301b101f54cb3",
+      "adapter_config_sha256": "f5a45852719318aa63cfb9911760bb096091d601b87fda02d86bebc2a20cb79e",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "development_summary_sha256": "07d129014d2f7e8c28a99e96d37ef3ed52be42deaa2c112367aa485fdb703925"
+    },
+    {
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "family": "raw_eager",
+      "seed": 43,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s43/exposure1175",
+      "adapter_sha256": "992a7b78108b2c41903610c3b2640216463fb756d2a5527b947c2ace0dc57ec0",
+      "adapter_config_sha256": "dbd63bdbca4a6cd6b1d3044808f23d9d7489dfcef08baba58f0bab48643dc14a",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "development_summary_sha256": "d8533dedc416adad5f50298547a69b0ce811ac6b8eb24304a424ba146c3e8871"
+    },
+    {
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "family": "raw_eager",
+      "seed": 44,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s44/exposure1175",
+      "adapter_sha256": "4f4a91184beef88157677d919bb1b0220f7e5d4d3b87a8a211418036ff9935ef",
+      "adapter_config_sha256": "aa11f6c9c39c819044fcadc77417b901b35eee1afa5eb1d98fda2c11553cd807",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "development_summary_sha256": "f224dc11fdaed60673aa9e76f3c262d0cb780ca3fec91753723bd91f9b3476f9"
+    },
+    {
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "family": "raw_eager",
+      "seed": 45,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s45/exposure1175",
+      "adapter_sha256": "07a6da62fbb3eb35772754587e38c21a8641b8253bcbebbe745d377054dfa3fd",
+      "adapter_config_sha256": "24e1cc2ee1f8e7fced4f719f486f1e9a8e8239ec5aea4215b9e8019bf0016c3d",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "development_summary_sha256": "df4cb094ebb33146885fd81c4f5e8283c3b04e909c5eb5b8651341da09517f42"
+    },
+    {
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "family": "self_eager",
+      "seed": 43,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s43/exposure1175",
+      "adapter_sha256": "0773df32e0f03f6b9fb21b4906b5e0c9d9cd6ea33f9908a08c04e6b3ec9d5a0a",
+      "adapter_config_sha256": "794b07ce39f4b9f29e71c4a272969140cdd72e032ed45eefabbfb3a37c89d8c0",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "development_summary_sha256": "ef8e09e4a60d8ff49441fa0118edbb45966c599b2a2ae19f33b7e2acb7491aeb"
+    },
+    {
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "family": "self_eager",
+      "seed": 44,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s44/exposure1175",
+      "adapter_sha256": "dff8c7a737e023f508f16a4e9b358d34fdee865221a7e3a13c3c1d2b8f87d483",
+      "adapter_config_sha256": "082c6ad4b07f0f8cd6d6799c3ae8b6146502899360125021fcfb1812962b06b1",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "development_summary_sha256": "1a8865cd7136dcd21d950fafced72344c40cb4ad9adcfe812c7bc716dec465ab"
+    },
+    {
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "family": "self_eager",
+      "seed": 45,
+      "adapter": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s45/exposure1175",
+      "adapter_sha256": "324f6e9a0a05b12933ad3289f9ba6b331ff8b031efb9d9532f457cbdfa49ff2b",
+      "adapter_config_sha256": "aa11f6c9c39c819044fcadc77417b901b35eee1afa5eb1d98fda2c11553cd807",
+      "development_summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "development_summary_sha256": "60a1cc005017d7266978425a661d5d92383d8c0b2d878abf220ef089eaea8939"
+    }
+  ],
+  "primary_comparisons": [
+    "self_eager vs matched raw with all three seed directions positive",
+    "self_eager vs original eager raw with all three seed directions positive",
+    "self_eager vs base: paired CI excludes more than2pp regression"
+  ],
+  "secondary_comparisons": [
+    "target effect under the other attention implementation",
+    "self_sdpa_math vs self_eager",
+    "four-cell attention-by-target interaction"
+  ],
+  "selection_rationale": "One epoch was the original matched-target primary checkpoint. Prefer original eager if its three-seed mean is within1pp of SDPA math, selecting a target-only change; otherwise use math. Rule saved before last eager seed dev result and before any fresh output. Both attention paths and all three seeds are confirmed; no seed chosen as winner.",
+  "limits": "Preserving base accuracy is not evidence of improved mathematical ability. No tuning of targets, LR, checkpoints or seeds on these1500 questions.",
+  "base_identity": {
+    "path": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "files": {
+      "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "evaluation_engine": {
+    "dtype": "bfloat16",
+    "seed": 42,
+    "max_model_len": 4096,
+    "max_num_seqs": 512,
+    "gpu_memory_utilization": 0.22,
+    "enable_prefix_caching": false,
+    "async_scheduling": false,
+    "enforce_eager": true,
+    "attention_config": {
+      "backend": "TRITON_ATTN"
+    },
+    "enable_lora": true,
+    "max_loras": 1,
+    "max_lora_rank": 64,
+    "lora_dtype": "bfloat16"
+  },
+  "scoring_source_sha256": "eff61446e712a4dde1cbe0310d7a880fa4ca1de27ea1270ae6242f5715cf6077"
+}

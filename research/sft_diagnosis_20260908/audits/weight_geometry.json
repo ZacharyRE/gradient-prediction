@@ -1,0 +1,542 @@
+{
+  "dense_all_lr1e-6_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.00022731527860742062,
+        "delta_norm": 0.01695384830236435,
+        "rank16_energy_fraction": 0.7608544230461121,
+        "rank64_energy_fraction": 0.920145571231842,
+        "rank90_energy": 48,
+        "bf16_zero_update_fraction": 0.9030062556266785,
+        "bf16_delta_relative_error": 0.9412485957145691,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0003199421043973416,
+        "delta_norm": 0.01463207695633173,
+        "rank16_energy_fraction": 0.7966333031654358,
+        "rank64_energy_fraction": 0.8929863572120667,
+        "rank90_energy": 73,
+        "bf16_zero_update_fraction": 0.9035924077033997,
+        "bf16_delta_relative_error": 0.9349880218505859,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0002304394292877987,
+        "delta_norm": 0.009266830049455166,
+        "rank16_energy_fraction": 0.5850899815559387,
+        "rank64_energy_fraction": 0.76318359375,
+        "rank90_energy": 205,
+        "bf16_zero_update_fraction": 0.9164267778396606,
+        "bf16_delta_relative_error": 0.9360299110412598,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0004438677860889584,
+        "delta_norm": 0.03310497850179672,
+        "rank16_energy_fraction": 0.8188049793243408,
+        "rank64_energy_fraction": 0.9417178630828857,
+        "rank90_energy": 34,
+        "bf16_zero_update_fraction": 0.8380038142204285,
+        "bf16_delta_relative_error": 0.8843525648117065,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.00043245666893199086,
+        "delta_norm": 0.01977776363492012,
+        "rank16_energy_fraction": 0.7120047211647034,
+        "rank64_energy_fraction": 0.8490843772888184,
+        "rank90_energy": 124,
+        "bf16_zero_update_fraction": 0.8752983808517456,
+        "bf16_delta_relative_error": 0.9059372544288635,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0003806619788520038,
+        "delta_norm": 0.015307839028537273,
+        "rank16_energy_fraction": 0.5911960601806641,
+        "rank64_energy_fraction": 0.7646942138671875,
+        "rank90_energy": 208,
+        "bf16_zero_update_fraction": 0.8683043718338013,
+        "bf16_delta_relative_error": 0.8925858736038208,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "full_lr1e-5_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0014609915670007467,
+        "delta_norm": 0.10896509140729904,
+        "rank16_energy_fraction": 0.6982633471488953,
+        "rank64_energy_fraction": 0.8836929202079773,
+        "rank90_energy": 78,
+        "bf16_zero_update_fraction": 0.5736355185508728,
+        "bf16_delta_relative_error": 0.6678748726844788,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.001888846862129867,
+        "delta_norm": 0.08638361096382141,
+        "rank16_energy_fraction": 0.5234631299972534,
+        "rank64_energy_fraction": 0.7216720581054688,
+        "rank90_energy": 247,
+        "bf16_zero_update_fraction": 0.5635731816291809,
+        "bf16_delta_relative_error": 0.6286881566047668,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0018979617161676288,
+        "delta_norm": 0.07632412761449814,
+        "rank16_energy_fraction": 0.4084824323654175,
+        "rank64_energy_fraction": 0.6585177183151245,
+        "rank90_energy": 278,
+        "bf16_zero_update_fraction": 0.5239312648773193,
+        "bf16_delta_relative_error": 0.5814590454101562,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.002232244936749339,
+        "delta_norm": 0.166487455368042,
+        "rank16_energy_fraction": 0.7182627320289612,
+        "rank64_energy_fraction": 0.88083416223526,
+        "rank90_energy": 81,
+        "bf16_zero_update_fraction": 0.48048529028892517,
+        "bf16_delta_relative_error": 0.5423529148101807,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0026655513793230057,
+        "delta_norm": 0.12190503627061844,
+        "rank16_energy_fraction": 0.4169715940952301,
+        "rank64_energy_fraction": 0.6501013040542603,
+        "rank90_energy": 293,
+        "bf16_zero_update_fraction": 0.47306570410728455,
+        "bf16_delta_relative_error": 0.5126643776893616,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0028581134974956512,
+        "delta_norm": 0.11493541300296783,
+        "rank16_energy_fraction": 0.35919463634490967,
+        "rank64_energy_fraction": 0.6138567924499512,
+        "rank90_energy": 316,
+        "bf16_zero_update_fraction": 0.41807639598846436,
+        "bf16_delta_relative_error": 0.4597441256046295,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "full_lr1e-6_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0002227288205176592,
+        "delta_norm": 0.016611777245998383,
+        "rank16_energy_fraction": 0.7606514096260071,
+        "rank64_energy_fraction": 0.9196361303329468,
+        "rank90_energy": 48,
+        "bf16_zero_update_fraction": 0.9055731296539307,
+        "bf16_delta_relative_error": 0.9430541396141052,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.00032005872344598174,
+        "delta_norm": 0.014637410640716553,
+        "rank16_energy_fraction": 0.7964470982551575,
+        "rank64_energy_fraction": 0.8928405046463013,
+        "rank90_energy": 73,
+        "bf16_zero_update_fraction": 0.9036729335784912,
+        "bf16_delta_relative_error": 0.9354478716850281,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0002293595898663625,
+        "delta_norm": 0.00922340527176857,
+        "rank16_energy_fraction": 0.5825198292732239,
+        "rank64_energy_fraction": 0.7620859742164612,
+        "rank90_energy": 206,
+        "bf16_zero_update_fraction": 0.91660475730896,
+        "bf16_delta_relative_error": 0.936504602432251,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0004435167065821588,
+        "delta_norm": 0.033078793436288834,
+        "rank16_energy_fraction": 0.8237532377243042,
+        "rank64_energy_fraction": 0.9439526796340942,
+        "rank90_energy": 34,
+        "bf16_zero_update_fraction": 0.840190052986145,
+        "bf16_delta_relative_error": 0.8873310089111328,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0004317716520745307,
+        "delta_norm": 0.019746435806155205,
+        "rank16_energy_fraction": 0.7149934768676758,
+        "rank64_energy_fraction": 0.8510840535163879,
+        "rank90_energy": 121,
+        "bf16_zero_update_fraction": 0.8751856684684753,
+        "bf16_delta_relative_error": 0.9064561724662781,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.00037526062806136906,
+        "delta_norm": 0.015090631321072578,
+        "rank16_energy_fraction": 0.5898860096931458,
+        "rank64_energy_fraction": 0.7641861438751221,
+        "rank90_energy": 208,
+        "bf16_zero_update_fraction": 0.8697997331619263,
+        "bf16_delta_relative_error": 0.8944504261016846,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "lora_all16_lr1e-4_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0013026224914938211,
+        "delta_norm": 0.09715345501899719,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 3,
+        "bf16_zero_update_fraction": 0.6562072038650513,
+        "bf16_delta_relative_error": 0.6241145133972168,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.00145792739931494,
+        "delta_norm": 0.06667614728212357,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 8,
+        "bf16_zero_update_fraction": 0.6631461381912231,
+        "bf16_delta_relative_error": 0.6654251217842102,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.001271830522455275,
+        "delta_norm": 0.051145054399967194,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 12,
+        "bf16_zero_update_fraction": 0.6502219438552856,
+        "bf16_delta_relative_error": 0.6748816967010498,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.003863723250105977,
+        "delta_norm": 0.28816795349121094,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 1,
+        "bf16_zero_update_fraction": 0.4518470764160156,
+        "bf16_delta_relative_error": 0.32620662450790405,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.001904278644360602,
+        "delta_norm": 0.08708935976028442,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 9,
+        "bf16_zero_update_fraction": 0.5916510820388794,
+        "bf16_delta_relative_error": 0.5969470739364624,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0019499673508107662,
+        "delta_norm": 0.07841546833515167,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 11,
+        "bf16_zero_update_fraction": 0.5405213832855225,
+        "bf16_delta_relative_error": 0.56004798412323,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "lora_all16_lr1e-5_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0001665365562075749,
+        "delta_norm": 0.012420791201293468,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 5,
+        "bf16_zero_update_fraction": 0.9373419284820557,
+        "bf16_delta_relative_error": 0.9355129599571228,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0002481460105627775,
+        "delta_norm": 0.01134859025478363,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 6,
+        "bf16_zero_update_fraction": 0.9311836957931519,
+        "bf16_delta_relative_error": 0.9334096908569336,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.00014698543236590922,
+        "delta_norm": 0.005910832900553942,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 11,
+        "bf16_zero_update_fraction": 0.9485469460487366,
+        "bf16_delta_relative_error": 0.9524143934249878,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.00038564784335903823,
+        "delta_norm": 0.028762761503458023,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 3,
+        "bf16_zero_update_fraction": 0.8700069785118103,
+        "bf16_delta_relative_error": 0.8593903183937073,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0004459487390704453,
+        "delta_norm": 0.02039480395615101,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 6,
+        "bf16_zero_update_fraction": 0.881107747554779,
+        "bf16_delta_relative_error": 0.8752920627593994,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0002810840669553727,
+        "delta_norm": 0.011303439736366272,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 9,
+        "bf16_zero_update_fraction": 0.9071133732795715,
+        "bf16_delta_relative_error": 0.9112202525138855,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      }
+    }
+  },
+  "lora_all64_lr1e-4_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0007157754735089839,
+        "delta_norm": 0.05338466167449951,
+        "rank16_energy_fraction": 0.9512704014778137,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 8,
+        "bf16_zero_update_fraction": 0.7768504023551941,
+        "bf16_delta_relative_error": 0.7642626166343689,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.000777094392105937,
+        "delta_norm": 0.035539258271455765,
+        "rank16_energy_fraction": 0.8869528770446777,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 19,
+        "bf16_zero_update_fraction": 0.7988128662109375,
+        "bf16_delta_relative_error": 0.8030179142951965,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0006437654956243932,
+        "delta_norm": 0.025888213887810707,
+        "rank16_energy_fraction": 0.7731033563613892,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 31,
+        "bf16_zero_update_fraction": 0.7922863364219666,
+        "bf16_delta_relative_error": 0.8078266382217407,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.00312350713647902,
+        "delta_norm": 0.23296043276786804,
+        "rank16_energy_fraction": 0.9954853653907776,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 1,
+        "bf16_zero_update_fraction": 0.48874154686927795,
+        "bf16_delta_relative_error": 0.3906150460243225,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.001025883131660521,
+        "delta_norm": 0.04691724106669426,
+        "rank16_energy_fraction": 0.8622183799743652,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 23,
+        "bf16_zero_update_fraction": 0.7443817853927612,
+        "bf16_delta_relative_error": 0.7497624158859253,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0009910429362207651,
+        "delta_norm": 0.039853535592556,
+        "rank16_energy_fraction": 0.7860881090164185,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 30,
+        "bf16_zero_update_fraction": 0.7085766196250916,
+        "bf16_delta_relative_error": 0.724212110042572,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "lora_all64_lr1e-5_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 8.318020263686776e-05,
+        "delta_norm": 0.006203826516866684,
+        "rank16_energy_fraction": 0.9056426882743835,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 16,
+        "bf16_zero_update_fraction": 0.9676708579063416,
+        "bf16_delta_relative_error": 0.9670088291168213,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.00012876807886641473,
+        "delta_norm": 0.0058890171349048615,
+        "rank16_energy_fraction": 0.9333580732345581,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 11,
+        "bf16_zero_update_fraction": 0.9640286564826965,
+        "bf16_delta_relative_error": 0.9650030136108398,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 7.204117719084024e-05,
+        "delta_norm": 0.0028970446437597275,
+        "rank16_energy_fraction": 0.8069133162498474,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 29,
+        "bf16_zero_update_fraction": 0.9740893244743347,
+        "bf16_delta_relative_error": 0.9753391146659851,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.00019164849072694778,
+        "delta_norm": 0.014293713495135307,
+        "rank16_energy_fraction": 0.9412432909011841,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 10,
+        "bf16_zero_update_fraction": 0.9312625527381897,
+        "bf16_delta_relative_error": 0.9287825226783752,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.00023883632093202323,
+        "delta_norm": 0.010922824963927269,
+        "rank16_energy_fraction": 0.9455220699310303,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 9,
+        "bf16_zero_update_fraction": 0.9348034262657166,
+        "bf16_delta_relative_error": 0.9321696758270264,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.00013795158884022385,
+        "delta_norm": 0.005547548644244671,
+        "rank16_energy_fraction": 0.8654100894927979,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 22,
+        "bf16_zero_update_fraction": 0.9528630375862122,
+        "bf16_delta_relative_error": 0.951982855796814,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy."
+      }
+    }
+  },
+  "lora_qkvo16_lr1e-5_s43": {
+    "25": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.00016872762353159487,
+        "delta_norm": 0.012584207579493523,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 5,
+        "bf16_zero_update_fraction": 0.9363399147987366,
+        "bf16_delta_relative_error": 0.9348157644271851,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0002660313912201673,
+        "delta_norm": 0.012166551314294338,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 5,
+        "bf16_zero_update_fraction": 0.9265098571777344,
+        "bf16_delta_relative_error": 0.929628849029541,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0001431419514119625,
+        "delta_norm": 0.005756272468715906,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 11,
+        "bf16_zero_update_fraction": 0.94892418384552,
+        "bf16_delta_relative_error": 0.9517417550086975,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      }
+    },
+    "125": {
+      "model.layers.0.self_attn.q_proj": {
+        "relative_update_norm": 0.0004437954630702734,
+        "delta_norm": 0.03309958428144455,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 4,
+        "bf16_zero_update_fraction": 0.8476842045783997,
+        "bf16_delta_relative_error": 0.8387472629547119,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.13.self_attn.q_proj": {
+        "relative_update_norm": 0.0006520075839944184,
+        "delta_norm": 0.029818600043654442,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 4,
+        "bf16_zero_update_fraction": 0.8319537043571472,
+        "bf16_delta_relative_error": 0.8247843980789185,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      },
+      "model.layers.27.self_attn.q_proj": {
+        "relative_update_norm": 0.0002969205379486084,
+        "delta_norm": 0.011940283700823784,
+        "rank16_energy_fraction": 1.0,
+        "rank64_energy_fraction": 1.0,
+        "rank90_energy": 9,
+        "bf16_zero_update_fraction": 0.9030532836914062,
+        "bf16_delta_relative_error": 0.8968759179115295,
+        "note": "Sampled q_proj matrices only. Rank spectrum and update norms do not imply downstream accuracy.",
+        "export_max_abs_error": 0.0
+      }
+    }
+  }
+}

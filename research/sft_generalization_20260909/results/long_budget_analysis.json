@@ -1,0 +1,265 @@
+{
+  "time": 1788984537.0029202,
+  "models": {
+    "base": {
+      "short_correct": 299,
+      "long_correct": 299,
+      "own_budget_change": {
+        "delta_pp": 0.0,
+        "question_ci95_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "short_normal_stop_n": 475,
+      "short_normal_stop_identical_full_text": 475,
+      "short_truncated_n": 25,
+      "short_truncated_matching_text_prefix": 25,
+      "short_truncated_wrong_to_long_correct": 0,
+      "long_truncated_n": 21,
+      "strict_last_box_sensitivity": {
+        "short_correct": 298,
+        "long_correct": 298,
+        "own_budget_change": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "short_vs_short_baseline": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "long_vs_long_baseline": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "budget_by_sft_interaction": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "sample_all_lr1e5_s43_epoch2": {
+      "short_correct": 307,
+      "long_correct": 308,
+      "own_budget_change": {
+        "delta_pp": 0.2,
+        "question_ci95_pp": [
+          0.0,
+          0.6
+        ]
+      },
+      "short_normal_stop_n": 479,
+      "short_normal_stop_identical_full_text": 479,
+      "short_truncated_n": 21,
+      "short_truncated_matching_text_prefix": 21,
+      "short_truncated_wrong_to_long_correct": 1,
+      "long_truncated_n": 20,
+      "short_vs_short_baseline": {
+        "delta_pp": 1.6,
+        "question_ci95_pp": [
+          -1.2,
+          4.6
+        ]
+      },
+      "long_vs_long_baseline": {
+        "delta_pp": 1.7999999999999998,
+        "question_ci95_pp": [
+          -1.2,
+          4.8
+        ]
+      },
+      "budget_by_sft_interaction": {
+        "delta_pp": 0.2,
+        "question_ci95_pp": [
+          0.0,
+          0.6
+        ]
+      },
+      "strict_last_box_sensitivity": {
+        "short_correct": 307,
+        "long_correct": 308,
+        "own_budget_change": {
+          "delta_pp": 0.2,
+          "question_ci95_pp": [
+            0.0,
+            0.6
+          ]
+        },
+        "short_vs_short_baseline": {
+          "delta_pp": 1.7999999999999998,
+          "question_ci95_pp": [
+            -1.0,
+            4.8
+          ]
+        },
+        "long_vs_long_baseline": {
+          "delta_pp": 2.0,
+          "question_ci95_pp": [
+            -1.0,
+            5.0
+          ]
+        },
+        "budget_by_sft_interaction": {
+          "delta_pp": 0.2,
+          "question_ci95_pp": [
+            0.0,
+            0.6
+          ]
+        }
+      }
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "short_correct": 311,
+      "long_correct": 312,
+      "own_budget_change": {
+        "delta_pp": 0.2,
+        "question_ci95_pp": [
+          0.0,
+          0.6
+        ]
+      },
+      "short_normal_stop_n": 481,
+      "short_normal_stop_identical_full_text": 481,
+      "short_truncated_n": 19,
+      "short_truncated_matching_text_prefix": 19,
+      "short_truncated_wrong_to_long_correct": 1,
+      "long_truncated_n": 16,
+      "short_vs_short_baseline": {
+        "delta_pp": 2.4,
+        "question_ci95_pp": [
+          -0.6,
+          5.6000000000000005
+        ]
+      },
+      "long_vs_long_baseline": {
+        "delta_pp": 2.6,
+        "question_ci95_pp": [
+          -0.4,
+          5.800000000000001
+        ]
+      },
+      "budget_by_sft_interaction": {
+        "delta_pp": 0.2,
+        "question_ci95_pp": [
+          0.0,
+          0.6
+        ]
+      },
+      "strict_last_box_sensitivity": {
+        "short_correct": 311,
+        "long_correct": 312,
+        "own_budget_change": {
+          "delta_pp": 0.2,
+          "question_ci95_pp": [
+            0.0,
+            0.6
+          ]
+        },
+        "short_vs_short_baseline": {
+          "delta_pp": 2.6,
+          "question_ci95_pp": [
+            -0.4,
+            5.800000000000001
+          ]
+        },
+        "long_vs_long_baseline": {
+          "delta_pp": 2.8000000000000003,
+          "question_ci95_pp": [
+            -0.4,
+            6.0
+          ]
+        },
+        "budget_by_sft_interaction": {
+          "delta_pp": 0.2,
+          "question_ci95_pp": [
+            0.0,
+            0.6
+          ]
+        }
+      }
+    },
+    "teacher32_all_qkvo16_lr1e5_s43_epoch4": {
+      "short_correct": 265,
+      "long_correct": 264,
+      "own_budget_change": {
+        "delta_pp": -0.2,
+        "question_ci95_pp": [
+          -0.6,
+          0.0
+        ]
+      },
+      "short_normal_stop_n": 446,
+      "short_normal_stop_identical_full_text": 446,
+      "short_truncated_n": 54,
+      "short_truncated_matching_text_prefix": 54,
+      "short_truncated_wrong_to_long_correct": 0,
+      "long_truncated_n": 50,
+      "short_vs_short_baseline": {
+        "delta_pp": -6.800000000000001,
+        "question_ci95_pp": [
+          -10.8,
+          -2.8000000000000003
+        ]
+      },
+      "long_vs_long_baseline": {
+        "delta_pp": -7.000000000000001,
+        "question_ci95_pp": [
+          -10.805,
+          -3.2
+        ]
+      },
+      "budget_by_sft_interaction": {
+        "delta_pp": -0.2,
+        "question_ci95_pp": [
+          -0.6,
+          0.0
+        ]
+      },
+      "strict_last_box_sensitivity": {
+        "short_correct": 263,
+        "long_correct": 263,
+        "own_budget_change": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "short_vs_short_baseline": {
+          "delta_pp": -7.000000000000001,
+          "question_ci95_pp": [
+            -11.0,
+            -3.0
+          ]
+        },
+        "long_vs_long_baseline": {
+          "delta_pp": -7.000000000000001,
+          "question_ci95_pp": [
+            -11.0,
+            -3.0
+          ]
+        },
+        "budget_by_sft_interaction": {
+          "delta_pp": 0.0,
+          "question_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "scope": "Exploratory fixed500 dev and one seed per recipe. Baseline gets the same4096-token budget. Prefix/text invariance checks whether non-budget numerical changes are visible. Effect-interaction intervals are not adjusted for multiple diagnostics; no OOD or general multi-seed claim."
+}

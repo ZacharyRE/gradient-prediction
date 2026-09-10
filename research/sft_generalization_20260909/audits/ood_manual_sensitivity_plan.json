@@ -1,0 +1,12 @@
+{
+  "time": 1789043689.6014822,
+  "post_outcome": true,
+  "datasets": [
+    "ood_minerva",
+    "ood_olympiad",
+    "ood_svamp",
+    "ood_amc23"
+  ],
+  "statistics_source_sha256": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+  "scope": "Post-outcome partial assistant manual scoring sensitivity, all4fixedfive-seed families. Replace only reviewed74raw/strict discrepancies; bound4unresolved output events with opposite baseline/SFT assignments. Report both discrepancy-only and additionally3reviewedcorrect-percent output events. Recompute original paired question and seed/question bootstrap using unchanged functions; assert correctedraw/strict vectors identical. No changes to original metrics, models, plan, or successcriteria. Agreed outputs not certified, bounds cover only reviewed ambiguities, benchmark-label concerns may remain."
+}

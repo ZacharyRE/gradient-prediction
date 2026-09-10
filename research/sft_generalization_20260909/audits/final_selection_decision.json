@@ -1,0 +1,155 @@
+{
+  "primary_family": "teacher7_avg1234",
+  "families": {
+    "teacher7_avg1234": {
+      "43": "avg_teacher7_1234_s43_epoch4",
+      "44": "avg_teacher7_1234_s44_epoch4",
+      "45": "avg_teacher7_1234_s45_epoch4",
+      "46": "avg_teacher7_1234_s46_epoch4",
+      "47": "avg_teacher7_1234_s47_epoch4"
+    },
+    "teacher7_expanded_avg1234": {
+      "43": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+      "44": "avg_teacher7_expansion_combined_1234_s44_epoch4",
+      "45": "avg_teacher7_expansion_combined_1234_s45_epoch4",
+      "46": "avg_teacher7_expansion_combined_1234_s46_epoch4",
+      "47": "avg_teacher7_expansion_combined_1234_s47_epoch4"
+    },
+    "teacher7_epoch4": {
+      "43": "teacher_all_lr5e5_s43_epoch4",
+      "44": "teacher_all_lr5e5_s44_epoch4",
+      "45": "teacher_all_lr5e5_s45_epoch4",
+      "46": "teacher_all_lr5e5_s46_epoch4",
+      "47": "teacher_all_lr5e5_s47_epoch4"
+    }
+  },
+  "selection_reason": "Applied prospectively frozen deterministic development rule; see decision checks. No final benchmark results existed at selection.",
+  "control_rationale": "All three fixed families evaluated on final benchmarks regardless of selection. Old unaveragedepoch4 isolates average-versus-endpoint for old data; old-versus-expanded averages compare the whole expansion recipe, not purecoverage atfixedtokens. Only selected primary has the prespecified efficacy claim; secondary intervals remain exploratory/unadjusted.",
+  "rule_sha256": "19237bd9251c15efcc8db33187c44f67627807e536de8239db526a2d68be974b",
+  "rule_path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/audits/final_selection_rule.json",
+  "decision_checks": {
+    "raw_expanded_every_seed_above_baseline": false,
+    "raw_expanded_mean_above_old_mean": true,
+    "strict_expanded_every_seed_above_baseline": false,
+    "strict_expanded_mean_above_old_mean": true
+  },
+  "development_snapshot": {
+    "raw": {
+      "base": 299,
+      "old_average": [
+        301,
+        302,
+        301,
+        301,
+        296
+      ],
+      "expanded_average": [
+        309,
+        301,
+        300,
+        298,
+        303
+      ],
+      "old_epoch4": [
+        311,
+        304,
+        298,
+        308,
+        306
+      ]
+    },
+    "strict": {
+      "base": 298,
+      "old_average": [
+        300,
+        302,
+        300,
+        300,
+        296
+      ],
+      "expanded_average": [
+        308,
+        300,
+        299,
+        297,
+        303
+      ],
+      "old_epoch4": [
+        311,
+        304,
+        298,
+        308,
+        306
+      ]
+    }
+  },
+  "development_identities": {
+    "base": {
+      "predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87"
+    },
+    "avg_teacher7_1234_s43_epoch4": {
+      "predictions_sha256": "75dc881a2fc9c666ad34df7f2d22ddb054a11cf6e6cc30908d67c3f153fbdf91",
+      "manifest_sha256": "3fb1a18e112247a2ec091580b2ca83c69581a45d3d6a132025e6f8b904966dc9"
+    },
+    "avg_teacher7_1234_s44_epoch4": {
+      "predictions_sha256": "c2093f4c06506d0a42542c47c5394cb678ea40baceb250c957ce3f3f0eb6167e",
+      "manifest_sha256": "8d41e3443e9b6d1ca26cf08f33d0b61bb5e8db670ab73bd0ffa4d6bf4951c0e4"
+    },
+    "avg_teacher7_1234_s45_epoch4": {
+      "predictions_sha256": "f503bd09ded5ae72bcb6744e62c1c6875d0c1303933556e658c423eef3c22363",
+      "manifest_sha256": "313ed3a3299f9cf2a121c1ea6a5b48aea30802c4c6b6a5d2ccff28259d78dda4"
+    },
+    "avg_teacher7_1234_s46_epoch4": {
+      "predictions_sha256": "c246df0aa10e4e172ce0ec861b279225cb00e65c2381f978e0d69c439db02ed3",
+      "manifest_sha256": "a9d1ffbd966d943becd565bbfc0bd8096c1d09a8fb3fb16d063061a7bf1999ff"
+    },
+    "avg_teacher7_1234_s47_epoch4": {
+      "predictions_sha256": "e2b8dc24cb3838b531db14d812660b49a6efbc1cd03e8b1169486f004809e210",
+      "manifest_sha256": "d0918e5939100d677c8f6d3eab5196035b1f158eae1e6770d3b2919ecffc87a0"
+    },
+    "avg_teacher7_expansion_combined_1234_s43_epoch4": {
+      "predictions_sha256": "2497291fa2154e71413a3ac4d36b92a499d52377e80c8489663ad0ee44257e50",
+      "manifest_sha256": "7f320ef5eee615aff1564dd3c4d602d4c68f286ce9837bfab4f150ea2a9ec24e"
+    },
+    "avg_teacher7_expansion_combined_1234_s44_epoch4": {
+      "predictions_sha256": "9295e2a519361ef0bd76382e60071878c8cf11f0f45da5b7ad480be7cc9c0dcf",
+      "manifest_sha256": "e00e4a6070e38dc0345213a55f28dc56ab03861a8f7178f6af0adfd08c32ebd7"
+    },
+    "avg_teacher7_expansion_combined_1234_s45_epoch4": {
+      "predictions_sha256": "7ec01542b886747fdfbbe1d2c84d8f6b7209f8172104b47165d029dc7c2bfaee",
+      "manifest_sha256": "982e906394cf510693b43dbedfbf86d43c9831decddac2d190c07f0de23b5f78"
+    },
+    "avg_teacher7_expansion_combined_1234_s46_epoch4": {
+      "predictions_sha256": "b8264024061cbb11281ed3ce7edd467d864245bb5f8533106a7a570f7717fdef",
+      "manifest_sha256": "7ba576941146e202d0f23066e38e0bfc1f37cc90841151a7efd8affe896c21f9"
+    },
+    "avg_teacher7_expansion_combined_1234_s47_epoch4": {
+      "predictions_sha256": "3eef758d1875454ffad957c59e60588ae4969d6abeaef8ccb5efa7ff98aef4b7",
+      "manifest_sha256": "a626458e70a25ebf1271da0a755916806d4246c1f57ea18d32ae353683ed1ba2"
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "predictions_sha256": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345",
+      "manifest_sha256": "ab472d8ca67fc030e14652a9d414464a02dfa9429bbe97a160db6f6c233b3239"
+    },
+    "teacher_all_lr5e5_s44_epoch4": {
+      "predictions_sha256": "85e82c7f626ffe0292d2618b80e9316fe9f1a4a9912cd131322fa8e457d849ce",
+      "manifest_sha256": "98d39536b304911e4223423e0a9f1119e7c50e89164284b1079e4496e1e5e804"
+    },
+    "teacher_all_lr5e5_s45_epoch4": {
+      "predictions_sha256": "54caa3fc7334a6330b589825ce046a1eda5599948a8fef27d99ed6379f4abe19",
+      "manifest_sha256": "9114be25d01a612f671c9f578e3b25a3003470175207765e9f7b18359ede3837"
+    },
+    "teacher_all_lr5e5_s46_epoch4": {
+      "predictions_sha256": "0a0a75d27f3e997a8f7e619db9f435ad77e623289cc4951150e2fb81482e516e",
+      "manifest_sha256": "710df3c072b84387570e2e4df520d536e09f4755d0f7ee628d09c91654e6ba9c"
+    },
+    "teacher_all_lr5e5_s47_epoch4": {
+      "predictions_sha256": "6b3f651a6a250815b493bfbbb1538ebc0f8ea5dbbd0afdf6e841f1c7b5d00348",
+      "manifest_sha256": "8f50395c21f47c36b2dd40fee93321d418ad1d5dada6d1418baa4438f8e9b007"
+    }
+  },
+  "strict_audit_sha256": "49c0694af7668de9cd93563a783663e159913bc12e6f4dbe9ccbaa6268f9e3b5",
+  "statistics_contract_sha256": "fbda2953d2c2a70998adcacb1d155509f76e5b2b43f8557849332fbbaa2c6715",
+  "time": 1789012966.0030756
+}

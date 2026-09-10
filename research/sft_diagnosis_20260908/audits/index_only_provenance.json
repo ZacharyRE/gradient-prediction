@@ -1,0 +1,761 @@
+{
+  "resolved": [
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/smoke4/selected_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/smoke4/selected_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/smoke4/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/smoke4/base/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch3/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch3/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch2/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch2/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch2/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/selected_epoch2/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/base/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch3/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch3/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64/random_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/selected_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/selected_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/base/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/random_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_lr2e-5_ep1_max2048/random_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch3/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch3/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch2/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch2/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch2/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/selected_epoch2/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/base/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch3/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch3/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MIXED/Qwen2.5-1.5B-Instruct/sft_evaluation/all_linear_r32_alpha64_max2048/random_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_mathtrain_unseen1000_max2048/selected_epoch1/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/math_train_common_unseen_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_mathtrain_unseen1000_max2048/base/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/math_train_common_unseen_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_mathtrain_unseen1000_max2048/random_epoch1/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/math_train_common_unseen_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/selected_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/selected_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/base/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/random_epoch1/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_evaluation/qkvo_r16_alpha16_lr2e-5_ep1_max2048/random_epoch1/math500_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/MATH-500/test.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/smoke_fp32/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/smoke_fp32_isolated_v2/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/smoke/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/smoke_fp32_isolated_v3/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/training/lr_5e-5/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/training/lr_1e-5/rollouts.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/grpo_pilot/dr_grpo_qkvo_20260907/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rollouts, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/ood_gsm8k_300/evaluation/seed45/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/ood_gsm8k_300/evaluation/base/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/ood_gsm8k_300/evaluation/seed44/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/ood_gsm8k_300/evaluation/seed43/gsm8k_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl",
+      "source_n": 1319,
+      "overlap": 0,
+      "classification": "GSM8K excluded from MATH domain"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/evaluation/seed45/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/math_test_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/evaluation/base/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/math_test_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/evaluation/seed44/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/math_test_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/evaluation/seed43/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/independent_math_test_1000/math_test_1000.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-6_step_50_seed_45/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-6_step_50_seed_44/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-5_step_25_seed_44/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/base/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-6_step_50_seed_43/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-5_step_25_seed_43/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_seed_confirmation_20260906/evaluation/lr_1e-5_step_25_seed_45/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/precision_style_ablation_20260907/rewrites/raw_rewrites.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/data/train.jsonl",
+      "source_n": 2000,
+      "overlap": 0,
+      "classification": "training rewrites, not held-out evaluation"
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/zero_adapter_audit/zero_adapter/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/zero_adapter_audit/base/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_125/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_75/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_10/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_75/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_10/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_125/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_10/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_100/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_25/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_50/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_50/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_75/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_100/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_10/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_125/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/base/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_75/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_25/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_25/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_50/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_100/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_3e-6_step_25/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-5_step_125/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_2e-5_step_100/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/evaluation/lr_1e-6_step_50/mathtrain1000_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/result/MATH/Qwen2.5-1.5B-Instruct/sft_pilot/qkvo_r16_dev_accuracy_20260906/dev.jsonl",
+      "source_n": 500,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/diagnostic_dev_accuracy/true_0.03_step100/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/dev.jsonl",
+      "source_n": 128,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/diagnostic_dev_accuracy/initial/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/dev.jsonl",
+      "source_n": 128,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/diagnostic_dev_accuracy/true_0.03_step25/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/dev.jsonl",
+      "source_n": 128,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/diagnostic_dev_accuracy/true_0.01_step100/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/dev.jsonl",
+      "source_n": 128,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/diagnostic_dev_accuracy/true_0.003_step100/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/dev.jsonl",
+      "source_n": 128,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/last_token/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/activation_lora/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/initial/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/activation_mask/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/mean_gradient/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy/test/true_gradient/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    },
+    {
+      "predictions": "predictor/single_layer/results/downstream/accuracy_100steps/accuracy_chunk128_partial/test/initial/math_holdout_predictions.jsonl",
+      "source": "/mnt/micron/yixiaore/adapter/predictor/single_layer/results/downstream/accuracy_100steps/test.jsonl",
+      "source_n": 1000,
+      "overlap": 0,
+      "classification": null
+    }
+  ],
+  "unresolved": []
+}

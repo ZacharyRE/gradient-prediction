@@ -1,0 +1,247 @@
+{
+  "time": 1788993416.4225721,
+  "review_sha256": "675a7c573fd9c56a67f4be0615251e114e1a4d63ce9db935f149633f9b735d18",
+  "script_sha256": "70f5204a91afe8f4cf1e8f35e4a4047708651412cdbd272d0b54a509c6e8f2bc",
+  "records": [
+    {
+      "review_index": 0,
+      "problem_sha256": "71e0c02907b4a88c210ca45e75e9cbda1b93ed5e046d0876e1bbcb3182003c30",
+      "target_sha256": "9ce679aefa574e167ec0751d8baed29202404f4dd41c5e0c8aa754db40370f01",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "105 guests minus45 prepared bags gives60; ordinary interpretation includes sponsors among guests."
+    },
+    {
+      "review_index": 1,
+      "problem_sha256": "2ccb2c505ed8fc9fd276c0cabe2a4a5600068894d2c63319da572cb8f97cb3fd",
+      "target_sha256": "7c1c130cc2b941f8d0ebea551f25d83e3140c3055ff0ceeca4bdd504eaf7125a",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "25*3 +10*4/4=85 minutes."
+    },
+    {
+      "review_index": 2,
+      "problem_sha256": "8cb761cc533dc8d9f22effb7836a962fabe30657371fd8172d680c5f580bf6bf",
+      "target_sha256": "fc42daa90fc0c7660cefc9a7f1b455a4f65db66711ac84fe38d9aa7e6019eadb",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "Inclusion-exclusion:60-12-15+3=36; direct page enumeration agrees."
+    },
+    {
+      "review_index": 3,
+      "problem_sha256": "1f11409d374f0bee434694215ceb0761a1810d71eea4da686621a1a21e0fce47",
+      "target_sha256": "54e7586ba3948f10da1a6cca03ad8057ee55d0c4974776da9ba831d6bc660371",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "26 fortnightly sessions*45/60=19.5 hours under conventional52-week year; scheduling endpoints are implicit."
+    },
+    {
+      "review_index": 4,
+      "problem_sha256": "5b0d1f2ab509ba6dc56574dd0d55f3d737ced3254ef9a2a370efafaeb078d353",
+      "target_sha256": "e241773e572434c09cfa24925a51a4c164a72e1793a3a0e2ac0b8db52bf11326",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "5*15+3*8+2*25=149."
+    },
+    {
+      "review_index": 5,
+      "problem_sha256": "149ccb750a7dd8c6197ed358071a38d10badd647a827419a539718b0f83b8e65",
+      "target_sha256": "c3c75d310cd8567a2f4aa4e792ee87c17d23da433b8758db1354a88f18e295b3",
+      "review_group": "augmented_gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "5*30*5000=750000."
+    },
+    {
+      "review_index": 6,
+      "problem_sha256": "96105a4e88f57f4702ca8c634418a34d6887bbd8c8da5fdaf6d45aeb1f9cf414",
+      "target_sha256": "36d92f0aca3f84335f82f35a5c244e314c7511108570921e04dc36931de1e87b",
+      "review_group": "augmented_math_long",
+      "decision": "exclude_substantive_math_or_problem_error",
+      "reason": "Multiplying the product-minus-x by(x-1) gives x^(2^2010)-x^2+x-1, not x^(2^2010)-x. At3 actual value differs from3/2 by -2/(3^(2^2010-1)-1), which is nonzero."
+    },
+    {
+      "review_index": 7,
+      "problem_sha256": "36bb6296bd856415c2158035d856eda423b636a6ceb0170a54a255252dcd19bb",
+      "target_sha256": "31c461d1aea070741d88d49a9e97dc401fb8e8f6d48806b5af845d8d124f0b89",
+      "review_group": "augmented_math_long",
+      "decision": "exclude_substantive_math_or_problem_error",
+      "reason": "Concurrency is underdetermined; determinant expansion also wrong. Distinct concurrent lines occur for(a,b)=(0,-3) at(-3,-2), and for(1,sqrt(7)-1) at(b/2,b/2), with different ab. Claimed(2,3) even makes second/third lines identical."
+    },
+    {
+      "review_index": 8,
+      "problem_sha256": "c3a6164781127898d82edf15deb7ceb3fe220174b824d00558b8befd2b937d21",
+      "target_sha256": "9eb72bc192a165a9a22ddaa4e68955aacce1fab813cde101d3ad12711a945114",
+      "review_group": "augmented_math_long",
+      "decision": "exclude_substantive_math_or_problem_error",
+      "reason": "The target wrongly restricts free integer t(99) to0. Set t=-10603 in its own construction: p99=0,p100=21207,p101=21208, so the true minimum absolute value is0."
+    },
+    {
+      "review_index": 9,
+      "problem_sha256": "82e4e537242107545ebec83d0276dc39d2cab9ba2f2f0ed096e89692dde993d8",
+      "target_sha256": "faa658179b49d7ece297d9e0bdef849fa1e62e8553e895c7dbb26ca9e9bfd001",
+      "review_group": "augmented_math_long",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "Legendre exponent v3(2004!)=998 is correct. Retain under conventional highest-power-as-exponent wording; the literal numerical power is3^998, not998. Do not count this as a certified literal-power answer."
+    },
+    {
+      "review_index": 10,
+      "problem_sha256": "de02230375b52c1853508036bc3de175c520c1b8c52d1c15e5a50bb9f27c63e4",
+      "target_sha256": "df8d9776f4b7e2070a3b3d7a16a5a9c2f574937112a429cdd42913812d1b6c5f",
+      "review_group": "augmented_math_long",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "All three conditional cases and sum3/10 are correct; different colored interpreted as balls of various colors, consistent with explicit3red count."
+    },
+    {
+      "review_index": 11,
+      "problem_sha256": "9f4a57fe517ef430e9d1ae4f039dda3901f6d9179bb2d13a2073e267a6c54e07",
+      "target_sha256": "3590a775c276e26347d4073afe801c31b9fddcc28801b99fc7f50068fe9b87ee",
+      "review_group": "augmented_math_long",
+      "decision": "exclude_substantive_math_or_problem_error",
+      "reason": "Claimed root x=1 gives g(1)=-3,g(g(1))=-39 but g(1)+1=-2. Earlier y=1 also is not a root:2-6-1=-5. Exact degree9 real-root count is9, not claimed1."
+    },
+    {
+      "review_index": 12,
+      "problem_sha256": "c2a8d890631ea2d5f4a0451e132e4b809dbf1c16559f27d9889dd5fa6998f701",
+      "target_sha256": "9d21945b88bc700e2437a9528ceb9dd8e733dc802c45c6f04881d522b1842c9e",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_explicit_reason",
+      "reason": "Nonnegative additivity gives f2=2f1,f4=4f1,f5=5f1, hence7."
+    },
+    {
+      "review_index": 13,
+      "problem_sha256": "c9110bf715dcc3e224baad52173886f0cb30d7c10d6369bc252a82c1d9126fd5",
+      "target_sha256": "aa68fd04f380ef097b88824455965b46a408f133a17947ab8a198c54a1d861aa",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_explicit_reason",
+      "reason": "One of each color:3*4*5/choose(12,3)=3/11; complementary cases total160 consistently."
+    },
+    {
+      "review_index": 14,
+      "problem_sha256": "2b6056c65868bf02823a4a1b81be84ed4430eeb37af38e3e9393a276e57326a0",
+      "target_sha256": "07818000a93836e1f67661a2ea729aa9b32ac4e84d13f672b3def3335374884c",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_explicit_reason",
+      "reason": "Enumerate y=0..22 and x=45-2y;23 pairs."
+    },
+    {
+      "review_index": 15,
+      "problem_sha256": "d2fed6dfcc829866f21e9585e0a822935198063f2ea018edbd6196636ebe850d",
+      "target_sha256": "3a345a7d3b05a232793c7cfbd4913e677c1c10bcdebacd74c864cd43a18cb2ef",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_explicit_reason",
+      "reason": "Magnitude equation2r^2+2r-9=0 has discriminant76>0, hence2 real solutions."
+    },
+    {
+      "review_index": 16,
+      "problem_sha256": "b17ca52cdcbd7189ce54245b48ed8e86333ec9a1a0efad74a88d316b222f26f7",
+      "target_sha256": "597399306202576336fe46aa52ba8e1612b74c9d66f8d31e62a8673f20457fbd",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "Monic cubic with3given distinct pole locations equals x(x-2)(x+3);e=1,f=-6. Extra numerator-degree remark is unnecessary and does not alter valid denominator argument."
+    },
+    {
+      "review_index": 17,
+      "problem_sha256": "f5359410cb45ae3d7d0a688168cf0ac74803e3e3cb13ac644b61ae9e7ba66a44",
+      "target_sha256": "28a7ef1485e9e8698f27a56ce8002948504e090d46461d0995e230a902d6b5ff",
+      "review_group": "augmented_math_short",
+      "decision": "retain_with_explicit_reason",
+      "reason": "g2=0 and g0=0 give0."
+    },
+    {
+      "review_index": 18,
+      "problem_sha256": "87dca3e4c1a5500c8d64bd12da17334767d790532bc1ff12a38c276c58785c2f",
+      "target_sha256": "ff6e79a79467d8c93a733868e7215efa44f9ff3f6c148fc3b17c5ae36665f231",
+      "review_group": "gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "(3*(62+43)-37-41)/3=79."
+    },
+    {
+      "review_index": 19,
+      "problem_sha256": "f87265f19b036249ea28e381e15def02ce13cfbdd1c1123b55c7f424beb67825",
+      "target_sha256": "744bf25930ac911128b8b94d986e8b90c475cf3f5ad54633b9a5e300a2c45021",
+      "review_group": "gsm8k",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "Remaining5*500+7*200=3900 under the problem stipulated return convention, not a real retailer policy claim."
+    },
+    {
+      "review_index": 20,
+      "problem_sha256": "2d954dcef50e002f5c63dbeec07454e9fc3cb90b12502ed2364c5fe77da2b4d9",
+      "target_sha256": "83b9d237d1b72e9de818a532b93518e4ce942017093d5865e58ef833cf0d5a0d",
+      "review_group": "gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "15*20+15*25=675."
+    },
+    {
+      "review_index": 21,
+      "problem_sha256": "f73c70f57d3db4841e9b66107c260cde2d9dff6ba43c1cc2735a706531638e83",
+      "target_sha256": "ce01930217a7bbe891b889497c41eac7948744eac8845fe61270d33c1b2d7467",
+      "review_group": "gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "400*(3/4)*(4/5)=240."
+    },
+    {
+      "review_index": 22,
+      "problem_sha256": "c00895a673c5ad1989d9fc8d970306192beb12fe00ab9c4920f78d07065b610c",
+      "target_sha256": "300320243e264e6c0153221c78db4712d30d36392cb0fd657f7aa0c7d87ccc6a",
+      "review_group": "gsm8k",
+      "decision": "retain_with_wording_or_convention_note",
+      "reason": "4000*(3/4)/10=300 hours under ordinary initially-empty tank assumption."
+    },
+    {
+      "review_index": 23,
+      "problem_sha256": "59aabaceab4c454e6d125368fb6008f187caadf0e66c26e955aea44054f25bb5",
+      "target_sha256": "d8ebfcf04d05850a8d72074dd4612bcc9d1a7db320835ca7ebeff7b3875aadf0",
+      "review_group": "gsm8k",
+      "decision": "retain_with_explicit_reason",
+      "reason": "5+10+20=35."
+    }
+  ],
+  "group_counts": {
+    "augmented_gsm8k": {
+      "retain": 6
+    },
+    "augmented_math_long": {
+      "exclude": 4,
+      "retain": 2
+    },
+    "augmented_math_short": {
+      "retain": 6
+    },
+    "gsm8k": {
+      "retain": 6
+    }
+  },
+  "exact_checks": {
+    "product_identity": "(x-1)*product(k=0..n-1)(x^(2^k)+1)=x^(2^n)-1 by telescoping; symbolic finite n1..8 checked.",
+    "case6_difference_from_claim": "-2/(T - 1)",
+    "case6_T": "3^(2^2010-1)>1; no enormous integer constructed",
+    "case7_distinct_concurrent_counterexamples": [
+      {
+        "a": "0",
+        "b": "-3",
+        "x": "-3",
+        "y": "-2",
+        "ab": "0",
+        "all_three_lines_distinct": true
+      },
+      {
+        "a": "1",
+        "b": "-1 + sqrt(7)",
+        "x": "-1/2 + sqrt(7)/2",
+        "y": "-1/2 + sqrt(7)/2",
+        "ab": "-1 + sqrt(7)",
+        "all_three_lines_distinct": true
+      }
+    ],
+    "case8_integer_polynomial": "-10603*x**2 + 2131204*x - 107069193",
+    "case8_values": {
+      "99": 0,
+      "100": 21207,
+      "101": 21208
+    },
+    "case11_equation_at_claimed_x1": -37,
+    "case11_exact_real_root_count": 9,
+    "case9_correct_exponent": 998
+  },
+  "scope": "24 fixed stratified samples conditioned on judge-sound, excluding original reviewed cases. Four substantive new errors, all in augmented_math_long. Not a prevalence-weighted error estimate, not independent human gold, and retained wording conventions are explicit. No data released."
+}

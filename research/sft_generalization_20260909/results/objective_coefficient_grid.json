@@ -1,0 +1,401 @@
+{
+  "time": 1789005966.233719,
+  "script_sha256": "425110164dd5b93d4373a7ab4840fe7ee3cee4eb8a82382f7cb4b569d4dd16cd",
+  "scoring_audit_sha256": "91ba840f35f3abde867adbd6f5eb59e9144e1ddd3f9abadc1eaf9abb17dd7b18",
+  "evaluator_version_bridge_sha256": "4efd52a4edaa90725aaaf197daa1443adfc1a8fcb37db2012988526718cd622f",
+  "prospective_plans": {
+    "teacher_followup_controls_plan.json": "d7355a494c8b521bcc2e9b98337216d64b79c1c11ae2e315b3b527ac8846fa6f",
+    "dft_kl01_control_plan.json": "7d58a569811933e2240a34dd58f64d40fecf7e900fffb661d011323807306e1c"
+  },
+  "seed": 43,
+  "n": 500,
+  "identities": {
+    "base": {
+      "predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87"
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "predictions_sha256": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345",
+      "manifest_sha256": "ab472d8ca67fc030e14652a9d414464a02dfa9429bbe97a160db6f6c233b3239"
+    },
+    "teacher_all_kl01_lr5e5_s43_epoch4": {
+      "predictions_sha256": "e12b6775388086905eef450d0f9409a6d2737437c1da788b0b4ddea514044e8d",
+      "manifest_sha256": "0707d781028a5f0b47b2bdeedf2eaa4bcb15eacf5587273e7b57cf029c4eb3fb"
+    },
+    "teacher_all_kl1_lr5e5_s43_epoch4": {
+      "predictions_sha256": "e81e76031ca5bde6c6bc983961bec4c08f6aaf62fa12054b305aa2ee8616b4f5",
+      "manifest_sha256": "286d4d1c9d788cd6bb53c414b3a74d01b0da5b33e40f3590e8c83c4bf6fdf49d"
+    },
+    "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+      "predictions_sha256": "8c6e11313a335f0a7f6347a30660df99003bfd1bd81a7cb536ba20d092862320",
+      "manifest_sha256": "4439dfc438db9c4bcc3c00bb8012aadea3726c3f6f2e17f4bd34828d83171da6"
+    },
+    "teacher_all_dftkl01_lr5e5_s43_epoch4": {
+      "predictions_sha256": "8766186181a7bc169bfd6a99e4471ae4f1f3060779e840a37958760cc9a7bc13",
+      "manifest_sha256": "43922122b98c3c09ab47753a8fccd21dcf3a9549187719bac0b33db83acd4b3a"
+    },
+    "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+      "predictions_sha256": "19537f5c1845a64b0e61375e49651c8dac130002baeec2c5d40c43eb2c0a778d",
+      "manifest_sha256": "9d015fb1d3bed0f8b3386b03e395f87e3efff5f2eee6cbd9480fd2cece220f5d"
+    }
+  },
+  "results": {
+    "raw": {
+      "base_correct": 299,
+      "models": {
+        "base": {
+          "correct": 299,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.4,
+            "ci95_pp": [
+              -0.8,
+              5.6000000000000005
+            ]
+          }
+        },
+        "teacher_all_kl01_lr5e5_s43_epoch4": {
+          "correct": 301,
+          "vs_base": {
+            "delta_pp": 0.4,
+            "ci95_pp": [
+              -2.8000000000000003,
+              3.4000000000000004
+            ]
+          }
+        },
+        "teacher_all_kl1_lr5e5_s43_epoch4": {
+          "correct": 309,
+          "vs_base": {
+            "delta_pp": 2.0,
+            "ci95_pp": [
+              -1.0,
+              5.0
+            ]
+          }
+        },
+        "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+          "correct": 282,
+          "vs_base": {
+            "delta_pp": -3.4000000000000004,
+            "ci95_pp": [
+              -7.000000000000001,
+              0.2
+            ]
+          }
+        },
+        "teacher_all_dftkl01_lr5e5_s43_epoch4": {
+          "correct": 297,
+          "vs_base": {
+            "delta_pp": -0.4,
+            "ci95_pp": [
+              -3.8,
+              3.0
+            ]
+          }
+        },
+        "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+          "correct": 300,
+          "vs_base": {
+            "delta_pp": 0.2,
+            "ci95_pp": [
+              -2.8000000000000003,
+              3.0
+            ]
+          }
+        }
+      },
+      "contrasts": [
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "0",
+          "treatment": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -5.800000000000001,
+          "ci95_pp": [
+            -9.0,
+            -2.6
+          ]
+        },
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "01",
+          "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl01_lr5e5_s43_epoch4",
+          "delta_pp": -0.8,
+          "ci95_pp": [
+            -3.8,
+            2.1999999999999997
+          ]
+        },
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "1",
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "delta_pp": -1.7999999999999998,
+          "ci95_pp": [
+            -5.2,
+            1.4000000000000001
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "ce",
+          "coefficient": "01",
+          "treatment": "teacher_all_kl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -2.0,
+          "ci95_pp": [
+            -4.3999999999999995,
+            0.4
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "dft",
+          "coefficient": "01",
+          "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "delta_pp": 3.0,
+          "ci95_pp": [
+            -0.2,
+            6.2
+          ]
+        },
+        {
+          "kind": "objective_by_KL_interaction",
+          "coefficient": "01",
+          "formula": "(DFT+KL - DFT) - (CE+KL - CE)",
+          "delta_pp": 5.0,
+          "ci95_pp": [
+            1.0,
+            9.0
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "ce",
+          "coefficient": "1",
+          "treatment": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -0.4,
+          "ci95_pp": [
+            -3.4000000000000004,
+            2.6
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "dft",
+          "coefficient": "1",
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "delta_pp": 3.5999999999999996,
+          "ci95_pp": [
+            0.0,
+            7.000000000000001
+          ]
+        },
+        {
+          "kind": "objective_by_KL_interaction",
+          "coefficient": "1",
+          "formula": "(DFT+KL - DFT) - (CE+KL - CE)",
+          "delta_pp": 4.0,
+          "ci95_pp": [
+            -0.4,
+            8.200000000000001
+          ]
+        }
+      ]
+    },
+    "strict": {
+      "base_correct": 298,
+      "models": {
+        "base": {
+          "correct": 298,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.6,
+            "ci95_pp": [
+              -0.6,
+              5.800000000000001
+            ]
+          }
+        },
+        "teacher_all_kl01_lr5e5_s43_epoch4": {
+          "correct": 301,
+          "vs_base": {
+            "delta_pp": 0.6,
+            "ci95_pp": [
+              -2.6,
+              3.8
+            ]
+          }
+        },
+        "teacher_all_kl1_lr5e5_s43_epoch4": {
+          "correct": 309,
+          "vs_base": {
+            "delta_pp": 2.1999999999999997,
+            "ci95_pp": [
+              -1.0,
+              5.4
+            ]
+          }
+        },
+        "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+          "correct": 281,
+          "vs_base": {
+            "delta_pp": -3.4000000000000004,
+            "ci95_pp": [
+              -7.000000000000001,
+              0.2
+            ]
+          }
+        },
+        "teacher_all_dftkl01_lr5e5_s43_epoch4": {
+          "correct": 297,
+          "vs_base": {
+            "delta_pp": -0.2,
+            "ci95_pp": [
+              -3.5999999999999996,
+              3.2
+            ]
+          }
+        },
+        "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+          "correct": 300,
+          "vs_base": {
+            "delta_pp": 0.4,
+            "ci95_pp": [
+              -2.6,
+              3.2
+            ]
+          }
+        }
+      },
+      "contrasts": [
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "0",
+          "treatment": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -6.0,
+          "ci95_pp": [
+            -9.4,
+            -2.6
+          ]
+        },
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "01",
+          "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl01_lr5e5_s43_epoch4",
+          "delta_pp": -0.8,
+          "ci95_pp": [
+            -3.8,
+            2.1999999999999997
+          ]
+        },
+        {
+          "kind": "DFT_minus_CE",
+          "coefficient": "1",
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "delta_pp": -1.7999999999999998,
+          "ci95_pp": [
+            -5.2,
+            1.4000000000000001
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "ce",
+          "coefficient": "01",
+          "treatment": "teacher_all_kl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -2.0,
+          "ci95_pp": [
+            -4.3999999999999995,
+            0.4
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "dft",
+          "coefficient": "01",
+          "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "delta_pp": 3.2,
+          "ci95_pp": [
+            0.0,
+            6.6000000000000005
+          ]
+        },
+        {
+          "kind": "objective_by_KL_interaction",
+          "coefficient": "01",
+          "formula": "(DFT+KL - DFT) - (CE+KL - CE)",
+          "delta_pp": 5.2,
+          "ci95_pp": [
+            1.2,
+            9.2
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "ce",
+          "coefficient": "1",
+          "treatment": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "delta_pp": -0.4,
+          "ci95_pp": [
+            -3.4000000000000004,
+            2.6
+          ]
+        },
+        {
+          "kind": "KL_minus_noKL",
+          "objective": "dft",
+          "coefficient": "1",
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "delta_pp": 3.8,
+          "ci95_pp": [
+            0.2,
+            7.3999999999999995
+          ]
+        },
+        {
+          "kind": "objective_by_KL_interaction",
+          "coefficient": "1",
+          "formula": "(DFT+KL - DFT) - (CE+KL - CE)",
+          "delta_pp": 4.2,
+          "ci95_pp": [
+            -0.2,
+            8.4
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "Selected development data, one seed, fixed epoch4 and unadjusted paired intervals. No OOD or general efficacy claim. Coefficient0.1 was declared before any DFT training/scores; CE outcomes were already known. Does not reproduce paper-scale models/data/batch/decoding."
+}

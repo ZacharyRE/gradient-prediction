@@ -1,0 +1,52 @@
+{
+  "method": "Exact rational/binomial arithmetic and symbolic evaluation, independently checkable; verifies specific intermediate errors, not a population error rate",
+  "cases": {
+    "1441": {
+      "x": "1/4",
+      "y": "1/4",
+      "given_constraint": "1",
+      "correct_requested_expression": "1",
+      "candidate_rewritten_expression": "5/2",
+      "explanation": "A valid input satisfying the premise makes the candidate rewritten expression 5/2 while the requested expression is 1. The solution only evaluates the special x=y=1/2 case."
+    },
+    "1461": {
+      "pascal_row9": [
+        1,
+        9,
+        36,
+        84,
+        126,
+        126,
+        84,
+        36,
+        9,
+        1
+      ],
+      "pascal_row10": [
+        1,
+        10,
+        45,
+        120,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1
+      ],
+      "correct_witness_row": 100,
+      "correct_witness_column": 1,
+      "correct_witness_value": 100,
+      "explanation": "The asserted appearances of 100 in row9 or10 are false, although 100 is the correct final answer because row100 contains it."
+    },
+    "208": {
+      "candidate_radius_over_R": "1 - 2*sqrt(2)/3",
+      "candidate_own_probability_expression": "55/3 - 350*sqrt(2)/27",
+      "candidate_own_numeric_value": 0.0009353025709901081,
+      "candidate_claimed_numeric_value": 0.2,
+      "correct_probability": "5/27",
+      "explanation": "The candidate geometry is wrong, and even its own radius formula evaluates to about0.00094, not0.2. A correct answer-choice label masks the invalid derivation."
+    }
+  }
+}

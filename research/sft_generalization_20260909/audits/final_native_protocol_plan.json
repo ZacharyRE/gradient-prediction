@@ -1,0 +1,14 @@
+{
+  "time": 1788998354.561818,
+  "status": "Prepared before final selection; not launched",
+  "dataset": "dev",
+  "n": 500,
+  "batch": 8,
+  "model_scope": "Baseline and all five seeds of whichever primary family is subsequently frozen; no seed selection",
+  "native_script_sha256": "df0ef69aee1fbf4a7eed8a531f93daf1b4d7687bcaf49805bce0f77f9b27bd26",
+  "original_native_script_sha256": "b391d97c6d4e8103867ed922dfe642eb10d527858c51e39552968a0f2335ceb6",
+  "data_sha256": "5728c417f479b4f5436f7ba2fc52e8d8e036907a8e96b27066e5965344f236c2",
+  "changes_from_original": "Same generation/PEFT/SDPA arithmetic; separate output namespace, limit500, and frozen-model/data guards only.",
+  "protocol": "BF16 base, FP32 A/B verified bitwise after PEFT load, BF16 autocast, explicit SDPA math, cache, batch8, greedy2048, seed42, no TF32",
+  "scope": "Backend sensitivity on historically reused development500, not fresh efficacy confirmation. Compare adapter-minus-base inside each backend. First128 native baseline texts will be checked against completed earlier native baseline."
+}

@@ -1,0 +1,174 @@
+{
+  "time": 1789007235.8109102,
+  "script_sha256": "3dbee14f68257b42210ed5a6d12b24f48c693ca872041f8467fe7e67f513a650",
+  "dev_ce_n": 64,
+  "dev_n": 500,
+  "ce_indices_in_dev": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "dev_ce_sha256": "86b9de5d285e040888fcded577756ef5da7fe9f5949566eadca33348a44990b8",
+  "dev_sha256": "5728c417f479b4f5436f7ba2fc52e8d8e036907a8e96b27066e5965344f236c2",
+  "base_predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+  "pairs": [
+    {
+      "raw": {
+        "name": "sample_matchedraw_lr1e5_s43",
+        "epoch": 2,
+        "history_sha256": "a0aee1dadc26a56575b32920070a07cd01c8aac0ba16b465384cb8d5001496d9",
+        "prediction_sha256": "c52fe0921f4fc91a8ba19b1aba43048bc275f97fb791bb811ee9ea779a33072b",
+        "initial_raw_reference_ce": 0.8104983783299926,
+        "endpoint_raw_reference_ce": 0.7547687453169103,
+        "raw_reference_ce_change": -0.055729633013082314,
+        "correct_same64": 29,
+        "base_correct_same64": 47,
+        "correct_dev500": 183,
+        "base_correct_dev500": 299,
+        "probe_initial": {
+          "probe_raw": 0.7030065703401577,
+          "probe_sample": 0.097770569105248,
+          "probe_teacher": 0.11397156395064278
+        },
+        "probe_endpoint": {
+          "probe_raw": 0.6579227684018705,
+          "probe_sample": 0.11889145539057092,
+          "probe_teacher": 0.13415404648411544
+        }
+      },
+      "generated": {
+        "name": "sample_all_lr1e5_s43",
+        "epoch": 2,
+        "history_sha256": "a15af872e78631df27f8e0c9733842add3de56bd31c1a9ed3a2f9e91bfadbfb0",
+        "prediction_sha256": "48bd48cb95842bc211a3eeeae9b1729468cd71512700bd1ec16838ce774b2375",
+        "initial_raw_reference_ce": 0.8104983783299926,
+        "endpoint_raw_reference_ce": 0.8429819920915327,
+        "raw_reference_ce_change": 0.032483613761540076,
+        "correct_same64": 48,
+        "base_correct_same64": 47,
+        "correct_dev500": 307,
+        "base_correct_dev500": 299,
+        "probe_initial": {
+          "probe_raw": 0.7030065703401577,
+          "probe_sample": 0.097770569105248,
+          "probe_teacher": 0.11397156395064278
+        },
+        "probe_endpoint": {
+          "probe_raw": 0.7273382824518512,
+          "probe_sample": 0.08730096038559544,
+          "probe_teacher": 0.10877878697605249
+        }
+      }
+    },
+    {
+      "raw": {
+        "name": "teacher_matchedraw_lr5e5_s43",
+        "epoch": 4,
+        "history_sha256": "a23a22193b7669e78b7509606aec12327d70a1567c780527a4a4760a1ba79bc5",
+        "prediction_sha256": "31dd1ddea63c188e97a774dade298036e697e93147c5a4d1f8b751b0bb91eeed",
+        "initial_raw_reference_ce": 0.8104983783299926,
+        "endpoint_raw_reference_ce": 0.7443318270014073,
+        "raw_reference_ce_change": -0.06616655132858529,
+        "correct_same64": 27,
+        "base_correct_same64": 47,
+        "correct_dev500": 172,
+        "base_correct_dev500": 299,
+        "probe_initial": {
+          "probe_raw": 0.7030065703401577,
+          "probe_sample": 0.097770569105248,
+          "probe_teacher": 0.11397156395064278
+        },
+        "probe_endpoint": {
+          "probe_raw": 0.6209522707108073,
+          "probe_sample": 0.15715094511957886,
+          "probe_teacher": 0.1693244011188646
+        }
+      },
+      "generated": {
+        "name": "teacher_all_lr5e5_s43",
+        "epoch": 4,
+        "history_sha256": "6064f83c95ba110e806cf8bc5d0c7df1818b4db00b114bda236044b9cf8c16ff",
+        "prediction_sha256": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345",
+        "initial_raw_reference_ce": 0.8104983783299926,
+        "endpoint_raw_reference_ce": 0.9335269069112093,
+        "raw_reference_ce_change": 0.12302852858121671,
+        "correct_same64": 51,
+        "base_correct_same64": 47,
+        "correct_dev500": 311,
+        "base_correct_dev500": 299,
+        "probe_initial": {
+          "probe_raw": 0.7030065703401577,
+          "probe_sample": 0.097770569105248,
+          "probe_teacher": 0.11397156395064278
+        },
+        "probe_endpoint": {
+          "probe_raw": 0.7975496514420247,
+          "probe_sample": 0.09664853510232223,
+          "probe_teacher": 0.09322230348834981
+        }
+      }
+    }
+  ],
+  "scope": "Descriptive fixed-pair audit. Loss is BF16 HF teacher-forced reference CE on64questions; accuracy is same-vLLM-protocol free generation, shown on exactlysame64 andall500. Not a purebackend comparison, crossvalidated selection test, or proof that all validation losses are misleading. Per-step train losses are NOT treated as full-training-set CE."
+}

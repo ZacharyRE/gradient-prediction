@@ -1,0 +1,99 @@
+{
+  "time": 1789006851.9316463,
+  "script_sha256": "f7c156f4ad68361d1b2a7cbdac1c8a60545731e53d5e8c5a89b27596a66e23f7",
+  "jobs": [
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s44",
+      "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+      "lr": 5e-05,
+      "stop": 4,
+      "seed": 44
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s45",
+      "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+      "lr": 5e-05,
+      "stop": 4,
+      "seed": 45
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s46",
+      "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+      "lr": 5e-05,
+      "stop": 4,
+      "seed": 46
+    },
+    {
+      "name": "teacher7_expansion_combined_lr5e5_s47",
+      "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher7_expansion_combined.jsonl",
+      "lr": 5e-05,
+      "stop": 4,
+      "seed": 47
+    }
+  ],
+  "derived_jobs": [
+    {
+      "name": "avg_teacher7_expansion_combined_1234_s44",
+      "endpoint": 4,
+      "sources": [
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch1",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch2",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch3",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s44/epoch4"
+      ]
+    },
+    {
+      "name": "avg_teacher7_expansion_combined_1234_s45",
+      "endpoint": 4,
+      "sources": [
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch1",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch2",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch3",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s45/epoch4"
+      ]
+    },
+    {
+      "name": "avg_teacher7_expansion_combined_1234_s46",
+      "endpoint": 4,
+      "sources": [
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch1",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch2",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch3",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s46/epoch4"
+      ]
+    },
+    {
+      "name": "avg_teacher7_expansion_combined_1234_s47",
+      "endpoint": 4,
+      "sources": [
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch1",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch2",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch3",
+        "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_expansion_combined_lr5e5_s47/epoch4"
+      ]
+    }
+  ],
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "data_sha256": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+  "trainer_sha256": "845579c65e6e037942a52f560eb79d0b910c4ca385cc78b69874dedac501c31c",
+  "averager_sha256": "5e92024b224934fb5e1fbc367624a5f103f6d59f646f55680e0bc80a20e8722e",
+  "queue_before_sha256": "09bc2b1da273a6155fad50083afc5c6f7327ea56a1b072edb1c7d4fe1c71724c",
+  "average_plan_before_sha256": "e60f9c2d39c464ca79bb4db0a9bb929e3b74c3fe5f2f3eca37919c514a8f37a2",
+  "wait_for_training": "teacher_common_lr5e5_s43",
+  "prior_evidence_sha256": {
+    "audits/coverage_math1500_analysis.json": "00e538094998730018153eb433747669210af320d0172b6588f3ff4a1c40396b",
+    "audits/coverage_math1500_sensitivity.json": "03a417e2864f4b454a8857ac69904cbab516a63f06ca6f159bcf7670e70ebd9d",
+    "results/coverage_dev_fixed_analysis.json": "1922589c65aa6887fd852890701c21a6dff2c01d0077d55334ea51f51aceca8c",
+    "audits/teacher_average_five_seed_math_reused1500.json": "a3e7df687a58bbe98d7d8da1795360594197a8060f488befabc6e93a82b16fd1"
+  },
+  "reason": "Expanded average seed43 is309/500 and852/1500; old average43 is301/500 and845/1500. Neither expanded-minus-old nor coverage-minus-repeat averaged contrast establishes a benefit. Four fixed additional seeds test stability of this bounded candidate; no new recipe/hyperparameter search. Existing old five-seed candidate remains eligible for final selection before any final outputs.",
+  "endpoint": "Unweighted effective-update mean of epochs1,2,3,4; every seed retained. Fixedepoch4 saved as diagnostic.",
+  "handoff": "Wait for six matched-generator controls, STOP_TRAINER and natural exit of old training queue, then two quiet GPU1 checks. Keep STOP_TRAINER set and run only these four explicit jobs. No low-priority queue resume.",
+  "limits": "Only GPU1 for training; current GPU3 evaluator retains ownership. Start before06:00UTC, finish before07:00UTC or fail closed; reserve at least8h for final evidence/report. No new1500 extension is scheduled for these four replicas."
+}

@@ -1,0 +1,54 @@
+{
+  "time": 1788991861.0117066,
+  "passed": true,
+  "datasets": {
+    "math_reused5000": {
+      "n": 5000,
+      "dataset_sha256": "d55465534f6d30f3c62b573c03853b72c26154542f5a1a690c0aacd138f47bb4",
+      "max_prompt_tokens": 1384,
+      "prompt_indices_over_context_budget": [],
+      "gold_self_failures": [],
+      "integer_negative_controls": 0,
+      "integer_false_accepts": []
+    },
+    "ood_minerva": {
+      "n": 272,
+      "dataset_sha256": "5fcc5c27f789b43eaee9295dee05dd9a8fb04cca1340e1264afc5538efe18c68",
+      "max_prompt_tokens": 440,
+      "prompt_indices_over_context_budget": [],
+      "gold_self_failures": [],
+      "integer_negative_controls": 62,
+      "integer_false_accepts": []
+    },
+    "ood_olympiad": {
+      "n": 266,
+      "dataset_sha256": "5d67ce4ddbfc4c32a17a4b16fb84c80ab5424ffddd9d0f55db9cb71ba789eb7c",
+      "max_prompt_tokens": 653,
+      "prompt_indices_over_context_budget": [],
+      "gold_self_failures": [],
+      "integer_negative_controls": 165,
+      "integer_false_accepts": []
+    },
+    "ood_svamp": {
+      "n": 300,
+      "dataset_sha256": "b87c0204a1d918e5e79ee9a5ecfcbb58363a07059ee4339b17c58afa927dd435",
+      "max_prompt_tokens": 121,
+      "prompt_indices_over_context_budget": [],
+      "gold_self_failures": [],
+      "integer_negative_controls": 300,
+      "integer_false_accepts": []
+    },
+    "ood_amc23": {
+      "n": 40,
+      "dataset_sha256": "f3b77999b17e7d8fa43ec55929ba1cc6f4db974397d7a016a00352ef8c5f8bf7",
+      "max_prompt_tokens": 263,
+      "prompt_indices_over_context_budget": [],
+      "gold_self_failures": [],
+      "integer_negative_controls": 0,
+      "integer_false_accepts": []
+    }
+  },
+  "warnings": [],
+  "script_sha256": "cffe41a22c54b257a74bab99d5e4a7a304f4313725da44643a5e6ff418e2d9dd",
+  "scope": "No model output or OOD score. Check actual prompt length and unchanged scorer gold self-consistency; numeric perturbation is a limited negative control. Not a proof that public benchmark answers are mathematically correct or contamination-free. FullMATH gold checks rely on previous evaluator use; new OOD is checked here."
+}

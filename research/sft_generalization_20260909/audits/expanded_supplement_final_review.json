@@ -1,0 +1,141 @@
+{
+  "time": 1789044064.2423844,
+  "all_reviewed": true,
+  "gpu_work_terminal": true,
+  "plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "all25_supplement_pairs_validated": true,
+  "actual_gpus": [
+    "2",
+    "3"
+  ],
+  "source_sha256": {
+    "audits/expanded_unaveraged_supplement_plan.json": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+    "audits/expanded_unaveraged_supplement_frozen.json": "65ed2724e4920e6eb71c3733d04502e911633c7a4c18af93b4b5c503b388ec9d",
+    "audits/expanded_unaveraged_supplement_status.json": "8ed19251e64639a10622dec36e1af2d0d9888105057e6d3a1403eacc1d6d1700",
+    "results/expanded_unaveraged_supplement_analysis.json": "f39b937beb2170685db55eeb710cc69cbed9122c68ce1cc779501db0128e003c",
+    "audits/supplement_scoring_warning_review.json": "b3035ec3701f8c40d2d27ebeac0cb36b80a686c97dd1fa67c95e4f3a0a424c1c",
+    "audits/expanded_supplement_gpu2_protocol_replay.json": "5b31d780b6d146bdd3abc015e68e75cbce1ede39659460928d505c62e93f6ddd",
+    "audits/expanded_supplement_gpu1_protocol_replay.json": "ebb433ae19d9467198735ffc2479fc53c0d4405899bfe8160e2051bcad007972",
+    "audits/balanced_ood_execution.json": "288885ae20ec026c501cdaa1968d50b874e9e0030e6e2797f32b118b505aa2b1",
+    "audits/balanced_ood_zombie_read_amendment.json": "2fed90b82d405b73eafb32998fe2f5a40b63b9f5f323d457209fa3423654401d",
+    "audits/balanced_gpu2_existing_replay_reuse.json": "1cdcba6ed68d2e7b5d724dd86a04db4715d418c1a56e57515a01b917526f90c5"
+  },
+  "script_sha256": "7cf4ec5fdaa21abf395ec5d04a6c5b290b470c396ef834cb8f7508cf7faa12c1",
+  "conclusions": {
+    "primary_numeric_repaired": {
+      "math": {
+        "per_seed_correct": [
+          2817,
+          2826,
+          2803,
+          2796,
+          2792
+        ],
+        "vs_base": {
+          "delta_pp": 0.256,
+          "question_ci95": [
+            -0.696,
+            1.2
+          ],
+          "seed_question_ci95": [
+            -0.772,
+            1.3
+          ],
+          "per_seed_delta_pp": [
+            0.45999999999999996,
+            0.64,
+            0.18,
+            0.04,
+            -0.04
+          ],
+          "every_seed_positive": false
+        }
+      },
+      "ood_macro": {
+        "delta_pp": -1.168371910167576,
+        "per_seed_delta_pp": [
+          -0.5468819106590005,
+          -0.7888348321784854,
+          -1.1225490196078431,
+          -0.6603764312742642,
+          -2.723217357118286
+        ],
+        "every_seed_positive": false,
+        "question_ci95": [
+          -3.097769177846577,
+          0.7864363113666509
+        ],
+        "seed_question_ci95": [
+          -3.3250772765246452,
+          0.9518759521352393
+        ]
+      },
+      "descriptive_criteria": {
+        "math_all_seeds_positive": false,
+        "math_question_ci_positive": false,
+        "math_seed_question_ci_positive": false,
+        "ood_all_seeds_positive": false,
+        "ood_question_ci_positive": false,
+        "ood_seed_question_ci_positive": false
+      }
+    },
+    "strict_numeric_repaired": {
+      "math": {
+        "per_seed_correct": [
+          2808,
+          2822,
+          2800,
+          2791,
+          2787
+        ],
+        "vs_base": {
+          "delta_pp": 0.5519999999999999,
+          "question_ci95": [
+            -0.404,
+            1.5079999999999998
+          ],
+          "seed_question_ci95": [
+            -0.48,
+            1.6039999999999999
+          ],
+          "per_seed_delta_pp": [
+            0.6799999999999999,
+            0.96,
+            0.52,
+            0.33999999999999997,
+            0.26
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "ood_macro": {
+        "delta_pp": 5.008300162170132,
+        "per_seed_delta_pp": [
+          5.686778220059954,
+          5.555936409651579,
+          4.863248808295248,
+          5.436532507739939,
+          3.4990048651039363
+        ],
+        "every_seed_positive": true,
+        "question_ci95": [
+          2.6874282520025554,
+          7.378137930610839
+        ],
+        "seed_question_ci95": [
+          2.467095803233574,
+          7.5353867511917025
+        ]
+      },
+      "descriptive_criteria": {
+        "math_all_seeds_positive": true,
+        "math_question_ci_positive": false,
+        "math_seed_question_ci_positive": false,
+        "ood_all_seeds_positive": true,
+        "ood_question_ci_positive": true,
+        "ood_seed_question_ci_positive": true
+      }
+    }
+  },
+  "scope": "Actual supplementary terminal execution, allfivefrozenweights,25evaluation pairs, shared21modeldata hashes, numeric scoring, and bothwarningfulltextreviews checked. OriginalCPUhandoffreturncodes preserved by separatemainreconciliation. RawMATH hasseed47belowbase and allfive rawOODmacrodeltasnegative; strictOODpositive is format-sensitive and doesnotreplaceprimary. No claimallmodelreasoning reviewed; fourfamilies exploratoryfactorial, not causalcoverage-only experiment."
+}

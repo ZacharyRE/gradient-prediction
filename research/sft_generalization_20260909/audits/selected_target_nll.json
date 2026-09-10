@@ -1,0 +1,93 @@
+{
+  "time": 1788983649.74858,
+  "scores_sha256": "8a800370eafcec7c59287159a9af4af6990eac5b0dcfe0344586df759a0ce2c6",
+  "sources": {
+    "sample_all": {
+      "n": 1563,
+      "example_mean_nll": 0.10034859783337312,
+      "token_mean_nll": 0.09289893821743708,
+      "mean_target_tokens": 477.2463211772233,
+      "nll_quantiles": [
+        0.026990259066224098,
+        0.06540537253022194,
+        0.08755208551883698,
+        0.12153685465455055,
+        0.1675694078207016,
+        0.42449724674224854
+      ],
+      "dataset_sha256": "cd02dccbd429a822e3ccf78a019fc38286949aac0cd51a45fc61cf816085a1e0"
+    },
+    "teacher_all": {
+      "n": 1547,
+      "example_mean_nll": 0.1029313550539599,
+      "token_mean_nll": 0.09894394006508613,
+      "mean_target_tokens": 477.46024563671625,
+      "nll_quantiles": [
+        0.01550405751913786,
+        0.06556865945458412,
+        0.09009063243865967,
+        0.1232605092227459,
+        0.17227680087089542,
+        0.42430832982063293
+      ],
+      "dataset_sha256": "7cd1daa1092fb5d30c136f9aae09c3bee43888f48f6766bb796af58cdfb9df6d"
+    },
+    "teacher32_all": {
+      "n": 1637,
+      "example_mean_nll": 0.47781727605464624,
+      "token_mean_nll": 0.4451321880496603,
+      "mean_target_tokens": 553.6328649969456,
+      "nll_quantiles": [
+        0.15514959394931793,
+        0.37561607360839844,
+        0.4626424014568329,
+        0.5630756616592407,
+        0.6645553469657898,
+        1.0375583171844482
+      ],
+      "dataset_sha256": "6558b65f1c6e288d22d947e01e259a6758f1e3096730de8ac3bf3003411537ac"
+    }
+  },
+  "pairs": [
+    {
+      "left": "teacher_all",
+      "right": "sample_all",
+      "n": 1429,
+      "mean_nll_difference": 0.0016456903339714917,
+      "question_ci95": [
+        -0.0006391396796222622,
+        0.0039111766347008576
+      ],
+      "left_higher": 744,
+      "left_mean_tokens": 455.5332400279916,
+      "right_mean_tokens": 456.4856543037089
+    },
+    {
+      "left": "teacher32_all",
+      "right": "sample_all",
+      "n": 1467,
+      "mean_nll_difference": 0.38007104370156436,
+      "question_ci95": [
+        0.37341374108385633,
+        0.3865144527354103
+      ],
+      "left_higher": 1467,
+      "left_mean_tokens": 500.0906612133606,
+      "right_mean_tokens": 461.58554873892297
+    },
+    {
+      "left": "teacher32_all",
+      "right": "teacher_all",
+      "n": 1465,
+      "mean_nll_difference": 0.3791125828756255,
+      "question_ci95": [
+        0.37279063915268046,
+        0.3856203682935692
+      ],
+      "left_higher": 1465,
+      "left_mean_tokens": 501.4941979522184,
+      "right_mean_tokens": 461.22525597269623
+    }
+  ],
+  "interpretation": "Teacher-forced completion+EOS NLL under the frozen student. Source comparisons condition on question intersection but differ in text/length/content. Not a causal proof that NLL explains accuracy, nor a process-quality metric. Known bad targets remain in immutable original datasets and are not silently removed."
+}

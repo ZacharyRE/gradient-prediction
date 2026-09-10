@@ -1,0 +1,193 @@
+{
+  "time": 1789043287.0648198,
+  "all_reviewed": true,
+  "reviewer": "assistant unblinded, not independent human review",
+  "review_file_sha256": "c95a6c9eb490a7b5cbab836c39c83651cf1dd7e584b1d16c92d00a2729fe2efc",
+  "selection_sha256": "c5632b32e3bba0379d53fe22c663483aae95df72cd4c5f153d54dcaf1002d13d",
+  "n_cases": 10,
+  "n_full_process_outputs_read": 20,
+  "other_seed_processes_reviewed": false,
+  "decisions": [
+    {
+      "case_id": "math_reused5000:all_five_rescue:714",
+      "dataset": "math_reused5000",
+      "index": 714,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": false,
+      "seed43_final_correct_under_literal_problem": true,
+      "baseline_whole_process_valid": false,
+      "seed43_whole_process_valid": true,
+      "reason": "Vertex(2,1) and point(-4,-3) give a=-1/9; zeros5,-1 and difference6. Baseline obtains a correctly, then wrongly expands to coefficients(-1,-2,1)/9, takes sqrt8=2 and even reverses m>n; final-2 wrong. Seed43 retains vertex form and derives6 correctly.",
+      "text_sha256": {
+        "base": "0e623aa4e59c6e6aecfd4ba0e411ff1f4e98d90439994a73f2b213b4ec6fe269",
+        "avg_teacher7_1234_s43_epoch4": "d61d8fe09392af97d8a3524f70229a43f3e8456e95eee59df41c8ceee147916e"
+      }
+    },
+    {
+      "case_id": "math_reused5000:all_five_rescue:860",
+      "dataset": "math_reused5000",
+      "index": 860,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": false,
+      "seed43_final_correct_under_literal_problem": true,
+      "baseline_whole_process_valid": false,
+      "seed43_whole_process_valid": true,
+      "reason": "Factor(c+9)(c-3), exclude c3, then3c+9=23 gives14/3. Baseline derives correct candidate but drops+2c during checking and falsely rejects it; final3 is undefined. Seed43 factorization/domain check and final14/3 valid.",
+      "text_sha256": {
+        "base": "972f5dcddff2eca9fec1642904593b7fccb184baa8d3c583557b6ed07eb04b58",
+        "avg_teacher7_1234_s43_epoch4": "6e84d920d144cf9fb02990225405708a98130666cc811fb7790a270a8994fa31"
+      }
+    },
+    {
+      "case_id": "math_reused5000:all_five_loss:642",
+      "dataset": "math_reused5000",
+      "index": 642,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": true,
+      "seed43_whole_process_valid": false,
+      "reason": "Repeated scaling gives f9=7,f27=9,f81=11; with existence of inverse implicit in f^-1 notation, inverse11=81. Functional relation alone does not establish global injectivity, so this uses the question implicit assumption. Baseline computation valid. Seed43 invents f(x)=2x/3, asserts2=5 in base case, and outputs33/2 unsupported.",
+      "text_sha256": {
+        "base": "ebc25e46cce1e9a783c4c5c9fc698acd053813b0df3192c0b1beee5b8d5d648e",
+        "avg_teacher7_1234_s43_epoch4": "990fa918581d51f0f5c2f6a806d979849e4b8a6a85aea38e409db4b033b5d2ca"
+      }
+    },
+    {
+      "case_id": "math_reused5000:all_five_loss:3849",
+      "dataset": "math_reused5000",
+      "index": 3849,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": true,
+      "seed43_whole_process_valid": false,
+      "reason": "Circumference18pi times2/3 rev/s=12pi inches/s. Baseline correct. Seed43 divides one-revolution distance by3s and drops the second revolution, yielding6pi.",
+      "text_sha256": {
+        "base": "1f3dbb439201eb0011cefb1d20cc40fa71dfafa50b0e6d354a33d8cea33f6a1c",
+        "avg_teacher7_1234_s43_epoch4": "590ba129df6a916bd9bf36fbf99676f9d9e2d79832e0ca8cb18375f1dff5fd3f"
+      }
+    },
+    {
+      "case_id": "ood_minerva:all_five_rescue:2",
+      "dataset": "ood_minerva",
+      "index": 2,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": false,
+      "seed43_final_correct_under_literal_problem": true,
+      "baseline_whole_process_valid": false,
+      "seed43_whole_process_valid": true,
+      "reason": "Critical glass-to-air angle arcsin(1/1.5)=41.8103 degrees rounds41.8. Baseline incorrectly says H=L and normal incidence90deg, then changes intermediate41.81 to final37. Seed43 critical-angle Snell ratio and rounding correct; actual ray strikes45deg and exceeds threshold.",
+      "text_sha256": {
+        "base": "72cbc07813058a576c7fa332ad5b2e6e84690f212940af86ac411340d2fca129",
+        "avg_teacher7_1234_s43_epoch4": "1a6c2fc01e557fa38e4d83f647d21a5984cc2747f2ff41618cd3bf6abeb28652"
+      }
+    },
+    {
+      "case_id": "ood_minerva:all_five_loss:78",
+      "dataset": "ood_minerva",
+      "index": 78,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": false,
+      "seed43_whole_process_valid": false,
+      "reason": "For x=(cos2t+sin2t)/4, xprime+2x=cos2t. Baseline final and particular-solution coefficient matching are correct, but it incorrectly treats homogeneous first-order equation as r^2+2=0; do not certify whole process. Seed43 replaces RHS cos2t by0 and returns C exp(-2t), explicitly prohibited and not a solution to forced ODE.",
+      "text_sha256": {
+        "base": "ef5cad78a5a18da8de57bfaf27767619f575a1d29aaa2a6c447910a715a9a97f",
+        "avg_teacher7_1234_s43_epoch4": "c04d5ad6268124b9292eb08a87c2d29f8a779352e22a3faae16f578bfcbc178d"
+      }
+    },
+    {
+      "case_id": "ood_olympiad:all_five_rescue:260",
+      "dataset": "ood_olympiad",
+      "index": 260,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": false,
+      "seed43_final_correct_under_literal_problem": true,
+      "baseline_whole_process_valid": false,
+      "seed43_whole_process_valid": true,
+      "reason": "Binomial row40 is symmetric and strictly increasing up to20; C40,17=C40,23, unique alternative23. Baseline reverses subtraction to-23 then arbitrarilyboxes14. Seed43 symmetry23 correct.",
+      "text_sha256": {
+        "base": "425d7f1183113dcab9780453c773117f04cc6558200057fb878d333bd3a155bb",
+        "avg_teacher7_1234_s43_epoch4": "2e68d23c880960b9804a14c65d74a7723d8f6d58b0aad8ec59f5c002602ee064"
+      }
+    },
+    {
+      "case_id": "ood_olympiad:all_five_loss:83",
+      "dataset": "ood_olympiad",
+      "index": 83,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": true,
+      "seed43_whole_process_valid": false,
+      "reason": "(K-9)d=2000, K>9 implies positive integer d. Enumerating positive divisors of2000 gives unique minimum |K-d|=1 at K49,d50; K=d would require K(K-9)=2000 whose discriminant8081 is not square. Baseline divisor enumeration valid. Seed43 chooses divisor closest9 unrelated to objective, then even uses2000/17 instead2000/(17-9); final17 wrong.",
+      "text_sha256": {
+        "base": "23d73d6e4f12f8b4ccf7a2a6941d3c3445ffddfdcf8f2dc42ef3796d38371068",
+        "avg_teacher7_1234_s43_epoch4": "cd304e3225ad16ed703add4b897615e39f4ff5aec488c38434a27b952f000f85"
+      }
+    },
+    {
+      "case_id": "ood_svamp:all_five_rescue:107",
+      "dataset": "ood_svamp",
+      "index": 107,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": true,
+      "seed43_whole_process_valid": false,
+      "reason": "Reference-convention issue: Zachary15,David54,John45. Signed asked Zachary-minus-John=-30; baseline derives-30 and correctly explains30 fewer. Seed43 derives-30 then boxes+30 while still describing Zachary more. Savedgold+30 is absolute-difference convention contradictory to literal directional wording. This selected benchmark rescue is not evidence of corrected reasoning; strict/raw agreement does not guarantee gold validity.",
+      "text_sha256": {
+        "base": "e2f2b82c10b30e976096e087c32c9962e6bbcc38c4573ac58220ef91763287ba",
+        "avg_teacher7_1234_s43_epoch4": "c6ac2c6c6a7a119c322123cf345bfd82bc4732e78718fc311c5bea1d66cc1dc9"
+      }
+    },
+    {
+      "case_id": "ood_svamp:all_five_loss:189",
+      "dataset": "ood_svamp",
+      "index": 189,
+      "reviewed_models": [
+        "base",
+        "avg_teacher7_1234_s43_epoch4"
+      ],
+      "baseline_final_correct_under_literal_problem": true,
+      "seed43_final_correct_under_literal_problem": false,
+      "baseline_whole_process_valid": true,
+      "seed43_whole_process_valid": false,
+      "reason": "Asked park counts directly65wrappers-5caps=60. Baseline correct. Seed43 unnecessarily subtracts later collection quantities then computes56-(-26)=82; incorrect role interpretation. Extra now9wrappers conflicts with finding65 absent unspecified disposal, but queried park difference is directly determined.",
+      "text_sha256": {
+        "base": "5649ffd1138532e4a887bc1fa9c9e0963e793406d5398853aaca5a0885103879",
+        "avg_teacher7_1234_s43_epoch4": "bfa8ac1c21180ca50246852b51ec13a3e4d52837a1fbcb401808378e512bf9a3"
+      }
+    }
+  ],
+  "report_markdown": "固定规则选出10例，已完整阅读 baseline 与 seed43 的20份推导；其余四个 seed 仅保存输出，未据判分一致推断过程正确。MATH两例恢复分别纠正二次式展开错误和漏项验算；两例损失出现虚构函数规律及漏乘转数。Minerva有临界角恢复，也有把受迫ODE右端误置零的损失；后一例baseline答案正确但齐次解推导错误。Olympiad有二项式对称性恢复与优化目标误读损失。SVAMP的“恢复”例107存在参考方向问题：Zachary15次、John45次，按题面Zachary−John应为−30，baseline也如此解释；SFT输出+30符合保存gold却不构成推理恢复。另一例损失把明确的公园计数和后来总数混用。这些是具体存在性证据，不是总体错误率估计或独立因果鉴定。"
+}

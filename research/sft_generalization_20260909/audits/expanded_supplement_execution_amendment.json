@@ -1,0 +1,23 @@
+{
+  "time": 1789017176.5740423,
+  "original_plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "frozen_sha256": "65ed2724e4920e6eb71c3733d04502e911633c7a4c18af93b4b5c503b388ec9d",
+  "original_preparation_script_sha256": "6acf13125975345632c699adac80caca16e46f6852c6f85d05b41bb7762ab68c",
+  "execution_script_sha256": "2fe1534494979d44025930409ea54f28857a2c37ffc27199ed6b9ad367b5af65",
+  "old_cpu_waiter": {
+    "pid": 3101061,
+    "start": "73589403",
+    "command": [
+      ".venv/bin/python",
+      "research/sft_generalization_20260909/scripts/expanded_unaveraged_supplement_pipeline.py"
+    ]
+  },
+  "original_start_cutoff": 1789030800.0,
+  "effective_start_cutoff": 1789036200.0,
+  "unchanged_finish_cutoff": 1789048800.0,
+  "gpu": "1",
+  "reason": "Actualrank64nativefirstmodel200rows1279s/280rowsabout33minis slower than earlier rank16native128 extrapolation. Extend scheduler admission window only, keepingall5fixedmodels/data/numericpolicy, originalmain16criteria, exactGPU1replay, max2GPUs and14UTCfinish/15:16:40UTCglobaldeadline unchanged.",
+  "scope": "Original CPUpreparer frozeweights and thenwaited; no supplementalGPUchild/output everstarted. Replace onlyitsCPUwaiter, preserving immutableoriginalplan/freeze/analysis/helper/evaluate.py. Newexecutionauditidentifiesamendment+actualrunnerhash. No existing GPU orforeign process signaled.",
+  "previous_execution_amendment_sha256": "be53ce48a02203347d3f20ffddd61bb65414913c1947041ca66a9c5095b498e0",
+  "prelaunch_manifest_guard": "Execution provenance is added only to audit dictionaries, never to the replay model manifest. Corrected before replacement runner launch or any supplemental GPU outputs; previous files archived."
+}

@@ -1,0 +1,241 @@
+{
+  "time": 1789013114.147161,
+  "script_sha256": "d6842bf614b3feccaec51f3fc9c97dfd2b04ebfb09f72e90bc6e888dd62269b3",
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "n": 500,
+  "groups": {
+    "averaged": [
+      "avg_teacher7_expansion_combined_1234_s43_epoch4",
+      "avg_teacher7_expansion_combined_1234_s44_epoch4",
+      "avg_teacher7_expansion_combined_1234_s45_epoch4",
+      "avg_teacher7_expansion_combined_1234_s46_epoch4",
+      "avg_teacher7_expansion_combined_1234_s47_epoch4"
+    ],
+    "unaveraged": [
+      "teacher7_expansion_combined_lr5e5_s43_epoch4",
+      "teacher7_expansion_combined_lr5e5_s44_epoch4",
+      "teacher7_expansion_combined_lr5e5_s45_epoch4",
+      "teacher7_expansion_combined_lr5e5_s46_epoch4",
+      "teacher7_expansion_combined_lr5e5_s47_epoch4"
+    ]
+  },
+  "identities": {
+    "base": {
+      "predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87"
+    },
+    "avg_teacher7_expansion_combined_1234_s43_epoch4": {
+      "predictions_sha256": "2497291fa2154e71413a3ac4d36b92a499d52377e80c8489663ad0ee44257e50",
+      "manifest_sha256": "7f320ef5eee615aff1564dd3c4d602d4c68f286ce9837bfab4f150ea2a9ec24e"
+    },
+    "avg_teacher7_expansion_combined_1234_s44_epoch4": {
+      "predictions_sha256": "9295e2a519361ef0bd76382e60071878c8cf11f0f45da5b7ad480be7cc9c0dcf",
+      "manifest_sha256": "e00e4a6070e38dc0345213a55f28dc56ab03861a8f7178f6af0adfd08c32ebd7"
+    },
+    "avg_teacher7_expansion_combined_1234_s45_epoch4": {
+      "predictions_sha256": "7ec01542b886747fdfbbe1d2c84d8f6b7209f8172104b47165d029dc7c2bfaee",
+      "manifest_sha256": "982e906394cf510693b43dbedfbf86d43c9831decddac2d190c07f0de23b5f78"
+    },
+    "avg_teacher7_expansion_combined_1234_s46_epoch4": {
+      "predictions_sha256": "b8264024061cbb11281ed3ce7edd467d864245bb5f8533106a7a570f7717fdef",
+      "manifest_sha256": "7ba576941146e202d0f23066e38e0bfc1f37cc90841151a7efd8affe896c21f9"
+    },
+    "avg_teacher7_expansion_combined_1234_s47_epoch4": {
+      "predictions_sha256": "3eef758d1875454ffad957c59e60588ae4969d6abeaef8ccb5efa7ff98aef4b7",
+      "manifest_sha256": "a626458e70a25ebf1271da0a755916806d4246c1f57ea18d32ae353683ed1ba2"
+    },
+    "teacher7_expansion_combined_lr5e5_s43_epoch4": {
+      "predictions_sha256": "a193020fb2945b9455937d02e4935f6c37122e82ef6e1e0b701c46aa25dacfe5",
+      "manifest_sha256": "b9a3d8c8cdbe1be8cd594f0fe9f8b466315b7e7c138e5feb1285dd86d6aa239f"
+    },
+    "teacher7_expansion_combined_lr5e5_s44_epoch4": {
+      "predictions_sha256": "973766683731dffb7e3bd3108ebd9a4b5e3e0aa049af231c998a3b844ad23ab3",
+      "manifest_sha256": "a2474251f9aa7806c64f3f8465bd439aacc9ca59d7feed094a598db800077f19"
+    },
+    "teacher7_expansion_combined_lr5e5_s45_epoch4": {
+      "predictions_sha256": "58d0b9f9579b418c4f5e572da75277c090549e408c27bf42f5d8435c98b5779f",
+      "manifest_sha256": "0b774d7702e3d74c841c396dc9a382fe03b1d847890b4593c14bf87a534f251e"
+    },
+    "teacher7_expansion_combined_lr5e5_s46_epoch4": {
+      "predictions_sha256": "6b3a0218fe7d01519de567e51daecabfd0269bb687f0356fb6c9e867349e6d8d",
+      "manifest_sha256": "fd2ffd18a07c7474531674ba8b6d0abd08b7907c505fc24197f706cbe3a9f967"
+    },
+    "teacher7_expansion_combined_lr5e5_s47_epoch4": {
+      "predictions_sha256": "7d18f3d80e6de4e7e49e75ad02d0cd499f6c27e87045028188053350ca453f95",
+      "manifest_sha256": "88b1dccf3944c1b0b5be0c7424658ec6851ffb09944dbf1962699d349ea08919"
+    }
+  },
+  "scoring_audit_sha256": "80f1e06a415b01edc45eb4d52ae5bec8cf8dc9b0ea23721dbfc1fdf3616f28d7",
+  "statistics_source_sha256": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+  "replication_plan_sha256": "92fc6b901020048c21bff11f867c417dd4ff4457da786bbde19b76498b844b4b",
+  "parser_warning_count": 0,
+  "results": {
+    "raw": {
+      "base_correct": 299,
+      "families": {
+        "averaged": {
+          "per_seed_correct": [
+            309,
+            301,
+            300,
+            298,
+            303
+          ],
+          "vs_base": {
+            "delta_pp": 0.64,
+            "question_ci95": [
+              -2.36,
+              3.72
+            ],
+            "seed_question_ci95": [
+              -2.56,
+              3.6799999999999997
+            ],
+            "per_seed_delta_pp": [
+              2.0,
+              0.4,
+              0.2,
+              -0.2,
+              0.8
+            ],
+            "every_seed_positive": false
+          }
+        },
+        "unaveraged": {
+          "per_seed_correct": [
+            300,
+            302,
+            309,
+            308,
+            299
+          ],
+          "vs_base": {
+            "delta_pp": 0.9199999999999999,
+            "question_ci95": [
+              -1.9600000000000002,
+              3.8400000000000003
+            ],
+            "seed_question_ci95": [
+              -2.16,
+              3.9600000000000004
+            ],
+            "per_seed_delta_pp": [
+              0.2,
+              0.6,
+              2.0,
+              1.7999999999999998,
+              0.0
+            ],
+            "every_seed_positive": false
+          }
+        }
+      },
+      "averaged_minus_unaveraged": {
+        "delta_pp": -0.27999999999999997,
+        "question_ci95": [
+          -1.76,
+          1.2
+        ],
+        "seed_question_ci95": [
+          -2.48,
+          2.0
+        ],
+        "per_seed_delta_pp": [
+          1.7999999999999998,
+          -0.2,
+          -1.7999999999999998,
+          -2.0,
+          0.8
+        ],
+        "every_seed_positive": false
+      }
+    },
+    "strict": {
+      "base_correct": 298,
+      "families": {
+        "averaged": {
+          "per_seed_correct": [
+            308,
+            300,
+            299,
+            297,
+            303
+          ],
+          "vs_base": {
+            "delta_pp": 0.6799999999999999,
+            "question_ci95": [
+              -2.2800000000000002,
+              3.72
+            ],
+            "seed_question_ci95": [
+              -2.520999999999999,
+              3.7199999999999998
+            ],
+            "per_seed_delta_pp": [
+              2.0,
+              0.4,
+              0.2,
+              -0.2,
+              1.0
+            ],
+            "every_seed_positive": false
+          }
+        },
+        "unaveraged": {
+          "per_seed_correct": [
+            300,
+            301,
+            308,
+            307,
+            298
+          ],
+          "vs_base": {
+            "delta_pp": 0.96,
+            "question_ci95": [
+              -1.9200000000000002,
+              3.8409999999999855
+            ],
+            "seed_question_ci95": [
+              -2.16,
+              4.0
+            ],
+            "per_seed_delta_pp": [
+              0.4,
+              0.6,
+              2.0,
+              1.7999999999999998,
+              0.0
+            ],
+            "every_seed_positive": false
+          }
+        }
+      },
+      "averaged_minus_unaveraged": {
+        "delta_pp": -0.27999999999999997,
+        "question_ci95": [
+          -1.76,
+          1.2
+        ],
+        "seed_question_ci95": [
+          -2.44,
+          1.9609999999999854
+        ],
+        "per_seed_delta_pp": [
+          1.6,
+          -0.2,
+          -1.7999999999999998,
+          -2.0,
+          1.0
+        ],
+        "every_seed_positive": false
+      }
+    }
+  },
+  "scope": "Descriptive development analysis of both already fixed endpoints, assembled after four seed results were known. Unadjusted intervals, no new success criterion or primary selection change. Expanded unaveraged replicas are not in the fixed final benchmark family manifest and do not receive an OOD/general-efficacy claim here."
+}

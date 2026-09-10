@@ -1,0 +1,38 @@
+{
+  "prompt_token_equality": {
+    "n": 2000,
+    "exact": 2000
+  },
+  "sample_indices": [
+    178,
+    2
+  ],
+  "independent_loss": {
+    "hf_loss": 0.8018010854721069,
+    "manual_loss": 0.8018010854721069,
+    "absolute_difference": 0.0
+  },
+  "padded_vs_individual": [
+    {
+      "index": 178,
+      "max_abs": 0.00019741058349609375,
+      "argmax_agreement": 0.9999999403953552
+    },
+    {
+      "index": 2,
+      "max_abs": 0.00014281272888183594,
+      "argmax_agreement": 1.0
+    }
+  ],
+  "real_model_accumulation": {
+    "relative_l2": 1.2897188753413502e-05,
+    "cosine": 1.0
+  },
+  "checkpointing_gradient": {
+    "relative_l2": 0.0,
+    "max_abs": 0.0
+  },
+  "adamw_fused_unfused": {
+    "max_abs": 1.862645149230957e-09
+  }
+}

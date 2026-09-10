@@ -127,3 +127,8 @@ same hyperparameters.
 - **Next:** stabilize the SFT control, test an exact-match layer-5 `o_proj`
   intervention, add a true-gradient oracle, and replace pure top-k selection
   with alignment-plus-diversity selection.
+
+
+## LoRA SFT investigation report
+
+The [September 9 study report and supporting evidence](research/sft_generalization_20260909/README.md) includes a 30-page PDF, five-seed results, causal controls, scoring audits, and documented reproduction limits.

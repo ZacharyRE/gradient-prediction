@@ -1,0 +1,56 @@
+{
+  "time": 1788995875.069977,
+  "script_sha256": "cdcb45ba0ab513a69ba52cd73ca632f91c313e808efdd47aed98e4937bd9f1a9",
+  "scoring_audit_sha256": "c643541c0c0000ffef412a747ce6ef33bd74b187a51c9b45dac7677a2bb2fe8f",
+  "results": [
+    {
+      "family": "student",
+      "raw_model": "sample_matchedraw_lr1e5_s43_epoch2",
+      "source_model": "sample_all_lr1e5_s43_epoch2",
+      "n": 500,
+      "raw_strict_correct": 177,
+      "source_strict_correct": 307,
+      "baseline_strict_correct": 298,
+      "missing_box": 81,
+      "truncation": 52,
+      "union": 81,
+      "oracle_ceiling": {
+        "missing_box": 258,
+        "truncation": 229,
+        "either": 258
+      },
+      "normal_complete_box_strict_wrong": 242,
+      "ceiling_still_below_source": true,
+      "ceiling_still_below_baseline": true,
+      "selected_review_indices": [
+        171,
+        180
+      ]
+    },
+    {
+      "family": "teacher7",
+      "raw_model": "teacher_matchedraw_lr5e5_s43_epoch4",
+      "source_model": "teacher_all_lr5e5_s43_epoch4",
+      "n": 500,
+      "raw_strict_correct": 169,
+      "source_strict_correct": 311,
+      "baseline_strict_correct": 298,
+      "missing_box": 50,
+      "truncation": 43,
+      "union": 50,
+      "oracle_ceiling": {
+        "missing_box": 219,
+        "truncation": 212,
+        "either": 219
+      },
+      "normal_complete_box_strict_wrong": 281,
+      "ceiling_still_below_source": true,
+      "ceiling_still_below_baseline": true,
+      "selected_review_indices": [
+        363,
+        98
+      ]
+    }
+  ],
+  "scope": "Favorable classification bound under fixed strict scorer: count every flagged output correct while leaving other outputs unchanged. This excludes only an explanation confined to these flags; changing formatting prompts or training can also change other answers, so it is not a general causal proof that formatting/budget never matter."
+}

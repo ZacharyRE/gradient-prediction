@@ -1,0 +1,268 @@
+{
+  "time": 1789041185.5950403,
+  "script_sha256": "fdf447bfa5c75a2895e415ef87048f4182c2f2f5aec21fdc017104669a67bc88",
+  "source_sha256": {
+    "audits/math4060_operator_gold_followup_plan.json": "136d6c785132e2c31087605e754dcc6982023547f4cf840d2086bd41d4581c65",
+    "audits/math4060_operator_gold_review.json": "b5b1a0bd85ff75831bfc6862bc149c3f696a790a2707c956894441488dab0da3",
+    "audits/math_scoring_disagreement_review_decisions.json": "750515703194155608d2c2b3f5b75e834784b81a0fc2448bfe23df6e320e739d",
+    "results/math_manual_disagreement_sensitivity.json": "4213d5de92ee982b46bf5718449c864179140aed3b8ecb60063e8ada8a08665f",
+    "results/confirmation_plan.json": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+    "scripts/analyze_confirmation.py": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+    "audits/math_operator_semantics_revision.json": "42541718749c8be9df7f6646872c8922f1a0618112cdee09c5c31365f8526309"
+  },
+  "results_by_interpretation": {
+    "answer_markup": {
+      "full5000": {
+        "conservative_lower": {
+          "n": 5000,
+          "base_correct": 2791,
+          "per_seed_correct": [
+            2819,
+            2826,
+            2836,
+            2833,
+            2836
+          ],
+          "vs_base": {
+            "delta_pp": 0.7799999999999999,
+            "question_ci95": [
+              -0.18399999999999986,
+              1.7120000000000004
+            ],
+            "seed_question_ci95": [
+              -0.22799999999999998,
+              1.788
+            ],
+            "per_seed_delta_pp": [
+              0.5599999999999999,
+              0.7000000000000001,
+              0.8999999999999999,
+              0.84,
+              0.8999999999999999
+            ],
+            "every_seed_positive": true
+          }
+        },
+        "conservative_upper": {
+          "n": 5000,
+          "base_correct": 2789,
+          "per_seed_correct": [
+            2819,
+            2827,
+            2836,
+            2834,
+            2836
+          ],
+          "vs_base": {
+            "delta_pp": 0.828,
+            "question_ci95": [
+              -0.13200000000000003,
+              1.7640999999999984
+            ],
+            "seed_question_ci95": [
+              -0.18,
+              1.8399999999999999
+            ],
+            "per_seed_delta_pp": [
+              0.6,
+              0.76,
+              0.9400000000000001,
+              0.8999999999999999,
+              0.9400000000000001
+            ],
+            "every_seed_positive": true
+          }
+        }
+      },
+      "remaining3500": {
+        "conservative_lower": {
+          "n": 3500,
+          "base_correct": 1975,
+          "per_seed_correct": [
+            1975,
+            1972,
+            1981,
+            1983,
+            1994
+          ],
+          "vs_base": {
+            "delta_pp": 0.17142857142857143,
+            "question_ci95": [
+              -0.9885714285714284,
+              1.3028571428571427
+            ],
+            "seed_question_ci95": [
+              -1.0285714285714285,
+              1.3714285714285714
+            ],
+            "per_seed_delta_pp": [
+              0.0,
+              -0.08571428571428572,
+              0.17142857142857143,
+              0.2285714285714286,
+              0.5428571428571428
+            ],
+            "every_seed_positive": false
+          }
+        },
+        "conservative_upper": {
+          "n": 3500,
+          "base_correct": 1973,
+          "per_seed_correct": [
+            1975,
+            1973,
+            1981,
+            1984,
+            1994
+          ],
+          "vs_base": {
+            "delta_pp": 0.24,
+            "question_ci95": [
+              -0.9200000000000002,
+              1.3714285714285714
+            ],
+            "seed_question_ci95": [
+              -0.96,
+              1.4344285714285694
+            ],
+            "per_seed_delta_pp": [
+              0.05714285714285715,
+              0.0,
+              0.2285714285714286,
+              0.3142857142857143,
+              0.6
+            ],
+            "every_seed_positive": false
+          }
+        }
+      }
+    },
+    "literal_divisor_operator": {
+      "full5000": {
+        "conservative_lower": {
+          "n": 5000,
+          "base_correct": 2792,
+          "per_seed_correct": [
+            2819,
+            2827,
+            2837,
+            2834,
+            2837
+          ],
+          "vs_base": {
+            "delta_pp": 0.776,
+            "question_ci95": [
+              -0.18799999999999997,
+              1.7080000000000002
+            ],
+            "seed_question_ci95": [
+              -0.232,
+              1.7840000000000003
+            ],
+            "per_seed_delta_pp": [
+              0.54,
+              0.7000000000000001,
+              0.8999999999999999,
+              0.84,
+              0.8999999999999999
+            ],
+            "every_seed_positive": true
+          }
+        },
+        "conservative_upper": {
+          "n": 5000,
+          "base_correct": 2790,
+          "per_seed_correct": [
+            2819,
+            2828,
+            2837,
+            2835,
+            2837
+          ],
+          "vs_base": {
+            "delta_pp": 0.8240000000000001,
+            "question_ci95": [
+              -0.13600000000000007,
+              1.764
+            ],
+            "seed_question_ci95": [
+              -0.1800999999999999,
+              1.836
+            ],
+            "per_seed_delta_pp": [
+              0.58,
+              0.76,
+              0.9400000000000001,
+              0.8999999999999999,
+              0.9400000000000001
+            ],
+            "every_seed_positive": true
+          }
+        }
+      },
+      "remaining3500": {
+        "conservative_lower": {
+          "n": 3500,
+          "base_correct": 1976,
+          "per_seed_correct": [
+            1975,
+            1973,
+            1982,
+            1984,
+            1995
+          ],
+          "vs_base": {
+            "delta_pp": 0.16571428571428573,
+            "question_ci95": [
+              -0.9887142857142855,
+              1.2971428571428572
+            ],
+            "seed_question_ci95": [
+              -1.0344285714285713,
+              1.3657142857142857
+            ],
+            "per_seed_delta_pp": [
+              -0.028571428571428574,
+              -0.08571428571428572,
+              0.17142857142857143,
+              0.2285714285714286,
+              0.5428571428571428
+            ],
+            "every_seed_positive": false
+          }
+        },
+        "conservative_upper": {
+          "n": 3500,
+          "base_correct": 1974,
+          "per_seed_correct": [
+            1975,
+            1974,
+            1982,
+            1985,
+            1995
+          ],
+          "vs_base": {
+            "delta_pp": 0.23428571428571432,
+            "question_ci95": [
+              -0.9314285714285713,
+              1.3658571428571409
+            ],
+            "seed_question_ci95": [
+              -0.9714285714285713,
+              1.4342857142857144
+            ],
+            "per_seed_delta_pp": [
+              0.028571428571428574,
+              0.0,
+              0.2285714285714286,
+              0.3142857142857143,
+              0.6
+            ],
+            "every_seed_positive": false
+          }
+        }
+      }
+    }
+  },
+  "scope": "Additional post-outcome partial manual sensitivity after explicit semantic revision. Use each of two globallyconsistent boxed conventions for all21cases includingbaseline, while independently bounding the4nonoperator incomplete/contradictorycases. Literalboxed12 is divisorcount12=6 and correctasexpression despiteflawedprocess; answer-markupboxed12 isnumeric12andwrong. Other14outputswrongundereither. Recompute pairedbootstrap from frozencompare; otheragreedjudgments notcertified andoriginalcriteriaunchanged."
+}

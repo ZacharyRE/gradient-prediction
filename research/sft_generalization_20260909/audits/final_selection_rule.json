@@ -1,0 +1,51 @@
+{
+  "time": 1789007413.3113785,
+  "script_sha256": "76115af415f1a6ad109c228fa0fce6a3cc0b7fd875fb1f9cc5f1f541c3c361f6",
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "families": {
+    "teacher7_avg1234": {
+      "43": "avg_teacher7_1234_s43_epoch4",
+      "44": "avg_teacher7_1234_s44_epoch4",
+      "45": "avg_teacher7_1234_s45_epoch4",
+      "46": "avg_teacher7_1234_s46_epoch4",
+      "47": "avg_teacher7_1234_s47_epoch4"
+    },
+    "teacher7_expanded_avg1234": {
+      "43": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+      "44": "avg_teacher7_expansion_combined_1234_s44_epoch4",
+      "45": "avg_teacher7_expansion_combined_1234_s45_epoch4",
+      "46": "avg_teacher7_expansion_combined_1234_s46_epoch4",
+      "47": "avg_teacher7_expansion_combined_1234_s47_epoch4"
+    },
+    "teacher7_epoch4": {
+      "43": "teacher_all_lr5e5_s43_epoch4",
+      "44": "teacher_all_lr5e5_s44_epoch4",
+      "45": "teacher_all_lr5e5_s45_epoch4",
+      "46": "teacher_all_lr5e5_s46_epoch4",
+      "47": "teacher_all_lr5e5_s47_epoch4"
+    }
+  },
+  "default_primary": "teacher7_avg1234",
+  "alternative_primary": "teacher7_expanded_avg1234",
+  "rule": "Choose expanded ONLY IF every one of its five fixed seeds strictly exceeds baseline on development500 under BOTH original and strict scoring, AND expanded mean correctness strictly exceeds old-average mean under BOTH scoring rules. Otherwise keep old-average primary. No p-value selection, seed dropping, endpoint change, or futureMATH5000/OOD inspection.",
+  "controls": "All three fixed families evaluated on final benchmarks regardless of selection. Old unaveragedepoch4 isolates average-versus-endpoint for old data; old-versus-expanded averages compare the whole expansion recipe, not purecoverage atfixedtokens. Only selected primary has the prespecified efficacy claim; secondary intervals remain exploratory/unadjusted.",
+  "required_before_selection": [
+    "matched_generator_control_analysis.json",
+    "expanded_seed_replication_dispatch.json with all_complete",
+    "all16 dev summaries and exact-protocol strict scoring",
+    "final_statistics_contract.json passed"
+  ],
+  "replication_plan_sha256": "92fc6b901020048c21bff11f867c417dd4ff4457da786bbde19b76498b844b4b",
+  "known_evidence_sha256": {
+    "audits/teacher_average_five_seed_math_reused1500.json": "a3e7df687a58bbe98d7d8da1795360594197a8060f488befabc6e93a82b16fd1",
+    "audits/coverage_math1500_analysis.json": "00e538094998730018153eb433747669210af320d0172b6588f3ff4a1c40396b",
+    "audits/teacher_average_five_seed_development.json": "0bbad5cf31703413a1a38004df8282be1cd99be2b352ce8cd45bd746923f863b"
+  },
+  "scope": "Prospective deterministic choice using development data. MATH5000 remains historically reused; only reservedOOD is fresh. Five-seed positivity and both question/seed-question95%CIs on MATH and mathematicalOODmacro stay unchanged. Maximum16 models includingbaseline; native5primary+base."
+}

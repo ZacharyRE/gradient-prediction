@@ -1,0 +1,190 @@
+{
+  "time": 1788994314.3202713,
+  "script_sha256": "92a470f8e634fce039f012b2ce6af03009551c46864d214789cf1ee677709f01",
+  "baseline_correct": 299,
+  "baseline_wrong": 201,
+  "comparisons": [
+    {
+      "label": "KL0.1",
+      "treatment": "teacher_all_kl01_lr5e5_s43_epoch4",
+      "control": "teacher_all_lr5e5_s43_epoch4",
+      "treatment_correct": 301,
+      "control_correct": 311,
+      "treatment_baseline_wrong_rescued": 33,
+      "control_baseline_wrong_rescued": 38,
+      "treatment_baseline_correct_lost": 31,
+      "control_baseline_correct_lost": 26,
+      "all_questions": {
+        "n": 500,
+        "delta_pp": -2.0,
+        "paired_question_ci95_pp": [
+          -4.3999999999999995,
+          0.4
+        ],
+        "control_wrong_to_treatment_right": 14,
+        "control_right_to_treatment_wrong": 24
+      },
+      "baseline_wrong_questions": {
+        "n": 201,
+        "delta_pp": -2.4875621890547266,
+        "paired_question_ci95_pp": [
+          -6.467661691542288,
+          1.4925373134328357
+        ],
+        "control_wrong_to_treatment_right": 7,
+        "control_right_to_treatment_wrong": 12
+      },
+      "baseline_correct_questions": {
+        "n": 299,
+        "delta_pp": -1.6722408026755853,
+        "paired_question_ci95_pp": [
+          -4.682274247491638,
+          1.3377926421404682
+        ],
+        "control_wrong_to_treatment_right": 7,
+        "control_right_to_treatment_wrong": 12
+      },
+      "predictions_sha256": {
+        "teacher_all_kl01_lr5e5_s43_epoch4": "e12b6775388086905eef450d0f9409a6d2737437c1da788b0b4ddea514044e8d",
+        "teacher_all_lr5e5_s43_epoch4": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345"
+      }
+    },
+    {
+      "label": "KL1",
+      "treatment": "teacher_all_kl1_lr5e5_s43_epoch4",
+      "control": "teacher_all_lr5e5_s43_epoch4",
+      "treatment_correct": 309,
+      "control_correct": 311,
+      "treatment_baseline_wrong_rescued": 36,
+      "control_baseline_wrong_rescued": 38,
+      "treatment_baseline_correct_lost": 26,
+      "control_baseline_correct_lost": 26,
+      "all_questions": {
+        "n": 500,
+        "delta_pp": -0.4,
+        "paired_question_ci95_pp": [
+          -3.4000000000000004,
+          2.6
+        ],
+        "control_wrong_to_treatment_right": 28,
+        "control_right_to_treatment_wrong": 30
+      },
+      "baseline_wrong_questions": {
+        "n": 201,
+        "delta_pp": -0.9950248756218906,
+        "paired_question_ci95_pp": [
+          -6.467661691542288,
+          4.477611940298507
+        ],
+        "control_wrong_to_treatment_right": 15,
+        "control_right_to_treatment_wrong": 17
+      },
+      "baseline_correct_questions": {
+        "n": 299,
+        "delta_pp": 0.0,
+        "paired_question_ci95_pp": [
+          -3.3444816053511706,
+          3.3444816053511706
+        ],
+        "control_wrong_to_treatment_right": 13,
+        "control_right_to_treatment_wrong": 13
+      },
+      "predictions_sha256": {
+        "teacher_all_kl1_lr5e5_s43_epoch4": "e81e76031ca5bde6c6bc983961bec4c08f6aaf62fa12054b305aa2ee8616b4f5",
+        "teacher_all_lr5e5_s43_epoch4": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345"
+      }
+    },
+    {
+      "label": "student_keepgreedy",
+      "treatment": "sample_keepgreedy_lr1e5_s43_epoch2",
+      "control": "sample_all_lr1e5_s43_epoch2",
+      "treatment_correct": 296,
+      "control_correct": 307,
+      "treatment_baseline_wrong_rescued": 28,
+      "control_baseline_wrong_rescued": 32,
+      "treatment_baseline_correct_lost": 31,
+      "control_baseline_correct_lost": 24,
+      "all_questions": {
+        "n": 500,
+        "delta_pp": -2.1999999999999997,
+        "paired_question_ci95_pp": [
+          -5.0,
+          0.4
+        ],
+        "control_wrong_to_treatment_right": 19,
+        "control_right_to_treatment_wrong": 30
+      },
+      "baseline_wrong_questions": {
+        "n": 201,
+        "delta_pp": -1.9900497512437811,
+        "paired_question_ci95_pp": [
+          -6.965174129353234,
+          2.9850746268656714
+        ],
+        "control_wrong_to_treatment_right": 10,
+        "control_right_to_treatment_wrong": 14
+      },
+      "baseline_correct_questions": {
+        "n": 299,
+        "delta_pp": -2.341137123745819,
+        "paired_question_ci95_pp": [
+          -5.68561872909699,
+          1.0033444816053512
+        ],
+        "control_wrong_to_treatment_right": 9,
+        "control_right_to_treatment_wrong": 16
+      },
+      "predictions_sha256": {
+        "sample_keepgreedy_lr1e5_s43_epoch2": "a5bd5a53adf91e253bec3c0cde7a0986ce90d7657d300916749b20f8686775ac",
+        "sample_all_lr1e5_s43_epoch2": "48bd48cb95842bc211a3eeeae9b1729468cd71512700bd1ec16838ce774b2375"
+      }
+    },
+    {
+      "label": "teacher_keepgreedy",
+      "treatment": "teacher_keepgreedy_lr5e5_s43_epoch4",
+      "control": "teacher_all_lr5e5_s43_epoch4",
+      "treatment_correct": 296,
+      "control_correct": 311,
+      "treatment_baseline_wrong_rescued": 31,
+      "control_baseline_wrong_rescued": 38,
+      "treatment_baseline_correct_lost": 34,
+      "control_baseline_correct_lost": 26,
+      "all_questions": {
+        "n": 500,
+        "delta_pp": -3.0,
+        "paired_question_ci95_pp": [
+          -6.2,
+          0.2
+        ],
+        "control_wrong_to_treatment_right": 27,
+        "control_right_to_treatment_wrong": 42
+      },
+      "baseline_wrong_questions": {
+        "n": 201,
+        "delta_pp": -3.482587064676617,
+        "paired_question_ci95_pp": [
+          -9.45273631840796,
+          2.4875621890547266
+        ],
+        "control_wrong_to_treatment_right": 15,
+        "control_right_to_treatment_wrong": 22
+      },
+      "baseline_correct_questions": {
+        "n": 299,
+        "delta_pp": -2.6755852842809364,
+        "paired_question_ci95_pp": [
+          -6.354515050167224,
+          1.0033444816053512
+        ],
+        "control_wrong_to_treatment_right": 12,
+        "control_right_to_treatment_wrong": 20
+      },
+      "predictions_sha256": {
+        "teacher_keepgreedy_lr5e5_s43_epoch4": "72757fd6374ba63e7ee5c895f538b677af7d5bca77940ba4cf9376b4699f326c",
+        "teacher_all_lr5e5_s43_epoch4": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345"
+      }
+    }
+  ],
+  "pending": [],
+  "scope": "Fixed-endpoint seed43 exploratory controls on development500. Positive conditional delta means more retained/rescued correct answers. Conditional intervals are unadjusted and do not establish multiple-seed or fresh general efficacy; the two baseline strata together give the net effect."
+}

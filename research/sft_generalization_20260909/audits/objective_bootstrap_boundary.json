@@ -1,0 +1,90 @@
+{
+  "time": 1789006435.9562135,
+  "script_sha256": "b6d906687e63f5a688d74c45ccf3089561eaf1adaa3849c629606f560afbe888",
+  "objective_grid_sha256": "d09cd427fa3184df58ed0e2e4557d2e05443fef633f554f612597a71130c0382",
+  "scoring_audit_sha256": "91ba840f35f3abde867adbd6f5eb59e9144e1ddd3f9abadc1eaf9abb17dd7b18",
+  "comparisons": [
+    {
+      "scoring": "raw",
+      "coefficient": "01",
+      "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+      "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+      "n": 500,
+      "wins": 43,
+      "losses": 28,
+      "delta_pp": 3.0,
+      "original_10000_draw_ci95_pp": [
+        -0.2,
+        6.2
+      ],
+      "exact_discrete_percentile_bootstrap_ci95_pp": [
+        -0.2,
+        6.4
+      ],
+      "bootstrap_probability_delta_nonpositive": 0.041615873877755546,
+      "exact_mcnemar_two_sided_p": 0.09592363141082376
+    },
+    {
+      "scoring": "raw",
+      "coefficient": "1",
+      "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+      "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+      "n": 500,
+      "wins": 49,
+      "losses": 31,
+      "delta_pp": 3.5999999999999996,
+      "original_10000_draw_ci95_pp": [
+        0.0,
+        7.000000000000001
+      ],
+      "exact_discrete_percentile_bootstrap_ci95_pp": [
+        0.2,
+        7.2
+      ],
+      "bootstrap_probability_delta_nonpositive": 0.02433055884705759,
+      "exact_mcnemar_two_sided_p": 0.056664426345121144
+    },
+    {
+      "scoring": "strict",
+      "coefficient": "01",
+      "treatment": "teacher_all_dftkl01_lr5e5_s43_epoch4",
+      "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+      "n": 500,
+      "wins": 44,
+      "losses": 28,
+      "delta_pp": 3.2,
+      "original_10000_draw_ci95_pp": [
+        0.0,
+        6.6000000000000005
+      ],
+      "exact_discrete_percentile_bootstrap_ci95_pp": [
+        -0.2,
+        6.6
+      ],
+      "bootstrap_probability_delta_nonpositive": 0.03287582515971947,
+      "exact_mcnemar_two_sided_p": 0.07636915467183139
+    },
+    {
+      "scoring": "strict",
+      "coefficient": "1",
+      "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+      "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+      "n": 500,
+      "wins": 50,
+      "losses": 31,
+      "delta_pp": 3.8,
+      "original_10000_draw_ci95_pp": [
+        0.2,
+        7.3999999999999995
+      ],
+      "exact_discrete_percentile_bootstrap_ci95_pp": [
+        0.4,
+        7.4
+      ],
+      "bootstrap_probability_delta_nonpositive": 0.01909971080903125,
+      "exact_mcnemar_two_sided_p": 0.04482852238579864
+    }
+  ],
+  "method": "For a single paired binary contrast, resampling500 question rows gives500 iid draws from the empirical ternary difference distribution. Convolve its three probabilities500 times, then invert the exact discrete CDF at.025/.975; no Monte Carlo sampling.",
+  "scope": "Numerical boundary diagnosis, not a new efficacy test. Exact percentile bootstrap and exact conditional McNemar are different procedures and need not agree at discrete boundaries. All results single-seed/unadjusted; original analyses unchanged. No selection of the favorable interval."
+}

@@ -1,0 +1,30 @@
+{
+  "time": 1789043630.0687563,
+  "all_four_datasets_all21_models_complete": true,
+  "coverage": {
+    "ood_minerva": 21,
+    "ood_olympiad": 21,
+    "ood_svamp": 21,
+    "ood_amc23": 21
+  },
+  "n_cases": 74,
+  "per_dataset": {
+    "ood_amc23": 1,
+    "ood_minerva": 6,
+    "ood_olympiad": 9,
+    "ood_svamp": 58
+  },
+  "case_file_sha256": "cfc1d9657f38dbe1c68f4ccd12eebccab1228387206daedac29bdb967638713e",
+  "plan_sha256": "5ca610a84dddc04f3c0e053f03254d9a28a58d8d6b123714c0242ef949741d2a",
+  "source_sha256": {
+    "audits/scoring_confirmation_ood_minerva.json": "0858f2c73d75271f9cb8c20d59c79a0570dcb425ba6cdce38711f37d08178227",
+    "audits/scoring_supplement_ood_minerva.json": "0377bd42eae00060ba0e90a0757aa3a7d17862457e96f4cae12ba23a5cf2d2fd",
+    "audits/scoring_confirmation_ood_olympiad.json": "c944e147043815065915bc38a158bb5f0fc75744e82efff52bb10482b31990c4",
+    "audits/scoring_supplement_ood_olympiad.json": "ed7d6e9f5f0a5bc0ffa972740b2c46a71afdb1f730ddbe1f161df5435b8e4296",
+    "audits/scoring_confirmation_ood_svamp.json": "fb0a10c425a122de927f5a89cace3556cf41237d2d8a9f378bfd3d66fe47f09f",
+    "audits/scoring_supplement_ood_svamp.json": "da3f296a91ac73e79a193138b79ef8d87408bd0a08b9f70a8ae91c2993584402",
+    "audits/scoring_confirmation_ood_amc23.json": "1137d6f2bb20b91aea4718a7bfcae1fac2d6a1a71ae22714a3ea4aa5087a9a97",
+    "audits/scoring_supplement_ood_amc23.json": "c0fa8003dea8a9082c4bfe5c75ce69540dfbe481839f847a9afbcec7615b5f9e"
+  },
+  "scope": "Exhaustive raw/strict disagreement review for baseline plus all20 fixed trained/derived models across four OOD datasets when sidecars complete. Minerva uses prospectively corrected numeric vectors. Independent mathematical final-answer and process assessment by unblinded assistant; preserve all original metrics; unresolved outcomes bounded. No inference about agreed outputs. Small correct explicit-percent cases separately reported and sensitivity only."
+}

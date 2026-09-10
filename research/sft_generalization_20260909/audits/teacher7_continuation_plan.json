@@ -1,0 +1,17 @@
+{
+  "time": 1788975857.7329967,
+  "source": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_lr5e5_s43",
+  "source_state_sha256": "ff834ad28741bee4895c2a8990eda2f16b10b27e6b946f6e691b93eb929a02d3",
+  "job": {
+    "name": "teacher_all_lr5e5_extended_s43",
+    "train_file": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/data/teacher_all.jsonl",
+    "lr": 5e-05,
+    "seed": 43,
+    "stop": 8,
+    "epochs": 8,
+    "resume_from": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_lr5e5_s43"
+  },
+  "reason": "Development trajectory300/302/304/311 still rises at epoch4; original schedule already has8-epoch horizon. Extend same trajectory by restoring adapter, optimizer, RNG and data-order state. No repeated first4epochs; no new schedule/warmup.",
+  "phase": "Exploratory continuation; epoch selection still development only",
+  "native_check": "Same teacher source atLR1e-5epoch2 gave79vs74 native128, intervalcrosses0; no hidden-backend efficacy established."
+}

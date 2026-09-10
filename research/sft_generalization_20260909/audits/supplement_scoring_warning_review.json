@@ -1,0 +1,63 @@
+{
+  "time": 1789044001.6340404,
+  "all_reviewed": true,
+  "plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "inventory_sha256": "83aabcd3e739fd1d92d8682ddb1f8e48ea5a1b1593440cd26c0bfdce0ec541c5",
+  "case_file_sha256": "67c7d1e0a94240252f77df16d5e8cf27030a8abb2bb06e628919742b4ca1d6c2",
+  "n_warning_events": 2,
+  "records": [
+    {
+      "case_id": "supplement_math_reused5000:0",
+      "reviewed": true,
+      "review_source": "audits/math_complete_warning_preview_review.json",
+      "review_source_sha256": "d86e1800f39c08bb05af6973299c284991bd8fb7ca3cce4294de087bbcc9fef8",
+      "case_sha256": "f00c92d1dfc4b6036bffd2f75e33ba51bfe39cc78ab4103c5f7ba2804cbf5d2a",
+      "decision": {
+        "case_id": "supplement_math_reused5000:0",
+        "model": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "index": 4472,
+        "reviewed": true,
+        "complete_text_read": true,
+        "mathematical_final_answer_correct": false,
+        "strict_result_confirmed": true,
+        "independent_reference_and_counterexample": "B=A-I=[[2,-4],[1,-2]] hasB^2=0, soA^2016=I+2016B=[[4033,-8064],[2016,-4031]]. Correct characteristic polynomial(lambda-1)^2, notlambda^2-2lambda+2. Output diagonal matrix hasupperright0, differsfrom-8064. ",
+        "case_sha256": "32309e78e8f4d0f8228455fc2f5d1e58d93252f208454daacf95fbb2c1d47ae8",
+        "prediction_sha256": "68e2deb5f62f4a3d52957c10b61ff59f4caca58eb76625de390a7d02c04b8ccb",
+        "predictions_sha256": "b05fca7cd4275055aa22278b3675bb5d87715a12222dcba8b99d77abe5267153"
+      }
+    },
+    {
+      "case_id": "supplement_ood_minerva:0",
+      "reviewed": true,
+      "review_source": "audits/supplement_minerva_warning_preview_review.json",
+      "review_source_sha256": "fd58c37dce364a747daf9ff57d7197ba0524c7bae622244e77ba1c827a4d9030",
+      "case_sha256": "a679909604d8e75b7152cef7fc6e54b1df05429a4b4519a6ff9591583a5d9996",
+      "decision": {
+        "case_id": "supplement_ood_minerva:0",
+        "reviewed": true,
+        "complete_text_read": true,
+        "case_sha256": "516992c51c89cbe4ad71dab7c2f53b30e4cb44944367ad0df51eca84b811b5b1",
+        "prediction_sha256": "5052c06fc417e7d98b6ed3c2c4761b559ca2bdc42a76ec3983019abd6483a7d4",
+        "final_answer_correct": false,
+        "reason": "Finaltheta_ddot+(g/l)sin(theta)=f/m lacks cos(theta)/l on force term. At horizontal rodtheta=pi/2 horizontal force is radial so its torque mustzero, but output retains f/m. This independent counterexample holds irrespective of referencegravitysign issue. Fullprocess also swaps force components and equatescentripetal v^2/l with tangential acceleration. Correctdownward-angle equation is mltheta_ddot+mgsin(theta)=fcos(theta), withsignslinkedtochosenaxis. Do not endorse savedgold negativegravity; retain previously documentedMITdiagramreferenceconcern.",
+        "scoring_changed": false
+      }
+    }
+  ],
+  "source_sha256": {
+    "audits/supplement_scoring_warning_inventory.json": "83aabcd3e739fd1d92d8682ddb1f8e48ea5a1b1593440cd26c0bfdce0ec541c5",
+    "audits/supplement_scoring_warning_cases.jsonl": "67c7d1e0a94240252f77df16d5e8cf27030a8abb2bb06e628919742b4ca1d6c2",
+    "audits/math_complete_warning_preview_cases.jsonl": "61e29e8969ebf8614041c4bb4091ab33f82e2d6798457ffc5c75435324ab9703",
+    "audits/math_complete_warning_preview_review.json": "d86e1800f39c08bb05af6973299c284991bd8fb7ca3cce4294de087bbcc9fef8",
+    "audits/supplement_minerva_warning_preview_cases.jsonl": "d319ba5e0ff36e33e056955db7bf1197215cf653bdd7d1bdb2a127ff755745e9",
+    "audits/supplement_minerva_warning_preview_review.json": "fd58c37dce364a747daf9ff57d7197ba0524c7bae622244e77ba1c827a4d9030",
+    "audits/scoring_supplement_math_reused5000.json": "09502e1049c0875b4208c90d369d3a5672321f52b966bdcb5cb03cef7ac1c221",
+    "audits/scoring_supplement_ood_minerva.json": "0377bd42eae00060ba0e90a0757aa3a7d17862457e96f4cae12ba23a5cf2d2fd",
+    "audits/scoring_supplement_ood_olympiad.json": "ed7d6e9f5f0a5bc0ffa972740b2c46a71afdb1f730ddbe1f161df5435b8e4296",
+    "audits/scoring_supplement_ood_svamp.json": "da3f296a91ac73e79a193138b79ef8d87408bd0a08b9f70a8ae91c2993584402",
+    "audits/scoring_supplement_ood_amc23.json": "c0fa8003dea8a9082c4bfe5c75ce69540dfbe481839f847a9afbcec7615b5f9e",
+    "audits/scoring_supplement_minerva_numeric.json": "4bfc591246702293626ae8d8931573365af1d442c8ed511a5a0f0f6eee435422"
+  },
+  "script_sha256": "a4b8e8de07a4260fcccc04df16959dc929256984106d310eb043a8263879fe94",
+  "scope": "Exact full-text and prediction-file identity binding of prior assistant mathematical reviews; not an independent human review. No unreviewed warning automatically approved. Zero-warning audits included with hashes. Original scores unchanged; any reference-quality concern retained in original case decision."
+}

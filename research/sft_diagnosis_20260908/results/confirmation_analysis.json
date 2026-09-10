@@ -1,0 +1,383 @@
+{
+  "dev": {
+    "base_correct": 304,
+    "base_accuracy_pct": 60.8,
+    "families": {
+      "lora": {
+        "per_seed": {
+          "43": {
+            "name": "lora_qkvo16_lr1e-5_s43_step25",
+            "correct": 298,
+            "accuracy_pct": 59.599999999999994,
+            "delta_pp": -1.2,
+            "ci95_pp": [
+              -3.2,
+              0.8
+            ],
+            "wrong_to_right": 11,
+            "right_to_wrong": 17,
+            "mcnemar_p": 0.34492845088243484
+          },
+          "44": {
+            "name": "lora_qkvo16_lr1e-5_s44_step25",
+            "correct": 301,
+            "accuracy_pct": 60.199999999999996,
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -2.6,
+              1.4000000000000001
+            ],
+            "wrong_to_right": 12,
+            "right_to_wrong": 15,
+            "mcnemar_p": 0.7011080384254456
+          },
+          "45": {
+            "name": "lora_qkvo16_lr1e-5_s45_step25",
+            "correct": 299,
+            "accuracy_pct": 59.8,
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -3.0,
+              0.8
+            ],
+            "wrong_to_right": 9,
+            "right_to_wrong": 14,
+            "mcnemar_p": 0.4048728942871094
+          }
+        },
+        "mean_accuracy_pct": 59.86666666666667,
+        "delta_pp": -0.9333333333333336,
+        "fixed_models_question_ci95_pp": [
+          -2.8666666666666667,
+          0.933333333333333
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -2.9333333333333336,
+          0.9999999999999999
+        ],
+        "training_seed_std_accuracy_pp": 0.3055050463303896,
+        "n_unique_questions": 500,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      },
+      "full": {
+        "per_seed": {
+          "43": {
+            "name": "full_lr1e-6_fp32_s43_step25",
+            "correct": 165,
+            "accuracy_pct": 33.0,
+            "delta_pp": -27.800000000000004,
+            "ci95_pp": [
+              -32.2,
+              -23.400000000000002
+            ],
+            "wrong_to_right": 12,
+            "right_to_wrong": 151,
+            "mcnemar_p": 9.002303160266326e-32
+          },
+          "44": {
+            "name": "full_lr1e-6_fp32_s44_step25",
+            "correct": 190,
+            "accuracy_pct": 38.0,
+            "delta_pp": -22.8,
+            "ci95_pp": [
+              -27.200000000000003,
+              -18.4
+            ],
+            "wrong_to_right": 19,
+            "right_to_wrong": 133,
+            "mcnemar_p": 2.954047338544925e-22
+          },
+          "45": {
+            "name": "full_lr1e-6_fp32_s45_step25",
+            "correct": 176,
+            "accuracy_pct": 35.199999999999996,
+            "delta_pp": -25.6,
+            "ci95_pp": [
+              -30.0,
+              -21.4
+            ],
+            "wrong_to_right": 13,
+            "right_to_wrong": 141,
+            "mcnemar_p": 2.5180562644965816e-28
+          }
+        },
+        "mean_accuracy_pct": 35.4,
+        "delta_pp": -25.4,
+        "fixed_models_question_ci95_pp": [
+          -29.4,
+          -21.53333333333334
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -30.13333333333334,
+          -20.666666666666668
+        ],
+        "training_seed_std_accuracy_pp": 2.505992817228333,
+        "n_unique_questions": 500,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      }
+    },
+    "lora_minus_full": {
+      "delta_pp": 24.46666666666667,
+      "hierarchical_seed_question_ci95_pp": [
+        20.0,
+        28.999999999999996
+      ]
+    }
+  },
+  "math_confirmation": {
+    "base_correct": 568,
+    "base_accuracy_pct": 56.8,
+    "families": {
+      "lora": {
+        "per_seed": {
+          "43": {
+            "name": "lora_qkvo16_lr1e-5_s43_step25",
+            "correct": 555,
+            "accuracy_pct": 55.50000000000001,
+            "delta_pp": -1.3,
+            "ci95_pp": [
+              -2.8000000000000003,
+              0.2
+            ],
+            "wrong_to_right": 24,
+            "right_to_wrong": 37,
+            "mcnemar_p": 0.12373144253809215
+          },
+          "44": {
+            "name": "lora_qkvo16_lr1e-5_s44_step25",
+            "correct": 560,
+            "accuracy_pct": 56.00000000000001,
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -2.1999999999999997,
+              0.6
+            ],
+            "wrong_to_right": 22,
+            "right_to_wrong": 30,
+            "mcnemar_p": 0.3317497633694906
+          },
+          "45": {
+            "name": "lora_qkvo16_lr1e-5_s45_step25",
+            "correct": 563,
+            "accuracy_pct": 56.3,
+            "delta_pp": -0.5,
+            "ci95_pp": [
+              -1.9,
+              0.8999999999999999
+            ],
+            "wrong_to_right": 23,
+            "right_to_wrong": 28,
+            "mcnemar_p": 0.5758493477318467
+          }
+        },
+        "mean_accuracy_pct": 55.93333333333334,
+        "delta_pp": -0.8666666666666668,
+        "fixed_models_question_ci95_pp": [
+          -2.200833333333333,
+          0.4674999999999878
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -2.3,
+          0.5333333333333332
+        ],
+        "training_seed_std_accuracy_pp": 0.40414518843273334,
+        "n_unique_questions": 1000,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      },
+      "full": {
+        "per_seed": {
+          "43": {
+            "name": "full_lr1e-6_fp32_s43_step25",
+            "correct": 319,
+            "accuracy_pct": 31.900000000000002,
+            "delta_pp": -24.9,
+            "ci95_pp": [
+              -28.1,
+              -21.7
+            ],
+            "wrong_to_right": 45,
+            "right_to_wrong": 294,
+            "mcnemar_p": 5.981602118464311e-46
+          },
+          "44": {
+            "name": "full_lr1e-6_fp32_s44_step25",
+            "correct": 325,
+            "accuracy_pct": 32.5,
+            "delta_pp": -24.3,
+            "ci95_pp": [
+              -27.6,
+              -21.099999999999998
+            ],
+            "wrong_to_right": 42,
+            "right_to_wrong": 285,
+            "mcnemar_p": 1.5884387662165912e-45
+          },
+          "45": {
+            "name": "full_lr1e-6_fp32_s45_step25",
+            "correct": 323,
+            "accuracy_pct": 32.300000000000004,
+            "delta_pp": -24.5,
+            "ci95_pp": [
+              -27.700000000000003,
+              -21.3
+            ],
+            "wrong_to_right": 40,
+            "right_to_wrong": 285,
+            "mcnemar_p": 1.0180676923449036e-46
+          }
+        },
+        "mean_accuracy_pct": 32.233333333333334,
+        "delta_pp": -24.566666666666666,
+        "fixed_models_question_ci95_pp": [
+          -27.566666666666666,
+          -21.633333333333336
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -27.6675,
+          -21.433333333333337
+        ],
+        "training_seed_std_accuracy_pp": 0.3055050463303896,
+        "n_unique_questions": 1000,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      }
+    },
+    "lora_minus_full": {
+      "delta_pp": 23.7,
+      "hierarchical_seed_question_ci95_pp": [
+        20.599999999999998,
+        26.900000000000002
+      ]
+    }
+  },
+  "gsm_diagnostic": {
+    "base_correct": 219,
+    "base_accuracy_pct": 73.0,
+    "families": {
+      "lora": {
+        "per_seed": {
+          "43": {
+            "name": "lora_qkvo16_lr1e-5_s43_step25",
+            "correct": 219,
+            "accuracy_pct": 73.0,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -2.666666666666667,
+              3.0
+            ],
+            "wrong_to_right": 10,
+            "right_to_wrong": 10,
+            "mcnemar_p": 1.0
+          },
+          "44": {
+            "name": "lora_qkvo16_lr1e-5_s44_step25",
+            "correct": 216,
+            "accuracy_pct": 72.0,
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -3.6666666666666665,
+              1.6666666666666667
+            ],
+            "wrong_to_right": 7,
+            "right_to_wrong": 10,
+            "mcnemar_p": 0.629058837890625
+          },
+          "45": {
+            "name": "lora_qkvo16_lr1e-5_s45_step25",
+            "correct": 219,
+            "accuracy_pct": 73.0,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -2.666666666666667,
+              2.666666666666667
+            ],
+            "wrong_to_right": 9,
+            "right_to_wrong": 9,
+            "mcnemar_p": 1.0
+          }
+        },
+        "mean_accuracy_pct": 72.66666666666667,
+        "delta_pp": -0.3333333333333336,
+        "fixed_models_question_ci95_pp": [
+          -3.0,
+          2.333333333333333
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -3.0027777777777755,
+          2.4444444444444438
+        ],
+        "training_seed_std_accuracy_pp": 0.5773502691896263,
+        "n_unique_questions": 300,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      },
+      "full": {
+        "per_seed": {
+          "43": {
+            "name": "full_lr1e-6_fp32_s43_step25",
+            "correct": 165,
+            "accuracy_pct": 55.00000000000001,
+            "delta_pp": -18.0,
+            "ci95_pp": [
+              -24.333333333333336,
+              -11.666666666666666
+            ],
+            "wrong_to_right": 25,
+            "right_to_wrong": 79,
+            "mcnemar_p": 1.0540017368882998e-07
+          },
+          "44": {
+            "name": "full_lr1e-6_fp32_s44_step25",
+            "correct": 161,
+            "accuracy_pct": 53.666666666666664,
+            "delta_pp": -19.333333333333332,
+            "ci95_pp": [
+              -25.333333333333336,
+              -13.333333333333334
+            ],
+            "wrong_to_right": 19,
+            "right_to_wrong": 77,
+            "mcnemar_p": 1.8621521769948975e-09
+          },
+          "45": {
+            "name": "full_lr1e-6_fp32_s45_step25",
+            "correct": 169,
+            "accuracy_pct": 56.333333333333336,
+            "delta_pp": -16.666666666666664,
+            "ci95_pp": [
+              -23.0,
+              -10.333333333333334
+            ],
+            "wrong_to_right": 24,
+            "right_to_wrong": 74,
+            "mcnemar_p": 4.2159207369916054e-07
+          }
+        },
+        "mean_accuracy_pct": 55.00000000000001,
+        "delta_pp": -18.000000000000004,
+        "fixed_models_question_ci95_pp": [
+          -23.66666666666667,
+          -12.333333333333336
+        ],
+        "hierarchical_seed_question_ci95_pp": [
+          -24.0,
+          -12.0
+        ],
+        "training_seed_std_accuracy_pp": 1.3333333333333364,
+        "n_unique_questions": 300,
+        "n_seeds": 3,
+        "note": "Hierarchical CI is exploratory with only three seeds; the fixed-model CI excludes training randomness."
+      }
+    },
+    "lora_minus_full": {
+      "delta_pp": 17.666666666666668,
+      "hierarchical_seed_question_ci95_pp": [
+        11.555555555555555,
+        23.77777777777778
+      ]
+    }
+  }
+}

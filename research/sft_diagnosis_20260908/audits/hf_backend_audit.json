@@ -1,0 +1,390 @@
+{
+  "base": {
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      177,
+      233,
+      324
+    ],
+    "merge_checks": [],
+    "generations": [
+      {
+        "index": 0,
+        "prediction": "To solve the given problem, we start by substituting the values of \\(x\\) and \\(y\\) into the expression \\(\\frac{x^4 + 2y^2}{6}\\).\n\nGiven:\n\\[ x = 2 \\]\n\\[ y = 5 \\]\n\nFirst, we calculate \\(x^4\\):\n\\[ x^4 = 2^4 = 16 \\]\n\nNext, we calculate \\(2y^2\\):\n\\[ 2y^2 = 2 \\cdot 5^2 = 2 \\cdot 25 = 50 \\]\n\nNow, we substitute these values back into the expression:\n\\[ \\frac{x^4 + 2y^2}{6} = \\frac{16 + 50}{6} \\]\n\nWe then perform the addition in the numerator:\n\\[ 16 + 50 = 66 \\]\n\nSo the expression simplifies to:\n\\[ \\frac{66}{6} \\]\n\nFinally, we perform the division:\n\\[ \\frac{66}{6} = 11 \\]\n\nThus, the value of the expression is:\n\\[\n\\boxed{11}\n\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 244,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 1,
+        "prediction": "Let's denote the width of the rectangular garden by \\( w \\) feet. According to the problem, the length of the garden is twice the width, so the length is \\( 2w \\) feet.\n\nThe perimeter of a rectangle is given by the formula:\n\\[\n\\text{Perimeter} = 2 \\times (\\text{length} + \\text{width})\n\\]\nSubstituting the given values into the formula, we get:\n\\[\n60 = 2 \\times (2w + w)\n\\]\nSimplify the expression inside the parentheses:\n\\[\n60 = 2 \\times 3w\n\\]\nThis simplifies to:\n\\[\n60 = 6w\n\\]\nTo find the width, we solve for \\( w \\) by dividing both sides of the equation by 6:\n\\[\nw = \\frac{60}{6} = 10\n\\]\nSo, the width of the garden is 10 feet. Since the length is twice the width, the length is:\n\\[\n2w = 2 \\times 10 = 20 \\text{ feet}\n\\]\nThe area of a rectangle is given by the formula:\n\\[\n\\text{Area} = \\text{length} \\times \\text{width}\n\\]\nSubstituting the values we found for the length and width, we get:\n\\[\n\\text{Area} = 20 \\times 10 = 200 \\text{ square feet}\n\\]\nTherefore, the area of the garden is \\(\\boxed{200}\\) square feet.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 337,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 2,
+        "prediction": "To solve the problem of expressing \\(\\frac{0.\\overline{666}}{1.\\overline{333}}\\) as a common fraction, we first need to convert the repeating decimals into fractions.\n\nLet's start with \\(0.\\overline{666}\\). Let \\(x = 0.\\overline{666}\\). This means that \\(x = 0.666666\\ldots\\). To eliminate the repeating part, we can multiply both sides of the equation by 10:\n\\[10x = 6.666666\\ldots\\]\nNow, we subtract the original equation \\(x = 0.666666\\ldots\\) from this new equation:\n\\[10x - x = 6.666666\\ldots - 0.666666\\ldots\\]\n\\[9x = 6\\]\nSolving for \\(x\\), we get:\n\\[x = \\frac{6}{9} = \\frac{2}{3}\\]\nSo, \\(0.\\overline{666} = \\frac{2}{3}\\).\n\nNext, let's convert \\(1.\\overline{333}\\) into a fraction. Let \\(y = 1.\\overline{333}\\). This means that \\(y = 1.333333\\ldots\\). To eliminate the repeating part, we can multiply both sides of the equation by 10:\n\\[10y = 13.333333\\ldots\\]\nNow, we subtract the original equation \\(y = 1.333333\\ldots\\) from this new equation:\n\\[10y - y = 13.333333\\ldots - 1.333333\\ldots\\]\n\\[9y = 12\\]\nSolving for \\(y\\), we get:\n\\[y = \\frac{12}{9} = \\frac{4}{3}\\]\nSo, \\(1.\\overline{333} = \\frac{4}{3}\\).\n\nNow we can substitute these fractions back into the original expression:\n\\[\n\\frac{0.\\overline{666}}{1.\\overline{333}} = \\frac{\\frac{2}{3}}{\\frac{4}{3}} = \\frac{2}{3} \\times \\frac{3}{4} = \\frac{2 \\times 3}{3 \\times 4} = \\frac{6}{12} = \\frac{1}{2}\n\\]\nTherefore, the answer is \\(\\boxed{\\frac{1}{2}}\\).",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 593,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 3,
+        "prediction": "To simplify and rationalize the denominator of the expression \\(\\frac{1}{1+ \\frac{1}{\\sqrt{3}+1}}\\), we will follow these steps:\n\n1. Simplify the inner fraction \\(\\frac{1}{\\sqrt{3}+1}\\).\n2. Add 1 to the result from step 1.\n3. Simplify the resulting expression.\n\nLet's start with the inner fraction \\(\\frac{1}{\\sqrt{3}+1}\\). To rationalize the denominator, we multiply the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3}-1\\):\n\n\\[\n\\frac{1}{\\sqrt{3}+1} \\cdot \\frac{\\sqrt{3}-1}{\\sqrt{3}-1} = \\frac{\\sqrt{3}-1}{(\\sqrt{3}+1)(\\sqrt{3}-1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3}+1)(\\sqrt{3}-1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, the expression becomes:\n\n\\[\n\\frac{\\sqrt{3}-1}{2}.\n\\]\n\nNow, we substitute this back into the original expression:\n\n\\[\n\\frac{1}{1 + \\frac{\\sqrt{3}-1}{2}}.\n\\]\n\nTo simplify the denominator, we combine the terms over a common denominator:\n\n\\[\n1 + \\frac{\\sqrt{3}-1}{2} = \\frac{2}{2} + \\frac{\\sqrt{3}-1}{2} = \\frac{2 + \\sqrt{3} - 1}{2} = \\frac{\\sqrt{3} + 1}{2}.\n\\]\n\nSo, the expression now is:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}}.\n\\]\n\nTo simplify this, we multiply the numerator and the denominator by 2:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}} = \\frac{2}{\\sqrt{3} + 1}.\n\\]\n\nAgain, to rationalize the denominator, we multiply the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3}-1\\):\n\n\\[\n\\frac{2}{\\sqrt{3} + 1} \\cdot \\frac{\\sqrt{3}-1}{\\sqrt{3}-1} = \\frac{2(\\sqrt{3}-1)}{(\\sqrt{3}+1)(\\sqrt{3}-1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3}+1)(\\sqrt{3}-1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, the expression becomes:\n\n\\[\n\\frac{2(\\sqrt{3}-1)}{2} = \\sqrt{3} - 1.\n\\]\n\nTherefore, the simplified and rationalized form of the original expression is:\n\n\\[\n\\boxed{\\sqrt{3} - 1}.\n\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 676,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 4,
+        "prediction": "To simplify the given expression \\(2x + 8x^2 + 9 - (4 - 2x - 8x^2)\\), we will follow these steps:\n\n1. Distribute the negative sign through the parentheses.\n2. Combine like terms.\n\nLet's start with the given expression:\n\\[2x + 8x^2 + 9 - (4 - 2x - 8x^2)\\]\n\nDistribute the negative sign through the parentheses:\n\\[2x + 8x^2 + 9 - 4 + 2x + 8x^2\\]\n\nNow, combine the like terms. The like terms are the \\(x^2\\) terms, the \\(x\\) terms, and the constant terms.\n\nCombine the \\(x^2\\) terms:\n\\[8x^2 + 8x^2 = 16x^2\\]\n\nCombine the \\(x\\) terms:\n\\[2x + 2x = 4x\\]\n\nCombine the constant terms:\n\\[9 - 4 = 5\\]\n\nPutting it all together, we get:\n\\[16x^2 + 4x + 5\\]\n\nSo, the simplified expression is:\n\\[\\boxed{16x^2 + 4x + 5}\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 268,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 177,
+        "prediction": "To determine the number of different combinations of meals that Yann and Camille can order, we need to consider that each of them can choose any one of the 10 items on the menu. Since the order in which they order the dishes matters, we are dealing with permutations rather than combinations.\n\nHere's the step-by-step reasoning:\n\n1. Yann has 10 choices for his meal.\n2. After Yann has chosen his meal, Camille has 10 choices for her meal (since she can also choose any of the 10 items).\n\nSince the choices are independent of each other, the total number of different combinations of meals that Yann and Camille can order is the product of the number of choices each has. Therefore, we calculate:\n\n\\[ 10 \\times 10 = 100 \\]\n\nSo, the number of different combinations of meals that Yann and Camille can order is \\(\\boxed{100}\\).",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 199,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 233,
+        "prediction": "To find the point of tangency of the parabolas \\( y = x^2 + 15x + 32 \\) and \\( x = y^2 + 49y + 593 \\), we need to find a point \\((x_0, y_0)\\) where both equations are satisfied simultaneously. This means that at the point of tangency, the slopes of the tangents to both parabolas must be equal.\n\nFirst, let's find the derivative of \\( y = x^2 + 15x + 32 \\) with respect to \\( x \\):\n\\[\n\\frac{dy}{dx} = 2x + 15.\n\\]\nAt the point of tangency, the slope of the tangent to the parabola \\( y = x^2 + 15x + 32 \\) is \\( 2x_0 + 15 \\).\n\nNext, let's find the derivative of \\( x = y^2 + 49y + 593 \\) with respect to \\( y \\):\n\\[\n\\frac{dx}{dy} = 2y + 49.\n\\]\nAt the point of tangency, the slope of the tangent to the parabola \\( x = y^2 + 49y + 593 \\) is \\( 2y_0 + 49 \\).\n\nSince the slopes of the tangents are equal at the point of tangency, we have:\n\\[\n2x_0 + 15 = 2y_0 + 49.\n\\]\nSimplifying this equation, we get:\n\\[\n2x_0 - 2y_0 = 34 \\implies x_0 - y_0 = 17.\n\\]\nNow, we substitute \\( x_0 = y_0 + 17 \\) into the equation of the first parabola \\( y = x^2 + 15x + 32 \\):\n\\[\ny_0 = (y_0 + 17)^2 + 15(y_0 + 17) + 32.\n\\]\nExpanding and simplifying the right-hand side, we get:\n\\[\ny_0 = y_0^2 + 34y_0 + 289 + 15y_0 + 255 + 32 \\implies y_0 = y_0^2 + 49y_0 + 576.\n\\]\nRearranging terms, we get:\n\\[\ny_0^2 + 48y_0 + 576 = 0.\n\\]\nThis is a quadratic equation, which we can solve using the quadratic formula \\( y_0 = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\), where \\( a = 1 \\), \\( b = 48 \\), and \\( c = 576 \\):\n\\[\ny_0 = \\frac{-48 \\pm \\sqrt{48^2 - 4 \\cdot 1 \\cdot 576}}{2 \\cdot 1} = \\frac{-48 \\pm \\sqrt{2304 - 2304}}{2} = \\frac{-48 \\pm 0}{2} = -24.\n\\]\nSo, \\( y_0 = -24 \\). Substituting \\( y_0 = -24 \\) back into the equation \\( x_0 = y_0 + 17 \\), we get:\n\\[\nx_0 = -24 + 17 = -7.\n\\]\nTherefore, the point of tangency is \\((-7, -24)\\).\n\nThe final answer is:\n\\[\n\\boxed{(-7, -24)}\n\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 828,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 324,
+        "prediction": "To solve this problem, we need to calculate the probability that at least 5 out of the 6 people stayed for the entire game. We know that 3 people are certain to stay and 3 are only 2/5 sure to stay. Let's denote the certain people as \\(C_1, C_2, C_3\\) and the unsure people as \\(U_1, U_2, U_3\\).\n\nFirst, we calculate the probability that each unsure person stays for the entire game. Since each unsure person has a 2/5 chance of staying, the probability that a specific unsure person stays is \\(P(U_i) = \\frac{2}{5}\\) and the probability that a specific unsure person does not stay is \\(P(U_i^c) = 1 - \\frac{2}{5} = \\frac{3}{5}\\).\n\nWe need to find the probability that at least 5 out of the 6 people stay for the entire game. This means we need to consider the cases where exactly 5 people stay and the case where all 6 people stay.\n\n1. **Case 1: Exactly 5 people stay.**\n   - This means exactly 2 of the 3 unsure people stay.\n   - The probability that exactly 2 out of the 3 unsure people stay is given by the binomial probability formula:\n     \\[\n     P(\\text{exactly 2 out of 3 unsure stay}) = \\binom{3}{2} \\left(\\frac{2}{5}\\right)^2 \\left(\\frac{3}{5}\\right)^1 = 3 \\cdot \\left(\\frac{2}{5}\\right)^2 \\cdot \\frac{3}{5} = 3 \\cdot \\frac{4}{25} \\cdot \\frac{3}{5} = 3 \\cdot \\frac{12}{125} = \\frac{36}{125}\n     \\]\n\n2. **Case 2: All 6 people stay.**\n   - This means all 3 unsure people stay.\n   - The probability that all 3 unsure people stay is:\n     \\[\n     P(\\text{all 3 unsure stay}) = \\left(\\frac{2}{5}\\right)^3 = \\frac{8}{125}\n     \\]\n\nAdding the probabilities of these two cases gives us the total probability that at least 5 people stay:\n\\[\nP(\\text{at least 5 stay}) = \\frac{36}{125} + \\frac{8}{125} = \\frac{44}{125}\n\\]\n\nThus, the probability that at least 5 people stayed the entire time is \\(\\boxed{\\frac{44}{125}}\\).",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 586,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      }
+    ],
+    "note": "Purposeful eight-item diagnostic; not a benchmark accuracy estimate. HF generation uses merged FP32 weights, eager attention, TF32 disabled."
+  },
+  "lora_qkvo16_lr1e-5_s43_step125": {
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      177,
+      233,
+      324
+    ],
+    "merge_checks": [
+      {
+        "index": 0,
+        "max_abs_logit_error": 0.0033966004848480225,
+        "mean_abs_logit_error": 7.224200817290694e-05,
+        "argmax_agreement": 1.0
+      },
+      {
+        "index": 1,
+        "max_abs_logit_error": 0.001198410987854004,
+        "mean_abs_logit_error": 2.7768219297286123e-05,
+        "argmax_agreement": 1.0
+      },
+      {
+        "index": 2,
+        "max_abs_logit_error": 0.0005701780319213867,
+        "mean_abs_logit_error": 1.6094216334749945e-05,
+        "argmax_agreement": 1.0
+      }
+    ],
+    "generations": [
+      {
+        "index": 0,
+        "prediction": "\\[\\frac{x^4+2y^2}{6} = \\frac{2^4+2(5^2)}{6} = \\frac{16+2(25)}{6} = \\frac{16+50}{6} = \\frac{66}{6} = \\boxed{11}\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 75,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 1,
+        "prediction": "Let the width of the garden be $w$ feet. Then the length of the garden is $2w$ feet.\nThe perimeter of a rectangle is given by $2l + 2w$, where $l$ is the length and $w$ is the width.\nSo we have the equation $2(2w) + 2w = 60$.\nSimplifying, we get $6w = 60$.\nDividing both sides by 6, we get $w = 10$.\nTherefore, the length of the garden is $2w = 2(10) = 20$.\nThe area of a rectangle is given by $lw$, where $l$ is the length and $w$ is the width.\nSo the area of the garden is $20 \\times 10 = \\boxed{200}$ square feet.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 186,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 2,
+        "prediction": "To express $\\frac{0.\\overline{666}}{1.\\overline{333}}$ as a common fraction, we first need to convert the repeating decimals into fractions.\n\nLet's start with $0.\\overline{666}$. Let $x = 0.\\overline{666}$. Then, $10x = 6.\\overline{666}$. Subtracting the first equation from the second, we get $9x = 6$, so $x = \\frac{6}{9} = \\frac{2}{3}$.\n\nNow, let's convert $1.\\overline{333}$. Let $y = 1.\\overline{333}$. Then, $10y = 13.\\overline{333}$. Subtracting the first equation from the second, we get $9y = 12$, so $y = \\frac{12}{9} = \\frac{4}{3}$.\n\nNow we can substitute these fractions into the original expression:\n\n$$\\frac{0.\\overline{666}}{1.\\overline{333}} = \\frac{\\frac{2}{3}}{\\frac{4}{3}} = \\frac{2}{3} \\cdot \\frac{3}{4} = \\frac{2}{4} = \\boxed{\\frac{1}{2}}$$",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 304,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 3,
+        "prediction": "To simplify and rationalize the denominator of the expression \\(\\frac{1}{1+ \\frac{1}{\\sqrt{3}+1}}\\), we will follow these steps:\n\n1. Simplify the inner fraction \\(\\frac{1}{\\sqrt{3}+1}\\).\n2. Add 1 to the result from step 1.\n3. Simplify the resulting expression.\n\nLet's start with step 1. We need to rationalize the denominator of \\(\\frac{1}{\\sqrt{3}+1}\\). To do this, we multiply the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3}-1\\):\n\n\\[\n\\frac{1}{\\sqrt{3}+1} \\cdot \\frac{\\sqrt{3}-1}{\\sqrt{3}-1} = \\frac{\\sqrt{3}-1}{(\\sqrt{3}+1)(\\sqrt{3}-1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3}+1)(\\sqrt{3}-1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, we have:\n\n\\[\n\\frac{\\sqrt{3}-1}{2}.\n\\]\n\nNow, we substitute this back into the original expression:\n\n\\[\n\\frac{1}{1 + \\frac{\\sqrt{3}-1}{2}}.\n\\]\n\nNext, we need to add 1 to the fraction \\(\\frac{\\sqrt{3}-1}{2}\\). To do this, we express 1 as \\(\\frac{2}{2}\\):\n\n\\[\n1 + \\frac{\\sqrt{3}-1}{2} = \\frac{2}{2} + \\frac{\\sqrt{3}-1}{2} = \\frac{2 + \\sqrt{3} - 1}{2} = \\frac{\\sqrt{3} + 1}{2}.\n\\]\n\nSo, the expression now is:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}}.\n\\]\n\nTo simplify this, we multiply the numerator and the denominator by 2:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}} \\cdot \\frac{2}{2} = \\frac{2}{\\sqrt{3} + 1}.\n\\]\n\nFinally, we rationalize the denominator of \\(\\frac{2}{\\sqrt{3} + 1}\\) by multiplying the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3} - 1\\):\n\n\\[\n\\frac{2}{\\sqrt{3} + 1} \\cdot \\frac{\\sqrt{3} - 1}{\\sqrt{3} - 1} = \\frac{2(\\sqrt{3} - 1)}{(\\sqrt{3} + 1)(\\sqrt{3} - 1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3} + 1)(\\sqrt{3} - 1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, we have:\n\n\\[\n\\frac{2(\\sqrt{3} - 1)}{2} = \\sqrt{3} - 1.\n\\]\n\nTherefore, the simplified and rationalized form of the expression is:\n\n\\[\n\\boxed{\\sqrt{3} - 1}.\n\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 749,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 4,
+        "prediction": "To simplify the expression, we first combine like terms. We have:\n\n\\[2x + 8x^2 + 9 - (4 - 2x - 8x^2) = 2x + 8x^2 + 9 - 4 + 2x + 8x^2.\\]\n\nNow, we can combine the like terms:\n\n\\[2x + 2x = 4x,\\]\n\\[8x^2 + 8x^2 = 16x^2,\\]\n\\[9 - 4 = 5.\\]\n\nSo, the simplified expression is:\n\n\\[16x^2 + 4x + 5.\\]",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 142,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 177,
+        "prediction": "To solve this problem, we can use the concept of combinations with repetition. \n\nSince Yann and Camille can each order any of the 10 items on the menu, we can think of this as a problem of distributing 2 items (Yann's and Camille's orders) among 10 possible choices (the items on the menu). \n\nThis is a classic problem of combinations with repetition, which can be solved using the formula:\n\nC(n+r-1, r) = (n+r-1)! / [r!(n-1)!]\n\nwhere n is the number of items on the menu (10 in this case), and r is the number of items being chosen (2 in this case).\n\nPlugging in the values, we get:\n\nC(10+2-1, 2) = (11)! / [2!(10)!] = 55\n\nTherefore, there are 55 different combinations of meals that Yann and Camille can order.",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 206,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 233,
+        "prediction": "To find the point of tangency of the parabolas \\( y = x^2 + 15x + 32 \\) and \\( x = y^2 + 49y + 593 \\), we need to find the point where the slopes of the tangents to both parabolas are equal. Let's denote the point of tangency by \\( (a, b) \\).\n\nFirst, we find the derivative of \\( y = x^2 + 15x + 32 \\) with respect to \\( x \\):\n\\[\n\\frac{dy}{dx} = 2x + 15.\n\\]\nAt the point of tangency \\( (a, b) \\), the slope of the tangent to the parabola \\( y = x^2 + 15x + 32 \\) is \\( 2a + 15 \\).\n\nNext, we find the derivative of \\( x = y^2 + 49y + 593 \\) with respect to \\( y \\):\n\\[\n\\frac{dx}{dy} = 2y + 49.\n\\]\nAt the point of tangency \\( (a, b) \\), the slope of the tangent to the parabola \\( x = y^2 + 49y + 593 \\) is \\( 2b + 49 \\).\n\nSince the slopes of the tangents are equal at the point of tangency, we have:\n\\[\n2a + 15 = 2b + 49.\n\\]\nSolving for \\( b \\) in terms of \\( a \\), we get:\n\\[\n2b = 2a - 34 \\implies b = a - 17.\n\\]\nNow, we substitute \\( b = a - 17 \\) into the equation of the first parabola \\( y = x^2 + 15x + 32 \\):\n\\[\na - 17 = x^2 + 15x + 32.\n\\]\nRearranging this equation, we get:\n\\[\nx^2 + 15x + 49 = 0.\n\\]\nWe solve this quadratic equation using the quadratic formula \\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\), where \\( a = 1 \\), \\( b = 15 \\), and \\( c = 49 \\):\n\\[\nx = \\frac{-15 \\pm \\sqrt{15^2 - 4 \\cdot 1 \\cdot 49}}{2 \\cdot 1} = \\frac{-15 \\pm \\sqrt{225 - 196}}{2} = \\frac{-15 \\pm \\sqrt{29}}{2}.\n\\]\nSo, the solutions for \\( x \\) are:\n\\[\nx = \\frac{-15 + \\sqrt{29}}{2} \\quad \\text{and} \\quad x = \\frac{-15 - \\sqrt{29}}{2}.\n\\]\nWe now find the corresponding \\( y \\)-coordinates by substituting these \\( x \\)-values into the equation \\( y = x^2 + 15x + 32 \\):\nFor \\( x = \\frac{-15 + \\sqrt{29}}{2} \\):\n\\[\ny = \\left( \\frac{-15 + \\sqrt{29}}{2} \\right)^2 + 15 \\left( \\frac{-15 + \\sqrt{29}}{2} \\right) + 32.\n\\]\nSimplifying, we get:\n\\[\ny = \\frac{225 - 30\\sqrt{29} + 29}{4} - \\frac{225 - 15\\sqrt{29}}{2} + 32 = \\frac{254 - 30\\sqrt{29}}{4} - \\frac{450 - 30\\sqrt{29}}{4} + 32 = \\frac{-196}{4} + 32 = -49 + 32 = -17.\n\\]\nFor \\( x = \\frac{-15 - \\sqrt{29}}{2} \\):\n\\[\ny = \\left( \\frac{-15 - \\sqrt{29}}{2} \\right)^2 + 15 \\left( \\frac{-15 - \\sqrt{29}}{2} \\right) + 32.\n\\]\nSimplifying, we get:\n\\[\ny = \\frac{225 + 30\\sqrt{29} + 29}{4} - \\frac{225 + 15\\sqrt{29}}{2} + 32 = \\frac{254 + 30\\sqrt{29}}{4} - \\frac{450 + 30\\sqrt{29}}{4} + 32 = \\frac{-196}{4} + 32 = -49 + 32 = -17.\n\\]\nThus, the point of tangency is:\n\\[\n\\boxed{\\left( \\frac{-15 + \\sqrt{29}}{2}, -17 \\right) \\text{ and } \\left( \\frac{-15 - \\sqrt{29}}{2}, -17 \\right)}.\n\\]",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 1193,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 324,
+        "prediction": "To solve this problem, we need to calculate the probability that at least 5 out of the 6 people stayed for the entire game. We can break this down into two cases: exactly 5 people stayed, and all 6 people stayed.\n\n1. **Case 1: Exactly 5 people stayed.**\n   - There are 3 people who are sure to stay, and 3 people who are only 2/5 sure.\n   - The probability that exactly 5 people stayed is the sum of the probabilities that each of the 3 sure people stayed and each of the 3 unsure people stayed.\n   - The probability that a sure person stayed is 1, and the probability that an unsure person stayed is 2/5.\n   - Therefore, the probability that exactly 5 people stayed is:\n     \\[\n     3 \\times \\left(\\frac{1}{1}\\right) \\times \\left(\\frac{2}{5}\\right)^3 = 3 \\times \\frac{8}{125} = \\frac{24}{125}\n     \\]\n\n2. **Case 2: All 6 people stayed.**\n   - All 3 sure people stayed, and all 3 unsure people stayed.\n   - The probability that all 3 sure people stayed is \\(\\left(\\frac{1}{1}\\right)^3 = 1\\).\n   - The probability that all 3 unsure people stayed is \\(\\left(\\frac{2}{5}\\right)^3 = \\frac{8}{125}\\).\n   - Therefore, the probability that all 6 people stayed is:\n     \\[\n     1 \\times \\frac{8}{125} = \\frac{8}{125}\n     \\]\n\n3. **Total probability that at least 5 people stayed.**\n   - The total probability is the sum of the probabilities of the two cases:\n     \\[\n     \\frac{24}{125} + \\frac{8}{125} = \\frac{32}{125}\n     \\]\n\nThus, the probability that at least 5 people stayed the entire time is \\(\\boxed{\\frac{32}{125}}\\).",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 466,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      }
+    ],
+    "note": "Purposeful eight-item diagnostic; not a benchmark accuracy estimate. HF generation uses merged FP32 weights, eager attention, TF32 disabled."
+  },
+  "lora_all16_lr1e-5_s43_step25": {
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      177,
+      233,
+      324
+    ],
+    "merge_checks": [
+      {
+        "index": 0,
+        "max_abs_logit_error": 0.004091143608093262,
+        "mean_abs_logit_error": 9.239412611350417e-05,
+        "argmax_agreement": 1.0
+      },
+      {
+        "index": 1,
+        "max_abs_logit_error": 0.001575469970703125,
+        "mean_abs_logit_error": 3.3898617402883247e-05,
+        "argmax_agreement": 1.0
+      },
+      {
+        "index": 2,
+        "max_abs_logit_error": 0.0014264583587646484,
+        "mean_abs_logit_error": 3.674458639579825e-05,
+        "argmax_agreement": 1.0
+      }
+    ],
+    "generations": [
+      {
+        "index": 0,
+        "prediction": "\\[\\frac{x^4+2y^2}{6} = \\frac{2^4+2(5^2)}{6} = \\frac{16+2(25)}{6} = \\frac{16+50}{6} = \\frac{66}{6} = \\boxed{11}\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 75,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 1,
+        "prediction": "Let the width of the garden be $w$ feet. Then the length of the garden is $2w$ feet.\nThe perimeter of a rectangle is given by $2l + 2w$, where $l$ is the length and $w$ is the width.\nSo we have the equation $2(2w) + 2w = 60$.\nSimplifying, we get $6w = 60$.\nDividing both sides by 6, we get $w = 10$.\nTherefore, the length of the garden is $2w = 2(10) = 20$.\nThe area of a rectangle is given by $lw$, where $l$ is the length and $w$ is the width.\nSo the area of the garden is $20 \\times 10 = \\boxed{200}$ square feet.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 186,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 2,
+        "prediction": "To express $\\frac{0.\\overline{666}}{1.\\overline{333}}$ as a common fraction, we first need to convert the repeating decimals into fractions.\n\nLet's start with $0.\\overline{666}$. Let $x = 0.\\overline{666}$. Then, $10x = 6.\\overline{666}$. Subtracting the first equation from the second, we get $9x = 6$, so $x = \\frac{6}{9} = \\frac{2}{3}$.\n\nNow, let's convert $1.\\overline{333}$. Let $y = 1.\\overline{333}$. Then, $10y = 13.\\overline{333}$. Subtracting the first equation from the second, we get $9y = 12$, so $y = \\frac{12}{9} = \\frac{4}{3}$.\n\nNow we can substitute these fractions into the original expression:\n\n$$\\frac{0.\\overline{666}}{1.\\overline{333}} = \\frac{\\frac{2}{3}}{\\frac{4}{3}} = \\frac{2}{3} \\cdot \\frac{3}{4} = \\frac{2}{4} = \\boxed{\\frac{1}{2}}$$",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 304,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 3,
+        "prediction": "To simplify and rationalize the denominator of the expression \\(\\frac{1}{1+ \\frac{1}{\\sqrt{3}+1}}\\), we will follow these steps:\n\n1. Simplify the inner fraction \\(\\frac{1}{\\sqrt{3}+1}\\).\n2. Add 1 to the result from step 1.\n3. Simplify the resulting expression.\n\nLet's start with step 1. We need to rationalize the denominator of \\(\\frac{1}{\\sqrt{3}+1}\\). To do this, we multiply the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3}-1\\):\n\n\\[\n\\frac{1}{\\sqrt{3}+1} \\cdot \\frac{\\sqrt{3}-1}{\\sqrt{3}-1} = \\frac{\\sqrt{3}-1}{(\\sqrt{3}+1)(\\sqrt{3}-1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3}+1)(\\sqrt{3}-1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, we have:\n\n\\[\n\\frac{\\sqrt{3}-1}{2}.\n\\]\n\nNow, we substitute this back into the original expression:\n\n\\[\n\\frac{1}{1 + \\frac{\\sqrt{3}-1}{2}}.\n\\]\n\nNext, we need to add 1 to the fraction \\(\\frac{\\sqrt{3}-1}{2}\\). To do this, we express 1 as \\(\\frac{2}{2}\\):\n\n\\[\n1 + \\frac{\\sqrt{3}-1}{2} = \\frac{2}{2} + \\frac{\\sqrt{3}-1}{2} = \\frac{2 + \\sqrt{3} - 1}{2} = \\frac{\\sqrt{3} + 1}{2}.\n\\]\n\nSo, the expression now is:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}}.\n\\]\n\nTo simplify this, we multiply the numerator and the denominator by 2:\n\n\\[\n\\frac{1}{\\frac{\\sqrt{3} + 1}{2}} \\cdot \\frac{2}{2} = \\frac{2}{\\sqrt{3} + 1}.\n\\]\n\nFinally, we rationalize the denominator of \\(\\frac{2}{\\sqrt{3} + 1}\\) by multiplying the numerator and the denominator by the conjugate of the denominator, which is \\(\\sqrt{3} - 1\\):\n\n\\[\n\\frac{2}{\\sqrt{3} + 1} \\cdot \\frac{\\sqrt{3} - 1}{\\sqrt{3} - 1} = \\frac{2(\\sqrt{3} - 1)}{(\\sqrt{3} + 1)(\\sqrt{3} - 1)}.\n\\]\n\nThe denominator simplifies as follows:\n\n\\[\n(\\sqrt{3} + 1)(\\sqrt{3} - 1) = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2.\n\\]\n\nSo, we have:\n\n\\[\n\\frac{2(\\sqrt{3} - 1)}{2} = \\sqrt{3} - 1.\n\\]\n\nTherefore, the simplified and rationalized form of the expression is:\n\n\\[\n\\boxed{\\sqrt{3} - 1}.\n\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 749,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 4,
+        "prediction": "To simplify the expression, we first combine like terms. We have:\n\n\\[2x + 8x^2 + 9 - (4 - 2x - 8x^2) = 2x + 8x^2 + 9 - 4 + 2x + 8x^2.\\]\n\nNow, we can combine the like terms:\n\n\\[2x + 2x = 4x,\\]\n\\[8x^2 + 8x^2 = 16x^2,\\]\n\\[9 - 4 = 5.\\]\n\nSo, the simplified expression is:\n\n\\[16x^2 + 4x + 5.\\]",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 142,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 177,
+        "prediction": "To determine the number of different combinations of meals that Yann and Camille can order, we need to consider that each of them can choose any one of the 10 items on the menu. Since the order in which they order the dishes matters, we are dealing with permutations.\n\nHere's the step-by-step reasoning:\n\n1. Yann has 10 choices for his dish.\n2. After Yann has chosen his dish, Camille has 10 choices for her dish (since she can choose any of the 10 items).\n\nSince the choices are independent, the total number of different combinations of meals that Yann and Camille can order is the product of the number of choices each has:\n\n\\[\n10 \\times 10 = 100\n\\]\n\nThus, the number of different combinations of meals that Yann and Camille can order is \\(\\boxed{100}\\).",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 188,
+        "vllm_correct": false,
+        "vllm_text_identical": false
+      },
+      {
+        "index": 233,
+        "prediction": "To find the point of tangency of the parabolas \\( y = x^2 + 15x + 32 \\) and \\( x = y^2 + 49y + 593 \\), we need to find the point where the slopes of the tangents to both parabolas are equal. Let's denote the point of tangency by \\( (a, b) \\).\n\nFirst, we find the derivative of \\( y = x^2 + 15x + 32 \\) with respect to \\( x \\):\n\\[\n\\frac{dy}{dx} = 2x + 15.\n\\]\nAt the point of tangency \\( (a, b) \\), the slope of the tangent to the parabola \\( y = x^2 + 15x + 32 \\) is \\( 2a + 15 \\).\n\nNext, we find the derivative of \\( x = y^2 + 49y + 593 \\) with respect to \\( y \\):\n\\[\n\\frac{dx}{dy} = 2y + 49.\n\\]\nAt the point of tangency \\( (a, b) \\), the slope of the tangent to the parabola \\( x = y^2 + 49y + 593 \\) is \\( 2b + 49 \\).\n\nSince the slopes of the tangents are equal at the point of tangency, we have:\n\\[\n2a + 15 = 2b + 49.\n\\]\nSolving for \\( b \\) in terms of \\( a \\), we get:\n\\[\n2b = 2a - 34 \\implies b = a - 17.\n\\]\nNow, we substitute \\( b = a - 17 \\) into the equation of the first parabola \\( y = x^2 + 15x + 32 \\):\n\\[\na - 17 = x^2 + 15x + 32.\n\\]\nRearranging this equation, we get:\n\\[\nx^2 + 15x + 49 = 0.\n\\]\nWe solve this quadratic equation using the quadratic formula \\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\), where \\( a = 1 \\), \\( b = 15 \\), and \\( c = 49 \\):\n\\[\nx = \\frac{-15 \\pm \\sqrt{15^2 - 4 \\cdot 1 \\cdot 49}}{2 \\cdot 1} = \\frac{-15 \\pm \\sqrt{225 - 196}}{2} = \\frac{-15 \\pm \\sqrt{29}}{2}.\n\\]\nSo, the solutions for \\( x \\) are:\n\\[\nx = \\frac{-15 + \\sqrt{29}}{2} \\quad \\text{and} \\quad x = \\frac{-15 - \\sqrt{29}}{2}.\n\\]\nWe now find the corresponding \\( y \\)-coordinates by substituting these \\( x \\)-values into the equation \\( y = x^2 + 15x + 32 \\):\nFor \\( x = \\frac{-15 + \\sqrt{29}}{2} \\):\n\\[\ny = \\left( \\frac{-15 + \\sqrt{29}}{2} \\right)^2 + 15 \\left( \\frac{-15 + \\sqrt{29}}{2} \\right) + 32.\n\\]\nSimplifying, we get:\n\\[\ny = \\frac{225 - 30\\sqrt{29} + 29}{4} - \\frac{225 - 15\\sqrt{29}}{2} + 32 = \\frac{254 - 30\\sqrt{29}}{4} - \\frac{450 - 30\\sqrt{29}}{4} + 32 = \\frac{-196}{4} + 32 = -49 + 32 = -17.\n\\]\nFor \\( x = \\frac{-15 - \\sqrt{29}}{2} \\):\n\\[\ny = \\left( \\frac{-15 - \\sqrt{29}}{2} \\right)^2 + 15 \\left( \\frac{-15 - \\sqrt{29}}{2} \\right) + 32.\n\\]\nSimplifying, we get:\n\\[\ny = \\frac{225 + 30\\sqrt{29} + 29}{4} - \\frac{225 + 15\\sqrt{29}}{2} + 32 = \\frac{254 + 30\\sqrt{29}}{4} - \\frac{450 + 30\\sqrt{29}}{4} + 32 = \\frac{-196}{4} + 32 = -49 + 32 = -17.\n\\]\nThus, the point of tangency is:\n\\[\n\\boxed{\\left( \\frac{-15 + \\sqrt{29}}{2}, -17 \\right) \\text{ and } \\left( \\frac{-15 - \\sqrt{29}}{2}, -17 \\right)}.\n\\]",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 1193,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 324,
+        "prediction": "To solve this problem, we need to calculate the probability that at least 5 out of the 6 people stayed for the entire game. We know that 3 people are certain to stay and 3 are only 2/5 sure to stay. Let's denote the certain people as \\(C_1, C_2, C_3\\) and the unsure people as \\(U_1, U_2, U_3\\).\n\nThe probability that a certain person stays is 1, and the probability that an unsure person stays is \\( \\frac{2}{5} \\).\n\nWe need to find the probability that at least 5 people stay, which means either exactly 5 people stay or all 6 people stay.\n\n1. **Probability that exactly 5 people stay:**\n   - This can happen in two ways: either 4 certain people and 1 unsure person stay, or 3 certain people and 2 unsure people stay.\n   - The probability of 4 certain people and 1 unsure person staying is \\( \\binom{3}{1} \\left( \\frac{2}{5} \\right)^1 \\left( \\frac{3}{5} \\right)^2 = 3 \\cdot \\frac{2}{5} \\cdot \\frac{9}{25} = \\frac{54}{125} \\).\n   - The probability of 3 certain people and 2 unsure people staying is \\( \\binom{3}{2} \\left( \\frac{2}{5} \\right)^2 \\left( \\frac{3}{5} \\right)^1 = 3 \\cdot \\left( \\frac{4}{25} \\right) \\cdot \\frac{3}{5} = \\frac{36}{125} \\).\n   - Therefore, the total probability that exactly 5 people stay is \\( \\frac{54}{125} + \\frac{36}{125} = \\frac{90}{125} = \\frac{18}{25} \\).\n\n2. **Probability that all 6 people stay:**\n   - This can happen in only one way: all 3 certain people and all 3 unsure people stay.\n   - The probability of all 3 certain people and all 3 unsure people staying is \\( \\left( \\frac{2}{5} \\right)^3 = \\frac{8}{125} \\).\n\nAdding these probabilities together, we get the total probability that at least 5 people stay:\n\\[ \\frac{18}{25} + \\frac{8}{125} = \\frac{90}{125} + \\frac{8}{125} = \\frac{98}{125} \\]\n\nThus, the probability that at least 5 people stayed the entire time is \\(\\boxed{\\frac{98}{125}}\\).",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 617,
+        "vllm_correct": false,
+        "vllm_text_identical": false
+      }
+    ],
+    "note": "Purposeful eight-item diagnostic; not a benchmark accuracy estimate. HF generation uses merged FP32 weights, eager attention, TF32 disabled."
+  },
+  "full_lr1e-6_s43_step25": {
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      177,
+      233,
+      324
+    ],
+    "merge_checks": [],
+    "generations": [
+      {
+        "index": 0,
+        "prediction": "We substitute $x = 2$ and $y = 5$ into the expression $\\frac{x^4+2y^2}{6}$ to get $\\frac{2^4+2(5^2)}{6} = \\frac{16+2(25)}{6} = \\frac{16+50}{6} = \\frac{66}{6} = \\boxed{11}$.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 93,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 1,
+        "prediction": "Let $w$ be the width of the garden. Then the length is $2w$. The perimeter is $2(2w+w)=60$, so $w=10$. The area is $2w^2=2(10^2)=\\boxed{200}$.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 63,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 2,
+        "prediction": "Let $x = 0.\\overline{666}$. Then $10x = 6.\\overline{666}$, so $10x - x = 6$, or $9x = 6$, so $x = \\frac{2}{3}$. Similarly, let $y = 1.\\overline{333}$. Then $10y = 13.\\overline{333}$, so $10y - y = 12$, or $9y = 12$, so $y = \\frac{4}{3}$. Thus, $\\frac{0.\\overline{666}}{1.\\overline{333}} = \\frac{\\frac{2}{3}}{\\frac{4}{3}} = \\boxed{\\frac{1}{2}}$.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 183,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 3,
+        "prediction": "Let $x = \\sqrt{3}+1$. Then the expression becomes $$\\frac{1}{1+ \\frac{1}{x}} = \\frac{x}{x+1} = \\frac{x-1+1}{x+1} = \\frac{x-1}{x} - \\frac{1}{x} = \\frac{\\sqrt{3}}{2} - \\frac{1}{\\sqrt{3}+1}.$$The denominator is rationalized by multiplying by the conjugate, so the final answer is $$\\boxed{\\frac{\\sqrt{3}}{2} - \\frac{1}{\\sqrt{3}+1}}.$$",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 141,
+        "vllm_correct": false,
+        "vllm_text_identical": false
+      },
+      {
+        "index": 4,
+        "prediction": "We can simplify this expression by combining like terms: \\[2x+8x^2+9-(4-2x-8x^2) = 2x+8x^2+9-4+2x+8x^2 = \\boxed{16x^2+4x+5}.\\]",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 70,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 177,
+        "prediction": "There are 10 choices for what Yann orders, and 10 choices for what Camille orders, so there are $10\\cdot 10=\\boxed{100}$ different combinations of meals they could order.",
+        "correct": true,
+        "truncated": false,
+        "generated_tokens": 49,
+        "vllm_correct": true,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 233,
+        "prediction": "Let $(a,b)$ be the point of tangency.  Then $b = a^2 + 15a + 32$ and $a = b^2 + 49b + 593.$  Solving, we find $a = -16$ and $b = -15.$  Thus, the point of tangency is $\\boxed{(-16,-15)}.$",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 89,
+        "vllm_correct": false,
+        "vllm_text_identical": true
+      },
+      {
+        "index": 324,
+        "prediction": "The probability that at least 5 people stayed the entire time is the same as the probability that at least 4 of the 3 people who are unsure stayed the entire time. The probability that a single one of these people stayed the entire time is 3/5, so the probability that at least 4 of them stayed the entire time is $\\left(\\frac{3}{5}\\right)^4 + \\binom{4}{3}\\left(\\frac{3}{5}\\right)^3\\left(\\frac{2}{5}\\right) = \\frac{1203}{3125}$. The probability that at least 5 people stayed the entire time is then $\\frac{1203}{3125} + \\frac{3}{5}\\left(\\frac{1203}{3125}\\right) = \\frac{1203}{2050}$.",
+        "correct": false,
+        "truncated": false,
+        "generated_tokens": 194
+      }
+    ],
+    "note": "Purposeful eight-item diagnostic; not a benchmark accuracy estimate. HF generation uses merged FP32 weights, eager attention, TF32 disabled."
+  }
+}

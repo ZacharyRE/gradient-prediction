@@ -1,0 +1,75 @@
+{
+  "time": 1788983022.105616,
+  "fixed_seeds": [
+    43,
+    44,
+    45
+  ],
+  "fixed_epoch": 2,
+  "phase": "Development replication, not OOD confirmation",
+  "status": "complete",
+  "baseline_exact_pilot_replay": true,
+  "same_subset_baseline_greedy_accuracy": 0.6328125,
+  "seed43_exact_pilot_replay": true,
+  "per_seed": [
+    {
+      "seed": 43,
+      "delta_pp": 1.85546875,
+      "question_ci95_pp": [
+        0.1953125,
+        3.515625
+      ],
+      "accuracy": 0.5908203125,
+      "same_subset_greedy_delta_pp": -0.78125,
+      "sampling_vs_greedy_treatment_interaction_pp": 2.63671875,
+      "interaction_question_ci95_pp": [
+        -1.708984375,
+        7.080078125
+      ],
+      "sampling_accuracy_minus_baseline_greedy_pp": -4.19921875
+    },
+    {
+      "seed": 44,
+      "delta_pp": 0.87890625,
+      "question_ci95_pp": [
+        -0.830078125,
+        2.5891113281249822
+      ],
+      "accuracy": 0.5810546875,
+      "same_subset_greedy_delta_pp": -0.390625,
+      "sampling_vs_greedy_treatment_interaction_pp": 1.26953125,
+      "interaction_question_ci95_pp": [
+        -2.83203125,
+        5.46875
+      ],
+      "sampling_accuracy_minus_baseline_greedy_pp": -5.17578125
+    },
+    {
+      "seed": 45,
+      "delta_pp": 1.025390625,
+      "question_ci95_pp": [
+        -0.68359375,
+        2.734375
+      ],
+      "accuracy": 0.58251953125,
+      "same_subset_greedy_delta_pp": -2.734375,
+      "sampling_vs_greedy_treatment_interaction_pp": 3.759765625,
+      "interaction_question_ci95_pp": [
+        -0.5859375,
+        8.251953125
+      ],
+      "sampling_accuracy_minus_baseline_greedy_pp": -5.029296875
+    }
+  ],
+  "all_seeds_positive": true,
+  "mean_delta_pp": 1.2532552083333335,
+  "question_ci95_pp": [
+    -0.26041666666666663,
+    2.816162109374994
+  ],
+  "seed_question_ci95_pp": [
+    -0.390625,
+    2.913411458333333
+  ],
+  "limitation": "Only3 training seeds; seed bootstrap has limited support. Development results remain adaptively chosen; no general efficacy without reserved OOD."
+}

@@ -1,0 +1,369 @@
+{
+  "time": 1789008906.023088,
+  "script_sha256": "4b55cfb5cba6c8fcdf5754b34aace6f19c18a4e05496b99a0e47c52350a1a9d2",
+  "n": 500,
+  "seed": 43,
+  "evaluator_version_bridge_sha256": "4efd52a4edaa90725aaaf197daa1443adfc1a8fcb37db2012988526718cd622f",
+  "prospective_dispatch_sha256": "6ec954871a13b272d5adca8ccf92c474b92e569e3aa7597fc8d826cabd97033d",
+  "identities": {
+    "base": {
+      "manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87",
+      "predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "adapter": null
+    },
+    "teacher32_common_teacher7_lr1e5_s43_epoch4": {
+      "manifest_sha256": "795b2c6324ae25b1f5e608aa0969250434da55bbef4d2e91433ce339f3a1053f",
+      "predictions_sha256": "4ab24054d10ee3ab4dcdf88c8d408a4d3597b6197938dddf54696d8d8c195ec0",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher32_common_teacher7_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "73dd7538d97a6c79398feecca6091e0bd1bee617869d96ae4c4b3691875d64f2",
+          "adapter_model.safetensors": "4732ba9d613a5535133d29b2fff3133fe79018b56ac2ca3995682dabcae8013d",
+          "ready.json": "49b7953060250124c0745fa988742cfe3fc7a2a0dfd08f7d3cdf0f2605c5df54",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher7_common_teacher32_lr1e5_s43_epoch4": {
+      "manifest_sha256": "7fbfff0c23eb2bd2783ebd78c97898f15b6aa9d76fc279b18c0e085ef0e6aa08",
+      "predictions_sha256": "6ad35ca7946f3572e78df69c3056eaabf92300b03b5d3222c6fd78ebf7f29d5a",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher7_common_teacher32_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "ec9eae8850f5cd6c6f582cd38eb164ece9a155cc29a3ae6596b30352a4ea5a0b",
+          "adapter_model.safetensors": "a68e23da23a142773ff433a87526259beba256baa0c2bbef6d157029ccc9800a",
+          "ready.json": "c8ebdeca55dd89ef0067aa4f620a16bd9a282376ee03722fd034698e681e2b33",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_common_lr1e5_s43_epoch4": {
+      "manifest_sha256": "82d0374c88bab2297864af3f7daf7f861d9b50012f194bd6aa4b33c6d893cb9c",
+      "predictions_sha256": "e3768b8ed16163d9f969d441c9cca583d94ab7794d83dcdecf17f9cfa5a1a4ef",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_common_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "082c6ad4b07f0f8cd6d6799c3ae8b6146502899360125021fcfb1812962b06b1",
+          "adapter_model.safetensors": "8b080796ee6e95608ad7d3938815c487da21c354c375001451fada3f075f73f4",
+          "ready.json": "87c8994b2447992e329ef5507ece0b70a89eeb1cdc8f4df1746f86279ee4329f",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "sample_common_lr1e5_s43_epoch4": {
+      "manifest_sha256": "787d92f22217f058c359ac80faf7c4a43e4fef9e6e358ecdb3c4d7ba75d7bdc2",
+      "predictions_sha256": "de7d1517b688c04798a27c712ee9288a2735040516f82f194972ebb12a9a03fd",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/sample_common_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "b0ffb53f98b747f14795d5fcb9a18606ff1150f21718f5bc430c98468f5a48f0",
+          "adapter_model.safetensors": "1f41f973bf9f00e0f51dc5c84937c1661465bb0020360c712b5e3891ded1f1ff",
+          "ready.json": "21fd424e8221c7910e155c1770a72d19a679160585d09fd7d55ac101a617ae1c",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_common_lr5e5_s43_epoch4": {
+      "manifest_sha256": "6ee391f9e30c08fe09595298db5808d6593bbaa9b535d27e246df4455a85584e",
+      "predictions_sha256": "8978ff9472426ffa53cefe5b4d551d45ac5a29869043051d97c983e26079dbbe",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_common_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "b78a1c514a67cbb12e734be33932c2df07534a167a793e6bbdb8569bc5fa1e62",
+          "adapter_model.safetensors": "138eef2a862f25c9ea2418840bc93b3d08597269a4d25060856efea571593091",
+          "ready.json": "e5033f0cda602e0fa61ea42bbe1ddfc944cf0b13140a0fc15dabb9b1e7b5a2bf",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "sample_common_lr5e5_s43_epoch4": {
+      "manifest_sha256": "65652d05c19c1f80a55ed60f6ec4a98baa300ebf26128d54c5736f523b41ba79",
+      "predictions_sha256": "4e8328c936e09adc20af739af745b954e6f0ee02359c1eb78a83bdb019fa5862",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/sample_common_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "794b07ce39f4b9f29e71c4a272969140cdd72e032ed45eefabbfb3a37c89d8c0",
+          "adapter_model.safetensors": "97962f8fc8eb6fa062a1d5d97514cd8903c39c868a7454f71811eea3e27d5a3e",
+          "ready.json": "4267c262a707e29e3eeace62f951d6a09eac329be66c86c55457fa75caae95e5",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    }
+  },
+  "scoring_audit_sha256": "a80175f3585426c2ba8d5ad98d45a69cc5384682f2903d49581548f30643f338",
+  "results": {
+    "raw": {
+      "base_correct": 299,
+      "models": {
+        "base": {
+          "correct": 299,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "teacher32_common_teacher7_lr1e5_s43_epoch4": {
+          "correct": 268,
+          "vs_base": {
+            "delta_pp": -6.2,
+            "ci95_pp": [
+              -10.4,
+              -2.1999999999999997
+            ],
+            "wins": 39,
+            "losses": 70
+          }
+        },
+        "teacher7_common_teacher32_lr1e5_s43_epoch4": {
+          "correct": 293,
+          "vs_base": {
+            "delta_pp": -1.2,
+            "ci95_pp": [
+              -4.3999999999999995,
+              2.0
+            ],
+            "wins": 29,
+            "losses": 35
+          }
+        },
+        "teacher_common_lr1e5_s43_epoch4": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.4
+            ],
+            "wins": 28,
+            "losses": 31
+          }
+        },
+        "sample_common_lr1e5_s43_epoch4": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.4
+            ],
+            "wins": 27,
+            "losses": 30
+          }
+        },
+        "teacher_common_lr5e5_s43_epoch4": {
+          "correct": 294,
+          "vs_base": {
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -4.8,
+              2.6
+            ],
+            "wins": 42,
+            "losses": 47
+          }
+        },
+        "sample_common_lr5e5_s43_epoch4": {
+          "correct": 291,
+          "vs_base": {
+            "delta_pp": -1.6,
+            "ci95_pp": [
+              -4.8,
+              1.6
+            ],
+            "wins": 30,
+            "losses": 38
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "teacher32_common_teacher7_lr1e5_s43_epoch4",
+          "control": "teacher7_common_teacher32_lr1e5_s43_epoch4",
+          "hypothesis": "Same1465 questions/order, seed43, LR1e-5 and fixedepoch4:32B versus7B generator targets",
+          "treatment_correct": 268,
+          "control_correct": 293,
+          "delta_pp": -5.0,
+          "ci95_pp": [
+            -9.0,
+            -1.0
+          ],
+          "wins": 38,
+          "losses": 63
+        },
+        {
+          "treatment": "teacher_common_lr1e5_s43_epoch4",
+          "control": "sample_common_lr1e5_s43_epoch4",
+          "hypothesis": "Same1429 questions/order, seed43, LR1e-5 and fixedepoch4:7B versus sampled-student targets",
+          "treatment_correct": 296,
+          "control_correct": 296,
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -3.2,
+            3.2
+          ],
+          "wins": 35,
+          "losses": 35
+        },
+        {
+          "treatment": "teacher_common_lr5e5_s43_epoch4",
+          "control": "sample_common_lr5e5_s43_epoch4",
+          "hypothesis": "Same1429 questions/order, seed43, LR5e-5 and fixedepoch4:7B versus sampled-student targets",
+          "treatment_correct": 294,
+          "control_correct": 291,
+          "delta_pp": 0.6,
+          "ci95_pp": [
+            -3.2,
+            4.2
+          ],
+          "wins": 45,
+          "losses": 42
+        }
+      ]
+    },
+    "strict": {
+      "base_correct": 298,
+      "models": {
+        "base": {
+          "correct": 298,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "teacher32_common_teacher7_lr1e5_s43_epoch4": {
+          "correct": 267,
+          "vs_base": {
+            "delta_pp": -6.2,
+            "ci95_pp": [
+              -10.4,
+              -2.1999999999999997
+            ],
+            "wins": 39,
+            "losses": 70
+          }
+        },
+        "teacher7_common_teacher32_lr1e5_s43_epoch4": {
+          "correct": 293,
+          "vs_base": {
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -4.2,
+              2.1999999999999997
+            ],
+            "wins": 30,
+            "losses": 35
+          }
+        },
+        "teacher_common_lr1e5_s43_epoch4": {
+          "correct": 295,
+          "vs_base": {
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.4
+            ],
+            "wins": 29,
+            "losses": 32
+          }
+        },
+        "sample_common_lr1e5_s43_epoch4": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.4,
+            "ci95_pp": [
+              -3.4000000000000004,
+              2.6
+            ],
+            "wins": 28,
+            "losses": 30
+          }
+        },
+        "teacher_common_lr5e5_s43_epoch4": {
+          "correct": 293,
+          "vs_base": {
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -4.8,
+              2.6
+            ],
+            "wins": 42,
+            "losses": 47
+          }
+        },
+        "sample_common_lr5e5_s43_epoch4": {
+          "correct": 291,
+          "vs_base": {
+            "delta_pp": -1.4000000000000001,
+            "ci95_pp": [
+              -4.6,
+              1.7999999999999998
+            ],
+            "wins": 31,
+            "losses": 38
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "teacher32_common_teacher7_lr1e5_s43_epoch4",
+          "control": "teacher7_common_teacher32_lr1e5_s43_epoch4",
+          "hypothesis": "Same1465 questions/order, seed43, LR1e-5 and fixedepoch4:32B versus7B generator targets",
+          "treatment_correct": 267,
+          "control_correct": 293,
+          "delta_pp": -5.2,
+          "ci95_pp": [
+            -9.2,
+            -1.2
+          ],
+          "wins": 37,
+          "losses": 63
+        },
+        {
+          "treatment": "teacher_common_lr1e5_s43_epoch4",
+          "control": "sample_common_lr1e5_s43_epoch4",
+          "hypothesis": "Same1429 questions/order, seed43, LR1e-5 and fixedepoch4:7B versus sampled-student targets",
+          "treatment_correct": 295,
+          "control_correct": 296,
+          "delta_pp": -0.2,
+          "ci95_pp": [
+            -3.4000000000000004,
+            3.0
+          ],
+          "wins": 34,
+          "losses": 35
+        },
+        {
+          "treatment": "teacher_common_lr5e5_s43_epoch4",
+          "control": "sample_common_lr5e5_s43_epoch4",
+          "hypothesis": "Same1429 questions/order, seed43, LR5e-5 and fixedepoch4:7B versus sampled-student targets",
+          "treatment_correct": 293,
+          "control_correct": 291,
+          "delta_pp": 0.4,
+          "ci95_pp": [
+            -3.2,
+            4.0
+          ],
+          "wins": 44,
+          "losses": 42
+        }
+      ]
+    }
+  },
+  "scope": "Fixed prospective pilot endpoints; single seed43 and unadjusted intervals. Two LRs are not independent seeds. The target source bundles content, process and length; this is not a pure parameter-count or pure writing-style intervention. No held-out general efficacy claim."
+}

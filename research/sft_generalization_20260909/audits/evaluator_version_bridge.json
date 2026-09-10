@@ -1,0 +1,46 @@
+{
+  "time": 1789002660.8138268,
+  "passed": true,
+  "script_sha256": "777cb80b82fefeccfa424f7578fd6e12f487ac2f43d049aa9d02e5fe6d7af44a",
+  "allowed_development_script_sha256": [
+    "fad975a2eee88168112061eb34a6aadedec51877efbdd1169ba459507200af81",
+    "8ad473e78d2dff10db9b3e44fb2a85ffe4c0d20e64ed4d2d9869ea8152ac68ca"
+  ],
+  "current_script_sha256": "8ad473e78d2dff10db9b3e44fb2a85ffe4c0d20e64ed4d2d9869ea8152ac68ca",
+  "source_change_audit_sha256": "ff6d88fac26632b22c57271540646e37332f395b1a1fcaf82032de3138a0ac40",
+  "original_replay_audit_sha256": "966dba83ca117bb59d7a4adb4bed060e4c478dfafc7e2ad66e9587e93c1f6471",
+  "ast_equal_after_removing_only_queue_dispatch": true,
+  "comparisons": [
+    {
+      "reference": "base",
+      "replay": "base_restart_after_expansion",
+      "equal_counts": {
+        "sample_hash": 500,
+        "prediction": 500,
+        "correct": 500,
+        "finish_reason": 500,
+        "generated_tokens": 500
+      },
+      "reference_manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87",
+      "replay_manifest_sha256": "e3cbbcf967f3b71770305b3140072fe4a65e4b3a22e1cb720cb6efaa62a3922c",
+      "reference_predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "replay_predictions_sha256": "d58f69794d225118f2ca8d770c34efba672b941eeb5e8009d00636d621daab3a"
+    },
+    {
+      "reference": "previous_self_sdpa_s43",
+      "replay": "previous_self_sdpa_dispatch_v2_repeat",
+      "equal_counts": {
+        "sample_hash": 500,
+        "prediction": 500,
+        "correct": 500,
+        "finish_reason": 500,
+        "generated_tokens": 500
+      },
+      "reference_manifest_sha256": "de72447db10860feb511f524b40b21b00c9dbf8eb02fc5bc0d928a47746ba6a0",
+      "replay_manifest_sha256": "292b3fbd9305d256b20a1799055fec628247d4cf0d9ddfddd42c2c17d61b4790",
+      "reference_predictions_sha256": "f2fb4cd32af0eb6244f36ddfc5dcd2e3f174afb2abfbedea97517c69daf888ef",
+      "replay_predictions_sha256": "321eb826b9586a3533f6bb7725c8e09c13f68c46f7d7f888f7210e07f77fcb9a"
+    }
+  ],
+  "scope": "Two explicit archived evaluator versions, differing only in queue dispatch. Baseline and nonzero adapter reproduce all500 texts/flags/lengths. This is not permission for arbitrary script changes or a proof of every inference backend equivalence. Final new benchmark outputs use current version only."
+}

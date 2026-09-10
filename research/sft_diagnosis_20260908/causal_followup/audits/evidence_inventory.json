@@ -1,0 +1,2204 @@
+{
+  "completed_training_runs": [
+    {
+      "scope": "phase1",
+      "name": "dense_all_lr1e-6_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/dense_all_lr1e-6_s43",
+      "manifest_sha256": "89adff9341aec9de2f35a9df5bd8aa4973c0f29d86cfe8898e433114551fa58c",
+      "summary": {
+        "status": "complete",
+        "elapsed": 96.84788918495178,
+        "peak_gpu_gb": 36.49422597885132,
+        "parameters": 1310195712,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7605581869226037
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-5_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-5_s43",
+      "manifest_sha256": "3e128b25552f5b8a61bfc90cc9b78447e944b0557555fdced3734702f45593af",
+      "summary": {
+        "status": "complete",
+        "elapsed": 106.57363104820251,
+        "peak_gpu_gb": 39.13658952713013,
+        "parameters": 1543714304,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7427765076900367
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-6_fp32_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-6_fp32_s43",
+      "manifest_sha256": "27007058721603537c99232cf6317ac7750b332fdb329e74cee9df039ace3e1f",
+      "summary": {
+        "status": "complete",
+        "elapsed": 80.53601503372192,
+        "peak_gpu_gb": 33.86744499206543,
+        "parameters": 1543714304,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 85205,
+        "final_dev_ce": 0.748984282158844
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-6_fp32_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-6_fp32_s44",
+      "manifest_sha256": "1256ef44ab0a0a445daa7859c1d96e5cd9ac4f6778d7252c527e15fd59feea82",
+      "summary": {
+        "status": "complete",
+        "elapsed": 83.56788897514343,
+        "peak_gpu_gb": 34.6035041809082,
+        "parameters": 1543714304,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 88722,
+        "final_dev_ce": 0.746654100706682
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-6_fp32_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-6_fp32_s45",
+      "manifest_sha256": "fed35f45fbbd211fa2cd6218f1556691d04c1405e06283f6f15f58dc39fa16c7",
+      "summary": {
+        "status": "complete",
+        "elapsed": 83.0748143196106,
+        "peak_gpu_gb": 36.40660524368286,
+        "parameters": 1543714304,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 89025,
+        "final_dev_ce": 0.7472656205411152
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-6_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-6_s43",
+      "manifest_sha256": "4215645b2fb434f23ba1dbeb042e150fdaee56d1c4aee7ce47be67c15f31718c",
+      "summary": {
+        "status": "complete",
+        "elapsed": 101.95499897003174,
+        "peak_gpu_gb": 39.13658952713013,
+        "parameters": 1543714304,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7619578171953485
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "full_lr1e-7_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/full_lr1e-7_s43",
+      "manifest_sha256": "b91d62e5bd53e558e988489da95057231ca5179f45edeca35cbccdc56eec85bb",
+      "summary": {
+        "status": "complete",
+        "elapsed": 106.06350708007812,
+        "peak_gpu_gb": 39.13658952713013,
+        "parameters": 1543714304,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.8294123287372271
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_all16_lr1e-4_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_all16_lr1e-4_s43",
+      "manifest_sha256": "d6560fdb6892c460abe26b964862b1c37cac61f1e0935d5ee817bc2c3956dc35",
+      "summary": {
+        "status": "complete",
+        "elapsed": 132.84061527252197,
+        "peak_gpu_gb": 21.85825824737549,
+        "parameters": 18464768,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7495582940597266
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_all16_lr1e-5_fp32_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_all16_lr1e-5_fp32_s43",
+      "manifest_sha256": "2b974dd841a2300eb5f679b2c1477a54462a03cdd14c2e05b703ea93eea011cf",
+      "summary": {
+        "status": "complete",
+        "elapsed": 78.46575284004211,
+        "peak_gpu_gb": 16.79849910736084,
+        "parameters": 18464768,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 85205,
+        "final_dev_ce": 0.7723915302564227
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_all16_lr1e-5_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_all16_lr1e-5_s43",
+      "manifest_sha256": "1b8cbac3fdb698832e5d6f95035d15cdf9ed85421932a130c39a84df772b1cce",
+      "summary": {
+        "status": "complete",
+        "elapsed": 127.3851466178894,
+        "peak_gpu_gb": 21.85825824737549,
+        "parameters": 18464768,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.780701473580211
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_all64_lr1e-4_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_all64_lr1e-4_s43",
+      "manifest_sha256": "8b4fd6ed8a8253e15d30e5f942c5c46023107b0f0e69acaa3082b1dee783b4f0",
+      "summary": {
+        "status": "complete",
+        "elapsed": 128.76972150802612,
+        "peak_gpu_gb": 22.69778537750244,
+        "parameters": 73859072,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7489308825845391
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_all64_lr1e-5_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_all64_lr1e-5_s43",
+      "manifest_sha256": "d054202a09b4fab7f0a0a5677bc424f28cca2c205ec15b57ea64a6980f48ae6a",
+      "summary": {
+        "status": "complete",
+        "elapsed": 129.66132140159607,
+        "peak_gpu_gb": 22.69778537750244,
+        "parameters": 73859072,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7810777957732657
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_qkvo16_lr1e-5_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_qkvo16_lr1e-5_s43",
+      "manifest_sha256": "11d4f77e2c3b1056399f90fadd8b0f0f745c057f064844e2267d8e024f5fc3b2",
+      "summary": {
+        "status": "complete",
+        "elapsed": 100.5109646320343,
+        "peak_gpu_gb": 21.64797306060791,
+        "parameters": 4358144,
+        "steps": 125,
+        "unique_examples": 2000,
+        "supervised_tokens": 462407,
+        "final_dev_ce": 0.7977430893251362
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_qkvo16_lr1e-5_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_qkvo16_lr1e-5_s44",
+      "manifest_sha256": "8d3251542dbfbc2a58d9aff1022775a2553ab5da6f0f2aa8edf90205533b6bcf",
+      "summary": {
+        "status": "complete",
+        "elapsed": 24.792312383651733,
+        "peak_gpu_gb": 17.7426815032959,
+        "parameters": 4358144,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 88722,
+        "final_dev_ce": 0.8357223910335349
+      }
+    },
+    {
+      "scope": "phase1",
+      "name": "lora_qkvo16_lr1e-5_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/training/lora_qkvo16_lr1e-5_s45",
+      "manifest_sha256": "39c8bbb7421668d0a6cd6aacddf28e072e4a7d8d9bcfe80c4b3d267c1227b649",
+      "summary": {
+        "status": "complete",
+        "elapsed": 24.828566312789917,
+        "peak_gpu_gb": 19.54412317276001,
+        "parameters": 4358144,
+        "steps": 25,
+        "unique_examples": 400,
+        "supervised_tokens": 89025,
+        "final_dev_ce": 0.8377698254986926
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "all16_ce_b16_lr1e-05_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/all16_ce_b16_lr1e-05_s43",
+      "manifest_sha256": "c6eea4b3be6d77a53094f438c24016e518f872ea5a73227893e853255609e390",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 1439.793928861618,
+        "peak_gpu_gb": 24.171087741851807
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "all16_dft_b16_lr1e-05_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/all16_dft_b16_lr1e-05_s43",
+      "manifest_sha256": "29f23fb769d3b92a2cd50843593acbbac180a462b934705b9b39fdedc3e2152d",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 1006.60591173172,
+        "peak_gpu_gb": 24.171087741851807
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b16_lr1e-04_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b16_lr1e-04_s43",
+      "manifest_sha256": "70c6f9e32041b771144f1949e44a8896e7ed48fa140ec8d29ddbd2702f55a5d2",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 744.8148996829987,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b16_lr1e-05_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b16_lr1e-05_s43",
+      "manifest_sha256": "f985110068a088d3b45c5b78bfb07f545655431238cb4827967f0c8c52758a04",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 752.3692553043365,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b16_lr1e-06_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b16_lr1e-06_s43",
+      "manifest_sha256": "12f5788abe66f2d3c9160bc351c11c0a10a5d9d08154e398a13791d716a90412",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 763.635947227478,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b16_lr1e-5_legacy_extend_s43",
+      "manifest_sha256": "519e33c71aa9dd26234390eb7ca42137e35c020553164ef27958b7bd12f5c9b3",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 755.4947464466095,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b4_lr1e-04_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b4_lr1e-04_s43",
+      "manifest_sha256": "276cada43202b94434ca23be24a64508d56f8fe7387b54a7cead7ae927451321",
+      "summary": {
+        "status": "complete",
+        "steps": 4000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 960.11177110672,
+        "peak_gpu_gb": 21.63173770904541
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b4_lr1e-05_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b4_lr1e-05_s43",
+      "manifest_sha256": "7b39eb3b3688611d0f2a4921dc5e60ef7f0290ae3eaa53663f485b3af4855911",
+      "summary": {
+        "status": "complete",
+        "steps": 4000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 994.9392764568329,
+        "peak_gpu_gb": 21.63173770904541
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b4_lr1e-06_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b4_lr1e-06_s43",
+      "manifest_sha256": "9bf24483ae8db942cb32905d2d28a6a59b7efbf5a3a891255dc23b0592b7fb36",
+      "summary": {
+        "status": "complete",
+        "steps": 4000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 964.8698623180389,
+        "peak_gpu_gb": 21.63173770904541
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b64_lr1e-04_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b64_lr1e-04_s43",
+      "manifest_sha256": "7316b7102e7395e078948d3823d949d2f644b86711002b7eb0089ee7032d6004",
+      "summary": {
+        "status": "complete",
+        "steps": 256,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 963.4896996021271,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b64_lr1e-05_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b64_lr1e-05_s43",
+      "manifest_sha256": "a78329c5691be69192371c3b98e59204c53fd1fa822d3d0ea3243c80e641e053",
+      "summary": {
+        "status": "complete",
+        "steps": 256,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 1142.8076667785645,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup",
+      "name": "qkvo_b64_lr1e-06_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/training/qkvo_b64_lr1e-06_s43",
+      "manifest_sha256": "b95240d6e91f444d84bab940df5bce6435ae982fefce1c47583e2646824f2c85",
+      "summary": {
+        "status": "complete",
+        "steps": 256,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 1036.2178478240967,
+        "peak_gpu_gb": 21.64864444732666
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s43",
+      "manifest_sha256": "7417ffd06985d017e6d1f2412bd88561fdbaaf5db9fb944cf0ed1abf8403f658",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 183065,
+        "elapsed": 76.87073040008545,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s44",
+      "manifest_sha256": "ea72a09b6ed77f9552b0d08d501f3a7400fd9af2a7210df8042c0e644bf4c91a",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 183065,
+        "elapsed": 78.67923164367676,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_raw_qkvo_b16_lr1e-05_eager_s45",
+      "manifest_sha256": "72bbc3c6145602fb4c2b4020288acfe823a065aae9f8ce08210d75b1bff4d3b6",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 183065,
+        "elapsed": 78.52765655517578,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s43",
+      "manifest_sha256": "576443d39ab1736f4db93980471d2ad292385c0eea71928aa0b073a3020da41f",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 70.00383996963501,
+        "peak_gpu_gb": 13.985170364379883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s44",
+      "manifest_sha256": "1f373e16c59e5473b2ba9a07839353621296fd1c38f85ab41a26e95cd7ef2517",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 88.54377603530884,
+        "peak_gpu_gb": 13.985170364379883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/factor_self_qkvo_b16_lr1e-05_eager_s45",
+      "manifest_sha256": "c557ac92935e8a2644c3d97da6a13ddacd8c2429b5a43c4d500c66c350199fbd",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 86.38007807731628,
+        "peak_gpu_gb": 13.985170364379883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "qkvo_b16_lr1e-05_bf16_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/qkvo_b16_lr1e-05_bf16_s43",
+      "manifest_sha256": "0f50768341ed191ad079ad4fce84ccb35fd2a41708d752adc8c9faa9eae42335",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 946.929660320282,
+        "peak_gpu_gb": 17.650083541870117
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/qkvo_b16_lr1e-05_bf16_sdpa_math_s43",
+      "manifest_sha256": "ee51eefb9d0f9c982a2905ce1d9ea3bd22a133f4e59b17be311104ede80fef62",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 989.5609829425812,
+        "peak_gpu_gb": 17.633909225463867
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43",
+      "manifest_sha256": "0a23f0014ba55e51e881fe869aaefe86448ada69296a34cb91c8cba0c6127789",
+      "summary": {
+        "status": "complete",
+        "steps": 1000,
+        "epochs": 8,
+        "seen_examples": 16000,
+        "tokens": 3699256,
+        "elapsed": 930.6182186603546,
+        "peak_gpu_gb": 19.946418285369873
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "reproduce_target_self_eager_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/reproduce_target_self_eager_s43",
+      "manifest_sha256": "2f2b95ae1c904178bbfa16230eb2590ab35d7e8f8e7a8a14e7e0ff82b7f0ebb9",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 101.27081537246704,
+        "peak_gpu_gb": 13.985170364379883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "reproduce_target_self_sdpa_math_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/reproduce_target_self_sdpa_math_s43",
+      "manifest_sha256": "923dd1c5e9cb715a67a620a78e415374ce3471ad5067c6e06e925b8f1ba75d71",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 125.02959203720093,
+        "peak_gpu_gb": 13.976381301879883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43",
+      "manifest_sha256": "01c674cdc24ab9ea10438a5f2b1fc2bdb366f9eb7a329dc9b33d9c4bb6b3772b",
+      "summary": {
+        "status": "complete",
+        "steps": 592,
+        "epochs": 8,
+        "seen_examples": 9400,
+        "tokens": 1464520,
+        "elapsed": 465.39045095443726,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s44",
+      "manifest_sha256": "7aaa986f6f60b683b8494a38f855678a4bd7fb062829960f1c7b05538e4a1def",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 183065,
+        "elapsed": 79.95496559143066,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_raw_qkvo_b16_lr1e-05_sdpa_math_s45",
+      "manifest_sha256": "5af1977db506aec2f6d85d0f8cda6a396d8620919e3dd74672568d454bba6148",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 183065,
+        "elapsed": 80.74294590950012,
+        "peak_gpu_gb": 10.677947044372559
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s43",
+      "manifest_sha256": "833b209c73cbcc202abb2e79539af5043f466c4ae9284ce4649a9f3ee770661b",
+      "summary": {
+        "status": "complete",
+        "steps": 592,
+        "epochs": 8,
+        "seen_examples": 9400,
+        "tokens": 4013824,
+        "elapsed": 650.5952978134155,
+        "peak_gpu_gb": 13.976381301879883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s44",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s44",
+      "manifest_sha256": "4a25d05b61a10162a21bcfd7865a23f108244fb0157b51c0182e716b9b60cf5a",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 108.19244241714478,
+        "peak_gpu_gb": 13.976381301879883
+      }
+    },
+    {
+      "scope": "followup_dtype_targets",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s45",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/target_self_qkvo_b16_lr1e-05_sdpa_math_s45",
+      "manifest_sha256": "4d5fb928493b59b56b9e988eba7f351f9aa54f56f760084369a649b8fe9685ac",
+      "summary": {
+        "status": "complete",
+        "steps": 74,
+        "epochs": 1,
+        "planned_epochs": 8,
+        "seen_examples": 1175,
+        "tokens": 501728,
+        "elapsed": 109.09445285797119,
+        "peak_gpu_gb": 13.976594924926758
+      }
+    }
+  ],
+  "incomplete_or_failed_training_runs": [
+    {
+      "scope": "followup_dtype_targets",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_s43",
+      "path": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/dtype_training/qkvo_b16_lr1e-05_bf16_sdpa_s43",
+      "manifest_sha256": "af843c89dae3f7d0cdb5a3dbf5590bd1eb653fcb74f4f65791df9be2584cc2ac",
+      "failure": {
+        "time": 1788939477.2080963,
+        "step": 5,
+        "reason": "nonfinite gradient norm under automatic cuDNN SDPA; no corrupt optimizer step was taken",
+        "new_run": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43"
+      }
+    }
+  ],
+  "completed_evaluations": [
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation/dev/base/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "a3f6c8a496f9922a02f70f6680d6e788de728697fda7f7b426345fe65a9329e8"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation",
+      "name": "probe_base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation/dev/probe_base/math_summary.json",
+      "n": 8,
+      "correct": 4,
+      "prediction_sha256": "69adb9ccd82b4bc1d0dd1a71ce8b3ef0b2bd5a05e91143aa98ac088ded56134a"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/base/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "4432ae7e8bb0703d08e922c20b769f5b8e2c200ce697426ba4e8d37f2c628c0f"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "base_repeat",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/base_repeat/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "4432ae7e8bb0703d08e922c20b769f5b8e2c200ce697426ba4e8d37f2c628c0f"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "dense_all_lr1e-6_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/dense_all_lr1e-6_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 147,
+      "prediction_sha256": "e1f2bd1562c863e620738a9b68d4b71a13ba97100f8941925090dbaf2a1bb409"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "dense_all_lr1e-6_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/dense_all_lr1e-6_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 159,
+      "prediction_sha256": "92e5f13421b23edff9ae93b361d23e22334f85694ad7a1056cda9f8eb2bcff1b"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-5_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 154,
+      "prediction_sha256": "87a3cd6bd2a7a3682942de86d2d81b7f91ab9a828075682200466224e5097e2c"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-5_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 129,
+      "prediction_sha256": "25d2bf9027e815b408a6cc6a42341fb438548e07c7938a96973c9c5e3821a901"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-6_fp32_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 165,
+      "prediction_sha256": "6f99dba81ef3ad62d8ba38ba84dafbe184fd35cc05c5106f5d48186046474f62"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-6_fp32_s44_step25/math_summary.json",
+      "n": 500,
+      "correct": 190,
+      "prediction_sha256": "993012aad9a7cfe6a58743484d934ead7a28fd45dba015762e758955d9188e02"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-6_fp32_s45_step25/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "f3ba9075f5403effc7d912595d8084d90a51067491ae03cbda22e2f927e5ef6b"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-6_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 147,
+      "prediction_sha256": "56576ba9ebce2db2cec3c08dfe9441da7152c85ac9563ca374cffcc1ee95b025"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-6_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 155,
+      "prediction_sha256": "d16a6f3277622587ce704af109c246a59fa810657adb704a9130d3507a7cb638"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-7_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-7_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 154,
+      "prediction_sha256": "11be3fbcd9719e6e0daccca7a7456b7466049c7e2a7f2b061029971ebb425e8e"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-7_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/full_lr1e-7_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 159,
+      "prediction_sha256": "dfddfa82e6adb126c72bbf8324552771fcd1cc74ed7500720898d8f33cf40f49"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-4_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all16_lr1e-4_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 173,
+      "prediction_sha256": "a9da3887c0e4d53ebb78c34ee2899917dbfeb01b9a33b7a4ca00c827293f6afb"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-4_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all16_lr1e-4_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 163,
+      "prediction_sha256": "3b2fec03c971ed6ad2ae26a593bda62f749423740e234a7cd0c5592068a03537"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-5_fp32_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all16_lr1e-5_fp32_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 205,
+      "prediction_sha256": "bec7a85fcf5039b89753e6ebb1dbbc3fa2fe93bba56da05ea4773b643a9048fb"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all16_lr1e-5_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 178,
+      "prediction_sha256": "5c3692176ea324ead77a62f04577a691d2f4a85cb58bd7d30175a6caa5fcb4d6"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all16_lr1e-5_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 224,
+      "prediction_sha256": "e8a0a18a6ef6b1b8a35f9a1cf10eeb4d0d4d27a66d71440d0d5930bbe888f655"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all64_lr1e-4_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all64_lr1e-4_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 170,
+      "prediction_sha256": "97c85bf12a0b5f4965edbc026de104d6f197e4eabd5633a65d897b17015858d2"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all64_lr1e-4_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all64_lr1e-4_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 162,
+      "prediction_sha256": "253beaae31ca0f5067056ac2b2e19c3924c09946c82dcf980363ba2cc46f2c71"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all64_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all64_lr1e-5_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 172,
+      "prediction_sha256": "7868b1a002be5a5dfe9a046fcb7a67363d3ee0e12ba9154514923280dfb6b986"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all64_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_all64_lr1e-5_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 196,
+      "prediction_sha256": "4afcb36c5bc068aa4b2a80331c3ec0e5bc7fbfc0ec25d1eb1a0e4d70e51d3211"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_qkvo16_lr1e-5_s43_step125/math_summary.json",
+      "n": 500,
+      "correct": 238,
+      "prediction_sha256": "66f24768093f26d570cb326b39b5fade6556016b1ca2bf12845712b1fe763edf"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_qkvo16_lr1e-5_s43_step25/math_summary.json",
+      "n": 500,
+      "correct": 298,
+      "prediction_sha256": "575a6524887a494127fee89457ebae68616256fd7675903908a40046cf44b1c7"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_qkvo16_lr1e-5_s44_step25/math_summary.json",
+      "n": 500,
+      "correct": 301,
+      "prediction_sha256": "32d19dba7fb2aed49b5b3c7f44704e6fddd8861c28cb91eb561f37b4c6ac0789"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/lora_qkvo16_lr1e-5_s45_step25/math_summary.json",
+      "n": 500,
+      "correct": 299,
+      "prediction_sha256": "def2b683a92cbc698fdf38a52a81ad7471d4b6399dc4a61aef60d77b716c7c33"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "nonzero_repeat32",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/nonzero_repeat32/math_summary.json",
+      "n": 32,
+      "correct": 28,
+      "prediction_sha256": "b552906c932be940c2652b105fe82b857ae14c750de96c25147ec67e952caf27"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "zero_full_export",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/dev/zero_full_export/math_summary.json",
+      "n": 32,
+      "correct": 25,
+      "prediction_sha256": "2bc55b868b5aafed37e5344eaf9fb932a26bd0dbd3a55efe5f0be98cb1c18c8f"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/base/gsm8k_summary.json",
+      "n": 300,
+      "correct": 219,
+      "prediction_sha256": "234b5490d848a768ca6a55c48d420ed6333d78421cd395d6046587f2badf648c"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/full_lr1e-6_fp32_s43_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 165,
+      "prediction_sha256": "c7e8b2cd7932ff49bc31bbfd0f8305dc7b12382c2dbf93a4f6ec1dce97c73602"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/full_lr1e-6_fp32_s44_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 161,
+      "prediction_sha256": "2abee7d90fcae0db8d257e5a3d16e62afcda3f7115b7697b35f5ed1394b29e56"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/full_lr1e-6_fp32_s45_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 169,
+      "prediction_sha256": "3dfe33fb8bd845288ea6b1ad4216bb9091a6b2cbc602a87bdec02aab9c492f4f"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/lora_qkvo16_lr1e-5_s43_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 219,
+      "prediction_sha256": "8ce8441354b237191d10a83279e51bb3cd19550084a4faca36a07997007e4df1"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/lora_qkvo16_lr1e-5_s44_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 216,
+      "prediction_sha256": "44890bcda8b0074000fbf512e5a6279d6185348bca3b6789702c38b24bad6385"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/gsm_diagnostic/lora_qkvo16_lr1e-5_s45_step25/gsm8k_summary.json",
+      "n": 300,
+      "correct": 219,
+      "prediction_sha256": "dd7773ac3ee8570c3ccc0339efbe607466641a168a2e0745dc9c68115d9365a2"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/base/math_summary.json",
+      "n": 1000,
+      "correct": 568,
+      "prediction_sha256": "993be77b37f64b5138e5a06e27969dead390542cb93b6a11079604df89590cd7"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/full_lr1e-6_fp32_s43_step25/math_summary.json",
+      "n": 1000,
+      "correct": 319,
+      "prediction_sha256": "b2332d902219317dbe9779aa9acc347404b47f38bff13ca698749efdff325b18"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/full_lr1e-6_fp32_s44_step25/math_summary.json",
+      "n": 1000,
+      "correct": 325,
+      "prediction_sha256": "7def8f4d6206ff6bc9deed500b3ccadba47f0940201028596956c040e41d2841"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_fp32_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/full_lr1e-6_fp32_s45_step25/math_summary.json",
+      "n": 1000,
+      "correct": 323,
+      "prediction_sha256": "f5e52fa5350501423becc36f41163ea725b09232097316035b744dc85a0223e3"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s43_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/lora_qkvo16_lr1e-5_s43_step25/math_summary.json",
+      "n": 1000,
+      "correct": 555,
+      "prediction_sha256": "3335cf791917ff360417d44ad45121483957e0e01a4ba1660bf8bc0ea76b1bf6"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s44_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/lora_qkvo16_lr1e-5_s44_step25/math_summary.json",
+      "n": 1000,
+      "correct": 560,
+      "prediction_sha256": "5b18bc60681709427364f5f35cf4e7599326ca5a029b7b75ab25ed4d3f5972fb"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s45_step25",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/math_confirmation/lora_qkvo16_lr1e-5_s45_step25/math_summary.json",
+      "n": 1000,
+      "correct": 563,
+      "prediction_sha256": "830170323a175183a944d2728ddcda921ada25047cfd394bb60c8da819240dfb"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/train_probe/base/math_summary.json",
+      "n": 128,
+      "correct": 69,
+      "prediction_sha256": "3eb9ef9a8d2e10c5b514e0df20454ce69790537527c55adfc1ce619e40993b71"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "full_lr1e-6_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/train_probe/full_lr1e-6_s43_step125/math_summary.json",
+      "n": 128,
+      "correct": 30,
+      "prediction_sha256": "ae2076bd0cdb060fad762fe50f903569735980996eabef3535bd8f308c1c5189"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_all16_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/train_probe/lora_all16_lr1e-5_s43_step125/math_summary.json",
+      "n": 128,
+      "correct": 41,
+      "prediction_sha256": "e6feae24fdbe88552ec4bbb33a9ccdb4517077f6f3b17ce57a105ede50cd335d"
+    },
+    {
+      "scope": "phase1",
+      "protocol_group": "evaluation128",
+      "name": "lora_qkvo16_lr1e-5_s43_step125",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/results/evaluation128/train_probe/lora_qkvo16_lr1e-5_s43_step125/math_summary.json",
+      "n": 128,
+      "correct": 58,
+      "prediction_sha256": "7f8ecad2e2e47edb140475c53b2f8b97f7667d3b04918b4d676c49e2d09670da"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_ce_b16_lr1e-05_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_ce_b16_lr1e-05_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 172,
+      "prediction_sha256": "9c4ac72dfd59ab5dc142c3eb11fb545f2371dbbc43830ddd65c2a13f79737ef3"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_ce_b16_lr1e-05_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_ce_b16_lr1e-05_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 224,
+      "prediction_sha256": "bf3305f7d2f0a4eff468d3d7e4853d867bf451afc9cdd03e2ac144dec49691d8"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_ce_b16_lr1e-05_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_ce_b16_lr1e-05_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 179,
+      "prediction_sha256": "1466ca776286e4431551f9ff24789752ca0afd6e8777bb3b29e7a9c0866d02f0"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_dft_b16_lr1e-05_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_dft_b16_lr1e-05_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 182,
+      "prediction_sha256": "832db40dd79bb7b5f93e880bb8f84ad181a3de0f70734d75acc8d4110775c138"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_dft_b16_lr1e-05_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_dft_b16_lr1e-05_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 281,
+      "prediction_sha256": "3639e5adf2a54fd4d4a427dc40b1698f4a7e3cdc8a958fdf46a0fe844cd7db8d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "all16_dft_b16_lr1e-05_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/all16_dft_b16_lr1e-05_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 180,
+      "prediction_sha256": "27c5f5fdef7fc5e467de5a1f55e8123437d70126deb362bbce8a5b5746d8a48e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/base/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "4432ae7e8bb0703d08e922c20b769f5b8e2c200ce697426ba4e8d37f2c628c0f"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 171,
+      "prediction_sha256": "31cfdd83cb785bb0e584dc344db96c750703948bbd163ee91c64d2d2b883f62e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-04_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-04_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 171,
+      "prediction_sha256": "50f39d42470091e3ed5833b88700a88e6557ce1cb296feaf2f853b419dfd2c24"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-04_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-04_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 175,
+      "prediction_sha256": "d156818483f2619d7232c959c70a94b737f9f5b96c528bb2f445224e32a16886"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-04_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-04_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 174,
+      "prediction_sha256": "ef0920966a0332eb4416a80225183c6309df56f2e7a1a8570438152f713d6c7d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 170,
+      "prediction_sha256": "e1444af83fe65c4f5e2b06a5b25d0b74d087a88ec876ac8e63b2b051594b402e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-05_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-05_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "5a8b89f21b1147ec279dfde1c06df79755652b03e3a5bbf9d335bd32b3cca515"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-05_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-05_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 301,
+      "prediction_sha256": "d748f3f3a3d98d6ad6b6837feb0394665020888e10887227a4e8e216857c2bf8"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-05_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-05_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 173,
+      "prediction_sha256": "0fce1270012a26b8372cd0dfc65ce9da454f1ce7a07dbf7b0347c455cb66f312"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 248,
+      "prediction_sha256": "752a56a22d17810f0304fcca75df6e991b75fcd1872cf025b3e2364da8d9d1c5"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-06_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-06_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 305,
+      "prediction_sha256": "97abf2a71affbc7a0d2eb3b8d6c09787f367362ba6a631fceb8fafe54168bd1b"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-06_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-06_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "7bcdaa644717f246a07d511b04d6a0522c4e66957d8865a6bf641e7a62d65ad6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-06_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-06_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 297,
+      "prediction_sha256": "8a6d69867540f70a5406588e44cf4a7d91b86d251ad4291f33443e230a5107c7"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-5_legacy_extend_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 170,
+      "prediction_sha256": "718888e48f39a993687aad189362471f0b343fdd81a84ef7ccc8df7f0620d310"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-5_legacy_extend_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 238,
+      "prediction_sha256": "224e8e5e7880866efc641f21a99844608ab3d2142f18ecdd9f398c4540eb0688"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-5_legacy_extend_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 298,
+      "prediction_sha256": "82345bea22d64f2a0cd3fcd65a53a71a5ddc58f367bd8722924bb3011021f654"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b16_lr1e-5_legacy_extend_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 189,
+      "prediction_sha256": "b13cfb66a48a37e72ec87d78b9ce82317b8a3277c0160badbc740a67cee177f7"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 139,
+      "prediction_sha256": "53c28b91a76477826b1fd37ead19a98f739b6a06fbe9b9e746eb9b7c5ca3f0ca"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-04_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-04_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "bbdcf6891bf9f738c1f0d441547de630298b891eb06ef46a3835d86d45f735d8"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-04_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-04_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 168,
+      "prediction_sha256": "0e4b82d460cfbb191e912ae5891b9c806e59fe3e65d268c7db16f3eea648d8c8"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-04_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-04_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 172,
+      "prediction_sha256": "e07b7f287fea7a08b87ea873bff44423b47bc169a8f00793fe7f0223105abad3"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 178,
+      "prediction_sha256": "d0b8683217952c25844eb937bba149c214ffd21095e24bad9c9f1cfbff5603cd"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-05_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-05_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 185,
+      "prediction_sha256": "769779b07b21e5ff0215f316863732e28769b37859cab62634b264dfdd19cee2"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-05_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-05_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 204,
+      "prediction_sha256": "1c4e5b9ca7d739c4a7ae8c4f077ead75deebd54bec3fcc2695df4a8e8ca56869"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-05_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-05_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 172,
+      "prediction_sha256": "581d5f9f6daa979e6641aaf279e959aa9696900956efcbe5afb0ca444e0859e1"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "a99999ac483b24883e3a4ec95b4ab44948a78bae3a9aee3ef255f39ea5cc3c94"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-06_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-06_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 284,
+      "prediction_sha256": "0303d4186bfdff07c82d80c420f885f1d641d408630b25161117eb6c02585d47"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-06_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-06_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "c9ca9c6837156b758c86ae1dd064f41bbf681e2ec2197db176f3f5d5e4feac42"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-06_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b4_lr1e-06_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 194,
+      "prediction_sha256": "8501fdc8a38f5c335fd6a1f9566e188890ab0015784f89d106131c9229f437e2"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 180,
+      "prediction_sha256": "92a945bc6a9d382ba888facb9a9302b8cdb991d0393dbf0a85d91695edb51e86"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-04_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-04_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "d2832446b0f87ae56a7ff5d888543eeaa5e604f691f0efea1ba46fe4e8dc96c5"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-04_s43_exposure448",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-04_s43_exposure448/math_summary.json",
+      "n": 500,
+      "correct": 245,
+      "prediction_sha256": "be0bc551f93aab27810d7b3a7143415b23528a4fcf9d568494a0073d69bef238"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 182,
+      "prediction_sha256": "66137dcd006368c69078b6f268bcab7092e62bfe105de94c836bee253248c5b4"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-05_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-05_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 293,
+      "prediction_sha256": "b059801e7e3644213a299fbd3dec673b9f32ecc0a7e8ea61f8f451c25cce2978"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-05_s43_exposure448",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-05_s43_exposure448/math_summary.json",
+      "n": 500,
+      "correct": 305,
+      "prediction_sha256": "2dc40bc655fca7c5c4e9889d3e85150f210bfb94b5239b0f68a347e61bc50a9d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 305,
+      "prediction_sha256": "36ec80350cff1726cad0b6e5583991b3e25469143524c96dcaecf8f159ad67e3"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-06_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-06_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "c6c08c65d865a0bd689fa55743edbd6cdcb3704fc7d0d219116a244126a5b0e0"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-06_s43_exposure448",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/dev/qkvo_b64_lr1e-06_s43_exposure448/math_summary.json",
+      "n": 500,
+      "correct": 301,
+      "prediction_sha256": "15da93421912543e3ef7914dd0cb9bf7bb3671d473215d217f4cd64acdd2bf1e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/base/math_summary.json",
+      "n": 128,
+      "correct": 69,
+      "prediction_sha256": "3eb9ef9a8d2e10c5b514e0df20454ce69790537527c55adfc1ce619e40993b71"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b16_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 36,
+      "prediction_sha256": "5aef2ed989299393e5587549d3551002e8170b7786b3b5444bb1d2694dd25c80"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b16_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 36,
+      "prediction_sha256": "ae430b804530cdb5f75aac3230e021bf83ea2e4b2b964d20e3cd26bb1de7e4e0"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b16_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 65,
+      "prediction_sha256": "d8dae88f64830ae3f8345cb4cd855d5bf513c77eacb1abda5e78acd6a32e80c2"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b16_lr1e-5_legacy_extend_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b16_lr1e-5_legacy_extend_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 35,
+      "prediction_sha256": "54ffe7cb8b2c392d128ed7b944bba771bae7805ba14be0e5bbdf381865bc1aef"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b4_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 33,
+      "prediction_sha256": "4f5e6bf1e30f3b91757c4556025e0975f209ed0104d40be8b877fedcf0515ab4"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b4_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 33,
+      "prediction_sha256": "e5ac91c086512c46d2cec8306559a646e9d067ae815b27ac876e1ae358b34c71"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b4_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b4_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 38,
+      "prediction_sha256": "1a8901116012365fafb01a804441a02e596168c85bfa2bad1aab5f8f2a0747e4"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-04_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b64_lr1e-04_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 34,
+      "prediction_sha256": "0de655b0d522e1b3e0b89ea1167017ad92e7756661d3c23757341c1ef1390981"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-05_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b64_lr1e-05_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 42,
+      "prediction_sha256": "2f40cf23927a4b27c4209f84188e6dc649bf310b3c02e57fbd570349d1a01d0f"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation128",
+      "name": "qkvo_b64_lr1e-06_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation128/train_probe/qkvo_b64_lr1e-06_s43_exposure16000/math_summary.json",
+      "n": 128,
+      "correct": 69,
+      "prediction_sha256": "73d6199d35f6133d0f1a9d3d6925b6ad6e09e42bb4edcef5133c6a954ddaeb80"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/base/math_summary.json",
+      "n": 500,
+      "correct": 299,
+      "prediction_sha256": "dbb56675838b60d647674d97e98d23e15ec5f3e4b05a58d48da9c3f717e0f8db"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "base_repeat",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/base_repeat/math_summary.json",
+      "n": 500,
+      "correct": 299,
+      "prediction_sha256": "dbb56675838b60d647674d97e98d23e15ec5f3e4b05a58d48da9c3f717e0f8db"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 259,
+      "prediction_sha256": "35d04f777cfc592615d8f76aba9e2b293734c1c14b2cfbe57199cde1ce63ec06"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 293,
+      "prediction_sha256": "d2fd8d9ce9020599d6a9363935a76c2f0ef7a90ef5a1e039bb4a9daedb10a17a"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/qkvo_b16_lr1e-05_bf16_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 192,
+      "prediction_sha256": "7921cff147b1154b6f7d813fd01f65bcb9c79120c7fc5a7da8fafda146d0d37c"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/qkvo_b16_lr1e-05_bf16_s43_exposure400/math_summary.json",
+      "n": 500,
+      "correct": 299,
+      "prediction_sha256": "2df364c3ea7653306ffd7375513869d78c3eac06477839bab9a30397aca87770"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 174,
+      "prediction_sha256": "74d237008b67aef72789ec9164b8a8a96d0004e7bfc6c97bf2b2ca077521a4cf"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 166,
+      "prediction_sha256": "7563fd8c960e6254d7aa8bd0e48272031c7e31e5e4d5e19cc39d7f7c4fcff48d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43_exposure2000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/qkvo_dft_b16_lr1e-05_bf16_sdpa_math_s43_exposure2000/math_summary.json",
+      "n": 500,
+      "correct": 191,
+      "prediction_sha256": "ffe554835267084229cedc3c35739ae1d14e6d0fe509bcc7d37e4a3dfaaf8cf8"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 206,
+      "prediction_sha256": "a7f25d4323cd6ce6d962e916d8d77293e6fa90b026fe74bccc41897098d079d1"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure2350",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure2350/math_summary.json",
+      "n": 500,
+      "correct": 184,
+      "prediction_sha256": "de544ff8fa2a2e17f3e134e4dc147dd38db6e9578754a21e81eb37dbf2b263b6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure4700",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure4700/math_summary.json",
+      "n": 500,
+      "correct": 181,
+      "prediction_sha256": "c0915eba334255b06959254129ee08e775ae920c5ec3e19c940f6dc933b326dd"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 295,
+      "prediction_sha256": "fb55b8958c2de8dedc910c907793a89ebc39cc9252b51cd61f10c691fef9117d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure2350",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure2350/math_summary.json",
+      "n": 500,
+      "correct": 300,
+      "prediction_sha256": "77469b6d02d80dacf4c18e999e491e09c3a1a65c8465e7890bdf891925891692"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure4700",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure4700/math_summary.json",
+      "n": 500,
+      "correct": 295,
+      "prediction_sha256": "fb23d60eaeac6c1e579c76f66fb0d0d963a44c387906f0a89558eae96aaaa21c"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure9400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure9400/math_summary.json",
+      "n": 500,
+      "correct": 297,
+      "prediction_sha256": "d729d123befd2fd26fbb812c6706387e9e0f27288f69a93b7673a93cdc49bb30"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16",
+      "name": "base_self_targets",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16/train/base_self_targets/math_summary.json",
+      "n": 2000,
+      "correct": 1186,
+      "prediction_sha256": "6843105abf5ad8852a33e3da025b103e3518e296196b3ab11c16b96c223651a0"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/base/math_summary.json",
+      "n": 500,
+      "correct": 299,
+      "prediction_sha256": "e3047e9e2954871d845605b336fd072370154fd3133c2b8e48ad381ef923b8cf"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 259,
+      "prediction_sha256": "e717a21148357c070bb3887097db107b291e969cf59b2c11ecacec0badab969e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 248,
+      "prediction_sha256": "edced738ee57caa0d41bfc22dd6c23aa5644d70f2c79a7c664ca1b7375036174"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 297,
+      "prediction_sha256": "a2f52f7d5c023f137b7cebdb1a988b876df7371f29d27f9baef596234d1b69a6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 287,
+      "prediction_sha256": "099704eaf9ba24604e7efb0b337aacf2eb9c3955ca30413c5ff6403258426106"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 173,
+      "prediction_sha256": "35f3b3caa91a4d76e518defc2b5729015e1f46ddca71f2b2967bc44243827dfe"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 183,
+      "prediction_sha256": "aaf93b3f27187f6ca586b8c19be4704e9daea82e335a65775f838ad7084e6f4c"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_s43_exposure8000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_s43_exposure8000/math_summary.json",
+      "n": 500,
+      "correct": 162,
+      "prediction_sha256": "a602a24986a3bc3913ae6cdc795a2ca5b577a3175d1b7f637c2f5bfc38a3c619"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure16000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure16000/math_summary.json",
+      "n": 500,
+      "correct": 180,
+      "prediction_sha256": "e948c9fccc90982b7dda9b2609b1a4ad441be5bdd60e94e801a3ae0c595a8b60"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure4000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure4000/math_summary.json",
+      "n": 500,
+      "correct": 186,
+      "prediction_sha256": "e51f576239166f4aa24a0e116edd7eb05fc3707a4c8c7eb875dc2caff534e8c9"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure8000",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/qkvo_b16_lr1e-05_bf16_sdpa_math_s43_exposure8000/math_summary.json",
+      "n": 500,
+      "correct": 183,
+      "prediction_sha256": "ef51ea2521608944c2dc633fa8370a033f1691babfa1a451d36a9044cd05aa25"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure9400",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure9400/math_summary.json",
+      "n": 500,
+      "correct": 176,
+      "prediction_sha256": "7bf651f2c3c68df0e41bda938cb337f8098cbc13670e4c788e92d390f4919c53"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 209,
+      "prediction_sha256": "793a7a561078170a2b4dceeddafcc9dc484304a5c9b8ed297a8e8746a9604da6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 209,
+      "prediction_sha256": "b88a11e6652e247f71fcbf6b3452f65ec2fd220fe9cf8220e71824eebd531bdc"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 295,
+      "prediction_sha256": "ff638a69f60a70ef5341b6794df02c5b96fef0ef713958e898ec93a716309bac"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 288,
+      "prediction_sha256": "02e3a9c1fa20717e2ab81b2b1d4f70f6d9b0fc1251a9dd06744256db124ab0b3"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/dev/target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "n": 500,
+      "correct": 295,
+      "prediction_sha256": "73a3f208830c26f69d362f618cf0b5f25dba82c2b6b92dc42231cac614a70fb6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/base/math_summary.json",
+      "n": 1500,
+      "correct": 818,
+      "prediction_sha256": "9567e107a8cd36272f48075edb625812bafd0424149733654838f5860beeefa2"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_raw_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 757,
+      "prediction_sha256": "7b600acc5168dc39e00ab62a4585b1a88dff3991562b8d6c5d6a4982a3ff69a2"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_raw_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 741,
+      "prediction_sha256": "08aca1a079c9dbfff00b91df305647ce7eadb8db461334af8ff9749d6fc6101e"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_raw_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 753,
+      "prediction_sha256": "c9f3c2a0077a64444ae38487f22fa95d1ad7cb4f9c7be27cd743e53573be5c70"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_self_qkvo_b16_lr1e-05_eager_s43_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 832,
+      "prediction_sha256": "767aeae2c873ef297bcb30faa7336d69a7b6135f955f49f7e0db9f16cd1e6a66"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_self_qkvo_b16_lr1e-05_eager_s44_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 819,
+      "prediction_sha256": "661754442ba2bac598ec1a3b6bd0cb09b4919a529255cda455869046a6fb5e75"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/factor_self_qkvo_b16_lr1e-05_eager_s45_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 814,
+      "prediction_sha256": "2953ab2b6e9c1ade3f4059603138b121de6a93b992fb40014fec3bf46d6a868d"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_raw_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 606,
+      "prediction_sha256": "eb7747988805a3add01a1ac26a1920ae3295cd7bba6d53326f20134e81fb5cc0"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_raw_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 622,
+      "prediction_sha256": "e332f3f1c8b785f0dd787d42d47a9cde7e0550b380c74255f9385bc39acdbc80"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_raw_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 611,
+      "prediction_sha256": "a098b40ee103fb68c7e121ac902eaa74791edd5692ba7d6d7dd791cc6f3b92cb"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_self_qkvo_b16_lr1e-05_sdpa_math_s43_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 829,
+      "prediction_sha256": "e7d17a970836591e0be0ceac465bb082aeefc214c68d2f4fd7ea07c1b63b4aad"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_self_qkvo_b16_lr1e-05_sdpa_math_s44_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 815,
+      "prediction_sha256": "9e8fe675b620d2f5eeb7550abcd27c549e47cdbd23839b3d95f0f3a9447f1cd5"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "evaluation_bf16_512",
+      "name": "target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/evaluation_bf16_512/math_confirmation_new/target_self_qkvo_b16_lr1e-05_sdpa_math_s45_exposure1175/math_summary.json",
+      "n": 1500,
+      "correct": 806,
+      "prediction_sha256": "bde7e0624fc3a09ddcebc3ffee5a90b19217aeaf48d08ed99299cff2d110b3a6"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "base_amp_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/base_amp_128/summary.json",
+      "n": 128,
+      "correct": 41,
+      "prediction_sha256": "372fd93548053da4a91b0dcac31cdc003b1ffef831801a7c8f0dee4152306bfa"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "base_bf16_eager_128_repeat",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/base_bf16_eager_128_repeat/summary.json",
+      "n": 128,
+      "correct": 41,
+      "prediction_sha256": "92cac275fcf04b69e3ef553f49ab181d026ac6db548d31c2e64aaba4f360506b"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "base_bf16_sdpa_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/base_bf16_sdpa_128/summary.json",
+      "n": 128,
+      "correct": 76,
+      "prediction_sha256": "ce0c1ac74497e3ddd840b6752e05e599c8bbcffc87785b608c1800ca97b1612c"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "base_fp32_native_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/base_fp32_native_128/summary.json",
+      "n": 128,
+      "correct": 75,
+      "prediction_sha256": "cb0e4d5af000fdb91ba6e6086f07a7e3a40dd35ad196fa66234cff62020c533a"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "original_raw_bf16_step50_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/original_raw_bf16_step50_128/summary.json",
+      "n": 128,
+      "correct": 47,
+      "prediction_sha256": "9abd34b6d8fcf77b8461b7206d1d38848795fcc217a99d480187c12b22303b56"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "phase1_full25_amp_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/phase1_full25_amp_128/summary.json",
+      "n": 128,
+      "correct": 36,
+      "prediction_sha256": "efcc819a48432891456691fb680984beb3b87deaa085bd3e3598256f9ed066dd"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "phase1_full25_fp32_native_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/phase1_full25_fp32_native_128/summary.json",
+      "n": 128,
+      "correct": 42,
+      "prediction_sha256": "8d9afae278e65932aff27f280e7a15691c1e7d9aa1b3298f8250639195d62be9"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "phase1_qkvo125_amp_128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/phase1_qkvo125_amp_128/summary.json",
+      "n": 128,
+      "correct": 41,
+      "prediction_sha256": "566af2c75b4cb81875a294a23ad1d514856fdba9f7e304cde6a65e0790695769"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "qkvo_sdpa_math2000_native128",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/dev/qkvo_sdpa_math2000_native128/summary.json",
+      "n": 128,
+      "correct": 43,
+      "prediction_sha256": "758e5902db7e5c49625f4cfd6d3d702be165980f01a2f657f862a2748c652769"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "native",
+      "name": "tiny_amp",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/native/tiny16/tiny_amp/summary.json",
+      "n": 16,
+      "correct": 16,
+      "prediction_sha256": "8f28f59fd2062e94ec5fc803433bb549662a6d0ae84bb86f464ed8dd9b404106"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/generic/base/math_summary.json",
+      "n": 500,
+      "correct": 270,
+      "prediction_sha256": "ef48b23eba86a44766e778cba8ad9ffd0fc9522d458f6368afb1fad19a50c48c"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "full",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/generic/full/math_summary.json",
+      "n": 500,
+      "correct": 166,
+      "prediction_sha256": "3d80e57c11a1196e5e1a77ba49587d16a35f7b38d5671909481c2c16f666f8ea"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "lora",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/generic/lora/math_summary.json",
+      "n": 500,
+      "correct": 250,
+      "prediction_sha256": "7f846613f881cebcf1c06068bf7dbc0a1913ee7431c3eb5f44fb28a71f47e3bc"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "base",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/to/base/math_summary.json",
+      "n": 500,
+      "correct": 304,
+      "prediction_sha256": "b15270c07d1a31734e31d2a9e046e2fc5e22d54c4a73345a5a7e1db62c18bbe3"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "full",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/to/full/math_summary.json",
+      "n": 500,
+      "correct": 183,
+      "prediction_sha256": "f857c9ebc5bb7f9abe1c01728a42bef054f19a2f6c0adec819c1b54b303dd989"
+    },
+    {
+      "scope": "followup",
+      "protocol_group": "prefix_probe",
+      "name": "lora",
+      "summary": "/mnt/micron/yixiaore/adapter/research/sft_diagnosis_20260908/causal_followup/results/prefix_probe/to/lora/math_summary.json",
+      "n": 500,
+      "correct": 265,
+      "prediction_sha256": "56c01b8bef8f70baf634210ae41a857b23039e834eafe0c08a6a28042061ac6d"
+    }
+  ],
+  "total_completed_training_runs": 44,
+  "total_generated_records_in_completed_evaluations": 88760,
+  "note": "Record count includes repeats, diagnostic protocols and copied baseline records; it is neither a count of independent benchmark questions nor a count of new generation calls. Tiny-positive-control runs are separately documented and not included in this training manifest inventory."
+}

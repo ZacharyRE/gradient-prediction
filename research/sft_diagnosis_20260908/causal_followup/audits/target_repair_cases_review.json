@@ -1,0 +1,21 @@
+{
+  "selection": "seed20260909 random3 from dev base-correct/eager-raw-wrong/eager-self-correct; all three completed before token limit; problem excludes Asymptote",
+  "scope": "Illustrative conditional cases, not an error-type prevalence estimate or comprehensive process-quality claim",
+  "cases": [
+    {
+      "index": 64,
+      "assessment": "Raw starts with the right combinatorial expression, then invalidly cancels factorials and makes arithmetic errors, ending at 299 instead of 2838. Self and base correctly use 3003-165=2838.",
+      "self_reasoning": "Correct in the inspected response"
+    },
+    {
+      "index": 54,
+      "assessment": "Raw incorrectly assigns nonzero fixed arrangements to reflections despite all shells being distinct, then adds incorrectly, producing 362886. Self/base end at the correct 362880, but both say there are only two reflections; the star actually has five. Self explanation is not a fully valid proof.",
+      "self_reasoning": "Correct final answer with flawed explanation; do not count as process-certified repair"
+    },
+    {
+      "index": 173,
+      "assessment": "Raw solves 9x=90 as x=15, then gives impossible acute angle120 as largest. Self initially writes a wrong ratio interpretation, explicitly retracts it, then derives80,10 and maximum90 correctly. Base reaches90 despite incorrect intermediate acute angles8 and1.",
+      "self_reasoning": "Contains an explicitly corrected false start, then correct derivation"
+    }
+  ]
+}

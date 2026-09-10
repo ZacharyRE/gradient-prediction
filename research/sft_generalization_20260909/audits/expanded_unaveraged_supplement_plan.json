@@ -1,0 +1,68 @@
+{
+  "time": 1789012427.8437054,
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "models": {
+    "43": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+    "44": "teacher7_expansion_combined_lr5e5_s44_epoch4",
+    "45": "teacher7_expansion_combined_lr5e5_s45_epoch4",
+    "46": "teacher7_expansion_combined_lr5e5_s46_epoch4",
+    "47": "teacher7_expansion_combined_lr5e5_s47_epoch4"
+  },
+  "datasets": [
+    "math_reused5000",
+    "ood_minerva",
+    "ood_olympiad",
+    "ood_svamp",
+    "ood_amc23"
+  ],
+  "macro_datasets": [
+    "ood_minerva",
+    "ood_olympiad",
+    "ood_svamp"
+  ],
+  "data_sha256": {
+    "math_reused5000": "d55465534f6d30f3c62b573c03853b72c26154542f5a1a690c0aacd138f47bb4",
+    "ood_minerva": "5fcc5c27f789b43eaee9295dee05dd9a8fb04cca1340e1264afc5538efe18c68",
+    "ood_olympiad": "5d67ce4ddbfc4c32a17a4b16fb84c80ab5424ffddd9d0f55db9cb71ba789eb7c",
+    "ood_svamp": "b87c0204a1d918e5e79ee9a5ecfcbb58363a07059ee4339b17c58afa927dd435",
+    "ood_amc23": "f3b77999b17e7d8fa43ec55929ba1cc6f4db974397d7a016a00352ef8c5f8bf7"
+  },
+  "training_data_sha256": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+  "endpoint": 4,
+  "primary_campaign_unchanged": true,
+  "primary_selection_rule_sha256": "19237bd9251c15efcc8db33187c44f67627807e536de8239db526a2d68be974b",
+  "start_cutoff": 1789030800.0,
+  "finish_cutoff": 1789048800.0,
+  "gpu": "1",
+  "wait_for": "All original primary native500 GPU1 work completed successfully, followed by natural ownership drain and exact baseline/nonzero dev500 replay onGPU1.",
+  "known_development": {
+    "base": 299,
+    "averaged_43_46": [
+      309,
+      301,
+      300,
+      298
+    ],
+    "unaveraged_43_46": [
+      300,
+      302,
+      309,
+      308
+    ],
+    "seed47": "training; unknown"
+  },
+  "rationale": "Complete the data-expansion by checkpoint-averaging comparison using already trained fixed endpoints. Runtime estimates from actual native128 elapsed440-596s leaveGPU1 available afterprimarynative. No new training or seed selection.",
+  "scope": "Separate supplementary five-seed family, declared before any final5000/OOD outputs. Original primarycampaign remains16models and unchanged successcriteria. This explicitly extends total planned finalunique models to21 if timepermits; it does not retroactively amend original16-modelselectionrule. Supplementary unadjusted intervals remain exploratory, not a replacement of primarysuccess. All5seeds required for any efficacy statement; partial execution cannot establish general improvement.",
+  "abort_rule": "Do not launch if native notcomplete by09UTC. FinishGPUwork by14UTC to preserve reportmargin; record any incomplete tasks and no efficacyclaim from partialfamily.",
+  "evaluation_script_sha256": "8ad473e78d2dff10db9b3e44fb2a85ffe4c0d20e64ed4d2d9869ea8152ac68ca",
+  "strict_script_sha256": "eeed6d11d7261fae030dafd80d2a294d862dfa1e84196c7efe6b5215bb48f3f8",
+  "numeric_helper_sha256": "87228146441ae29a496624e84c38582a826a899e1f299aa18be53bc427622088",
+  "numeric_contract_sha256": "2cc551a2660cd62d7d637b19755acbf16429aebf784449f1ade117c1a0235dbc",
+  "analysis_script_sha256": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb"
+}

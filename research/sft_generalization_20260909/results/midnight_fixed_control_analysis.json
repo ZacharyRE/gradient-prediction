@@ -1,0 +1,504 @@
+{
+  "time": 1788998743.2284417,
+  "script_sha256": "e65d49f8b90af9e2d21c6456958057dd7d9c4a40d382a8394aa042cbe46f206f",
+  "scoring_audit_sha256": "867c9b0cc551235fc3d47e9b0725d125a3efb9b0924d13c3a2fdaa90bf151c7e",
+  "n": 500,
+  "seed": 43,
+  "results": {
+    "raw": {
+      "base_correct": 299,
+      "models": {
+        "base": {
+          "correct": 299,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "nll_noguided_min_lr5e5_s43_epoch2": {
+          "correct": 300,
+          "vs_base": {
+            "delta_pp": 0.2,
+            "ci95_pp": [
+              -2.8000000000000003,
+              3.2
+            ],
+            "wins": 31,
+            "losses": 30
+          }
+        },
+        "nll_noguided_random_lr5e5_s43_epoch2": {
+          "correct": 306,
+          "vs_base": {
+            "delta_pp": 1.4000000000000001,
+            "ci95_pp": [
+              -1.7999999999999998,
+              4.6
+            ],
+            "wins": 38,
+            "losses": 31
+          }
+        },
+        "sample_all_lr1e5_s43_epoch2": {
+          "correct": 307,
+          "vs_base": {
+            "delta_pp": 1.6,
+            "ci95_pp": [
+              -1.4000000000000001,
+              4.6
+            ],
+            "wins": 32,
+            "losses": 24
+          }
+        },
+        "sample_all_shortcos2_lr1e5_s43_epoch2": {
+          "correct": 302,
+          "vs_base": {
+            "delta_pp": 0.6,
+            "ci95_pp": [
+              -2.6,
+              3.8
+            ],
+            "wins": 34,
+            "losses": 31
+          }
+        },
+        "sample_expansion_combined_lr1e5_s43_epoch2": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.4
+            ],
+            "wins": 27,
+            "losses": 30
+          }
+        },
+        "sample_expansion_repeat_control_lr1e5_s43_epoch2": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.6,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.1999999999999997
+            ],
+            "wins": 26,
+            "losses": 29
+          }
+        },
+        "teacher32_all_qkvo16_lr1e5_s43_epoch4": {
+          "correct": 265,
+          "vs_base": {
+            "delta_pp": -6.800000000000001,
+            "ci95_pp": [
+              -10.8,
+              -3.0
+            ],
+            "wins": 35,
+            "losses": 69
+          }
+        },
+        "teacher32_all_qkvo16_lr5e5_s43_epoch4": {
+          "correct": 249,
+          "vs_base": {
+            "delta_pp": -10.0,
+            "ci95_pp": [
+              -14.000000000000002,
+              -6.0
+            ],
+            "wins": 31,
+            "losses": 81
+          }
+        },
+        "teacher32_plain_markup_lr1e5_s43_epoch4": {
+          "correct": 272,
+          "vs_base": {
+            "delta_pp": -5.4,
+            "ci95_pp": [
+              -9.2,
+              -1.6
+            ],
+            "wins": 37,
+            "losses": 64
+          }
+        },
+        "teacher32_plain_markup_lr5e5_s43_epoch4": {
+          "correct": 268,
+          "vs_base": {
+            "delta_pp": -6.2,
+            "ci95_pp": [
+              -10.2,
+              -2.395000000000073
+            ],
+            "wins": 35,
+            "losses": 66
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.4,
+            "ci95_pp": [
+              -0.8,
+              5.6000000000000005
+            ],
+            "wins": 38,
+            "losses": 26
+          }
+        },
+        "teacher_all_shortcos4_lr5e5_s43_epoch4": {
+          "correct": 295,
+          "vs_base": {
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -4.2,
+              2.6
+            ],
+            "wins": 35,
+            "losses": 39
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "sample_expansion_combined_lr1e5_s43_epoch2",
+          "control": "sample_expansion_repeat_control_lr1e5_s43_epoch2",
+          "hypothesis": "Same4149 training slots: expanded questions versus repeating cleaned old core",
+          "treatment_correct": 296,
+          "control_correct": 296,
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -2.4,
+            2.4
+          ],
+          "wins": 19,
+          "losses": 19
+        },
+        {
+          "treatment": "sample_all_shortcos2_lr1e5_s43_epoch2",
+          "control": "sample_all_lr1e5_s43_epoch2",
+          "hypothesis": "Same2-epoch exposure: completed2-epoch cosine versus original8-epoch horizon",
+          "treatment_correct": 302,
+          "control_correct": 307,
+          "delta_pp": -1.0,
+          "ci95_pp": [
+            -3.8,
+            1.6
+          ],
+          "wins": 20,
+          "losses": 25
+        },
+        {
+          "treatment": "teacher_all_shortcos4_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same4-epoch exposure: completed4-epoch cosine versus original8-epoch horizon",
+          "treatment_correct": 295,
+          "control_correct": 311,
+          "delta_pp": -3.2,
+          "ci95_pp": [
+            -6.2,
+            -0.4
+          ],
+          "wins": 19,
+          "losses": 35
+        },
+        {
+          "treatment": "teacher32_plain_markup_lr1e5_s43_epoch4",
+          "control": "teacher32_all_qkvo16_lr1e5_s43_epoch4",
+          "hypothesis": "Cosmetic markdown removal atLR1e-5; math/words/numbers retained, tokenization and length change",
+          "treatment_correct": 272,
+          "control_correct": 265,
+          "delta_pp": 1.4000000000000001,
+          "ci95_pp": [
+            -2.1999999999999997,
+            5.0
+          ],
+          "wins": 46,
+          "losses": 39
+        },
+        {
+          "treatment": "teacher32_plain_markup_lr5e5_s43_epoch4",
+          "control": "teacher32_all_qkvo16_lr5e5_s43_epoch4",
+          "hypothesis": "Cosmetic markdown removal atLR5e-5; math/words/numbers retained, tokenization and length change",
+          "treatment_correct": 268,
+          "control_correct": 249,
+          "delta_pp": 3.8,
+          "ci95_pp": [
+            0.19500000000000456,
+            7.6
+          ],
+          "wins": 55,
+          "losses": 36
+        },
+        {
+          "treatment": "nll_noguided_min_lr5e5_s43_epoch2",
+          "control": "nll_noguided_random_lr5e5_s43_epoch2",
+          "hypothesis": "SecondLR5e-5 same1758 questions: within-question minimum NLL versus random retained target",
+          "treatment_correct": 300,
+          "control_correct": 306,
+          "delta_pp": -1.2,
+          "ci95_pp": [
+            -4.3999999999999995,
+            2.0
+          ],
+          "wins": 31,
+          "losses": 37
+        }
+      ]
+    },
+    "strict": {
+      "base_correct": 298,
+      "models": {
+        "base": {
+          "correct": 298,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "nll_noguided_min_lr5e5_s43_epoch2": {
+          "correct": 299,
+          "vs_base": {
+            "delta_pp": 0.2,
+            "ci95_pp": [
+              -2.8000000000000003,
+              3.2
+            ],
+            "wins": 31,
+            "losses": 30
+          }
+        },
+        "nll_noguided_random_lr5e5_s43_epoch2": {
+          "correct": 306,
+          "vs_base": {
+            "delta_pp": 1.6,
+            "ci95_pp": [
+              -1.6,
+              4.8
+            ],
+            "wins": 39,
+            "losses": 31
+          }
+        },
+        "sample_all_lr1e5_s43_epoch2": {
+          "correct": 307,
+          "vs_base": {
+            "delta_pp": 1.7999999999999998,
+            "ci95_pp": [
+              -1.2,
+              4.8
+            ],
+            "wins": 33,
+            "losses": 24
+          }
+        },
+        "sample_all_shortcos2_lr1e5_s43_epoch2": {
+          "correct": 302,
+          "vs_base": {
+            "delta_pp": 0.8,
+            "ci95_pp": [
+              -2.4,
+              4.0
+            ],
+            "wins": 35,
+            "losses": 31
+          }
+        },
+        "sample_expansion_combined_lr1e5_s43_epoch2": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.4,
+            "ci95_pp": [
+              -3.4000000000000004,
+              2.6
+            ],
+            "wins": 28,
+            "losses": 30
+          }
+        },
+        "sample_expansion_repeat_control_lr1e5_s43_epoch2": {
+          "correct": 296,
+          "vs_base": {
+            "delta_pp": -0.4,
+            "ci95_pp": [
+              -3.4000000000000004,
+              2.6
+            ],
+            "wins": 27,
+            "losses": 29
+          }
+        },
+        "teacher32_all_qkvo16_lr1e5_s43_epoch4": {
+          "correct": 263,
+          "vs_base": {
+            "delta_pp": -7.000000000000001,
+            "ci95_pp": [
+              -11.0,
+              -3.0
+            ],
+            "wins": 35,
+            "losses": 70
+          }
+        },
+        "teacher32_all_qkvo16_lr5e5_s43_epoch4": {
+          "correct": 245,
+          "vs_base": {
+            "delta_pp": -10.6,
+            "ci95_pp": [
+              -14.6,
+              -6.6000000000000005
+            ],
+            "wins": 30,
+            "losses": 83
+          }
+        },
+        "teacher32_plain_markup_lr1e5_s43_epoch4": {
+          "correct": 270,
+          "vs_base": {
+            "delta_pp": -5.6000000000000005,
+            "ci95_pp": [
+              -9.4,
+              -1.7999999999999998
+            ],
+            "wins": 36,
+            "losses": 64
+          }
+        },
+        "teacher32_plain_markup_lr5e5_s43_epoch4": {
+          "correct": 267,
+          "vs_base": {
+            "delta_pp": -6.2,
+            "ci95_pp": [
+              -10.2,
+              -2.1999999999999997
+            ],
+            "wins": 36,
+            "losses": 67
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.6,
+            "ci95_pp": [
+              -0.6,
+              5.800000000000001
+            ],
+            "wins": 39,
+            "losses": 26
+          }
+        },
+        "teacher_all_shortcos4_lr5e5_s43_epoch4": {
+          "correct": 294,
+          "vs_base": {
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -4.2,
+              2.6
+            ],
+            "wins": 35,
+            "losses": 39
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "sample_expansion_combined_lr1e5_s43_epoch2",
+          "control": "sample_expansion_repeat_control_lr1e5_s43_epoch2",
+          "hypothesis": "Same4149 training slots: expanded questions versus repeating cleaned old core",
+          "treatment_correct": 296,
+          "control_correct": 296,
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -2.4,
+            2.4
+          ],
+          "wins": 19,
+          "losses": 19
+        },
+        {
+          "treatment": "sample_all_shortcos2_lr1e5_s43_epoch2",
+          "control": "sample_all_lr1e5_s43_epoch2",
+          "hypothesis": "Same2-epoch exposure: completed2-epoch cosine versus original8-epoch horizon",
+          "treatment_correct": 302,
+          "control_correct": 307,
+          "delta_pp": -1.0,
+          "ci95_pp": [
+            -3.8,
+            1.6
+          ],
+          "wins": 20,
+          "losses": 25
+        },
+        {
+          "treatment": "teacher_all_shortcos4_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same4-epoch exposure: completed4-epoch cosine versus original8-epoch horizon",
+          "treatment_correct": 294,
+          "control_correct": 311,
+          "delta_pp": -3.4000000000000004,
+          "ci95_pp": [
+            -6.4,
+            -0.6
+          ],
+          "wins": 18,
+          "losses": 35
+        },
+        {
+          "treatment": "teacher32_plain_markup_lr1e5_s43_epoch4",
+          "control": "teacher32_all_qkvo16_lr1e5_s43_epoch4",
+          "hypothesis": "Cosmetic markdown removal atLR1e-5; math/words/numbers retained, tokenization and length change",
+          "treatment_correct": 270,
+          "control_correct": 263,
+          "delta_pp": 1.4000000000000001,
+          "ci95_pp": [
+            -2.1999999999999997,
+            5.0
+          ],
+          "wins": 46,
+          "losses": 39
+        },
+        {
+          "treatment": "teacher32_plain_markup_lr5e5_s43_epoch4",
+          "control": "teacher32_all_qkvo16_lr5e5_s43_epoch4",
+          "hypothesis": "Cosmetic markdown removal atLR5e-5; math/words/numbers retained, tokenization and length change",
+          "treatment_correct": 267,
+          "control_correct": 245,
+          "delta_pp": 4.3999999999999995,
+          "ci95_pp": [
+            0.8,
+            8.200000000000001
+          ],
+          "wins": 55,
+          "losses": 33
+        },
+        {
+          "treatment": "nll_noguided_min_lr5e5_s43_epoch2",
+          "control": "nll_noguided_random_lr5e5_s43_epoch2",
+          "hypothesis": "SecondLR5e-5 same1758 questions: within-question minimum NLL versus random retained target",
+          "treatment_correct": 299,
+          "control_correct": 306,
+          "delta_pp": -1.4000000000000001,
+          "ci95_pp": [
+            -4.6,
+            1.7999999999999998
+          ],
+          "wins": 30,
+          "losses": 37
+        }
+      ]
+    }
+  },
+  "scope": "Six selected-development paired hypotheses, fixed endpoints, all confidence intervals unadjusted. Two LRs are not independent training seeds; neither partial improvement over a harmful comparator nor a nonsignificant difference proves general efficacy/inefficacy. Global raw Holm sensitivity is kept separately in development_pairs.json."
+}

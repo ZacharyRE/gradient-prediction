@@ -1,0 +1,48 @@
+{
+  "time": 1789033259.0797086,
+  "utc": "2026-09-10T09:40:59.079748+00:00",
+  "primary_plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "data_sha256": "d55465534f6d30f3c62b573c03853b72c26154542f5a1a690c0aacd138f47bb4",
+  "primary_family": "teacher7_avg1234",
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "partitions": "Exact frozen selected1500 versus remaining3500",
+  "stratifications": [
+    [
+      "type"
+    ],
+    [
+      "level"
+    ],
+    [
+      "type",
+      "level"
+    ]
+  ],
+  "standardization": "For each stratum, use its fraction among all5000 as a common weight for the two partition-specific mean adapter-minus-base effects. Report adjusted gap selected-minus-remaining, unadjusted gap and arithmetic difference; no percentage causal explanation.",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261103,
+    "question_sampling": "Independent within each fixed stratum and partition. Preserve allfive model responses per sampled question.",
+    "seed_sampling": "Shared five-seed bootstrap across all strata and both partitions, after paired question resampling.",
+    "conditional_scope": "Treat observed stratum weights and partition sizes as fixed; no selection correction or benchmark-selection uncertainty."
+  },
+  "known_at_declaration": {
+    "primary_full5000_delta_pp": 0.804,
+    "primary_selected1500_delta_pp": 2.12,
+    "primary_remaining3500_delta_pp": 0.24,
+    "primary_all5_complete": true,
+    "main_strict5000_available": false
+  },
+  "scoring": [
+    "raw",
+    "strict"
+  ],
+  "no_overlap_rule": "If any stratum lacks either partition, report this standardization not identifiable; do not drop the stratum or change grouping.",
+  "scope": "Outcome-triggered descriptive extension. Coarse type/level adjustment cannot identify adaptive selection bias or eliminate unmeasured within-stratum content/difficulty differences. Uses only frozen primary allfive; no new training, model selection, primary test or efficacy criterion."
+}

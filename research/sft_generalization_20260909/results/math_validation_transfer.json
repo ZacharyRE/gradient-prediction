@@ -1,0 +1,1068 @@
+{
+  "time": 1789044011.6325746,
+  "plan_sha256": "f8c4dda807eb6b0fcd816eae521eac3514ec820cb21b3ef2febdf599e3d0d319",
+  "script_sha256": "a5c0dc9253722de98ba0f007fee027b2303a0440a3fbadd655d137a10ea2518b",
+  "statistics_source_sha256": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+  "identities": {
+    "base": "fcb4c9e420af1c9ae7b05fe6adccb667dbfe8516146b41c0df079dfa46606f91",
+    "avg_teacher7_1234_s43_epoch4": "7d461cf7a7603e8ac59783a403e67f60cf25a070232178298a17987eaac7466c",
+    "avg_teacher7_1234_s44_epoch4": "72cc8aeee495ee72a7fc849b5d304c5b6f1606645c2f17acfcccd7d0cd9c3798",
+    "avg_teacher7_1234_s45_epoch4": "95d0cf29c2baa62274882c6734d42b530f1aa3fb7117d116bc97453a6024929c",
+    "avg_teacher7_1234_s46_epoch4": "53ad83db21ff50c0958174075ea978f4a598ac58f6644a9043b1664c2d38a523",
+    "avg_teacher7_1234_s47_epoch4": "ffd12b1aebd4be89cf6212fdc25d9ddfaa7d3461ecd9d2178c8597aefb815bc5",
+    "avg_teacher7_expansion_combined_1234_s43_epoch4": "be80d613918904a68a506b9b2eec00115fb86eb395ccd2bb0b795c6b2674abe3",
+    "avg_teacher7_expansion_combined_1234_s44_epoch4": "de8affcee9ebffe798ccd61785fae685166186d4513d83c746d55e1260222d01",
+    "avg_teacher7_expansion_combined_1234_s45_epoch4": "87084d8c0c486306f0384998490f701616d4fe615ed80baceab94cfc5f5f9dcb",
+    "avg_teacher7_expansion_combined_1234_s46_epoch4": "df457e5c0e89d52c4e0a896936cb8409f077f4ec62acd787ee1b6f777f79abfa",
+    "avg_teacher7_expansion_combined_1234_s47_epoch4": "33d00c55209a7551dfb8866271c6e9712393588f8d21e0cf7dc474dd42e41634",
+    "teacher_all_lr5e5_s43_epoch4": "f8300798a862433e556784c2c99dd6b9e3f5950b0c91b692fdc87a8bf65782fa",
+    "teacher_all_lr5e5_s44_epoch4": "cd3cafbbe762d41690364e125179834e42d412192ef61d9f7436d2fc363329ee",
+    "teacher_all_lr5e5_s45_epoch4": "3efba39096b7910ba0f4c3139489fff1b844ffedad88a1a1d434bc9a8b8bd44c",
+    "teacher_all_lr5e5_s46_epoch4": "c5238c47b296ec5cc3a207c2f0516c3892dab2099db40da0cfdf979127baf74d",
+    "teacher_all_lr5e5_s47_epoch4": "a3a4c2e895ad3fce4f6586a898b11f9c854ed1004105cb835376668c832c8ab3",
+    "teacher7_expansion_combined_lr5e5_s43_epoch4": "b05fca7cd4275055aa22278b3675bb5d87715a12222dcba8b99d77abe5267153",
+    "teacher7_expansion_combined_lr5e5_s44_epoch4": "e9fbe5a83fa56461541f91acc7bf48f252cf8bf18695206d6412eca840d82512",
+    "teacher7_expansion_combined_lr5e5_s45_epoch4": "edd5f3dfb3e61f2dc5b1dfbcc1360ae466995448b97e9660dd55640f67c3d036",
+    "teacher7_expansion_combined_lr5e5_s46_epoch4": "e746bda8fa6f7d7d707ca5e37dc83620992495773c628071f7acedeee206a974",
+    "teacher7_expansion_combined_lr5e5_s47_epoch4": "70740858cfb20f113ec44c73f6eb0f91a3e5cb0dd0f1a31840112726f228423f"
+  },
+  "results": {
+    "raw": {
+      "teacher7_avg1234": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 818,
+            "per_seed_correct": [
+              845,
+              854,
+              857,
+              850,
+              843
+            ],
+            "per_seed_rescues": [
+              127,
+              133,
+              138,
+              131,
+              138
+            ],
+            "per_seed_losses": [
+              100,
+              97,
+              99,
+              99,
+              113
+            ],
+            "baseline_text_identical": [
+              16,
+              15,
+              16,
+              16,
+              19
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.560117302052788,
+            "mean_loss_rate_among_baseline_correct": 12.420537897310513,
+            "vs_base": {
+              "delta_pp": 2.12,
+              "question_ci95": [
+                0.3866666666666666,
+                3.8400000000000003
+              ],
+              "seed_question_ci95": [
+                0.3066666666666667,
+                3.9466666666666663
+              ],
+              "per_seed_delta_pp": [
+                1.7999999999999998,
+                2.4,
+                2.6,
+                2.1333333333333333,
+                1.6666666666666667
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1976,
+            "per_seed_correct": [
+              1977,
+              1978,
+              1986,
+              1987,
+              1994
+            ],
+            "per_seed_rescues": [
+              278,
+              281,
+              282,
+              280,
+              281
+            ],
+            "per_seed_losses": [
+              277,
+              279,
+              272,
+              269,
+              263
+            ],
+            "baseline_text_identical": [
+              36,
+              35,
+              32,
+              36,
+              38
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 18.398950131233594,
+            "mean_loss_rate_among_baseline_correct": 13.765182186234817,
+            "vs_base": {
+              "delta_pp": 0.24,
+              "question_ci95": [
+                -0.9199999999999998,
+                1.377142857142857
+              ],
+              "seed_question_ci95": [
+                -0.9429999999999998,
+                1.4228571428571428
+              ],
+              "per_seed_delta_pp": [
+                0.028571428571428574,
+                0.05714285714285715,
+                0.2857142857142857,
+                0.3142857142857143,
+                0.5142857142857142
+              ],
+              "every_seed_positive": true
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.8799999999999997,
+          "per_seed_delta_pp": [
+            1.7714285714285714,
+            2.342857142857143,
+            2.314285714285714,
+            1.819047619047619,
+            1.1523809523809523
+          ],
+          "every_seed_positive": true,
+          "question_ci95": [
+            -0.20004761904761903,
+            3.8705238095238093
+          ],
+          "seed_question_ci95": [
+            -0.2971428571428571,
+            3.9620476190476177
+          ]
+        }
+      },
+      "teacher7_expanded_avg1234": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 818,
+            "per_seed_correct": [
+              852,
+              842,
+              845,
+              842,
+              830
+            ],
+            "per_seed_rescues": [
+              133,
+              132,
+              143,
+              137,
+              122
+            ],
+            "per_seed_losses": [
+              99,
+              108,
+              116,
+              113,
+              110
+            ],
+            "baseline_text_identical": [
+              8,
+              12,
+              14,
+              13,
+              12
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.560117302052788,
+            "mean_loss_rate_among_baseline_correct": 13.349633251833742,
+            "vs_base": {
+              "delta_pp": 1.6133333333333333,
+              "question_ci95": [
+                -0.14666666666666653,
+                3.333666666666662
+              ],
+              "seed_question_ci95": [
+                -0.26666666666666666,
+                3.4666666666666663
+              ],
+              "per_seed_delta_pp": [
+                2.2666666666666666,
+                1.6,
+                1.7999999999999998,
+                1.6,
+                0.8
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1976,
+            "per_seed_correct": [
+              2001,
+              1952,
+              1977,
+              1999,
+              1987
+            ],
+            "per_seed_rescues": [
+              290,
+              263,
+              289,
+              291,
+              283
+            ],
+            "per_seed_losses": [
+              265,
+              287,
+              288,
+              268,
+              272
+            ],
+            "baseline_text_identical": [
+              33,
+              41,
+              36,
+              40,
+              42
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 18.58267716535433,
+            "mean_loss_rate_among_baseline_correct": 13.96761133603239,
+            "vs_base": {
+              "delta_pp": 0.2057142857142857,
+              "question_ci95": [
+                -0.9428571428571428,
+                1.3257142857142856
+              ],
+              "seed_question_ci95": [
+                -1.080142857142857,
+                1.4628571428571429
+              ],
+              "per_seed_delta_pp": [
+                0.7142857142857143,
+                -0.6857142857142857,
+                0.028571428571428574,
+                0.6571428571428571,
+                0.3142857142857143
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.4076190476190475,
+          "per_seed_delta_pp": [
+            1.5523809523809526,
+            2.2857142857142856,
+            1.7714285714285714,
+            0.9428571428571428,
+            0.48571428571428565
+          ],
+          "every_seed_positive": true,
+          "question_ci95": [
+            -0.6973809523809521,
+            3.4666666666666663
+          ],
+          "seed_question_ci95": [
+            -0.8476190476190476,
+            3.577238095238094
+          ]
+        }
+      },
+      "teacher7_epoch4": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 818,
+            "per_seed_correct": [
+              859,
+              832,
+              824,
+              836,
+              843
+            ],
+            "per_seed_rescues": [
+              143,
+              131,
+              131,
+              133,
+              131
+            ],
+            "per_seed_losses": [
+              102,
+              117,
+              125,
+              115,
+              106
+            ],
+            "baseline_text_identical": [
+              9,
+              10,
+              10,
+              12,
+              6
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.61876832844575,
+            "mean_loss_rate_among_baseline_correct": 13.814180929095354,
+            "vs_base": {
+              "delta_pp": 1.3866666666666667,
+              "question_ci95": [
+                -0.3866666666666667,
+                3.1199999999999997
+              ],
+              "seed_question_ci95": [
+                -0.560333333333333,
+                3.3333333333333335
+              ],
+              "per_seed_delta_pp": [
+                2.7333333333333334,
+                0.9333333333333335,
+                0.4,
+                1.2,
+                1.6666666666666667
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1976,
+            "per_seed_correct": [
+              1976,
+              1976,
+              1992,
+              1951,
+              1969
+            ],
+            "per_seed_rescues": [
+              298,
+              281,
+              302,
+              271,
+              286
+            ],
+            "per_seed_losses": [
+              298,
+              281,
+              286,
+              296,
+              293
+            ],
+            "baseline_text_identical": [
+              16,
+              22,
+              23,
+              22,
+              25
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 18.871391076115486,
+            "mean_loss_rate_among_baseline_correct": 14.716599190283402,
+            "vs_base": {
+              "delta_pp": -0.09142857142857143,
+              "question_ci95": [
+                -1.2571428571428573,
+                1.0571428571428572
+              ],
+              "seed_question_ci95": [
+                -1.3257142857142858,
+                1.1542857142857144
+              ],
+              "per_seed_delta_pp": [
+                0.0,
+                0.0,
+                0.4571428571428572,
+                -0.7142857142857143,
+                -0.2
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.478095238095238,
+          "per_seed_delta_pp": [
+            2.7333333333333334,
+            0.9333333333333335,
+            -0.05714285714285717,
+            1.9142857142857141,
+            1.8666666666666665
+          ],
+          "every_seed_positive": false,
+          "question_ci95": [
+            -0.6724285714285713,
+            3.598142857142857
+          ],
+          "seed_question_ci95": [
+            -0.8877619047619046,
+            3.7714285714285714
+          ]
+        }
+      },
+      "teacher7_expanded_epoch4": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 818,
+            "per_seed_correct": [
+              833,
+              828,
+              834,
+              826,
+              854
+            ],
+            "per_seed_rescues": [
+              128,
+              126,
+              137,
+              140,
+              150
+            ],
+            "per_seed_losses": [
+              113,
+              116,
+              121,
+              132,
+              114
+            ],
+            "baseline_text_identical": [
+              6,
+              9,
+              6,
+              7,
+              5
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.970674486803517,
+            "mean_loss_rate_among_baseline_correct": 14.572127139364305,
+            "vs_base": {
+              "delta_pp": 1.1333333333333333,
+              "question_ci95": [
+                -0.6533333333333333,
+                2.8800000000000003
+              ],
+              "seed_question_ci95": [
+                -0.8,
+                3.0003333333333284
+              ],
+              "per_seed_delta_pp": [
+                1.0,
+                0.6666666666666667,
+                1.0666666666666667,
+                0.5333333333333333,
+                2.4
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1976,
+            "per_seed_correct": [
+              1984,
+              1998,
+              1969,
+              1970,
+              1938
+            ],
+            "per_seed_rescues": [
+              307,
+              300,
+              286,
+              286,
+              260
+            ],
+            "per_seed_losses": [
+              299,
+              278,
+              293,
+              292,
+              298
+            ],
+            "baseline_text_identical": [
+              19,
+              23,
+              26,
+              19,
+              23
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 18.884514435695536,
+            "mean_loss_rate_among_baseline_correct": 14.777327935222672,
+            "vs_base": {
+              "delta_pp": -0.12,
+              "question_ci95": [
+                -1.262857142857143,
+                0.9885714285714284
+              ],
+              "seed_question_ci95": [
+                -1.3714285714285714,
+                1.1428571428571428
+              ],
+              "per_seed_delta_pp": [
+                0.2285714285714286,
+                0.6285714285714286,
+                -0.2,
+                -0.17142857142857143,
+                -1.0857142857142856
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.2533333333333334,
+          "per_seed_delta_pp": [
+            0.7714285714285715,
+            0.03809523809523811,
+            1.2666666666666666,
+            0.7047619047619047,
+            3.4857142857142858
+          ],
+          "every_seed_positive": true,
+          "question_ci95": [
+            -0.838095238095238,
+            3.2971428571428567
+          ],
+          "seed_question_ci95": [
+            -1.1504761904761904,
+            3.603857142857142
+          ]
+        }
+      }
+    },
+    "strict": {
+      "teacher7_avg1234": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 815,
+            "per_seed_correct": [
+              844,
+              854,
+              855,
+              850,
+              842
+            ],
+            "per_seed_rescues": [
+              127,
+              134,
+              138,
+              132,
+              138
+            ],
+            "per_seed_losses": [
+              98,
+              95,
+              98,
+              97,
+              111
+            ],
+            "baseline_text_identical": [
+              16,
+              15,
+              16,
+              16,
+              19
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.53284671532847,
+            "mean_loss_rate_among_baseline_correct": 12.245398773006135,
+            "vs_base": {
+              "delta_pp": 2.2666666666666666,
+              "question_ci95": [
+                0.5466666666666666,
+                3.9866666666666664
+              ],
+              "seed_question_ci95": [
+                0.48,
+                4.1066666666666665
+              ],
+              "per_seed_delta_pp": [
+                1.9333333333333333,
+                2.6,
+                2.666666666666667,
+                2.3333333333333335,
+                1.7999999999999998
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1959,
+            "per_seed_correct": [
+              1975,
+              1973,
+              1982,
+              1982,
+              1995
+            ],
+            "per_seed_rescues": [
+              293,
+              294,
+              295,
+              293,
+              297
+            ],
+            "per_seed_losses": [
+              277,
+              280,
+              272,
+              270,
+              261
+            ],
+            "baseline_text_identical": [
+              36,
+              35,
+              32,
+              36,
+              38
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.104477611940297,
+            "mean_loss_rate_among_baseline_correct": 13.884635017866259,
+            "vs_base": {
+              "delta_pp": 0.64,
+              "question_ci95": [
+                -0.5257142857142857,
+                1.7771428571428574
+              ],
+              "seed_question_ci95": [
+                -0.5658571428571427,
+                1.8457142857142856
+              ],
+              "per_seed_delta_pp": [
+                0.4571428571428572,
+                0.4,
+                0.6571428571428571,
+                0.6571428571428571,
+                1.0285714285714285
+              ],
+              "every_seed_positive": true
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.6266666666666665,
+          "per_seed_delta_pp": [
+            1.4761904761904763,
+            2.1999999999999997,
+            2.0095238095238095,
+            1.6761904761904762,
+            0.7714285714285714
+          ],
+          "every_seed_positive": true,
+          "question_ci95": [
+            -0.46299999999999997,
+            3.6209999999999996
+          ],
+          "seed_question_ci95": [
+            -0.581047619047619,
+            3.7543333333333324
+          ]
+        }
+      },
+      "teacher7_expanded_avg1234": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 815,
+            "per_seed_correct": [
+              852,
+              840,
+              842,
+              839,
+              829
+            ],
+            "per_seed_rescues": [
+              134,
+              132,
+              142,
+              136,
+              122
+            ],
+            "per_seed_losses": [
+              97,
+              107,
+              115,
+              112,
+              108
+            ],
+            "baseline_text_identical": [
+              8,
+              12,
+              14,
+              13,
+              12
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.44525547445255,
+            "mean_loss_rate_among_baseline_correct": 13.226993865030675,
+            "vs_base": {
+              "delta_pp": 1.6933333333333336,
+              "question_ci95": [
+                -0.026666666666666724,
+                3.4000000000000004
+              ],
+              "seed_question_ci95": [
+                -0.2,
+                3.56
+              ],
+              "per_seed_delta_pp": [
+                2.466666666666667,
+                1.6666666666666667,
+                1.7999999999999998,
+                1.6,
+                0.9333333333333335
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1959,
+            "per_seed_correct": [
+              1996,
+              1950,
+              1973,
+              1994,
+              1986
+            ],
+            "per_seed_rescues": [
+              304,
+              276,
+              302,
+              304,
+              296
+            ],
+            "per_seed_losses": [
+              267,
+              285,
+              288,
+              269,
+              269
+            ],
+            "baseline_text_identical": [
+              33,
+              41,
+              36,
+              40,
+              42
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.234263465282282,
+            "mean_loss_rate_among_baseline_correct": 14.0684022460439,
+            "vs_base": {
+              "delta_pp": 0.5942857142857143,
+              "question_ci95": [
+                -0.5771428571428572,
+                1.7315714285714265
+              ],
+              "seed_question_ci95": [
+                -0.7258571428571426,
+                1.8571428571428572
+              ],
+              "per_seed_delta_pp": [
+                1.0571428571428572,
+                -0.2571428571428571,
+                0.4,
+                1.0,
+                0.7714285714285715
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.0990476190476188,
+          "per_seed_delta_pp": [
+            1.4095238095238094,
+            1.9238095238095239,
+            1.4,
+            0.6,
+            0.16190476190476197
+          ],
+          "every_seed_positive": true,
+          "question_ci95": [
+            -0.9962380952380951,
+            3.17147619047619
+          ],
+          "seed_question_ci95": [
+            -1.140952380952381,
+            3.2723809523809524
+          ]
+        }
+      },
+      "teacher7_epoch4": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 815,
+            "per_seed_correct": [
+              857,
+              830,
+              821,
+              834,
+              843
+            ],
+            "per_seed_rescues": [
+              142,
+              130,
+              130,
+              131,
+              132
+            ],
+            "per_seed_losses": [
+              100,
+              115,
+              124,
+              112,
+              104
+            ],
+            "baseline_text_identical": [
+              9,
+              10,
+              10,
+              12,
+              6
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.416058394160586,
+            "mean_loss_rate_among_baseline_correct": 13.61963190184049,
+            "vs_base": {
+              "delta_pp": 1.4666666666666666,
+              "question_ci95": [
+                -0.29333333333333333,
+                3.186666666666667
+              ],
+              "seed_question_ci95": [
+                -0.4933333333333333,
+                3.4266666666666667
+              ],
+              "per_seed_delta_pp": [
+                2.8000000000000003,
+                1.0,
+                0.4,
+                1.2666666666666666,
+                1.866666666666667
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1959,
+            "per_seed_correct": [
+              1975,
+              1973,
+              1987,
+              1946,
+              1967
+            ],
+            "per_seed_rescues": [
+              313,
+              294,
+              315,
+              284,
+              300
+            ],
+            "per_seed_losses": [
+              297,
+              280,
+              287,
+              297,
+              292
+            ],
+            "baseline_text_identical": [
+              16,
+              22,
+              23,
+              22,
+              25
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.545749513303047,
+            "mean_loss_rate_among_baseline_correct": 14.83409903011741,
+            "vs_base": {
+              "delta_pp": 0.3028571428571429,
+              "question_ci95": [
+                -0.8914285714285715,
+                1.4685714285714284
+              ],
+              "seed_question_ci95": [
+                -0.9657142857142857,
+                1.5371428571428571
+              ],
+              "per_seed_delta_pp": [
+                0.4571428571428572,
+                0.4,
+                0.8,
+                -0.37142857142857144,
+                0.2285714285714286
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.1638095238095238,
+          "per_seed_delta_pp": [
+            2.342857142857143,
+            0.6,
+            -0.4,
+            1.638095238095238,
+            1.638095238095238
+          ],
+          "every_seed_positive": false,
+          "question_ci95": [
+            -0.9772380952380952,
+            3.2838095238095235
+          ],
+          "seed_question_ci95": [
+            -1.2097142857142855,
+            3.445714285714286
+          ]
+        }
+      },
+      "teacher7_expanded_epoch4": {
+        "partitions": {
+          "current_selected1500": {
+            "n": 1500,
+            "base_correct": 815,
+            "per_seed_correct": [
+              831,
+              828,
+              832,
+              826,
+              853
+            ],
+            "per_seed_rescues": [
+              128,
+              127,
+              137,
+              141,
+              150
+            ],
+            "per_seed_losses": [
+              112,
+              114,
+              120,
+              130,
+              112
+            ],
+            "baseline_text_identical": [
+              6,
+              9,
+              6,
+              7,
+              5
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.941605839416056,
+            "mean_loss_rate_among_baseline_correct": 14.429447852760735,
+            "vs_base": {
+              "delta_pp": 1.2666666666666666,
+              "question_ci95": [
+                -0.4936666666666665,
+                3.0
+              ],
+              "seed_question_ci95": [
+                -0.6666666666666667,
+                3.1466666666666665
+              ],
+              "per_seed_delta_pp": [
+                1.0666666666666667,
+                0.8666666666666666,
+                1.1333333333333333,
+                0.7333333333333333,
+                2.533333333333333
+              ],
+              "every_seed_positive": true
+            }
+          },
+          "remaining3500": {
+            "n": 3500,
+            "base_correct": 1959,
+            "per_seed_correct": [
+              1977,
+              1994,
+              1968,
+              1965,
+              1934
+            ],
+            "per_seed_rescues": [
+              319,
+              312,
+              299,
+              297,
+              269
+            ],
+            "per_seed_losses": [
+              301,
+              277,
+              290,
+              291,
+              294
+            ],
+            "baseline_text_identical": [
+              19,
+              23,
+              26,
+              19,
+              23
+            ],
+            "mean_rescue_rate_among_baseline_wrong": 19.415963659961065,
+            "mean_loss_rate_among_baseline_correct": 14.83409903011741,
+            "vs_base": {
+              "delta_pp": 0.2457142857142857,
+              "question_ci95": [
+                -0.9142857142857141,
+                1.377142857142857
+              ],
+              "seed_question_ci95": [
+                -1.023,
+                1.5142857142857145
+              ],
+              "per_seed_delta_pp": [
+                0.5142857142857142,
+                1.0,
+                0.2571428571428571,
+                0.17142857142857143,
+                -0.7142857142857143
+              ],
+              "every_seed_positive": false
+            }
+          }
+        },
+        "selected1500_minus_remaining3500": {
+          "delta_pp": 1.0209523809523808,
+          "per_seed_delta_pp": [
+            0.5523809523809524,
+            -0.1333333333333334,
+            0.8761904761904762,
+            0.5619047619047619,
+            3.2476190476190476
+          ],
+          "every_seed_positive": false,
+          "question_ci95": [
+            -1.0723809523809524,
+            3.0743333333333327
+          ],
+          "seed_question_ci95": [
+            -1.3561904761904764,
+            3.405761904761904
+          ]
+        }
+      }
+    }
+  },
+  "scope": "Outcome-triggered descriptive diagnostic afterfirsttwo SFT5000 summaries. Usesexactalreadyfrozen1500/3500partition andallfixedfive-seedfamilies, no favorablecase/categoryselection. Quantifyrescues/losses,baseline-text identity anddifferenceofsubseteffects. An effectdifference is notproofthatadaptive selectioncausedit; difficulty/content differences andquestion sampling remain possible. No newprimary efficacytest or successrule."
+}

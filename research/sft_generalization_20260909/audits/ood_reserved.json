@@ -1,0 +1,165 @@
+{
+  "time": 1788967665.6010587,
+  "datasets": {
+    "minerva": {
+      "n": 272,
+      "excluded": [],
+      "sha256": "5fcc5c27f789b43eaee9295dee05dd9a8fb04cca1340e1264afc5538efe18c68"
+    },
+    "olympiad": {
+      "n": 266,
+      "excluded": [
+        {
+          "index": 2,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 21,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 26,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 29,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 40,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 62,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 68,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 74,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 91,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 102,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 118,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 136,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 137,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 156,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 157,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 161,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 164,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 166,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 175,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 176,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 181,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 185,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 186,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 194,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 227,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 230,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 235,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 241,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 247,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 251,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 255,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 272,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "index": 274,
+          "reason": "not_single_answer_english_text_math"
+        },
+        {
+          "source_index": 9,
+          "reason": "Manually confirmed algebraic-format duplicate of MATH train polynomial question"
+        }
+      ],
+      "sha256": "5d67ce4ddbfc4c32a17a4b16fb84c80ab5424ffddd9d0f55db9cb71ba789eb7c"
+    },
+    "svamp": {
+      "n": 300,
+      "excluded": [],
+      "sha256": "b87c0204a1d918e5e79ee9a5ecfcbb58363a07059ee4339b17c58afa927dd435"
+    },
+    "amc23": {
+      "n": 40,
+      "excluded": [],
+      "sha256": "f3b77999b17e7d8fa43ec55929ba1cc6f4db974397d7a016a00352ef8c5f8bf7"
+    }
+  },
+  "status": "Reserved; no model evaluated; no recipe selection on these outcomes",
+  "scope": "Mathematical task transfer, not universal nonmathematical capability",
+  "aggregation": "Macro average of minerva, olympiad, svamp. AMC23 small-n supplementary only."
+}

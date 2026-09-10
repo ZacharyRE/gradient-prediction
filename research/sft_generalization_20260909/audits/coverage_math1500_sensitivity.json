@@ -1,0 +1,192 @@
+{
+  "time": 1789005162.0760512,
+  "script_sha256": "29a2d211058bd094dcc55841b482bb89304070a6781f61bba80fe3f30f62e266",
+  "analysis_sha256": "00e538094998730018153eb433747669210af320d0172b6588f3ff4a1c40396b",
+  "scoring_audit_sha256": "10196bba359f61dd3044b4a0b2db922b6e3eff0c790a8929a61f30fd15af4b4b",
+  "all_warnings_reviewed": true,
+  "warnings": [
+    {
+      "warning": {
+        "phase": "prediction_parse_and_verify",
+        "model": "teacher_all_lr5e5_s43_epoch4",
+        "index": 636,
+        "logger": "math_verify.grader",
+        "message": "Timeout during comparison",
+        "final_strict_correct": false
+      },
+      "exact_prior_review_match": true,
+      "prior_review_sha256": "b481be12afb279d7b69761dec59c58ac35857389df98ba975bb834fc3f34619d",
+      "prior_reason": "Boxed3^(2^2005) >3^8=6561>224. No need to construct the enormous integer. Targetalso miscomputes2016/3 as676 ratherthan672 andassertsa2=3^2althougha2=3.",
+      "action": "No score change; the same previously checked enormous exponent is not224."
+    }
+  ],
+  "paired_multiplicity": {
+    "raw": [
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "delta_pp": 1.5333333333333332,
+        "wins": 143,
+        "losses": 120,
+        "p": 0.17480083012186637,
+        "holm9_p": 0.7918444896569696
+      },
+      {
+        "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+        "delta_pp": 2.666666666666667,
+        "wins": 150,
+        "losses": 110,
+        "p": 0.01541558283317145,
+        "holm9_p": 0.10790907983220016
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+        "delta_pp": 5.2,
+        "wins": 164,
+        "losses": 86,
+        "p": 9.195774970675325e-07,
+        "holm9_p": 8.276197473607792e-06
+      },
+      {
+        "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+        "delta_pp": 3.933333333333333,
+        "wins": 161,
+        "losses": 102,
+        "p": 0.0003306344308805141,
+        "holm9_p": 0.002645075447044113
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "delta_pp": 1.2666666666666666,
+        "wins": 91,
+        "losses": 72,
+        "p": 0.15836889793139391,
+        "holm9_p": 0.7918444896569696
+      },
+      {
+        "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+        "delta_pp": 2.4,
+        "wins": 132,
+        "losses": 96,
+        "p": 0.020250979551207995,
+        "holm9_p": 0.12150587730724796
+      },
+      {
+        "treatment": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+        "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+        "delta_pp": 0.0,
+        "wins": 87,
+        "losses": 87,
+        "p": 1.0,
+        "holm9_p": 1.0
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_1234_s43_epoch4",
+        "delta_pp": 0.46666666666666673,
+        "wins": 112,
+        "losses": 105,
+        "p": 0.683879442026471,
+        "holm9_p": 1.0
+      },
+      {
+        "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "control": "avg_teacher7_1234_s43_epoch4",
+        "delta_pp": -1.0666666666666667,
+        "wins": 113,
+        "losses": 129,
+        "p": 0.3349399687352155,
+        "holm9_p": 1.0
+      }
+    ],
+    "strict": [
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "delta_pp": 1.5333333333333332,
+        "wins": 143,
+        "losses": 120,
+        "p": 0.17480083012186637,
+        "holm9_p": 0.6992033204874655
+      },
+      {
+        "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+        "delta_pp": 2.6,
+        "wins": 149,
+        "losses": 110,
+        "p": 0.018044391397256637,
+        "holm9_p": 0.11679721160973555
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+        "delta_pp": 5.333333333333334,
+        "wins": 165,
+        "losses": 85,
+        "p": 4.7084497921049437e-07,
+        "holm9_p": 4.237604812894449e-06
+      },
+      {
+        "treatment": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+        "delta_pp": 3.8666666666666667,
+        "wins": 160,
+        "losses": 102,
+        "p": 0.00040860352283587096,
+        "holm9_p": 0.0032688281826869676
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "teacher7_expansion_combined_lr5e5_s43_epoch4",
+        "delta_pp": 1.4000000000000001,
+        "wins": 92,
+        "losses": 71,
+        "p": 0.11695440246353744,
+        "holm9_p": 0.5847720123176872
+      },
+      {
+        "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "control": "teacher7_expansion_repeat_control_lr5e5_s43_epoch4",
+        "delta_pp": 2.466666666666667,
+        "wins": 132,
+        "losses": 95,
+        "p": 0.016685315944247936,
+        "holm9_p": 0.11679721160973555
+      },
+      {
+        "treatment": "avg_teacher7_expansion_rawnew_control_1234_s43_epoch4",
+        "control": "teacher7_expansion_rawnew_control_lr5e5_s43_epoch4",
+        "delta_pp": -0.06666666666666667,
+        "wins": 85,
+        "losses": 86,
+        "p": 1.0,
+        "holm9_p": 1.0
+      },
+      {
+        "treatment": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+        "control": "avg_teacher7_1234_s43_epoch4",
+        "delta_pp": 0.5333333333333333,
+        "wins": 112,
+        "losses": 104,
+        "p": 0.6339701087145511,
+        "holm9_p": 1.0
+      },
+      {
+        "treatment": "avg_teacher7_expansion_repeat_control_1234_s43_epoch4",
+        "control": "avg_teacher7_1234_s43_epoch4",
+        "delta_pp": -1.0,
+        "wins": 113,
+        "losses": 128,
+        "p": 0.3671847629664617,
+        "holm9_p": 1.0
+      }
+    ]
+  },
+  "scope": "Holm covers the nine fixed contrasts in this six-pilot follow-up, not all adaptive development selection. Single seed and historically reused questions. Existing unadjusted intervals and original scores remain unchanged."
+}

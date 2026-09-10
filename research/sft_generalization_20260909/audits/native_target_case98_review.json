@@ -1,0 +1,74 @@
+{
+  "time": 1789031862.3781788,
+  "all_reviewed": true,
+  "reviewer": "AI research assistant; fulltexts inspected, not independent human review",
+  "plan_sha256": "1be3f1014c881cfb369871f655b165ba0d97642cd9af48bee97fc5d2fe298e19",
+  "index": 98,
+  "identities": {
+    "base": {
+      "predictions_sha256": "fa26b018f0a9f0eae824c58eaa4a5aca0c16858407345dce8170f13c1e637b88",
+      "text_sha256": "9ea0e7fadd913c089c8fd970474d5d21190ff201de63d396f70ca13bcd5e4525"
+    },
+    "teacher_matchedraw_lr5e5_s43_epoch4": {
+      "predictions_sha256": "ba4fe27af72bcb1982604909e6986246c2c53ee4d42c1b1a0d1a9f2814e2d175",
+      "text_sha256": "1b8f6322b46d651e05700c2ffbb645f637b8f4f9b18794a8217329fc47530054"
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "predictions_sha256": "e9b4b4a3e27e955ee5e61aba041f63eccd5220c8e1b45017f16178b10ce5c2fc",
+      "text_sha256": "0b04a9512d8ea1344ba99f7e9464d700e3c2dc6428b274bcf22a0d01d515669c"
+    }
+  },
+  "rows": {
+    "base": {
+      "index": 98,
+      "sample_hash": "6c2a9f5c4ea0366e3df00613717c3e373425771ac4e692c9098f2f669d93ab61",
+      "prediction": "To solve the given problem, we start with the equations:\n\\[\n\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 3\n\\]\nand\n\\[\n\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 0.\n\\]\n\nLet's denote:\n\\[\nu = \\frac{x}{a}, \\quad v = \\frac{y}{b}, \\quad w = \\frac{z}{c}.\n\\]\nThen the equations become:\n\\[\nu + v + w = 3\n\\]\nand\n\\[\n\\frac{1}{u} + \\frac{1}{v} + \\frac{1}{w} = 0.\n\\]\n\nWe know that:\n\\[\n\\frac{1}{u} + \\frac{1}{v} + \\frac{1}{w} = \\frac{uv + vw + wu}{uvw} = 0.\n\\]\nThis implies:\n\\[\nuv + vw + wu = 0.\n\\]\n\nNow, we need to find the value of:\n\\[\n\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = u^2 + v^2 + w^2.\n\\]\n\nWe use the identity:\n\\[\n(u + v + w)^2 = u^2 + v^2 + w^2 + 2(uv + vw + wu).\n\\]\nSubstituting the known values, we get:\n\\[\n3^2 = u^2 + v^2 + w^2 + 2 \\cdot 0,\n\\]\nwhich simplifies to:\n\\[\n9 = u^2 + v^2 + w^2.\n\\]\n\nTherefore, the value of \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2}\\) is:\n\\[\n\\boxed{9}.\n\\]",
+      "correct": true,
+      "generated_tokens": 442,
+      "finish_reason": "stop"
+    },
+    "teacher_matchedraw_lr5e5_s43_epoch4": {
+      "index": 98,
+      "sample_hash": "6c2a9f5c4ea0366e3df00613717c3e373425771ac4e692c9098f2f669d93ab61",
+      "prediction": "Let $x = a \\cdot x_1, y = b \\cdot y_1, z = c \\cdot z_1.$  Then\n\\[\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = x_1 + y_1 + z_1 = 3,\\]and\n\\[\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = \\frac{1}{x_1} + \\frac{1}{y_1} + \\frac{1}{z_1} = \\frac{xy_1 + yz_1 + zx_1}{xyz_1} = \\frac{1}{x_1} + \\frac{1}{y_1} + \\frac{1}{z_1} = 0.\\]Hence,\n\\[\\frac{1}{x_1} + \\frac{1}{y_1} + \\frac{1}{z_1} = 0.\\]Then\n\\[\\frac{1}{x_1} + \\frac{1}{y_1} + \\frac{1}{z_1} = \\frac{x_1 + y_1 + z_1}{x_1 y_1 z_1} = \\frac{3}{x_1 y_1 z_1} = 0.\\]Hence, $x_1 y_1 z_1 = 0,$ so $x_1 = 0,$ $y_1 = 0,$ or $z_1 = 0.$  Then $x = 0,$ $y = 0,$ or $z = 0.$  In any case,\n\\[\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = \\boxed{0}.\\]",
+      "correct": false,
+      "generated_tokens": 413,
+      "finish_reason": "stop"
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "index": 98,
+      "sample_hash": "6c2a9f5c4ea0366e3df00613717c3e373425771ac4e692c9098f2f669d93ab61",
+      "prediction": "To solve the given problem, we start with the equations:\n\\[\n\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 3\n\\]\nand\n\\[\n\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 0.\n\\]\n\nLet's denote:\n\\[\nu = \\frac{x}{a}, \\quad v = \\frac{y}{b}, \\quad w = \\frac{z}{c}.\n\\]\nThen the equations become:\n\\[\nu + v + w = 3\n\\]\nand\n\\[\n\\frac{1}{u} + \\frac{1}{v} + \\frac{1}{w} = 0.\n\\]\n\nWe know that:\n\\[\n\\frac{1}{u} + \\frac{1}{v} + \\frac{1}{w} = \\frac{uv + vw + wu}{uvw} = 0.\n\\]\nThis implies:\n\\[\nuv + vw + wu = 0.\n\\]\n\nNow, we need to find the value of:\n\\[\n\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = u^2 + v^2 + w^2.\n\\]\n\nWe use the identity for the sum of squares:\n\\[\n(u + v + w)^2 = u^2 + v^2 + w^2 + 2(uv + vw + wu).\n\\]\nSubstituting the known values:\n\\[\n3^2 = u^2 + v^2 + w^2 + 2 \\cdot 0,\n\\]\nwhich simplifies to:\n\\[\n9 = u^2 + v^2 + w^2.\n\\]\n\nThus, the value of \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2}\\) is:\n\\[\n\\boxed{9}.\n\\]",
+      "correct": true,
+      "generated_tokens": 444,
+      "finish_reason": "stop"
+    }
+  },
+  "prior_review_sha256": "0f3f5ab14dc1ed75ce756dd8246525dd8f7e21a6b7d364a98a38ff71a6c5861f",
+  "baseline_review_sha256": "03a25299825db60e8bd3af42de096d357a92c8a9e47e9446ab0abb62c5821a04",
+  "raw_review_sha256": "efa037ee41cdfa4166c937733e885896363e61a800d208303d5db394dab4afc6",
+  "decisions": [
+    {
+      "model": "base",
+      "final_answer": "9",
+      "final_correct": true,
+      "reasoning_valid": true,
+      "reason": "Valid reciprocal common denominator and squared-sum identity, all denominators nonzero."
+    },
+    {
+      "model": "teacher_matchedraw_lr5e5_s43_epoch4",
+      "final_answer": "0",
+      "final_correct": false,
+      "reasoning_valid": false,
+      "reason": "Incorrect numerator for reciprocal sum, invalid deduction of zero denominator, and invalid zero squared sum. Witness ratios2,2,-1 satisfies original equations and squared sum9."
+    },
+    {
+      "model": "teacher_all_lr5e5_s43_epoch4",
+      "final_answer": "9",
+      "final_correct": true,
+      "reasoning_valid": true,
+      "reason": "Full generated-target HF text independently checked: uv+uw+vw=0 follows from nonzero uvw; square of u+v+w=3 then gives9. No invalid intermediate step found."
+    }
+  ],
+  "scope": "One previously fixed raw-failure case within the planned128 subset; no prevalence estimate or new efficacy test. Native raw boxes0, prior vLLM raw boxes1: both wrong but trajectories differ. Baseline already solves this case, so this is preservation/repair rather than proof of newly acquired knowledge."
+}

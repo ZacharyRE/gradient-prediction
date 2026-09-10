@@ -1,0 +1,41 @@
+{
+  "time": 1789031291.1369631,
+  "passed": true,
+  "n": 1000,
+  "matches": [
+    {
+      "alias": "supplement_gpu2_replay_base",
+      "reference": "base",
+      "n": 500,
+      "alias_sha256": "d58f69794d225118f2ca8d770c34efba672b941eeb5e8009d00636d621daab3a",
+      "reference_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "fields": [
+        "index",
+        "sample_hash",
+        "prediction",
+        "correct",
+        "finish_reason",
+        "generated_tokens"
+      ]
+    },
+    {
+      "alias": "supplement_gpu2_replay_nonzero",
+      "reference": "avg_teacher7_1234_s43_epoch4",
+      "n": 500,
+      "alias_sha256": "75dc881a2fc9c666ad34df7f2d22ddb054a11cf6e6cc30908d67c3f153fbdf91",
+      "reference_sha256": "75dc881a2fc9c666ad34df7f2d22ddb054a11cf6e6cc30908d67c3f153fbdf91",
+      "fields": [
+        "index",
+        "sample_hash",
+        "prediction",
+        "correct",
+        "finish_reason",
+        "generated_tokens"
+      ]
+    }
+  ],
+  "plan_sha256": "f6329793cf22684b04e6051c9c3f62c40b3c5ccae087f1cb5fdf6ca46c5b6ed7",
+  "execution_amendment_sha256": "0f1ea9ce28bc6e31683b4978c484807bd1c1861c6e4fe83e130f398726d50b23",
+  "execution_script_sha256": "e369e117f94ba2d926e49b7421f0da7e52bfda01cb7e1f919aa45471401e128f",
+  "actual_gpu": "2"
+}

@@ -1,0 +1,3419 @@
+{
+  "time": 1789043986.652327,
+  "plan_sha256": "671d43e70025d1523da6eebaa79e59902a00c81966ec38181620a2a263b04d92",
+  "script_sha256": "06282b9c6c223775dbf4de1d6aabf2d97d478690a7daa8d7a8c71310785d9ac8",
+  "source_analysis_sha256": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+  "identities": {
+    "base": "fcb4c9e420af1c9ae7b05fe6adccb667dbfe8516146b41c0df079dfa46606f91",
+    "avg_teacher7_1234_s43_epoch4": "7d461cf7a7603e8ac59783a403e67f60cf25a070232178298a17987eaac7466c",
+    "avg_teacher7_1234_s44_epoch4": "72cc8aeee495ee72a7fc849b5d304c5b6f1606645c2f17acfcccd7d0cd9c3798",
+    "avg_teacher7_1234_s45_epoch4": "95d0cf29c2baa62274882c6734d42b530f1aa3fb7117d116bc97453a6024929c",
+    "avg_teacher7_1234_s46_epoch4": "53ad83db21ff50c0958174075ea978f4a598ac58f6644a9043b1664c2d38a523",
+    "avg_teacher7_1234_s47_epoch4": "ffd12b1aebd4be89cf6212fdc25d9ddfaa7d3461ecd9d2178c8597aefb815bc5",
+    "avg_teacher7_expansion_combined_1234_s43_epoch4": "be80d613918904a68a506b9b2eec00115fb86eb395ccd2bb0b795c6b2674abe3",
+    "avg_teacher7_expansion_combined_1234_s44_epoch4": "de8affcee9ebffe798ccd61785fae685166186d4513d83c746d55e1260222d01",
+    "avg_teacher7_expansion_combined_1234_s45_epoch4": "87084d8c0c486306f0384998490f701616d4fe615ed80baceab94cfc5f5f9dcb",
+    "avg_teacher7_expansion_combined_1234_s46_epoch4": "df457e5c0e89d52c4e0a896936cb8409f077f4ec62acd787ee1b6f777f79abfa",
+    "avg_teacher7_expansion_combined_1234_s47_epoch4": "33d00c55209a7551dfb8866271c6e9712393588f8d21e0cf7dc474dd42e41634",
+    "teacher_all_lr5e5_s43_epoch4": "f8300798a862433e556784c2c99dd6b9e3f5950b0c91b692fdc87a8bf65782fa",
+    "teacher_all_lr5e5_s44_epoch4": "cd3cafbbe762d41690364e125179834e42d412192ef61d9f7436d2fc363329ee",
+    "teacher_all_lr5e5_s45_epoch4": "3efba39096b7910ba0f4c3139489fff1b844ffedad88a1a1d434bc9a8b8bd44c",
+    "teacher_all_lr5e5_s46_epoch4": "c5238c47b296ec5cc3a207c2f0516c3892dab2099db40da0cfdf979127baf74d",
+    "teacher_all_lr5e5_s47_epoch4": "a3a4c2e895ad3fce4f6586a898b11f9c854ed1004105cb835376668c832c8ab3",
+    "teacher7_expansion_combined_lr5e5_s43_epoch4": "b05fca7cd4275055aa22278b3675bb5d87715a12222dcba8b99d77abe5267153",
+    "teacher7_expansion_combined_lr5e5_s44_epoch4": "e9fbe5a83fa56461541f91acc7bf48f252cf8bf18695206d6412eca840d82512",
+    "teacher7_expansion_combined_lr5e5_s45_epoch4": "edd5f3dfb3e61f2dc5b1dfbcc1360ae466995448b97e9660dd55640f67c3d036",
+    "teacher7_expansion_combined_lr5e5_s46_epoch4": "e746bda8fa6f7d7d707ca5e37dc83620992495773c628071f7acedeee206a974",
+    "teacher7_expansion_combined_lr5e5_s47_epoch4": "70740858cfb20f113ec44c73f6eb0f91a3e5cb0dd0f1a31840112726f228423f"
+  },
+  "training": {
+    "original": {
+      "n": 1547,
+      "data_sha256": "7cd1daa1092fb5d30c136f9aae09c3bee43888f48f6766bb796af58cdfb9df6d",
+      "partitions": {
+        "type": {
+          "Algebra": {
+            "n": 434,
+            "target_tokens": 178187
+          },
+          "Counting & Probability": {
+            "n": 156,
+            "target_tokens": 76068
+          },
+          "Geometry": {
+            "n": 123,
+            "target_tokens": 59872
+          },
+          "Intermediate Algebra": {
+            "n": 253,
+            "target_tokens": 164023
+          },
+          "Number Theory": {
+            "n": 177,
+            "target_tokens": 90544
+          },
+          "Prealgebra": {
+            "n": 279,
+            "target_tokens": 96753
+          },
+          "Precalculus": {
+            "n": 125,
+            "target_tokens": 73184
+          }
+        },
+        "level": {
+          "Level 1": {
+            "n": 138,
+            "target_tokens": 42085
+          },
+          "Level 2": {
+            "n": 346,
+            "target_tokens": 133511
+          },
+          "Level 3": {
+            "n": 373,
+            "target_tokens": 175266
+          },
+          "Level 4": {
+            "n": 362,
+            "target_tokens": 187578
+          },
+          "Level 5": {
+            "n": 328,
+            "target_tokens": 200191
+          }
+        }
+      }
+    },
+    "expanded": {
+      "n": 4145,
+      "data_sha256": "36e8c84d3c1000d98ad187df51da84cbee1ef5e5d460d98f1d72a2d9c362c209",
+      "partitions": {
+        "type": {
+          "Algebra": {
+            "n": 1229,
+            "target_tokens": 508855
+          },
+          "Counting & Probability": {
+            "n": 382,
+            "target_tokens": 182068
+          },
+          "Geometry": {
+            "n": 337,
+            "target_tokens": 170976
+          },
+          "Intermediate Algebra": {
+            "n": 615,
+            "target_tokens": 407534
+          },
+          "Number Theory": {
+            "n": 501,
+            "target_tokens": 262848
+          },
+          "Prealgebra": {
+            "n": 782,
+            "target_tokens": 267991
+          },
+          "Precalculus": {
+            "n": 299,
+            "target_tokens": 189551
+          }
+        },
+        "level": {
+          "Level 1": {
+            "n": 382,
+            "target_tokens": 117085
+          },
+          "Level 2": {
+            "n": 902,
+            "target_tokens": 341959
+          },
+          "Level 3": {
+            "n": 1012,
+            "target_tokens": 468628
+          },
+          "Level 4": {
+            "n": 971,
+            "target_tokens": 517332
+          },
+          "Level 5": {
+            "n": 877,
+            "target_tokens": 544486
+          },
+          "Level ?": {
+            "n": 1,
+            "target_tokens": 333
+          }
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 913,
+      "per_seed_correct": [
+        925,
+        932,
+        924,
+        922,
+        933
+      ],
+      "mean_wrong_to_right": 92.8,
+      "mean_right_to_wrong": 78.6,
+      "delta_pp": 1.1962931760741364,
+      "question_ci95": [
+        -0.7076663858466723,
+        3.0834035383319294
+      ],
+      "seed_question_ci95": [
+        -0.7750631844987363,
+        3.167649536647009
+      ],
+      "per_seed_delta_pp": [
+        1.0109519797809603,
+        1.6006739679865205,
+        0.9267059814658803,
+        0.7582139848357203,
+        1.6849199663016006
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        234,
+        230,
+        229,
+        227,
+        224
+      ],
+      "mean_wrong_to_right": 42.6,
+      "mean_right_to_wrong": 34.8,
+      "delta_pp": 1.6455696202531647,
+      "question_ci95": [
+        -1.5189873417721516,
+        4.852320675105485
+      ],
+      "seed_question_ci95": [
+        -1.6877637130801686,
+        5.063291139240507
+      ],
+      "per_seed_delta_pp": [
+        2.7426160337552745,
+        1.89873417721519,
+        1.6877637130801686,
+        1.2658227848101267,
+        0.6329113924050633
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 229,
+      "per_seed_correct": [
+        219,
+        217,
+        225,
+        231,
+        217
+      ],
+      "mean_wrong_to_right": 28.6,
+      "mean_right_to_wrong": 35.8,
+      "delta_pp": -1.5031315240083507,
+      "question_ci95": [
+        -4.217118997912317,
+        1.252609603340292
+      ],
+      "seed_question_ci95": [
+        -4.551148225469729,
+        1.544885177453027
+      ],
+      "per_seed_delta_pp": [
+        -2.0876826722338206,
+        -2.5052192066805845,
+        -0.8350730688935281,
+        0.41753653444676403,
+        -2.5052192066805845
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 332,
+      "per_seed_correct": [
+        332,
+        334,
+        341,
+        343,
+        341
+      ],
+      "mean_wrong_to_right": 76.8,
+      "mean_right_to_wrong": 70.6,
+      "delta_pp": 0.6866002214839424,
+      "question_ci95": [
+        -1.5725359911406425,
+        2.9678848283499444
+      ],
+      "seed_question_ci95": [
+        -1.6389811738648947,
+        3.057032115171642
+      ],
+      "per_seed_delta_pp": [
+        0.0,
+        0.22148394241417496,
+        0.9966777408637874,
+        1.2181616832779625,
+        0.9966777408637874
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 251,
+      "per_seed_correct": [
+        265,
+        266,
+        265,
+        265,
+        273
+      ],
+      "mean_wrong_to_right": 67.2,
+      "mean_right_to_wrong": 51.4,
+      "delta_pp": 2.925925925925926,
+      "question_ci95": [
+        -0.5185185185185185,
+        6.4074074074074066
+      ],
+      "seed_question_ci95": [
+        -0.5925925925925926,
+        6.481481481481481
+      ],
+      "per_seed_delta_pp": [
+        2.5925925925925926,
+        2.7777777777777777,
+        2.5925925925925926,
+        2.5925925925925926,
+        4.074074074074074
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 627,
+      "per_seed_correct": [
+        618,
+        623,
+        622,
+        623,
+        625
+      ],
+      "mean_wrong_to_right": 55.6,
+      "mean_right_to_wrong": 60.4,
+      "delta_pp": -0.5510907003444316,
+      "question_ci95": [
+        -2.7095292766934556,
+        1.6532721010332954
+      ],
+      "seed_question_ci95": [
+        -2.801377726750861,
+        1.653272101033295
+      ],
+      "per_seed_delta_pp": [
+        -1.0332950631458095,
+        -0.4592422502870264,
+        -0.5740528128587831,
+        -0.4592422502870264,
+        -0.2296211251435132
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 221,
+      "per_seed_correct": [
+        229,
+        230,
+        237,
+        226,
+        224
+      ],
+      "mean_wrong_to_right": 50.2,
+      "mean_right_to_wrong": 42.0,
+      "delta_pp": 1.5018315018315018,
+      "question_ci95": [
+        -1.538461538461538,
+        4.5054945054945055
+      ],
+      "seed_question_ci95": [
+        -1.7216117216117217,
+        4.615384615384616
+      ],
+      "per_seed_delta_pp": [
+        1.465201465201465,
+        1.6483516483516485,
+        2.93040293040293,
+        0.9157509157509158,
+        0.5494505494505495
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 377,
+      "per_seed_correct": [
+        375,
+        379,
+        375,
+        375,
+        371
+      ],
+      "mean_wrong_to_right": 20.6,
+      "mean_right_to_wrong": 22.6,
+      "delta_pp": -0.4576659038901602,
+      "question_ci95": [
+        -2.974828375286042,
+        2.013729977116705
+      ],
+      "seed_question_ci95": [
+        -3.1121281464530894,
+        2.242562929061785
+      ],
+      "per_seed_delta_pp": [
+        -0.4576659038901602,
+        0.4576659038901602,
+        -0.4576659038901602,
+        -0.4576659038901602,
+        -1.3729977116704806
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 672,
+      "per_seed_correct": [
+        680,
+        685,
+        690,
+        681,
+        691
+      ],
+      "mean_wrong_to_right": 68.8,
+      "mean_right_to_wrong": 55.4,
+      "delta_pp": 1.4988814317673378,
+      "question_ci95": [
+        -0.6493288590604024,
+        3.6465324384787468
+      ],
+      "seed_question_ci95": [
+        -0.7158836689038032,
+        3.78076062639821
+      ],
+      "per_seed_delta_pp": [
+        0.8948545861297539,
+        1.45413870246085,
+        2.013422818791946,
+        1.006711409395973,
+        2.1252796420581657
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 745,
+      "per_seed_correct": [
+        767,
+        768,
+        781,
+        770,
+        769
+      ],
+      "mean_wrong_to_right": 105.8,
+      "mean_right_to_wrong": 79.8,
+      "delta_pp": 2.2988505747126435,
+      "question_ci95": [
+        0.21220159151193663,
+        4.385499557913351
+      ],
+      "seed_question_ci95": [
+        0.08841732979664013,
+        4.473916887709991
+      ],
+      "per_seed_delta_pp": [
+        1.9451812555260832,
+        2.033598585322723,
+        3.183023872679045,
+        2.2104332449160036,
+        2.122015915119363
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 618,
+      "per_seed_correct": [
+        623,
+        626,
+        626,
+        641,
+        633
+      ],
+      "mean_wrong_to_right": 114.8,
+      "mean_right_to_wrong": 103.0,
+      "delta_pp": 0.971993410214168,
+      "question_ci95": [
+        -1.087314662273476,
+        3.0481878088962047
+      ],
+      "seed_question_ci95": [
+        -1.1696869851729819,
+        3.1630971993410215
+      ],
+      "per_seed_delta_pp": [
+        0.41186161449752884,
+        0.6589785831960462,
+        0.6589785831960462,
+        1.8945634266886324,
+        1.2355848434925865
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 382,
+      "per_seed_correct": [
+        377,
+        374,
+        371,
+        370,
+        373
+      ],
+      "mean_wrong_to_right": 103.8,
+      "mean_right_to_wrong": 112.8,
+      "delta_pp": -0.6797583081570997,
+      "question_ci95": [
+        -2.56797583081571,
+        1.2235649546827796
+      ],
+      "seed_question_ci95": [
+        -2.70392749244713,
+        1.283987915407855
+      ],
+      "per_seed_delta_pp": [
+        -0.3776435045317221,
+        -0.6042296072507553,
+        -0.8308157099697886,
+        -0.906344410876133,
+        -0.6797583081570997
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 913,
+      "per_seed_correct": [
+        923,
+        912,
+        920,
+        925,
+        924
+      ],
+      "mean_wrong_to_right": 93.6,
+      "mean_right_to_wrong": 85.8,
+      "delta_pp": 0.6571187868576243,
+      "question_ci95": [
+        -1.2973883740522327,
+        2.611625947767481
+      ],
+      "seed_question_ci95": [
+        -1.4658803706823926,
+        2.729570345408593
+      ],
+      "per_seed_delta_pp": [
+        0.8424599831508003,
+        -0.08424599831508003,
+        0.5897219882055602,
+        1.0109519797809603,
+        0.9267059814658803
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        229,
+        226,
+        229,
+        232,
+        230
+      ],
+      "mean_wrong_to_right": 43.6,
+      "mean_right_to_wrong": 35.4,
+      "delta_pp": 1.729957805907173,
+      "question_ci95": [
+        -1.4767932489451476,
+        4.936708860759494
+      ],
+      "seed_question_ci95": [
+        -1.5189873417721518,
+        5.10548523206751
+      ],
+      "per_seed_delta_pp": [
+        1.6877637130801686,
+        1.0548523206751055,
+        1.6877637130801686,
+        2.320675105485232,
+        1.89873417721519
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 229,
+      "per_seed_correct": [
+        235,
+        219,
+        225,
+        223,
+        220
+      ],
+      "mean_wrong_to_right": 29.4,
+      "mean_right_to_wrong": 34.0,
+      "delta_pp": -0.9603340292275574,
+      "question_ci95": [
+        -3.6743215031315244,
+        1.712943632567835
+      ],
+      "seed_question_ci95": [
+        -4.008350730688935,
+        2.0876826722338206
+      ],
+      "per_seed_delta_pp": [
+        1.2526096033402923,
+        -2.0876826722338206,
+        -0.8350730688935281,
+        -1.2526096033402923,
+        -1.8789144050104383
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 332,
+      "per_seed_correct": [
+        348,
+        336,
+        337,
+        331,
+        334
+      ],
+      "mean_wrong_to_right": 76.8,
+      "mean_right_to_wrong": 71.6,
+      "delta_pp": 0.5758582502768549,
+      "question_ci95": [
+        -1.661129568106312,
+        2.901439645625692
+      ],
+      "seed_question_ci95": [
+        -1.8161683277962348,
+        2.945736434108527
+      ],
+      "per_seed_delta_pp": [
+        1.7718715393133997,
+        0.4429678848283499,
+        0.5537098560354374,
+        -0.11074197120708748,
+        0.22148394241417496
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 251,
+      "per_seed_correct": [
+        271,
+        267,
+        266,
+        273,
+        265
+      ],
+      "mean_wrong_to_right": 67.2,
+      "mean_right_to_wrong": 49.8,
+      "delta_pp": 3.2222222222222223,
+      "question_ci95": [
+        -0.07407407407407406,
+        6.555555555555554
+      ],
+      "seed_question_ci95": [
+        -0.25925925925925924,
+        6.703703703703703
+      ],
+      "per_seed_delta_pp": [
+        3.7037037037037033,
+        2.9629629629629632,
+        2.7777777777777777,
+        4.074074074074074,
+        2.5925925925925926
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 627,
+      "per_seed_correct": [
+        619,
+        614,
+        618,
+        635,
+        618
+      ],
+      "mean_wrong_to_right": 59.6,
+      "mean_right_to_wrong": 65.8,
+      "delta_pp": -0.711825487944891,
+      "question_ci95": [
+        -2.893226176808267,
+        1.5614236509758894
+      ],
+      "seed_question_ci95": [
+        -3.0998851894374284,
+        1.653272101033295
+      ],
+      "per_seed_delta_pp": [
+        -0.9184845005740528,
+        -1.4925373134328357,
+        -1.0332950631458095,
+        0.9184845005740528,
+        -1.0332950631458095
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 221,
+      "per_seed_correct": [
+        228,
+        220,
+        227,
+        222,
+        226
+      ],
+      "mean_wrong_to_right": 46.4,
+      "mean_right_to_wrong": 42.8,
+      "delta_pp": 0.6593406593406593,
+      "question_ci95": [
+        -2.197802197802198,
+        3.5897435897435903
+      ],
+      "seed_question_ci95": [
+        -2.490842490842491,
+        3.626373626373627
+      ],
+      "per_seed_delta_pp": [
+        1.282051282051282,
+        -0.18315018315018314,
+        1.098901098901099,
+        0.18315018315018314,
+        0.9157509157509158
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 377,
+      "per_seed_correct": [
+        380,
+        382,
+        372,
+        376,
+        377
+      ],
+      "mean_wrong_to_right": 23.6,
+      "mean_right_to_wrong": 23.2,
+      "delta_pp": 0.09153318077803205,
+      "question_ci95": [
+        -2.6086956521739126,
+        2.745995423340961
+      ],
+      "seed_question_ci95": [
+        -2.8375286041189933,
+        3.0205949656750573
+      ],
+      "per_seed_delta_pp": [
+        0.6864988558352403,
+        1.1441647597254003,
+        -1.1441647597254003,
+        -0.2288329519450801,
+        0.0
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 672,
+      "per_seed_correct": [
+        689,
+        669,
+        679,
+        680,
+        681
+      ],
+      "mean_wrong_to_right": 67.2,
+      "mean_right_to_wrong": 59.6,
+      "delta_pp": 0.8501118568232663,
+      "question_ci95": [
+        -1.2975391498881435,
+        2.975391498881432
+      ],
+      "seed_question_ci95": [
+        -1.4546979865771807,
+        3.131991051454139
+      ],
+      "per_seed_delta_pp": [
+        1.901565995525727,
+        -0.33557046979865773,
+        0.7829977628635347,
+        0.8948545861297539,
+        1.006711409395973
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 745,
+      "per_seed_correct": [
+        774,
+        753,
+        770,
+        785,
+        765
+      ],
+      "mean_wrong_to_right": 106.4,
+      "mean_right_to_wrong": 82.0,
+      "delta_pp": 2.1573828470380194,
+      "question_ci95": [
+        0.10610079575596827,
+        4.226790450928376
+      ],
+      "seed_question_ci95": [
+        -0.14146772767462423,
+        4.385499557913351
+      ],
+      "per_seed_delta_pp": [
+        2.564102564102564,
+        0.707338638373121,
+        2.2104332449160036,
+        3.5366931918656057,
+        1.7683465959328029
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 618,
+      "per_seed_correct": [
+        633,
+        616,
+        619,
+        617,
+        605
+      ],
+      "mean_wrong_to_right": 114.8,
+      "mean_right_to_wrong": 114.8,
+      "delta_pp": 0.0,
+      "question_ci95": [
+        -2.125205930807249,
+        2.075782537067546
+      ],
+      "seed_question_ci95": [
+        -2.2899505766062602,
+        2.2244645799011473
+      ],
+      "per_seed_delta_pp": [
+        1.2355848434925865,
+        -0.16474464579901155,
+        0.08237232289950577,
+        -0.08237232289950577,
+        -1.070840197693575
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 382,
+      "per_seed_correct": [
+        377,
+        374,
+        382,
+        383,
+        389
+      ],
+      "mean_wrong_to_right": 104.6,
+      "mean_right_to_wrong": 105.6,
+      "delta_pp": -0.0755287009063444,
+      "question_ci95": [
+        -1.9486404833836857,
+        1.7522658610271902
+      ],
+      "seed_question_ci95": [
+        -2.069486404833837,
+        1.8731117824773416
+      ],
+      "per_seed_delta_pp": [
+        -0.3776435045317221,
+        -0.6042296072507553,
+        0.0,
+        0.0755287009063444,
+        0.5287009063444109
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 913,
+      "per_seed_correct": [
+        934,
+        939,
+        925,
+        916,
+        936
+      ],
+      "mean_wrong_to_right": 96.8,
+      "mean_right_to_wrong": 79.8,
+      "delta_pp": 1.4321819713563606,
+      "question_ci95": [
+        -0.45492839090143206,
+        3.285593934288121
+      ],
+      "seed_question_ci95": [
+        -0.7076663858466723,
+        3.5383319292333613
+      ],
+      "per_seed_delta_pp": [
+        1.7691659646166806,
+        2.1903959561920807,
+        1.0109519797809603,
+        0.2527379949452401,
+        1.9376579612468408
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        225,
+        230,
+        227,
+        229,
+        220
+      ],
+      "mean_wrong_to_right": 40.8,
+      "mean_right_to_wrong": 35.6,
+      "delta_pp": 1.0970464135021099,
+      "question_ci95": [
+        -2.025316455696203,
+        4.261603375527426
+      ],
+      "seed_question_ci95": [
+        -2.237341772151898,
+        4.430379746835443
+      ],
+      "per_seed_delta_pp": [
+        0.8438818565400843,
+        1.89873417721519,
+        1.2658227848101267,
+        1.6877637130801686,
+        -0.21097046413502107
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 229,
+      "per_seed_correct": [
+        222,
+        215,
+        218,
+        226,
+        222
+      ],
+      "mean_wrong_to_right": 29.2,
+      "mean_right_to_wrong": 37.6,
+      "delta_pp": -1.753653444676409,
+      "question_ci95": [
+        -4.4676409185803765,
+        1.002087682672234
+      ],
+      "seed_question_ci95": [
+        -4.718162839248434,
+        1.1701461377870412
+      ],
+      "per_seed_delta_pp": [
+        -1.4613778705636742,
+        -2.9227557411273484,
+        -2.2964509394572024,
+        -0.6263048016701461,
+        -1.4613778705636742
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 332,
+      "per_seed_correct": [
+        342,
+        334,
+        335,
+        323,
+        343
+      ],
+      "mean_wrong_to_right": 79.6,
+      "mean_right_to_wrong": 76.2,
+      "delta_pp": 0.37652270210409744,
+      "question_ci95": [
+        -1.9490586932447393,
+        2.7242524916943522
+      ],
+      "seed_question_ci95": [
+        -2.104097452934662,
+        2.9014396456256923
+      ],
+      "per_seed_delta_pp": [
+        1.1074197120708749,
+        0.22148394241417496,
+        0.33222591362126247,
+        -0.9966777408637874,
+        1.2181616832779625
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 251,
+      "per_seed_correct": [
+        274,
+        253,
+        269,
+        258,
+        261
+      ],
+      "mean_wrong_to_right": 69.2,
+      "mean_right_to_wrong": 57.2,
+      "delta_pp": 2.2222222222222223,
+      "question_ci95": [
+        -1.2962962962962963,
+        5.7407407407407405
+      ],
+      "seed_question_ci95": [
+        -1.5555555555555556,
+        6.074074074074074
+      ],
+      "per_seed_delta_pp": [
+        4.2592592592592595,
+        0.3703703703703704,
+        3.3333333333333335,
+        1.2962962962962963,
+        1.8518518518518516
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 627,
+      "per_seed_correct": [
+        618,
+        614,
+        614,
+        612,
+        607
+      ],
+      "mean_wrong_to_right": 58.6,
+      "mean_right_to_wrong": 72.6,
+      "delta_pp": -1.6073478760045925,
+      "question_ci95": [
+        -3.880597014925373,
+        0.6659012629161883
+      ],
+      "seed_question_ci95": [
+        -4.018369690011482,
+        0.711825487944891
+      ],
+      "per_seed_delta_pp": [
+        -1.0332950631458095,
+        -1.4925373134328357,
+        -1.4925373134328357,
+        -1.7221584385763489,
+        -2.2962112514351323
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 221,
+      "per_seed_correct": [
+        220,
+        223,
+        228,
+        223,
+        223
+      ],
+      "mean_wrong_to_right": 47.2,
+      "mean_right_to_wrong": 44.8,
+      "delta_pp": 0.43956043956043955,
+      "question_ci95": [
+        -2.490842490842491,
+        3.370879120879108
+      ],
+      "seed_question_ci95": [
+        -2.673992673992674,
+        3.47985347985348
+      ],
+      "per_seed_delta_pp": [
+        -0.18315018315018314,
+        0.3663003663003663,
+        1.282051282051282,
+        0.3663003663003663,
+        0.3663003663003663
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 377,
+      "per_seed_correct": [
+        377,
+        377,
+        379,
+        375,
+        373
+      ],
+      "mean_wrong_to_right": 25.0,
+      "mean_right_to_wrong": 25.8,
+      "delta_pp": -0.1830663615560641,
+      "question_ci95": [
+        -2.9748283752860414,
+        2.5629290617848968
+      ],
+      "seed_question_ci95": [
+        -3.0663615560640736,
+        2.745995423340961
+      ],
+      "per_seed_delta_pp": [
+        0.0,
+        0.0,
+        0.4576659038901602,
+        -0.4576659038901602,
+        -0.9153318077803204
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 672,
+      "per_seed_correct": [
+        678,
+        672,
+        674,
+        676,
+        669
+      ],
+      "mean_wrong_to_right": 63.2,
+      "mean_right_to_wrong": 61.4,
+      "delta_pp": 0.20134228187919465,
+      "question_ci95": [
+        -1.8791946308724832,
+        2.3042505592841165
+      ],
+      "seed_question_ci95": [
+        -1.9686800894854588,
+        2.3937360178970915
+      ],
+      "per_seed_delta_pp": [
+        0.6711409395973155,
+        0.0,
+        0.22371364653243847,
+        0.44742729306487694,
+        -0.33557046979865773
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 745,
+      "per_seed_correct": [
+        769,
+        755,
+        767,
+        745,
+        764
+      ],
+      "mean_wrong_to_right": 107.4,
+      "mean_right_to_wrong": 92.4,
+      "delta_pp": 1.3262599469496021,
+      "question_ci95": [
+        -0.7603890362511052,
+        3.50132625994695
+      ],
+      "seed_question_ci95": [
+        -1.0079575596816976,
+        3.6251105216622457
+      ],
+      "per_seed_delta_pp": [
+        2.122015915119363,
+        0.8841732979664014,
+        1.9451812555260832,
+        0.0,
+        1.6799292661361624
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 618,
+      "per_seed_correct": [
+        636,
+        628,
+        613,
+        627,
+        624
+      ],
+      "mean_wrong_to_right": 119.6,
+      "mean_right_to_wrong": 112.0,
+      "delta_pp": 0.6260296540362438,
+      "question_ci95": [
+        -1.4995881383855025,
+        2.767710049423393
+      ],
+      "seed_question_ci95": [
+        -1.6639209225700164,
+        2.8500823723228996
+      ],
+      "per_seed_delta_pp": [
+        1.4827018121911038,
+        0.8237232289950577,
+        -0.41186161449752884,
+        0.7413509060955519,
+        0.4942339373970346
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 382,
+      "per_seed_correct": [
+        375,
+        376,
+        383,
+        364,
+        382
+      ],
+      "mean_wrong_to_right": 106.2,
+      "mean_right_to_wrong": 112.2,
+      "delta_pp": -0.4531722054380665,
+      "question_ci95": [
+        -2.29607250755287,
+        1.3897280966767371
+      ],
+      "seed_question_ci95": [
+        -2.492447129909366,
+        1.555891238670695
+      ],
+      "per_seed_delta_pp": [
+        -0.5287009063444109,
+        -0.4531722054380665,
+        0.0755287009063444,
+        -1.3595166163141994,
+        0.0
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 913,
+      "per_seed_correct": [
+        924,
+        927,
+        927,
+        926,
+        924
+      ],
+      "mean_wrong_to_right": 96.4,
+      "mean_right_to_wrong": 83.8,
+      "delta_pp": 1.0614995787700083,
+      "question_ci95": [
+        -0.8424599831508003,
+        2.9486099410278013
+      ],
+      "seed_question_ci95": [
+        -0.9604043807919124,
+        3.0497051390058973
+      ],
+      "per_seed_delta_pp": [
+        0.9267059814658803,
+        1.1794439764111204,
+        1.1794439764111204,
+        1.0951979780960404,
+        0.9267059814658803
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        232,
+        228,
+        216,
+        224,
+        215
+      ],
+      "mean_wrong_to_right": 41.0,
+      "mean_right_to_wrong": 39.0,
+      "delta_pp": 0.42194092827004215,
+      "question_ci95": [
+        -2.6160337552742616,
+        3.375527426160337
+      ],
+      "seed_question_ci95": [
+        -2.911392405063291,
+        3.8396624472573837
+      ],
+      "per_seed_delta_pp": [
+        2.320675105485232,
+        1.4767932489451476,
+        -1.0548523206751055,
+        0.6329113924050633,
+        -1.2658227848101267
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 229,
+      "per_seed_correct": [
+        215,
+        222,
+        220,
+        227,
+        216
+      ],
+      "mean_wrong_to_right": 35.2,
+      "mean_right_to_wrong": 44.2,
+      "delta_pp": -1.8789144050104383,
+      "question_ci95": [
+        -4.926931106471817,
+        1.1273486430062631
+      ],
+      "seed_question_ci95": [
+        -5.135699373695198,
+        1.3778705636743214
+      ],
+      "per_seed_delta_pp": [
+        -2.9227557411273484,
+        -1.4613778705636742,
+        -1.8789144050104383,
+        -0.41753653444676403,
+        -2.7139874739039667
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 332,
+      "per_seed_correct": [
+        336,
+        323,
+        336,
+        315,
+        323
+      ],
+      "mean_wrong_to_right": 74.6,
+      "mean_right_to_wrong": 80.0,
+      "delta_pp": -0.5980066445182725,
+      "question_ci95": [
+        -2.7464008859357696,
+        1.6168327796234772
+      ],
+      "seed_question_ci95": [
+        -3.0343300110741973,
+        1.8826135105204873
+      ],
+      "per_seed_delta_pp": [
+        0.4429678848283499,
+        -0.9966777408637874,
+        0.4429678848283499,
+        -1.8826135105204873,
+        -0.9966777408637874
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 251,
+      "per_seed_correct": [
+        278,
+        280,
+        262,
+        274,
+        271
+      ],
+      "mean_wrong_to_right": 69.0,
+      "mean_right_to_wrong": 47.0,
+      "delta_pp": 4.074074074074074,
+      "question_ci95": [
+        0.9250000000000004,
+        7.333333333333333
+      ],
+      "seed_question_ci95": [
+        0.5555555555555556,
+        7.666666666666666
+      ],
+      "per_seed_delta_pp": [
+        5.0,
+        5.37037037037037,
+        2.037037037037037,
+        4.2592592592592595,
+        3.7037037037037033
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 627,
+      "per_seed_correct": [
+        617,
+        625,
+        615,
+        618,
+        610
+      ],
+      "mean_wrong_to_right": 58.0,
+      "mean_right_to_wrong": 68.0,
+      "delta_pp": -1.1481056257175661,
+      "question_ci95": [
+        -3.329506314580941,
+        1.0562571756601606
+      ],
+      "seed_question_ci95": [
+        -3.467278989667049,
+        1.125717566016065
+      ],
+      "per_seed_delta_pp": [
+        -1.1481056257175661,
+        -0.2296211251435132,
+        -1.377726750861079,
+        -1.0332950631458095,
+        -1.951779563719862
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 221,
+      "per_seed_correct": [
+        215,
+        221,
+        227,
+        212,
+        233
+      ],
+      "mean_wrong_to_right": 49.8,
+      "mean_right_to_wrong": 49.2,
+      "delta_pp": 0.10989010989010989,
+      "question_ci95": [
+        -2.8205128205128207,
+        3.0402930402930406
+      ],
+      "seed_question_ci95": [
+        -3.2600732600732605,
+        3.4432234432234434
+      ],
+      "per_seed_delta_pp": [
+        -1.098901098901099,
+        0.0,
+        1.098901098901099,
+        -1.6483516483516485,
+        2.197802197802198
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 377,
+      "per_seed_correct": [
+        374,
+        384,
+        381,
+        380,
+        380
+      ],
+      "mean_wrong_to_right": 28.2,
+      "mean_right_to_wrong": 25.4,
+      "delta_pp": 0.6407322654462242,
+      "question_ci95": [
+        -2.105263157894737,
+        3.3409610983981692
+      ],
+      "seed_question_ci95": [
+        -2.242562929061785,
+        3.6155606407322654
+      ],
+      "per_seed_delta_pp": [
+        -0.6864988558352403,
+        1.6018306636155606,
+        0.9153318077803204,
+        0.6864988558352403,
+        0.6864988558352403
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 672,
+      "per_seed_correct": [
+        679,
+        671,
+        672,
+        682,
+        682
+      ],
+      "mean_wrong_to_right": 68.8,
+      "mean_right_to_wrong": 63.6,
+      "delta_pp": 0.5816554809843401,
+      "question_ci95": [
+        -1.5436241610738257,
+        2.7298657718120727
+      ],
+      "seed_question_ci95": [
+        -1.6778523489932886,
+        2.8411633109619685
+      ],
+      "per_seed_delta_pp": [
+        0.7829977628635347,
+        -0.11185682326621924,
+        0.0,
+        1.1185682326621924,
+        1.1185682326621924
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 745,
+      "per_seed_correct": [
+        762,
+        773,
+        746,
+        752,
+        749
+      ],
+      "mean_wrong_to_right": 103.0,
+      "mean_right_to_wrong": 91.6,
+      "delta_pp": 1.0079575596816976,
+      "question_ci95": [
+        -0.9902740937223699,
+        3.059681697612726
+      ],
+      "seed_question_ci95": [
+        -1.237842617152962,
+        3.2891246684350133
+      ],
+      "per_seed_delta_pp": [
+        1.5030946065428823,
+        2.475685234305924,
+        0.08841732979664013,
+        0.618921308576481,
+        0.3536693191865605
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 618,
+      "per_seed_correct": [
+        604,
+        626,
+        623,
+        614,
+        611
+      ],
+      "mean_wrong_to_right": 114.0,
+      "mean_right_to_wrong": 116.4,
+      "delta_pp": -0.19769357495881384,
+      "question_ci95": [
+        -2.2570016474464576,
+        1.8616144975288302
+      ],
+      "seed_question_ci95": [
+        -2.4382207578253707,
+        1.9934102141680394
+      ],
+      "per_seed_delta_pp": [
+        -1.1532125205930808,
+        0.6589785831960462,
+        0.41186161449752884,
+        -0.3294892915980231,
+        -0.5766062602965404
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "raw",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 382,
+      "per_seed_correct": [
+        398,
+        372,
+        381,
+        368,
+        370
+      ],
+      "mean_wrong_to_right": 110.0,
+      "mean_right_to_wrong": 114.2,
+      "delta_pp": -0.31722054380664655,
+      "question_ci95": [
+        -2.1450151057401814,
+        1.5407854984894258
+      ],
+      "seed_question_ci95": [
+        -2.462235649546828,
+        1.782477341389728
+      ],
+      "per_seed_delta_pp": [
+        1.2084592145015105,
+        -0.7552870090634441,
+        -0.0755287009063444,
+        -1.0574018126888218,
+        -0.906344410876133
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 907,
+      "per_seed_correct": [
+        925,
+        931,
+        924,
+        921,
+        933
+      ],
+      "mean_wrong_to_right": 97.6,
+      "mean_right_to_wrong": 77.8,
+      "delta_pp": 1.6680707666385846,
+      "question_ci95": [
+        -0.2695871946082561,
+        3.6225779275484413
+      ],
+      "seed_question_ci95": [
+        -0.37068239258635216,
+        3.6899747262005054
+      ],
+      "per_seed_delta_pp": [
+        1.5164279696714407,
+        2.0219039595619206,
+        1.4321819713563606,
+        1.1794439764111204,
+        2.1903959561920807
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        234,
+        230,
+        228,
+        227,
+        224
+      ],
+      "mean_wrong_to_right": 42.4,
+      "mean_right_to_wrong": 34.8,
+      "delta_pp": 1.6033755274261603,
+      "question_ci95": [
+        -1.561181434599156,
+        4.81012658227848
+      ],
+      "seed_question_ci95": [
+        -1.7721518987341773,
+        5.0210970464135025
+      ],
+      "per_seed_delta_pp": [
+        2.7426160337552745,
+        1.89873417721519,
+        1.4767932489451476,
+        1.2658227848101267,
+        0.6329113924050633
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 227,
+      "per_seed_correct": [
+        218,
+        216,
+        224,
+        230,
+        217
+      ],
+      "mean_wrong_to_right": 30.6,
+      "mean_right_to_wrong": 36.6,
+      "delta_pp": -1.2526096033402923,
+      "question_ci95": [
+        -4.008350730688936,
+        1.5448851774530272
+      ],
+      "seed_question_ci95": [
+        -4.3841336116910234,
+        1.8789144050104383
+      ],
+      "per_seed_delta_pp": [
+        -1.8789144050104383,
+        -2.2964509394572024,
+        -0.6263048016701461,
+        0.6263048016701461,
+        -2.0876826722338206
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 330,
+      "per_seed_correct": [
+        331,
+        332,
+        340,
+        343,
+        340
+      ],
+      "mean_wrong_to_right": 77.0,
+      "mean_right_to_wrong": 69.8,
+      "delta_pp": 0.7973421926910298,
+      "question_ci95": [
+        -1.4396456256921373,
+        3.0343300110741973
+      ],
+      "seed_question_ci95": [
+        -1.5282392026578073,
+        3.189368770764119
+      ],
+      "per_seed_delta_pp": [
+        0.11074197120708748,
+        0.22148394241417496,
+        1.1074197120708749,
+        1.4396456256921373,
+        1.1074197120708749
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 250,
+      "per_seed_correct": [
+        264,
+        264,
+        263,
+        262,
+        273
+      ],
+      "mean_wrong_to_right": 66.2,
+      "mean_right_to_wrong": 51.0,
+      "delta_pp": 2.814814814814815,
+      "question_ci95": [
+        -0.5555555555555558,
+        6.222222222222222
+      ],
+      "seed_question_ci95": [
+        -0.7037037037037037,
+        6.333333333333334
+      ],
+      "per_seed_delta_pp": [
+        2.5925925925925926,
+        2.5925925925925926,
+        2.4074074074074074,
+        2.2222222222222223,
+        4.2592592592592595
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 620,
+      "per_seed_correct": [
+        618,
+        624,
+        622,
+        623,
+        626
+      ],
+      "mean_wrong_to_right": 62.4,
+      "mean_right_to_wrong": 59.8,
+      "delta_pp": 0.2985074626865672,
+      "question_ci95": [
+        -1.951779563719862,
+        2.548794489092996
+      ],
+      "seed_question_ci95": [
+        -1.9977037887485647,
+        2.5487944890929968
+      ],
+      "per_seed_delta_pp": [
+        -0.2296211251435132,
+        0.4592422502870264,
+        0.2296211251435132,
+        0.3444316877152698,
+        0.6888633754305395
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 219,
+      "per_seed_correct": [
+        229,
+        230,
+        236,
+        226,
+        224
+      ],
+      "mean_wrong_to_right": 52.0,
+      "mean_right_to_wrong": 42.0,
+      "delta_pp": 1.8315018315018317,
+      "question_ci95": [
+        -1.2454212454212454,
+        4.908424908424908
+      ],
+      "seed_question_ci95": [
+        -1.4285714285714286,
+        5.018315018315018
+      ],
+      "per_seed_delta_pp": [
+        1.8315018315018317,
+        2.0146520146520146,
+        3.1135531135531136,
+        1.282051282051282,
+        0.9157509157509158
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 374,
+      "per_seed_correct": [
+        375,
+        379,
+        374,
+        375,
+        371
+      ],
+      "mean_wrong_to_right": 23.4,
+      "mean_right_to_wrong": 22.6,
+      "delta_pp": 0.1830663615560641,
+      "question_ci95": [
+        -2.425629290617849,
+        2.745995423340961
+      ],
+      "seed_question_ci95": [
+        -2.608695652173913,
+        3.0205949656750573
+      ],
+      "per_seed_delta_pp": [
+        0.2288329519450801,
+        1.1441647597254003,
+        0.0,
+        0.2288329519450801,
+        -0.6864988558352403
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 668,
+      "per_seed_correct": [
+        680,
+        685,
+        689,
+        681,
+        691
+      ],
+      "mean_wrong_to_right": 72.8,
+      "mean_right_to_wrong": 55.6,
+      "delta_pp": 1.9239373601789709,
+      "question_ci95": [
+        -0.2908277404921701,
+        4.093959731543624
+      ],
+      "seed_question_ci95": [
+        -0.33557046979865773,
+        4.250559284116331
+      ],
+      "per_seed_delta_pp": [
+        1.342281879194631,
+        1.901565995525727,
+        2.348993288590604,
+        1.45413870246085,
+        2.5727069351230423
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 741,
+      "per_seed_correct": [
+        766,
+        766,
+        778,
+        767,
+        769
+      ],
+      "mean_wrong_to_right": 109.0,
+      "mean_right_to_wrong": 80.8,
+      "delta_pp": 2.493368700265252,
+      "question_ci95": [
+        0.40671971706454463,
+        4.615384615384616
+      ],
+      "seed_question_ci95": [
+        0.2652519893899204,
+        4.6861184792219275
+      ],
+      "per_seed_delta_pp": [
+        2.2104332449160036,
+        2.2104332449160036,
+        3.2714412024756854,
+        2.2988505747126435,
+        2.475685234305924
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 613,
+      "per_seed_correct": [
+        621,
+        624,
+        625,
+        640,
+        633
+      ],
+      "mean_wrong_to_right": 118.4,
+      "mean_right_to_wrong": 102.8,
+      "delta_pp": 1.28500823723229,
+      "question_ci95": [
+        -0.8072487644151564,
+        3.361202635914327
+      ],
+      "seed_question_ci95": [
+        -0.8896210873146623,
+        3.5420098846787478
+      ],
+      "per_seed_delta_pp": [
+        0.6589785831960462,
+        0.9060955518945634,
+        0.9884678747940692,
+        2.224052718286656,
+        1.6474464579901154
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_avg1234",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 378,
+      "per_seed_correct": [
+        377,
+        373,
+        371,
+        369,
+        373
+      ],
+      "mean_wrong_to_right": 104.6,
+      "mean_right_to_wrong": 110.0,
+      "delta_pp": -0.40785498489425986,
+      "question_ci95": [
+        -2.281344410876133,
+        1.4807401812688767
+      ],
+      "seed_question_ci95": [
+        -2.401812688821752,
+        1.540785498489426
+      ],
+      "per_seed_delta_pp": [
+        -0.0755287009063444,
+        -0.3776435045317221,
+        -0.5287009063444109,
+        -0.6797583081570997,
+        -0.3776435045317221
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 907,
+      "per_seed_correct": [
+        923,
+        912,
+        919,
+        925,
+        923
+      ],
+      "mean_wrong_to_right": 97.8,
+      "mean_right_to_wrong": 84.4,
+      "delta_pp": 1.1288963774220724,
+      "question_ci95": [
+        -0.8593091828138163,
+        3.100252737994945
+      ],
+      "seed_question_ci95": [
+        -0.9776748104465034,
+        3.235046335299073
+      ],
+      "per_seed_delta_pp": [
+        1.3479359730412805,
+        0.42122999157540014,
+        1.0109519797809603,
+        1.5164279696714407,
+        1.3479359730412805
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        229,
+        226,
+        229,
+        232,
+        230
+      ],
+      "mean_wrong_to_right": 43.6,
+      "mean_right_to_wrong": 35.4,
+      "delta_pp": 1.729957805907173,
+      "question_ci95": [
+        -1.4767932489451476,
+        4.936708860759494
+      ],
+      "seed_question_ci95": [
+        -1.5189873417721518,
+        5.10548523206751
+      ],
+      "per_seed_delta_pp": [
+        1.6877637130801686,
+        1.0548523206751055,
+        1.6877637130801686,
+        2.320675105485232,
+        1.89873417721519
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 227,
+      "per_seed_correct": [
+        234,
+        218,
+        223,
+        222,
+        220
+      ],
+      "mean_wrong_to_right": 31.2,
+      "mean_right_to_wrong": 34.8,
+      "delta_pp": -0.7515657620041754,
+      "question_ci95": [
+        -3.5073068893528188,
+        2.0876826722338206
+      ],
+      "seed_question_ci95": [
+        -3.8413361169102296,
+        2.3799582463465554
+      ],
+      "per_seed_delta_pp": [
+        1.4613778705636742,
+        -1.8789144050104383,
+        -0.8350730688935281,
+        -1.0438413361169103,
+        -1.4613778705636742
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 330,
+      "per_seed_correct": [
+        346,
+        334,
+        335,
+        328,
+        333
+      ],
+      "mean_wrong_to_right": 76.8,
+      "mean_right_to_wrong": 71.6,
+      "delta_pp": 0.5758582502768549,
+      "question_ci95": [
+        -1.6611295681063125,
+        2.901439645625693
+      ],
+      "seed_question_ci95": [
+        -1.7940199335548173,
+        2.990033222591362
+      ],
+      "per_seed_delta_pp": [
+        1.7718715393133997,
+        0.4429678848283499,
+        0.5537098560354374,
+        -0.22148394241417496,
+        0.33222591362126247
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 250,
+      "per_seed_correct": [
+        270,
+        267,
+        265,
+        270,
+        265
+      ],
+      "mean_wrong_to_right": 66.8,
+      "mean_right_to_wrong": 49.4,
+      "delta_pp": 3.2222222222222223,
+      "question_ci95": [
+        -0.07407407407407401,
+        6.5194444444444315
+      ],
+      "seed_question_ci95": [
+        -0.1851851851851852,
+        6.666666666666667
+      ],
+      "per_seed_delta_pp": [
+        3.7037037037037033,
+        3.148148148148148,
+        2.7777777777777777,
+        3.7037037037037033,
+        2.7777777777777777
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 620,
+      "per_seed_correct": [
+        618,
+        614,
+        617,
+        635,
+        619
+      ],
+      "mean_wrong_to_right": 66.4,
+      "mean_right_to_wrong": 65.8,
+      "delta_pp": 0.06888633754305395,
+      "question_ci95": [
+        -2.2043628013777266,
+        2.3650975889781862
+      ],
+      "seed_question_ci95": [
+        -2.4110218140068884,
+        2.5028702640642937
+      ],
+      "per_seed_delta_pp": [
+        -0.2296211251435132,
+        -0.6888633754305395,
+        -0.3444316877152698,
+        1.7221584385763489,
+        -0.1148105625717566
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 219,
+      "per_seed_correct": [
+        228,
+        219,
+        227,
+        221,
+        225
+      ],
+      "mean_wrong_to_right": 47.0,
+      "mean_right_to_wrong": 42.0,
+      "delta_pp": 0.9157509157509158,
+      "question_ci95": [
+        -1.9413919413919412,
+        3.8095238095238098
+      ],
+      "seed_question_ci95": [
+        -2.2344322344322345,
+        3.9194139194139193
+      ],
+      "per_seed_delta_pp": [
+        1.6483516483516485,
+        0.0,
+        1.465201465201465,
+        0.3663003663003663,
+        1.098901098901099
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 374,
+      "per_seed_correct": [
+        379,
+        381,
+        371,
+        376,
+        376
+      ],
+      "mean_wrong_to_right": 25.4,
+      "mean_right_to_wrong": 22.8,
+      "delta_pp": 0.5949656750572082,
+      "question_ci95": [
+        -2.1064073226544617,
+        3.2951945080091525
+      ],
+      "seed_question_ci95": [
+        -2.334096109839817,
+        3.5697940503432495
+      ],
+      "per_seed_delta_pp": [
+        1.1441647597254003,
+        1.6018306636155606,
+        -0.6864988558352403,
+        0.4576659038901602,
+        0.4576659038901602
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 668,
+      "per_seed_correct": [
+        688,
+        668,
+        677,
+        680,
+        681
+      ],
+      "mean_wrong_to_right": 70.4,
+      "mean_right_to_wrong": 59.6,
+      "delta_pp": 1.2080536912751678,
+      "question_ci95": [
+        -0.9843400447427294,
+        3.3557046979865772
+      ],
+      "seed_question_ci95": [
+        -1.1409395973154361,
+        3.512304250559284
+      ],
+      "per_seed_delta_pp": [
+        2.237136465324385,
+        0.0,
+        1.006711409395973,
+        1.342281879194631,
+        1.45413870246085
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 741,
+      "per_seed_correct": [
+        773,
+        753,
+        769,
+        782,
+        766
+      ],
+      "mean_wrong_to_right": 110.4,
+      "mean_right_to_wrong": 82.8,
+      "delta_pp": 2.440318302387268,
+      "question_ci95": [
+        0.3890362511052166,
+        4.5269672855879755
+      ],
+      "seed_question_ci95": [
+        0.17683465959328026,
+        4.703801945181255
+      ],
+      "per_seed_delta_pp": [
+        2.829354553492484,
+        1.0610079575596816,
+        2.475685234305924,
+        3.6251105216622457,
+        2.2104332449160036
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 613,
+      "per_seed_correct": [
+        631,
+        616,
+        618,
+        617,
+        604
+      ],
+      "mean_wrong_to_right": 119.0,
+      "mean_right_to_wrong": 114.8,
+      "delta_pp": 0.34596375617792424,
+      "question_ci95": [
+        -1.8121911037891265,
+        2.471581548599665
+      ],
+      "seed_question_ci95": [
+        -1.943986820428336,
+        2.5864909390444812
+      ],
+      "per_seed_delta_pp": [
+        1.4827018121911038,
+        0.2471169686985173,
+        0.41186161449752884,
+        0.3294892915980231,
+        -0.7413509060955519
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_avg1234",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 378,
+      "per_seed_correct": [
+        377,
+        372,
+        380,
+        378,
+        388
+      ],
+      "mean_wrong_to_right": 104.4,
+      "mean_right_to_wrong": 103.4,
+      "delta_pp": 0.0755287009063444,
+      "question_ci95": [
+        -1.782477341389728,
+        1.888595166163137
+      ],
+      "seed_question_ci95": [
+        -1.9037009063444106,
+        1.9939577039274923
+      ],
+      "per_seed_delta_pp": [
+        -0.0755287009063444,
+        -0.4531722054380665,
+        0.1510574018126888,
+        0.0,
+        0.7552870090634441
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 907,
+      "per_seed_correct": [
+        934,
+        939,
+        925,
+        916,
+        936
+      ],
+      "mean_wrong_to_right": 101.6,
+      "mean_right_to_wrong": 78.6,
+      "delta_pp": 1.9376579612468408,
+      "question_ci95": [
+        0.016849199663016016,
+        3.808340353833187
+      ],
+      "seed_question_ci95": [
+        -0.21903959561920808,
+        4.043807919123841
+      ],
+      "per_seed_delta_pp": [
+        2.274641954507161,
+        2.695871946082561,
+        1.5164279696714407,
+        0.7582139848357203,
+        2.443133951137321
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        225,
+        229,
+        226,
+        229,
+        220
+      ],
+      "mean_wrong_to_right": 40.4,
+      "mean_right_to_wrong": 35.6,
+      "delta_pp": 1.0126582278481013,
+      "question_ci95": [
+        -2.1107594936708853,
+        4.177215189873417
+      ],
+      "seed_question_ci95": [
+        -2.320675105485232,
+        4.345991561181434
+      ],
+      "per_seed_delta_pp": [
+        0.8438818565400843,
+        1.6877637130801686,
+        1.0548523206751055,
+        1.6877637130801686,
+        -0.21097046413502107
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 227,
+      "per_seed_correct": [
+        221,
+        215,
+        217,
+        225,
+        221
+      ],
+      "mean_wrong_to_right": 31.2,
+      "mean_right_to_wrong": 38.4,
+      "delta_pp": -1.5031315240083507,
+      "question_ci95": [
+        -4.342379958246346,
+        1.294363256784969
+      ],
+      "seed_question_ci95": [
+        -4.509394572025053,
+        1.5031315240083507
+      ],
+      "per_seed_delta_pp": [
+        -1.2526096033402923,
+        -2.5052192066805845,
+        -2.0876826722338206,
+        -0.41753653444676403,
+        -1.2526096033402923
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 330,
+      "per_seed_correct": [
+        340,
+        332,
+        332,
+        320,
+        343
+      ],
+      "mean_wrong_to_right": 78.8,
+      "mean_right_to_wrong": 75.4,
+      "delta_pp": 0.37652270210409744,
+      "question_ci95": [
+        -1.9269102990033222,
+        2.7248062015503796
+      ],
+      "seed_question_ci95": [
+        -2.104097452934662,
+        2.9235880398671097
+      ],
+      "per_seed_delta_pp": [
+        1.1074197120708749,
+        0.22148394241417496,
+        0.22148394241417496,
+        -1.1074197120708749,
+        1.4396456256921373
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 250,
+      "per_seed_correct": [
+        274,
+        252,
+        267,
+        256,
+        260
+      ],
+      "mean_wrong_to_right": 68.6,
+      "mean_right_to_wrong": 56.8,
+      "delta_pp": 2.185185185185185,
+      "question_ci95": [
+        -1.3333333333333333,
+        5.703703703703704
+      ],
+      "seed_question_ci95": [
+        -1.5925925925925926,
+        6.074074074074074
+      ],
+      "per_seed_delta_pp": [
+        4.444444444444445,
+        0.3703703703703704,
+        3.148148148148148,
+        1.1111111111111112,
+        1.8518518518518516
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 620,
+      "per_seed_correct": [
+        618,
+        614,
+        615,
+        611,
+        607
+      ],
+      "mean_wrong_to_right": 65.6,
+      "mean_right_to_wrong": 72.6,
+      "delta_pp": -0.8036739380022963,
+      "question_ci95": [
+        -3.145809414466131,
+        1.5614236509758896
+      ],
+      "seed_question_ci95": [
+        -3.30654420206659,
+        1.6303099885189436
+      ],
+      "per_seed_delta_pp": [
+        -0.2296211251435132,
+        -0.6888633754305395,
+        -0.5740528128587831,
+        -1.0332950631458095,
+        -1.4925373134328357
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 219,
+      "per_seed_correct": [
+        220,
+        222,
+        226,
+        223,
+        223
+      ],
+      "mean_wrong_to_right": 48.0,
+      "mean_right_to_wrong": 44.2,
+      "delta_pp": 0.695970695970696,
+      "question_ci95": [
+        -2.197802197802198,
+        3.6996336996337
+      ],
+      "seed_question_ci95": [
+        -2.381868131868131,
+        3.7362637362637363
+      ],
+      "per_seed_delta_pp": [
+        0.18315018315018314,
+        0.5494505494505495,
+        1.282051282051282,
+        0.7326007326007326,
+        0.7326007326007326
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 374,
+      "per_seed_correct": [
+        377,
+        376,
+        378,
+        375,
+        373
+      ],
+      "mean_wrong_to_right": 27.0,
+      "mean_right_to_wrong": 25.2,
+      "delta_pp": 0.41189931350114417,
+      "question_ci95": [
+        -2.425629290617849,
+        3.203661327231121
+      ],
+      "seed_question_ci95": [
+        -2.517162471395881,
+        3.4324942791762014
+      ],
+      "per_seed_delta_pp": [
+        0.6864988558352403,
+        0.4576659038901602,
+        0.9153318077803204,
+        0.2288329519450801,
+        -0.2288329519450801
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 668,
+      "per_seed_correct": [
+        678,
+        671,
+        672,
+        676,
+        669
+      ],
+      "mean_wrong_to_right": 66.8,
+      "mean_right_to_wrong": 61.6,
+      "delta_pp": 0.5816554809843401,
+      "question_ci95": [
+        -1.543624161073826,
+        2.7293064876957494
+      ],
+      "seed_question_ci95": [
+        -1.6778523489932886,
+        2.8187919463087248
+      ],
+      "per_seed_delta_pp": [
+        1.1185682326621924,
+        0.33557046979865773,
+        0.44742729306487694,
+        0.8948545861297539,
+        0.11185682326621924
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 741,
+      "per_seed_correct": [
+        768,
+        755,
+        766,
+        745,
+        763
+      ],
+      "mean_wrong_to_right": 111.4,
+      "mean_right_to_wrong": 93.0,
+      "delta_pp": 1.6268788682581785,
+      "question_ci95": [
+        -0.49557913351016786,
+        3.8373121131741827
+      ],
+      "seed_question_ci95": [
+        -0.7250221043324492,
+        3.9261715296197996
+      ],
+      "per_seed_delta_pp": [
+        2.3872679045092835,
+        1.237842617152962,
+        2.2104332449160036,
+        0.3536693191865605,
+        1.9451812555260832
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 613,
+      "per_seed_correct": [
+        635,
+        626,
+        612,
+        624,
+        623
+      ],
+      "mean_wrong_to_right": 123.2,
+      "mean_right_to_wrong": 112.2,
+      "delta_pp": 0.9060955518945634,
+      "question_ci95": [
+        -1.2355848434925867,
+        3.0971993410214176
+      ],
+      "seed_question_ci95": [
+        -1.4168039538714992,
+        3.1630971993410215
+      ],
+      "per_seed_delta_pp": [
+        1.8121911037891267,
+        1.070840197693575,
+        -0.08237232289950577,
+        0.9060955518945634,
+        0.8237232289950577
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_epoch4",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 378,
+      "per_seed_correct": [
+        374,
+        375,
+        380,
+        360,
+        382
+      ],
+      "mean_wrong_to_right": 105.8,
+      "mean_right_to_wrong": 109.6,
+      "delta_pp": -0.28700906344410876,
+      "question_ci95": [
+        -2.1148036253776437,
+        1.5256797583081574
+      ],
+      "seed_question_ci95": [
+        -2.326283987915408,
+        1.6918429003021147
+      ],
+      "per_seed_delta_pp": [
+        -0.3021148036253776,
+        -0.22658610271903326,
+        0.1510574018126888,
+        -1.3595166163141994,
+        0.3021148036253776
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Algebra",
+      "n": 1187,
+      "base_correct": 907,
+      "per_seed_correct": [
+        923,
+        925,
+        927,
+        926,
+        924
+      ],
+      "mean_wrong_to_right": 100.0,
+      "mean_right_to_wrong": 82.0,
+      "delta_pp": 1.5164279696714407,
+      "question_ci95": [
+        -0.3875315922493684,
+        3.420387531592249
+      ],
+      "seed_question_ci95": [
+        -0.5391743892165122,
+        3.5219039595619144
+      ],
+      "per_seed_delta_pp": [
+        1.3479359730412805,
+        1.5164279696714407,
+        1.6849199663016006,
+        1.6006739679865205,
+        1.4321819713563606
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Counting & Probability",
+      "n": 474,
+      "base_correct": 221,
+      "per_seed_correct": [
+        231,
+        228,
+        216,
+        224,
+        214
+      ],
+      "mean_wrong_to_right": 40.8,
+      "mean_right_to_wrong": 39.2,
+      "delta_pp": 0.33755274261603374,
+      "question_ci95": [
+        -2.70042194092827,
+        3.2911392405063293
+      ],
+      "seed_question_ci95": [
+        -2.9957805907173,
+        3.7552742616033754
+      ],
+      "per_seed_delta_pp": [
+        2.109704641350211,
+        1.4767932489451476,
+        -1.0548523206751055,
+        0.6329113924050633,
+        -1.4767932489451476
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Geometry",
+      "n": 479,
+      "base_correct": 227,
+      "per_seed_correct": [
+        214,
+        221,
+        219,
+        227,
+        216
+      ],
+      "mean_wrong_to_right": 37.0,
+      "mean_right_to_wrong": 44.6,
+      "delta_pp": -1.5866388308977037,
+      "question_ci95": [
+        -4.676409185803757,
+        1.5031315240083505
+      ],
+      "seed_question_ci95": [
+        -4.926931106471817,
+        1.753653444676409
+      ],
+      "per_seed_delta_pp": [
+        -2.7139874739039667,
+        -1.2526096033402923,
+        -1.6701461377870561,
+        0.0,
+        -2.2964509394572024
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Intermediate Algebra",
+      "n": 903,
+      "base_correct": 330,
+      "per_seed_correct": [
+        333,
+        323,
+        334,
+        313,
+        320
+      ],
+      "mean_wrong_to_right": 74.2,
+      "mean_right_to_wrong": 79.6,
+      "delta_pp": -0.5980066445182725,
+      "question_ci95": [
+        -2.7464008859357696,
+        1.6389811738648947
+      ],
+      "seed_question_ci95": [
+        -3.0343300110741973,
+        1.8604651162790697
+      ],
+      "per_seed_delta_pp": [
+        0.33222591362126247,
+        -0.7751937984496124,
+        0.4429678848283499,
+        -1.8826135105204873,
+        -1.1074197120708749
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Number Theory",
+      "n": 540,
+      "base_correct": 250,
+      "per_seed_correct": [
+        276,
+        279,
+        262,
+        271,
+        270
+      ],
+      "mean_wrong_to_right": 67.8,
+      "mean_right_to_wrong": 46.2,
+      "delta_pp": 4.0,
+      "question_ci95": [
+        0.8518518518518517,
+        7.2592592592592595
+      ],
+      "seed_question_ci95": [
+        0.5185185185185185,
+        7.555555555555555
+      ],
+      "per_seed_delta_pp": [
+        4.814814814814815,
+        5.37037037037037,
+        2.2222222222222223,
+        3.888888888888889,
+        3.7037037037037033
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Prealgebra",
+      "n": 871,
+      "base_correct": 620,
+      "per_seed_correct": [
+        617,
+        625,
+        615,
+        618,
+        610
+      ],
+      "mean_wrong_to_right": 64.8,
+      "mean_right_to_wrong": 67.8,
+      "delta_pp": -0.3444316877152698,
+      "question_ci95": [
+        -2.6176808266360507,
+        1.9288174512055105
+      ],
+      "seed_question_ci95": [
+        -2.732491389207807,
+        1.9747416762342134
+      ],
+      "per_seed_delta_pp": [
+        -0.3444316877152698,
+        0.5740528128587831,
+        -0.5740528128587831,
+        -0.2296211251435132,
+        -1.1481056257175661
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "type",
+      "category": "Precalculus",
+      "n": 546,
+      "base_correct": 219,
+      "per_seed_correct": [
+        214,
+        221,
+        227,
+        212,
+        233
+      ],
+      "mean_wrong_to_right": 51.2,
+      "mean_right_to_wrong": 48.8,
+      "delta_pp": 0.43956043956043955,
+      "question_ci95": [
+        -2.564102564102564,
+        3.4065934065934065
+      ],
+      "seed_question_ci95": [
+        -2.93040293040293,
+        3.8095238095238098
+      ],
+      "per_seed_delta_pp": [
+        -0.9157509157509158,
+        0.3663003663003663,
+        1.465201465201465,
+        -1.282051282051282,
+        2.564102564102564
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 1",
+      "n": 437,
+      "base_correct": 374,
+      "per_seed_correct": [
+        374,
+        384,
+        381,
+        380,
+        380
+      ],
+      "mean_wrong_to_right": 30.6,
+      "mean_right_to_wrong": 24.8,
+      "delta_pp": 1.3272311212814645,
+      "question_ci95": [
+        -1.4645308924485128,
+        4.073226544622425
+      ],
+      "seed_question_ci95": [
+        -1.6475972540045767,
+        4.393592677345538
+      ],
+      "per_seed_delta_pp": [
+        0.0,
+        2.2883295194508007,
+        1.6018306636155606,
+        1.3729977116704806,
+        1.3729977116704806
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 2",
+      "n": 894,
+      "base_correct": 668,
+      "per_seed_correct": [
+        678,
+        671,
+        672,
+        682,
+        681
+      ],
+      "mean_wrong_to_right": 71.8,
+      "mean_right_to_wrong": 63.0,
+      "delta_pp": 0.9843400447427294,
+      "question_ci95": [
+        -1.16331096196868,
+        3.1543624161073827
+      ],
+      "seed_question_ci95": [
+        -1.3199105145413872,
+        3.2885906040268456
+      ],
+      "per_seed_delta_pp": [
+        1.1185682326621924,
+        0.33557046979865773,
+        0.44742729306487694,
+        1.5659955257270695,
+        1.45413870246085
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 3",
+      "n": 1131,
+      "base_correct": 741,
+      "per_seed_correct": [
+        758,
+        772,
+        746,
+        749,
+        748
+      ],
+      "mean_wrong_to_right": 106.4,
+      "mean_right_to_wrong": 92.8,
+      "delta_pp": 1.202475685234306,
+      "question_ci95": [
+        -0.8134394341290893,
+        3.2891246684350133
+      ],
+      "seed_question_ci95": [
+        -1.0786914235190097,
+        3.5371352785145826
+      ],
+      "per_seed_delta_pp": [
+        1.5030946065428823,
+        2.7409372236958442,
+        0.4420866489832007,
+        0.707338638373121,
+        0.618921308576481
+      ],
+      "every_seed_positive": true
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 4",
+      "n": 1214,
+      "base_correct": 613,
+      "per_seed_correct": [
+        602,
+        625,
+        622,
+        613,
+        610
+      ],
+      "mean_wrong_to_right": 117.8,
+      "mean_right_to_wrong": 116.4,
+      "delta_pp": 0.11532125205930809,
+      "question_ci95": [
+        -1.9769357495881386,
+        2.191103789126853
+      ],
+      "seed_question_ci95": [
+        -2.14168039538715,
+        2.3558484349258646
+      ],
+      "per_seed_delta_pp": [
+        -0.9060955518945634,
+        0.9884678747940692,
+        0.7413509060955519,
+        0.0,
+        -0.2471169686985173
+      ],
+      "every_seed_positive": false
+    },
+    {
+      "scoring": "strict",
+      "family": "teacher7_expanded_epoch4",
+      "field": "level",
+      "category": "Level 5",
+      "n": 1324,
+      "base_correct": 378,
+      "per_seed_correct": [
+        396,
+        370,
+        379,
+        367,
+        368
+      ],
+      "mean_wrong_to_right": 109.2,
+      "mean_right_to_wrong": 111.2,
+      "delta_pp": -0.1510574018126888,
+      "question_ci95": [
+        -1.9788519637462236,
+        1.6771148036253722
+      ],
+      "seed_question_ci95": [
+        -2.2658610271903323,
+        1.918429003021148
+      ],
+      "per_seed_delta_pp": [
+        1.3595166163141994,
+        -0.6042296072507553,
+        0.0755287009063444,
+        -0.8308157099697886,
+        -0.7552870090634441
+      ],
+      "every_seed_positive": false
+    }
+  ],
+  "partition_conservation_passed": true,
+  "scope": "Descriptive complete official-subject and official-level partitions, selected after mainbaseline5000 was available but before any SFT5000 model was complete. All categories/all completed fixedfive-seedfamilies included; no category selected by its effect orpvalue. Unadjusted paired95%CIs are diagnostic, not additional primarytests. Each partition must sum5000 and its weighted effect must reproduce the alreadyfrozen overall analysis."
+}

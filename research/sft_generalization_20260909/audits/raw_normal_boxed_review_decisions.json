@@ -1,0 +1,86 @@
+{
+  "time": 1788997083.859277,
+  "script_sha256": "9f743973107b5a94e0df360ff290c5b52a9a641b7a636b618a0a2bf87259177c",
+  "review_sha256": "3792ee337a19ce7f2629607075bb91519df370beb88fe33da660c33c9c09f0df",
+  "reviewer": "AI research assistant, not independent human expert",
+  "decisions": [
+    {
+      "family": "student",
+      "index": 171,
+      "raw_model": "sample_matchedraw_lr1e5_s43_epoch2",
+      "source_model": "sample_all_lr1e5_s43_epoch2",
+      "raw_text_sha256": "9ce25c993e449268e0a3dda40f757b5434bb13bdfb2bf7f6e712087da76459ec",
+      "source_text_sha256": "d3f9cb8d3ef418df726aee37d43d76286e8f11878603353f3425a8ac0a0c2a4c",
+      "finding": "Raw correctly writes4+2(n-1)=130 but boxes65; n64, while65 gives132. Baseline and generated-target student expand the algebra correctly."
+    },
+    {
+      "family": "student",
+      "index": 180,
+      "raw_model": "sample_matchedraw_lr1e5_s43_epoch2",
+      "source_model": "sample_all_lr1e5_s43_epoch2",
+      "raw_text_sha256": "3e5c351a8726487cbb10b00bd9d9d5abbab064eef53d03f1fea28f7acca488e8",
+      "source_text_sha256": "394b999dae8fec6a298652d40e645befda11d8acb29e1ec532a23c2a67268434",
+      "finding": "Raw writes correct dot-product expressions but evaluates entries(1,1)as-6 instead of-5 and(3,1)as10 instead of14. Baseline and generated-target student give correct product."
+    },
+    {
+      "family": "teacher7",
+      "index": 363,
+      "raw_model": "teacher_matchedraw_lr5e5_s43_epoch4",
+      "source_model": "teacher_all_lr5e5_s43_epoch4",
+      "raw_text_sha256": "09304e85bf4021184ea1d07c6b92667221b0a9b483bfec3b85391309f4debeb3",
+      "source_text_sha256": "f4ab541f3e08693a1a4dcf77011ba35631dcd3003a8937011f2e281d1ec5a757",
+      "finding": "Raw drops second-column multipliers and returns a=7/2,b=1/8, which do not give an inverse. Correct a=-3,b=1/14. Generated-target teacher final is correct but its proof ALSO contains4*(3/14)=6/14 and an unresolved4/7=1 contradiction; do not label that full proof sound."
+    },
+    {
+      "family": "teacher7",
+      "index": 98,
+      "raw_model": "teacher_matchedraw_lr5e5_s43_epoch4",
+      "source_model": "teacher_all_lr5e5_s43_epoch4",
+      "raw_text_sha256": "b8565effaf9146121fabdb61ac8e9ea897be53f046588fa537aba01854ac12a8",
+      "source_text_sha256": "0b04a9512d8ea1344ba99f7e9464d700e3c2dc6428b274bcf22a0d01d515669c",
+      "finding": "Raw changes variable definitions and jumps to1. Setting u=x/a,v=y/b,w=z/c gives sum3 and pairwise-product sum0, so squared sum9. Baseline and generated-target teacher use valid identity."
+    }
+  ],
+  "exact_checks": {
+    "case171": {
+      "correct_n": 64,
+      "raw_n": 65,
+      "raw_substitution": 132
+    },
+    "case180": {
+      "correct_product": [
+        [
+          -5,
+          -2,
+          -3
+        ],
+        [
+          -8,
+          0,
+          -12
+        ],
+        [
+          14,
+          2,
+          -12
+        ]
+      ]
+    },
+    "case363": {
+      "correct_product": "Matrix([[1, 0], [0, 1]])",
+      "wrong_product": "Matrix([[-3/4, 13/14], [3/14, 1]])",
+      "source_model_false_product": "4*(3/14)=6/7, not6/14"
+    },
+    "case98": {
+      "witness": [
+        "2",
+        "2",
+        "-1"
+      ],
+      "sum": 3,
+      "reciprocal_sum": 0,
+      "square_sum": 9
+    }
+  },
+  "scope": "Four fixed-random cases within baseline/source-correct, raw-wrong, normal-stop complete-box subset. Not a prevalence estimate or a uniquely identified reasoning-compression mechanism."
+}

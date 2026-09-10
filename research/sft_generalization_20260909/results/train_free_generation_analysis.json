@@ -1,0 +1,402 @@
+{
+  "time": 1788986640.4609132,
+  "n": 256,
+  "historical_baseline_replay_equal_counts": {
+    "prediction": 256,
+    "correct": 256
+  },
+  "comparisons": {
+    "sample_all_lr1e5_s43_epoch2": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 151,
+        "delta_pp": 8.984375,
+        "question_ci95_pp": [
+          4.296875,
+          13.671875
+        ],
+        "wins": 32,
+        "losses": 9
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 32,
+        "delta_pp": 25.0,
+        "question_ci95_pp": [
+          17.96875,
+          32.8125
+        ],
+        "wins": 32,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 119,
+        "delta_pp": -7.03125,
+        "question_ci95_pp": [
+          -11.71875,
+          -3.125
+        ],
+        "wins": 0,
+        "losses": 9
+      }
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 189,
+        "delta_pp": 23.828125,
+        "question_ci95_pp": [
+          17.1875,
+          30.078125
+        ],
+        "wins": 71,
+        "losses": 10
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 71,
+        "delta_pp": 55.46875,
+        "question_ci95_pp": [
+          46.875,
+          64.0625
+        ],
+        "wins": 71,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 118,
+        "delta_pp": -7.8125,
+        "question_ci95_pp": [
+          -12.5,
+          -3.125
+        ],
+        "wins": 0,
+        "losses": 10
+      }
+    },
+    "sample_all_lr1e5_s44_epoch2": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 146,
+        "delta_pp": 7.03125,
+        "question_ci95_pp": [
+          1.953125,
+          12.109375
+        ],
+        "wins": 32,
+        "losses": 14
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 32,
+        "delta_pp": 25.0,
+        "question_ci95_pp": [
+          17.96875,
+          32.8125
+        ],
+        "wins": 32,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 114,
+        "delta_pp": -10.9375,
+        "question_ci95_pp": [
+          -16.40625,
+          -6.25
+        ],
+        "wins": 0,
+        "losses": 14
+      }
+    },
+    "teacher_all_lr5e5_s44_epoch4": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 185,
+        "delta_pp": 22.265625,
+        "question_ci95_pp": [
+          15.625,
+          28.515625
+        ],
+        "wins": 69,
+        "losses": 12
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 69,
+        "delta_pp": 53.90625,
+        "question_ci95_pp": [
+          45.3125,
+          62.5
+        ],
+        "wins": 69,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 116,
+        "delta_pp": -9.375,
+        "question_ci95_pp": [
+          -14.84375,
+          -4.6875
+        ],
+        "wins": 0,
+        "losses": 12
+      }
+    },
+    "sample_all_lr1e5_s45_epoch2": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 155,
+        "delta_pp": 10.546875,
+        "question_ci95_pp": [
+          5.078125,
+          16.015625
+        ],
+        "wins": 40,
+        "losses": 13
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 40,
+        "delta_pp": 31.25,
+        "question_ci95_pp": [
+          23.4375,
+          39.0625
+        ],
+        "wins": 40,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 115,
+        "delta_pp": -10.15625,
+        "question_ci95_pp": [
+          -15.625,
+          -5.46875
+        ],
+        "wins": 0,
+        "losses": 13
+      }
+    },
+    "teacher_all_lr5e5_s45_epoch4": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 181,
+        "delta_pp": 20.703125,
+        "question_ci95_pp": [
+          14.0625,
+          27.734375
+        ],
+        "wins": 69,
+        "losses": 16
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 69,
+        "delta_pp": 53.90625,
+        "question_ci95_pp": [
+          45.3125,
+          62.5
+        ],
+        "wins": 69,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 112,
+        "delta_pp": -12.5,
+        "question_ci95_pp": [
+          -17.96875,
+          -7.03125
+        ],
+        "wins": 0,
+        "losses": 16
+      }
+    },
+    "teacher32_all_qkvo16_lr1e5_s43_epoch4": {
+      "all": {
+        "n": 256,
+        "base_correct": 128,
+        "sft_correct": 149,
+        "delta_pp": 8.203125,
+        "question_ci95_pp": [
+          1.5625,
+          14.84375
+        ],
+        "wins": 52,
+        "losses": 31
+      },
+      "historical_wrong": {
+        "n": 128,
+        "base_correct": 0,
+        "sft_correct": 52,
+        "delta_pp": 40.625,
+        "question_ci95_pp": [
+          32.03125,
+          49.21875
+        ],
+        "wins": 52,
+        "losses": 0
+      },
+      "historical_correct": {
+        "n": 128,
+        "base_correct": 128,
+        "sft_correct": 97,
+        "delta_pp": -24.21875,
+        "question_ci95_pp": [
+          -32.03125,
+          -17.1875
+        ],
+        "wins": 0,
+        "losses": 31
+      }
+    }
+  },
+  "families": {
+    "sample_all_lr1e5": {
+      "models": [
+        "sample_all_lr1e5_s43_epoch2",
+        "sample_all_lr1e5_s44_epoch2",
+        "sample_all_lr1e5_s45_epoch2"
+      ],
+      "mean_delta_pp": 8.854166666666668,
+      "all_seeds_positive": true,
+      "question_ci95_pp": [
+        4.427083333333333,
+        13.411458333333332
+      ],
+      "seed_question_ci95_pp": [
+        3.90625,
+        13.932291666666666
+      ]
+    },
+    "teacher_all_lr5e5": {
+      "models": [
+        "teacher_all_lr5e5_s43_epoch4",
+        "teacher_all_lr5e5_s44_epoch4",
+        "teacher_all_lr5e5_s45_epoch4"
+      ],
+      "mean_delta_pp": 22.265625,
+      "all_seeds_positive": true,
+      "question_ci95_pp": [
+        16.145833333333336,
+        28.255208333333336
+      ],
+      "seed_question_ci95_pp": [
+        16.015625,
+        28.385416666666668
+      ]
+    }
+  },
+  "strict_sensitivity": {
+    "audit_sha256": "90cd2e8ca56dd0d6994520dee0bf3a3c030c93f3e85a845165b02e60033c5bc4",
+    "base_correct": 126,
+    "per_model": {
+      "sample_all_lr1e5_s43_epoch2": {
+        "correct": 150,
+        "delta_pp": 9.375,
+        "question_ci95_pp": [
+          4.6875,
+          14.0625
+        ]
+      },
+      "teacher_all_lr5e5_s43_epoch4": {
+        "correct": 189,
+        "delta_pp": 24.609375,
+        "question_ci95_pp": [
+          17.96875,
+          31.25
+        ]
+      },
+      "sample_all_lr1e5_s44_epoch2": {
+        "correct": 145,
+        "delta_pp": 7.421875,
+        "question_ci95_pp": [
+          2.34375,
+          12.5
+        ]
+      },
+      "teacher_all_lr5e5_s44_epoch4": {
+        "correct": 185,
+        "delta_pp": 23.046875,
+        "question_ci95_pp": [
+          16.40625,
+          29.6875
+        ]
+      },
+      "sample_all_lr1e5_s45_epoch2": {
+        "correct": 154,
+        "delta_pp": 10.9375,
+        "question_ci95_pp": [
+          5.46875,
+          16.40625
+        ]
+      },
+      "teacher_all_lr5e5_s45_epoch4": {
+        "correct": 181,
+        "delta_pp": 21.484375,
+        "question_ci95_pp": [
+          14.84375,
+          28.515625
+        ]
+      },
+      "teacher32_all_qkvo16_lr1e5_s43_epoch4": {
+        "correct": 148,
+        "delta_pp": 8.59375,
+        "question_ci95_pp": [
+          1.5625,
+          15.625
+        ]
+      }
+    },
+    "families": {
+      "sample_all_lr1e5": {
+        "mean_delta_pp": 9.244791666666668,
+        "all_seeds_positive": true,
+        "question_ci95_pp": [
+          4.6875,
+          13.802083333333332
+        ],
+        "seed_question_ci95_pp": [
+          4.166666666666666,
+          14.322916666666666
+        ]
+      },
+      "teacher_all_lr5e5": {
+        "mean_delta_pp": 23.046875,
+        "all_seeds_positive": true,
+        "question_ci95_pp": [
+          16.927083333333336,
+          29.166666666666668
+        ],
+        "seed_question_ci95_pp": [
+          16.796875,
+          29.296875
+        ]
+      }
+    }
+  },
+  "missing": [],
+  "interpretation": "Seen-training diagnostic on a deliberately balanced historical-correctness sample; never an independent generalization score. Free-generation gains, if present, must be contrasted with fixed-seed dev/OOD results rather than teacher-forced loss alone."
+}

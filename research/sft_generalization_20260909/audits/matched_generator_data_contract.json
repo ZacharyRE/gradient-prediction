@@ -1,0 +1,72 @@
+{
+  "time": 1789005622.2321417,
+  "passed": true,
+  "script_sha256": "897793b9575f42caf0aba9b0711bb5c3beb48bcddb73e7807b488346ddb9fe90",
+  "subsets": [
+    {
+      "subset": "sample_common",
+      "parent": "sample_all",
+      "n": 1429,
+      "all_full_rows_equal_parent": true,
+      "subset_sha256": "5490c4e758e759bc27d21d94853ce05c7f231a03100c1dd057061a453cf54c6b",
+      "parent_sha256": "cd02dccbd429a822e3ccf78a019fc38286949aac0cd51a45fc61cf816085a1e0",
+      "stored_target_tokens": 652318,
+      "target_sources": [
+        "sample"
+      ]
+    },
+    {
+      "subset": "teacher_common",
+      "parent": "teacher_all",
+      "n": 1429,
+      "all_full_rows_equal_parent": true,
+      "subset_sha256": "e8b5326e66e81e89646f7b8e45571836e1be16fe234cdcc81f12ef392ad18f13",
+      "parent_sha256": "7cd1daa1092fb5d30c136f9aae09c3bee43888f48f6766bb796af58cdfb9df6d",
+      "stored_target_tokens": 650957,
+      "target_sources": [
+        "teacher"
+      ]
+    },
+    {
+      "subset": "teacher32_common_teacher7",
+      "parent": "teacher32_all",
+      "n": 1465,
+      "all_full_rows_equal_parent": true,
+      "subset_sha256": "5e5bad5324e8b1c167a52a57e785377e9be69d232be4e6e00922b7334ad84b23",
+      "parent_sha256": "6558b65f1c6e288d22d947e01e259a6758f1e3096730de8ac3bf3003411537ac",
+      "stored_target_tokens": 734689,
+      "target_sources": [
+        "teacher32"
+      ]
+    },
+    {
+      "subset": "teacher7_common_teacher32",
+      "parent": "teacher_all",
+      "n": 1465,
+      "all_full_rows_equal_parent": true,
+      "subset_sha256": "7bb4f7cf373c0e57fa69fae6101a4e6272531bb01a1f90dee46f14454d1394d6",
+      "parent_sha256": "7cd1daa1092fb5d30c136f9aae09c3bee43888f48f6766bb796af58cdfb9df6d",
+      "stored_target_tokens": 675695,
+      "target_sources": [
+        "teacher"
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "first": "sample_common",
+      "second": "teacher_common",
+      "n": 1429,
+      "same_question_order": true,
+      "identical_target_texts": 0
+    },
+    {
+      "first": "teacher32_common_teacher7",
+      "second": "teacher7_common_teacher32",
+      "n": 1465,
+      "same_question_order": true,
+      "identical_target_texts": 0
+    }
+  ],
+  "scope": "Data provenance and exact question matching, not certification of mathematical process correctness. Stored target-token counts retain the original builder convention."
+}

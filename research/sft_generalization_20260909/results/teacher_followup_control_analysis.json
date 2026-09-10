@@ -1,0 +1,566 @@
+{
+  "time": 1789006246.5741057,
+  "script_sha256": "fbb048668374f457b2233fdd77bd37c32d9de360e57c0151965ae038f06cf5ce",
+  "n": 500,
+  "seed": 43,
+  "evaluator_version_bridge_sha256": "4efd52a4edaa90725aaaf197daa1443adfc1a8fcb37db2012988526718cd622f",
+  "identities": {
+    "base": {
+      "manifest_sha256": "e1b735cc6bd9360e120a8c0e0b514052d18481c982bb3d79eec0c5fdad214a87",
+      "predictions_sha256": "e4610aef21de955f6fb5f1eb5331306b27d5171a720e4418fc6d4af34bdfbd62",
+      "adapter": null
+    },
+    "teacher_all_qkvo64_lr1e5_s43_epoch4": {
+      "manifest_sha256": "0f92c316b2faa8dff24255d0f966064165eed0302c8f30f490b5fb6ec78fe97f",
+      "predictions_sha256": "a2b7b1bfa3f1d073acfaf002c477df3e1ff255c36a442b5660381b79d7c7644a",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_qkvo64_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "429041d96c8f128081c228dbbd06e06dcc741c8f28cb0a735bef0b2032d6c2c5",
+          "adapter_model.safetensors": "1b1e364d7d2df84a77018552a06b636183ed465665942ffcda369c7325aa6802",
+          "ready.json": "37e40321614d7e656365c7f5eb4ebd111d136527b3096013b0a6095d1ffeb7ba",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_lr1e5_s43_epoch4": {
+      "manifest_sha256": "c7d57b23278eb2f2e7164032444bbec900aedb48066b74290864cc497bdc3ee7",
+      "predictions_sha256": "3ccf920f9cba93dda515900ccafb5cdf0cfb489b4cc6431c114379c41b8ca22c",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_lr1e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "24e86877e34333f48fc4d69ea0e4e712fcba47d644aaeb7d4d00508d6288ad24",
+          "adapter_model.safetensors": "4e3daad772db9af8246eba112e20b73979f34f4926807f5f56da6abdc1811897",
+          "ready.json": "a3e16dabf54b61c6c800d7e2976e2e0e6321dc0edee0e3c6a9efa26e6ea59f17",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_qkvo64_lr5e5_s43_epoch4": {
+      "manifest_sha256": "a39f2cd73811297e160603e028e6398f88f23865abddf4cdfa72739ba3d693ac",
+      "predictions_sha256": "b55b59fe64d83c52ea93743aea181f498706a8920e5eb393a4ab1003ed01b0bf",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_qkvo64_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "21c4ad31d9fa3ee77aff5c6b6c92fcd7805eb231db4a7ad7e6cd811ce35bebb0",
+          "adapter_model.safetensors": "40ea4b5de099b08970d9ea7b43ee468151d143f93a95ab4283bbdf5aabfa1ed7",
+          "ready.json": "4c510341384192a4ffc9eb39d35855f02b42341d77b955bdf6dc18dd8f1b7c61",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_lr5e5_s43_epoch4": {
+      "manifest_sha256": "ab472d8ca67fc030e14652a9d414464a02dfa9429bbe97a160db6f6c233b3239",
+      "predictions_sha256": "9f32922f0ec718a608759f72581c5e96fdc64378db97e8ae370489f9e555b345",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "3901bf417bf54dbc69c5b1332849bfb6ffda278148d948be502ab94ab31ce974",
+          "adapter_model.safetensors": "0bc00e47815447a2731872634f205d7f07350701d1f15d3c06aad31e0f1db78c",
+          "ready.json": "8d083b3fdf144913c31e7aa4bcb8bcdcd10873fb78fd78749e1ee43dccaac1d1",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+      "manifest_sha256": "4439dfc438db9c4bcc3c00bb8012aadea3726c3f6f2e17f4bd34828d83171da6",
+      "predictions_sha256": "8c6e11313a335f0a7f6347a30660df99003bfd1bd81a7cb536ba20d092862320",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_dftkl0_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "f5a45852719318aa63cfb9911760bb096091d601b87fda02d86bebc2a20cb79e",
+          "adapter_model.safetensors": "84d61a4a092064618f7683985555e7daf2dc53e57833725b3b956163edc6b979",
+          "ready.json": "bbf1f679de5a67e5fff060297a90006fc44c928d9f33c4fc86f0de149519ab50",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+      "manifest_sha256": "9d015fb1d3bed0f8b3386b03e395f87e3efff5f2eee6cbd9480fd2cece220f5d",
+      "predictions_sha256": "19537f5c1845a64b0e61375e49651c8dac130002baeec2c5d40c43eb2c0a778d",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_dftkl1_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "23301483c0dac83c6fa98a95bb61fd02ea55fed873f48956aeed096a46d6b268",
+          "adapter_model.safetensors": "bb566b72c8e8fa6221d573a2054719d89c2fdc6bf58dfa8f24a9876a341cce42",
+          "ready.json": "ab5859b539e4411ede466578949e21e779141ab040755b5d5afec3ac215872b6",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "teacher_all_kl1_lr5e5_s43_epoch4": {
+      "manifest_sha256": "286d4d1c9d788cd6bb53c414b3a74d01b0da5b33e40f3590e8c83c4bf6fdf49d",
+      "predictions_sha256": "e81e76031ca5bde6c6bc983961bec4c08f6aaf62fa12054b305aa2ee8616b4f5",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/teacher_all_kl1_lr5e5_s43/epoch4",
+        "files": {
+          "adapter_config.json": "dbd63bdbca4a6cd6b1d3044808f23d9d7489dfcef08baba58f0bab48643dc14a",
+          "adapter_model.safetensors": "3b76caccfe02a0d2ebc7b011d18253a0ad9ce94d4132944b7fd05d582f95e7ad",
+          "ready.json": "c44cc13e108e44dab9945ca381829e8aeba8d990d5afd1572da6c9148c6a4cba",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "sample_multi_lr1e5_s43_epoch1": {
+      "manifest_sha256": "50d36ef81726dcbd27982a9c08b301d2642db684dfe3a2660e798ca86ec15e9b",
+      "predictions_sha256": "716810ba12a3dfccfe03e43ce329b77f7774fbae78e8ed8346a407df552e3e79",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/sample_multi_lr1e5_s43/epoch1",
+        "files": {
+          "adapter_config.json": "aa11f6c9c39c819044fcadc77417b901b35eee1afa5eb1d98fda2c11553cd807",
+          "adapter_model.safetensors": "ef92955afa2e17a288de3362d3f8d6c37d851f701f0d16a64fb1fc71fb016d92",
+          "ready.json": "6fa37772dc384b9a923719c3d535ebc92597c50bfeea05602188b64de332aad3",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    },
+    "sample_repeat_lr1e5_s43_epoch1": {
+      "manifest_sha256": "96389958a28fd8360e7e2046fc6d58df83acc870f8c81be931d9d6d69a2987df",
+      "predictions_sha256": "353ae118e2803c5347fdd8efbfa4467da170f940d842de1e40fab084d82da49e",
+      "adapter": {
+        "path": "/mnt/micron/yixiaore/adapter/research/sft_generalization_20260909/results/training/sample_repeat_lr1e5_s43/epoch1",
+        "files": {
+          "adapter_config.json": "082c6ad4b07f0f8cd6d6799c3ae8b6146502899360125021fcfb1812962b06b1",
+          "adapter_model.safetensors": "7e68ce70b2e559e65d435dc3896bdbf6fe7f54d72ac94d24120f71b58f47cfb1",
+          "ready.json": "90e8a10015c69a6fbeb632c46c124bf1c896be55865f95e88436df6c6b13922a",
+          "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+          "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+        }
+      }
+    }
+  },
+  "scoring_audit_sha256": "f5aa17b0a73bf9e1a6dcb59052109d1f8903e50c10f4bf4774daa83bda1626d8",
+  "results": {
+    "raw": {
+      "base_correct": 299,
+      "models": {
+        "base": {
+          "correct": 299,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "teacher_all_qkvo64_lr1e5_s43_epoch4": {
+          "correct": 297,
+          "vs_base": {
+            "delta_pp": -0.4,
+            "ci95_pp": [
+              -3.8,
+              3.0
+            ],
+            "wins": 35,
+            "losses": 37
+          }
+        },
+        "teacher_all_lr1e5_s43_epoch4": {
+          "correct": 293,
+          "vs_base": {
+            "delta_pp": -1.2,
+            "ci95_pp": [
+              -4.2,
+              1.7999999999999998
+            ],
+            "wins": 28,
+            "losses": 34
+          }
+        },
+        "teacher_all_qkvo64_lr5e5_s43_epoch4": {
+          "correct": 308,
+          "vs_base": {
+            "delta_pp": 1.7999999999999998,
+            "ci95_pp": [
+              -1.6,
+              5.2
+            ],
+            "wins": 41,
+            "losses": 32
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.4,
+            "ci95_pp": [
+              -0.6,
+              5.6000000000000005
+            ],
+            "wins": 38,
+            "losses": 26
+          }
+        },
+        "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+          "correct": 282,
+          "vs_base": {
+            "delta_pp": -3.4000000000000004,
+            "ci95_pp": [
+              -7.000000000000001,
+              0.2
+            ],
+            "wins": 32,
+            "losses": 49
+          }
+        },
+        "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+          "correct": 300,
+          "vs_base": {
+            "delta_pp": 0.2,
+            "ci95_pp": [
+              -2.6,
+              3.0
+            ],
+            "wins": 27,
+            "losses": 26
+          }
+        },
+        "teacher_all_kl1_lr5e5_s43_epoch4": {
+          "correct": 309,
+          "vs_base": {
+            "delta_pp": 2.0,
+            "ci95_pp": [
+              -1.2,
+              5.2
+            ],
+            "wins": 36,
+            "losses": 26
+          }
+        },
+        "sample_multi_lr1e5_s43_epoch1": {
+          "correct": 295,
+          "vs_base": {
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -3.5999999999999996,
+              2.0
+            ],
+            "wins": 24,
+            "losses": 28
+          }
+        },
+        "sample_repeat_lr1e5_s43_epoch1": {
+          "correct": 294,
+          "vs_base": {
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -4.0,
+              1.7999999999999998
+            ],
+            "wins": 25,
+            "losses": 30
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "teacher_all_qkvo64_lr1e5_s43_epoch4",
+          "control": "teacher_all_lr1e5_s43_epoch4",
+          "hypothesis": "Same teacher targets and LR1e-5: trained QKVO rank64 versus rank16",
+          "treatment_correct": 297,
+          "control_correct": 293,
+          "delta_pp": 0.8,
+          "ci95_pp": [
+            -1.7999999999999998,
+            3.5999999999999996
+          ],
+          "wins": 26,
+          "losses": 22
+        },
+        {
+          "treatment": "teacher_all_qkvo64_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher targets and LR5e-5: trained QKVO rank64 versus rank16",
+          "treatment_correct": 308,
+          "control_correct": 311,
+          "delta_pp": -0.6,
+          "ci95_pp": [
+            -3.8,
+            2.4
+          ],
+          "wins": 29,
+          "losses": 32
+        },
+        {
+          "treatment": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher targets: DFT versus CE",
+          "treatment_correct": 282,
+          "control_correct": 311,
+          "delta_pp": -5.800000000000001,
+          "ci95_pp": [
+            -9.2,
+            -2.4
+          ],
+          "wins": 23,
+          "losses": 52
+        },
+        {
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "hypothesis": "Same DFT teacher training: adding forward KL1",
+          "treatment_correct": 300,
+          "control_correct": 282,
+          "delta_pp": 3.5999999999999996,
+          "ci95_pp": [
+            0.2,
+            7.199999999999999
+          ],
+          "wins": 49,
+          "losses": 31
+        },
+        {
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher training and forward KL1: DFT versus CE",
+          "treatment_correct": 300,
+          "control_correct": 309,
+          "delta_pp": -1.7999999999999998,
+          "ci95_pp": [
+            -5.0,
+            1.4000000000000001
+          ],
+          "wins": 30,
+          "losses": 39
+        },
+        {
+          "treatment": "sample_multi_lr1e5_s43_epoch1",
+          "control": "sample_repeat_lr1e5_s43_epoch1",
+          "hypothesis": "Same6252 training slots and problem order: multiple retained texts versus one repeated text",
+          "treatment_correct": 295,
+          "control_correct": 294,
+          "delta_pp": 0.2,
+          "ci95_pp": [
+            -2.1999999999999997,
+            2.6
+          ],
+          "wins": 19,
+          "losses": 18
+        }
+      ]
+    },
+    "strict": {
+      "base_correct": 298,
+      "models": {
+        "base": {
+          "correct": 298,
+          "vs_base": {
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0
+          }
+        },
+        "teacher_all_qkvo64_lr1e5_s43_epoch4": {
+          "correct": 297,
+          "vs_base": {
+            "delta_pp": -0.2,
+            "ci95_pp": [
+              -3.5999999999999996,
+              3.2
+            ],
+            "wins": 36,
+            "losses": 37
+          }
+        },
+        "teacher_all_lr1e5_s43_epoch4": {
+          "correct": 293,
+          "vs_base": {
+            "delta_pp": -1.0,
+            "ci95_pp": [
+              -4.2,
+              2.0
+            ],
+            "wins": 29,
+            "losses": 34
+          }
+        },
+        "teacher_all_qkvo64_lr5e5_s43_epoch4": {
+          "correct": 308,
+          "vs_base": {
+            "delta_pp": 2.0,
+            "ci95_pp": [
+              -1.4000000000000001,
+              5.4
+            ],
+            "wins": 42,
+            "losses": 32
+          }
+        },
+        "teacher_all_lr5e5_s43_epoch4": {
+          "correct": 311,
+          "vs_base": {
+            "delta_pp": 2.6,
+            "ci95_pp": [
+              -0.4,
+              5.800000000000001
+            ],
+            "wins": 39,
+            "losses": 26
+          }
+        },
+        "teacher_all_dftkl0_lr5e5_s43_epoch4": {
+          "correct": 281,
+          "vs_base": {
+            "delta_pp": -3.4000000000000004,
+            "ci95_pp": [
+              -7.000000000000001,
+              0.2
+            ],
+            "wins": 33,
+            "losses": 50
+          }
+        },
+        "teacher_all_dftkl1_lr5e5_s43_epoch4": {
+          "correct": 300,
+          "vs_base": {
+            "delta_pp": 0.4,
+            "ci95_pp": [
+              -2.4,
+              3.2
+            ],
+            "wins": 28,
+            "losses": 26
+          }
+        },
+        "teacher_all_kl1_lr5e5_s43_epoch4": {
+          "correct": 309,
+          "vs_base": {
+            "delta_pp": 2.1999999999999997,
+            "ci95_pp": [
+              -1.0,
+              5.4
+            ],
+            "wins": 37,
+            "losses": 26
+          }
+        },
+        "sample_multi_lr1e5_s43_epoch1": {
+          "correct": 294,
+          "vs_base": {
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -3.8,
+              2.0
+            ],
+            "wins": 25,
+            "losses": 29
+          }
+        },
+        "sample_repeat_lr1e5_s43_epoch1": {
+          "correct": 294,
+          "vs_base": {
+            "delta_pp": -0.8,
+            "ci95_pp": [
+              -3.8,
+              2.1999999999999997
+            ],
+            "wins": 26,
+            "losses": 30
+          }
+        }
+      },
+      "pairs": [
+        {
+          "treatment": "teacher_all_qkvo64_lr1e5_s43_epoch4",
+          "control": "teacher_all_lr1e5_s43_epoch4",
+          "hypothesis": "Same teacher targets and LR1e-5: trained QKVO rank64 versus rank16",
+          "treatment_correct": 297,
+          "control_correct": 293,
+          "delta_pp": 0.8,
+          "ci95_pp": [
+            -1.7999999999999998,
+            3.5999999999999996
+          ],
+          "wins": 26,
+          "losses": 22
+        },
+        {
+          "treatment": "teacher_all_qkvo64_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher targets and LR5e-5: trained QKVO rank64 versus rank16",
+          "treatment_correct": 308,
+          "control_correct": 311,
+          "delta_pp": -0.6,
+          "ci95_pp": [
+            -3.8,
+            2.4
+          ],
+          "wins": 29,
+          "losses": 32
+        },
+        {
+          "treatment": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "control": "teacher_all_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher targets: DFT versus CE",
+          "treatment_correct": 281,
+          "control_correct": 311,
+          "delta_pp": -6.0,
+          "ci95_pp": [
+            -9.4,
+            -2.6
+          ],
+          "wins": 23,
+          "losses": 53
+        },
+        {
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_dftkl0_lr5e5_s43_epoch4",
+          "hypothesis": "Same DFT teacher training: adding forward KL1",
+          "treatment_correct": 300,
+          "control_correct": 281,
+          "delta_pp": 3.8,
+          "ci95_pp": [
+            0.2,
+            7.3999999999999995
+          ],
+          "wins": 50,
+          "losses": 31
+        },
+        {
+          "treatment": "teacher_all_dftkl1_lr5e5_s43_epoch4",
+          "control": "teacher_all_kl1_lr5e5_s43_epoch4",
+          "hypothesis": "Same teacher training and forward KL1: DFT versus CE",
+          "treatment_correct": 300,
+          "control_correct": 309,
+          "delta_pp": -1.7999999999999998,
+          "ci95_pp": [
+            -5.0,
+            1.4000000000000001
+          ],
+          "wins": 30,
+          "losses": 39
+        },
+        {
+          "treatment": "sample_multi_lr1e5_s43_epoch1",
+          "control": "sample_repeat_lr1e5_s43_epoch1",
+          "hypothesis": "Same6252 training slots and problem order: multiple retained texts versus one repeated text",
+          "treatment_correct": 294,
+          "control_correct": 294,
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -2.4,
+            2.4
+          ],
+          "wins": 18,
+          "losses": 18
+        }
+      ]
+    }
+  },
+  "scope": "Fixed prospective pilot endpoints; single seed43 and unadjusted intervals. Rank64 changes parameterization/initial A shapes; multiple targets are distinct texts, not certified distinct strategies. No held-out general efficacy claim."
+}

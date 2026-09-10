@@ -1,0 +1,244 @@
+{
+  "time": 1789044108.9544857,
+  "preview_only": false,
+  "all_preview_full_outputs_read": true,
+  "authoritative_reconciliation_pending": false,
+  "reviewer": "assistant; unblinded post-outcome process assessment; not independent human review",
+  "case_file_sha256": "c6321ee47d8d19c54aa5fa698b93f7c534a69a9c5a52ae75b8c6df4b21f7622a",
+  "n_cases": 8,
+  "n_output_events": 11,
+  "correct_final_output_events": 3,
+  "decisions": [
+    {
+      "case_id": "minerva_units_000",
+      "index": 5,
+      "last_box": "90^\\circ",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "avg_teacher7_expansion_combined_1234_s43_epoch4"
+      ],
+      "reason": "Wrong incident angle, not a degree/radian equivalence. Snell gives sin(theta_c)=1/1.3, hence arcsin(10/13)=0.8776364 rad=50.28486 degrees. Output inverts the ratio and concludes90 degrees from an impossible sine.",
+      "output_bindings": [
+        {
+          "model": "avg_teacher7_expansion_combined_1234_s43_epoch4",
+          "predictions_sha256": "c0f1a7b651f9cc6f6d5344443fbd11a700a1fc6abbba855ba7785dda7dac02d0",
+          "text_sha256": "1cd67919aa8fa6592222c55a501b9b4a73c975ba12c6d5d5c0f65cdcab1ff48f",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_001",
+      "index": 8,
+      "last_box": "2\\%",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "base"
+      ],
+      "reason": "Wrong requested quantity. A2% occulted area implies flux ratio0.98, magnitude change magnitude=-2.5log10(.98)=0.02193481, rounded.022. Output treats magnitude as proportional to area and boxes2%. Percent-to-fraction conversion alone does not make this astronomical magnitude result correct.",
+      "output_bindings": [
+        {
+          "model": "base",
+          "predictions_sha256": "6d202d1e65f4734dfff290c41f292f7e8877a34665e2778031ff8c336d0f6f45",
+          "text_sha256": "826e657c357a0c863d0ffcb6dc63d103a7fc15ed21a4d2c07ec1effa2d14f00b",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_002",
+      "index": 212,
+      "last_box": "-6.7 \\times 10^{-10} \\Delta \\mathrm{H}_{\\mathrm{f}}^{\\circ}",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "teacher_all_lr5e5_s46_epoch4"
+      ],
+      "reason": "The circ marks standard-state enthalpy, not degrees. Output is an undetermined multiple of Delta H_f^circ using an invented vacancy equation, so it supplies no determined requested vacancy energy. Literal12340 C exceeds Ir melting2446 C; gold1.5 is not verified from literal prompt. Under dilute-vacancy c=A exp(-H/kT), using hypothetical1234 C gives1.496866 eV, whereas literal12340 C gives-1.534336 eV. OCR hypothesis is plausible but unproven; dataset is not silently corrected.",
+      "output_bindings": [
+        {
+          "model": "teacher_all_lr5e5_s46_epoch4",
+          "predictions_sha256": "72c63c77452f9bc4cf2c12b55a5175a60f2eb8e9a4838d99acc23f75f40ab8c5",
+          "text_sha256": "0e8f2d65cd866d95ce600aee727bb6eda10bb08440c6345d22e55b204026f985",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_003",
+      "index": 231,
+      "last_box": "100\\%",
+      "final_answer_correct": true,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "avg_teacher7_1234_s45_epoch4"
+      ],
+      "reason": "Final100% is correct to ordinary rounding: k=1.7e14 exp(-250000/(8.314*873.15))=.18797715 /s; after600s unreacted fraction=exp(-112.7863). Whole derivation is invalid: output copies malformed8.31e23 from prompt scaffold and uses an incorrect completion expression. Correct final answer is rejected by percent parsing; no correct-process claim.",
+      "output_bindings": [
+        {
+          "model": "avg_teacher7_1234_s45_epoch4",
+          "predictions_sha256": "91c8277e6661fbe4b1eda0564ebe008cf25a5c5cf167198eebbfdfc92cdd0629",
+          "text_sha256": "927dc46c4313e1115078d3ec70ba8efaaf29f468858af982a6649bf83709a012",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_004",
+      "index": 242,
+      "last_box": "12.4\\%",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "base"
+      ],
+      "reason": "Asked repulsive/attractive energy percentage is100/n=12.5%. Output12.4% is not exact and exceeds frozen relative1e-4 tolerance (relative error.008). Looser1% tolerance could accept context-normalized value, but this is an arithmetic approximation as well as notation, not an exact unit-only rescue.",
+      "output_bindings": [
+        {
+          "model": "base",
+          "predictions_sha256": "6d202d1e65f4734dfff290c41f292f7e8877a34665e2778031ff8c336d0f6f45",
+          "text_sha256": "2685c8f1b49dbc3b82e9802ee06aaabdc162c72460e02feb0150f000d31af3c9",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_005",
+      "index": 242,
+      "last_box": "12.5\\%",
+      "final_answer_correct": true,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "avg_teacher7_1234_s45_epoch4",
+        "teacher7_expansion_combined_lr5e5_s44_epoch4"
+      ],
+      "reason": "Both actual full outputs give final12.5%, correct since dV/dr=0 implies A/r=nB/r^n, so repulsive/attractive=1/n=1/8. Both have severe errors in equilibrium spacing and intermediate energies, then state1/n correctly. Final-answer correctness does not certify full reasoning. Primary45 and supplement44 are separate output events.",
+      "output_bindings": [
+        {
+          "model": "avg_teacher7_1234_s45_epoch4",
+          "predictions_sha256": "91c8277e6661fbe4b1eda0564ebe008cf25a5c5cf167198eebbfdfc92cdd0629",
+          "text_sha256": "48a1a49cd96ad285b9bcd34324d614d274f695c1747b4734bd34b512f77548c7",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        },
+        {
+          "model": "teacher7_expansion_combined_lr5e5_s44_epoch4",
+          "predictions_sha256": "af90e922fe6bba98b9d25eee9ba1d3a6cd10d077c1a513268b33dbb72eb3f223",
+          "text_sha256": "7079577b61416ce36202ed471d5e965ea8c62d5dad5420fcc7a02436926e0a27",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_006",
+      "index": 242,
+      "last_box": "5.94 \\times 10^8\\%",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "teacher_all_lr5e5_s43_epoch4"
+      ],
+      "reason": "Final5.94e8% is wrong; equilibrium derivative fixes the ratio1/8=12.5% independently of the erroneous radius/energy arithmetic. Not recoverable by unit normalization.",
+      "output_bindings": [
+        {
+          "model": "teacher_all_lr5e5_s43_epoch4",
+          "predictions_sha256": "f4acdc2a3c485572f224339805013599dc03aec8c57cb3c37072fd4be3cab386",
+          "text_sha256": "7736070ab9d887c59bbe1c962155b0f2d99e00bcdc3400e60b933d39b8a5559d",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    },
+    {
+      "case_id": "minerva_units_007",
+      "index": 242,
+      "last_box": "87.5\\%",
+      "final_answer_correct": false,
+      "whole_process_valid": false,
+      "full_outputs_read": [
+        "avg_teacher7_1234_s46_epoch4",
+        "avg_teacher7_expansion_combined_1234_s45_epoch4",
+        "avg_teacher7_expansion_combined_1234_s47_epoch4"
+      ],
+      "reason": "All three actual full outputs give87.5%, the complement1-1/n. This is net-binding/attraction magnitude, not repulsion/attraction1/n requested. All also contain wrong equilibrium radii. Wrong quantity cannot be repaired by percent parsing.",
+      "output_bindings": [
+        {
+          "model": "avg_teacher7_1234_s46_epoch4",
+          "predictions_sha256": "2d33412e92d85eb3c9a466fc71d2658cf26823836e4811b8fb2c9ad0284b048b",
+          "text_sha256": "5e407c6923b502a709568ee45ca4d8cbffa93c3052f2200259274d8eef11bd9e",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        },
+        {
+          "model": "avg_teacher7_expansion_combined_1234_s45_epoch4",
+          "predictions_sha256": "044194826f99782c1f1f26ba9773643a8de57a24a5b5797405897e47585e6f94",
+          "text_sha256": "f8317029fc10426cbf8afeb0640d50f838f0925e4cfb4295325c92afd25f4fff",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        },
+        {
+          "model": "avg_teacher7_expansion_combined_1234_s47_epoch4",
+          "predictions_sha256": "4e5bde87e8c41f5c37d016072026c03b4b397ce70a7f5dbe4d94f842394e711c",
+          "text_sha256": "ad796c9112b687c3d781e430b6eacabb15dacc5e4aaf98982ce2da5a3ed39304",
+          "numeric_primary_correct": false,
+          "numeric_strict_correct": false
+        }
+      ]
+    }
+  ],
+  "physics_checks": {
+    "critical_deg": 50.284862768173795,
+    "magnitude": 0.021934810768762875,
+    "reaction_k": 0.1879771496826139,
+    "reaction_unreacted_fraction": 1.0412060941631218e-49,
+    "vacancy_H_typo_hypothesis_eV": 1.4968659792740888,
+    "vacancy_H_literal_eV": -1.5343356557198258
+  },
+  "sources": [
+    {
+      "url": "https://periodic-table.rsc.org/element/77/iridium",
+      "claim": "Ir melting2446 C=2719 K"
+    },
+    {
+      "url": "https://imagine.gsfc.nasa.gov/ask_astro/night_sky.html",
+      "claim": "Astronomical magnitude logarithmic flux relation"
+    }
+  ],
+  "scope": "All8 selected question/box groups and all11 full model outputs read. No scoring changes. Bind unchanged authoritative inventory and actual numeric judgments before final all_reviewed.",
+  "all_reviewed": true,
+  "inventory_sha256": "5f4d4427886ef53e10e60f0dbb86cdfba2641d0eadaf36176eda59c59301cba9",
+  "actual_numeric_false_negatives": [
+    {
+      "index": 231,
+      "model": "avg_teacher7_1234_s45_epoch4",
+      "last_box": "100\\%"
+    },
+    {
+      "index": 242,
+      "model": "avg_teacher7_1234_s45_epoch4",
+      "last_box": "12.5\\%"
+    },
+    {
+      "index": 242,
+      "model": "teacher7_expansion_combined_lr5e5_s44_epoch4",
+      "last_box": "12.5\\%"
+    }
+  ],
+  "report_markdown": "按任何Minerva输出前声明的规则，完整检查21模型全部最后答案框中的百分号/角度标记，共8种题目与答案组合、11份实际输出。3份最终答案正确却被数值解析拒绝：主方案seed45的100%（index231）和12.5%（242），以及扩容未平均seed44的12.5%（242）。三份推导均含明确错误，所以只认最终答案，不认整个推导有效；独立计算分别为一阶反应k≈0.187977/s、600s后完成率四舍五入100%，以及平衡点排斥/吸引能量比1/n=1/8。其余8份输出并非单纯单位等价，例如90度错把折射角当临界入射角、87.5%取了所求比值的补数、12.4%超过冻结1e−4容差。index212的circ是标准态焓符号而非角度，模型也没有给出确定的能量。该题12340°C的字面温度高于[Ir熔点2446°C](https://periodic-table.rsc.org/element/77/iridium)；假设原意1234°C可重建约1.50eV，但OCR修正没有被证实，数据未改动。index8的2%遮挡不能直接当星等变化；按[NASA给出的对数星等关系](https://imagine.gsfc.nasa.gov/ask_astro/night_sky.html)，变化幅度为−2.5log10(.98)≈.0219348。实际评分遗漏只在独立的事后敏感性中修正，冻结数值标准不变。本检查不覆盖所有单位换算或仅在框外写单位的答案。",
+  "source_sha256": {
+    "audits/minerva_explicit_unit_preview_cases.jsonl": "a7410ca089f75de5b3fbb566576008e3421bc40cc86c32e85186c948c9bf41c9",
+    "audits/minerva_unit_preview_review.json": "705675accfe5f09d5afcfe313bec618f2a94f2c58793fb6de516dc40dfe4f27e",
+    "audits/minerva_explicit_unit_cases.jsonl": "c6321ee47d8d19c54aa5fa698b93f7c534a69a9c5a52ae75b8c6df4b21f7622a",
+    "audits/minerva_explicit_unit_inventory.json": "5f4d4427886ef53e10e60f0dbb86cdfba2641d0eadaf36176eda59c59301cba9",
+    "audits/minerva_explicit_unit_preview_inventory.json": "29a0bc69e886c831b56f9ff915b2390a0d479baac9eeffe98da6d140c023fca6",
+    "audits/minerva_unit_case_audit_plan.json": "7b33e5dc39718f84d78d9787132c2b66adcfd8fc8064b8ce3708fadb91e265bc"
+  }
+}

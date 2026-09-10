@@ -1,0 +1,5 @@
+label,name,epoch,raw_reference_ce,ce_delta,same64_correct,same64_delta_pp,dev500_correct,dev500_delta_pp,kind
+Student-matched raw,sample_matchedraw_lr1e5_s43,2,0.7547687453169103,-0.055729633013082314,29,-28.125,183,-23.200000000000003,raw
+Student-matched generated,sample_all_lr1e5_s43,2,0.8429819920915327,0.032483613761540076,48,1.5625,307,1.6,generated
+7B-matched raw,teacher_matchedraw_lr5e5_s43,4,0.7443318270014073,-0.06616655132858529,27,-31.25,172,-25.4,raw
+7B-matched generated,teacher_all_lr5e5_s43,4,0.9335269069112093,0.12302852858121671,51,6.25,311,2.4,generated

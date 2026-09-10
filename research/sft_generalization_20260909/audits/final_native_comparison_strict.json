@@ -1,0 +1,131 @@
+{
+  "time": 1789043882.6784377,
+  "scoring": "strict_last_box",
+  "script_sha256": "ddca7f356f0b4fd68bc9db0e45dfa3f31af199b1387d0930c70779a9f6a0d685",
+  "plan_sha256": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+  "n": 500,
+  "native_base_correct": 303,
+  "vllm_base_correct": 298,
+  "seeds": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "rows": [
+    {
+      "seed": 43,
+      "name": "avg_teacher7_1234_s43_epoch4",
+      "native_correct": 303,
+      "vllm_correct": 300,
+      "native_delta_pp": 0.0,
+      "vllm_delta_pp": 0.4,
+      "native_predictions_sha256": "94be260a5602656e02294715a1124f5ba797647068a93617c1c05f47dd634197",
+      "vllm_predictions_sha256": "75dc881a2fc9c666ad34df7f2d22ddb054a11cf6e6cc30908d67c3f153fbdf91",
+      "exact_backend_texts": 164
+    },
+    {
+      "seed": 44,
+      "name": "avg_teacher7_1234_s44_epoch4",
+      "native_correct": 298,
+      "vllm_correct": 302,
+      "native_delta_pp": -1.0,
+      "vllm_delta_pp": 0.8,
+      "native_predictions_sha256": "0b36ef562a526eb735242e2988eef1d8ef8ba62282cb5c4392a5024cd8cb7aa5",
+      "vllm_predictions_sha256": "c2093f4c06506d0a42542c47c5394cb678ea40baceb250c957ce3f3f0eb6167e",
+      "exact_backend_texts": 176
+    },
+    {
+      "seed": 45,
+      "name": "avg_teacher7_1234_s45_epoch4",
+      "native_correct": 306,
+      "vllm_correct": 300,
+      "native_delta_pp": 0.6,
+      "vllm_delta_pp": 0.4,
+      "native_predictions_sha256": "00aa20e3eab650c9c1fe08f3fadf129148391abb2ef1c8c59eb1cd78a0823aba",
+      "vllm_predictions_sha256": "f503bd09ded5ae72bcb6744e62c1c6875d0c1303933556e658c423eef3c22363",
+      "exact_backend_texts": 146
+    },
+    {
+      "seed": 46,
+      "name": "avg_teacher7_1234_s46_epoch4",
+      "native_correct": 300,
+      "vllm_correct": 300,
+      "native_delta_pp": -0.6,
+      "vllm_delta_pp": 0.4,
+      "native_predictions_sha256": "41128c476bd75902cb074cb34cae24cb5fa3645a79b01388c476134f44950b92",
+      "vllm_predictions_sha256": "c246df0aa10e4e172ce0ec861b279225cb00e65c2381f978e0d69c439db02ed3",
+      "exact_backend_texts": 165
+    },
+    {
+      "seed": 47,
+      "name": "avg_teacher7_1234_s47_epoch4",
+      "native_correct": 285,
+      "vllm_correct": 296,
+      "native_delta_pp": -3.5999999999999996,
+      "vllm_delta_pp": -0.4,
+      "native_predictions_sha256": "81bd1b4bc123580fba51dcb963fb752572fc7baa7c2445963af7773fa1829f1e",
+      "vllm_predictions_sha256": "e2b8dc24cb3838b531db14d812660b49a6efbc1cd03e8b1169486f004809e210",
+      "exact_backend_texts": 174
+    }
+  ],
+  "native_vs_native_base": {
+    "mean_delta_pp": -0.9199999999999999,
+    "per_seed_delta_pp": [
+      0.0,
+      -1.0,
+      0.6,
+      -0.6,
+      -3.5999999999999996
+    ],
+    "all_seeds_positive": false,
+    "question_ci95_pp": [
+      -3.8,
+      2.0
+    ],
+    "seed_question_ci95_pp": [
+      -4.08,
+      2.360999999999985
+    ]
+  },
+  "vllm_vs_vllm_base": {
+    "mean_delta_pp": 0.32,
+    "per_seed_delta_pp": [
+      0.4,
+      0.8,
+      0.4,
+      0.4,
+      -0.4
+    ],
+    "all_seeds_positive": false,
+    "question_ci95_pp": [
+      -2.56,
+      3.2800000000000002
+    ],
+    "seed_question_ci95_pp": [
+      -2.640999999999999,
+      3.36
+    ]
+  },
+  "native_minus_vllm_treatment_effect": {
+    "mean_delta_pp": -1.24,
+    "per_seed_delta_pp": [
+      -0.4,
+      -1.7999999999999998,
+      0.2,
+      -1.0,
+      -3.2
+    ],
+    "all_seeds_positive": false,
+    "question_ci95_pp": [
+      -4.24,
+      1.76
+    ],
+    "seed_question_ci95_pp": [
+      -4.5600000000000005,
+      2.12
+    ]
+  },
+  "scope": "Reused-development backend sensitivity of all five frozen primary models. Backend, batch and arithmetic differ jointly; compare effects within each backend. A difference interval crossing zero does not establish backend equivalence. This is not an additional fresh efficacy test."
+}

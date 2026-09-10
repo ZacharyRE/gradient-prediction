@@ -1,0 +1,216 @@
+{
+  "time": 1789043101.1057308,
+  "script_sha256": "a70fb7d1e5d6aab709e1a77cd3f4b787bd42bbb10a0c2b19a900e74fdbcaa147",
+  "plan_sha256": "ac06098be6b98b8dbdc3cdd2b0b82e8f80d9ae81d00ad97dc64790b54f66299c",
+  "source_sha256": {
+    "audits/minerva_pendulum_reference_sensitivity_plan.json": "ac06098be6b98b8dbdc3cdd2b0b82e8f80d9ae81d00ad97dc64790b54f66299c",
+    "results/confirmation_plan.json": "b166f95b432d9fdbbb57ef5d7293a8b9e41fb6f21596dcb4af2603e3f4ddfc5f",
+    "scripts/analyze_confirmation.py": "709ff0b7de35b430f6561d047181ddc0c415fd7032262f8f8a114d9ae147a9bb",
+    "audits/minerva_main_warning_preview_review.json": "1a788b8c8d3e6fbe5174b04be4a725a6a674d55207ad0e86f5f85ad473523b0c",
+    "audits/scoring_minerva_numeric_corrected.json": "3448690e07ec3b3a5b578a16ccfeee9210258ec052238268e6b33426bf9045e7",
+    "results/confirmation_analysis.json": "4e0f75c6468b2aec5e993a40d4c8fcd1941a0c44bd99eed39fc1fe9f869d19f5",
+    "audits/scoring_confirmation_ood_minerva.json": "0858f2c73d75271f9cb8c20d59c79a0570dcb425ba6cdce38711f37d08178227",
+    "results/evaluation/ood_minerva/base/math_predictions.jsonl": "6d202d1e65f4734dfff290c41f292f7e8877a34665e2778031ff8c336d0f6f45",
+    "results/evaluation/ood_minerva/avg_teacher7_1234_s43_epoch4/math_predictions.jsonl": "eb068b9dbd7af9bef69f032e31af8bd53d20c8d024bc7925bf9359a7d6064f68",
+    "results/evaluation/ood_minerva/avg_teacher7_1234_s44_epoch4/math_predictions.jsonl": "2a659ad79e2011a235dcc0472afa44037030bf68c08abb3282a163c1694924cd",
+    "results/evaluation/ood_minerva/avg_teacher7_1234_s45_epoch4/math_predictions.jsonl": "91c8277e6661fbe4b1eda0564ebe008cf25a5c5cf167198eebbfdfc92cdd0629",
+    "results/evaluation/ood_minerva/avg_teacher7_1234_s46_epoch4/math_predictions.jsonl": "2d33412e92d85eb3c9a466fc71d2658cf26823836e4811b8fb2c9ad0284b048b",
+    "results/evaluation/ood_minerva/avg_teacher7_1234_s47_epoch4/math_predictions.jsonl": "529f741742d423804fe96fe4f3a1a0010643c0a93af2db05b4dabbcc5d71fb0c",
+    "audits/scoring_confirmation_ood_olympiad.json": "c944e147043815065915bc38a158bb5f0fc75744e82efff52bb10482b31990c4",
+    "results/evaluation/ood_olympiad/base/math_predictions.jsonl": "8a3bc6b2912d378f59a455b423cba80afd3f4d404bba96392b5dc422c5eedffe",
+    "results/evaluation/ood_olympiad/avg_teacher7_1234_s43_epoch4/math_predictions.jsonl": "a7491c5f96f5483d32236b1c2e7dd3536a8320a8f78bbe8ac2a5772b70c9d15b",
+    "results/evaluation/ood_olympiad/avg_teacher7_1234_s44_epoch4/math_predictions.jsonl": "7a6f2467b531aeb352f3b20b11a69ed102de0442a1d618d0f3496fc1c6692395",
+    "results/evaluation/ood_olympiad/avg_teacher7_1234_s45_epoch4/math_predictions.jsonl": "1ce7100648eefdb2373c1cd6d4e3937e4d314d969434cb49a244466d009df22a",
+    "results/evaluation/ood_olympiad/avg_teacher7_1234_s46_epoch4/math_predictions.jsonl": "cb6314ec732a25f1166cb21ecd307963438671c52933f8ea7b43e11e83fb0a1a",
+    "results/evaluation/ood_olympiad/avg_teacher7_1234_s47_epoch4/math_predictions.jsonl": "aff126e7bdbc3d774f1cb00f9da5623b16a4e137171df97bd9c8b4d1bf8d394c",
+    "audits/scoring_confirmation_ood_svamp.json": "fb0a10c425a122de927f5a89cace3556cf41237d2d8a9f378bfd3d66fe47f09f",
+    "results/evaluation/ood_svamp/base/math_predictions.jsonl": "6892df93d7f55dda4d5a583c460639768122712184df6bf3fff2d78bdf173280",
+    "results/evaluation/ood_svamp/avg_teacher7_1234_s43_epoch4/math_predictions.jsonl": "7af5603831f283478829be8993e01c859e1473323d49e0f6b0f7f9af4d854300",
+    "results/evaluation/ood_svamp/avg_teacher7_1234_s44_epoch4/math_predictions.jsonl": "29f93596d548bcdad300b625d050de85729e94c30d730d36d16cab64ea66d1cc",
+    "results/evaluation/ood_svamp/avg_teacher7_1234_s45_epoch4/math_predictions.jsonl": "820fe558cec837acdbb64628e8a4101b629252db1e607b35913aaa83804f5816",
+    "results/evaluation/ood_svamp/avg_teacher7_1234_s46_epoch4/math_predictions.jsonl": "bf7598d450daf5ca0bc024a20b9109f64ad2a1abdc942f73773abbce68c4ad52",
+    "results/evaluation/ood_svamp/avg_teacher7_1234_s47_epoch4/math_predictions.jsonl": "1603047586b4d46646b98f7bae42f8af930269e48872de73f7cda21f6ee9c4e3",
+    "results/confirmation_analysis_strict.json": "140c56ddb85a95d0f516c4f6a53978d65deebf001ae0579630c056ebdbeb2a3a"
+  },
+  "results": {
+    "raw": {
+      "original_minerva": {
+        "delta_pp": 1.6911764705882353,
+        "question_ci95": [
+          -1.8382352941176474,
+          5.441176470588235
+        ],
+        "seed_question_ci95": [
+          -2.0588235294117645,
+          5.514705882352941
+        ],
+        "per_seed_delta_pp": [
+          1.1029411764705883,
+          1.1029411764705883,
+          1.8382352941176472,
+          2.941176470588235,
+          1.4705882352941175
+        ],
+        "every_seed_positive": true
+      },
+      "original_ood_macro": {
+        "delta_pp": -1.913968745392894,
+        "per_seed_delta_pp": [
+          -1.466939407341884,
+          -1.3842326404245908,
+          -3.2669541500810846,
+          -1.9678116860779398,
+          -1.4839058430389698
+        ],
+        "every_seed_positive": false,
+        "question_ci95": [
+          -3.9399774558946383,
+          0.06448996265172724
+        ],
+        "seed_question_ci95": [
+          -4.083972983930415,
+          0.18997764017887817
+        ]
+      },
+      "minerva_excluding132": {
+        "n": 271,
+        "base_correct": 57,
+        "per_seed_correct": [
+          60,
+          60,
+          62,
+          65,
+          61
+        ],
+        "vs_base": {
+          "delta_pp": 1.6974169741697416,
+          "question_ci95": [
+            -1.9188191881918824,
+            5.387453874538746
+          ],
+          "seed_question_ci95": [
+            -2.066420664206642,
+            5.535055350553505
+          ],
+          "per_seed_delta_pp": [
+            1.107011070110701,
+            1.107011070110701,
+            1.8450184501845017,
+            2.952029520295203,
+            1.4760147601476015
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "ood_macro_excluding132": {
+        "delta_pp": -1.9118885775323917,
+        "per_seed_delta_pp": [
+          -1.4655827761285134,
+          -1.3828760092112198,
+          -3.2646930980587996,
+          -1.964194002842284,
+          -1.4820970014211419
+        ],
+        "every_seed_positive": false,
+        "question_ci95": [
+          -3.9455361959634634,
+          0.10697102534934928
+        ],
+        "seed_question_ci95": [
+          -4.141229411166292,
+          0.24669900458402963
+        ]
+      }
+    },
+    "strict": {
+      "original_minerva": {
+        "delta_pp": 1.6911764705882353,
+        "question_ci95": [
+          -1.8382352941176474,
+          5.441176470588235
+        ],
+        "seed_question_ci95": [
+          -2.0588235294117645,
+          5.514705882352941
+        ],
+        "per_seed_delta_pp": [
+          1.1029411764705883,
+          1.1029411764705883,
+          1.8382352941176472,
+          2.941176470588235,
+          1.4705882352941175
+        ],
+        "every_seed_positive": true
+      },
+      "original_ood_macro": {
+        "delta_pp": 4.233065506904516,
+        "per_seed_delta_pp": [
+          4.755282814880338,
+          4.712676298589611,
+          2.829954788933118,
+          4.254410536144283,
+          4.613003095975232
+        ],
+        "every_seed_positive": true,
+        "question_ci95": [
+          1.867412403557915,
+          6.595446704997788
+        ],
+        "seed_question_ci95": [
+          1.7287467443117601,
+          6.7200900535652845
+        ]
+      },
+      "minerva_excluding132": {
+        "n": 271,
+        "base_correct": 57,
+        "per_seed_correct": [
+          60,
+          60,
+          62,
+          65,
+          61
+        ],
+        "vs_base": {
+          "delta_pp": 1.6974169741697416,
+          "question_ci95": [
+            -1.9188191881918824,
+            5.387453874538746
+          ],
+          "seed_question_ci95": [
+            -2.066420664206642,
+            5.535055350553505
+          ],
+          "per_seed_delta_pp": [
+            1.107011070110701,
+            1.107011070110701,
+            1.8450184501845017,
+            2.952029520295203,
+            1.4760147601476015
+          ],
+          "every_seed_positive": true
+        }
+      },
+      "ood_macro_excluding132": {
+        "delta_pp": 4.235145674765018,
+        "per_seed_delta_pp": [
+          4.7566394460937085,
+          4.714032929802983,
+          2.832215840955403,
+          4.258028219379939,
+          4.61481193759306
+        ],
+        "every_seed_positive": true,
+        "question_ci95": [
+          1.8047031015422939,
+          6.65269280211599
+        ],
+        "seed_question_ci95": [
+          1.6816601620903424,
+          6.802580020161104
+        ]
+      }
+    }
+  },
+  "scope": "Post-outcome sensitivity to one reference-quality concern, not new primarycriterion or correctedbenchmarkclaim. CompleteMATH criterion remainsunchanged, so this cannot rescue a failed fullMATH efficacy criterion."
+}
