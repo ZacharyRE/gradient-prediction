@@ -1,0 +1,975 @@
+{
+  "accuracy": {
+    "utc": "2026-09-14T09:26:00.743617+00:00",
+    "models": {
+      "Base": null,
+      "Warmup32": "predictor/predictor_countdown/models/teacher/step-32",
+      "True-Adam192": "predictor/predictor_countdown/models/true32_lr5e4/step-192",
+      "Local-SGD16": "predictor/predictor_countdown/models/synth_multi_sgd001/step-16",
+      "Mean-SGD16": "predictor/predictor_countdown/models/mean32_sgd001/step-16",
+      "True-SGD16": "predictor/predictor_countdown/models/true32_sgd001/step-16",
+      "Feedback-SGD384": "predictor/predictor_countdown/models/feedback_large32_sgd001/step-384",
+      "Mean-SGD384-wd": "predictor/predictor_countdown/models/mean32_sgd001_wd/step-384",
+      "Decay-only384": "predictor/predictor_countdown/models/zero32_sgd001_wd/step-384",
+      "True-SGD384-wd": "predictor/predictor_countdown/models/true32_sgd001_wd/step-384",
+      "Predictor+PSD": "predictor/predictor_countdown/models/meta_psd32_r2_proposal/strength-1",
+      "Mean+PSD": "predictor/predictor_countdown/models/meta_psd32_mean_r2_proposal/strength-1"
+    },
+    "groups": {
+      "final_a": [
+        "Base",
+        "Warmup32",
+        "True-Adam192",
+        "Predictor+PSD"
+      ],
+      "final_b": [
+        "Local-SGD16",
+        "Mean-SGD16",
+        "True-SGD16",
+        "Mean+PSD"
+      ],
+      "final_c": [
+        "Feedback-SGD384",
+        "Mean-SGD384-wd",
+        "Decay-only384",
+        "True-SGD384-wd"
+      ]
+    },
+    "adapter_sha256": {
+      "Warmup32": "35d98fc2638bdcee3a49c6ec11d417bfa8bcefc04ab2795a6d5256c340878bfa",
+      "True-Adam192": "050870204e7601d75e514dec95eecc480ead970e7129d9ec29cb71a21ed2b939",
+      "Local-SGD16": "916b5e91c3abeb654b723ca54637ee1a9c1507ba1c5b2f5eb0f4539400efbe1c",
+      "Mean-SGD16": "55b68f3a959adb51a722eef8e19658f0a8a5517524e2d049a8d3764178fc6910",
+      "True-SGD16": "99e0bb78dd6ddccf715ff23c25752353f09d8302693d5de968315c495c9433dd",
+      "Feedback-SGD384": "14e2290421a7f60a40626a12be52bbf5f0fffb1dd77c2161bd3b9679b03ac41c",
+      "Mean-SGD384-wd": "f8cee7e6197dcd48d32d64980d1c70f075902b2c866a8fb002b66f2c6fe949af",
+      "Decay-only384": "294b37a8ccad64bf383a0fae2479cf013583a0cbe70c0685310f1ba6a17ea0b6",
+      "True-SGD384-wd": "a2f7b24d1f24d019d26c430ca35b4776fcc5dd15144d82fae788b2c39d68b080",
+      "Predictor+PSD": "7585f9d68d761ab7e79a87d9e5435b278312bd46f43d8800cb2e7bf044ac09f4",
+      "Mean+PSD": "9c70ba1e77597f4600335989c696b03091f2b7dd0bcb5dc3da6de8273c0e6e4d"
+    },
+    "local_candidates": [
+      {
+        "path": "predictor/predictor_countdown/models/synth_multi_sgd001/step-16",
+        "correct": 13,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/stable_candidates_dev/summary.json",
+        "args": {
+          "name": "synth_multi_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/sequence_multi/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.01,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8,
+          "optimizer": "sgd",
+          "weight_decay": 0.0
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr1e4/step-16",
+        "correct": 12,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_delta32_lr1e4/step-4",
+        "correct": 11,
+        "n": 256,
+        "steps": 4,
+        "source": "predictor/predictor_countdown/results/accuracy/corrected_candidates_dev/summary.json",
+        "args": {
+          "name": "synth_delta32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/sequence_delta/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            4,
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8,
+          "optimizer": "adamw",
+          "weight_decay": 0.01,
+          "guard": false,
+          "batch_size": 32,
+          "guard_size": 0
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_seq32_sgd001/step-16",
+        "correct": 11,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/stable_candidates_dev/summary.json",
+        "args": {
+          "name": "synth_seq32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/sequence32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.01,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8,
+          "optimizer": "sgd",
+          "weight_decay": 0.0
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_replay32_lr5e5/step-16",
+        "correct": 10,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/corrected_candidates_dev/summary.json",
+        "args": {
+          "name": "synth_replay32_lr5e5",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/sequence_replay/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 5e-05,
+          "seed": 101,
+          "save": [
+            4,
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8,
+          "optimizer": "adamw",
+          "weight_decay": 0.01,
+          "guard": false,
+          "batch_size": 32,
+          "guard_size": 0
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_large32_sgd001/step-16",
+        "correct": 9,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/main_local_short_dev/summary.json",
+        "args": {
+          "name": "synth_large32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/sequence_large32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.01,
+          "seed": 101,
+          "save": [
+            4,
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8,
+          "optimizer": "sgd",
+          "weight_decay": 0.0,
+          "guard": false
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_local32_lr1e4/step-48",
+        "correct": 1,
+        "n": 256,
+        "steps": 48,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_controls_dev/summary.json",
+        "args": {
+          "name": "synth_local32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/local32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr5e4/step-16",
+        "correct": 0,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr5e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0005,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr1e4/step-48",
+        "correct": 0,
+        "n": 256,
+        "steps": 48,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr5e4/step-48",
+        "correct": 0,
+        "n": 256,
+        "steps": 48,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr5e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0005,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr1e4/step-96",
+        "correct": 0,
+        "n": 256,
+        "steps": 96,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr5e4/step-96",
+        "correct": 0,
+        "n": 256,
+        "steps": 96,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr5e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0005,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr1e4/step-192",
+        "correct": 0,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_cond32_lr5e4/step-192",
+        "correct": 0,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_synthetic_dev/summary.json",
+        "args": {
+          "name": "synth_cond32_lr5e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/conditional32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0005,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/synth_local32_lr1e4/step-192",
+        "correct": 0,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/pilot_controls_dev/summary.json",
+        "args": {
+          "name": "synth_local32_lr1e4",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/local32/best.pt",
+          "mode": "synthetic",
+          "mean_file": null,
+          "steps": 192,
+          "lr": 0.0001,
+          "seed": 101,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "data": "update",
+          "layer": 8
+        }
+      }
+    ],
+    "feedback_candidates": [
+      {
+        "path": "predictor/predictor_countdown/models/feedback_large32_sgd001/step-384",
+        "correct": 20,
+        "n": 256,
+        "steps": 384,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_large_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_large32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_large/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_large32_sgd003/step-192",
+        "correct": 15,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_large_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_large32_sgd003",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_large/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 192,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.03
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_replay32_sgd001/step-384",
+        "correct": 15,
+        "n": 256,
+        "steps": 384,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_replay_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_replay32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback32_sgd001/step-48",
+        "correct": 13,
+        "n": 256,
+        "steps": 48,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_early_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_multi/best.pt",
+          "caches": null,
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 192,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.0,
+          "batch_size": 32,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_batch32_sgd001/step-384",
+        "correct": 13,
+        "n": 256,
+        "steps": 384,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_batch_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_batch32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay_batch/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_batch32_sgd001/step-192",
+        "correct": 11,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_batch_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_batch32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay_batch/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_large32_sgd001/step-16",
+        "correct": 10,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_large_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_large32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_large/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_replay32_sgd001/step-16",
+        "correct": 10,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_replay_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_replay32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback32_sgd001/step-192",
+        "correct": 10,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_early_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_multi/best.pt",
+          "caches": null,
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 192,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.0,
+          "batch_size": 32,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_batch32_sgd001/step-16",
+        "correct": 9,
+        "n": 256,
+        "steps": 16,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_batch_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_batch32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay_batch/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_replay32_sgd001/step-192",
+        "correct": 9,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/feedback_replay_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_replay32_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_replay/best.pt",
+          "caches": null,
+          "resume": null,
+          "data_split": "update",
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 384,
+          "heads": 1,
+          "batch_mean_weight": 0.0,
+          "optimizer": "sgd",
+          "weight_decay": 0.01,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384
+          ],
+          "seed": 101,
+          "batch": 16,
+          "lr": 0.01
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_wide_sgd003/step-192",
+        "correct": 7,
+        "n": 256,
+        "steps": 192,
+        "source": "predictor/predictor_countdown/results/accuracy/meta_psd_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_wide_sgd003",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_wide/best.pt",
+          "caches": null,
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 768,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.0,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384,
+            768
+          ],
+          "batch": 16,
+          "lr": 0.03
+        }
+      },
+      {
+        "path": "predictor/predictor_countdown/models/feedback_wide_sgd001/step-384",
+        "correct": 6,
+        "n": 256,
+        "steps": 384,
+        "source": "predictor/predictor_countdown/results/accuracy/meta_psd_dev/summary.json",
+        "args": {
+          "command": "update",
+          "name": "feedback_wide_sgd001",
+          "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+          "predictor": "predictor/predictor_countdown/models/feedback_wide/best.pt",
+          "caches": null,
+          "splits": [
+            "predictor_train",
+            "predictor_dev"
+          ],
+          "width": 256,
+          "depth": 2,
+          "epochs": 60,
+          "steps": 768,
+          "heads": 1,
+          "optimizer": "sgd",
+          "weight_decay": 0.0,
+          "batch_size": 32,
+          "save": [
+            16,
+            48,
+            96,
+            192,
+            384,
+            768
+          ],
+          "batch": 16,
+          "lr": 0.01
+        }
+      }
+    ],
+    "selection": "maximum development accuracy; ties fewer steps, then lexical path",
+    "primary_combined_selection": "radius2 rank4 selected previously: dev 33/256 versus radius1 25/256",
+    "accuracy_test_previously_unused": true,
+    "no_more_training_or_selection_after_this_file": true,
+    "test": "research/0.5B_countdown_lora/data/countdown_test2048.jsonl"
+  },
+  "local_gradient": {
+    "utc": "2026-09-14T08:45:12.813781+00:00",
+    "primary": "sequence_large32",
+    "primary_reason": "compact 512-width 2-layer predictor; dev raw cosine about 0.80; used unchanged for downstream routes",
+    "ablations": [
+      "local32",
+      "conditional32",
+      "sequence32_wide",
+      "sequence_large32",
+      "sequence_deep"
+    ],
+    "split": "gradient_test",
+    "n": 256,
+    "selection_finished_before_test": true,
+    "checkpoints": {
+      "local32": "007636c67395d0866d23fec5ea47bd174c020a222bc4d62490ced1adca8ae317",
+      "conditional32": "8adee97c1a1e1c0067456ae96ab0a8666c08f54770e8f38160e26e3a77ce172a",
+      "sequence32_wide": "861081552c8002383c95a4cb59dd8e9a3c24b1038515419efd8622706091759d",
+      "sequence_large32": "eed3aca78a2b8538720fa7b935005751fe2616da560a456be8599ace6cb00c33",
+      "sequence_deep": "8bdf8eb748eabc30bce0aa1ccc6b4900dff179088dcad0258c5b1569739a2492"
+    }
+  },
+  "split_identity": {
+    "warmup": {
+      "n": 512,
+      "sha256": "f4c2415fe58601c98aef1febc351d8719f38adf449007fe9d9a54c56ae578f2d"
+    },
+    "predictor_train": {
+      "n": 1536,
+      "sha256": "e95a176f5385e580fd233e1a9d02d2711cf33e26d341d7eb8f67b77a044ac0f7"
+    },
+    "predictor_dev": {
+      "n": 256,
+      "sha256": "0ff141c22664756854c4cb9e3cdc68dd7d3573cc77ea840a28b5e95c7ccaf3c9"
+    },
+    "gradient_test": {
+      "n": 256,
+      "sha256": "b04d0e2810e6241e32cfd898288ee0e0e5bfe6e033be5233386c0fe0f028c524"
+    },
+    "update": {
+      "n": 1536,
+      "sha256": "9f06e0d7b370790e0bdd2633f401d9ee74533ca9d3dc5c09020c1cf1c04d66ae"
+    }
+  }
+}

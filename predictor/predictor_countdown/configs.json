@@ -1,0 +1,580 @@
+{
+  "note": "Archived run configurations. Referenced caches, weights and datasets are not distributed in this compact release. Some CLI defaults are inactive for a given subcommand; consult TRAINING.md for effective settings.",
+  "protocol": {
+    "layer": 8,
+    "module": "self_attn.o_proj",
+    "rank": 64,
+    "alpha": 64,
+    "base_model_reference_only": true,
+    "full_input_sequence": true,
+    "predictor_label_conditioning_allowed": true,
+    "start_utc": "2026-09-14T07:06:06Z",
+    "deadline_utc": "2026-09-14T11:06:06Z",
+    "cancelled_pilots": [
+      "layer16 down_proj",
+      "layer16 o_proj"
+    ],
+    "train_test_separation": "number multiset grouped; separate warmup / predictor train / predictor dev / gradient test / update / accuracy dev / accuracy test",
+    "base_model_reference": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "runs": {
+    "teacher": {
+      "args": {
+        "name": "teacher",
+        "steps": 96,
+        "save": [
+          0,
+          32,
+          96
+        ],
+        "layer": 8,
+        "lr": 0.0005
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "trainable_parameters": 114688,
+      "module": "layers.8.self_attn.o_proj",
+      "data": "predictor/predictor_countdown/data/warmup.jsonl",
+      "input_truncation": false
+    },
+    "local32": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "name": "local32",
+        "variant": "local",
+        "width": 512,
+        "epochs": 24,
+        "lr": 0.0003,
+        "batch_tokens": 4096,
+        "raw_epochs": 4,
+        "resume": null
+      },
+      "n_train": 1536,
+      "n_dev": 256,
+      "tokens": 319668,
+      "predictor_parameters": 1449344,
+      "target_scale": 0.039712343364953995,
+      "selection": "minimum dev per-example raw relative MSE",
+      "no_test_selection": true
+    },
+    "conditional32": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "name": "conditional32",
+        "variant": "conditional",
+        "width": 512,
+        "epochs": 24,
+        "lr": 0.0003,
+        "batch_tokens": 4096,
+        "raw_epochs": 4,
+        "resume": null
+      },
+      "n_train": 1536,
+      "n_dev": 256,
+      "tokens": 319668,
+      "predictor_parameters": 1695232,
+      "target_scale": 0.039712343364953995,
+      "selection": "minimum dev per-example raw relative MSE",
+      "no_test_selection": true
+    },
+    "sequence32_wide": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "name": "sequence32_wide",
+        "width": 512,
+        "epochs": 160,
+        "lr": 0.0003,
+        "batch": 16,
+        "raw_weight": 1.0,
+        "token_weight": 0.25,
+        "resume": null,
+        "eval_every": 10,
+        "extra_cache": []
+      },
+      "n_train": 1536,
+      "n_dev": 256,
+      "predictor_parameters": 5639168,
+      "input": "all tokens, bidirectional predictor attention",
+      "objective": "factor-balanced full raw gradient relative MSE plus activation-gradient MSE",
+      "selection": "dev raw relative MSE"
+    },
+    "sequence_large32": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/large32",
+        "name": "sequence_large32",
+        "width": 512,
+        "epochs": 100,
+        "lr": 0.0001,
+        "batch": 16,
+        "raw_weight": 1.0,
+        "token_weight": 0.25,
+        "resume": "predictor/predictor_countdown/models/sequence32_wide/best.pt",
+        "eval_every": 10,
+        "extra_cache": []
+      },
+      "n_train": 8192,
+      "n_dev": 256,
+      "predictor_parameters": 5639168,
+      "input": "all tokens, bidirectional predictor attention",
+      "objective": "factor-balanced full raw gradient relative MSE plus activation-gradient MSE",
+      "selection": "dev raw relative MSE"
+    },
+    "sequence_deep": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/large32",
+        "name": "sequence_deep",
+        "width": 768,
+        "epochs": 100,
+        "lr": 0.0002,
+        "batch": 16,
+        "raw_weight": 1.0,
+        "token_weight": 0.25,
+        "resume": null,
+        "eval_every": 10,
+        "extra_cache": [],
+        "delta": false,
+        "depth": 4
+      },
+      "n_train": 8192,
+      "n_dev": 256,
+      "predictor_parameters": 21195520,
+      "input": "all tokens, bidirectional predictor attention",
+      "objective": "factor-balanced full raw gradient relative MSE plus activation-gradient MSE",
+      "selection": "dev raw relative MSE"
+    },
+    "sequence_multi": {
+      "args": {
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "name": "sequence_multi",
+        "width": 512,
+        "epochs": 120,
+        "lr": 0.0003,
+        "batch": 16,
+        "raw_weight": 1.0,
+        "token_weight": 0.25,
+        "resume": null,
+        "eval_every": 10,
+        "extra_cache": [
+          "predictor/predictor_countdown/cache/state96"
+        ]
+      },
+      "n_train": 3072,
+      "n_dev": 256,
+      "predictor_parameters": 5639168,
+      "input": "all tokens, bidirectional predictor attention",
+      "objective": "factor-balanced full raw gradient relative MSE plus activation-gradient MSE",
+      "selection": "dev raw relative MSE"
+    },
+    "feedback_large": {
+      "args": {
+        "command": "fit",
+        "name": "feedback_large",
+        "adapter": null,
+        "predictor": null,
+        "caches": [
+          "predictor/predictor_countdown/cache/feedback_large32",
+          "predictor/predictor_countdown/cache/feedback96"
+        ],
+        "splits": [
+          "predictor_train",
+          "predictor_dev"
+        ],
+        "width": 512,
+        "depth": 4,
+        "epochs": 80,
+        "steps": 192,
+        "heads": 8,
+        "optimizer": "adamw",
+        "weight_decay": 0.01,
+        "batch_size": 32,
+        "save": [
+          4,
+          16,
+          48,
+          96,
+          192
+        ],
+        "seed": 101,
+        "batch": 16,
+        "lr": 0.0002
+      },
+      "parameters": 7808261,
+      "feature_access": "full forward logits and frozen readout; analytic output error, no original LM backward at deployment",
+      "zero_error_implies_zero_prediction": true,
+      "identity_baselines": [
+        {
+          "raw_cosine_mean": 0.002671146998181939,
+          "raw_relative_mse_mean": 1.0202584266662598,
+          "raw_relative_l2_mean": 1.0100622177124023,
+          "A_cosine_mean": -0.02191046066582203,
+          "B_cosine_mean": 0.002956557087600231,
+          "token_relative_l2": 1.0125120091516686,
+          "token_cosine": 0.0034490107815260958,
+          "mean_gradient": {
+            "cosine": 0.009673524647951126,
+            "relative_l2": 1.0046436786651611,
+            "norm_ratio": 0.1066400334239006
+          }
+        },
+        {
+          "raw_cosine_mean": 0.0010583872208371758,
+          "raw_relative_mse_mean": 1.0239932537078857,
+          "raw_relative_l2_mean": 1.011903166770935,
+          "A_cosine_mean": 0.018809784203767776,
+          "B_cosine_mean": 0.0008015857310965657,
+          "token_relative_l2": 1.0107432336079116,
+          "token_cosine": 0.0044588655556405225,
+          "mean_gradient": {
+            "cosine": -0.007847847416996956,
+            "relative_l2": 1.0111855268478394,
+            "norm_ratio": 0.1423451006412506
+          }
+        }
+      ]
+    },
+    "feedback_replay": {
+      "args": {
+        "command": "fit",
+        "name": "feedback_replay",
+        "adapter": null,
+        "predictor": null,
+        "caches": [
+          "predictor/predictor_countdown/cache/feedback_large32",
+          "predictor/predictor_countdown/cache/feedback96",
+          "predictor/predictor_countdown/cache/feedback_offline96",
+          "predictor/predictor_countdown/cache/feedback_offline384"
+        ],
+        "resume": "predictor/predictor_countdown/models/feedback_large/best.pt",
+        "data_split": "update",
+        "splits": [
+          "predictor_train",
+          "predictor_dev"
+        ],
+        "width": 512,
+        "depth": 4,
+        "epochs": 60,
+        "steps": 192,
+        "heads": 8,
+        "optimizer": "adamw",
+        "weight_decay": 0.01,
+        "batch_size": 32,
+        "save": [
+          4,
+          16,
+          48,
+          96,
+          192
+        ],
+        "seed": 101,
+        "batch": 16,
+        "lr": 0.0001
+      },
+      "parameters": 7808261,
+      "feature_access": "full forward logits and frozen readout; analytic output error, no original LM backward at deployment",
+      "zero_error_implies_zero_prediction": true,
+      "identity_baselines": [
+        {
+          "n": 256,
+          "raw_cosine_mean": 0.002671146998181939,
+          "raw_relative_mse_mean": 1.0202584266662598,
+          "raw_relative_l2_mean": 1.0100622177124023,
+          "A_cosine_mean": -0.02191046066582203,
+          "B_cosine_mean": 0.002956557087600231,
+          "token_relative_l2": 1.0125120091516686,
+          "token_cosine": 0.0034490107815260958,
+          "mean_gradient": {
+            "cosine": 0.009673524647951126,
+            "relative_l2": 1.0046436786651611,
+            "norm_ratio": 0.1066400334239006
+          },
+          "raw_global_relative_l2": 1.0086654424667358,
+          "raw_norm_ratio_median": 0.13692276179790497,
+          "batch16_cosine_mean": 0.006082620937377214
+        },
+        {
+          "n": 256,
+          "raw_cosine_mean": 0.0010583872208371758,
+          "raw_relative_mse_mean": 1.0239932537078857,
+          "raw_relative_l2_mean": 1.011903166770935,
+          "A_cosine_mean": 0.018809784203767776,
+          "B_cosine_mean": 0.0008015857310965657,
+          "token_relative_l2": 1.0107432336079116,
+          "token_cosine": 0.0044588655556405225,
+          "mean_gradient": {
+            "cosine": -0.007847847416996956,
+            "relative_l2": 1.0111855268478394,
+            "norm_ratio": 0.1423451006412506
+          },
+          "raw_global_relative_l2": 1.0078577995300293,
+          "raw_norm_ratio_median": 0.145364448428154,
+          "batch16_cosine_mean": -0.0021487423218786716
+        },
+        {
+          "n": 256,
+          "raw_cosine_mean": 0.0022956368047744036,
+          "raw_relative_mse_mean": 1.023661494255066,
+          "raw_relative_l2_mean": 1.0117443799972534,
+          "A_cosine_mean": 0.004858043976128101,
+          "B_cosine_mean": 0.0022535757161676884,
+          "token_relative_l2": 1.0129038922002747,
+          "token_cosine": 0.003570970972374897,
+          "mean_gradient": {
+            "cosine": 0.006824488285928965,
+            "relative_l2": 1.0107064247131348,
+            "norm_ratio": 0.15370601415634155
+          },
+          "raw_global_relative_l2": 1.0099332332611084,
+          "raw_norm_ratio_median": 0.14907731115818024,
+          "batch16_cosine_mean": 0.00379821821115911
+        },
+        {
+          "n": 256,
+          "raw_cosine_mean": 0.004123911261558533,
+          "raw_relative_mse_mean": 1.0240451097488403,
+          "raw_relative_l2_mean": 1.0119354724884033,
+          "A_cosine_mean": 0.03330522030591965,
+          "B_cosine_mean": 0.0037504180800169706,
+          "token_relative_l2": 1.013654673651133,
+          "token_cosine": 0.002815363638483218,
+          "mean_gradient": {
+            "cosine": 0.013851838186383247,
+            "relative_l2": 1.0072901248931885,
+            "norm_ratio": 0.13561026751995087
+          },
+          "raw_global_relative_l2": 1.0099083185195923,
+          "raw_norm_ratio_median": 0.1520543396472931,
+          "batch16_cosine_mean": 0.006224159151315689
+        }
+      ]
+    },
+    "synth_multi_sgd001": {
+      "args": {
+        "name": "synth_multi_sgd001",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": "predictor/predictor_countdown/models/sequence_multi/best.pt",
+        "mode": "synthetic",
+        "mean_file": null,
+        "steps": 192,
+        "lr": 0.01,
+        "seed": 101,
+        "save": [
+          16,
+          48,
+          96,
+          192
+        ],
+        "data": "update",
+        "layer": 8,
+        "optimizer": "sgd",
+        "weight_decay": 0.0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "module": "layers.8.self_attn.o_proj",
+      "backward_calls_for_update": false,
+      "predictor_frozen": true,
+      "upstream_forward_only": true,
+      "input_truncation": false
+    },
+    "feedback_large32_sgd001": {
+      "args": {
+        "command": "update",
+        "name": "feedback_large32_sgd001",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": "predictor/predictor_countdown/models/feedback_large/best.pt",
+        "caches": null,
+        "resume": null,
+        "data_split": "update",
+        "splits": [
+          "predictor_train",
+          "predictor_dev"
+        ],
+        "width": 256,
+        "depth": 2,
+        "epochs": 60,
+        "steps": 384,
+        "heads": 1,
+        "optimizer": "sgd",
+        "weight_decay": 0.01,
+        "batch_size": 32,
+        "save": [
+          16,
+          48,
+          96,
+          192,
+          384
+        ],
+        "seed": 101,
+        "batch": 16,
+        "lr": 0.01
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "original_LM_backward_calls": 0,
+      "predictor_frozen": true,
+      "feature_access": "one complete LM forward; analytic final-residual error; learned backward transport"
+    },
+    "true32_lr5e4": {
+      "args": {
+        "name": "true32_lr5e4",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": null,
+        "mode": "true",
+        "mean_file": null,
+        "steps": 192,
+        "lr": 0.0005,
+        "seed": 101,
+        "save": [
+          16,
+          48,
+          96,
+          192
+        ],
+        "data": "update",
+        "layer": 8
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "module": "layers.8.self_attn.o_proj",
+      "backward_calls_for_update": true,
+      "predictor_frozen": true,
+      "upstream_forward_only": false,
+      "input_truncation": false
+    },
+    "true32_sgd001_wd": {
+      "args": {
+        "name": "true32_sgd001_wd",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": null,
+        "mode": "true",
+        "mean_file": null,
+        "steps": 384,
+        "lr": 0.01,
+        "seed": 101,
+        "save": [
+          16,
+          192,
+          384
+        ],
+        "data": "update",
+        "layer": 8,
+        "optimizer": "sgd",
+        "weight_decay": 0.01,
+        "guard": false,
+        "batch_size": 32,
+        "guard_size": 0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "module": "layers.8.self_attn.o_proj",
+      "backward_calls_for_update": true,
+      "predictor_frozen": true,
+      "upstream_forward_only": false,
+      "forward_only_training_loss_backtracking": false,
+      "input_truncation": false
+    },
+    "mean32_sgd001_wd": {
+      "args": {
+        "name": "mean32_sgd001_wd",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": null,
+        "mode": "mean",
+        "mean_file": "predictor/predictor_countdown/models/sequence_large32/train_mean_raw.pt",
+        "steps": 384,
+        "lr": 0.01,
+        "seed": 101,
+        "save": [
+          16,
+          192,
+          384
+        ],
+        "data": "update",
+        "layer": 8,
+        "optimizer": "sgd",
+        "weight_decay": 0.01,
+        "guard": false,
+        "batch_size": 32,
+        "guard_size": 0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "module": "layers.8.self_attn.o_proj",
+      "backward_calls_for_update": false,
+      "predictor_frozen": true,
+      "upstream_forward_only": false,
+      "forward_only_training_loss_backtracking": false,
+      "input_truncation": false
+    },
+    "zero32_sgd001_wd": {
+      "args": {
+        "name": "zero32_sgd001_wd",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "predictor": null,
+        "mode": "zero",
+        "mean_file": null,
+        "steps": 384,
+        "lr": 0.01,
+        "seed": 101,
+        "save": [
+          16,
+          192,
+          384
+        ],
+        "data": "update",
+        "layer": 8,
+        "optimizer": "sgd",
+        "weight_decay": 0.01,
+        "guard": false,
+        "batch_size": 32,
+        "guard_size": 0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "module": "layers.8.self_attn.o_proj",
+      "backward_calls_for_update": false,
+      "predictor_frozen": true,
+      "upstream_forward_only": false,
+      "forward_only_training_loss_backtracking": false,
+      "input_truncation": false
+    },
+    "meta_psd32_r2": {
+      "args": {
+        "command": "fit",
+        "name": "meta_psd32_r2",
+        "predictor": "predictor/predictor_countdown/models/sequence_large32/best.pt",
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "preconditioner": null,
+        "mode": "predictor",
+        "rank": 4,
+        "steps": 1000,
+        "lr": 0.001,
+        "eta": 0.1,
+        "radius": 2.0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "gradient_predictor_frozen": true,
+      "base_copies_created": 0,
+      "optimizer_parameters": 573440,
+      "objective": "post-update query CE plus 0.005 delta squared norm",
+      "training_queries": "predictor_train only; context and query rows disjoint within each episode",
+      "selection": "predictor_dev CE; accuracy test untouched"
+    },
+    "meta_psd32_mean_r2": {
+      "args": {
+        "command": "fit",
+        "name": "meta_psd32_mean_r2",
+        "predictor": "predictor/predictor_countdown/models/sequence_large32/best.pt",
+        "cache": "predictor/predictor_countdown/cache/state32",
+        "adapter": "predictor/predictor_countdown/models/teacher/step-32",
+        "preconditioner": null,
+        "mode": "mean",
+        "rank": 4,
+        "steps": 1000,
+        "lr": 0.001,
+        "eta": 0.1,
+        "radius": 2.0
+      },
+      "base": "Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf67be50417f59c2c2f167def9a775",
+      "gradient_predictor_frozen": true,
+      "base_copies_created": 0,
+      "optimizer_parameters": 573440,
+      "objective": "post-update query CE plus 0.005 delta squared norm",
+      "training_queries": "predictor_train only; context and query rows disjoint within each episode",
+      "selection": "predictor_dev CE; accuracy test untouched"
+    }
+  }
+}

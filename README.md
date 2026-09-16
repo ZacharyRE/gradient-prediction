@@ -1,5 +1,9 @@
 # Hidden-State Gradient Proxies for Data Selection
 
+## Countdown follow-up
+
+[Localized LoRA SFT and predicted-gradient updates on Qwen2.5-0.5B](predictor/predictor_countdown/README.md): research logic, training configurations, and held-out results. Feedback-driven updates improve accuracy from 4.49% to 6.20%; local gradient prediction alone has not established an accuracy gain.
+
 Can a language model's prompt hidden state predict the LoRA gradient that the
 same example would produce—and can that prediction select better fine-tuning
 data without running backward passes over the full candidate pool?
