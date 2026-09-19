@@ -1,0 +1,48 @@
+{
+  "steps": 16,
+  "evaluation_steps": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "replicates": [
+    {
+      "train_seed": 123,
+      "update_seed": 101
+    },
+    {
+      "train_seed": 124,
+      "update_seed": 102
+    },
+    {
+      "train_seed": 125,
+      "update_seed": 103
+    }
+  ],
+  "predictor": "Y mask_pos, one-step selected checkpoints",
+  "batch_size": 32,
+  "microbatch": 8,
+  "calibration_samples": 4,
+  "calibration_steps": 1,
+  "calibration_lr": 3e-05,
+  "calibration_weight_decay": 0.01,
+  "calibration_clip": 1,
+  "calibration_parameters": "all predictor parameters",
+  "calibration_loss": "factor-balanced relative A/B MSE + .25 normalized G MSE; original frozen target_scale",
+  "calibration_state": "predictor and AdamW state persist across steps",
+  "lora_lr": 0.0003,
+  "lora_weight_decay": 0,
+  "lora_clip": 1,
+  "methods": [
+    "calibrated",
+    "frozen",
+    "oracle"
+  ],
+  "lora_update": "all32 predicted gradients for calibrated/frozen; all32 true gradients for oracle",
+  "diagnostics": "true gradients on remaining28 only for measurement, never training; diagnostic overhead counted separately",
+  "input_truncation": false,
+  "max_new_tokens": 2048,
+  "selection": "fixed protocol, no test-based hyperparameter or checkpoint selection"
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "Y input information ablation, four bidirectional Transformer predictors",
+  "sources": [
+    "y"
+  ],
+  "aux": [
+    "none",
+    "mask",
+    "pos",
+    "mask_pos"
+  ],
+  "replicates": [
+    {
+      "train_seed": 123,
+      "update_seed": 101
+    },
+    {
+      "train_seed": 124,
+      "update_seed": 102
+    },
+    {
+      "train_seed": 125,
+      "update_seed": 103
+    }
+  ],
+  "epochs": 100,
+  "update_steps": [
+    1,
+    2,
+    4
+  ],
+  "update_lr": 0.0003,
+  "update_batch": 32,
+  "update_optimizer": "adamw",
+  "update_weight_decay": 0.0,
+  "max_new_tokens": 2048,
+  "input_truncation": false,
+  "checkpoint_selection": "minimum predictor_dev mean factor-balanced relative A/B MSE; every epoch",
+  "downstream_primary_step": 1,
+  "downstream_selection": "highest mean accuracy_dev256 correct count at fixed primary step across the three paired replicates; ties lexicographically by aux name",
+  "test_dataset": "countdown_test2048",
+  "test_policy": "All four variants and all three predefined steps evaluated; no test-based reselection. Reused existing benchmark, not a newly unseen dataset.",
+  "replicate_policy": "Three paired training/update seed combinations, identical across features. Not a full crossed design; cannot separately estimate training and update seed variance.",
+  "extra_features": "log RMS and padding validity always present; none means no explicit supervision mask or position features",
+  "controls": [
+    "teacher32_start",
+    "matched_true",
+    "fixed_dense_mean"
+  ],
+  "raw_gradient_definition": "Unclipped complete LoRA A/B gradients reconstructed from predicted G; separately report dense G^T X. No direct parameter-gradient prediction head."
+}

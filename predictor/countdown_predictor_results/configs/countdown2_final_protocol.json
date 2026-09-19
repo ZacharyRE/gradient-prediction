@@ -1,0 +1,56 @@
+{
+  "registered_before_new_seed_development_results": true,
+  "final_update_seeds": [
+    107,
+    108,
+    109
+  ],
+  "primary_step": 16,
+  "methods": [
+    "oracle",
+    "frozen",
+    "offline_r2",
+    "selected_online",
+    "online_mean",
+    "fixed_online4small_secondary_if_distinct"
+  ],
+  "online_schedule_selection": "Highest mean step16 accuracy across seeds104/105/106 among online4/online2/online1/online2adam/online4small; tie lower mean dev CE, then online2, online2adam, online1, online4, online4small.",
+  "evaluation": "Full existing countdown_test2048; same benchmark previously exposed; not an unseen benchmark.",
+  "all_seeds_reported": true,
+  "no_selection_using_final_test": true,
+  "max_update_steps": 16,
+  "frozen_control": "ablation_y_none",
+  "offline_control": "second round predictor-induced warmup state aggregation",
+  "online_extra_oracle_cost_reported": true,
+  "step1_confirmation": "Additional seeds104/105/106 development results reported alongside prior seeds101/102/103; not pooled as independent questions.",
+  "online_mean": "Same selected refresh schedule and same probe counts as selected neural online method; step1 shared predictor, later refreshed dense means. Never selected on test.",
+  "holm_family": [
+    "online_s107 vs start",
+    "online_s107 vs frozen_s107",
+    "online_s108 vs start",
+    "online_s108 vs frozen_s108",
+    "online_s109 vs start",
+    "online_s109 vs frozen_s109"
+  ],
+  "optimizer_aware_extension": {
+    "registered_utc": "2026-09-18T07:28:47.203479+00:00",
+    "weight": 0.5,
+    "calibration_budget": 768
+  },
+  "low_budget_extension": {
+    "registered_utc": "2026-09-18T07:29:55.449657+00:00",
+    "oracle_pairs": 192,
+    "reason": "768 oracle sample-state pairs exceed true16 direct-update example count512; explicitly test smaller online cost. Registered before final16 test, after partial development and early step1 test results. Five-candidate family now fixed."
+  },
+  "secondary_fixed_low_budget": {
+    "registered_utc": "2026-09-18T07:44:49.709886+00:00",
+    "method": "online4small",
+    "seeds": [
+      107,
+      108,
+      109
+    ],
+    "step": 16,
+    "reason": "Evaluate192 oracle sample-state pairs even if not selected by development accuracy; secondary, not part of primary Holm family. If selected primary is already online4small, reuse it."
+  }
+}

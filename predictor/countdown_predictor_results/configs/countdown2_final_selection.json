@@ -1,0 +1,38 @@
+{
+  "recorded_utc": "2026-09-18T08:07:29.929260+00:00",
+  "selected_online": "online2",
+  "scores": {
+    "online4": {
+      "correct_sum": 38,
+      "mean_ce": 0.139151311247224
+    },
+    "online2": {
+      "correct_sum": 42,
+      "mean_ce": 0.13013123131734075
+    },
+    "online1": {
+      "correct_sum": 34,
+      "mean_ce": 0.13453960756597652
+    },
+    "online2adam": {
+      "correct_sum": 42,
+      "mean_ce": 0.13075982812648523
+    },
+    "online4small": {
+      "correct_sum": 37,
+      "mean_ce": 0.14229668225367134
+    }
+  },
+  "offline_predictor": "predictor/predictor_countdown2/models/dynamic16_aggregate_r2_y_none/best.pt",
+  "frozen_predictor": "predictor/predictor_countdown2/models/ablation_y_none/best.pt",
+  "predictor_hashes": {
+    "predictor/predictor_countdown2/models/dynamic16_aggregate_r2_y_none/best.pt": "c09dc25e0821642b2f79deaffb257fdeff62f7c5477169a61a01545e236b8a71",
+    "predictor/predictor_countdown2/models/ablation_y_none/best.pt": "29d3f98f84cea649f6902f21adfb2b263f2437d24ce7fea2a38cffd69b156fbf"
+  },
+  "final_seeds": [
+    107,
+    108,
+    109
+  ],
+  "primary_step": 16
+}

@@ -1,0 +1,25 @@
+{
+  "args": {
+    "name": "y_mask_pos_s123",
+    "cache": "predictor/predictor_countdown2/cache/state32",
+    "source": "y",
+    "aux": "mask_pos",
+    "seed": 123,
+    "epochs": 100,
+    "preload": true
+  },
+  "config": {
+    "source": "y",
+    "aux": "mask_pos",
+    "width": 512,
+    "depth": 2,
+    "architecture": "sequence"
+  },
+  "n_train": 8192,
+  "n_dev": 256,
+  "parameters": 5129856,
+  "batch_size": 32,
+  "input_truncation": false,
+  "loss": "factor-balanced relative A/B MSE + .25 normalized G MSE",
+  "selection": "minimum predictor_dev factor-balanced relative A/B MSE; evaluate every epoch"
+}

@@ -1,5 +1,9 @@
 # Hidden-State Gradient Proxies for Data Selection
 
+## Countdown gradient predictors
+
+[One-step input selection and 16-step online calibration](predictor/countdown_predictor_results/README.md): compact results, matched baselines, configurations, and implementation references. Selected mask+position reaches 5.18% vs 4.49% before updating; multi-step calibration is configuration-dependent.
+
 ## Countdown follow-up
 
 [Localized LoRA SFT and predicted-gradient updates on Qwen2.5-0.5B](predictor/predictor_countdown/README.md): research logic, training configurations, and held-out results. Feedback-driven updates improve accuracy from 4.49% to 6.20%; local gradient prediction alone has not established an accuracy gain.
