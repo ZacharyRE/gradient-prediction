@@ -18,7 +18,7 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 The [SFT diagnosis studies](research/README.md) provide supporting evidence about training stability, supervision targets, and evaluation. Their settings differ from the Countdown predictor experiments.
 
-## Find what you need
+## Importan Link
 
 | Entry | Purpose |
 |---|---|
