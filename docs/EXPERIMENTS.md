@@ -1,123 +1,35 @@
-# Experiment map and research plan
+# Research Roadmap
 
-## Research hypothesis
+[Project overview](../README.md) · [Results index](RESULTS.md) · [Predictor map](../predictor/README.md)
 
-For a candidate example \(x_i\), use a prompt representation \(h_i\) to predict
-its single-layer LoRA gradient \(\hat g_i=f(h_i)\). Score the candidate against
-a held-out target direction \(\bar g_T\):
+## Current question
 
-\[
-s_i = \cos(\hat g_i, \bar g_T).
-\]
+Can a learned gradient predictor remain useful for LoRA optimization as model parameters change, and can that approach extend from one module to all layers?
 
-The operational hypothesis is stronger than gradient prediction itself: data
-with high \(s_i\) should produce more useful downstream updates than random
-data under a fixed training budget.
+## Research stages
 
-## Completed attempts
+| Stage | Evidence so far | Main reference |
+|---|---|---|
+| Static gradient predictability | Hidden states contain gradient-direction and ranking information; data-selection transfer remains limited | [Earlier MATH/GSM8K study](DATA_SELECTION_RESULTS.md) |
+| Localized learning and state changes | Localized SFT is feasible; fixed-state prediction quality can deteriorate at later LoRA states | [Early Countdown study](../predictor/predictor_countdown/README.md) |
+| Useful one-step prediction | Y + mask + position was selected by development accuracy | [Input ablation](../predictor/countdown_predictor_results/README.md#one-step-input-selection) |
+| Multi-step calibration | Complete three-seed, 2,048-question evaluation through 32 single-layer updates | [Current calibration report](../predictor/countdown_predictor_results/README.md#dynamic-calibration) |
+| All-layer prediction | Independent/shared architectures explored; full downstream experiment unfinished | Pending |
 
-### Gradient targets
+## Next experiments
 
-- Full flattened raw LoRA A+B gradient; no sketch or SVD in the primary runs.
-- Rank 2 and rank 4.
-- Q, V, and O projections across layers 5, 11, 23, and 27.
-- Layer-17 Q/V/O and `down_proj` reference experiments.
+1. **Isolate epoch selection.** Match predictor optimizer-state policy between fixed-5 and validation-selected calibration. The completed comparison changes both factors.
+2. **Finish the all-layer extension.** Compare 24 independent predictors with a layer-conditioned shared predictor using gradient development data; complete one-step and 16-step calibration/oracle/frozen downstream tests for all layers' `o_proj`. Architecture fitting and downstream benefit are separate questions.
+3. **Measure remaining drift and cost.** Track activation and aggregate A/B cosine, norm ratio, and error alongside accuracy. Count gradient labels and computation for calibration, validation, and diagnostics separately.
 
-### Predictors
+These are research priorities, not claims of completed results or instructions to launch a new run. Longer step counts and all-layer performance require their own matched evidence.
 
-- Ridge with train-only cross-validation.
-- Separate A/B Ridge penalties.
-- One-hidden-layer MLP.
-- Shared nonlinear A/B bottleneck.
-- Shared and factor-specific reduced-rank linear Ridge bottlenecks.
-- Predictor-training scale-up from 2,000 to 5,000 examples.
+## Evidence conventions
 
-### Prompt representations
+- Use independent calibration-training and gradient-validation roles; do not choose epochs using downstream test accuracy.
+- Record the input configuration, model state, update scope, seed pairs, optimizer reset policy, and actual selected epochs.
+- Preserve full evaluation inputs; distinguish output-generation caps from input length.
+- Separate gradient reconstruction, downstream task accuracy, and computational benefit.
+- Update the main topic report for related variants; keep per-run configurations and raw tables as supporting evidence.
 
-- Last prompt token.
-- Mean pooling.
-- Exact target-module input vs same-block post-layer state.
-- Learned second-order mean and sum representations.
-
-### Selection and downstream training
-
-- MATH-only top-k predicted target alignment.
-- Equal-quota MATH/GSM8K selection.
-- Frozen-predictor cross-domain audit.
-- Selected vs random SFT with all-layer Q/K/V/O LoRA.
-- Selected vs random SFT with all-linear LoRA.
-- Base, selected, and random evaluation on MATH-500, GSM8K, and a common
-  unseen MATH-train holdout.
-
-## Main unresolved causal chain
-
-```text
-hidden state predicts local gradient
-                ↓ established
-predicted gradient ranks true alignment
-                ↓ established in-domain
-local alignment predicts all-layer update utility
-                ↓ unverified
-selected SFT improves generalization
-                ↓ not observed
-benchmark accuracy exceeds random and base
-```
-
-## Prioritized next experiments
-
-### 1. Stabilize the SFT control
-
-Tune only on random MATH data first. Test learning rates 2e-6, 5e-6, and 1e-5
-with checkpoints at 25, 50, and 125 optimizer steps. Prefer Q/K/V/O rank 8 or
-16 before all-linear rank 32. The acceptance criterion is no large MATH-500 or
-GSM8K regression relative to base.
-
-### 2. Match the selector and training parameter spaces
-
-Run a diagnostic ladder:
-
-1. selection and SFT both use layer-5 `o_proj`, rank 4;
-2. selection uses layer-5 `o_proj`, SFT uses all layers' `o_proj`;
-3. SFT expands to all layers' Q/K/V/O;
-4. SFT expands to all-linear.
-
-This isolates whether the signal transfers across layers and modules.
-
-### 3. Add a true-gradient oracle
-
-On a smaller pool, compare matched-size sets selected by:
-
-- random sampling;
-- length/type-matched random sampling;
-- hidden-state similarity;
-- predicted-gradient alignment;
-- true-gradient alignment.
-
-If the oracle fails, the alignment objective is the problem. If the oracle
-works but the predictor fails, predictor ranking is the bottleneck. If both
-work but all SFT branches degrade, the training recipe is the bottleneck.
-
-### 4. Replace independent top-k with diversity-aware selection
-
-Start with type/level/length quotas and clustering. Then test greedy residual
-gradient matching, selecting examples that explain the remaining target
-direction rather than repeatedly choosing near-duplicate aligned gradients.
-
-### 5. Optimize for ranking or utility directly
-
-Instead of reconstructing 12,288 gradient coordinates, predict the scalar
-alignment score or train a pairwise ranker. Later, replace raw cosine with a
-closer approximation to training influence, such as a validation-gradient dot
-product or a preconditioned influence score.
-
-## Reporting checklist
-
-Every selection experiment should record:
-
-- exact candidate, anchor, train, dev, and test partitions;
-- leakage checks and selected/random overlap;
-- source, type, level, token-length, and loss distributions;
-- true-gradient oracle and matched-random baselines where feasible;
-- at least three SFT seeds for final comparisons;
-- paired confidence intervals or exact tests;
-- performance relative to both random SFT and the untouched base model.
+The [original data-selection plan](DATA_SELECTION_PLAN.md) and [SFT research archive](../research/README.md) remain available as earlier context.

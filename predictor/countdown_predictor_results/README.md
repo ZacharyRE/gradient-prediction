@@ -1,27 +1,15 @@
-# Countdown: one-step prediction and multi-step calibration
+# Countdown: One-Step Prediction and Dynamic Calibration
 
-**Latest: calibration with 4 current-batch examples and 16 gradient-validation examples reaches 7.32% test accuracy after 32 updates (baseline 4.49%; oracle 7.45%).**
+[Project overview](../../README.md) · [Predictor research map](../README.md) · [Earlier calibration experiments](HISTORY.md)
 
-Qwen2.5-0.5B-Instruct · layer 8 `o_proj` LoRA · rank/alpha 64 · common teacher32 starting adapter. All reported accuracies are averages over three update runs unless stated otherwise.
+**Research question:** can a gradient predictor produce useful LoRA updates, and can small calibration batches keep it effective as the model changes?
 
-## Latest: adaptive calibration through 32 steps
+**Current result:** calibration reaches **7.32%** test accuracy after 32 updates, versus **4.49%** initially and **7.45%** with oracle gradients. Results cover **layer 8 `o_proj` only**; all-layer downstream evaluation is unfinished.
 
-**[Protocol, complete test results, and per-seed records →](adaptive-calibration-32step/)**
+Qwen2.5-0.5B-Instruct · LoRA rank/alpha 64 · teacher32 starting adapter · three paired predictor/update seeds: **123/101, 124/102, 125/103**.
 
-| Method | Step 1 | Step 16 | Step 32 |
-|---|---:|---:|---:|
-| Validation-selected calibration epochs | 5.18% | 4.87% | **7.32%** |
-| Fixed 5 calibration epochs | 5.00% | **6.22%** | 6.61% |
-| Frozen predictor | 5.18% | 0.29% | 0.00% |
-| True-gradient oracle | 5.11% | 5.71% | **7.45%** |
+## One-step input selection
 
-Full 2,048-question test set; three paired seeds; baseline **4.49%**. Each batch has 32 examples: use 4 for predictor calibration and a separate fixed set of 16 to select epochs 0–30. Predictor lr **1e-4**; LoRA lr **3e-4**. Adaptive resets predictor AdamW each batch; fixed-5 retains its state. These are single-layer results; all-layer downstream experiments are unfinished.
-
-The sections below retain the earlier one-step, Countdown2, and lightweight-calibration experiments. The negative lightweight result uses a different calibration configuration.
-
-![Earlier results overview](figures/overview.png)
-
-## 1. Current selected predictor: Y + mask + position
 
 Selected by **mean one-step development accuracy**, comparing four input variants under the same protocol. No test-based input or training-seed selection.
 
@@ -45,61 +33,59 @@ The selected predictor estimates activation gradients from module outputs; LoRA 
 
 The test improvement over no update is **+0.68 percentage points**, with paired question-bootstrap 95% CI **[−0.03, +1.40]**. Versus `none`, the difference is +0.34 points, CI [+0.05, +0.63], unadjusted for multiple comparisons and conditional on the three fitted models. None of the three per-seed comparisons survives the prespecified Holm correction. This is a promising point estimate, not an established robust gain.
 
-## 2. Earlier Countdown2: 16-step dynamic predictors
+## Dynamic calibration
 
-| Method | Existing test (baseline 4.49%) | Separate fresh test (baseline 4.35%) |
-|---|---:|---:|
-| Frozen neural predictor | 0.96% | 1.11% |
-| Main online neural predictor | 3.82% | 3.86% |
-| **Lower-budget online neural predictor** | **7.06%** | **7.11%** |
-| Dynamic true-gradient mean — **not a neural predictor** | 8.46% | 8.24% |
-| Full-batch true-gradient oracle | 5.42% | 5.31% |
+At each of 32 LoRA update steps:
 
-All are 16-step endpoints for update seeds 107/108/109, with fixed calibration sampling seed 701. The lower-budget neural variant was a prespecified secondary comparison, not the development-selected primary. Across a broader 3×3 calibration/update-seed crossing, the main neural predictor averaged 4.33% on the fresh test; the dynamic mean averaged 7.14%. These conditions share the initial predictor and evaluation questions.
+1. Take **32 examples** and randomly select **4** for predictor calibration using true gradients.
+2. Recompute true gradients on **16 fixed, separate gradient-development examples** at the current LoRA state. They select the checkpoint and do not train the predictor.
+3. Train the predictor for **30 epochs** on the four examples, one optimizer step per epoch. Evaluate epochs **0–30**, then restore the lowest-error checkpoint; epoch 0 retains the incoming weights.
+4. Predict gradients for **all 32 examples**, sum their sum-loss A/B gradients, divide by total supervised tokens, clip, and take **one LoRA update**.
 
-| Calibration setting | Earlier main neural | Earlier lower-budget neural | New per-batch neural |
-|---|---|---|---|
-| Initial predictor | Y + none | Y + none | Y + mask + position |
-| Calibration examples | Fixed 64 train + 32 validation | Fixed 32 train + 16 validation | 4 from the current batch32 |
-| Refresh steps | 2, 4, 6, 8, 10, 12, 14, 16 | 2, 5, 9, 13 | Every step, 1–16 |
-| Training per refresh | 30 epochs, 60 optimizer steps | 30 epochs, 30 optimizer steps | 1 optimizer step |
-| Predictor learning rate | 1e-4 | 1e-4 | 3e-5 |
-| Validation safeguard | Best checkpoint, including pre-refresh state | Same | None; keep the update |
-| Total predictor optimizer steps | 480 | 120 | 16 |
-| True-label example–state pairs | 512 train + 256 validation | 128 train + 64 validation | 64 calibration, plus separately counted diagnostics |
+Epoch selection minimizes **per-example factor-balanced A/B relative squared error + concatenated aggregate A/B relative squared error**. It uses gradient validation, not downstream accuracy. Across 96 refreshes, selected epochs average **6.45**, with median **3**; epoch 0 is selected 8 times and epoch 30 four times.
 
-Earlier refreshes create a new predictor AdamW optimizer; the new experiment carries its optimizer state across steps. All three use LoRA AdamW lr 3e-4, batch32, weight decay 0. Thus this is **not** a controlled comparison of calibration-data sources alone.
+### Complete test results
 
-The mean control periodically recomputes an actual average gradient on fixed training probes. After the shared first predictor step, it updates using that direction without neural prediction from the current batch. Its higher accuracy does not establish better neural gradient prediction or a compute advantage.
+Every checkpoint is evaluated on the complete **2,048-question existing test set**. Entries are means over three paired seeds. The 1/16/32-step endpoints were specified before test evaluation; starting accuracy is **92/2048 = 4.49%**.
 
-## 3. Earlier lightweight calibration: completed, negative downstream result
-
-All 9 trajectories and 92 accuracy evaluations are complete. Same starting adapter, matched update batches, and three training/update seed pairs as above. Calibrate the entire predictor on 4 examples, then use predicted gradients for **all 32 examples**. The other 28 true-gradient labels are diagnostic only and never train the predictor.
-
-| Update step | Calibrated predictor | Frozen predictor | True-gradient oracle |
+| Method | Step 1 | Step 16 | Step 32 |
 |---|---:|---:|---:|
-| 0 | 4.49% | 4.49% | 4.49% |
-| 1 | 5.01% | 5.18% | 5.11% |
-| 2 | 4.96% | 4.95% | 4.69% |
-| 4 | 4.31% | 4.44% | 3.16% |
-| 8 | 1.63% | 2.43% | 4.70% |
-| 16 | **0.33%** | **0.29%** | **5.71%** |
+| Validation-selected calibration epochs | 5.18% | 4.87% | **7.32%** |
+| Fixed 5 calibration epochs | 5.00% | **6.22%** | 6.61% |
+| Frozen predictor | 5.18% | 0.29% | 0.00% |
+| True-gradient oracle | 5.11% | 5.71% | **7.45%** |
 
-Existing 2,048-question test, three-run means. On the 28 non-calibration examples, calibration improves batch LoRA-gradient cosine in **47/48** within-state comparisons (mean increase **0.037**), yet this does not translate into sustained downstream accuracy. Diagnostic backward passes add measurement cost beyond the 4-example calibration budget.
+![Complete test-set comparison](adaptive-calibration-32step/figures/accuracy.png)
 
-The new update implementation partitions true-gradient acquisition into the 4-example calibration subset and the remaining 28 examples. Its floating-point batching differs from the original one-step implementation; per-seed frozen results should not be expected to be bit-identical. Within this experiment, calibration/frozen/oracle use matched batches and acquisition grouping.
+At step 32, adaptive calibration exceeds baseline by **2.83 percentage points** and fixed-5 by **0.72 points**. Its three seed results are **6.79%, 7.86%, 7.32%**; each exceeds baseline and its paired fixed-5 control. It trails oracle by **0.13 points** in the mean, which does not establish equivalence. **Fixed-5 is better at step 16**, and performance is not monotonic.
 
-## Reading the comparisons
+### Update configuration and interpretation
 
-- **Different tests:** current one-step and lightweight curves use the existing benchmark; the earlier fresh-test column uses a separate, numerically disjoint question set. Do not directly rank 5.18% vs 7.11% as a matched experiment.
-- **Different seeds and training:** earlier dynamic runs start from one fixed Y-none predictor; current runs pair three newly trained predictors with three update seeds. The current offline trainer also changed sample-order RNG and checkpoint evaluation frequency.
-- **Input policy:** preserve complete inputs. Training/calibration hidden states use questions plus reference answers; accuracy generation receives questions only. Greedy decoding, BF16 vLLM, output cap 2,048 new tokens — not an input-length limit.
-- **Gradient aggregation:** sum per-example sum-loss gradients, divide by the batch's total supervised-token count, clip, then take one AdamW step. It is not an equal average of per-example mean gradients.
+| Setting | Value |
+|---|---|
+| Predictor calibration | AdamW lr **1e-4**, weight decay 0.01, clip 1; 4 training examples |
+| Calibration training loss | Individual A/B relative MSE + 0.25 activation MSE normalized by the original offline scale; no aggregate training term |
+| Epoch selection | 16 fixed validation examples; run 30 epochs and select among 0–30 |
+| LoRA optimizer | AdamW lr **3e-4**, weight decay 0, clip 1; persistent optimizer state |
+| Adaptive predictor optimizer | Reset at every new batch; selected predictor weights persist |
+| Fixed-5 control | Same calibration examples, lr, and loss; always retain epoch 5; predictor optimizer state persists |
+| Generation | Greedy native BF16 vLLM; full input prompts; output cap **2,048 new tokens** |
 
-## Files
+The adaptive/fixed-5 comparison changes **both epoch selection and predictor optimizer-state policy**. All three adaptive runs select epoch 0 at the first step, so the first-step gain comes from the original predictor. The 16 validation examples require fresh true gradients each step; another 28 current-batch true gradients are collected only for diagnostics. These costs preclude inferring a compute advantage from the four-example calibration count alone.
 
-- [Configurations](configs/) — selection rule, training, online schedules, checkpoint SHA256 identities.
-- [Per-seed results](results/) — CSV accuracy tables and JSON gradient/statistical records.
-- [Implementation references](source/) — architecture and original update/calibration code; not a turnkey reproduction bundle.
+The original one-step input study and this dynamic study differ in floating-point gradient-acquisition grouping; their individual-seed results need not match exactly. Use matched controls within each study. These are three paired seeds, not a full seed crossing or an independent fresh-test confirmation.
 
-Large model weights, gradient caches, datasets, and full generated answers are excluded. No unique best training seed is claimed; the selected current input configuration retains all three checkpoints. Earlier results recorded September 19, 2026; latest adaptive-calibration supplement added September 21, 2026.
+## Evidence and next stage
+
+| Need | File |
+|---|---|
+| Full current configuration | [protocol.json](adaptive-calibration-32step/protocol.json) |
+| Per-seed accuracy | [Test](adaptive-calibration-32step/results/test_accuracy.csv) · [Accuracy development set](adaptive-calibration-32step/results/dev_accuracy.csv) |
+| Each batch's four calibration examples and selected epoch | [Calibration choices](adaptive-calibration-32step/results/calibration_choices.csv) |
+| Activation and LoRA gradient reconstruction | [All-step metrics](adaptive-calibration-32step/results/gradient_metrics.csv) |
+| Evaluation integrity and source identity | [Audit](adaptive-calibration-32step/results/test_audit.json) · [SHA256 provenance](adaptive-calibration-32step/provenance.json) |
+| Code and reproduction boundary | [Current source snapshots](adaptive-calibration-32step/source/README.md) |
+| Original one-step evidence | [Configs](configs/) · [Results](results/) · [Source references](source/README.md) |
+| Earlier dynamic variants | [Countdown2 and lightweight calibration](HISTORY.md) |
+
+Next: isolate the optimizer-reset effect and finish the all-layer shared/independent predictor study. See the [current roadmap](../../docs/EXPERIMENTS.md#next-experiments). Large checkpoints, datasets, gradient caches, and full generated answers remain in the server archive.

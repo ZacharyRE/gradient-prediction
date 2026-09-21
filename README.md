@@ -1,142 +1,37 @@
-# Hidden-State Gradient Proxies for Data Selection
+# Gradient Prediction for LoRA Learning
 
-## Countdown gradient predictors
+Can a learned predictor estimate useful gradients and keep improving a model as its parameters change?
 
-[One-step input selection and 16-step online calibration](predictor/countdown_predictor_results/README.md): compact results, matched baselines, configurations, and implementation references. Selected mask+position reaches 5.18% vs 4.49% before updating; multi-step calibration is configuration-dependent.
+**Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration on Countdown.
 
-## Countdown follow-up
+**Latest completed result:** single-layer calibration reaches **7.32%** test accuracy after **32 updates**, from **4.49%** before updating; the true-gradient oracle reaches **7.45%**. These are means over three paired seeds on the complete 2,048-question test set. Fixed-5 calibration is stronger at step 16; all-layer downstream results are still pending. [Read the main Countdown report →](predictor/countdown_predictor_results/README.md)
 
-[Localized LoRA SFT and predicted-gradient updates on Qwen2.5-0.5B](predictor/predictor_countdown/README.md): research logic, training configurations, and held-out results. Feedback-driven updates improve accuracy from 4.49% to 6.20%; local gradient prediction alone has not established an accuracy gain.
+## Research route
 
-Can a language model's prompt hidden state predict the LoRA gradient that the
-same example would produce—and can that prediction select better fine-tuning
-data without running backward passes over the full candidate pool?
+| Stage | Question | Evidence and reading |
+|---|---|---|
+| 1. Predictability | Do hidden states contain useful gradient information? | [Earlier MATH/GSM8K gradient prediction and data selection](docs/DATA_SELECTION_RESULTS.md) — Qwen2.5-1.5B |
+| 2. Useful updates | Can predicted gradients drive actual learning? | [Early Countdown local and feedback predictors](predictor/predictor_countdown/README.md) — Qwen2.5-0.5B |
+| 3. One-step selection | Which predictor inputs work best downstream? | [Y / mask / position ablation](predictor/countdown_predictor_results/README.md#one-step-input-selection) |
+| 4. Dynamic calibration | Can small calibration batches sustain multi-step updates? | [4 calibration + 16 validation examples; 16/32-step results](predictor/countdown_predictor_results/README.md#dynamic-calibration) — current main experiment |
+| 5. All-layer prediction | Can the approach extend to all 24 o_proj modules? | [Current roadmap](docs/EXPERIMENTS.md#next-experiments) — downstream evaluation unfinished |
 
-This repository studies that question on **Qwen2.5-1.5B-Instruct** with MATH
-and GSM8K. The current answer is deliberately narrow:
+The [SFT diagnosis studies](research/README.md) provide supporting evidence about training stability, supervision targets, and evaluation. Their settings differ from the Countdown predictor experiments.
 
-> Hidden states contain a useful, mostly linear signal for single-layer LoRA
-> gradient direction and candidate ranking. Gradient-selected data improves
-> one matched in-domain holdout over random selection, but it has not yet
-> produced a reliable end-to-end SFT improvement on MATH-500 or GSM8K.
+## Find what you need
 
-## Method
+| Entry | Purpose |
+|---|---|
+| [Predictor research map](predictor/README.md) | Current topic and earlier predictor studies |
+| [Countdown report](predictor/countdown_predictor_results/README.md) | Main results, method, configuration, and evidence links |
+| [Results index](docs/RESULTS.md) | One entry point for results across research topics |
+| [Research roadmap](docs/EXPERIMENTS.md) | Completed work, open questions, and next experiments |
+| [SFT research archive](research/README.md) | Published reports, methods, and supporting evidence |
 
-```mermaid
-flowchart LR
-    A[Prompt] --> B[Single forward pass]
-    B --> C[Layer-5 post-layer<br/>last-token hidden state]
-    C --> D[Ridge predictor]
-    D --> E[Predicted layer-5<br/>o_proj LoRA gradient]
-    T[Held-out target set] --> F[Mean target gradient]
-    E --> G[Cosine alignment score]
-    F --> G
-    G --> H[Rank candidate data]
-    H --> I[Selected vs random SFT]
-```
+## Code and reproduction
 
-The strongest selector uses the post-layer last-token representation at layer
-5 to predict the full rank-4 `o_proj` LoRA A+B gradient. Candidates are ranked
-by cosine similarity between their predicted gradient and a held-out mean
-target gradient.
+[training/](training/), [evaluation/](evaluation/), [gradient_geometry/](gradient_geometry/), and [configs/gradient_geometry/](configs/gradient_geometry/) contain the shared implementation of the earlier gradient-prediction/data-selection pipeline. Start with its [setup and reproduction guide](predictor/single_layer/README.md#setup).
 
-## Key results
+Countdown releases include [source snapshots](predictor/countdown_predictor_results/adaptive-calibration-32step/source/README.md), configurations, and compact results. They require the original data, weights, cached supervision, and experiment layout to rerun. Each report states its own reproduction boundary.
 
-| Question | Best current evidence | Takeaway |
-|---|---:|---|
-| Can hidden states predict a sample gradient? | cosine **0.7203** vs mean-gradient baseline **0.6613** | Yes, at the best layer/module |
-| Can predicted gradients rank true target alignment? | Spearman **0.5956** | Useful but imperfect ranking signal |
-| Is a nonlinear predictor necessary? | Ridge ≥ tested MLP/bottleneck variants | The recoverable signal is largely linear |
-| Does more predictor data help? | 2k→5k: cosine **0.5167→0.5242**, rho **0.3180→0.3420** | Yes, modestly |
-| Does selection beat random in-domain? | MATH common-unseen: **35.5% vs 32.8%**, p=**0.0055** | One significant positive result |
-| Does selection improve public benchmarks? | MATH-500 **36.4% vs 37.8%**; GSM8K **60.7% vs 61.9%** | Not yet |
-
-The main limitation is a geometry mismatch: selection uses one layer's
-rank-4 `o_proj` gradient, while downstream SFT updates all layers and either
-Q/K/V/O or every linear module at rank 16/32.
-
-See [docs/RESULTS.md](docs/RESULTS.md) for the complete result summary and
-[docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) for experiment design and next steps.
-
-## Repository layout
-
-```text
-configs/gradient_geometry/   Reproducible predictor experiment configs
-gradient_geometry/           Data, extraction, and compression utilities
-training/                    LoRA warmup and SFT training
-evaluation/                  Extraction, predictors, selection, and evaluation
-predictor/                   Predictor documentation
-docs/                        Maintained result and experiment summaries
-data/                        Local datasets; ignored by Git
-result/                      Local SFT/GRPO artifacts; ignored by Git
-```
-
-Large arrays, adapters, checkpoints, logs, and prediction files are excluded
-from Git. The compact tables in `docs/` are the repository's maintained result
-record.
-
-## Setup
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-The YAML configs contain a local model snapshot path. Change `model.path` and
-`tokenizer.path` to your own Qwen2.5-1.5B-Instruct checkout before running.
-GPU execution is expected for gradient extraction, SFT, and vLLM evaluation.
-
-## Minimal reproduction path
-
-The commands below illustrate the main stages. Output directories must be new;
-the scripts intentionally avoid overwriting completed experiments.
-
-```bash
-# 1. Warm up a single-layer LoRA adapter.
-python training/warmup_lora.py \
-  --config configs/gradient_geometry/qwen2.5_1.5b_layer5_oproj_rank4_direct.yaml \
-  --output runs/layer5_oproj/warmup \
-  --device cuda:0
-
-# 2. Extract matched prompt hidden states and per-example raw gradients.
-python evaluation/extract_single_layer_raw_gradients.py \
-  --config configs/gradient_geometry/qwen2.5_1.5b_layer5_oproj_rank4_direct.yaml \
-  --adapter runs/layer5_oproj/warmup/adapter \
-  --output runs/layer5_oproj/formal \
-  --device cuda:0
-
-# 3. Fit and evaluate the train-only-CV Ridge predictor.
-python evaluation/evaluate_direct_raw_gradient_ridge.py \
-  --experiment runs/layer5_oproj/formal \
-  --device cuda:0
-
-# 4. Measure candidate ranking against a held-out target gradient.
-python evaluation/evaluate_target_alignment_spearman.py \
-  --config configs/gradient_geometry/qwen2.5_1.5b_layer5_oproj_rank4_direct.yaml \
-  --adapter runs/layer5_oproj/warmup/adapter \
-  --experiment runs/layer5_oproj/formal \
-  --device cuda:0
-```
-
-For the full layer/module/rank sweep, use
-`evaluation/run_qvo_layer_rank_sweep.py`. SFT is implemented in
-`training/train_lora_sft.py`; its selected and random branches must use the
-same hyperparameters.
-
-## Current status
-
-- **Established:** hidden-state prediction of single-layer raw LoRA gradient
-  direction; medium-strength target-alignment ranking.
-- **Promising:** a statistically significant selected-over-random gain on a
-  matched, unseen MATH-train holdout.
-- **Unresolved:** public-benchmark improvement and transfer from a single-layer
-  proxy to all-layer SFT.
-- **Next:** stabilize the SFT control, test an exact-match layer-5 `o_proj`
-  intervention, add a true-gradient oracle, and replace pure top-k selection
-  with alignment-plus-diversity selection.
-
-
-## LoRA SFT investigation report
-
-The [September 9 study report and supporting evidence](research/sft_generalization_20260909/README.md) includes a 30-page PDF, five-seed results, causal controls, scoring audits, and documented reproduction limits.
+Evaluation preserves **all input tokens**. A generation-token cap limits newly generated output only. Calibration uses reference solutions for gradient supervision; downstream accuracy generation receives question prompts. No overall compute saving or backpropagation-free training claim is established.

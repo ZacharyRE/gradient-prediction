@@ -1,5 +1,9 @@
 # Countdown: from localized LoRA SFT to predicted-gradient updates
 
+[Predictor research map](../README.md) · [Current one-step and calibration report](../countdown_predictor_results/README.md)
+
+**Earlier study:** this report covers localized SFT, local/feedback predictors, and learned preconditioning. Its protocols differ from the later mask+position calibration study.
+
 **Research question:** Can a learned gradient predictor drive useful LoRA updates at a single linear module of Qwen2.5-0.5B-Instruct?
 
 The evidence supports three distinct steps: localized SFT works; gradients are predictable at a fixed model state; output-error-conditioned predictions can improve held-out accuracy during subsequent updates. Accurate gradient prediction alone does not establish effective optimization.
