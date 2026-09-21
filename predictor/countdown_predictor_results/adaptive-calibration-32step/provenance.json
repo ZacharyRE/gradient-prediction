@@ -1,0 +1,77 @@
+{
+  "experiment_directory": "predictor/predictor_dynamic/adaptive-validation",
+  "files": [
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/configs/experiment.json",
+      "sha256": "7bebcefff0c570a5250608fef4f84738076ecb6e43705729d5bd9c313d147c0a"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/results/accuracy/single_test/summary.json",
+      "sha256": "0997d0fb8b15c34048b40b203897e62b587af609ef6ab2afc89a1f0fe03bae52"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/results/accuracy/single_dev/summary.json",
+      "sha256": "e506f73629f220fb2b3c77921b9bcfd2d805615141cd1242577264c926fb9b66"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/data/predictor_dev.jsonl",
+      "sha256": "0ff141c22664756854c4cb9e3cdc68dd7d3573cc77ea840a28b5e95c7ccaf3c9"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/data/update.jsonl",
+      "sha256": "9f06e0d7b370790e0bdd2633f401d9ee74533ca9d3dc5c09020c1cf1c04d66ae"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/data/countdown_test2048.jsonl",
+      "sha256": "2eeb77068b99adf61d61c6eb99f3eeed4545df8ea85a222ccfe8e39e1a5976d9"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/data/accuracy_dev256.jsonl",
+      "sha256": "6a3741b9c885c6364fd54dc529a46083a1018bad31f2fb1a1528e64fc94508e8"
+    },
+    {
+      "path": "predictor/predictor_dynamic/one-step/models/y_mask_pos_s123/best.pt",
+      "sha256": "fa13c80725fa8a4e2d5ada8df67b7778741416c86c37ec513cbdfe05e5fca787"
+    },
+    {
+      "path": "predictor/predictor_dynamic/one-step/models/y_mask_pos_s124/best.pt",
+      "sha256": "58e021783b9b1eb9221a9db5eea35dda29e7df81f690f9167adac54f38d2dd58"
+    },
+    {
+      "path": "predictor/predictor_dynamic/one-step/models/y_mask_pos_s125/best.pt",
+      "sha256": "0c0ef9bb7c08b0cc4185442c3689b88479cd2e477ceb8de457649eef950fafe6"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/update_adaptive.py",
+      "sha256": "3531dfb385da09038fc77558fc8c0a7647a3d7670b95621ce2ce3b78b6d31d45"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/multilayer.py",
+      "sha256": "1a7ae7412c22935979d91be3b0ba090b738f6b53304e41e9bf1fb288717fcca6"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/predictor.py",
+      "sha256": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/core.py",
+      "sha256": "12d1304535b5554ffaf515f5eaa698c9026caf96a89d8ac1597718c4e1dccab9"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/eval_accuracy.py",
+      "sha256": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2"
+    },
+    {
+      "path": "predictor/predictor_dynamic/adaptive-validation/scripts/fit_ablation.py",
+      "sha256": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0"
+    }
+  ],
+  "published_source_sha256": {
+    "fit_ablation.py": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0",
+    "multilayer.py": "1a7ae7412c22935979d91be3b0ba090b738f6b53304e41e9bf1fb288717fcca6",
+    "core.py": "f2096f15f66f7e69fc38c5eb23f0c447b720a6965b5fa72ec4e0b0fdec27f01e",
+    "update_adaptive.py": "3531dfb385da09038fc77558fc8c0a7647a3d7670b95621ce2ce3b78b6d31d45",
+    "predictor.py": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e",
+    "eval_accuracy.py": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2"
+  }
+}

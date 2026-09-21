@@ -1,0 +1,148 @@
+{
+  "scope": "Completed single-layer 32-step experiment; all-layer downstream results excluded",
+  "model": {
+    "base": "Qwen/Qwen2.5-0.5B-Instruct",
+    "module": "layer 8 self_attn.o_proj (zero-based)",
+    "lora_rank": 64,
+    "lora_alpha": 64,
+    "initial_adapter": "predictor/predictor_countdown2/models/teacher/step-32"
+  },
+  "predictor": {
+    "input": "Y + supervision mask + normalized position features; log-RMS and padding validity also provided",
+    "architecture": "bidirectional Transformer",
+    "width": 512,
+    "depth": 2,
+    "heads": 8,
+    "ffn": 1024,
+    "parameters": 5129856,
+    "output": "activation gradient; analytically reconstruct full LoRA A/B gradients",
+    "offline_train_examples": 8192,
+    "offline_gradient_dev_examples": 256,
+    "offline_epochs": 100,
+    "offline_batch": 32,
+    "offline_optimizer": "AdamW",
+    "offline_lr": 0.0003,
+    "offline_weight_decay": 0.01,
+    "offline_clip": 1,
+    "offline_checkpoint_selection": "minimum factor-balanced per-example A/B relative MSE on predictor_dev; every epoch"
+  },
+  "replicates": [
+    {
+      "predictor_seed": 123,
+      "update_seed": 101
+    },
+    {
+      "predictor_seed": 124,
+      "update_seed": 102
+    },
+    {
+      "predictor_seed": 125,
+      "update_seed": 103
+    }
+  ],
+  "calibration": {
+    "refresh": "every outer step, 1 through 32",
+    "current_batch_size": 32,
+    "train_count": 4,
+    "train_sampling": "uniform without replacement from each current batch; RandomState(update_seed + 10000)",
+    "validation_count": 16,
+    "validation_sampling": "fixed predictor_dev indices 0 through 15; separate from update batches",
+    "fresh_labels": "recompute true gradients at the current LoRA state for both calibration and validation examples",
+    "lr": 0.0001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip": 1,
+    "max_epochs": 30,
+    "optimizer_steps_per_epoch": 1,
+    "candidate_epochs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "checkpoint_selection": "minimum individual factor-balanced A/B relative squared error + concatenated aggregate A/B relative squared error; equal term weights; ties retain earlier epoch",
+    "run_all_epochs": true,
+    "epoch0": "retain the incoming predictor if none of epochs 1-30 improves the validation score",
+    "optimizer_state": "reset at each batch in adaptive; retain selected predictor weights across batches",
+    "training_loss": "individual factor-balanced A/B relative MSE + 0.25 activation-gradient MSE normalized by original offline target_scale^2; no aggregate training term",
+    "application": "after calibration, predict gradients for ALL 32 current-batch examples",
+    "diagnostics": "remaining 28 true-gradient examples are acquired after fitting and used only for diagnostics; not training or checkpoint selection"
+  },
+  "lora_update": {
+    "steps": 32,
+    "batch_size": 32,
+    "gradient_microbatch": 8,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0,
+    "clip": 1,
+    "optimizer_state": "persistent for all methods",
+    "lr_schedule": "constant",
+    "aggregation": "sum per-example sum-loss A/B gradients, divide by total supervised tokens, clip, then take one AdamW step"
+  },
+  "controls": {
+    "fixed5": "same 4-example calibration, lr and training loss; always keep epoch 5; predictor optimizer state persists; gradient validation measurements do not select its checkpoint",
+    "frozen": "initial mask_pos predictor unchanged",
+    "oracle": "full-batch true LoRA A/B gradients"
+  },
+  "evaluation": {
+    "test_examples": 2048,
+    "test_steps": [
+      1,
+      16,
+      32
+    ],
+    "test_reused_benchmark": true,
+    "accuracy_dev_examples": 256,
+    "dev_steps": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "test_used_for_selection": false,
+    "backend": "native vLLM BF16 LoRA",
+    "temperature": 0,
+    "seed": 42,
+    "batch_invariant": true,
+    "max_num_seqs": 512,
+    "max_new_tokens": 2048,
+    "input_truncation": false,
+    "generation_input": "question-only prompt; reference answers used for gradient supervision, not generation prompts"
+  },
+  "limitations": [
+    "Adaptive and fixed5 differ in predictor optimizer-state policy as well as epoch selection.",
+    "Three paired predictor/update seeds, not a full seed crossing.",
+    "Gradient-dev selection does not guarantee downstream improvement.",
+    "All results here concern one layer only."
+  ]
+}

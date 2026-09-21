@@ -1,10 +1,25 @@
 # Countdown: one-step prediction and multi-step calibration
 
-**Single-step prediction improves the observed mean accuracy. Multi-step calibration is configuration-dependent; the new lightweight version does not prevent degradation.**
+**Latest: calibration with 4 current-batch examples and 16 gradient-validation examples reaches 7.32% test accuracy after 32 updates (baseline 4.49%; oracle 7.45%).**
 
 Qwen2.5-0.5B-Instruct · layer 8 `o_proj` LoRA · rank/alpha 64 · common teacher32 starting adapter. All reported accuracies are averages over three update runs unless stated otherwise.
 
-![Results overview](figures/overview.png)
+## Latest: adaptive calibration through 32 steps
+
+**[Protocol, complete test results, and per-seed records →](adaptive-calibration-32step/)**
+
+| Method | Step 1 | Step 16 | Step 32 |
+|---|---:|---:|---:|
+| Validation-selected calibration epochs | 5.18% | 4.87% | **7.32%** |
+| Fixed 5 calibration epochs | 5.00% | **6.22%** | 6.61% |
+| Frozen predictor | 5.18% | 0.29% | 0.00% |
+| True-gradient oracle | 5.11% | 5.71% | **7.45%** |
+
+Full 2,048-question test set; three paired seeds; baseline **4.49%**. Each batch has 32 examples: use 4 for predictor calibration and a separate fixed set of 16 to select epochs 0–30. Predictor lr **1e-4**; LoRA lr **3e-4**. Adaptive resets predictor AdamW each batch; fixed-5 retains its state. These are single-layer results; all-layer downstream experiments are unfinished.
+
+The sections below retain the earlier one-step, Countdown2, and lightweight-calibration experiments. The negative lightweight result uses a different calibration configuration.
+
+![Earlier results overview](figures/overview.png)
 
 ## 1. Current selected predictor: Y + mask + position
 
@@ -57,7 +72,7 @@ Earlier refreshes create a new predictor AdamW optimizer; the new experiment car
 
 The mean control periodically recomputes an actual average gradient on fixed training probes. After the shared first predictor step, it updates using that direction without neural prediction from the current batch. Its higher accuracy does not establish better neural gradient prediction or a compute advantage.
 
-## 3. New lightweight calibration: completed, negative downstream result
+## 3. Earlier lightweight calibration: completed, negative downstream result
 
 All 9 trajectories and 92 accuracy evaluations are complete. Same starting adapter, matched update batches, and three training/update seed pairs as above. Calibrate the entire predictor on 4 examples, then use predicted gradients for **all 32 examples**. The other 28 true-gradient labels are diagnostic only and never train the predictor.
 
@@ -87,4 +102,4 @@ The new update implementation partitions true-gradient acquisition into the 4-ex
 - [Per-seed results](results/) — CSV accuracy tables and JSON gradient/statistical records.
 - [Implementation references](source/) — architecture and original update/calibration code; not a turnkey reproduction bundle.
 
-Large model weights, gradient caches, datasets, and full generated answers are excluded. No unique best training seed is claimed; the selected current input configuration retains all three checkpoints. Results recorded September 19, 2026.
+Large model weights, gradient caches, datasets, and full generated answers are excluded. No unique best training seed is claimed; the selected current input configuration retains all three checkpoints. Earlier results recorded September 19, 2026; latest adaptive-calibration supplement added September 21, 2026.
