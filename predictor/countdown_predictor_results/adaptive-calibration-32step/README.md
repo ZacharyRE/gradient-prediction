@@ -4,7 +4,7 @@
 
 Qwen2.5-0.5B-Instruct · layer 8 `o_proj` only · LoRA rank/alpha 64 · teacher32 starting adapter · selected `Y + mask + position` predictor.
 
-## What happens at each step?
+## Each step
 
 1. Take a batch of **32 examples**; randomly select **4** to calibrate the predictor using true gradients.
 2. Recompute true gradients on **16 fixed, separate development examples** at the current LoRA state. These select the checkpoint and do not train the predictor.
