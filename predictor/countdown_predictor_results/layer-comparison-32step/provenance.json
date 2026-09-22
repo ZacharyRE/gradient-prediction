@@ -1,0 +1,474 @@
+{
+  "date": "2026-09-21",
+  "note": "Executed source/config original SHA256 is recorded as sha256; published_sha256 verifies the GitHub file. Only line endings, trailing whitespace, and final blank lines are normalized in source/CSV copies. Python ASTs are unchanged. Derived tables use archived JSON records; data/checkpoints/full generations remain local.",
+  "files": [
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/configs/experiment.json",
+      "published": "configs/joint/experiment.json",
+      "sha256": "f07587f80cd1d7fe28e683d56f372d475e52a3edb1e9e3735c07a38242f31e9f",
+      "published_sha256": "f07587f80cd1d7fe28e683d56f372d475e52a3edb1e9e3735c07a38242f31e9f",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/configs/protocol.json",
+      "published": "configs/joint/protocol.json",
+      "sha256": "2d09729fae0aa8d018ed458998041effec89827363c87dd8a6d5ae2fb108d1fe",
+      "published_sha256": "2d09729fae0aa8d018ed458998041effec89827363c87dd8a6d5ae2fb108d1fe",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/configs/resources.json",
+      "published": "configs/joint/resources.json",
+      "sha256": "68dc728c473205f480e0d1f28ebd674c0c299601adf87cb554d526785aeb2fdb",
+      "published_sha256": "68dc728c473205f480e0d1f28ebd674c0c299601adf87cb554d526785aeb2fdb",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/provenance/launch_code_sha256.json",
+      "published": "audits/joint_launch_hashes.json",
+      "sha256": "ffff881cab2c22a3f070836eaf679b907761bb20372f5161de1c80fd767cafad",
+      "published_sha256": "ffff881cab2c22a3f070836eaf679b907761bb20372f5161de1c80fd767cafad",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/provenance/manifest.json",
+      "published": "audits/joint_input_manifest.json",
+      "sha256": "3c9fab3cb85262f23b5443f4e421a79d6eb9c36575fca8d3fc757b255e08298b",
+      "published_sha256": "3c9fab3cb85262f23b5443f4e421a79d6eb9c36575fca8d3fc757b255e08298b",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/collect_joint.py",
+      "published": "source/joint/collect_joint.py",
+      "sha256": "48898bb2ef316c181e22246c2c9ed4e3125c40e2127d325995fa5b5895db08f5",
+      "published_sha256": "48898bb2ef316c181e22246c2c9ed4e3125c40e2127d325995fa5b5895db08f5",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/core.py",
+      "published": "source/joint/core.py",
+      "sha256": "67c5ce71c0416bf783a551dbd335ff3249cee7b124144c1237d0b2e3136017d0",
+      "published_sha256": "ae8dcd1c575ec59cf52f2a82f2645d394445ab1f1c54d64664fdf9b3c4b431f3",
+      "normalization": "whitespace only"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/eval_accuracy.py",
+      "published": "source/joint/eval_accuracy.py",
+      "sha256": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2",
+      "published_sha256": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/fit_ablation.py",
+      "published": "source/joint/fit_ablation.py",
+      "sha256": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0",
+      "published_sha256": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/predictor.py",
+      "published": "source/joint/predictor.py",
+      "sha256": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e",
+      "published_sha256": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/run_pipeline.py",
+      "published": "source/joint/run_pipeline.py",
+      "sha256": "97cb47490ea850cf252f68ab22039198cf974c802a3f05eeb5c4d4ac93da2f35",
+      "published_sha256": "97cb47490ea850cf252f68ab22039198cf974c802a3f05eeb5c4d4ac93da2f35",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/three_layers.py",
+      "published": "source/joint/three_layers.py",
+      "sha256": "5b9986b8ed473b0796e4cd03070b230f6abfa87876b7dc7fa38155920f9e7a39",
+      "published_sha256": "5b9986b8ed473b0796e4cd03070b230f6abfa87876b7dc7fa38155920f9e7a39",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/update_adaptive.py",
+      "published": "source/joint/update_adaptive.py",
+      "sha256": "4c399dbad290d9d21cdb4b8bf8916a0509f157ec951a62e34deabbf720842018",
+      "published_sha256": "4c399dbad290d9d21cdb4b8bf8916a0509f157ec951a62e34deabbf720842018",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/scripts/warmup.py",
+      "published": "source/joint/warmup.py",
+      "sha256": "54b7ad446ffcc13881345acf354ee8165ec72184aa52461532dae5c692156672",
+      "published_sha256": "54b7ad446ffcc13881345acf354ee8165ec72184aa52461532dae5c692156672",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/results/accuracy/three_dev/protocol.json",
+      "published": "configs/joint/evaluation_dev.json",
+      "sha256": "084b5d2c5e43e34495070a06876c2655a918056f6dd9e0415df0ca56efa55d3c",
+      "published_sha256": "084b5d2c5e43e34495070a06876c2655a918056f6dd9e0415df0ca56efa55d3c",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/results/accuracy/three_test/protocol.json",
+      "published": "configs/joint/evaluation_test.json",
+      "sha256": "dc40c9cc98c23bd6e2405d17e81e67bc9d73c44ca680255ffbeef0854731c2ae",
+      "published_sha256": "dc40c9cc98c23bd6e2405d17e81e67bc9d73c44ca680255ffbeef0854731c2ae",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/results/step_gradient_metrics.csv",
+      "published": "results/joint_gradient_metrics.csv",
+      "sha256": "6db1e61548de4d91e6e0443f977ff3b90079b1036075f9215f49a340389e94ac",
+      "published_sha256": "ba20a9953ebf11df43e5345ec0cc4e1027a33ffc646a1ac2f504cc74da44310e",
+      "normalization": "whitespace only"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/results/preflight.json",
+      "published": "audits/joint_preflight.json",
+      "sha256": "09aee8cca0eb886440c7cf05365722d3de639d92ea36818205911b5789ea7f58",
+      "published_sha256": "09aee8cca0eb886440c7cf05365722d3de639d92ea36818205911b5789ea7f58",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/configs/experiment.json",
+      "published": "configs/independent/experiment.json",
+      "sha256": "4d9e3099addc2cba3c6022dd7b12a0fe6caf95540cb19501c82f050c52e38fd4",
+      "published_sha256": "4d9e3099addc2cba3c6022dd7b12a0fe6caf95540cb19501c82f050c52e38fd4",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/configs/protocol.json",
+      "published": "configs/independent/protocol.json",
+      "sha256": "49284ce6aebfd117dac7e683e834031eafded0edf40304f2969a9398660db37c",
+      "published_sha256": "49284ce6aebfd117dac7e683e834031eafded0edf40304f2969a9398660db37c",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/configs/resources.json",
+      "published": "configs/independent/resources.json",
+      "sha256": "a92550257897ae677f368792e02bd206ec6ad2c02ed1193fc48d23b1364dd5ef",
+      "published_sha256": "a92550257897ae677f368792e02bd206ec6ad2c02ed1193fc48d23b1364dd5ef",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/provenance/launch_code_sha256.json",
+      "published": "audits/independent_launch_hashes.json",
+      "sha256": "442ed92e4d805195bf2465f453a8fc5aba0495efd784d03e4079f56071c10b54",
+      "published_sha256": "442ed92e4d805195bf2465f453a8fc5aba0495efd784d03e4079f56071c10b54",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/provenance/manifest.json",
+      "published": "audits/independent_input_manifest.json",
+      "sha256": "e774e1bceff33d13a26431f7953704c21d7f01aab933d7d747cb98de44cc5582",
+      "published_sha256": "e774e1bceff33d13a26431f7953704c21d7f01aab933d7d747cb98de44cc5582",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/collect_single.py",
+      "published": "source/independent/collect_single.py",
+      "sha256": "025c04621e6a57f75c111cd978418a0f42656be5b58639490049c4e7176e65ca",
+      "published_sha256": "025c04621e6a57f75c111cd978418a0f42656be5b58639490049c4e7176e65ca",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/core.py",
+      "published": "source/independent/core.py",
+      "sha256": "ead37a04064fc5aea12cebdfdee9f7348ed436a81c6b35ddb902302ffe6d32fa",
+      "published_sha256": "f4f921d31d3fae23794f13798b28852512e7a8e677051aa4d81e6dff63674ea6",
+      "normalization": "whitespace only"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/eval_accuracy.py",
+      "published": "source/independent/eval_accuracy.py",
+      "sha256": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2",
+      "published_sha256": "5912944fc9800cc343c23eb1caffa5cbae8da98342bffed34675da9b42d812a2",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/fit_ablation.py",
+      "published": "source/independent/fit_ablation.py",
+      "sha256": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0",
+      "published_sha256": "d5117d6326151d0a00b42e4b5b7df87cd29aa47d61061c4bd19b493060d823a0",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/predictor.py",
+      "published": "source/independent/predictor.py",
+      "sha256": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e",
+      "published_sha256": "1fdef6e0cd93e2669441ebd51897200aeaceae772538af69c543ed1e5a77b42e",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/run_pipeline.py",
+      "published": "source/independent/run_pipeline.py",
+      "sha256": "0e8a80688b16983ce11e93ad1bed5fa4f11a2ff55eb8bcad2b58b0c508782bc5",
+      "published_sha256": "0e8a80688b16983ce11e93ad1bed5fa4f11a2ff55eb8bcad2b58b0c508782bc5",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/single_layer.py",
+      "published": "source/independent/single_layer.py",
+      "sha256": "c5eeef46352ca6e78bc727702b8703450b9f61ff1e4c7f09e943e0befb6c016e",
+      "published_sha256": "c5eeef46352ca6e78bc727702b8703450b9f61ff1e4c7f09e943e0befb6c016e",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/update_adaptive.py",
+      "published": "source/independent/update_adaptive.py",
+      "sha256": "9c5d8a3f34c1741f722f06ee1e6e90d14a6fbe97ae032d3a0ad5b29ab34c0668",
+      "published_sha256": "9c5d8a3f34c1741f722f06ee1e6e90d14a6fbe97ae032d3a0ad5b29ab34c0668",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/scripts/warmup.py",
+      "published": "source/independent/warmup.py",
+      "sha256": "7b3d92cb58f5a0aa307de5acaf9851320333190b50112d314c5b1bde5bdc561a",
+      "published_sha256": "7b3d92cb58f5a0aa307de5acaf9851320333190b50112d314c5b1bde5bdc561a",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/accuracy/single_layers_dev/protocol.json",
+      "published": "configs/independent/evaluation_dev.json",
+      "sha256": "f5401029e1e50b2c8512e9ee6e96e7e5672598d56ca293cc10aa265f74c663cf",
+      "published_sha256": "f5401029e1e50b2c8512e9ee6e96e7e5672598d56ca293cc10aa265f74c663cf",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/accuracy/single_layers_test/protocol.json",
+      "published": "configs/independent/evaluation_test.json",
+      "sha256": "23dc23f7004a8e4c374a2ee976831b50f3fc1b687355f984c26f62c21ba38d19",
+      "published_sha256": "23dc23f7004a8e4c374a2ee976831b50f3fc1b687355f984c26f62c21ba38d19",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/step_gradient_metrics.csv",
+      "published": "results/independent_gradient_metrics.csv",
+      "sha256": "b04d204427ac08bc8679a047a7e3a5b9955bf00d5357dc00f2ff3187f6ded01d",
+      "published_sha256": "6013050912c70d3d29adc7b2ec36bed74bb995a652b009921b099d46845e8375",
+      "normalization": "whitespace only"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/reference_audit.json",
+      "published": "audits/independent_reference_audit.json",
+      "sha256": "a57f020a5881408824353e8c2290b63d9418e85ddf74fe04d46a172a4d07c22b",
+      "published_sha256": "a57f020a5881408824353e8c2290b63d9418e85ddf74fe04d46a172a4d07c22b",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/update_audit.json",
+      "published": "audits/independent_update_audit.json",
+      "sha256": "069edda03414192ae1189b500dd83202641e84bb1e84ee01b45faca6be9a2359",
+      "published_sha256": "069edda03414192ae1189b500dd83202641e84bb1e84ee01b45faca6be9a2359",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/dev_audit.json",
+      "published": "audits/independent_dev_audit.json",
+      "sha256": "6b0748c52c869accb4dc8285bdc88dcf5124223d8b96f28d303bb4397445e604",
+      "published_sha256": "6b0748c52c869accb4dc8285bdc88dcf5124223d8b96f28d303bb4397445e604",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/warmup_audit.json",
+      "published": "audits/independent_warmup_audit.json",
+      "sha256": "f99058da83817e4256474641b11a8cd35e6436b1e538f9b95caf9f7b79ae29c0",
+      "published_sha256": "f99058da83817e4256474641b11a8cd35e6436b1e538f9b95caf9f7b79ae29c0",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/test_audit.json",
+      "published": "audits/independent_test_audit.json",
+      "sha256": "9a2d80b7eba7eb915e4152b42eefad503989a27d996addf64023a29f48d75fb7",
+      "published_sha256": "9a2d80b7eba7eb915e4152b42eefad503989a27d996addf64023a29f48d75fb7",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/gradient_diagnostics.png",
+      "published": "figures/independent_gradients.png",
+      "sha256": "d05b0aed0329ce2399d78027dbd64cda036ef2aa956f40497e3037741beb7ca2",
+      "published_sha256": "d05b0aed0329ce2399d78027dbd64cda036ef2aa956f40497e3037741beb7ca2",
+      "normalization": "none"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/gradient_diagnostics.pdf",
+      "published": "figures/independent_gradients.pdf",
+      "sha256": "ad9d9644718d2d04427f6865569f9ceae50b2dd536401dbe2d7e1e2eef2d4180",
+      "published_sha256": "ad9d9644718d2d04427f6865569f9ceae50b2dd536401dbe2d7e1e2eef2d4180",
+      "normalization": "none"
+    }
+  ],
+  "derived_table_inputs": [
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/results/summary.json",
+      "sha256": "a8b9604af70f3668c86e408598b751501d1942054f8b476ff0d34a105db40d41"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s123/history.json",
+      "sha256": "40fcf9f5b6061a31baa0faa2efadc4babd66b9e03e872caf50960ae08ffd5218"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s124/history.json",
+      "sha256": "a73fcc1c78c43888585da3b558b093bc8792fe947b11257a2f11e297953a189f"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s125/history.json",
+      "sha256": "086e4cc68d8ae5a2c8ac97ba19711760ccac78ca9be59eea54ad375e61f84566"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s123/history.json",
+      "sha256": "f8ce1b4d2e3d1698f205e3c0d1748dc985bbbd437daeb58bf08258955a1d94e3"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s124/history.json",
+      "sha256": "9fa134f47cd6201fb6b40355ca12d5bce3393d3ee2e059ec48b2772774267446"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s125/history.json",
+      "sha256": "e256f998042f9472dceac3786694b9895e90894276ced10a5deb32dad1b01fd6"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s123/history.json",
+      "sha256": "4bbfec49c460f6186cd25172e828ca0139c03fc82e0b11d357ca1b1047508f7a"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s124/history.json",
+      "sha256": "e1870be7161d878082430e52ceb72875f0058f156cc55debdfa0e138e75cd658"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s125/history.json",
+      "sha256": "19aed0193cdaff44dfa2d7a8e3172b43586564a7ac1c7a90e0a153c3f2a71bcb"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/history.json",
+      "sha256": "8e1fa2cb8096c7220830ee64af55b09ccea21345ea4beb013537fd7bbbebd550"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/history.json",
+      "sha256": "96757f19c18e6709d9ea155a633d40b074b3dc06bbd68f5b38c5df0a7c03ccab"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/history.json",
+      "sha256": "c680eab310e590aa0139a6132c8f043eb5fab2052d7d3983ec09730f37f16a02"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s123/config.json",
+      "sha256": "682b0311577027ae345f1152b316bf7c057456ee777caa680a0697a8793bea04"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s124/config.json",
+      "sha256": "b033cc4cb97328efa836455231a4a71d874171a2f1ffab71cb4539b681d17d8b"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l03_s125/config.json",
+      "sha256": "82c7d2787a16f47ac8aea1fbf8d22ae9b7968be1fbf75196f89b71f5169e3c77"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s123/config.json",
+      "sha256": "5ce197f2334aa6f0303bf4128c88fadfd34546f12aa5f21913d351ff103f9d71"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s124/config.json",
+      "sha256": "93c61a6d2c012c94bd2243341235c355aae9b436e3f5dfea5695163d1411cc9b"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l08_s125/config.json",
+      "sha256": "bcbfece609f3cbf5c936b38057e59265ba8e1e71f4adb6112f15b9f4b8637b92"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s123/config.json",
+      "sha256": "7fec322c2bcb6299a1bbcc0d8689d2caf941a41ec55600401ab00554527dd955"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s124/config.json",
+      "sha256": "814fe7ced6e5e07c0629c792dd9e337ece4ec36dfb24cb0d684cf397b2fb833d"
+    },
+    {
+      "source": "predictor/predictor_dynamic/three-layer-adaptive/models/independent_l19_s125/config.json",
+      "sha256": "bb14c59cf64693430a6e2e8452834457d4a12494854c1b593119206386ac56cc"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/results/summary.json",
+      "sha256": "1974146172e1805c2f13f30b36ef784d8862193c839589d53980ffe05fec2328"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s123/history.json",
+      "sha256": "9ab39bc137a10075ad902c680b7183126c637b206f49c6a5b0b5e29ed6385f2a"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s124/history.json",
+      "sha256": "52a5cfc662a3347076268f06f2b7f39e1112cf14686c87f10d4ff8bf697770c5"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s125/history.json",
+      "sha256": "cb152ddd35d9f0e9abdd2605057dda47a6abec2b9a7b17dc2e1bd0300fb21f62"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s123/history.json",
+      "sha256": "3c858906371339f268b35c19d017da9737e398e850d24be315fcf9d3516c8dac"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s124/history.json",
+      "sha256": "01f1d6a0932d2fd07c8867382e1f44e6bad3ce03f48ff70ea47010e0e44a333f"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s125/history.json",
+      "sha256": "fb3645503e0e066bbb1f89e316f4041e8ce88e1f0c13e0481a03b84c8a003dcd"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l03_adaptive_s123_u101/history.json",
+      "sha256": "e22b53d0fd839157fe583548f55f26a25e3b7027054db8213ed059771a36ad88"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l03_adaptive_s124_u102/history.json",
+      "sha256": "cef307f083aa11872bf421bee72b809d16a382166343ef530ade219ce3ebadfc"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l03_adaptive_s125_u103/history.json",
+      "sha256": "6111cf8fde7c298c2930a63a97c8487b3999eff415c994e58d4067b66c7f6d7d"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l19_adaptive_s123_u101/history.json",
+      "sha256": "a2ce4021a89d1ad536e8d820c5c376384e329dbeb0006a2c1605c6965cba8f29"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l19_adaptive_s124_u102/history.json",
+      "sha256": "1d0abf33901a7fe0bad48bb74b5b9e4e12780cf054d0d8742bfe53d99cb256d4"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/single_l19_adaptive_s125_u103/history.json",
+      "sha256": "dfcf8f20bf080e41b104e82eb3e48e00a0b3be80f0c218640f362a98dd101679"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s123/config.json",
+      "sha256": "d4221a27ad5a1aa6a35280dc9a650a5d805aa1ce5198d98ba397ee144d98e387"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s124/config.json",
+      "sha256": "34b2cbd1190353ee55da64ee7286de7078b58868bbc3205ec172e81a821c1542"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l03_s125/config.json",
+      "sha256": "d39d1dff435613035b71c2b795c16e1418e00eb1a04cdc49b9e5f89056a33142"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s123/config.json",
+      "sha256": "af048f841a8d1aa561ddd0628ecee317b2e2a62edc0b34b1aff0de907f56f71d"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s124/config.json",
+      "sha256": "998dd0ef6828bdf1ec3086d8353500a0048115ee478297d722f1d67145e1eed8"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/models/independent_l19_s125/config.json",
+      "sha256": "af46e22d66369bdc5c065af05c488965438649e04fcb2ec7ccde95d775114e26"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/provenance/layer8_dev_summary.json",
+      "sha256": "e506f73629f220fb2b3c77921b9bcfd2d805615141cd1242577264c926fb9b66"
+    },
+    {
+      "source": "predictor/predictor_dynamic/single-layer-comparison/provenance/layer8_test_summary.json",
+      "sha256": "0997d0fb8b15c34048b40b203897e62b587af609ef6ab2afc89a1f0fe03bae52"
+    }
+  ]
+}

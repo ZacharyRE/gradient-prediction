@@ -16,4 +16,4 @@ This existing bundle contains the completed single-layer 32-step study. The pare
 | [source/](source/README.md) | Source snapshots and their reproduction boundary |
 | [provenance.json](provenance.json) | Original artifact and published-source SHA256 identities |
 
-All-layer downstream experiments are outside this completed bundle. Full inputs are retained; 2,048 new tokens is the output-generation cap.
+The subsequent [joint and independent layer comparison](../layer-comparison-32step/README.md) reuses this layer-8 reference. All-layer downstream experiments are outside both completed bundles. Full inputs are retained; 2,048 new tokens is the output-generation cap.

@@ -1,0 +1,192 @@
+{
+  "args": {
+    "name": "three_test",
+    "adapters": [
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/teacher/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-32",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-1",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-16",
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-32"
+    ],
+    "files": [
+      "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/data/countdown_test2048.jsonl"
+    ],
+    "max_new_tokens": 2048,
+    "base": false,
+    "resume": false
+  },
+  "parallel_gpus": [
+    0,
+    1
+  ],
+  "shards": [
+    {
+      "args": {
+        "name": "three_test_shard0",
+        "adapters": [
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/teacher/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-32"
+        ],
+        "files": [
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/data/countdown_test2048.jsonl"
+        ],
+        "max_new_tokens": 2048,
+        "base": false,
+        "resume": false
+      },
+      "base": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+      "backend": "native vLLM BF16 LoRA",
+      "input_sha256": {
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/data/countdown_test2048.jsonl": "2eeb77068b99adf61d61c6eb99f3eeed4545df8ea85a222ccfe8e39e1a5976d9"
+      },
+      "adapter_sha256": {
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/teacher/step-32": "156251f16a5a644aef5374972a00d60a9485fbf4d277c67887ab9e55488a46d1",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-16": "0d3a1f1bbfcfc083e9e7d644823bb53e887039178879ddfa98d98d5c076d5140",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-1": "196dd3c5ea04b7b3fb3dd754c04b365601150186b2d98ec4c73605e700f40779",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-32": "d9de94d80b592f3c11d0398514e080a40d9d18ba82acc7d8e589d6964428bad3",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-16": "e9ef314c67cb5781612db63f174d60a19ff08100321cfa0d14fe4530ca836739",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-1": "5550e40ca0875908cf3b937ddf4405d9696dadf893aa1f066db18cc75ee5c390",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-32": "4ab8f9b726c980fd315075ee82ba0c3e3331f16506a76c839f48556fabbf9228",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-16": "f0992b3a1d670e0d078d92853948145e26b98541204aa9a2ae0c7c5b76327bb1",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-1": "4d205215fd43cbb43d4e20ffad9e1654dd85542164a31edd701c658cb6304fec",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-32": "24eced7e084192a62506e788c92c805857264dd91ab07f96e46707ce77562bc2",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-16": "56c98af46263dcc20e0510df2a351a84839c7515fb3b6dced4239e970add5efa",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-1": "02bf75bf9f1fee8ce14fe5f723c79000928d3b03a37f501cf7ff3255bd32b288",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-32": "9da1bd4d3bc8f948257ce640094bceb926f0201935ba324f8020ab6386c5d2d9",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-16": "c7e52c05d89d7cb029f198f833dcb68a9dba776bc674d87ff378645599d80115",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-1": "a949c1e000307b4b0ffe4e77b112209f9c892a3bcae58f28a31694382f140063",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-32": "a3afc96eba41c4c962d6beb22e6188f2782339574ad48e292967d06986506bc6",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-16": "7091647fcb8a1dd358188ad6452d9dc4678609fcd0f8c34951e500aa492326b1",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-1": "218adfa180bbe25ed18397f8cf924cd3b450188ae912449531cb19cb57a3cde3",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-32": "4d61753aaaf9a94a7de9f26837697929bcc6f430cf8bee881489879cc2371c4f"
+      },
+      "input_truncation": false,
+      "max_prompt_tokens": 144,
+      "max_new_tokens": 2048,
+      "batch_invariant": true,
+      "temperature": 0,
+      "seed": 42,
+      "max_num_seqs": 512,
+      "kv_cache_memory_bytes": 17179869184,
+      "gpu_memory_startup_fraction": 0.08,
+      "checker": "/mnt/micron/yixiaore/adapter/research/0.5B_countdown_lora/scripts/countdown.py"
+    },
+    {
+      "args": {
+        "name": "three_test_shard1",
+        "adapters": [
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-16",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-1",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-32",
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-16"
+        ],
+        "files": [
+          "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/data/countdown_test2048.jsonl"
+        ],
+        "max_new_tokens": 2048,
+        "base": false,
+        "resume": false
+      },
+      "base": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+      "backend": "native vLLM BF16 LoRA",
+      "input_sha256": {
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/data/countdown_test2048.jsonl": "2eeb77068b99adf61d61c6eb99f3eeed4545df8ea85a222ccfe8e39e1a5976d9"
+      },
+      "adapter_sha256": {
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-1": "5f1079fcec72df947853cc8a7f8a8d4cdd53c36a80c86e5c461f8bdf45c7cc67",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s123_u101/step-32": "b088ed81a84da3a02734e43ce30962fc3e218bf81e6aaea181fac662e80b0852",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s123_u101/step-16": "14ff54c45d08460da2e36a5fcaa44569f3fcf8992ae133bc5b956a22745f7254",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-1": "8655672671fd3353d94e30dfbd24b19df5697178ad5c6ccfd776140e73bccc89",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s123_u101/step-32": "f7dc5523f42a1035d5a4ae20580d38f83b22db17991b67c17c81161a66354016",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s123_u101/step-16": "e838c9d76444beff07fbedccd5d1f16b21a2fdb580b1dcfcb677b3e2802d2445",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-1": "2f2fb047fe01e5355de9a309b9e70612096cec09597a0a36d5fc0020b9f5d129",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s124_u102/step-32": "dd5a3dcbb4bd764c78535926fa8d28eae518a7cd017549201cadb6505fbb6f6d",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s124_u102/step-16": "d55b3f5c1abc430f53f4cc1a9799e21b62c015be31f17c4892c75042cee31aa7",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-1": "f46d44022162f511043f55ef8398ab383a3c24f7a7a1156032f7a564bf6c8a75",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s124_u102/step-32": "83c545adb99715b116f8cfe00a392e05d3bdefeddc623082c946d1fd17b08e0a",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s124_u102/step-16": "496839e9fa325d767a92566bc7843e8f905f7677484703e5f29a5903bfd9266e",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-1": "161957ddb4133c432621e8cb62c30d3c4a3446c415049b7d90a90429eaf23f25",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_adaptive_s125_u103/step-32": "5377c068eea780fa6a1a4fa2bb11ef7a8efc9cae7a24f017d22de9eb63c0facc",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_fixed5_s125_u103/step-16": "579b190969cd90ae54ea8e2915f3bf151635a1b5cf360a3101232fb0c7f0d2c5",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-1": "b5bfe731137b1958e2a670a63f0a7da6c24088c29b71797a2433f6d1c9a5785b",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_frozen_s125_u103/step-32": "d5e33972fa3b111869ece69b16296a013fd81bccc1b5ca55cae6dce369d237df",
+        "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/three-layer-adaptive/models/three_oracle_s125_u103/step-16": "e1475561d6ebec35daff5de050ff529b1d82f66ec7b102dadd6424b6737e78b0"
+      },
+      "input_truncation": false,
+      "max_prompt_tokens": 144,
+      "max_new_tokens": 2048,
+      "batch_invariant": true,
+      "temperature": 0,
+      "seed": 42,
+      "max_num_seqs": 512,
+      "kv_cache_memory_bytes": 17179869184,
+      "gpu_memory_startup_fraction": 0.08,
+      "checker": "/mnt/micron/yixiaore/adapter/research/0.5B_countdown_lora/scripts/countdown.py"
+    }
+  ],
+  "partition": "adapters only; complete dataset evaluated on each adapter",
+  "input_truncation": false
+}

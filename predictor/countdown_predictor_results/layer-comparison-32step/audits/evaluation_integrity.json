@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "checks": [
+    {
+      "scope": "joint",
+      "split": "dev",
+      "evaluations": 73,
+      "questions": 256,
+      "full_inputs": true,
+      "source_order_verified": true,
+      "correct_counts_verified": true
+    },
+    {
+      "scope": "joint",
+      "split": "test",
+      "evaluations": 37,
+      "questions": 2048,
+      "full_inputs": true,
+      "source_order_verified": true,
+      "correct_counts_verified": true
+    },
+    {
+      "scope": "independent",
+      "split": "dev",
+      "evaluations": 146,
+      "questions": 256,
+      "full_inputs": true,
+      "source_order_verified": true,
+      "correct_counts_verified": true
+    },
+    {
+      "scope": "independent",
+      "split": "test",
+      "evaluations": 74,
+      "questions": 2048,
+      "full_inputs": true,
+      "source_order_verified": true,
+      "correct_counts_verified": true
+    }
+  ],
+  "layer8_reference": "../../adaptive-calibration-32step/results/test_audit.json"
+}

@@ -14,15 +14,17 @@ Can a learned gradient predictor remain useful for LoRA optimization as model pa
 | Localized learning and state changes | Localized SFT is feasible; fixed-state prediction quality can deteriorate at later LoRA states | [Early Countdown study](../predictor/predictor_countdown/README.md) |
 | Useful one-step prediction | Y + mask + position was selected by development accuracy | [Input ablation](../predictor/countdown_predictor_results/README.md#one-step-input-selection) |
 | Multi-step calibration | Complete three-seed, 2,048-question evaluation through 32 single-layer updates | [Current calibration report](../predictor/countdown_predictor_results/README.md#dynamic-calibration) |
-| All-layer prediction | Independent/shared architectures explored; full downstream experiment unfinished | Pending |
+| Joint vs independent updates | Joint adaptive 8.04% < warmup 8.64%; oracle 10.73%. Independent 3/8/19 tests complete | [Layer comparison](../predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates) |
+| All-layer prediction | Expansion deferred pending joint-update diagnosis | No completed downstream result |
 
 ## Next experiments
 
-1. **Isolate epoch selection.** Match predictor optimizer-state policy between fixed-5 and validation-selected calibration. The completed comparison changes both factors.
-2. **Finish the all-layer extension.** Compare 24 independent predictors with a layer-conditioned shared predictor using gradient development data; complete one-step and 16-step calibration/oracle/frozen downstream tests for all layers' `o_proj`. Architecture fitting and downstream benefit are separate questions.
-3. **Measure remaining drift and cost.** Track activation and aggregate A/B cosine, norm ratio, and error alongside accuracy. Count gradient labels and computation for calibration, validation, and diagnostics separately.
+1. **Diagnose the joint-update gap.** Independent layer 3 shows large seed variation and a larger predictor/oracle gap. Test mixed predictor/oracle updates from the same jointly warmed checkpoint to isolate layer contributions; independent single-layer results do not identify the joint failure's cause.
+2. **Isolate epoch selection.** Match predictor optimizer-state policy between fixed-5 and validation-selected calibration. The completed comparison changes both factors.
+3. **Use the recorded drift diagnostics and measure cost.** Activation and aggregate A/B cosine, relative L2, and norm ratios are already available at every update. Count calibration, validation, and diagnostic gradient labels separately before making efficiency claims.
+4. **Revisit all-layer expansion after a useful joint-update result.** Further tuning must use development data; an independent confirmation set is needed after decisions informed by the existing test results.
 
-These are research priorities, not claims of completed results or instructions to launch a new run. Longer step counts and all-layer performance require their own matched evidence.
+These are proposed research priorities, not newly launched runs. The 32-step independent and three-layer experiments are complete; all-24-layer downstream performance remains unestablished.
 
 ## Evidence conventions
 

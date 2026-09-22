@@ -1,0 +1,453 @@
+{
+  "joint/teacher": {
+    "complete": true,
+    "base_unchanged": true,
+    "layers": [
+      3,
+      8,
+      19
+    ],
+    "steps": 32,
+    "parameter_change_norms": {
+      "3": {
+        "A": 1.8399403095245361,
+        "B": 1.618452548980713
+      },
+      "8": {
+        "A": 1.8497939109802246,
+        "B": 1.6952030658721924
+      },
+      "19": {
+        "A": 2.1068873405456543,
+        "B": 2.0004451274871826
+      }
+    },
+    "elapsed": 11.22856593132019
+  },
+  "joint/three_adaptive_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 136.340589761734,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_adaptive_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 71.29134964942932,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_adaptive_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 68.46428036689758,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_fixed5_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 52.95978260040283,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_fixed5_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 55.581953287124634,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_fixed5_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 53.64277243614197,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_frozen_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 48.74328684806824,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_frozen_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 19.08744716644287,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_frozen_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 26.78800630569458,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_oracle_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 22.498040437698364,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_oracle_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 22.469284772872925,
+    "validation_excluded_from_training": true
+  },
+  "joint/three_oracle_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "three",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 22.434110403060913,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_adaptive_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 31.410044193267822,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_adaptive_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 31.768773317337036,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_adaptive_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 33.25154685974121,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_fixed5_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 20.692031145095825,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_fixed5_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 20.363802671432495,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_fixed5_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 20.80608820915222,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_frozen_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 14.851531505584717,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_frozen_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 14.842872142791748,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_frozen_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 14.335814714431763,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_oracle_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 13.591357707977295,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_oracle_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 13.451950788497925,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l03_oracle_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 13.534225702285767,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_adaptive_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 33.2270827293396,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_adaptive_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 37.89560317993164,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_adaptive_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "adaptive",
+    "elapsed": 42.635276556015015,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_fixed5_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 25.362563371658325,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_fixed5_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 26.2718026638031,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_fixed5_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "fixed5",
+    "elapsed": 23.39777445793152,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_frozen_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 14.316212177276611,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_frozen_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 18.45000171661377,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_frozen_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "frozen",
+    "elapsed": 19.5188570022583,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_oracle_s123_u101": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 14.027091264724731,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_oracle_s124_u102": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 13.310229063034058,
+    "validation_excluded_from_training": true
+  },
+  "independent/single_l19_oracle_s125_u103": {
+    "complete": true,
+    "base_unchanged": true,
+    "lora_fixed_during_calibration": true,
+    "steps": 32,
+    "scope": "single",
+    "architecture": "independent",
+    "mode": "oracle",
+    "elapsed": 13.714991569519043,
+    "validation_excluded_from_training": true
+  },
+  "independent/teacher_l03": {
+    "complete": true,
+    "base_unchanged": true,
+    "layers": [
+      3
+    ],
+    "steps": 32,
+    "parameter_change_norms": {
+      "3": {
+        "A": 2.443390130996704,
+        "B": 2.0062155723571777
+      }
+    },
+    "elapsed": 11.73885464668274
+  },
+  "independent/teacher_l19": {
+    "complete": true,
+    "base_unchanged": true,
+    "layers": [
+      19
+    ],
+    "steps": 32,
+    "parameter_change_norms": {
+      "19": {
+        "A": 2.7096123695373535,
+        "B": 2.57304048538208
+      }
+    },
+    "elapsed": 9.503620862960815
+  }
+}

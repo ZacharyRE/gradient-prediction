@@ -1,0 +1,114 @@
+{
+  "replicates": [
+    {
+      "train_seed": 123,
+      "update_seed": 101
+    },
+    {
+      "train_seed": 124,
+      "update_seed": 102
+    },
+    {
+      "train_seed": 125,
+      "update_seed": 103
+    }
+  ],
+  "single_steps": 32,
+  "dev_steps_single": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "test_steps_single": [
+    1,
+    16,
+    32
+  ],
+  "calibration_train_count": 4,
+  "calibration_validation_count": 16,
+  "validation_dataset": "predictor_dev",
+  "validation_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "validation_policy": "fixed independent development examples; fresh labels at each current LoRA state; no downstream test labels",
+  "max_epochs": 30,
+  "validation_every_epoch": true,
+  "selection": "minimum mean factor-balanced per-example A/B relative MSE plus token-weighted aggregate A/B concatenated relative MSE; include epoch0",
+  "calibration_lr": 0.0001,
+  "calibration_weight_decay": 0.01,
+  "calibration_clip": 1,
+  "calibration_optimizer": "AdamW reset per refresh, matching earlier Countdown2; retain selected weights across outer steps",
+  "calibration_loss": "factor-balanced individual A/B relative MSE + .25 activation MSE normalized by original pretraining target_scale; no aggregate training loss",
+  "lora_lr": 0.0003,
+  "lora_weight_decay": 0,
+  "lora_batch": 32,
+  "lora_clip": 1,
+  "methods": [
+    "adaptive",
+    "fixed5",
+    "frozen",
+    "oracle"
+  ],
+  "input_truncation": false,
+  "max_new_tokens": 2048,
+  "accuracy_policy": "dev curves at scheduled steps, complete test2048 only prespecified endpoints; no test-based tuning; reused benchmark",
+  "resources": {
+    "gpus": [
+      0,
+      1
+    ],
+    "allowed_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "evaluation_max_seqs": 512,
+    "evaluation_kv_gib": 16
+  },
+  "scope": "independent single-layer experiments",
+  "layers": [
+    3,
+    19
+  ],
+  "reference_layer": 8,
+  "reference_experiment": "/mnt/micron/yixiaore/adapter/predictor/predictor_dynamic/adaptive-validation",
+  "warmup": {
+    "steps": 32,
+    "seed": 101,
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "microbatch": 8,
+    "clip": 1,
+    "initialization": "original seed101 random A, zero B, exactly one o_proj adapter per model"
+  },
+  "offline_predictor": {
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 100,
+    "batch_size": 32,
+    "train_count": 8192,
+    "dev_count": 256,
+    "selection": "minimum dev factor-balanced A/B relative MSE every epoch",
+    "architecture": "bidirectional Transformer, width512 depth2, y+mask_pos"
+  }
+}
