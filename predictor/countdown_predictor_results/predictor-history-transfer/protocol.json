@@ -1,0 +1,185 @@
+{
+  "question": "Does retained predictor history transfer under matched current model states and calibration budgets?",
+  "model": {
+    "base": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "frozen_base": true,
+    "module": "model.layers.8.self_attn.o_proj",
+    "zero_indexed_layer": 8,
+    "lora_rank": 64,
+    "lora_alpha": 64,
+    "dropout": 0,
+    "trainable_parameters": 114688,
+    "reference_trajectories": "Existing true-gradient oracle updates after teacher32 warmup"
+  },
+  "predictor": {
+    "source": "y",
+    "aux": "mask_pos",
+    "architecture": "bidirectional Transformer",
+    "width": 512,
+    "depth": 2,
+    "heads": 8,
+    "parameters": 5129856,
+    "common_initial_training_examples": 8192,
+    "common_initial_validation_examples": 256,
+    "input": "Full teacher-forced question plus reference-answer hidden states",
+    "carry": "Retain selected predictor weights from previous history episode",
+    "reset": "Restart every episode from the same pretrained checkpoint"
+  },
+  "seeds": [
+    {
+      "predictor": 123,
+      "model": 101
+    },
+    {
+      "predictor": 124,
+      "model": 102
+    },
+    {
+      "predictor": 125,
+      "model": 103
+    }
+  ],
+  "history_model_steps": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "probe_model_steps": [
+    16,
+    32
+  ],
+  "probes_per_state": 4,
+  "primary_model_step": 32,
+  "probe_feedback_into_history": false,
+  "calibration": {
+    "train_examples": 4,
+    "validation_examples": 16,
+    "new_disjoint_examples_each_episode": true,
+    "optimizer": "AdamW, fresh each episode in BOTH methods",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "clip": 1,
+    "optimizer_steps": 30,
+    "select_among_epochs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "training_loss": "factor-balanced A/B relative MSE + .25 normalized activation-gradient MSE",
+    "selection_score": "factor-balanced per-example A/B relative MSE + aggregate A/B relative MSE"
+  },
+  "model_update": {
+    "steps": 1,
+    "batch": 32,
+    "batch_composition": "4 calibration + 28 held-out-gradient examples",
+    "optimizer": "new AdamW for every matched intervention",
+    "lr": 0.0003,
+    "weight_decay": 0,
+    "clip": 1,
+    "controls": [
+      "unchanged baseline",
+      "carry",
+      "reset",
+      "frozen pretrained predictor",
+      "true gradient"
+    ],
+    "normalization": "total supervised tokens in batch"
+  },
+  "data": {
+    "source": "Jiayi-Pan/Countdown-Tasks-3to4",
+    "custom_split": true,
+    "selection_seed": 202609231,
+    "new_examples": 1784,
+    "balanced_three_four_numbers": true,
+    "prior_files_checked": 53,
+    "excluded_number_multisets": 27403,
+    "overlap_with_prior_and_across_splits": 0,
+    "labels": "exact-solver reference solutions",
+    "pretraining_contamination_assessed": false
+  },
+  "evaluation": {
+    "loss_examples": 256,
+    "accuracy_examples": 1024,
+    "accuracy_model_step": 32,
+    "accuracy_probe": 0,
+    "accuracy_selection": "specified before results",
+    "generation": "greedy",
+    "generation_seed": 42,
+    "input_truncation": false,
+    "max_new_output_tokens": 2048,
+    "dtype": "BF16",
+    "backend": "native vLLM LoRA",
+    "generation_evaluations": 15,
+    "unique_questions": 1024,
+    "confidence_interval": "question-only paired bootstrap conditional on fixed seeds and probe0"
+  },
+  "exploratory_control": {
+    "model_lr": 0.0001,
+    "same_predictor_tensors": true,
+    "loss_only": true,
+    "added_after_main_loss_results": true,
+    "loss_set_reused": true,
+    "independent_confirmation": false
+  },
+  "costs": {
+    "reused_initial_predictor_training_examples": 8192,
+    "reused_initial_selection_examples": 256,
+    "primary_history_true_gradient_training_examples": 24,
+    "primary_history_true_gradient_selection_examples": 96,
+    "primary_history_predictor_optimizer_steps_per_method": 180,
+    "current_true_gradient_training_examples": 4,
+    "current_true_gradient_selection_examples": 16,
+    "current_predictor_optimizer_steps": 30,
+    "current_selection_forward_examples": 496,
+    "primary_one_probe_lifetime_true_gradient_examples": 140,
+    "primary_one_probe_lifetime_predictor_optimizer_steps": 210,
+    "true_gradient_update_batch_examples": 32,
+    "diagnostic_heldout_gradient_examples": 28,
+    "mean_history_fit_seconds_per_seed": {
+      "carry": 2.849722993792966,
+      "reset": 2.5674770794964084
+    },
+    "mean_current_fit_seconds": {
+      "carry": 0.41794987571969006,
+      "reset": 0.4456728179745066
+    },
+    "mean_current_true_gradient_collection_seconds": {
+      "calibration": 0.07013876554750216,
+      "selection": 0.1329483496277438,
+      "diagnostic_heldout": 0.2322909759338169
+    },
+    "caveat": "History costs are paid by both sequential baselines; a reset-only one-off query could skip all history. Diagnostic/autograd and evaluation work is measured experiment overhead, not free deployment computation."
+  }
+}

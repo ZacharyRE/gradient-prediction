@@ -4,11 +4,26 @@
 
 **Research question:** can a gradient predictor produce useful LoRA updates, and can small calibration batches keep it effective as the model changes?
 
-**Current result:** the matched layer comparison is complete. Joint adaptive updates of layers 3/8/19 do not improve on their own warmup baseline, although real-gradient oracle updates do. Independent layer 8 remains the strongest predictor result; independent layer 3 is unstable across seeds.
+**Latest result:** [predictor history transfer](predictor-history-transfer/README.md). Retaining past calibration weights improves gradient prediction in every paired probe and beats resetting on the new accuracy comparison, but has not established a net model improvement. The independent/joint layer study and earlier multi-step calibration results remain below.
 
-Qwen2.5-0.5B-Instruct · `o_proj` LoRA rank/alpha 64 · three paired predictor/update seeds: **123/101, 124/102, 125/103**. Each scope has its own 32-step real-gradient warmup checkpoint.
+## Predictor history transfer
+
+Hold the main-model state, current examples and current calibration budget fixed. Carry the predictor's selected weights across earlier calibration episodes, or restart each episode from the same pretrained predictor. Both reset their optimizer state.
+
+| Endpoint | Carry history | Reset | Interpretation |
+|---|---:|---:|---|
+| Primary-state held-out gradient relative L2 | **1.270** | 1.488 | Mean error −14.6%; carry wins all 24 probes across both tested states |
+| One-update exact accuracy | **6.93%** | 6.12% | Carry wins all 3 seed pairs; unchanged model 7.00%, frozen predictor 7.23%, true gradient 8.11% |
+
+![Predictor history transfer overview](predictor-history-transfer/figures/overview.png)
+
+This is a **new 1,024-question test**, one update from fixed layer-8 reference states, and a prespecified accuracy probe. It is not the earlier 32-step rollout or its 2,048-question benchmark. History improves the predictor's starting point; it does not establish larger gains from the same current supervision or total compute savings.
+
+[Compact report, configuration and uncertainty](predictor-history-transfer/README.md) · [All paired updates](predictor-history-transfer/results/paired_updates.csv) · [Per-question correctness](predictor-history-transfer/results/accuracy_per_question.csv)
 
 ## Joint and independent layer updates
+
+Qwen2.5-0.5B-Instruct · `o_proj` LoRA rank/alpha 64 · three paired predictor/update seeds: **123/101, 124/102, 125/103**. Each scope has its own 32-step real-gradient warmup checkpoint.
 
 Layers are **zero-indexed**. Independent rows update exactly one layer per model; the joint row updates all three layers in one model with a separate predictor for each layer. Layer 8 reuses the completed original experiment. Results below use the full **2,048-question test set**, averaged over three paired seeds; each shared warmup baseline is evaluated once.
 

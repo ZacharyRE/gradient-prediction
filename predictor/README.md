@@ -2,7 +2,7 @@
 
 [Project overview](../README.md) · [Results index](../docs/RESULTS.md) · [Current roadmap](../docs/EXPERIMENTS.md)
 
-The current research path is **gradient prediction → useful one-step updates → calibration under model changes → all-layer prediction**.
+The current research path is **gradient prediction → useful one-step updates → calibration under model changes → history transfer and broader layer scope**.
 
 ## Start here: Countdown
 
@@ -12,6 +12,7 @@ The current predictor reads module output Y, supervision mask, and position. A b
 
 | Topic | Main question | Where to read |
 |---|---|---|
+| Predictor history transfer | Does retaining past calibration help under matched current model states and data? | [Latest result and figure](countdown_predictor_results/predictor-history-transfer/README.md) |
 | One-step input selection | Which inputs produce useful updates? | [Input ablation](countdown_predictor_results/README.md#one-step-input-selection) |
 | Dynamic calibration | How do 4 current-batch calibration examples and 16 validation examples support 32 updates? | [Current method and results](countdown_predictor_results/README.md#dynamic-calibration) |
 | Earlier calibration | What worked or failed in Countdown2 and the lightweight variant? | [Historical comparisons](countdown_predictor_results/HISTORY.md) |
@@ -29,4 +30,4 @@ Dataset sizes, input access, optimizers, and seeds are study-specific. Use each 
 
 ## Documentation roles
 
-The Countdown topic README is the main maintained report. The `adaptive-calibration-32step/` bundle preserves the original layer-8 study; `layer-comparison-32step/` adds joint and independent layer comparisons. Bundle READMEs index configurations and evidence. The historical report preserves prior comparisons. Future variants should extend the topic's report and evidence tables, with a separate topic only when the research question changes.
+The Countdown topic README is the main maintained report. The `adaptive-calibration-32step/` bundle preserves the original layer-8 study; `layer-comparison-32step/` adds joint and independent layer comparisons; `predictor-history-transfer/` isolates retained predictor experience. Bundle READMEs index configurations and evidence. The historical report preserves prior comparisons. Future variants should extend the topic's report and evidence tables, with a separate topic only when the research question changes.

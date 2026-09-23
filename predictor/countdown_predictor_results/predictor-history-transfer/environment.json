@@ -1,0 +1,20 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.13.0",
+    "transformers": "5.15.1",
+    "peft": "0.20.0",
+    "vllm": "0.27.1",
+    "numpy": "2.3.5",
+    "safetensors": "0.8.0",
+    "pyarrow": "25.0.1"
+  },
+  "gpus_used": [
+    5,
+    6,
+    7
+  ],
+  "gpu_model": "NVIDIA H200",
+  "no_network_required": true
+}

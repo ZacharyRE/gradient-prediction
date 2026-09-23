@@ -15,6 +15,7 @@ Can a learned gradient predictor remain useful for LoRA optimization as model pa
 | Useful one-step prediction | Y + mask + position was selected by development accuracy | [Input ablation](../predictor/countdown_predictor_results/README.md#one-step-input-selection) |
 | Multi-step calibration | Complete three-seed, 2,048-question evaluation through 32 single-layer updates | [Current calibration report](../predictor/countdown_predictor_results/README.md#dynamic-calibration) |
 | Joint vs independent updates | Joint adaptive 8.04% < warmup 8.64%; oracle 10.73%. Independent 3/8/19 tests complete | [Layer comparison](../predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates) |
+| Predictor history transfer | Lower gradient error in 24/24 matched probes; carry 6.93% vs reset 6.12%, unchanged model 7.00%, on fresh test1024 | [Matched history study](../predictor/countdown_predictor_results/predictor-history-transfer/README.md) |
 | All-layer prediction | Expansion deferred pending joint-update diagnosis | No completed downstream result |
 
 ## Next experiments

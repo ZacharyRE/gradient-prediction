@@ -4,7 +4,9 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 **Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration on Countdown.
 
-**Latest completed result:** layers **3, 8, 19** have been tested both independently and jointly. Joint adaptive updates reach **8.04%**, below their **8.64%** warmup baseline; oracle reaches **10.73%**. Independent layer 8 remains close to oracle (**7.32% vs 7.45%**), while layer 3 is less stable. Post-update accuracies are three-seed means on the full 2,048-question test set. [Results and matched configurations →](predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates)
+**Latest result — predictor history transfer:** keeping past calibration weights reduces held-out gradient error in **24/24 paired probes**. On a fresh 1,024-question one-update evaluation, carry-history reaches **6.93% vs reset's 6.12%**, but remains near the **7.00%** unchanged-model baseline. Retained experience transfers; faster learning and net accuracy improvement remain unestablished. [One-page results and figure →](predictor/countdown_predictor_results/predictor-history-transfer/README.md)
+
+**Previous milestone:** layers **3, 8, 19** have been tested both independently and jointly. Joint adaptive updates reach **8.04%**, below their **8.64%** warmup baseline; oracle reaches **10.73%**. Independent layer 8 remains close to oracle (**7.32% vs 7.45%**), while layer 3 is less stable. These are three-seed means on the earlier 2,048-question test set. [Layer comparison →](predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates)
 
 ## Research route
 
@@ -13,8 +15,9 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 | 1. Predictability | Do hidden states contain useful gradient information? | [Earlier MATH/GSM8K gradient prediction and data selection](docs/DATA_SELECTION_RESULTS.md) — Qwen2.5-1.5B |
 | 2. Useful updates | Can predicted gradients drive actual learning? | [Early Countdown local and feedback predictors](predictor/predictor_countdown/README.md) — Qwen2.5-0.5B |
 | 3. One-step selection | Which predictor inputs work best downstream? | [Y / mask / position ablation](predictor/countdown_predictor_results/README.md#one-step-input-selection) |
-| 4. Dynamic calibration | Can small calibration batches sustain multi-step updates? | [4 calibration + 16 validation examples; 16/32-step results](predictor/countdown_predictor_results/README.md#dynamic-calibration) — current main experiment |
+| 4. Dynamic calibration | Can small calibration batches sustain multi-step updates? | [4 calibration + 16 validation examples; 16/32-step results](predictor/countdown_predictor_results/README.md#dynamic-calibration) |
 | 5. Layer scope | Does the single-layer method transfer to joint updates? | [Completed independent 3/8/19 and joint 3+8+19 comparison](predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates); all-layer expansion deferred |
+| 6. History transfer | Does retaining predictor experience help on new model states and data? | [Matched carry/reset comparison](predictor/countdown_predictor_results/predictor-history-transfer/README.md): better gradient prediction, limited downstream benefit |
 
 The [SFT diagnosis studies](research/README.md) provide supporting evidence about training stability, supervision targets, and evaluation. Their settings differ from the Countdown predictor experiments.
 
