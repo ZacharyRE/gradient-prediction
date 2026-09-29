@@ -4,7 +4,7 @@
 
 **Research question:** can a gradient predictor produce useful LoRA updates, and can small calibration batches keep it effective as the model changes?
 
-**Latest result:** [predictor history transfer](predictor-history-transfer/README.md). Retaining past calibration weights improves gradient prediction in every paired probe and beats resetting on the new accuracy comparison, but has not established a net model improvement. The independent/joint layer study and earlier multi-step calibration results remain below.
+**Latest published result:** [scaling to 1.5B / 7B on Countdown, GSM8K and MATH](scaling-benchmarks-20260926/README.md). Gradients remain learnable, but no general downstream or compute advantage is established. The compact release includes configurations, all tested changes, aggregate results and stepwise activation/LoRA metrics. Earlier history-transfer and layer studies remain below.
 
 ## Predictor history transfer
 

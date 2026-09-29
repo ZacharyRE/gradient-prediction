@@ -1,0 +1,657 @@
+{
+  "experiment": "scaling_benchmarks_20260926",
+  "executed_utc_date": "2026-09-27",
+  "selection_frozen_utc": "2026-09-27T09:46:30.054661+00:00",
+  "models": {
+    "1p5b": {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "hidden_dim": 1536,
+      "lora_parameters": 196608
+    },
+    "7b": {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "hidden_dim": 3584,
+      "lora_parameters": 458752
+    }
+  },
+  "adapter": {
+    "layer_zero_indexed": 8,
+    "module": "self_attn.o_proj",
+    "rank": 64,
+    "alpha": 64,
+    "dropout": 0,
+    "base_frozen": true
+  },
+  "splits_per_task": {
+    "warmup": 512,
+    "predictor_train": 4096,
+    "predictor_dev": 128,
+    "gradient_audit": 128,
+    "update": 1024,
+    "accuracy_dev": 128
+  },
+  "split_seed": 20260926,
+  "warmup": {
+    "steps": 32,
+    "batch": 32,
+    "seed": 101,
+    "optimizer": "AdamW",
+    "original_lr": 0.0005,
+    "gentle_lr": 5e-05,
+    "weight_decay": 0.01,
+    "clip": 1
+  },
+  "predictor": {
+    "architecture": "bidirectional Transformer",
+    "width": 512,
+    "depth": 2,
+    "heads": 8,
+    "ffn_width": 1024,
+    "dropout": 0,
+    "input": [
+      "module output Y of full teacher-forced question and reference solution",
+      "next-token supervision mask",
+      "log RMS",
+      "p",
+      "p^2",
+      "sin(pi*p)"
+    ],
+    "target": "G = d(sum of supervised next-token CE)/dY, including nonzero prompt-position gradients",
+    "epochs": 100,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "clip": 1,
+    "max_batch_examples": 32,
+    "batching": "length-aware with an 8192 padded-token batching budget; long examples retained intact",
+    "training_loss": "mean_i((relL2_A_i^2 + relL2_B_i^2)/2) + 0.25*normalized_activation_MSE",
+    "offline_selection": "minimum factor-balanced per-example A/B relative squared error on 128 predictor-dev questions; activation loss excluded from selection"
+  },
+  "calibration": {
+    "train_examples": 4,
+    "fixed_selection_examples": 16,
+    "epochs_executed_per_step": 30,
+    "early_stopping": false,
+    "checkpoint_candidates": "epochs 0..30",
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "clip": 1,
+    "optimizer_reset_each_step": true,
+    "selected_weights_retained_between_steps": true,
+    "selection_score": "mean_i((relL2_A_i^2 + relL2_B_i^2)/2) + relL2_aggregate_AB^2; activation loss excluded",
+    "labels": "fresh true gradients at current LoRA state; LoRA fixed throughout calibration"
+  },
+  "update": {
+    "steps": 32,
+    "batch": 32,
+    "optimizer": "AdamW",
+    "weight_decay": 0,
+    "clip": 1,
+    "optimizer_reset_after_warmup": true,
+    "optimizer_state_retained_between_steps": true,
+    "all_32_use_predicted_gradients_in_adaptive": true,
+    "aggregation": "sum per-example sum-loss A/B gradients, divide by total supervised tokens",
+    "original_lr_grid": [
+      0.0003,
+      0.0001
+    ],
+    "gentle_lr_grid": [
+      0.0001,
+      3e-05,
+      1e-05,
+      3e-06
+    ],
+    "selection": "maximum accuracy_dev correct count, then lower development CE, then smaller LR; final endpoint fixed at 32"
+  },
+  "mean_baseline": "fresh token-weighted true A/B mean from exactly the same four calibration and sixteen selection examples",
+  "seeds": {
+    "primary_predictor_update": [
+      123,
+      101
+    ],
+    "gentle_repeats": [
+      [
+        124,
+        102
+      ],
+      [
+        125,
+        103
+      ]
+    ],
+    "shared_warmup_and_splits": true
+  },
+  "evaluation": {
+    "test_counts": {
+      "countdown": 2048,
+      "gsm8k": 1319,
+      "math": 500
+    },
+    "decoding": "greedy",
+    "seed": 42,
+    "max_new_tokens": 2048,
+    "input_truncation": false,
+    "backend": "native BF16 LoRA vLLM",
+    "extra_checks": [
+      "full MATH: raw5000, overlap-free4999, additional4499",
+      "Countdown max_new_tokens4096",
+      "strict boxed grading"
+    ],
+    "grading": "Countdown arithmetic/inventory checker; GSM8K/MATH math-verify. Standard and boxed-only extraction are evaluated separately, so strict scores are not necessarily a subset of standard scores."
+  },
+  "metric_definitions": {
+    "cosine": "dot(pred,true)/(norm(pred)*norm(true))",
+    "relative_l2": "norm(pred-true)/norm(true)",
+    "norm_ratio": "norm(pred)/norm(true)",
+    "activation": "flatten all tokens and channels per example, then average example metrics",
+    "lora": "concatenate flattened A and B gradients per example, then average example metrics",
+    "batch_lora": "aggregate gradients before computing metrics",
+    "static": "warmup model state, selected offline predictor, 128 audit questions; no average over update steps",
+    "step": "before LoRA update t, after t-1 completed updates; validation16 every step, heldout28 and actual32 only at 1/2/8/16/32"
+  },
+  "statistics": {
+    "paired_bootstrap_replicates": 100000,
+    "holm_family": "12 conditions x (Adaptive-Base, Adaptive-independently-tuned-Mean) = 24",
+    "seed_intervals": "joint question resampling conditional on shared-warmup runs; not full training-seed uncertainty"
+  },
+  "selected_families": [
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "labels",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "residual_h",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math",
+      "family": "labels",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "family": "multistate",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "labels",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "family": "residual_h",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math",
+      "family": "hidden",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math_gentle",
+      "family": "hidden",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math",
+      "family": "labels",
+      "lrs": [
+        0.0003,
+        0.0001
+      ],
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "family": "multistate",
+      "lrs": [
+        0.0001,
+        3e-05,
+        1e-05,
+        3e-06
+      ],
+      "chosen_lr": 1e-05
+    }
+  ],
+  "independently_tuned_baselines": [
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "oracle",
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "mean",
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "oracle",
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "mean",
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "1p5b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-05
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "oracle",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "mean",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "oracle",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "mean",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math",
+      "method": "oracle",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math",
+      "method": "mean",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "oracle",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "mean",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "1p5b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "oracle",
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "mean",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "oracle",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "mean",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "countdown",
+      "condition": "countdown_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "oracle",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "mean",
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "oracle",
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "mean",
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "7b",
+      "task": "gsm8k",
+      "condition": "gsm8k_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math",
+      "method": "oracle",
+      "chosen_lr": 0.0003
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math",
+      "method": "mean",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math",
+      "method": "frozen",
+      "chosen_lr": 0.0001
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "oracle",
+      "chosen_lr": 3e-06
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "mean",
+      "chosen_lr": 1e-05
+    },
+    {
+      "model": "7b",
+      "task": "math",
+      "condition": "math_gentle",
+      "method": "frozen",
+      "chosen_lr": 3e-06
+    }
+  ],
+  "amendments": [
+    "Gentle warmup and smaller update LRs were motivated by development degradation.",
+    "Labels, residual H, and multistate were exploratory development-stage additions.",
+    "Candidates and selections were frozen before final outcomes were inspected; strict-format and extra auxiliary comparisons are post-release exploratory analyses."
+  ]
+}

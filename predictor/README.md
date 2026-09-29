@@ -12,7 +12,8 @@ The current predictor reads module output Y, supervision mask, and position. A b
 
 | Topic | Main question | Where to read |
 |---|---|---|
-| Predictor history transfer | Does retaining past calibration help under matched current model states and data? | [Latest result and figure](countdown_predictor_results/predictor-history-transfer/README.md) |
+| Model and task scaling | Does calibration help 1.5B/7B across Countdown, GSM8K and MATH? | [Results, configuration and attempts](countdown_predictor_results/scaling-benchmarks-20260926/README.md) |
+| Predictor history transfer | Does retaining past calibration help under matched current model states and data? | [Matched results and figure](countdown_predictor_results/predictor-history-transfer/README.md) |
 | One-step input selection | Which inputs produce useful updates? | [Input ablation](countdown_predictor_results/README.md#one-step-input-selection) |
 | Dynamic calibration | How do 4 current-batch calibration examples and 16 validation examples support 32 updates? | [Current method and results](countdown_predictor_results/README.md#dynamic-calibration) |
 | Earlier calibration | What worked or failed in Countdown2 and the lightweight variant? | [Historical comparisons](countdown_predictor_results/HISTORY.md) |

@@ -1,0 +1,269 @@
+group,model,task,condition,lr,seed,comparison,gained,lost,mcnemar_exact_p,delta_pp,ci95_low_pp,ci95_high_pp,n,bootstrap_replicates,holm24_adjusted_p,adaptive_lr,baseline_lr,adaptive_correct,baseline_correct,family,analysis,subset,new_token_cap,metric
+same_lr,1p5b,countdown,countdown,0.0001,101,adaptive - base,143,171,0.12745063013248759,-1.3671875,-3.076171875,0.341796875,2048,100000,1.0,,,,,,,,,
+same_lr,1p5b,countdown,countdown,0.0001,101,adaptive - warmup,119,79,0.0054440762568771645,1.953125,0.634765625,3.3203125,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown,0.0001,101,adaptive - mean,138,86,0.0006232486279910531,2.5390625,1.123046875,3.955078125,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown,0.0001,101,adaptive - oracle,62,94,0.012813143553546088,-1.5625,-2.783203125,-0.390625,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown,0.0001,101,adaptive - frozen,118,141,0.17150167353322,-1.123046875,-2.63671875,0.439453125,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - base,136,128,0.6666801784700447,0.390625,-1.171875,1.953125,2048,100000,1.0,,,,,,,,,
+same_lr,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - warmup,113,114,1.0,-0.048828125,-1.46484375,1.416015625,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - mean,104,96,0.6207289280968303,0.390625,-0.9765625,1.7578125,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - oracle,112,108,0.8397713323897803,0.1953125,-1.220703125,1.611328125,2048,100000,,,,,,,,,,
+same_lr,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - frozen,101,108,0.6782220277695619,-0.341796875,-1.708984375,1.025390625,2048,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - base,108,266,1.6670098601929984e-16,-11.978771796815769,-14.783927217589083,-9.173616376042457,1319,100000,3.334019720385997e-15,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - warmup,108,133,0.12193099337113747,-1.8953752843062925,-4.169825625473845,0.37907505686125853,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - mean,142,124,0.2972431512974043,1.3646702047005308,-1.061410159211524,3.790750568612585,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - oracle,101,114,0.41319369451887555,-0.9855951478392722,-3.184230477634572,1.2130401819560273,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - frozen,114,117,0.8953454592110384,-0.22744503411675512,-2.501895375284306,2.047005307050796,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - base,71,76,0.741591942446161,-0.37907505686125853,-2.1986353297952994,1.4404852160727823,1319,100000,1.0,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - warmup,31,41,0.2887842804141049,-0.7581501137225171,-2.047005307050796,0.530705079605762,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - mean,39,34,0.6399729317539425,0.37907505686125853,-0.9097801364670205,1.6679302501895377,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - oracle,41,46,0.6682849967188083,-0.37907505686125853,-1.7437452615617892,0.9855951478392722,1319,100000,,,,,,,,,,
+same_lr,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - frozen,0,0,1.0,0.0,0.0,0.0,1319,100000,,,,,,,,,,
+same_lr,1p5b,math,math,0.0003,101,adaptive - base,30,135,4.1569889719802164e-17,-21.0,-25.8,-16.400000000000002,500,100000,8.729676841158455e-16,,,,,,,,,
+same_lr,1p5b,math,math,0.0003,101,adaptive - warmup,46,34,0.21851803947870374,2.4,-1.2,6.0,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math,0.0003,101,adaptive - mean,75,32,3.918715378691487e-05,8.6,4.6,12.6,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math,0.0003,101,adaptive - oracle,55,39,0.12137111297242903,3.2,-0.6,7.000000000000001,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math,0.0003,101,adaptive - frozen,73,46,0.01678632911847825,5.4,1.2,9.6,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math_gentle,1e-05,101,adaptive - base,28,68,5.459154357711447e-05,-8.0,-11.799999999999999,-4.2,500,100000,0.0009826477843880605,,,,,,,,,
+same_lr,1p5b,math,math_gentle,1e-05,101,adaptive - warmup,28,45,0.060370037339928545,-3.4000000000000004,-6.800000000000001,-0.2,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math_gentle,1e-05,101,adaptive - mean,24,32,0.34968195298368476,-1.6,-4.6,1.4000000000000001,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math_gentle,1e-05,101,adaptive - oracle,22,33,0.1770013647703581,-2.1999999999999997,-5.2,0.6,500,100000,,,,,,,,,,
+same_lr,1p5b,math,math_gentle,1e-05,101,adaptive - frozen,34,27,0.4426260049464714,1.4000000000000001,-1.6,4.3999999999999995,500,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown,0.0003,101,adaptive - base,104,558,5.650706066895669e-76,-22.16796875,-24.4140625,-19.921875,2048,100000,1.3561694560549606e-74,,,,,,,,,
+same_lr,7b,countdown,countdown,0.0003,101,adaptive - warmup,180,95,3.3152981900018824e-07,4.150390625,2.587890625,5.712890625,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown,0.0003,101,adaptive - mean,236,147,6.308947078395432e-06,4.345703125,2.490234375,6.201171875,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown,0.0003,101,adaptive - oracle,124,118,0.7479737604627912,0.29296875,-1.220703125,1.7578125,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown,0.0003,101,adaptive - frozen,312,0,2.3970182936024055e-94,15.234375,13.671875,16.796875,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown_gentle,3e-06,101,adaptive - base,184,291,1.0432448296382553e-06,-5.224609375,-7.32421875,-3.173828125,2048,100000,1.9821651763126852e-05,,,,,,,,,
+same_lr,7b,countdown,countdown_gentle,3e-06,101,adaptive - warmup,168,168,1.0,0.0,-1.7578125,1.7578125,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown_gentle,3e-06,101,adaptive - mean,162,156,0.7792335080226428,0.29296875,-1.416015625,2.001953125,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown_gentle,3e-06,101,adaptive - oracle,158,156,0.9550086046795534,0.09765625,-1.611328125,1.806640625,2048,100000,,,,,,,,,,
+same_lr,7b,countdown,countdown_gentle,3e-06,101,adaptive - frozen,130,151,0.2327720616851378,-1.025390625,-2.63671875,0.5859375,2048,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k,0.0001,101,adaptive - base,31,195,2.9382083867528757e-30,-12.43366186504928,-14.556482183472328,-10.310841546626232,1319,100000,6.757879289531614e-29,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k,0.0001,101,adaptive - warmup,81,110,0.04248168820746489,-2.1986353297952994,-4.245640636846096,-0.1516300227445034,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k,0.0001,101,adaptive - mean,119,107,0.46442371629701373,0.9097801364670205,-1.288855193328279,3.10841546626232,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k,0.0001,101,adaptive - oracle,91,96,0.7699893951857697,-0.37907505686125853,-2.4260803639120545,1.6679302501895377,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k,0.0001,101,adaptive - frozen,193,93,3.352047676450657e-09,7.58150113722517,5.079605761940864,10.083396512509477,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - base,23,24,1.0,-0.0758150113722517,-1.061410159211524,0.9097801364670205,1319,100000,1.0,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - warmup,17,17,1.0,0.0,-0.8339651250947688,0.8339651250947688,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - mean,10,13,0.6776394844055176,-0.22744503411675512,-0.9097801364670205,0.45489006823351025,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - oracle,10,14,0.5412561893463135,-0.3032600454890068,-1.061410159211524,0.37907505686125853,1319,100000,,,,,,,,,,
+same_lr,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - frozen,12,15,0.7011080384254456,-0.22744503411675512,-0.9855951478392722,0.530705079605762,1319,100000,,,,,,,,,,
+same_lr,7b,math,math,0.0003,101,adaptive - base,15,144,1.238203572660673e-27,-25.8,-30.2,-21.4,500,100000,2.724047859853481e-26,,,,,,,,,
+same_lr,7b,math,math,0.0003,101,adaptive - warmup,50,46,0.7596492883236299,0.8,-3.0,4.6,500,100000,,,,,,,,,,
+same_lr,7b,math,math,0.0003,101,adaptive - mean,88,47,0.0005273346057409799,8.200000000000001,3.8,12.8,500,100000,,,,,,,,,,
+same_lr,7b,math,math,0.0003,101,adaptive - oracle,56,42,0.18884671980890289,2.8000000000000003,-1.0,6.6000000000000005,500,100000,,,,,,,,,,
+same_lr,7b,math,math,0.0003,101,adaptive - frozen,244,6,3.6166777508175347e-64,47.599999999999994,43.0,52.2,500,100000,,,,,,,,,,
+same_lr,7b,math,math_gentle,3e-06,101,adaptive - base,25,19,0.4513808323961257,1.2,-1.4000000000000001,3.8,500,100000,1.0,,,,,,,,,
+same_lr,7b,math,math_gentle,3e-06,101,adaptive - warmup,10,14,0.5412561893463135,-0.8,-2.8000000000000003,1.2,500,100000,,,,,,,,,,
+same_lr,7b,math,math_gentle,3e-06,101,adaptive - mean,15,15,1.0,0.0,-2.1999999999999997,2.1999999999999997,500,100000,,,,,,,,,,
+same_lr,7b,math,math_gentle,3e-06,101,adaptive - oracle,11,12,1.0,-0.2,-2.0,1.6,500,100000,,,,,,,,,,
+same_lr,7b,math,math_gentle,3e-06,101,adaptive - frozen,11,10,1.0,0.2,-1.6,2.0,500,100000,,,,,,,,,,
+independently_tuned,1p5b,countdown,countdown,,,adaptive - tuned_oracle,66,125,2.35553958859482e-05,-2.880859375,-4.19921875,-1.5625,2048,100000,,0.0001,0.0003,186,245,,,,,
+independently_tuned,1p5b,countdown,countdown,,,adaptive - tuned_mean,132,105,0.0910311056649362,1.318359375,-0.146484375,2.783203125,2048,100000,1.0,0.0001,0.0003,186,159,,,,,
+independently_tuned,1p5b,countdown,countdown,,,adaptive - tuned_frozen,118,141,0.17150167353322,-1.123046875,-2.685546875,0.439453125,2048,100000,,0.0001,0.0001,186,209,,,,,
+independently_tuned,1p5b,countdown,countdown_gentle,,,adaptive - tuned_oracle,112,108,0.8397713323897803,0.1953125,-1.220703125,1.611328125,2048,100000,,1e-05,1e-05,222,218,,,,,
+independently_tuned,1p5b,countdown,countdown_gentle,,,adaptive - tuned_mean,104,96,0.6207289280968303,0.390625,-0.9765625,1.7578125,2048,100000,1.0,1e-05,1e-05,222,214,,,,,
+independently_tuned,1p5b,countdown,countdown_gentle,,,adaptive - tuned_frozen,113,118,0.7924798849312893,-0.244140625,-1.708984375,1.220703125,2048,100000,,1e-05,3e-05,222,227,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k,,,adaptive - tuned_oracle,101,114,0.41319369451887555,-0.9855951478392722,-3.184230477634572,1.2130401819560273,1319,100000,,0.0001,0.0001,806,819,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k,,,adaptive - tuned_mean,142,124,0.2972431512974043,1.3646702047005308,-1.061410159211524,3.790750568612585,1319,100000,1.0,0.0001,0.0001,806,788,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k,,,adaptive - tuned_frozen,114,117,0.8953454592110384,-0.22744503411675512,-2.501895375284306,2.047005307050796,1319,100000,,0.0001,0.0001,806,809,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k_gentle,,,adaptive - tuned_oracle,41,46,0.6682849967188083,-0.37907505686125853,-1.7437452615617892,0.9855951478392722,1319,100000,,3e-06,3e-06,959,964,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k_gentle,,,adaptive - tuned_mean,39,34,0.6399729317539425,0.37907505686125853,-0.9097801364670205,1.6679302501895377,1319,100000,1.0,3e-06,3e-06,959,954,,,,,
+independently_tuned,1p5b,gsm8k,gsm8k_gentle,,,adaptive - tuned_frozen,0,0,1.0,0.0,0.0,0.0,1319,100000,,3e-06,3e-06,959,959,,,,,
+independently_tuned,1p5b,math,math,,,adaptive - tuned_oracle,52,38,0.17024239504607366,2.8000000000000003,-1.0,6.6000000000000005,500,100000,,0.0003,0.0001,175,161,,,,,
+independently_tuned,1p5b,math,math,,,adaptive - tuned_mean,67,40,0.011598202043786154,5.4,1.4000000000000001,9.4,500,100000,0.17397303065679232,0.0003,0.0001,175,148,,,,,
+independently_tuned,1p5b,math,math,,,adaptive - tuned_frozen,45,48,0.8358461346314864,-0.6,-4.3999999999999995,3.2,500,100000,,0.0003,0.0001,175,178,,,,,
+independently_tuned,1p5b,math,math_gentle,,,adaptive - tuned_oracle,30,39,0.3355576182340152,-1.7999999999999998,-5.0,1.4000000000000001,500,100000,,1e-05,3e-06,240,249,,,,,
+independently_tuned,1p5b,math,math_gentle,,,adaptive - tuned_mean,26,37,0.20736789985685422,-2.1999999999999997,-5.4,0.8,500,100000,1.0,1e-05,3e-06,240,251,,,,,
+independently_tuned,1p5b,math,math_gentle,,,adaptive - tuned_frozen,20,41,0.009853448195259268,-4.2,-7.199999999999999,-1.2,500,100000,,1e-05,3e-06,240,261,,,,,
+independently_tuned,7b,countdown,countdown,,,adaptive - tuned_oracle,124,118,0.7479737604627912,0.29296875,-1.220703125,1.806640625,2048,100000,,0.0003,0.0003,312,306,,,,,
+independently_tuned,7b,countdown,countdown,,,adaptive - tuned_mean,228,158,0.00043040697041783955,3.41796875,1.5625,5.2734375,2048,100000,0.007316918497103272,0.0003,0.0001,312,242,,,,,
+independently_tuned,7b,countdown,countdown,,,adaptive - tuned_frozen,308,6,7.75309691000671e-83,14.74609375,13.18359375,16.30859375,2048,100000,,0.0003,0.0001,312,10,,,,,
+independently_tuned,7b,countdown,countdown_gentle,,,adaptive - tuned_oracle,158,156,0.9550086046795534,0.09765625,-1.611328125,1.806640625,2048,100000,,3e-06,3e-06,659,657,,,,,
+independently_tuned,7b,countdown,countdown_gentle,,,adaptive - tuned_mean,162,156,0.7792335080226428,0.29296875,-1.416015625,2.001953125,2048,100000,1.0,3e-06,3e-06,659,653,,,,,
+independently_tuned,7b,countdown,countdown_gentle,,,adaptive - tuned_frozen,130,151,0.2327720616851378,-1.025390625,-2.63671875,0.5859375,2048,100000,,3e-06,3e-06,659,680,,,,,
+independently_tuned,7b,gsm8k,gsm8k,,,adaptive - tuned_oracle,91,96,0.7699893951857697,-0.37907505686125853,-2.4260803639120545,1.6679302501895377,1319,100000,,0.0001,0.0001,1045,1050,,,,,
+independently_tuned,7b,gsm8k,gsm8k,,,adaptive - tuned_mean,149,103,0.004491539295928978,3.4874905231235784,1.1372251705837757,5.837755875663381,1319,100000,0.07186462873486364,0.0001,0.0003,1045,999,,,,,
+independently_tuned,7b,gsm8k,gsm8k,,,adaptive - tuned_frozen,193,93,3.352047676450657e-09,7.58150113722517,5.079605761940864,10.083396512509477,1319,100000,,0.0001,0.0001,1045,945,,,,,
+independently_tuned,7b,gsm8k,gsm8k_gentle,,,adaptive - tuned_oracle,10,14,0.5412561893463135,-0.3032600454890068,-1.061410159211524,0.45489006823351025,1319,100000,,1e-05,1e-05,1208,1212,,,,,
+independently_tuned,7b,gsm8k,gsm8k_gentle,,,adaptive - tuned_mean,10,13,0.6776394844055176,-0.22744503411675512,-0.9097801364670205,0.45489006823351025,1319,100000,1.0,1e-05,1e-05,1208,1211,,,,,
+independently_tuned,7b,gsm8k,gsm8k_gentle,,,adaptive - tuned_frozen,12,19,0.28104151505976915,-0.530705079605762,-1.3646702047005308,0.3032600454890068,1319,100000,,1e-05,3e-06,1208,1215,,,,,
+independently_tuned,7b,math,math,,,adaptive - tuned_oracle,56,42,0.18884671980890289,2.8000000000000003,-1.0,6.6000000000000005,500,100000,,0.0003,0.0003,253,239,,,,,
+independently_tuned,7b,math,math,,,adaptive - tuned_mean,61,45,0.14478233933005036,3.2,-0.8,7.199999999999999,500,100000,1.0,0.0003,0.0001,253,237,,,,,
+independently_tuned,7b,math,math,,,adaptive - tuned_frozen,51,53,0.921948827626431,-0.4,-4.3999999999999995,3.5999999999999996,500,100000,,0.0003,0.0001,253,255,,,,,
+independently_tuned,7b,math,math_gentle,,,adaptive - tuned_oracle,11,12,1.0,-0.2,-2.0,1.6,500,100000,,3e-06,3e-06,388,389,,,,,
+independently_tuned,7b,math,math_gentle,,,adaptive - tuned_mean,15,15,1.0,0.0,-2.1999999999999997,2.1999999999999997,500,100000,1.0,3e-06,1e-05,388,388,,,,,
+independently_tuned,7b,math,math_gentle,,,adaptive - tuned_frozen,11,10,1.0,0.2,-1.6,2.0,500,100000,,3e-06,3e-06,388,387,,,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - adaptive,,,,-0.6823351023502654,-2.577710386656558,1.2130401819560273,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - tuned_adaptive,,,,-0.6823351023502654,-2.577710386656558,1.2130401819560273,1319,100000,,,,,,labels,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - mean,,,,0.6823351023502654,-1.7437452615617892,3.10841546626232,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - warmup,,,,-2.577710386656558,-4.852160727824109,-0.3032600454890068,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - base,,,,-12.661106899166036,-15.390447308567095,-9.931766489764973,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - frozen,,,,3.790750568612585,1.3646702047005308,6.21683093252464,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - tuned_frozen,,,,3.790750568612585,1.3646702047005308,6.21683093252464,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - warmup,,,,2.122820318423048,-0.530705079605762,4.776345716451857,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - base,,,,-7.960576194086428,-10.614101592115238,-5.382865807429871,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - adaptive,,,,-2.577710386656558,-4.548900682335103,-0.6065200909780136,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - tuned_adaptive,,,,-2.577710386656558,-4.548900682335103,-0.6065200909780136,1319,100000,,,,,,residual_h,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - mean,,,,-1.2130401819560273,-3.56330553449583,1.1372251705837757,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - warmup,,,,-4.473085670962851,-6.747536012130402,-2.1986353297952994,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_adaptive - base,,,,-14.556482183472328,-17.28582259287339,-11.827141774071267,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - frozen,,,,-1.592115238817286,-3.790750568612585,0.6065200909780136,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - tuned_frozen,,,,-1.592115238817286,-3.790750568612585,0.6065200909780136,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - warmup,,,,-3.2600454890068233,-5.686125852918878,-0.8339651250947688,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k,0.0001,,variant_frozen - base,,,,-13.343442001516301,-16.148597422289612,-10.538286580742987,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,math,math,0.0003,,variant_adaptive - adaptive,,,,1.2,-2.4,4.8,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,math,math,0.0003,,variant_adaptive - tuned_adaptive,,,,1.2,-2.4,4.8,500,100000,,,,,,labels,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,1p5b,math,math,0.0003,,variant_adaptive - mean,,,,9.8,5.800000000000001,13.8,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,math,math,0.0003,,variant_adaptive - warmup,,,,3.5999999999999996,0.0,7.3999999999999995,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,math,math,0.0003,,variant_adaptive - base,,,,-19.8,-24.4,-15.2,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,math,math,0.0003,,variant_frozen - frozen,,,,-6.4,-10.6,-2.1999999999999997,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,math,math,0.0003,,variant_frozen - tuned_frozen,,,,-12.4,-16.6,-8.200000000000001,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,math,math,0.0003,,variant_frozen - warmup,,,,-9.4,-13.600000000000001,-5.2,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,math,math,0.0003,,variant_frozen - base,,,,-32.800000000000004,-37.4,-28.199999999999996,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_adaptive - adaptive,,,,0.3032600454890068,-0.9855951478392722,1.592115238817286,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_adaptive - tuned_adaptive,,,,0.3032600454890068,-0.9855951478392722,1.592115238817286,1319,100000,,,,,,multistate,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_adaptive - mean,,,,0.6823351023502654,-0.6065200909780136,1.9711902956785443,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_adaptive - warmup,,,,-0.45489006823351025,-1.7437452615617892,0.8339651250947688,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_adaptive - base,,,,-0.0758150113722517,-1.819560272934041,1.7437452615617892,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_frozen - frozen,,,,0.0,-1.3646702047005308,1.3646702047005308,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_frozen - tuned_frozen,,,,0.0,-1.3646702047005308,1.3646702047005308,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_frozen - warmup,,,,-0.7581501137225171,-2.122820318423048,0.6065200909780136,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,1p5b,gsm8k,gsm8k_gentle,3e-06,,variant_frozen - base,,,,-0.37907505686125853,-2.122820318423048,1.3646702047005308,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_adaptive - adaptive,,,,1.6679302501895377,-0.6065200909780136,3.9423805913570886,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_adaptive - tuned_adaptive,,,,-0.7581501137225171,-2.8809704321455647,1.3646702047005308,1319,100000,,,,,,labels,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_adaptive - mean,,,,2.7293404094010616,0.37907505686125853,5.079605761940864,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_adaptive - warmup,,,,-2.9567854435178167,-5.155420773313116,-0.7581501137225171,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_adaptive - base,,,,-13.191811978771797,-15.314632297194844,-11.06899166034875,1319,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_frozen - frozen,,,,-0.9097801364670205,-1.9711902956785443,0.1516300227445034,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_frozen - tuned_frozen,,,,-70.05307050796058,-72.55496588324488,-67.47536012130402,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_frozen - warmup,,,,-79.83320697498104,-82.03184230477635,-77.5587566338135,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0003,,variant_frozen - base,,,,-90.06823351023503,-91.66034874905232,-88.40030326004549,1319,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_adaptive - adaptive,,,,-1.4404852160727823,-3.56330553449583,0.6065200909780136,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_adaptive - tuned_adaptive,,,,-1.4404852160727823,-3.56330553449583,0.6065200909780136,1319,100000,,,,,,residual_h,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_adaptive - mean,,,,-0.530705079605762,-2.8809704321455647,1.819560272934041,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_adaptive - warmup,,,,-3.639120545868082,-5.837755875663381,-1.4404852160727823,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_adaptive - base,,,,-13.874147081122063,-16.07278241091736,-11.675511751326763,1319,100000,,,,,,residual_h,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_frozen - frozen,,,,1.2130401819560273,-0.9097801364670205,3.3358605003790753,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_frozen - tuned_frozen,,,,1.2130401819560273,-0.9097801364670205,3.3358605003790753,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_frozen - warmup,,,,-8.567096285064443,-10.993176648976497,-6.1410159211523885,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k,0.0001,,variant_frozen - base,,,,-18.802122820318424,-21.230098559514754,-16.376042456406367,1319,100000,,,,,,residual_h,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,math,math,0.0001,,variant_adaptive - adaptive,,,,-2.1999999999999997,-5.4,1.0,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,math,math,0.0001,,variant_adaptive - tuned_adaptive,,,,-0.8,-4.8,3.2,500,100000,,,,,,labels,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,7b,math,math,0.0001,,variant_adaptive - mean,,,,2.4,-1.6,6.4,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,math,math,0.0001,,variant_adaptive - warmup,,,,0.0,-4.0,4.0,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,math,math,0.0001,,variant_adaptive - base,,,,-26.6,-31.0,-22.400000000000002,500,100000,,,,,,labels,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,math,math,0.0001,,variant_frozen - frozen,,,,-1.4000000000000001,-5.2,2.4,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,math,math,0.0001,,variant_frozen - tuned_frozen,,,,-1.4000000000000001,-5.2,2.4,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,math,math,0.0001,,variant_frozen - warmup,,,,-0.2,-4.3999999999999995,4.0,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,math,math,0.0001,,variant_frozen - base,,,,-26.8,-31.4,-22.400000000000002,500,100000,,,,,,labels,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_adaptive - adaptive,,,,0.1516300227445034,-0.6823351023502654,0.9855951478392722,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_adaptive - tuned_adaptive,,,,0.1516300227445034,-0.6823351023502654,0.9855951478392722,1319,100000,,,,,,multistate,Post-release exploratory independently tuned baseline comparison,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_adaptive - mean,,,,-0.0758150113722517,-0.8339651250947688,0.6823351023502654,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_adaptive - warmup,,,,0.1516300227445034,-0.6823351023502654,0.9855951478392722,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_adaptive - base,,,,0.0758150113722517,-0.9855951478392722,1.1372251705837757,1319,100000,,,,,,multistate,Prespecified exploratory auxiliary comparison,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_frozen - frozen,,,,-0.1516300227445034,-0.8339651250947688,0.530705079605762,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_frozen - tuned_frozen,,,,-0.45489006823351025,-1.3646702047005308,0.45489006823351025,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_frozen - warmup,,,,0.0758150113722517,-0.8339651250947688,0.9855951478392722,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+auxiliary,7b,gsm8k,gsm8k_gentle,1e-05,,variant_frozen - base,,,,0.0,-0.9855951478392722,0.9855951478392722,1319,100000,,,,,,multistate,Post-release exploratory comparison for every auxiliary family; no selection or primary-test changes.,,,
+full_math,1p5b,,,,,adaptive - base,314,645,5.024840939024321e-27,-6.619999999999999,-7.82,-5.42,5000,100000,,,,,,,,raw5000,,
+full_math,1p5b,,,,,adaptive - base,314,645,5.024840939024321e-27,-6.621324264852971,-7.821564312862572,-5.421084216843369,4999,100000,,,,,,,,clean4999,,
+full_math,1p5b,,,,,adaptive - base,286,577,2.1122890716703194e-23,-6.468104023116249,-7.735052233829739,-5.201155812402756,4499,100000,,,,,,,,additional4499,,
+full_math,1p5b,,,,,adaptive - warmup,260,404,2.5388581759284042e-08,-2.88,-3.88,-1.8599999999999999,5000,100000,,,,,,,,raw5000,,
+full_math,1p5b,,,,,adaptive - warmup,260,404,2.5388581759284042e-08,-2.8805761152230445,-3.8807761552310462,-1.8803760752150431,4999,100000,,,,,,,,clean4999,,
+full_math,1p5b,,,,,adaptive - warmup,232,359,1.9697897900239343e-07,-2.822849522116026,-3.8675261169148696,-1.7781729273171814,4499,100000,,,,,,,,additional4499,,
+full_math,1p5b,,,,,adaptive - oracle,252,228,0.29380101621598104,0.48,-0.38,1.34,5000,100000,,,,,,,,raw5000,,
+full_math,1p5b,,,,,adaptive - oracle,252,228,0.29380101621598104,0.48009601920384076,-0.3800760152030406,1.340268053610722,4999,100000,,,,,,,,clean4999,,
+full_math,1p5b,,,,,adaptive - oracle,230,195,0.09898407100898869,0.777950655701267,-0.11113580795732383,1.6670371193598579,4499,100000,,,,,,,,additional4499,,
+full_math,1p5b,,,,,adaptive - mean,226,247,0.35779463104243575,-0.42,-1.28,0.42,5000,100000,,,,,,,,raw5000,,
+full_math,1p5b,,,,,adaptive - mean,226,247,0.35779463104243575,-0.4200840168033607,-1.280256051210242,0.4200840168033607,4999,100000,,,,,,,,clean4999,,
+full_math,1p5b,,,,,adaptive - mean,202,215,0.556824151778534,-0.288953100689042,-1.178039564347633,0.6001333629695488,4499,100000,,,,,,,,additional4499,,
+full_math,1p5b,,,,,adaptive - frozen,324,233,0.00013279190074639972,1.82,0.8999999999999999,2.74,5000,100000,,,,,,,,raw5000,,
+full_math,1p5b,,,,,adaptive - frozen,324,233,0.00013279190074639972,1.8203640728145631,0.9001800360072014,2.7405481096219244,4999,100000,,,,,,,,clean4999,,
+full_math,1p5b,,,,,adaptive - frozen,290,206,0.00018774278688805766,1.8670815736830406,0.8890864636585907,2.822849522116026,4499,100000,,,,,,,,additional4499,,
+full_math,7b,,,,,adaptive - base,218,227,0.704557666331695,-0.18,-1.0,0.64,5000,100000,,,,,,,,raw5000,,
+full_math,7b,,,,,adaptive - base,218,227,0.704557666331695,-0.18003600720144028,-1.0002000400080016,0.640128025605121,4999,100000,,,,,,,,clean4999,,
+full_math,7b,,,,,adaptive - base,193,208,0.4845196367670207,-0.3334074238719716,-1.2002667259390976,0.5334518781951545,4499,100000,,,,,,,,additional4499,,
+full_math,7b,,,,,adaptive - warmup,138,134,0.8557023748629741,0.08,-0.5599999999999999,0.72,5000,100000,,,,,,,,raw5000,,
+full_math,7b,,,,,adaptive - warmup,138,134,0.8557023748629741,0.08001600320064013,-0.5601120224044809,0.7201440288057611,4999,100000,,,,,,,,clean4999,,
+full_math,7b,,,,,adaptive - warmup,128,120,0.6567680752327201,0.17781729273171815,-0.5112247166036897,0.866859302067126,4499,100000,,,,,,,,additional4499,,
+full_math,7b,,,,,adaptive - oracle,127,107,0.21412325762860104,0.4,-0.2,1.0,5000,100000,,,,,,,,raw5000,,
+full_math,7b,,,,,adaptive - oracle,127,107,0.21412325762860104,0.40008001600320064,-0.20004000800160032,1.0002000400080016,4999,100000,,,,,,,,clean4999,,
+full_math,7b,,,,,adaptive - oracle,116,95,0.16840642629329206,0.46677039342076015,-0.17781729273171815,1.0891309179817736,4499,100000,,,,,,,,additional4499,,
+full_math,7b,,,,,adaptive - mean,140,139,1.0,0.02,-0.64,0.6799999999999999,5000,100000,,,,,,,,raw5000,,
+full_math,7b,,,,,adaptive - mean,140,139,1.0,0.020004000800160033,-0.640128025605121,0.6801360272054411,4999,100000,,,,,,,,clean4999,,
+full_math,7b,,,,,adaptive - mean,125,124,1.0,0.02222716159146477,-0.6668148477439432,0.7112691709268726,4499,100000,,,,,,,,additional4499,,
+full_math,7b,,,,,adaptive - frozen,123,110,0.4318458053881849,0.26,-0.33999999999999997,0.86,5000,100000,,,,,,,,raw5000,,
+full_math,7b,,,,,adaptive - frozen,123,110,0.4318458053881849,0.26005201040208037,-0.34006801360272054,0.8601720344068814,4999,100000,,,,,,,,clean4999,,
+full_math,7b,,,,,adaptive - frozen,112,100,0.45003684019759504,0.26672593909757725,-0.3778617470549011,0.8890864636585907,4499,100000,,,,,,,,additional4499,,
+long_output,1p5b,,,,,adaptive - base,136,128,0.6666801784700447,0.390625,-1.171875,1.953125,2048,100000,,,,,,,,,4096,
+long_output,1p5b,,,,,adaptive - warmup,113,115,0.9472167120692366,-0.09765625,-1.5625,1.3671875,2048,100000,,,,,,,,,4096,
+long_output,1p5b,,,,,adaptive - oracle,112,108,0.8397713323897803,0.1953125,-1.220703125,1.611328125,2048,100000,,,,,,,,,4096,
+long_output,1p5b,,,,,adaptive - mean,104,95,0.5707535104620824,0.439453125,-0.87890625,1.806640625,2048,100000,,,,,,,,,4096,
+long_output,1p5b,,,,,adaptive - frozen,101,108,0.6782220277695619,-0.341796875,-1.708984375,1.07421875,2048,100000,,,,,,,,,4096,
+long_output,7b,,,,,adaptive - base,184,291,1.0432448296382553e-06,-5.224609375,-7.32421875,-3.173828125,2048,100000,,,,,,,,,4096,
+long_output,7b,,,,,adaptive - warmup,168,168,1.0,0.0,-1.7578125,1.7578125,2048,100000,,,,,,,,,4096,
+long_output,7b,,,,,adaptive - oracle,158,156,0.9550086046795534,0.09765625,-1.5625,1.806640625,2048,100000,,,,,,,,,4096,
+long_output,7b,,,,,adaptive - mean,162,156,0.7792335080226428,0.29296875,-1.416015625,2.001953125,2048,100000,,,,,,,,,4096,
+long_output,7b,,,,,adaptive - frozen,130,151,0.2327720616851378,-1.025390625,-2.63671875,0.5859375,2048,100000,,,,,,,,,4096,
+strict_format,1p5b,countdown,countdown,0.0001,101,adaptive - base,,,,-1.3671875,-3.076171875,0.341796875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown,0.0001,101,adaptive - warmup,,,,2.05078125,0.68359375,3.41796875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown,0.0001,101,adaptive - mean,,,,2.587890625,1.171875,4.00390625,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown,0.0001,101,adaptive - oracle,,,,-1.5625,-2.783203125,-0.390625,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown,0.0001,101,adaptive - frozen,,,,5.615234375,4.19921875,7.03125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - base,,,,0.390625,-1.171875,1.953125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - warmup,,,,-0.048828125,-1.46484375,1.3671875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - mean,,,,0.439453125,-0.927734375,1.806640625,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - oracle,,,,0.1953125,-1.220703125,1.611328125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,countdown,countdown_gentle,1e-05,101,adaptive - frozen,,,,-0.29296875,-1.66015625,1.07421875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - base,,,,-12.054586808188022,-14.935557240333585,-9.173616376042457,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - warmup,,,,-2.7293404094010616,-5.079605761940864,-0.37907505686125853,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - mean,,,,0.37907505686125853,-2.122820318423048,2.8809704321455647,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - oracle,,,,-2.122820318423048,-4.397270659590599,0.1516300227445034,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k,0.0001,101,adaptive - frozen,,,,6.368460955269144,3.8665655799848366,8.946171341925702,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - base,,,,-8.87035633055345,-11.220621683093253,-6.595905989385899,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - warmup,,,,-0.8339651250947688,-2.350265352539803,0.6823351023502654,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - mean,,,,1.1372251705837757,-0.37907505686125853,2.6535253980288096,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - oracle,,,,0.6823351023502654,-0.9097801364670205,2.2744503411675514,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,gsm8k,gsm8k_gentle,3e-06,101,adaptive - frozen,,,,0.0,0.0,0.0,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math,0.0003,101,adaptive - base,,,,-22.8,-27.6,-18.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math,0.0003,101,adaptive - warmup,,,,3.4000000000000004,0.0,7.000000000000001,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math,0.0003,101,adaptive - mean,,,,8.6,4.3999999999999995,12.8,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math,0.0003,101,adaptive - oracle,,,,3.0,-0.8,6.800000000000001,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math,0.0003,101,adaptive - frozen,,,,5.6000000000000005,1.4000000000000001,10.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math_gentle,1e-05,101,adaptive - base,,,,-10.2,-14.2,-6.2,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math_gentle,1e-05,101,adaptive - warmup,,,,-3.8,-7.199999999999999,-0.4,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math_gentle,1e-05,101,adaptive - mean,,,,-1.4000000000000001,-4.3999999999999995,1.6,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math_gentle,1e-05,101,adaptive - oracle,,,,-1.0,-4.0,2.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,1p5b,math,math_gentle,1e-05,101,adaptive - frozen,,,,3.0,-0.4,6.4,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown,0.0003,101,adaptive - base,,,,-22.16796875,-24.462890625,-19.921875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown,0.0003,101,adaptive - warmup,,,,4.150390625,2.587890625,5.76171875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown,0.0003,101,adaptive - mean,,,,4.345703125,2.490234375,6.201171875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown,0.0003,101,adaptive - oracle,,,,0.29296875,-1.220703125,1.806640625,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown,0.0003,101,adaptive - frozen,,,,15.234375,13.720703125,16.796875,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown_gentle,3e-06,101,adaptive - base,,,,-5.224609375,-7.275390625,-3.173828125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown_gentle,3e-06,101,adaptive - warmup,,,,0.0,-1.7578125,1.7578125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown_gentle,3e-06,101,adaptive - mean,,,,0.29296875,-1.416015625,2.001953125,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown_gentle,3e-06,101,adaptive - oracle,,,,0.09765625,-1.611328125,1.806640625,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,countdown,countdown_gentle,3e-06,101,adaptive - frozen,,,,-1.025390625,-2.63671875,0.5859375,2048,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k,0.0001,101,adaptive - base,,,,-13.949962092494314,-16.148597422289612,-11.751326762699014,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k,0.0001,101,adaptive - warmup,,,,-2.501895375284306,-4.700530705079606,-0.3032600454890068,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k,0.0001,101,adaptive - mean,,,,-0.0758150113722517,-2.350265352539803,2.2744503411675514,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k,0.0001,101,adaptive - oracle,,,,-1.4404852160727823,-3.56330553449583,0.6823351023502654,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k,0.0001,101,adaptive - frozen,,,,33.66186504927976,30.55344958301744,36.770280515542076,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - base,,,,-0.0758150113722517,-1.061410159211524,0.9097801364670205,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - warmup,,,,0.0,-0.8339651250947688,0.8339651250947688,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - mean,,,,-0.22744503411675512,-0.9097801364670205,0.45489006823351025,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - oracle,,,,-0.3032600454890068,-1.061410159211524,0.45489006823351025,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,gsm8k,gsm8k_gentle,1e-05,101,adaptive - frozen,,,,-0.22744503411675512,-0.9855951478392722,0.530705079605762,1319,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math,0.0003,101,adaptive - base,,,,-26.0,-30.4,-21.6,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math,0.0003,101,adaptive - warmup,,,,3.4000000000000004,-0.4,7.199999999999999,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math,0.0003,101,adaptive - mean,,,,11.600000000000001,7.000000000000001,16.2,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math,0.0003,101,adaptive - oracle,,,,4.2,0.2,8.200000000000001,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math,0.0003,101,adaptive - frozen,,,,49.6,45.2,54.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math_gentle,3e-06,101,adaptive - base,,,,1.2,-1.4000000000000001,3.8,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math_gentle,3e-06,101,adaptive - warmup,,,,-0.8,-2.8000000000000003,1.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math_gentle,3e-06,101,adaptive - mean,,,,0.0,-2.1999999999999997,2.1999999999999997,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math_gentle,3e-06,101,adaptive - oracle,,,,-0.2,-2.0,1.6,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
+strict_format,7b,math,math_gentle,3e-06,101,adaptive - frozen,,,,0.2,-1.6,2.0,500,100000,,,,,,,Post-release sensitivity using the strict labels already saved at generation; primary metric and choices unchanged,,,strict boxed correctness
