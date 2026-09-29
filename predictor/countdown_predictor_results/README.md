@@ -4,7 +4,9 @@
 
 **Research question:** can a gradient predictor produce useful LoRA updates, and can small calibration batches keep it effective as the model changes?
 
-**Latest published result:** [scaling to 1.5B / 7B on Countdown, GSM8K and MATH](scaling-benchmarks-20260926/README.md). Gradients remain learnable, but no general downstream or compute advantage is established. The compact release includes configurations, all tested changes, aggregate results and stepwise activation/LoRA metrics. Earlier history-transfer and layer studies remain below.
+**Latest published result:** [Ben learning audit: history versus ordinary training](ben-learning-audit-20260927/README.md). With matched historical labels and training budgets, sequential history and pooled training reach similar gradient errors. Eight-step accuracy is 8.95% versus 8.56%, without a stable advantage across seeds; controlled online updates take about 3× the Oracle time. The report includes the exact setup and compact evidence tables.
+
+[Model/task scaling: 1.5B / 7B on Countdown, GSM8K and MATH](scaling-benchmarks-20260926/README.md) remains available with configurations, aggregate results and stepwise gradient metrics.
 
 ## Predictor history transfer
 

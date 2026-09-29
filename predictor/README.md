@@ -12,6 +12,7 @@ The current predictor reads module output Y, supervision mask, and position. A b
 
 | Topic | Main question | Where to read |
 |---|---|---|
+| History versus ordinary training | Does sequential history beat training on the same labels and budget? | [Ben learning audit: setup, results and cost](countdown_predictor_results/ben-learning-audit-20260927/README.md) |
 | Model and task scaling | Does calibration help 1.5B/7B across Countdown, GSM8K and MATH? | [Results, configuration and attempts](countdown_predictor_results/scaling-benchmarks-20260926/README.md) |
 | Predictor history transfer | Does retaining past calibration help under matched current model states and data? | [Matched results and figure](countdown_predictor_results/predictor-history-transfer/README.md) |
 | One-step input selection | Which inputs produce useful updates? | [Input ablation](countdown_predictor_results/README.md#one-step-input-selection) |
