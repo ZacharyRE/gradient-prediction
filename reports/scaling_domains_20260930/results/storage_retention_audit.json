@@ -1,0 +1,582 @@
+{
+  "time_utc": "2026-10-02T04:01:56.350935+00:00",
+  "scope": "Read-only snapshot of this experiment cleanup records, cache shard absence, and frozen final/checkpoint adapter-file existence. Adapter-byte integrity is independently checked by frozen preflight and final analysis. Does not claim final evaluation/report completion or audit unrelated historical directories. Also checks all30 completed100epoch initial predictor directories retain best weights, vectors/config/history/scores, and177 terminal update predictor weight files exist and are nonempty; this is retention evidence, not a new training or numerical correctness test.",
+  "passed": true,
+  "cleanup_events": 24,
+  "deleted_files": 1528,
+  "deleted_gib": 141.43145564943552,
+  "remaining_activation_shards": 0,
+  "retained_unique_frozen_final_and_checkpoint_adapter_dirs": 195,
+  "free_gib": 719.0901107788086,
+  "guard_gib": 45,
+  "records": [
+    {
+      "record": "results/cleanup/1p5b_aqua.json",
+      "sha256": "1d79029b541b14cb2d4d15fe5b0780c022180ecb3c0ce8e442ab5cb13fd8e100",
+      "deleted_files": 72,
+      "deleted_bytes": 6055215448,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_aqua_sensitivity_w0.0005.json",
+      "sha256": "4500b826dd4a338fc5f4e2759db0af937bcc3a3a8988519c1b6b71efcc773873",
+      "deleted_files": 72,
+      "deleted_bytes": 6055215448,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_aqua_sensitivity_w0.json",
+      "sha256": "b2a937fbc547f0ecbe75d04ed05bf2d00766e66bc99fdcb0788badf2602eddae",
+      "deleted_files": 72,
+      "deleted_bytes": 6055215448,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_aqua_sensitivity_w3e-06.json",
+      "sha256": "7bfc7c6091cd115a7ae215d7643d9861b11aef35f821b1cb9d78099234b9fda1",
+      "deleted_files": 72,
+      "deleted_bytes": 6055215448,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_aqua_sensitivity_w5e-05.json",
+      "sha256": "ed72eee155f2ead85b6bb5ab96ec094dbb2370056101a83a1395951f3b160d35",
+      "deleted_files": 72,
+      "deleted_bytes": 6055215448,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_arc_challenge.json",
+      "sha256": "ccf6dbd53a5a61f288eebb47193687e79971a2d7d4133375a78af09d11882011",
+      "deleted_files": 20,
+      "deleted_bytes": 774150620,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_arc_easy.json",
+      "sha256": "a46f3903f3095bb5ac808f40593457d877b97bd019dde2c0890f72e21579c484",
+      "deleted_files": 36,
+      "deleted_bytes": 1303769612,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_boolq.json",
+      "sha256": "e1b8bad42031361bdbc9d553861469e00dce18252886d033407d93a699108868",
+      "deleted_files": 72,
+      "deleted_bytes": 5210843992,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_countdown.json",
+      "sha256": "6d2d17fc6bddce247ff9096c7e155ff09379e7580c29b6f38fd40a46888ca68b",
+      "deleted_files": 72,
+      "deleted_bytes": 5906036632,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_countdown_sensitivity_w0.0005.json",
+      "sha256": "4a2f79a278067c81ad792c2f491b74895ab7b417dce0507521c99ee8b6ce830f",
+      "deleted_files": 72,
+      "deleted_bytes": 5906036632,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_countdown_sensitivity_w0.json",
+      "sha256": "812ed22a5315b0c1533cb829dc29bf4ab5d339f27ea9dcfa0beaf7fc540bf5b6",
+      "deleted_files": 72,
+      "deleted_bytes": 5906036632,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_countdown_sensitivity_w5e-05.json",
+      "sha256": "303906399a0ebcf6e05f024d603112413bff7c591150e195edd615dcaa33b8b3",
+      "deleted_files": 72,
+      "deleted_bytes": 5906036632,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_gsm8k.json",
+      "sha256": "ca59e4cae9473039dc844891492280d92e83f521edc33e6e0206d400b94ac3b1",
+      "deleted_files": 72,
+      "deleted_bytes": 6594097432,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_gsm8k_sensitivity_w0.0005.json",
+      "sha256": "da00763211b5393d177db439d9dc780654a4d13f2d3485d24f0ee5870b79fee9",
+      "deleted_files": 72,
+      "deleted_bytes": 6594097432,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_gsm8k_sensitivity_w0.json",
+      "sha256": "093fe690b05626518fa517a3f428602e77b378911b090273537e43c8f640605a",
+      "deleted_files": 72,
+      "deleted_bytes": 6594097432,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_gsm8k_sensitivity_w3e-06.json",
+      "sha256": "e9106bf6ad21f3a90834f72fa498bc882a49d3b600b468f0818e86b101258054",
+      "deleted_files": 72,
+      "deleted_bytes": 6594097432,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_gsm8k_sensitivity_w5e-05.json",
+      "sha256": "3c0543158ff656fab52a3b626a8913d710eaa73efa3471dfdc9eddf6a73ba5a0",
+      "deleted_files": 72,
+      "deleted_bytes": 6594097432,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_math.json",
+      "sha256": "02eee208b5a5f104d1503db36f0702e209f51c72b1e648419c6ae441b752ea08",
+      "deleted_files": 72,
+      "deleted_bytes": 9890755864,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_openbookqa.json",
+      "sha256": "49315bba24542984f4256dedd7e31a62c154ec926367fb84764d282039e3928e",
+      "deleted_files": 72,
+      "deleted_bytes": 2192367512,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/1p5b_svamp.json",
+      "sha256": "0273996e3b938f57322ba0fb04d58d66682fbe74c940f98b32ee9ae2b3d051c4",
+      "deleted_files": 12,
+      "deleted_bytes": 548425156,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/7b_aqua.json",
+      "sha256": "411d5738b6ac1b5decf05cc282ee6032241a3641b553da22b1867deb7f6c522a",
+      "deleted_files": 72,
+      "deleted_bytes": 14118830424,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/7b_arc_challenge.json",
+      "sha256": "c8f1bc0f62a359337ad77a7f07193c6c3545bbdb11c424496e3340c8e68e35df",
+      "deleted_files": 20,
+      "deleted_bytes": 1804458460,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/7b_countdown.json",
+      "sha256": "92f8e73534b6f03fb3ed1583c2d65c28bc2805a602485a04caeb508605e754fe",
+      "deleted_files": 72,
+      "deleted_bytes": 13770864536,
+      "listed_deleted_files_still_absent": true
+    },
+    {
+      "record": "results/cleanup/7b_gsm8k.json",
+      "sha256": "c93c5918419f3aa3c79ff5ede67bbf6b6084951328feebc8229cd1e07944588b",
+      "deleted_files": 72,
+      "deleted_bytes": 15375692056,
+      "listed_deleted_files_still_absent": true
+    }
+  ],
+  "selection_sha256": "120d7061cff4422cd7426565a85d3c6064488de73bc3bb972e50d45d409e866a",
+  "missing_adapters": [],
+  "retained_initial_predictor_fits": 30,
+  "retained_initial_predictor_vector_sets": 30,
+  "retained_terminal_update_predictor_files": 177,
+  "predictor_retention": [
+    {
+      "predictor_directory": "models/1p5b_aqua/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 87,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 752,
+        "config.json": 513,
+        "summary.json": 1057,
+        "history.json": 27031
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua/predictor_s124",
+      "epochs_completed": 100,
+      "best_epoch": 94,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 751,
+        "config.json": 518,
+        "summary.json": 1060,
+        "history.json": 27053
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua/predictor_s125",
+      "epochs_completed": 100,
+      "best_epoch": 89,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 752,
+        "config.json": 518,
+        "summary.json": 1058,
+        "history.json": 27053
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua_sensitivity_w0/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 61,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 709,
+        "config.json": 528,
+        "summary.json": 1015,
+        "history.json": 27081
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua_sensitivity_w0.0005/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 40,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 758,
+        "config.json": 533,
+        "summary.json": 1066,
+        "history.json": 26999
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua_sensitivity_w3e-06/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 48,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 755,
+        "config.json": 532,
+        "summary.json": 1063,
+        "history.json": 27039
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_aqua_sensitivity_w5e-05/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 56,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 756,
+        "config.json": 532,
+        "summary.json": 1064,
+        "history.json": 27094
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_arc_challenge/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 94,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 100665429,
+        "gradient_test.json": 756,
+        "config.json": 520,
+        "summary.json": 1063,
+        "history.json": 27139
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_arc_challenge/predictor_s124",
+      "epochs_completed": 100,
+      "best_epoch": 80,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 100665429,
+        "gradient_test.json": 759,
+        "config.json": 525,
+        "summary.json": 1066,
+        "history.json": 27154
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_arc_challenge/predictor_s125",
+      "epochs_completed": 100,
+      "best_epoch": 98,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 100665429,
+        "gradient_test.json": 754,
+        "config.json": 525,
+        "summary.json": 1058,
+        "history.json": 27087
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_arc_easy/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 98,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 100665429,
+        "gradient_test.json": 753,
+        "config.json": 516,
+        "summary.json": 1059,
+        "history.json": 27030
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_boolq/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 45,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 752,
+        "config.json": 514,
+        "summary.json": 1058,
+        "history.json": 26998
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 98,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 757,
+        "config.json": 518,
+        "summary.json": 1065,
+        "history.json": 27227
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown/predictor_s124",
+      "epochs_completed": 100,
+      "best_epoch": 100,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 756,
+        "config.json": 523,
+        "summary.json": 1065,
+        "history.json": 27226
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown/predictor_s125",
+      "epochs_completed": 100,
+      "best_epoch": 100,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 757,
+        "config.json": 523,
+        "summary.json": 1067,
+        "history.json": 27246
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown_sensitivity_w0/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 99,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 708,
+        "config.json": 533,
+        "summary.json": 1016,
+        "history.json": 27230
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown_sensitivity_w0.0005/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 98,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 756,
+        "config.json": 538,
+        "summary.json": 1063,
+        "history.json": 27021
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_countdown_sensitivity_w5e-05/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 100,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 754,
+        "config.json": 537,
+        "summary.json": 1064,
+        "history.json": 27241
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_gsm8k/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 17,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 758,
+        "config.json": 514,
+        "summary.json": 1065,
+        "history.json": 27016
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_gsm8k_sensitivity_w0/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 30,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 713,
+        "config.json": 529,
+        "summary.json": 1020,
+        "history.json": 27097
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_gsm8k_sensitivity_w0.0005/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 54,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 760,
+        "config.json": 534,
+        "summary.json": 1067,
+        "history.json": 27000
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_gsm8k_sensitivity_w3e-06/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 29,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 755,
+        "config.json": 533,
+        "summary.json": 1061,
+        "history.json": 27016
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_gsm8k_sensitivity_w5e-05/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 14,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 758,
+        "config.json": 533,
+        "summary.json": 1065,
+        "history.json": 27006
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_math/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 32,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328917,
+        "gradient_test.json": 752,
+        "config.json": 513,
+        "summary.json": 1057,
+        "history.json": 27027
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_openbookqa/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 79,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 201328853,
+        "gradient_test.json": 764,
+        "config.json": 519,
+        "summary.json": 1072,
+        "history.json": 27075
+      }
+    },
+    {
+      "predictor_directory": "models/1p5b_svamp/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 34,
+      "retained_file_bytes": {
+        "best.pt": 23157253,
+        "gradient_test_vectors.pt": 50333717,
+        "gradient_test.json": 753,
+        "config.json": 512,
+        "summary.json": 1061,
+        "history.json": 27114
+      }
+    },
+    {
+      "predictor_directory": "models/7b_aqua/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 5,
+      "retained_file_bytes": {
+        "best.pt": 31570437,
+        "gradient_test_vectors.pt": 469764309,
+        "gradient_test.json": 752,
+        "config.json": 511,
+        "summary.json": 1056,
+        "history.json": 27110
+      }
+    },
+    {
+      "predictor_directory": "models/7b_arc_challenge/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 100,
+      "retained_file_bytes": {
+        "best.pt": 31570437,
+        "gradient_test_vectors.pt": 234883157,
+        "gradient_test.json": 761,
+        "config.json": 518,
+        "summary.json": 1068,
+        "history.json": 26591
+      }
+    },
+    {
+      "predictor_directory": "models/7b_countdown/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 99,
+      "retained_file_bytes": {
+        "best.pt": 31570437,
+        "gradient_test_vectors.pt": 469764309,
+        "gradient_test.json": 757,
+        "config.json": 516,
+        "summary.json": 1065,
+        "history.json": 27261
+      }
+    },
+    {
+      "predictor_directory": "models/7b_gsm8k/predictor",
+      "epochs_completed": 100,
+      "best_epoch": 20,
+      "retained_file_bytes": {
+        "best.pt": 31570437,
+        "gradient_test_vectors.pt": 469764309,
+        "gradient_test.json": 753,
+        "config.json": 512,
+        "summary.json": 1061,
+        "history.json": 27123
+      }
+    }
+  ],
+  "completion_refresh": true,
+  "current_adapter_hashes_verified": true,
+  "minimum_sampled_free_gib": 90.91084289550781
+}

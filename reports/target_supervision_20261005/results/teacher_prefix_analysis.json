@@ -1,0 +1,114 @@
+{
+  "complete": true,
+  "post_hoc": true,
+  "comparisons": {
+    "step32_minus_base": {
+      "delta_pp": 1.3141268637856962,
+      "per_seed_delta_pp": [
+        1.3646702047005308,
+        1.288855193328279,
+        1.288855193328279
+      ],
+      "joint_ci95": [
+        -0.4043467273186765,
+        3.0578721253474854
+      ],
+      "four_comparison_familywise_ci95": [
+        -0.8845084660096036,
+        3.5633055344958295
+      ]
+    },
+    "step128_minus_base": {
+      "delta_pp": 2.3249936820823858,
+      "per_seed_delta_pp": [
+        2.805155420773313,
+        2.2744503411675514,
+        1.8953752843062925
+      ],
+      "joint_ci95": [
+        0.37907505686125853,
+        4.29618397776093
+      ],
+      "four_comparison_familywise_ci95": [
+        -0.17690169320192028,
+        4.852160727824108
+      ]
+    },
+    "step256_minus_step32": {
+      "delta_pp": 0.6823351023502654,
+      "per_seed_delta_pp": [
+        0.22744503411675512,
+        1.2130401819560273,
+        0.6065200909780136
+      ],
+      "joint_ci95": [
+        -1.2130401819560261,
+        2.5524387161991413
+      ],
+      "four_comparison_familywise_ci95": [
+        -1.7437452615617892,
+        3.083143795804903
+      ]
+    },
+    "step256_minus_step128": {
+      "delta_pp": -0.32853171594642405,
+      "per_seed_delta_pp": [
+        -1.2130401819560273,
+        0.22744503411675512,
+        0.0
+      ],
+      "joint_ci95": [
+        -2.072276977508213,
+        1.3646702047005308
+      ],
+      "four_comparison_familywise_ci95": [
+        -2.577710386656558,
+        1.844831943391458
+      ]
+    }
+  },
+  "correct_counts": {
+    "32": [
+      982,
+      981,
+      981
+    ],
+    "128": [
+      1001,
+      994,
+      989
+    ],
+    "256": [
+      985,
+      997,
+      989
+    ]
+  },
+  "report_lines": [
+    "**Post-hoc diagnostic:** added after the positive first two teacher-target test runs, not part of the frozen primary hypotheses. It examines the already selected LR 1e-4 along the same training trajectories. Stopping at 32 or 128 updates serves as a potential warmup-only/no-further-update control.",
+    "",
+    "Seed 101 prefixes were saved during the original search. Seeds 102/103 were replayed through all 256 updates; their final A/B tensor hashes exactly reproduce the original trajectories. The saved 32/128-step prefixes therefore do not introduce new independent seeds.",
+    "",
+    "| Stopping point | Correct: seeds 101 / 102 / 103 | Mean accuracy | Mean gain vs Base |",
+    "|---|---|---:|---:|",
+    "| Base, no updates | 964 | 73.09% | \u2014 |",
+    "| 32 updates | 982 / 981 / 981 | 74.40% | +1.31 pp |",
+    "| 128 updates | 1001 / 994 / 989 | 75.41% | +2.32 pp |",
+    "| 256 updates | 985 / 997 / 989 | 75.08% | +2.00 pp |",
+    "",
+    "| Exploratory comparison | Mean difference | Joint seed/question 95% CI | Four-comparison familywise 95% CI |",
+    "|---|---:|---|---|",
+    "| step32_minus_base | +1.31 pp | [-0.40, +3.06] | [-0.88, +3.56] |",
+    "| step128_minus_base | +2.32 pp | [+0.38, +4.30] | [-0.18, +4.85] |",
+    "| step256_minus_step32 | +0.68 pp | [-1.21, +2.55] | [-1.74, +3.08] |",
+    "| step256_minus_step128 | -0.33 pp | [-2.07, +1.36] | [-2.58, +1.84] |",
+    "",
+    "These intervals are exploratory, conditional on the teacher recipe chosen for this follow-up. The observed step32-to256 mean gain is +0.68 pp, with a joint95% interval spanning zero. This does not establish reliable post-warmup Oracle headroom, and no predictor is tested. Step128 has a higher observed test mean than step256, but this post-hoc curve must not replace the frozen dev-selected256-step primary recipe.",
+    "",
+    "Reconstruction added 512 optimization updates and 301.7 s synchronized training. The original 256-step test outputs are reused; only six prefix versions are newly evaluated.",
+    "",
+    "![Teacher continuation curve](figures/teacher_continuation.png)",
+    "",
+    "[Diagnostic protocol](configs/teacher_prefix_protocol.json) \u00b7 [Exact replay audit](results/teacher_prefix_reproduction.json) \u00b7 [Paired results](results/teacher_prefix_analysis.json)"
+  ]
+}

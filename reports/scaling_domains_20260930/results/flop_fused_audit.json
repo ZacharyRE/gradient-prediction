@@ -1,0 +1,91 @@
+{
+  "complete": true,
+  "encoder": [
+    {
+      "fastpath": true,
+      "flops": 483840,
+      "expected": 483840,
+      "coverage": {
+        "seen_operations": [
+          "aten._transformer_encoder_layer_fwd",
+          "aten.masked_fill_",
+          "aten.zeros_like"
+        ],
+        "operations_without_flop_formula": [
+          "aten.masked_fill_",
+          "aten.zeros_like"
+        ],
+        "custom_formula_operations": [
+          "aten._transformer_encoder_layer_fwd"
+        ],
+        "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+      }
+    },
+    {
+      "fastpath": false,
+      "flops": 483840,
+      "expected": 483840,
+      "coverage": {
+        "seen_operations": [
+          "aten._safe_softmax",
+          "aten._unsafe_view",
+          "aten.add",
+          "aten.addmm",
+          "aten.bmm",
+          "aten.clone",
+          "aten.expand",
+          "aten.gelu",
+          "aten.masked_fill_",
+          "aten.mm",
+          "aten.mul",
+          "aten.native_layer_norm",
+          "aten.permute",
+          "aten.select",
+          "aten.squeeze",
+          "aten.t",
+          "aten.transpose",
+          "aten.unsqueeze",
+          "aten.view",
+          "aten.zeros_like"
+        ],
+        "operations_without_flop_formula": [
+          "aten._safe_softmax",
+          "aten._unsafe_view",
+          "aten.add",
+          "aten.clone",
+          "aten.expand",
+          "aten.gelu",
+          "aten.masked_fill_",
+          "aten.mul",
+          "aten.native_layer_norm",
+          "aten.permute",
+          "aten.select",
+          "aten.squeeze",
+          "aten.t",
+          "aten.transpose",
+          "aten.unsqueeze",
+          "aten.view",
+          "aten.zeros_like"
+        ],
+        "custom_formula_operations": [],
+        "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+      },
+      "max_output_difference": 7.152557373046875e-07
+    }
+  ],
+  "mha": {
+    "flops": 127232,
+    "expected": 127232,
+    "coverage": {
+      "seen_operations": [
+        "aten._native_multi_head_attention"
+      ],
+      "operations_without_flop_formula": [],
+      "custom_formula_operations": [
+        "aten._native_multi_head_attention"
+      ],
+      "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+    }
+  },
+  "finding": "Default PyTorch FlopCounterMode omitted the fused encoder operation (zero body FLOPs in this CPU example). Custom formulas restore exact dense matrix/attention counts, with unchanged model execution. GPU full-method coverage remains to be checked in actual efficiency jobs."
+}

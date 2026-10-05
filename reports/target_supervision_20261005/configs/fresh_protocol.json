@@ -1,0 +1,29 @@
+{
+  "recorded_epoch": 1791200907.747308,
+  "post_hoc": true,
+  "rationale": "Step32 already covers every original907question. Test whether replacing repeated old questions with new, disjoint questions changes Oracle continuation.",
+  "model": "1p5b",
+  "target_source": "teacher",
+  "lr": 0.0001,
+  "warmup_steps": 32,
+  "continuation_steps": 224,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "fresh_candidate_n": 1152,
+  "fresh_matched_n": 907,
+  "split": "Same fixed source permutation, indices1280:2432, after original1024candidates and256dev.",
+  "candidate_sha256": "06690e79d47d6c721bccb3fa7a831ea770e8849472cbf2d90c18ab62055be695",
+  "generation": "Identical original two-candidate student/teacher generation and verification. First907 common-accepted questions in fixed candidate order; no result-based selection.",
+  "training": "Replay exact first32original teacher updates, verify original warmup parameters/loss/gradient norms, retain AdamW state; for steps33:256 use original index sequences on new907question pool.",
+  "comparisons": [
+    "fresh256_minus_base",
+    "fresh256_minus_warmup32",
+    "fresh256_minus_repeated256"
+  ],
+  "statistics": "Exploratory paired joint seed/question bootstrap100000; Bonferroni3. Same3training seeds, no new independent seeds. No test-based checkpoint selection.",
+  "input_truncation": false,
+  "evaluation_max_new_tokens": 2048
+}

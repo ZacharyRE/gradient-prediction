@@ -1,0 +1,184 @@
+{
+  "complete": true,
+  "selected": {
+    "task": "gsm8k",
+    "tag": "reference_clean_lr3e-05_s101__step32",
+    "arm": "reference_clean",
+    "lr": 3e-05,
+    "seed": 101,
+    "steps": 32,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/models/reference_clean_lr3e-05_s101/step-32",
+    "adapter_sha256": "42718ca2dda9734742f0da3f5b4bcde0a00a672736d63338174ded5f347756d2",
+    "online_seconds": 17.177810268243775,
+    "supervised_tokens": 91353,
+    "input_tokens": 199735,
+    "dev_correct": 216
+  },
+  "matched": {
+    "task": "gsm8k",
+    "tag": "reference_clean_lr3e-05_s101__step32",
+    "arm": "reference_clean",
+    "lr": 3e-05,
+    "seed": 101,
+    "steps": 32,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/models/reference_clean_lr3e-05_s101/step-32",
+    "adapter_sha256": "42718ca2dda9734742f0da3f5b4bcde0a00a672736d63338174ded5f347756d2",
+    "online_seconds": 17.177810268243775,
+    "supervised_tokens": 91353,
+    "input_tokens": 199735
+  },
+  "final_rows": [
+    {
+      "tag": "reference_clean_lr3e-05_s101__step32",
+      "lr": 3e-05,
+      "seed": 101,
+      "steps": 32,
+      "correct": 973,
+      "accuracy_pct": 73.76800606520091,
+      "online_seconds": 17.177810268243775,
+      "supervised_tokens": 91353
+    },
+    {
+      "tag": "reference_clean_lr3e-05_s102__step32",
+      "lr": 3e-05,
+      "seed": 102,
+      "steps": 32,
+      "correct": 959,
+      "accuracy_pct": 72.70659590598939,
+      "online_seconds": 16.62384035589639,
+      "supervised_tokens": 91193
+    },
+    {
+      "tag": "reference_clean_lr3e-05_s103__step32",
+      "lr": 3e-05,
+      "seed": 103,
+      "steps": 32,
+      "correct": 967,
+      "accuracy_pct": 73.3131159969674,
+      "online_seconds": 15.900104759959504,
+      "supervised_tokens": 92269
+    }
+  ],
+  "comparisons": {
+    "clean_independent_minus_base": {
+      "delta_pp": 0.17690169320192065,
+      "per_seed_delta_pp": [
+        0.6823351023502654,
+        -0.37907505686125853,
+        0.22744503411675512
+      ],
+      "joint_ci95": [
+        -1.2635835228708616,
+        1.6426585797321203
+      ],
+      "four_comparison_familywise_ci95": [
+        -1.6679302501895377,
+        2.047005307050796
+      ]
+    },
+    "clean_independent_minus_reference_independent": {
+      "delta_pp": -0.3032600454890068,
+      "per_seed_delta_pp": [
+        0.0,
+        -0.6065200909780136,
+        -0.3032600454890068
+      ],
+      "joint_ci95": [
+        -1.3393985342431138,
+        0.7581501137225171
+      ],
+      "four_comparison_familywise_ci95": [
+        -1.6679302501895377,
+        1.0866818296689407
+      ]
+    },
+    "clean_matched_minus_reference_matched": {
+      "delta_pp": -0.3032600454890068,
+      "per_seed_delta_pp": [
+        0.0,
+        -0.6065200909780136,
+        -0.3032600454890068
+      ],
+      "joint_ci95": [
+        -1.3393985342431136,
+        0.7328784432651001
+      ],
+      "four_comparison_familywise_ci95": [
+        -1.6679302501895377,
+        1.061410159211524
+      ]
+    },
+    "clean_matched_minus_student_matched": {
+      "delta_pp": -0.7328784432650998,
+      "per_seed_delta_pp": [
+        -0.6823351023502654,
+        -0.9097801364670205,
+        -0.6065200909780136
+      ],
+      "joint_ci95": [
+        -2.2997220116249677,
+        0.8339651250947688
+      ],
+      "four_comparison_familywise_ci95": [
+        -2.7293404094010616,
+        1.288855193328279
+      ]
+    }
+  },
+  "training_costs": [
+    {
+      "run": "reference_clean_lr0.0001_s101",
+      "steps": 256,
+      "online_seconds": 128.02873269387055,
+      "supervised_tokens": 735056,
+      "input_tokens": 1601787
+    },
+    {
+      "run": "reference_clean_lr0.0003_s101",
+      "steps": 256,
+      "online_seconds": 126.18623864965048,
+      "supervised_tokens": 735056,
+      "input_tokens": 1601787
+    },
+    {
+      "run": "reference_clean_lr3e-05_s101",
+      "steps": 256,
+      "online_seconds": 129.09583294391632,
+      "supervised_tokens": 735056,
+      "input_tokens": 1601787
+    },
+    {
+      "run": "reference_clean_lr3e-05_s102",
+      "steps": 32,
+      "online_seconds": 16.62384035589639,
+      "supervised_tokens": 91193,
+      "input_tokens": 199149
+    },
+    {
+      "run": "reference_clean_lr3e-05_s103",
+      "steps": 32,
+      "online_seconds": 15.900104759959504,
+      "supervised_tokens": 92269,
+      "input_tokens": 200769
+    }
+  ],
+  "report_lines": [
+    "This secondary diagnostic was declared before the primary development scores. It removes **2,794 entire calculator-annotation spans** (`<<...>>`) from the same 907 reference targets. Text outside those spans and the boxed answers remain unchanged, but expressions inside the spans are removed. Some calculations occur only inside those annotations, so this is **not a strictly content-preserving or delimiter-only formatting control**. It also changes length. A negative result would show that this span-removal operation is insufficient, not that every formatting intervention is ineffective.",
+    "",
+    "| Recipe | LR | Steps | Correct: seeds 101 / 102 / 103 | Mean accuracy |",
+    "|---|---:|---:|---|---:|",
+    "| Independently dev-selected | 3e-05 | 32 | 973 / 959 / 967 | 73.26% |",
+    "| Matched reference recipe | 3e-05 | 32 | 973 / 959 / 967 | 73.26% |",
+    "",
+    "| Secondary comparison | Mean difference | Joint seed/question 95% CI | Four-comparison familywise 95% CI |",
+    "|---|---:|---|---|",
+    "| clean_independent_minus_base | +0.18 pp | [-1.26, +1.64] | [-1.67, +2.05] |",
+    "| clean_independent_minus_reference_independent | -0.30 pp | [-1.34, +0.76] | [-1.67, +1.09] |",
+    "| clean_matched_minus_reference_matched | -0.30 pp | [-1.34, +0.73] | [-1.67, +1.06] |",
+    "| clean_matched_minus_student_matched | -0.73 pp | [-2.30, +0.83] | [-2.73, +1.29] |",
+    "",
+    "Supplemental training: 5 unique trajectories, 832 updates, 415.8 s synchronized optimization. These costs are additional to the primary-study cost table.",
+    "",
+    "[Supplement protocol](configs/format_protocol.json) · [Complete results and costs](results/format_analysis.json) · [Stage wall times](results/format_stages.jsonl)"
+  ]
+}

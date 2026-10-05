@@ -1,0 +1,131 @@
+{
+  "complete": true,
+  "post_hoc": true,
+  "comparisons": {
+    "fresh256_minus_base": {
+      "delta_pp": 1.8701036138488751,
+      "per_seed_delta_pp": [
+        1.819560272934041,
+        1.6679302501895377,
+        2.122820318423048
+      ],
+      "joint_ci95": [
+        -0.1516300227445034,
+        3.891837250442254
+      ],
+      "three_comparison_familywise_ci95": [
+        -0.5812484205205968,
+        4.321455648218349
+      ]
+    },
+    "fresh256_minus_warmup32": {
+      "delta_pp": 0.5559767500631791,
+      "per_seed_delta_pp": [
+        0.45489006823351025,
+        0.37907505686125853,
+        0.8339651250947688
+      ],
+      "joint_ci95": [
+        -1.1624968410411924,
+        2.2744503411675514
+      ],
+      "three_comparison_familywise_ci95": [
+        -1.5415718979024522,
+        2.6535253980288096
+      ]
+    },
+    "fresh256_minus_repeated256": {
+      "delta_pp": -0.1263583522870862,
+      "per_seed_delta_pp": [
+        0.22744503411675512,
+        -0.8339651250947688,
+        0.22744503411675512
+      ],
+      "joint_ci95": [
+        -1.794288602476624,
+        1.5668435683598683
+      ],
+      "three_comparison_familywise_ci95": [
+        -2.1986353297952994,
+        1.945918625221127
+      ]
+    }
+  },
+  "correct_counts": {
+    "warmup32": [
+      982,
+      981,
+      981
+    ],
+    "repeated256": [
+      985,
+      997,
+      989
+    ],
+    "fresh256": [
+      988,
+      986,
+      992
+    ]
+  },
+  "costs": [
+    {
+      "seed": 101,
+      "correct": 988,
+      "accuracy_pct": 74.90523123578468,
+      "steps": 256,
+      "online_seconds": 149.4577819048427,
+      "warmup_seconds": 19.85556225478649,
+      "continuation_seconds": 129.6022196500562,
+      "supervised_tokens": 2343487,
+      "input_tokens": 3212690
+    },
+    {
+      "seed": 102,
+      "correct": 986,
+      "accuracy_pct": 74.75360121304018,
+      "steps": 256,
+      "online_seconds": 147.83709278842434,
+      "warmup_seconds": 18.406022120034322,
+      "continuation_seconds": 129.43107066839002,
+      "supervised_tokens": 2343660,
+      "input_tokens": 3212741
+    },
+    {
+      "seed": 103,
+      "correct": 992,
+      "accuracy_pct": 75.2084912812737,
+      "steps": 256,
+      "online_seconds": 147.78270712425,
+      "warmup_seconds": 18.335696416907012,
+      "continuation_seconds": 129.447010707343,
+      "supervised_tokens": 2345059,
+      "input_tokens": 3214533
+    }
+  ],
+  "report_lines": [
+    "**Post-hoc extension:** after discovering that step 32 already covers the original question pool, this control replaces the following 224 updates with a disjoint pool of 907 newly matched questions. LR remains 1e-4. The first 32 updates exactly reproduce the original warmup parameters, losses and gradient norms; AdamW state is retained. All three training seeds are reused, not new independent seeds.",
+    "",
+    "The next 1,152 source questions in the fixed split permutation produced **1015 common-accepted questions** under the same two-candidate student/teacher verification rule. The first 907 in fixed candidate order were selected before training. No overlap with original candidates, dev or test is allowed. Only verified teacher solutions are used for continuation.",
+    "",
+    "| Endpoint | Correct: seeds 101 / 102 / 103 | Mean accuracy |",
+    "|---|---|---:|",
+    "| Stop after 32 warmup updates | 982 / 981 / 981 | 74.40% |",
+    "| 256 total updates, repeated old pool | 985 / 997 / 989 | 75.08% |",
+    "| 256 total updates, fresh pool after warmup | 988 / 986 / 992 | 74.96% |",
+    "",
+    "| Exploratory comparison | Mean difference | Joint seed/question 95% CI | Three-comparison familywise 95% CI |",
+    "|---|---:|---|---|",
+    "| fresh256_minus_base | +1.87 pp | [-0.15, +3.89] | [-0.58, +4.32] |",
+    "| fresh256_minus_warmup32 | +0.56 pp | [-1.16, +2.27] | [-1.54, +2.65] |",
+    "| fresh256_minus_repeated256 | -0.13 pp | [-1.79, +1.57] | [-2.20, +1.95] |",
+    "",
+    "Additional work: **768 optimizer updates** (96 exact warmup replays plus 672 fresh-data continuation updates), **445.1 s** synchronized optimization, **4,608 generated candidates**, and **1,331,787 generated output tokens**. Three additional complete test versions; existing controls are reused.",
+    "",
+    "This is an exploratory intervention on question diversity. Pools have the same size and acceptance rule, but contain different questions/solutions and token lengths, so it is not a pure novelty effect with content held constant. Both pools still exclude questions without a verified student solution. The endpoint and comparisons were fixed before fresh-data generation/training; no test result selects a new checkpoint.",
+    "The fresh branch sees **1,814 unique training questions overall**: 907 during warmup and 907 afterward. The fresh pool is itself revisited for approximately 7.90 passes during the 224 continuation updates. This is one pool switch at a fixed recipe, not a comprehensive data-scaling curve or a continuously new-example stream.",
+    "",
+    "",
+    "[Extension protocol](configs/fresh_protocol.json) · [Target audit](results/fresh_target_integrity.json) · [Warmup reproduction audit](results/fresh_warmup_audit.json) · [Full results](results/fresh_analysis.json)"
+  ]
+}

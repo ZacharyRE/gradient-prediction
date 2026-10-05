@@ -1,0 +1,37 @@
+{
+  "time": 1790845340.802718,
+  "motivation": "Connect the predeclared warmup-gradient sensitivity to downstream development generation, while keeping update LR and policy fixed across starting states.",
+  "tasks": [
+    "countdown",
+    "gsm8k",
+    "aqua"
+  ],
+  "warmup_states": [
+    {
+      "lr": 0,
+      "steps": 0
+    },
+    {
+      "lr": 3e-06,
+      "steps": 32
+    },
+    {
+      "lr": 5e-05,
+      "steps": 32
+    },
+    {
+      "lr": 0.0005,
+      "steps": 32
+    }
+  ],
+  "additional_reference": "Reuse the main selected warmup when it is outside those four states.",
+  "methods": [
+    "frozen",
+    "oracle"
+  ],
+  "update_steps": 32,
+  "update_lr_rule": "Use the primary complete-development selected predictor LR for each task, fixed across all warmup states and both methods. No further LR or policy search in this diagnostic.",
+  "start_reserve_hours": 10,
+  "stop_reserve_hours": 8,
+  "scope": "Development-only descriptive sensitivity, conditional on the main development-chosen LR. Same data, predictor100epoch budget, update seed101, batch32, AdamW/clip and update32steps across starts. Reuses main state trajectories where possible. Does not change primary warmup/LR choices, add final-test winners, or modify primary26/secondary13/combined39 multiplicity families. Missing/resource-limited states are explicit."
+}

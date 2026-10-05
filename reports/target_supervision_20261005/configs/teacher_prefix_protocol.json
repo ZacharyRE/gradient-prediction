@@ -1,0 +1,28 @@
+{
+  "recorded_epoch": 1791195195.3471885,
+  "status": "Post-hoc diagnostic: added after observing complete final scores for seeds101/102, before seed103 teacher final score.",
+  "rationale": "Distinguish cumulative adaptation gain vs Base from the additional improvement after a potential32-step or128-step task warmup. The original primary study starts at Base and cannot alone establish post-warmup headroom.",
+  "arm": "teacher",
+  "lr": 0.0001,
+  "steps": [
+    32,
+    128,
+    256
+  ],
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "selection": "No new LR/source/stopping selection. Use the already frozen teacher recipe and examine earlier checkpoints of exactly that trajectory.",
+  "prefix_reconstruction": "Seed101 prefixes were saved in the original search. Seeds102/103 are replayed from original initialization through256 updates, saving32/128 and requiring exact final A/B tensor hashes to match the original completed runs. No additional independent seed is claimed.",
+  "comparisons": [
+    "step32_minus_base",
+    "step128_minus_base",
+    "step256_minus_step32",
+    "step256_minus_step128"
+  ],
+  "statistics": "Exploratory paired joint seed/question bootstrap; four-comparison family within this post-hoc diagnostic. Not a new confirmatory result.",
+  "input_truncation": false,
+  "evaluation_max_new_tokens": 2048
+}

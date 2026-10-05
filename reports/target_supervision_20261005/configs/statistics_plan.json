@@ -1,0 +1,18 @@
+{
+  "recorded_epoch": 1791188605.9165528,
+  "before_any_training_or_final_evaluation": true,
+  "replications": 3,
+  "bootstrap_replicates": 100000,
+  "primary_contrasts": [
+    "independently_tuned_reference_minus_base",
+    "independently_tuned_student_minus_base",
+    "independently_tuned_teacher_minus_base",
+    "matched_student_minus_reference",
+    "matched_teacher_minus_reference",
+    "independently_tuned_student_minus_reference",
+    "independently_tuned_teacher_minus_reference"
+  ],
+  "intervals": "Paired question bootstrap and joint seed/question bootstrap; resample same question identities jointly across seeds/methods; Bonferroni familywise intervals for seven contrasts, alongside unadjusted95%.",
+  "success_description": "Report all seed results; call a stable gain only if all three seed differences are positive and joint seed/question familywise lower bound is positive. Three seeds still provide limited pipeline uncertainty and share data/target generation.",
+  "noninferiority": "Not tested; failure to find difference is not equivalence."
+}

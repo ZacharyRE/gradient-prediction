@@ -1,0 +1,329 @@
+{
+  "complete": true,
+  "comparisons": {
+    "reference_minus_base": {
+      "delta_pp": 1.2383118524134444,
+      "per_seed_delta_pp": [
+        0.9855951478392722,
+        1.1372251705837757,
+        1.592115238817286
+      ],
+      "question_ci95": [
+        0.1516300227445034,
+        2.350265352539803
+      ],
+      "joint_seed_question_ci95": [
+        0.05054334091483429,
+        2.4513520343694717
+      ],
+      "joint_familywise_ci95": [
+        -0.4043467273186754,
+        2.9567854435178167
+      ],
+      "all_seed_positive": true,
+      "stable_positive": false
+    },
+    "student_minus_base": {
+      "delta_pp": 1.2383118524134444,
+      "per_seed_delta_pp": [
+        0.9855951478392722,
+        1.288855193328279,
+        1.4404852160727823
+      ],
+      "question_ci95": [
+        0.1516300227445034,
+        2.3249936820823858
+      ],
+      "joint_seed_question_ci95": [
+        0.05054334091483483,
+        2.4008086934546378
+      ],
+      "joint_familywise_ci95": [
+        -0.4296183977760928,
+        2.8556987616881475
+      ],
+      "all_seed_positive": true,
+      "stable_positive": false
+    },
+    "teacher_minus_base": {
+      "delta_pp": 0.8339651250947688,
+      "per_seed_delta_pp": [
+        0.7581501137225171,
+        1.2130401819560273,
+        0.530705079605762
+      ],
+      "question_ci95": [
+        -0.25271670457417256,
+        1.945918625221127
+      ],
+      "joint_seed_question_ci95": [
+        -0.37907505686125853,
+        2.0722769775082135
+      ],
+      "joint_familywise_ci95": [
+        -0.8339651250947688,
+        2.5524387161991404
+      ],
+      "all_seed_positive": true,
+      "stable_positive": false
+    },
+    "reference_clean_minus_base": {
+      "delta_pp": 0.9350518069244376,
+      "per_seed_delta_pp": [
+        0.8339651250947688,
+        1.5163002274450341,
+        0.45489006823351025
+      ],
+      "question_ci95": [
+        -0.12635835228708547,
+        1.996461966135962
+      ],
+      "joint_seed_question_ci95": [
+        -0.3032600454890068,
+        2.198635329795299
+      ],
+      "joint_familywise_ci95": [
+        -0.7581501137225171,
+        2.6752770858155612
+      ],
+      "all_seed_positive": true,
+      "stable_positive": false
+    },
+    "student_minus_reference": {
+      "delta_pp": 0.0,
+      "per_seed_delta_pp": [
+        0.0,
+        0.1516300227445034,
+        -0.1516300227445034
+      ],
+      "question_ci95": [
+        -0.9097801364670208,
+        0.9097801364670205
+      ],
+      "joint_seed_question_ci95": [
+        -1.086681829668941,
+        1.0866818296689413
+      ],
+      "joint_familywise_ci95": [
+        -1.5163002274450341,
+        1.5668435683598683
+      ],
+      "all_seed_positive": false,
+      "stable_positive": false
+    },
+    "teacher_minus_reference": {
+      "delta_pp": -0.4043467273186757,
+      "per_seed_delta_pp": [
+        -0.22744503411675512,
+        0.0758150113722517,
+        -1.061410159211524
+      ],
+      "question_ci95": [
+        -1.2383118524134449,
+        0.45489006823350997
+      ],
+      "joint_seed_question_ci95": [
+        -1.592115238817286,
+        0.7581501137225171
+      ],
+      "joint_familywise_ci95": [
+        -2.122820318423048,
+        1.2635835228708618
+      ],
+      "all_seed_positive": false,
+      "stable_positive": false
+    },
+    "reference_clean_minus_reference": {
+      "delta_pp": -0.3032600454890068,
+      "per_seed_delta_pp": [
+        -0.1516300227445034,
+        0.37907505686125853,
+        -1.1372251705837757
+      ],
+      "question_ci95": [
+        -1.0108668182966891,
+        0.37907505686125853
+      ],
+      "joint_seed_question_ci95": [
+        -1.4657568865301993,
+        0.8339651250947688
+      ],
+      "joint_familywise_ci95": [
+        -2.021733636593379,
+        1.314126863785696
+      ],
+      "all_seed_positive": false,
+      "stable_positive": false
+    }
+  },
+  "results": [
+    {
+      "tag": "reference_lr1e-05_s101__step32",
+      "arm": "reference",
+      "seed": 101,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 977,
+      "accuracy_pct": 74.07126611068992,
+      "online_seconds": 15.800391999655403,
+      "supervised_tokens": 122062,
+      "input_tokens": 230444
+    },
+    {
+      "tag": "student_lr1e-05_s101__step32",
+      "arm": "student",
+      "seed": 101,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 977,
+      "accuracy_pct": 74.07126611068992,
+      "online_seconds": 18.163101777317934,
+      "supervised_tokens": 278841,
+      "input_tokens": 387223
+    },
+    {
+      "tag": "teacher_lr1e-05_s101__step32",
+      "arm": "teacher",
+      "seed": 101,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 974,
+      "accuracy_pct": 73.84382107657316,
+      "online_seconds": 18.646385009749793,
+      "supervised_tokens": 289248,
+      "input_tokens": 397630
+    },
+    {
+      "tag": "reference_clean_lr1e-05_s101__step32",
+      "arm": "reference_clean",
+      "seed": 101,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 975,
+      "accuracy_pct": 73.91963608794542,
+      "online_seconds": 15.489188482402824,
+      "supervised_tokens": 91353,
+      "input_tokens": 199735
+    },
+    {
+      "tag": "reference_lr1e-05_s102__step32",
+      "arm": "reference",
+      "seed": 102,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 979,
+      "accuracy_pct": 74.22289613343442,
+      "online_seconds": 15.575060142204165,
+      "supervised_tokens": 121636,
+      "input_tokens": 229592
+    },
+    {
+      "tag": "student_lr1e-05_s102__step32",
+      "arm": "student",
+      "seed": 102,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 981,
+      "accuracy_pct": 74.37452615617892,
+      "online_seconds": 18.324764203862287,
+      "supervised_tokens": 279648,
+      "input_tokens": 387604
+    },
+    {
+      "tag": "teacher_lr1e-05_s102__step32",
+      "arm": "teacher",
+      "seed": 102,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 980,
+      "accuracy_pct": 74.29871114480667,
+      "online_seconds": 18.454589191125706,
+      "supervised_tokens": 287570,
+      "input_tokens": 395526
+    },
+    {
+      "tag": "reference_clean_lr1e-05_s102__step32",
+      "arm": "reference_clean",
+      "seed": 102,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 984,
+      "accuracy_pct": 74.60197119029569,
+      "online_seconds": 15.499909778125584,
+      "supervised_tokens": 91193,
+      "input_tokens": 199149
+    },
+    {
+      "tag": "reference_lr1e-05_s103__step32",
+      "arm": "reference",
+      "seed": 103,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 985,
+      "accuracy_pct": 74.67778620166793,
+      "online_seconds": 15.6386866356479,
+      "supervised_tokens": 123245,
+      "input_tokens": 231745
+    },
+    {
+      "tag": "student_lr1e-05_s103__step32",
+      "arm": "student",
+      "seed": 103,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 983,
+      "accuracy_pct": 74.52615617892343,
+      "online_seconds": 18.117220198037103,
+      "supervised_tokens": 280196,
+      "input_tokens": 388696
+    },
+    {
+      "tag": "teacher_lr1e-05_s103__step32",
+      "arm": "teacher",
+      "seed": 103,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 971,
+      "accuracy_pct": 73.61637604245641,
+      "online_seconds": 18.319245831109583,
+      "supervised_tokens": 289702,
+      "input_tokens": 398202
+    },
+    {
+      "tag": "reference_clean_lr1e-05_s103__step32",
+      "arm": "reference_clean",
+      "seed": 103,
+      "lr": 1e-05,
+      "steps": 32,
+      "correct": 970,
+      "accuracy_pct": 73.54056103108415,
+      "online_seconds": 15.449293521349318,
+      "supervised_tokens": 92269,
+      "input_tokens": 200769
+    }
+  ],
+  "report_lines": [
+    "This fixed secondary control was declared before any current test generation. The earlier GSM8K study selected `1e-5 × 32` for warmup; here the same LR and update count are applied **from the original base**, to all four targets and all three seeds. There is no dev or test selection among these twelve fits. It covers a smaller LR than the primary grid.",
+    "",
+    "| Target | Correct: seeds 101 / 102 / 103 | Mean accuracy | Mean gain vs Base |",
+    "|---|---|---:|---:|",
+    "| reference | 977 / 979 / 985 | 74.32% | +1.24 pp |",
+    "| student | 977 / 981 / 983 | 74.32% | +1.24 pp |",
+    "| teacher | 974 / 980 / 971 | 73.92% | +0.83 pp |",
+    "| reference_clean | 975 / 984 / 970 | 74.02% | +0.94 pp |",
+    "",
+    "| Secondary comparison | Mean difference | Joint seed/question 95% CI | Seven-comparison familywise 95% CI |",
+    "|---|---:|---|---|",
+    "| reference_minus_base | +1.24 pp | [+0.05, +2.45] | [-0.40, +2.96] |",
+    "| student_minus_base | +1.24 pp | [+0.05, +2.40] | [-0.43, +2.86] |",
+    "| teacher_minus_base | +0.83 pp | [-0.38, +2.07] | [-0.83, +2.55] |",
+    "| reference_clean_minus_base | +0.94 pp | [-0.30, +2.20] | [-0.76, +2.68] |",
+    "| student_minus_reference | +0.00 pp | [-1.09, +1.09] | [-1.52, +1.57] |",
+    "| teacher_minus_reference | -0.40 pp | [-1.59, +0.76] | [-2.12, +1.26] |",
+    "| reference_clean_minus_reference | -0.30 pp | [-1.47, +0.83] | [-2.02, +1.31] |",
+    "",
+    "Additional training cost: 12 fits × 32 updates = 384 updates, **203.5 s** synchronized optimization. Target generation and the Base evaluation are reused, not charged again. Each secondary family is reported separately from the frozen primary analysis; comparing the most favorable result across families is exploratory.",
+    "",
+    "[Fixed-control protocol](configs/lowlr_protocol.json) · [All results and costs](results/lowlr_analysis.json) · [Stage wall times](results/lowlr_stages.jsonl)"
+  ]
+}

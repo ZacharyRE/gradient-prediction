@@ -1,0 +1,35 @@
+{
+  "time_utc": "2026-10-02T03:58:55.120608+00:00",
+  "passed": true,
+  "method": "Direct visual inspection via view_image of all nine final PNG figures; PDF companions checked present and nonempty.",
+  "image_sha256": {
+    "results/figures/warmup_sensitivity.png": "c089cd35f2537747b78d70f31d3fa6b4ebf1229d9f0b43326c356fba3a1f7da7",
+    "results/figures/update_lr_sensitivity.png": "d48fd22ee2f9c8aee127c4635471027af2c79bdfb2feefd4d574e0e9cf9c2411",
+    "results/figures/warmup_gradient_sensitivity.png": "e917a0d6bd7bcf53344a0102c425b59d206271ef1ea9617d7128e9d254edad97",
+    "results/figures/warmup_closed_loop.png": "bf9888664d291e4cb0a9651e102c960cbaf783092baffe837c8bd518d879ffd4",
+    "results/figures/gradient_drift.png": "9f3cfe98bafc3287203db9e7067411266ab8c867bf3c5ca88ec895d4db7986d4",
+    "results/figures/efficiency.png": "ef30fed49d88597512d48c44778bc51f4226f3f2cd8f44d461ea1c96080ffae4",
+    "results/figures/final_accuracy.png": "9558780c108f7d7f492e941ec0df6b10a4aa6b0a120d2dfbf81d660b9a723acd",
+    "results/figures/final_differences.png": "85fd26670d8f1d974ef8707f5084572e964522810317b5bb5dbf3a3d44f2d157",
+    "results/figures/checkpoint_curves.png": "82ff9f1f3ec054aa2b0ea7c5b33093d43b6a73486163d946b860f2f3fe058e35"
+  },
+  "pdf_sha256": {
+    "results/figures/warmup_sensitivity.pdf": "180244888672743a34f6e39fa897eea88d0e87c8096b01a0711e0306fa9cd7ae",
+    "results/figures/update_lr_sensitivity.pdf": "41d4e39c6f6e643704c4f8037123baf74ea28fb986305f00a271c7576ad7d7ab",
+    "results/figures/warmup_gradient_sensitivity.pdf": "51df74278bb79f19d03bf3b7061d1b1b68eff68e0301ea0def88aaeb584333af",
+    "results/figures/warmup_closed_loop.pdf": "f428042e7e56abcb66f6c9c39b897ffc27511d3f40abed562b0098b599076d76",
+    "results/figures/gradient_drift.pdf": "e432b4915c41bf3832b9de73258451c348b044650c0105d15cfb57dfdea15fda",
+    "results/figures/efficiency.pdf": "dd04aa3b3cb7c78f5c7fbf3553bccc46a375f749b40d919c9f471c59d6711256",
+    "results/figures/final_accuracy.pdf": "27f327e5b022bb0befe5bedd6cdac4efdcd2b2828dfdce4bc77388254bb17859",
+    "results/figures/final_differences.pdf": "929bcb1490d2c2733d0986ba00f7bceb727b7d8c88b55fe6288473b70b497f54",
+    "results/figures/checkpoint_curves.pdf": "e48447eb2befb9e223cd0ab13f3f3d37a9fbf0750c37b73ba27cf8f8146f0a6a"
+  },
+  "notes": [
+    "External legends do not occlude final accuracy or efficiency values.",
+    "All13 model/task panels and checkpoint0/8/16/32 are present.",
+    "Pointwise paired intervals explicitly unadjusted and conditional on fitted runs.",
+    "Different panel axis ranges disclosed in report; gradient cosines share bounds and efficiency ratios use log scales.",
+    "Some coincident curves/checkpoint labels overlap because values match; underlying values remain available in CSV and legends identify both methods."
+  ],
+  "source_diff": "results/final_figure_source_diff.txt"
+}

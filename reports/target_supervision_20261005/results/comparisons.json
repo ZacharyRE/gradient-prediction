@@ -1,0 +1,156 @@
+{
+  "independently_tuned_reference_minus_base": {
+    "delta_pp": 0.4801617386909275,
+    "per_seed_delta_pp": [
+      0.6823351023502654,
+      0.22744503411675512,
+      0.530705079605762
+    ],
+    "question_ci95": [
+      -0.8086934546373508,
+      1.7437452615617892
+    ],
+    "joint_seed_question_ci95": [
+      -0.8845084660096031,
+      1.844831943391458
+    ],
+    "joint_familywise_ci95": [
+      -1.3899418751579475,
+      2.350265352539803
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "independently_tuned_student_minus_base": {
+    "delta_pp": 0.7328784432650998,
+    "per_seed_delta_pp": [
+      0.7581501137225171,
+      0.6823351023502654,
+      0.7581501137225171
+    ],
+    "question_ci95": [
+      -0.8592367955521867,
+      2.350265352539802
+    ],
+    "joint_seed_question_ci95": [
+      -0.9097801364670205,
+      2.4008086934546364
+    ],
+    "joint_familywise_ci95": [
+      -1.5415718979024515,
+      3.032600454890068
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "independently_tuned_teacher_minus_base": {
+    "delta_pp": 1.9964619661359615,
+    "per_seed_delta_pp": [
+      1.592115238817286,
+      2.501895375284306,
+      1.8953752843062925
+    ],
+    "question_ci95": [
+      0.0758150113722517,
+      3.9171089208996714
+    ],
+    "joint_seed_question_ci95": [
+      -0.025271670457416875,
+      4.01819560272934
+    ],
+    "joint_familywise_ci95": [
+      -0.7581501137225171,
+      4.776345716451857
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "matched_student_minus_reference": {
+    "delta_pp": 0.429618397776093,
+    "per_seed_delta_pp": [
+      0.6823351023502654,
+      0.3032600454890068,
+      0.3032600454890068
+    ],
+    "question_ci95": [
+      -1.0108668182966891,
+      1.8448319433914582
+    ],
+    "joint_seed_question_ci95": [
+      -1.1372251705837757,
+      1.9964619661359613
+    ],
+    "joint_familywise_ci95": [
+      -1.7437452615617892,
+      2.602982057113975
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "matched_teacher_minus_reference": {
+    "delta_pp": 0.8845084660096033,
+    "per_seed_delta_pp": [
+      0.3032600454890068,
+      1.5163002274450341,
+      0.8339651250947688
+    ],
+    "question_ci95": [
+      -0.530705079605762,
+      2.2997220116249695
+    ],
+    "joint_seed_question_ci95": [
+      -0.7581501137225165,
+      2.5271670457417237
+    ],
+    "joint_familywise_ci95": [
+      -1.3646702047005308,
+      3.184230477634572
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "independently_tuned_student_minus_reference": {
+    "delta_pp": 0.2527167045741724,
+    "per_seed_delta_pp": [
+      0.0758150113722517,
+      0.45489006823351025,
+      0.22744503411675512
+    ],
+    "question_ci95": [
+      -1.2389436441748714,
+      1.7690169320192062
+    ],
+    "joint_seed_question_ci95": [
+      -1.3899418751579475,
+      1.8953752843062923
+    ],
+    "joint_familywise_ci95": [
+      -1.9964619661359613,
+      2.501895375284306
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  },
+  "independently_tuned_teacher_minus_reference": {
+    "delta_pp": 1.5163002274450341,
+    "per_seed_delta_pp": [
+      0.9097801364670205,
+      2.2744503411675514,
+      1.3646702047005308
+    ],
+    "question_ci95": [
+      -0.3032600454890068,
+      3.310588829921658
+    ],
+    "joint_seed_question_ci95": [
+      -0.5054334091483439,
+      3.5380338640384132
+    ],
+    "joint_familywise_ci95": [
+      -1.288855193328279,
+      4.321455648218348
+    ],
+    "all_seed_positive": true,
+    "stable_positive": false
+  }
+}

@@ -16,7 +16,7 @@
 
 ### 冻结最终测试总览（正确题数）
 
-P表示测试前从Frozen/Adaptive/Periodic8中按开发集选定的策略；“选中真梯度”是开发集选择的Oracle32/Oracle20/在线Mean，不是测试集上得分最高的方法。MeanM为固定离线梯度矩阵。全部方法及同LR对照见 [final_all.csv](scaling_domains_20260930/results/final_all.csv)。
+P表示测试前从Frozen/Adaptive/Periodic8中按开发集选定的策略；“选中真梯度”是开发集选择的Oracle32/Oracle20/在线Mean，不是测试集上得分最高的方法。MeanM为固定离线梯度矩阵。全部方法及同LR对照见 [final_all.csv](results/final_all.csv)。
 
 | 模型/任务 | 题数 | Base | Warmup | P | 选中真梯度 | MeanM |
 |---|---:|---:|---:|---:|---:|---:|
@@ -34,9 +34,9 @@ P表示测试前从Frozen/Adaptive/Periodic8中按开发集选定的策略；“
 | 7b/aqua | 254 | 196 | 196 | 199 | 197 | 205 |
 | 7b/arc_challenge | 1172 | 1058 | 1054 | 1053 | 1053 | 1053 |
 
-![冻结最终准确率](scaling_domains_20260930/results/figures/final_accuracy.png)
+![冻结最终准确率](results/figures/final_accuracy.png)
 
-![配对差值与逐项区间](scaling_domains_20260930/results/figures/final_differences.png)
+![配对差值与逐项区间](results/figures/final_differences.png)
 
 图中95%区间按题目配对bootstrap，条件于已拟合run，未做多重校正；Holm校正检验另见下文。区间不包含warmup、数据划分或整个训练管线的不确定性。
 
@@ -77,7 +77,7 @@ P表示测试前从Frozen/Adaptive/Periodic8中按开发集选定的策略；“
 
 三个任务都出现差值符号翻转。重复run共享warmup、划分与主seed选择的策略/LR；seed汇总区间是对题目联合重采样，固定这三个run，并非对seed总体或完整pipeline的置信区间。
 
-![固定配置的开发准确率与累计在线时间](scaling_domains_20260930/results/figures/checkpoint_curves.png)
+![固定配置的开发准确率与累计在线时间](results/figures/checkpoint_curves.png)
 
 52个新增step8/16评测连同既有step0/32，共104个曲线点全部齐备。多条轨迹在中途下降后恢复；1.5B Countdown的P在step16高于step32，另一些条件则在step32恢复。策略/LR与主终点在读出曲线前固定，本轮不据此重选停止步数。图只计在线更新时间，不含离线成本，且各面板坐标范围不同；应比较数值变化而非视觉斜率。更新LR敏感性图的各面板y范围也不同。
 
@@ -93,11 +93,11 @@ P表示测试前从Frozen/Adaptive/Periodic8中按开发集选定的策略；“
 
 ### 输出预算与完整性
 
-所有评测输入完整保留，2048仅为新输出token上限。Countdown尤受该输出预算约束：1.5B Base有1472/2048题（71.88%）触及上限，7B Base为445/2048（21.73%）。全部156版本中有7条触及输出上限的输出仍按固定评分被判正确，因此不能把“触及上限”直接当作错误标签，也不能据此推断延长输出必然改善多少。逐版本统计见 [输出预算诊断](scaling_domains_20260930/results/final_output_budget_diagnostic.json)。
+所有评测输入完整保留，2048仅为新输出token上限。Countdown尤受该输出预算约束：1.5B Base有1472/2048题（71.88%）触及上限，7B Base为445/2048（21.73%）。全部156版本中有7条触及输出上限的输出仍按固定评分被判正确，因此不能把“触及上限”直接当作错误标签，也不能据此推断延长输出必然改善多少。逐版本统计见 [输出预算诊断](results/final_output_budget_diagnostic.json)。
 
-严格boxed格式分数与主正确率分别保存。例如1.5B BoolQ Base严格boxed正确为0，但主评分为2545/3270；格式遵循的改善不能替代答题能力改善。GSM8K历史split与最终prompt的复原核查见 [split/prompt审计](scaling_domains_20260930/results/gsm8k_split_prompt_audit.json)，未发现所检查的划分、答案字段或prompt泄漏错误；它不排除所有可能造成开发/测试差异的因素。
+严格boxed格式分数与主正确率分别保存。例如1.5B BoolQ Base严格boxed正确为0，但主评分为2545/3270；格式遵循的改善不能替代答题能力改善。GSM8K历史split与最终prompt的复原核查见 [split/prompt审计](results/gsm8k_split_prompt_audit.json)，未发现所检查的划分、答案字段或prompt泄漏错误；它不排除所有可能造成开发/测试差异的因素。
 
-以下保留完整方法、网格、计算量、失败和资源记录。训练/初始化/归档尝试的计数口径见 [尝试计数](scaling_domains_20260930/results/experiment_attempt_counts.json)，逐条配置见 [attempts.csv](scaling_domains_20260930/results/attempts.csv)。
+以下保留完整方法、网格、计算量、失败和资源记录。训练/初始化/归档尝试的计数口径见 [尝试计数](results/experiment_attempt_counts.json)，逐条配置见 [attempts.csv](results/attempts.csv)。
 
 
 人工报告整理时间：2026-10-02 04:01:54 UTC。自动实验与读出于2026-10-01 21:29:29 UTC结束，距开始17.17小时；授权截止UTC 2026-10-02 04:19:12。
@@ -122,7 +122,7 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 
 修正在首次predictor训练及最终测试前完成，旧v1和中间v2评分/选择完整归档，全部开发选择按统一v3重算。最终manifest冻结grader hash；原受限解析和严格按要求boxed字母/yes-no指标作为辅助结果保留。数学任务的math-verify和Countdown评分不变。
 
-主解析并不覆盖所有自然语言答案格式。后续AQuA更新开发核查发现，带“The correct answer is”等前缀、末行给出明确选项及原文的少量答案仍可能漏计；v3规则和既有选择保持不变，避免根据后续方法结果继续改评分。具体记录见 [AQuA开发评分与输出上限核查](scaling_domains_20260930/results/aqua_high_lr_development_audit.json)。因此这里的准确率受固定解析规则约束，小幅差异尤其需要结合原始输出和重复实验判断。
+主解析并不覆盖所有自然语言答案格式。后续AQuA更新开发核查发现，带“The correct answer is”等前缀、末行给出明确选项及原文的少量答案仍可能漏计；v3规则和既有选择保持不变，避免根据后续方法结果继续改评分。具体记录见 [AQuA开发评分与输出上限核查](results/aqua_high_lr_development_audit.json)。因此这里的准确率受固定解析规则约束，小幅差异尤其需要结合原始输出和重复实验判断。
 
 实际路径是先预测目标o_proj输出的activation gradient，再用当前LoRA因子解析还原参数梯度。若Y=X(W+sBA)^T、G=∂L/∂Y，则∇A=sB^T G^T X、∇B=sG^T XA^T；实现按监督token总数归一化。Frozen固定predictor参数，但还原时始终使用更新后的A/B。
 
@@ -140,11 +140,11 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 | openbookqa | 256 | 2048 | 128 | 128 | 1024 | 128 | 500 |
 | boolq | 256 | 2048 | 128 | 128 | 1024 | 128 | 3270 |
 
-全部输入完整保留；主生成上限2048仅限制新输出token。训练小数据集可能重复呈现题目，题目数与样本呈现次数分别记录。数据来源、revision、文件hash及去重见 [数据清单](scaling_domains_20260930/data/manifest.json)。BoolQ官方validation作为本实验最终测试，开发题从官方train划分。
+全部输入完整保留；主生成上限2048仅限制新输出token。训练小数据集可能重复呈现题目，题目数与样本呈现次数分别记录。数据来源、revision、文件hash及去重见 [数据清单](data/manifest.json)。BoolQ官方validation作为本实验最终测试，开发题从官方train划分。
 
 最终生成采用每次最多1024题的请求队列，实际同时运行的序列仍最多256。这样允许已完成请求留下的空位接收等待中的题目；每个提交块完成后保存输出。开发和中间checkpoint评测继续使用原256题提交块。最初KV缓存为1.5B/7B各48/64 GiB；14:43 UTC起外部进程占用GPU0后，后续评测的恢复配置改为16 GiB、memory fraction .25，实际参数以各阶段protocol.json为准。完整prompt、2048新token预算、greedy解码、seed42、batch-invariant设置、评分与冻结候选保持一致。这些均在最终测试前声明；没有单独测量队列或缓存调整的加速比，也不将1024解释为输入长度或GPU并发数。
 
-本次报告生成时，已逐项核验737个完整评估版本、269646条输出：题数、sample ID顺序、问题全文及其在保存prompt中的完整性均与原始数据清单一致。生成token上限另行核查。逐版本source/protocol/output hash见 [输入完整性核查](scaling_domains_20260930/results/evaluation_input_audit.json)；现有737个完整版本与计划逐项对齐；全部计划完成的独立核查见 results/completion_audit.json。
+本次报告生成时，已逐项核验737个完整评估版本、269646条输出：题数、sample ID顺序、问题全文及其在保存prompt中的完整性均与原始数据清单一致。生成token上限另行核查。逐版本source/protocol/output hash见 [输入完整性核查](results/evaluation_input_audit.json)；现有737个完整版本与计划逐项对齐；全部计划完成的独立核查见 results/completion_audit.json。
 
 | 任务 | 更新集平均prompt tokens | 更新集平均监督tokens | 最终test最大prompt tokens |
 |---|---:|---:|---:|
@@ -158,7 +158,7 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 | openbookqa | 71.4 | 6.0 | 137 |
 | boolq | 176.8 | 6.0 | 1299 |
 
-监督tokens包含EOS。完整逐模型/任务/划分的长度分位数、source和tokenized hash见 [token_audit.json](scaling_domains_20260930/results/token_audit.json)。这些统计不用于排除题目；相同batch题数不意味着相同token工作量。
+监督tokens包含EOS。完整逐模型/任务/划分的长度分位数、source和tokenized hash见 [token_audit.json](results/token_audit.json)。这些统计不用于排除题目；相同batch题数不意味着相同token工作量。
 
 ## 尝试与配置
 
@@ -193,13 +193,13 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 
 具体例子：1.5B MATH的Base为 74/128，CE 0.6461；5e-4、32步为 40/128，CE 0.6147。开发loss改善而生成能力退化；尚不能由此替代该任务的冻结最终测试。
 
-完整warmup网格及CE见 `results/warmup_sensitivity_*.csv`；所有已完成更新开发结果见 [development_endpoints.json](scaling_domains_20260930/results/development_endpoints.json)。选中的开发分数有选择偏差，最终结论以冻结后的测试为准。
+完整warmup网格及CE见 `results/warmup_sensitivity_*.csv`；所有已完成更新开发结果见 [development_endpoints.json](results/development_endpoints.json)。选中的开发分数有选择偏差，最终结论以冻结后的测试为准。
 
-![Warmup开发集敏感性](scaling_domains_20260930/results/figures/warmup_sensitivity.png)
+![Warmup开发集敏感性](results/figures/warmup_sensitivity.png)
 
 ### 后续更新LR敏感性（开发集）
 
-只汇总完整的24端点网格；正在生成的条件不参与选优。每种方法独立选择LR，再按已声明规则选择predictor和真实梯度策略。分数经过开发选择，不能视作独立验证。所有LR、CE、时间与结果hash见 [development_progress.csv](scaling_domains_20260930/results/development_progress.csv)。
+只汇总完整的24端点网格；正在生成的条件不参与选优。每种方法独立选择LR，再按已声明规则选择predictor和真实梯度策略。分数经过开发选择，不能视作独立验证。所有LR、CE、时间与结果hash见 [development_progress.csv](results/development_progress.csv)。
 
 | 模型 | 任务 | Base | Warmup | Predictor方法 / LR | Predictor正确 | 真梯度方法 / LR | 真梯度正确 | dev题数 |
 |---|---|---:|---:|---|---:|---|---:|---:|
@@ -225,7 +225,7 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 
 该条件选中的adaptive在32次校准中均保留epoch0，最终predictor权重与初始逐位相同。它与Frozen的adapter更新差异相对范数为0.001538；两者开发分数差异不能解释为学到了更好的校准。特征微批次与浮点求和路径存在差异，本轮没有单独隔离其生成因果效应。
 
-![更新LR开发集敏感性](scaling_domains_20260930/results/figures/update_lr_sensitivity.png)
+![更新LR开发集敏感性](results/figures/update_lr_sensitivity.png)
 
 ## 完整最终测试
 
@@ -278,7 +278,7 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 | 7b | arc_challenge | selected_predictor - base | -0.43 | [-1.37, +0.51] | 1 |
 | 7b | arc_challenge | selected_predictor - best_real | +0.00 | [-0.26, +0.26] | 1 |
 
-所有方法、同LR控制、strict boxed指标与原始完整输出见 [final_all.csv](scaling_domains_20260930/results/final_all.csv)、[paired_comparisons.csv](scaling_domains_20260930/results/paired_comparisons.csv) 和 `results/eval/final_*`。
+所有方法、同LR控制、strict boxed指标与原始完整输出见 [final_all.csv](results/final_all.csv)、[paired_comparisons.csv](results/paired_comparisons.csv) 和 `results/eval/final_*`。
 
 ## 冻结训练均值的补充对照
 
@@ -302,7 +302,7 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 | 7b_aqua | 128 | 97 | 96 | 97 | 99 | 0.0001 |
 | 7b_arc_challenge | 128 | 117 | 117 | 116 | 105 | 1e-05 |
 
-原26项主比较保持不变；补充13项predictor−冻结均值比较，并另给合并39项的保守Holm校正。缺项不缩小检验族。结果见 [mean_matrix_comparisons.csv](scaling_domains_20260930/results/mean_matrix_comparisons.csv)、[combined_multiplicity.csv](scaling_domains_20260930/results/combined_multiplicity.csv)；配置与资源规则见 [mean_matrix_plan.json](scaling_domains_20260930/configs/mean_matrix_plan.json)。
+原26项主比较保持不变；补充13项predictor−冻结均值比较，并另给合并39项的保守Holm校正。缺项不缩小检验族。结果见 [mean_matrix_comparisons.csv](results/mean_matrix_comparisons.csv)、[combined_multiplicity.csv](results/combined_multiplicity.csv)；配置与资源规则见 [mean_matrix_plan.json](configs/mean_matrix_plan.json)。
 
 | 模型 | 任务 | 均值控制LR | 均值控制准确率 % | Predictor−均值 pp | 合并39项Holm p | 均值32步秒 | 均值离线秒 |
 |---|---|---:|---:|---:|---:|---:|---:|
@@ -322,13 +322,13 @@ Predictor使用完整问题＋参考解答的teacher-forced激活；最终生成
 
 均值离线时间包括训练梯度采集和矩阵构造，复用缓存时采集时间仍完整计入；不含加载、开发生成或研究诊断。均值32步时间来自实际轨迹内的同步计时，保留首次调用开销，不含checkpoint保存和CE诊断；没有为这个补充方法另做预热重复profiling或FLOPs测量，不能与下节的受控单步中位数混用。该对照用于检验共同均值方向是否足以解释短轨迹收益，不能视作每步真实梯度。
 
-14:43:26 UTC开始，GPU0出现本实验以外的三个进程；7B均值矩阵对照的更新阶段随后共享GPU，首个7B对照评测因显存不足在模型加载前失败，未生成输出。后续共享设备上的轨迹或评测耗时不能直接与独占时的受控计时比较。13组主受控profiling及主更新轨迹均在这些外部进程启动前完成，保留原结果和进程核验。事件、失败日志和资源配置见 [资源事件记录](scaling_domains_20260930/provenance/failures/external_gpu0_occupancy/resource_incident.json) 与 [AMENDMENTS.md](scaling_domains_20260930/AMENDMENTS.md)。
+14:43:26 UTC开始，GPU0出现本实验以外的三个进程；7B均值矩阵对照的更新阶段随后共享GPU，首个7B对照评测因显存不足在模型加载前失败，未生成输出。后续共享设备上的轨迹或评测耗时不能直接与独占时的受控计时比较。13组主受控profiling及主更新轨迹均在这些外部进程启动前完成，保留原结果和进程核验。事件、失败日志和资源配置见 [资源事件记录](provenance/failures/external_gpu0_occupancy/resource_incident.json) 与 [AMENDMENTS.md](AMENDMENTS.md)。
 
 ## Computational efficiency
 
 物理GPU0 H200，独占授权；每种方法预热2次、随机顺序重复7次，同模型/optimizer/predictor起点和同32题主batch。受控首步profiling统一使用更新LR1e-5；下方完整32步成本另按实际轨迹及开发选中的LR报告。计时含方法必要的真实标签、CPU/GPU搬运、校准与选择；不含加载、tokenization、状态恢复、研究用诊断与评测。Oracle20和Mean的标签预算为20题，Oracle32为32题。
 
-FLOPs使用Torch的算子公式与计数基础，改为仅统计实际原生dispatch，关闭默认算子分解与模块/autograd追踪hook，乘加计2；给出operator分项。对默认计数器遗漏的融合Transformer/MHA推理算子，补充基于实际输入shape的稠密矩阵与attention计数公式，保持执行路径不变；融合/非融合CPU已知规模核验均为483840 FLOPs。GPU实测另外记录逐算子覆盖，未知的不透明attention算子会报错。不覆盖全部标量、归一化、softmax、非线性、搬运及优化器操作，不是精确硬件指令计数。时间测量与带计数器运行分开，分别记录正常重复与计数运行的optimizer更新差异。首个GPU核查发现默认计数器的反向数值会改变，因此原计数版本归档并重测。核验见 [flop_fused_audit.json](scaling_domains_20260930/results/flop_fused_audit.json)、[原生dispatch CPU核验](scaling_domains_20260930/results/flop_native_dispatch_audit.json)。
+FLOPs使用Torch的算子公式与计数基础，改为仅统计实际原生dispatch，关闭默认算子分解与模块/autograd追踪hook，乘加计2；给出operator分项。对默认计数器遗漏的融合Transformer/MHA推理算子，补充基于实际输入shape的稠密矩阵与attention计数公式，保持执行路径不变；融合/非融合CPU已知规模核验均为483840 FLOPs。GPU实测另外记录逐算子覆盖，未知的不透明attention算子会报错。不覆盖全部标量、归一化、softmax、非线性、搬运及优化器操作，不是精确硬件指令计数。时间测量与带计数器运行分开，分别记录正常重复与计数运行的optimizer更新差异。首个GPU核查发现默认计数器的反向数值会改变，因此原计数版本归档并重测。核验见 [flop_fused_audit.json](results/flop_fused_audit.json)、[原生dispatch CPU核验](results/flop_native_dispatch_audit.json)。
 
 骨干和LoRA保留FP32主权重，骨干前向使用BF16 autocast；predictor为FP32，允许TF32矩阵乘法。各方法使用相同骨干精度和SDPA math后端。
 
@@ -461,9 +461,9 @@ train/dev口径排除模型与cache加载、held-out审计；进程总时间另�
 | 7b_aqua | periodic8 | 11.6 | 23.7 | 341.1 | 14.90 | 29 |
 | 7b_arc_challenge | frozen | 3.6 | 15.6 | 63.2 | 4.29 | 6 |
 
-所有LR与Oracle20/Mean的摊销比较、校准耗时占比和epoch0选择次数见 [cost_amortization.csv](scaling_domains_20260930/results/cost_amortization.csv)。重复使用已见题目的20个标签呈现，不等于20个独立新标签；独立题数及累计呈现数见 [trajectory_summary.csv](scaling_domains_20260930/results/trajectory_summary.csv)。若全部校准均选epoch0，需检查predictor权重是否逐位保持初始值；与Frozen仍可能因特征微批次与求和顺序出现小幅数值差异，不能将生成分数差异归因于学到的校准。实际完成轨迹的逐权重比较见 [核验记录](scaling_domains_20260930/results/noop_calibration_audit.json)。
+所有LR与Oracle20/Mean的摊销比较、校准耗时占比和epoch0选择次数见 [cost_amortization.csv](results/cost_amortization.csv)。重复使用已见题目的20个标签呈现，不等于20个独立新标签；独立题数及累计呈现数见 [trajectory_summary.csv](results/trajectory_summary.csv)。若全部校准均选epoch0，需检查predictor权重是否逐位保持初始值；与Frozen仍可能因特征微批次与求和顺序出现小幅数值差异，不能将生成分数差异归因于学到的校准。实际完成轨迹的逐权重比较见 [核验记录](results/noop_calibration_audit.json)。
 
-锁定step32选择的策略与LR后，再补step8/16开发生成；连同step0/32形成 [准确率—更新时间曲线](scaling_domains_20260930/results/checkpoint_curves.csv)。曲线有开发选择偏差且不含离线成本，不据此重选停止步数，也不把它当最终测试结论。
+锁定step32选择的策略与LR后，再补step8/16开发生成；连同step0/32形成 [准确率—更新时间曲线](results/checkpoint_curves.csv)。曲线有开发选择偏差且不含离线成本，不据此重选停止步数，也不把它当最终测试结论。
 
 ## 梯度预测的诊断
 
@@ -502,9 +502,9 @@ train/dev口径排除模型与cache加载、held-out审计；进程总时间另�
 | 7b_countdown | predictor | 0.901 | 0.921 | 0.884 | 0.588 | 0.994 | 0.995 |
 | 7b_gsm8k | predictor | 0.290 | 0.623 | 0.606 | 0.327 | 0.958 | 0.970 |
 
-7B ARC-Challenge的逐题因子相对平方误差达到8.71e+08。在这64道held-out题中，真实梯度范数最小的一半贡献了99.94%的该误差，但仅占7.16e-09%的真实梯度平方范数能量；把逐题梯度矩阵作为整体计算的相对Frobenius误差为1.002。这显示逐题相对误差与按梯度量级加权的整体误差口径差别很大，不能混用。CPU审计复现了实际相对误差定义；A/B分母低于1e-12下限的样本分别为0/0，所以本例的大误差并非触发该下限造成。逐题数值和A/B细节见 [relative_error_audit.json](scaling_domains_20260930/results/relative_error_audit.json)。本轮没有更改损失或重新训练；尚不能断言换一种目标就会改善下游表现。
+7B ARC-Challenge的逐题因子相对平方误差达到8.71e+08。在这64道held-out题中，真实梯度范数最小的一半贡献了99.94%的该误差，但仅占7.16e-09%的真实梯度平方范数能量；把逐题梯度矩阵作为整体计算的相对Frobenius误差为1.002。这显示逐题相对误差与按梯度量级加权的整体误差口径差别很大，不能混用。CPU审计复现了实际相对误差定义；A/B分母低于1e-12下限的样本分别为0/0，所以本例的大误差并非触发该下限造成。逐题数值和A/B细节见 [relative_error_audit.json](results/relative_error_audit.json)。本轮没有更改损失或重新训练；尚不能断言换一种目标就会改善下游表现。
 
-训练历史揭示了选择指标的差异：7B AQuA按逐题因子误差选择epoch5（逐题误差0.434、整批相对L2误差0.422）；按日志中最低整批误差看则是epoch82（逐题误差0.653、整批误差0.083）。这说明两个开发指标偏好不同的checkpoint。这里没有更换已选predictor，也没有评估替代epoch的held-out梯度或下游表现，不能据此断言它会更好；整个dev求和的指标也不等于随机batch32指标。完整诊断见 [predictor_selection_diagnostic.csv](scaling_domains_20260930/results/predictor_selection_diagnostic.csv)。
+训练历史揭示了选择指标的差异：7B AQuA按逐题因子误差选择epoch5（逐题误差0.434、整批相对L2误差0.422）；按日志中最低整批误差看则是epoch82（逐题误差0.653、整批误差0.083）。这说明两个开发指标偏好不同的checkpoint。这里没有更换已选predictor，也没有评估替代epoch的held-out梯度或下游表现，不能据此断言它会更好；整个dev求和的指标也不等于随机batch32指标。完整诊断见 [predictor_selection_diagnostic.csv](results/predictor_selection_diagnostic.csv)。
 
 观察到ARC-Challenge的原始预测弱、残差cosine却为正后，补充常数零输出对照。若两者同时减去同一个较大的训练均值，即使预测恒为零也能出现正残差cosine。另将预测和真值矩阵分别减去各自held-out均值，报告跨题变化的整体Frobenius cosine；这里的均值仅用于描述性审计，不用于拟合或选参。
 
@@ -535,13 +535,13 @@ train/dev口径排除模型与cache加载、held-out审计；进程总时间另�
 | 7b_countdown | 0.588 | -0.034 | 0.581 |
 | 7b_gsm8k | 0.327 | 0.052 | 0.421 |
 
-A/B分因子误差及activation误差保留在各predictor的gradient_test.json。经验共同方向能量、两两cosine、梯度范数分位数与中心化谱见 [gradient_controls.json](scaling_domains_20260930/results/gradient_controls.json)；样本数限制谱秩，不能据此声称总体梯度低秩。范数长尾诊断在观察到ARC-Easy差异后补充，使用已有held-out梯度，不反馈给训练或选参；最大的ceil(10%×题数)道题的平方范数能量占比不等于它们求和后的向量贡献，也不衡量方向抵消。更新step1/8/32另有独立held-out32题审计，包含同一Adam历史下的下一步更新差异，不反馈给训练或选参。汇总见 [gradient_drift.csv](scaling_domains_20260930/results/gradient_drift.csv) 和 [LR—梯度漂移图](scaling_domains_20260930/results/figures/gradient_drift.pdf)；各方法沿自身更新轨迹，Adam比较固定同一当前历史，不代表两条独立优化轨迹的差异。
+A/B分因子误差及activation误差保留在各predictor的gradient_test.json。经验共同方向能量、两两cosine、梯度范数分位数与中心化谱见 [gradient_controls.json](results/gradient_controls.json)；样本数限制谱秩，不能据此声称总体梯度低秩。范数长尾诊断在观察到ARC-Easy差异后补充，使用已有held-out梯度，不反馈给训练或选参；最大的ceil(10%×题数)道题的平方范数能量占比不等于它们求和后的向量贡献，也不衡量方向抵消。更新step1/8/32另有独立held-out32题审计，包含同一Adam历史下的下一步更新差异，不反馈给训练或选参。汇总见 [gradient_drift.csv](results/gradient_drift.csv) 和 [LR—梯度漂移图](results/figures/gradient_drift.pdf)；各方法沿自身更新轨迹，Adam比较固定同一当前历史，不代表两条独立优化轨迹的差异。
 
 ## 重复seed与敏感性
 
-预设重复任务为1.5B Countdown/AQuA/ARC-Challenge；predictor seeds123/124/125配合update seeds101/102/103，共享warmup、数据划分与主seed开发选择的策略/LR。三个预定seed均已完成；这不覆盖warmup及数据划分的不确定性。结果见 [seed_replications.json](scaling_domains_20260930/results/seed_replications.json)。
+预设重复任务为1.5B Countdown/AQuA/ARC-Challenge；predictor seeds123/124/125配合update seeds101/102/103，共享warmup、数据划分与主seed开发选择的策略/LR。三个预定seed均已完成；这不覆盖warmup及数据划分的不确定性。结果见 [seed_replications.json](results/seed_replications.json)。
 
-额外warmup静态敏感性固定1.5B Countdown/GSM8K/AQuA，零步以及32步LR3e-6/5e-5/5e-4；实际完成项以gradient_controls记录为准。零步B=0时A梯度结构性为零，不把该分因子的零cosine解释为预测失效。warmup实际BA权重变化见 [adapter_sensitivity.json](scaling_domains_20260930/results/adapter_sensitivity.json)。
+额外warmup静态敏感性固定1.5B Countdown/GSM8K/AQuA，零步以及32步LR3e-6/5e-5/5e-4；实际完成项以gradient_controls记录为准。零步B=0时A梯度结构性为零，不把该分因子的零cosine解释为预测失效。warmup实际BA权重变化见 [adapter_sensitivity.json](results/adapter_sensitivity.json)。
 
 | 任务 | Warmup LR / 步数 | 主选中起点 | Activation cosine | LoRA逐题cosine | 固定训练均值LoRA cosine | 起点生成dev正确 |
 |---|---|---|---:|---:|---:|---:|
@@ -566,9 +566,9 @@ Activation和还原后的LoRA cosine可能呈不同趋势。例如GSM8K从零war
 
 梯度敏感性图分别显示activation cosine、逐题LoRA cosine、随机batch32的LoRA cosine与跨题中心化LoRA cosine，并保留固定训练均值对照。同一任务的warmup起点及predictor seeds共享bootstrap和batch分组，核对原始审计数据hash、题数与有序token数；不同分组仍有样本重叠，只作描述。星号表示主开发选中的warmup；图仅包含已有审计的状态，不能由高静态cosine直接推出下游增益。
 
-![Warmup与梯度预测](scaling_domains_20260930/results/figures/warmup_gradient_sensitivity.png)
+![Warmup与梯度预测](results/figures/warmup_gradient_sensitivity.png)
 
-这些warmup起点另做开发集闭环诊断：固定使用该任务主网格选中的predictor更新LR，对Frozen和Oracle32各更新32步，并评完整生成dev。复用主选中warmup的已有轨迹作为参考。这个对照隔离起点变化对后续表现的影响，更新LR条件于主开发选择，不据此重选主实验warmup或增加最终测试赢家。仅在预定10h/8h时间余量内执行。配置见 [warmup_closed_loop_plan.json](scaling_domains_20260930/configs/warmup_closed_loop_plan.json)，实际结果见 [warmup_closed_loop.json](scaling_domains_20260930/results/warmup_closed_loop.json)。
+这些warmup起点另做开发集闭环诊断：固定使用该任务主网格选中的predictor更新LR，对Frozen和Oracle32各更新32步，并评完整生成dev。复用主选中warmup的已有轨迹作为参考。这个对照隔离起点变化对后续表现的影响，更新LR条件于主开发选择，不据此重选主实验warmup或增加最终测试赢家。仅在预定10h/8h时间余量内执行。配置见 [warmup_closed_loop_plan.json](configs/warmup_closed_loop_plan.json)，实际结果见 [warmup_closed_loop.json](results/warmup_closed_loop.json)。
 
 | 任务 | Warmup LR / 步数 | 后续固定LR | 方法 | 起点正确 | 更新后正确 | dev题数 |
 |---|---|---:|---|---:|---:|---:|
@@ -601,7 +601,7 @@ Activation和还原后的LoRA cosine可能呈不同趋势。例如GSM8K从零war
 | aqua | 0.0001 / 8 | 1e-05 | oracle | 74 | 75 | 128 |
 | aqua | 0.0001 / 8 | 1e-05 | frozen | 74 | 69 | 128 |
 
-![Warmup起点与后续表现](scaling_domains_20260930/results/figures/warmup_closed_loop.png)
+![Warmup起点与后续表现](results/figures/warmup_closed_loop.png)
 
 countdown在固定更新LR=3e-05时，零warmup的Frozen从12/128变为14/128，主选中warmup的Frozen则从17/128变为8/128；gsm8k在固定更新LR=3e-06时，零warmup的Frozen从109/128变为113/128，主选中warmup的Frozen则从111/128变为113/128；aqua在固定更新LR=1e-05时，零warmup的Frozen从72/128变为74/128，主选中warmup的Frozen则从74/128变为69/128。
 这组结果表明，按起点准确率选出的warmup不一定提供更好的后续预测梯度更新起点，高静态cosine也不能保证闭环收益。各起点重新拟合了predictor，因此这里测量的是warmup及其配套predictor的整体敏感性；后续LR固定、开发题集共享，不能据此宣称零warmup普遍最优。闭环补充没有用于重选最终测试配置。
@@ -619,9 +619,9 @@ countdown在固定更新LR=3e-05时，零warmup的Frozen从12/128变为14/128，
 - 输入从不截断，输出预算命中率和boxed格式单列。开发期修正了明确的原选项文本解析遗漏并保留旧评分；冻结后不按最终结果更改评分。
 - 格式能力与答题能力分开：1.5B BoolQ Base开发输出128/128均为直接yes/no，主评分103/128；高LR32步全部使用boxed，主评分仍为103/128。ARC-Easy/Challenge旧解析漏计7/3个Base正确答案，修正后此前部分warmup增益消失。AQuA Base有22个正确boxed选项数值被旧字母解析漏计，修正后Base72/128，高LR32步46/128；格式对齐不能替代答题质量。
 
-BoolQ的后续更新也显示格式与CE的关系：Frozen在更新LR1e-4时，开发CE为2.018，128/128输出均回到直接yes/no；主准确率仍为102/128，但严格boxed准确率为0。LR1e-5时128/128均为boxed，CE为0.092，主准确率105/128。这是同时发生的格式和损失变化，不能仅凭总CE判定语义能力大幅崩溃，也未孤立量化格式对损失的贡献。评分规则不变，见 [BoolQ开发格式核查](scaling_domains_20260930/results/boolq_high_lr_format_audit.json)。
+BoolQ的后续更新也显示格式与CE的关系：Frozen在更新LR1e-4时，开发CE为2.018，128/128输出均回到直接yes/no；主准确率仍为102/128，但严格boxed准确率为0。LR1e-5时128/128均为boxed，CE为0.092，主准确率105/128。这是同时发生的格式和损失变化，不能仅凭总CE判定语义能力大幅崩溃，也未孤立量化格式对损失的贡献。评分规则不变，见 [BoolQ开发格式核查](results/boolq_high_lr_format_audit.json)。
 
-7B Countdown的大LR Frozen退化也不是输出上限截断造成：更新LR1e-4时平均输出20.49个token，128/128正常结束且均有boxed，0个触及输出上限；只有80题符合给定数字的使用约束，最终7/128正确。输入仍完整，短输出与失败同时出现，但这不能单独证明推理长度是原因。两模型全部52个开发版本的原始评分字段、结束原因和完整输入顺序核验见 [Countdown开发输出诊断](scaling_domains_20260930/results/countdown_development_output_audit.json)，没有重打分或改变主选择。
+7B Countdown的大LR Frozen退化也不是输出上限截断造成：更新LR1e-4时平均输出20.49个token，128/128正常结束且均有boxed，0个触及输出上限；只有80题符合给定数字的使用约束，最终7/128正确。输入仍完整，短输出与失败同时出现，但这不能单独证明推理长度是原因。两模型全部52个开发版本的原始评分字段、结束原因和完整输入顺序核验见 [Countdown开发输出诊断](results/countdown_development_output_audit.json)，没有重打分或改变主选择。
 
 ## 资源、清理与复现
 
@@ -652,14 +652,14 @@ BoolQ的后续更新也显示格式与CE的关系：Frozen在更新LR1e-4时，�
 | checkpoint_generation_development | 2 | 29.86 |
 | final_test_generation | 2 | 327.28 |
 
-管理进程计时包含启动/加载/诊断及监督进程轮询；SVAMP更新期间曾暂停监督进程以重测Countdown profiling，其原始计时包含该重测，汇总时已扣除已知重叠区间，记录于research_costs.json。最终测试和step8/16曲线使用已完成版本的评估计时，排除模型启动和未完成部分，恢复过的版本可能只记录恢复后的时间。逐项口径与来源见 [research_costs.csv](scaling_domains_20260930/results/research_costs.csv)。
+管理进程计时包含启动/加载/诊断及监督进程轮询；SVAMP更新期间曾暂停监督进程以重测Countdown profiling，其原始计时包含该重测，汇总时已扣除已知重叠区间，记录于research_costs.json。最终测试和step8/16曲线使用已完成版本的评估计时，排除模型启动和未完成部分，恢复过的版本可能只记录恢复后的时间。逐项口径与来源见 [research_costs.csv](results/research_costs.csv)。
 
 本轮已清理可再生成缓存 141.43 GiB；自动读出结束时剩余 387.9 GiB。资源监控原始记录见 `results/resource_history.jsonl`；采样可能漏掉瞬时峰值，设备总占用不能替代各方法的allocated峰值。
 
 脚本和所有配置在本目录。解释器 `/mnt/micron/yixiaore/adapter/.venv/bin/python`，每个GPU命令设置 `CUDA_VISIBLE_DEVICES=0`。数据准备→phase1 warmup/dev→选择起点→逐条件collect/fit/static/cleanup/updates/dev/efficiency→冻结final_selection→final_evaluate→analyze/report。
-每条已建立训练尝试的配置、完成状态、耗时及日志位置见 [attempts.csv](scaling_domains_20260930/results/attempts.csv)；失败和修复见 [AMENDMENTS.md](scaling_domains_20260930/AMENDMENTS.md)、[failures.json](scaling_domains_20260930/results/failures.json)。
+每条已建立训练尝试的配置、完成状态、耗时及日志位置见 [attempts.csv](results/attempts.csv)；失败和修复见 [AMENDMENTS.md](AMENDMENTS.md)、[failures.json](results/failures.json)。
 
-最终选择时复制本实验全部Python脚本及外部Countdown评分器至 `provenance/final_frozen_source`，manifest记录逐文件hash；最终统计再次验证外部评分器与快照未变。评测启动前验证冻结的数据清单和测试文件hash，分析时另核对完整题数及逐题输入顺序。该快照是最终冻结时的源码，较早运行中的修复以AMENDMENTS和原始hash/失败归档追溯，不宣称所有历史进程使用完全相同源码。环境版本见 [environment.json](scaling_domains_20260930/provenance/environment.json)。
+最终选择时复制本实验全部Python脚本及外部Countdown评分器至 `provenance/final_frozen_source`，manifest记录逐文件hash；最终统计再次验证外部评分器与快照未变。评测启动前验证冻结的数据清单和测试文件hash，分析时另核对完整题数及逐题输入顺序。该快照是最终冻结时的源码，较早运行中的修复以AMENDMENTS和原始hash/失败归档追溯，不宣称所有历史进程使用完全相同源码。环境版本见 [environment.json](provenance/environment.json)。
 
 可再生成的activation/gradient shard在依赖的拟合和静态审计完成后删除，元数据保留于provenance/cache_metadata；清单见results/cleanup。未删除旧实验。最终adapter/predictor、完整测试输出、配置与统计保留。
 
@@ -672,4 +672,4 @@ GPU0以外设备未获本任务授权。训练与评测中任何失败、资源�
 
 所有最终数值和选择保持冻结；人工工作补充结果解释、seed原始分数、强基线比较、图注和完成审计。最终图的图例位置与置信区间标题作了展示修正，记录于AMENDMENTS.md；冻结源代码副本未变。
 
-收尾时磁盘剩余719.1 GiB，本实验可再生成activation shard已清零；历史实验未删除。实验GPU工作已结束，自有资源monitor已停止。逐项完成证据及哈希见 [完成审计](scaling_domains_20260930/results/completion_audit.json)，图片/PDF核验见 [图表审核](scaling_domains_20260930/results/final_visual_review.json)，保留模型与清理清单见 [存储审核](scaling_domains_20260930/results/storage_retention_audit.json)。
+收尾时磁盘剩余719.1 GiB，本实验可再生成activation shard已清零；历史实验未删除。实验GPU工作已结束，自有资源monitor已停止。逐项完成证据及哈希见 [完成审计](results/completion_audit.json)，图片/PDF核验见 [图表审核](results/final_visual_review.json)，保留模型与清理清单见 [存储审核](results/storage_retention_audit.json)。

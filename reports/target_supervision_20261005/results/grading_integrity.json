@@ -1,0 +1,270 @@
+{
+  "complete": true,
+  "method": "rerun the recorded grader from full outputs, checking gold, full prompts, question order and totals; not an independent reasoning-quality assessment",
+  "versions": {
+    "development/base__gsm8k": {
+      "n": 256,
+      "correct": 222,
+      "strict_correct": 220,
+      "output_cap_hits": 0
+    },
+    "development/reference_lr3e-05_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 217,
+      "strict_correct": 206,
+      "output_cap_hits": 2
+    },
+    "development/reference_lr3e-05_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 179,
+      "strict_correct": 149,
+      "output_cap_hits": 0
+    },
+    "development/reference_lr3e-05_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 174,
+      "strict_correct": 167,
+      "output_cap_hits": 1
+    },
+    "development/student_lr3e-05_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 215,
+      "strict_correct": 215,
+      "output_cap_hits": 1
+    },
+    "development/student_lr3e-05_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 221,
+      "strict_correct": 217,
+      "output_cap_hits": 0
+    },
+    "development/student_lr3e-05_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 214,
+      "strict_correct": 212,
+      "output_cap_hits": 1
+    },
+    "development/teacher_lr3e-05_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 214,
+      "strict_correct": 214,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr3e-05_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 211,
+      "strict_correct": 211,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr3e-05_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 215,
+      "strict_correct": 215,
+      "output_cap_hits": 0
+    },
+    "development/reference_lr0.0001_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 198,
+      "strict_correct": 140,
+      "output_cap_hits": 0
+    },
+    "development/reference_lr0.0001_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 173,
+      "strict_correct": 171,
+      "output_cap_hits": 1
+    },
+    "development/reference_lr0.0001_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 175,
+      "strict_correct": 174,
+      "output_cap_hits": 1
+    },
+    "development/student_lr0.0001_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 218,
+      "strict_correct": 218,
+      "output_cap_hits": 0
+    },
+    "development/student_lr0.0001_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 213,
+      "strict_correct": 212,
+      "output_cap_hits": 0
+    },
+    "development/student_lr0.0001_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 213,
+      "strict_correct": 211,
+      "output_cap_hits": 1
+    },
+    "development/teacher_lr0.0001_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 214,
+      "strict_correct": 214,
+      "output_cap_hits": 1
+    },
+    "development/teacher_lr0.0001_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 219,
+      "strict_correct": 219,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr0.0001_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 220,
+      "strict_correct": 220,
+      "output_cap_hits": 1
+    },
+    "development/reference_lr0.0003_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 175,
+      "strict_correct": 172,
+      "output_cap_hits": 2
+    },
+    "development/reference_lr0.0003_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 172,
+      "strict_correct": 172,
+      "output_cap_hits": 1
+    },
+    "development/reference_lr0.0003_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 172,
+      "strict_correct": 172,
+      "output_cap_hits": 0
+    },
+    "development/student_lr0.0003_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 221,
+      "strict_correct": 220,
+      "output_cap_hits": 0
+    },
+    "development/student_lr0.0003_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 212,
+      "strict_correct": 211,
+      "output_cap_hits": 2
+    },
+    "development/student_lr0.0003_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 218,
+      "strict_correct": 218,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr0.0003_s101__step32__gsm8k": {
+      "n": 256,
+      "correct": 216,
+      "strict_correct": 216,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr0.0003_s101__step128__gsm8k": {
+      "n": 256,
+      "correct": 210,
+      "strict_correct": 210,
+      "output_cap_hits": 0
+    },
+    "development/teacher_lr0.0003_s101__step256__gsm8k": {
+      "n": 256,
+      "correct": 213,
+      "strict_correct": 213,
+      "output_cap_hits": 1
+    },
+    "final/base__gsm8k": {
+      "n": 1319,
+      "correct": 964,
+      "strict_correct": 949,
+      "output_cap_hits": 8
+    },
+    "final/reference_lr3e-05_s101__step32__gsm8k": {
+      "n": 1319,
+      "correct": 973,
+      "strict_correct": 930,
+      "output_cap_hits": 4
+    },
+    "final/student_lr0.0003_s101__step32__gsm8k": {
+      "n": 1319,
+      "correct": 974,
+      "strict_correct": 964,
+      "output_cap_hits": 9
+    },
+    "final/teacher_lr0.0001_s101__step256__gsm8k": {
+      "n": 1319,
+      "correct": 985,
+      "strict_correct": 985,
+      "output_cap_hits": 3
+    },
+    "final/student_lr3e-05_s101__step32__gsm8k": {
+      "n": 1319,
+      "correct": 982,
+      "strict_correct": 976,
+      "output_cap_hits": 3
+    },
+    "final/teacher_lr3e-05_s101__step32__gsm8k": {
+      "n": 1319,
+      "correct": 977,
+      "strict_correct": 974,
+      "output_cap_hits": 5
+    },
+    "final/reference_lr3e-05_s102__step32__gsm8k": {
+      "n": 1319,
+      "correct": 967,
+      "strict_correct": 918,
+      "output_cap_hits": 3
+    },
+    "final/student_lr0.0003_s102__step32__gsm8k": {
+      "n": 1319,
+      "correct": 973,
+      "strict_correct": 965,
+      "output_cap_hits": 4
+    },
+    "final/student_lr3e-05_s102__step32__gsm8k": {
+      "n": 1319,
+      "correct": 971,
+      "strict_correct": 966,
+      "output_cap_hits": 6
+    },
+    "final/teacher_lr0.0001_s102__step256__gsm8k": {
+      "n": 1319,
+      "correct": 997,
+      "strict_correct": 997,
+      "output_cap_hits": 5
+    },
+    "final/teacher_lr3e-05_s102__step32__gsm8k": {
+      "n": 1319,
+      "correct": 987,
+      "strict_correct": 983,
+      "output_cap_hits": 2
+    },
+    "final/reference_lr3e-05_s103__step32__gsm8k": {
+      "n": 1319,
+      "correct": 971,
+      "strict_correct": 921,
+      "output_cap_hits": 5
+    },
+    "final/student_lr0.0003_s103__step32__gsm8k": {
+      "n": 1319,
+      "correct": 974,
+      "strict_correct": 964,
+      "output_cap_hits": 9
+    },
+    "final/student_lr3e-05_s103__step32__gsm8k": {
+      "n": 1319,
+      "correct": 975,
+      "strict_correct": 970,
+      "output_cap_hits": 5
+    },
+    "final/teacher_lr0.0001_s103__step256__gsm8k": {
+      "n": 1319,
+      "correct": 989,
+      "strict_correct": 989,
+      "output_cap_hits": 7
+    },
+    "final/teacher_lr3e-05_s103__step32__gsm8k": {
+      "n": 1319,
+      "correct": 982,
+      "strict_correct": 978,
+      "output_cap_hits": 6
+    }
+  }
+}

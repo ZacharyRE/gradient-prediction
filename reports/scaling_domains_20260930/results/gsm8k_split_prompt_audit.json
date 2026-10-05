@@ -1,0 +1,47 @@
+{
+  "time_utc": "2026-10-01T17:37:45.833435+00:00",
+  "passed": true,
+  "checks": [
+    "Historical raw train/test hashes unchanged",
+    "Reconstructed random seed20260926 dev selection after dedup/test-overlap filtering matches all128 questions in order",
+    "Full1319 original test questions retained in order",
+    "Historical/current problem solution gold and original_answer identical",
+    "Gold parsed from raw source answer marker identically",
+    "Saved base evaluation prompts exactly match renderer using only question field and fixed instruction",
+    "No answer/solution field inserted by renderer",
+    "Same2048 new-token budget, complete inputs and original scoring counts"
+  ],
+  "rows": [
+    {
+      "split": "accuracy_dev",
+      "n": 128,
+      "correct": 109,
+      "accuracy": 0.8515625,
+      "length_hits": 0,
+      "mean_new_tokens": 282.640625,
+      "raw_evaluation_sha256": "c8736e4d51f57d0216ab59044f3c00d456912f29fd1362040ee37f4f6c4d818a",
+      "protocol_sha256": "d1810c7bbf85206b792d74aadda8e53db9ed2310ed2173041b72c13c4a4415b9",
+      "current_data_sha256": "cbbede3482a907a29ef7116e948234b0279ffce6558a64131f7167b258752145",
+      "full_prompts_match_exact_question_only_renderer": true
+    },
+    {
+      "split": "test",
+      "n": 1319,
+      "correct": 964,
+      "accuracy": 0.7308567096285065,
+      "length_hits": 8,
+      "mean_new_tokens": 303.7748294162244,
+      "raw_evaluation_sha256": "6c0b168b9d2b40277be96823211bf36e66b1f2b0ec184d540484f89b4c142796",
+      "protocol_sha256": "fc491608b60ee524459b8de7bcbdc3fbbfd5f7f9333059367b4f68580194b48e",
+      "current_data_sha256": "b75c33e30f63b3eaf8bc3ed85fcbb1c75aa44d90bf446faf17265cfc9ae6f6f5",
+      "full_prompts_match_exact_question_only_renderer": true
+    }
+  ],
+  "raw_source_paths": {
+    "train": "/mnt/micron/yixiaore/adapter/data/GSM8K/train.jsonl",
+    "test": "/mnt/micron/yixiaore/adapter/data/GSM8K/test.jsonl"
+  },
+  "historical_prepare_sha256": "602e31d6b83a3d7b34f5e69b7eccb65df34644d7e1f5cb24cdf966e173d29ff7",
+  "current_prepare_sha256": "d0ea30a6e290e1c4b51e530b34d2c5df384dede138e748a86a1f50354a01b4a9",
+  "scope": "Read-only post-hoc provenance/prompt audit motivated by dev-to-test base-score gap. No new model evaluation, regrading, sampling, selection or protocol changes. It rules out the checked data/prompt construction mismatches, not all possible causes. Different question sets, finite sample size, training-source versus held-out-test composition and evaluation batching are not experimentally isolated; do not attribute the gap to any single cause. These are historical benchmarks, not pristine new holdouts."
+}

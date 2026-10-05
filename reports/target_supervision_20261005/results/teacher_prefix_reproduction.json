@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "exact_final_hashes": true,
+  "replays": [
+    {
+      "seed": 102,
+      "exact_final_parameter_reproduction": true,
+      "final_hashes": {
+        "A": "799fe6631f5ac157f231ee6452f60ae0e5cf07a83303c8c0d1101d72ebcce87d",
+        "B": "086b04c1a0f888bc043cf9daecf3d53c0df33905e9740604ddce5d70a84c7177"
+      },
+      "steps": 256,
+      "original_history_sha256": "e3cc3aa95b69843e7f8b6a900bd454b6f8f0b0691c672c528cd85d6860dadb4c",
+      "max_loss_difference": 0.0,
+      "max_gradient_norm_difference": 0.0,
+      "online_seconds": 151.55228813563008,
+      "wall_seconds": 151.70573902130127,
+      "entries": [
+        {
+          "task": "gsm8k",
+          "tag": "teacher_lr0.0001_s102__step32",
+          "arm": "teacher",
+          "seed": 102,
+          "lr": 0.0001,
+          "steps": 32,
+          "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/diagnostics/teacher_prefixes/seed102/step-32",
+          "adapter_sha256": "73bd6c65e5be82e81d9b6040784febf65f0f6dbb14e3578444b5aa47e8054f1e",
+          "reconstructed": true
+        },
+        {
+          "task": "gsm8k",
+          "tag": "teacher_lr0.0001_s102__step128",
+          "arm": "teacher",
+          "seed": 102,
+          "lr": 0.0001,
+          "steps": 128,
+          "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/diagnostics/teacher_prefixes/seed102/step-128",
+          "adapter_sha256": "645bbfab360151d44ca9910471bd81fb4a4ef86e6b8ff7995b298226ff111bb7",
+          "reconstructed": true
+        }
+      ]
+    },
+    {
+      "seed": 103,
+      "exact_final_parameter_reproduction": true,
+      "final_hashes": {
+        "A": "8351eb1b6ca6e1e290a9fa3d9cde993617e4c3cbf0bf4b04285632450365c8d4",
+        "B": "fb7c9a1376c9acffb5cd1342c4aafbad891b246d5e615ca182f068509647a7a9"
+      },
+      "steps": 256,
+      "original_history_sha256": "1987ca9e9b3b44259d6faf81c1795db8293d3bca9e00961087d70f246adc6938",
+      "max_loss_difference": 0.0,
+      "max_gradient_norm_difference": 0.0,
+      "online_seconds": 150.11961725435685,
+      "wall_seconds": 150.27340078353882,
+      "entries": [
+        {
+          "task": "gsm8k",
+          "tag": "teacher_lr0.0001_s103__step32",
+          "arm": "teacher",
+          "seed": 103,
+          "lr": 0.0001,
+          "steps": 32,
+          "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/diagnostics/teacher_prefixes/seed103/step-32",
+          "adapter_sha256": "33cc938cf5a906f4815444c907c69d3f339b7567be0fc266c962dba21695898a",
+          "reconstructed": true
+        },
+        {
+          "task": "gsm8k",
+          "tag": "teacher_lr0.0001_s103__step128",
+          "arm": "teacher",
+          "seed": 103,
+          "lr": 0.0001,
+          "steps": 128,
+          "adapter": "/mnt/micron/yixiaore/adapter/predictor/target_supervision_20261005/diagnostics/teacher_prefixes/seed103/step-128",
+          "adapter_sha256": "77fd8c048b1bb09c16637025ca881d31198729329b1fa973e21b6f60bc3a51fc",
+          "reconstructed": true
+        }
+      ]
+    }
+  ],
+  "independent_training_seeds_added": 0
+}

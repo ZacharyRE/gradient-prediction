@@ -1,0 +1,2792 @@
+[
+  {
+    "condition": "1p5b_aqua",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.21384160220623016,
+      "empirical_mean_energy_fraction": 0.17081649601459503,
+      "centered_participation_ratio": 29.962563970536653,
+      "centered_top8_variance_fraction": 0.41357796700396654,
+      "median_true_gradient_norm": 0.22015488147735596,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.26307491649640724,
+        "quantiles": {
+          "p10": 0.11495050936937333,
+          "p50": 0.2202887311577797,
+          "p90": 0.47918960452079773,
+          "p99": 0.7168876814842228
+        },
+        "maximum": 0.8499879837036133,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.22120195274209017,
+        "top_decile_squared_norm_energy_fraction": 0.38276083960802154,
+        "norm_mass_effective_sample_size": 98.11852534840506,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.5490504503250122,
+      "relative_l2": 0.8312621116638184,
+      "norm_ratio": 0.6435278654098511
+    },
+    "train_mean": {
+      "cosine": 0.4622931480407715,
+      "relative_l2": 0.9288002252578735,
+      "norm_ratio": 0.4892685115337372
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.0867573618888855,
+        "ci95": [
+          0.06988642308861018,
+          0.10379770472645759
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.09753808379173279,
+        "ci95": [
+          -0.12359237931668758,
+          -0.07534514125436545
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.1542593538761139,
+        "ci95": [
+          0.08986330293118953,
+          0.21398296989500518
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.4290200471878052,
+      "relative_l2": 0.9021300077438354,
+      "norm_ratio": 0.56452476978302
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.0024996111169457436,
+      "relative_l2": 1.0953075885772705,
+      "norm_ratio": 0.5160122513771057
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.45814886689186096,
+      "mean_per_example_cosine": 0.4581219553947449,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9320642948150635,
+      "relative_l2": 0.3639962077140808,
+      "norm_ratio": 0.952052116394043
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9382516741752625,
+      "relative_l2": 0.3777795433998108,
+      "norm_ratio": 1.016160488128662
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua",
+    "predictor": "predictor_s124",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.21384160220623016,
+      "empirical_mean_energy_fraction": 0.17081649601459503,
+      "centered_participation_ratio": 29.962563970536653,
+      "centered_top8_variance_fraction": 0.41357796700396654,
+      "median_true_gradient_norm": 0.22015488147735596,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.26307491649640724,
+        "quantiles": {
+          "p10": 0.11495050936937333,
+          "p50": 0.2202887311577797,
+          "p90": 0.47918960452079773,
+          "p99": 0.7168876814842228
+        },
+        "maximum": 0.8499879837036133,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.22120195274209017,
+        "top_decile_squared_norm_energy_fraction": 0.38276083960802154,
+        "norm_mass_effective_sample_size": 98.11852534840506,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.5540351867675781,
+      "relative_l2": 0.826781690120697,
+      "norm_ratio": 0.6306955814361572
+    },
+    "train_mean": {
+      "cosine": 0.4622931480407715,
+      "relative_l2": 0.9288002252578735,
+      "norm_ratio": 0.4892685115337372
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09174207597970963,
+        "ci95": [
+          0.07487891800701618,
+          0.1086004927754402
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.10201852023601532,
+        "ci95": [
+          -0.12778454199433326,
+          -0.08090250175446272
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.14142701029777527,
+        "ci95": [
+          0.07447034269571304,
+          0.20252267569303511
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.44030436873435974,
+      "relative_l2": 0.8975780606269836,
+      "norm_ratio": 0.5696138143539429
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.0024996111169457436,
+      "relative_l2": 1.0953075885772705,
+      "norm_ratio": 0.5160122513771057
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.4716872572898865,
+      "mean_per_example_cosine": 0.471280038356781,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9314208030700684,
+      "relative_l2": 0.3652046322822571,
+      "norm_ratio": 0.9137284755706787
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9382516741752625,
+      "relative_l2": 0.3777795433998108,
+      "norm_ratio": 1.016160488128662
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua",
+    "predictor": "predictor_s125",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.21384160220623016,
+      "empirical_mean_energy_fraction": 0.17081649601459503,
+      "centered_participation_ratio": 29.962563970536653,
+      "centered_top8_variance_fraction": 0.41357796700396654,
+      "median_true_gradient_norm": 0.22015488147735596,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.26307491649640724,
+        "quantiles": {
+          "p10": 0.11495050936937333,
+          "p50": 0.2202887311577797,
+          "p90": 0.47918960452079773,
+          "p99": 0.7168876814842228
+        },
+        "maximum": 0.8499879837036133,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.22120195274209017,
+        "top_decile_squared_norm_energy_fraction": 0.38276083960802154,
+        "norm_mass_effective_sample_size": 98.11852534840506,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.545006513595581,
+      "relative_l2": 0.8311290740966797,
+      "norm_ratio": 0.6108821630477905
+    },
+    "train_mean": {
+      "cosine": 0.4622931480407715,
+      "relative_l2": 0.9288002252578735,
+      "norm_ratio": 0.4892685115337372
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.08271341025829315,
+        "ci95": [
+          0.0659636091440916,
+          0.09964632596820593
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.09767118096351624,
+        "ci95": [
+          -0.12291861232370138,
+          -0.07680747266858816
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.12161359190940857,
+        "ci95": [
+          0.06235319469124079,
+          0.17715949900448322
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.42334017157554626,
+      "relative_l2": 0.9017565846443176,
+      "norm_ratio": 0.5315561294555664
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.0024996111169457436,
+      "relative_l2": 1.0953075885772705,
+      "norm_ratio": 0.5160122513771057
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.4605378806591034,
+      "mean_per_example_cosine": 0.4539645314216614,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9285383224487305,
+      "relative_l2": 0.37250205874443054,
+      "norm_ratio": 0.9119645357131958
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9382516741752625,
+      "relative_l2": 0.3777795433998108,
+      "norm_ratio": 1.016160488128662
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua_sensitivity_w0",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.1508643925189972,
+      "empirical_mean_energy_fraction": 0.12352972477674484,
+      "centered_participation_ratio": 40.69156729836093,
+      "centered_top8_variance_fraction": 0.34925901555639227,
+      "median_true_gradient_norm": 0.17752563953399658,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.20822865806985646,
+        "quantiles": {
+          "p10": 0.09403181299567223,
+          "p50": 0.17869308590888977,
+          "p90": 0.3700587213039398,
+          "p99": 0.5565884757041933
+        },
+        "maximum": 0.6118131875991821,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.21549476473099852,
+        "top_decile_squared_norm_energy_fraction": 0.3680448184201591,
+        "norm_mass_effective_sample_size": 100.14513326384609,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.4889070689678192,
+      "relative_l2": 0.86549311876297,
+      "norm_ratio": 0.5545982718467712
+    },
+    "train_mean": {
+      "cosine": 0.3881256580352783,
+      "relative_l2": 0.9473217129707336,
+      "norm_ratio": 0.40095722675323486
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.1007813960313797,
+        "ci95": [
+          0.08491280134767294,
+          0.11670881826430558
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.08182866871356964,
+        "ci95": [
+          -0.09864092525094748,
+          -0.06644021570682526
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.15364103019237518,
+        "ci95": [
+          0.10398391205817462,
+          0.20167426876723765
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.3958406448364258,
+      "relative_l2": 0.9158632159233093,
+      "norm_ratio": 0.48799073696136475
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.004091328475624323,
+      "relative_l2": 1.0642033815383911,
+      "norm_ratio": 0.41669514775276184
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.41720855236053467,
+      "mean_per_example_cosine": 0.42214256525039673,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.8932223320007324,
+      "relative_l2": 0.44973239302635193,
+      "norm_ratio": 0.9062138795852661
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9048563241958618,
+      "relative_l2": 0.44962644577026367,
+      "norm_ratio": 0.9789056181907654
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua_sensitivity_w0.0005",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.007011387497186661,
+      "empirical_mean_energy_fraction": 0.013943802565336227,
+      "centered_participation_ratio": 29.180450462082103,
+      "centered_top8_variance_fraction": 0.43162655901350205,
+      "median_true_gradient_norm": 0.7819146513938904,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.9850158625049517,
+        "quantiles": {
+          "p10": 0.4212516605854035,
+          "p50": 0.7857666313648224,
+          "p90": 1.7658596515655516,
+          "p99": 3.0455078148841883
+        },
+        "maximum": 3.7149198055267334,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.24319048301760568,
+        "top_decile_squared_norm_energy_fraction": 0.4442667168355738,
+        "norm_mass_effective_sample_size": 93.0097291059139,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.1048964336514473,
+      "relative_l2": 0.9955339431762695,
+      "norm_ratio": 0.15702085196971893
+    },
+    "train_mean": {
+      "cosine": 0.07567209750413895,
+      "relative_l2": 0.9993698000907898,
+      "norm_ratio": 0.11234541237354279
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.02922433614730835,
+        "ci95": [
+          -0.0063340654829517,
+          0.06586257331073282
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.0038358569145202637,
+        "ci95": [
+          -0.009136073826812207,
+          0.00135975518496707
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.044675447046756744,
+        "ci95": [
+          0.0338571410626173,
+          0.05549347111955285
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.09438641369342804,
+      "relative_l2": 0.9965560436248779,
+      "norm_ratio": 0.16389450430870056
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.034105896949768066,
+      "relative_l2": 1.0009870529174805,
+      "norm_ratio": 0.11219323426485062
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.09024696052074432,
+      "mean_per_example_cosine": 0.10775532573461533,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.25638458132743835,
+      "relative_l2": 0.9859803915023804,
+      "norm_ratio": 0.44794172048568726
+    },
+    "random_batch32_mean": {
+      "cosine": 0.3883717656135559,
+      "relative_l2": 0.9324854016304016,
+      "norm_ratio": 0.5217149257659912
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua_sensitivity_w3e-06",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.15975461900234222,
+      "empirical_mean_energy_fraction": 0.12987248599529266,
+      "centered_participation_ratio": 39.065931654592674,
+      "centered_top8_variance_fraction": 0.35846861361756327,
+      "median_true_gradient_norm": 0.18512138724327087,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.2158468505658675,
+        "quantiles": {
+          "p10": 0.09675186201930047,
+          "p50": 0.185345359146595,
+          "p90": 0.38838197886943815,
+          "p99": 0.5886369490623478
+        },
+        "maximum": 0.634493350982666,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.21643358644075877,
+        "top_decile_squared_norm_energy_fraction": 0.37059182081538933,
+        "norm_mass_effective_sample_size": 99.83268496479701,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.46668902039527893,
+      "relative_l2": 0.8766692876815796,
+      "norm_ratio": 0.48566633462905884
+    },
+    "train_mean": {
+      "cosine": 0.39942485094070435,
+      "relative_l2": 0.9445903301239014,
+      "norm_ratio": 0.4148174822330475
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.0672641396522522,
+        "ci95": [
+          0.052582083642482756,
+          0.08173307757824659
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.06792102754116058,
+        "ci95": [
+          -0.08571617789566517,
+          -0.052415008284151576
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.07084889709949493,
+        "ci95": [
+          0.020438872696831825,
+          0.11954715140163898
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.34730085730552673,
+      "relative_l2": 0.9320995807647705,
+      "norm_ratio": 0.4150172173976898
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.0030843170825392008,
+      "relative_l2": 1.0684229135513306,
+      "norm_ratio": 0.4319908618927002
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.36597996950149536,
+      "mean_per_example_cosine": 0.37829095125198364,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.8953798413276672,
+      "relative_l2": 0.44738948345184326,
+      "norm_ratio": 0.8525621294975281
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9108622074127197,
+      "relative_l2": 0.437985897064209,
+      "norm_ratio": 0.9869803190231323
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_aqua_sensitivity_w5e-05",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 293370891,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.265499472618103,
+      "empirical_mean_energy_fraction": 0.20111627876758575,
+      "centered_participation_ratio": 23.022762765002398,
+      "centered_top8_variance_fraction": 0.47786446059936516,
+      "median_true_gradient_norm": 0.2987533211708069,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.3729721595009323,
+        "quantiles": {
+          "p10": 0.1536157861351967,
+          "p50": 0.3021541088819504,
+          "p90": 0.6681769728660584,
+          "p99": 1.1425638902187352
+        },
+        "maximum": 1.3589969873428345,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.2309334394726205,
+        "top_decile_squared_norm_energy_fraction": 0.41167850728141814,
+        "norm_mass_effective_sample_size": 94.60072259560748,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.5916460752487183,
+      "relative_l2": 0.8012073636054993,
+      "norm_ratio": 0.6163879036903381
+    },
+    "train_mean": {
+      "cosine": 0.5153116583824158,
+      "relative_l2": 0.9144891500473022,
+      "norm_ratio": 0.5538867712020874
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.07633449882268906,
+        "ci95": [
+          0.06210246179252863,
+          0.0909268831834197
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.1132817417383194,
+        "ci95": [
+          -0.14781792014837264,
+          -0.0858798310160637
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.06250110268592834,
+        "ci95": [
+          -0.011795457825064658,
+          0.12918014749884602
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.4450826644897461,
+      "relative_l2": 0.890049934387207,
+      "norm_ratio": 0.5336751937866211
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.00014921417459845543,
+      "relative_l2": 1.1222333908081055,
+      "norm_ratio": 0.5912230014801025
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.4794479012489319,
+      "mean_per_example_cosine": 0.4807969927787781,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9472971558570862,
+      "relative_l2": 0.32695868611335754,
+      "norm_ratio": 0.8906364440917969
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9535260796546936,
+      "relative_l2": 0.3362240791320801,
+      "norm_ratio": 1.0309256315231323
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_arc_challenge",
+    "predictor": "predictor",
+    "n": 64,
+    "resampling_group": "1p5b_arc_challenge",
+    "audit_source_sha256": "e2cfa462a22151c34a01b9e679730af72dc0cafc6ee7b82cd29c4a8ed824264a",
+    "resampling_seed": 2969640585,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 64,
+      "mean_pairwise_cosine": 0.11665942519903183,
+      "empirical_mean_energy_fraction": 0.024747010320425034,
+      "centered_participation_ratio": 9.389535177316054,
+      "centered_top8_variance_fraction": 0.7766110258439076,
+      "median_true_gradient_norm": 0.1289176493883133,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.9285818597381876,
+        "quantiles": {
+          "p10": 0.007449641590937972,
+          "p50": 0.13804840296506882,
+          "p90": 2.746733212471009,
+          "p99": 5.287023525238036
+        },
+        "maximum": 5.629340171813965,
+        "top_decile_count": 7,
+        "top_decile_fraction": 0.109375,
+        "top_decile_norm_mass_fraction": 0.4658104764755408,
+        "top_decile_squared_norm_energy_fraction": 0.6809737833350258,
+        "norm_mass_effective_sample_size": 20.280003663560855,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.03299231827259064,
+      "relative_l2": 2.6423940658569336,
+      "norm_ratio": 2.1009066104888916
+    },
+    "train_mean": {
+      "cosine": -0.03976704552769661,
+      "relative_l2": 7.25183629989624,
+      "norm_ratio": 6.705147743225098
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.07275936007499695,
+        "ci95": [
+          0.013244569138623775,
+          0.13111293166875837
+        ]
+      },
+      "relative_l2": {
+        "mean": -4.609441757202148,
+        "ci95": [
+          -6.462124061584473,
+          -3.031652188301087
+        ]
+      },
+      "norm_ratio": {
+        "mean": -4.604240894317627,
+        "ci95": [
+          -6.419528448581695,
+          -3.0570324540138247
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.5000959634780884,
+      "relative_l2": 0.6592782735824585,
+      "norm_ratio": 0.591882050037384
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.526291012763977,
+      "relative_l2": 0.5499998927116394,
+      "norm_ratio": 0.5683420896530151
+    },
+    "across_example_centered": {
+      "frobenius_cosine": -0.0003381049900781363,
+      "mean_per_example_cosine": -0.0008540430571883917,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.06118554249405861,
+      "relative_l2": 0.9987863302230835,
+      "norm_ratio": 0.09107619524002075
+    },
+    "random_batch32_mean": {
+      "cosine": 0.520399808883667,
+      "relative_l2": 0.86431884765625,
+      "norm_ratio": 0.4301603436470032
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_arc_challenge",
+    "predictor": "predictor_s124",
+    "n": 64,
+    "resampling_group": "1p5b_arc_challenge",
+    "audit_source_sha256": "e2cfa462a22151c34a01b9e679730af72dc0cafc6ee7b82cd29c4a8ed824264a",
+    "resampling_seed": 2969640585,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 64,
+      "mean_pairwise_cosine": 0.11665942519903183,
+      "empirical_mean_energy_fraction": 0.024747010320425034,
+      "centered_participation_ratio": 9.389535177316054,
+      "centered_top8_variance_fraction": 0.7766110258439076,
+      "median_true_gradient_norm": 0.1289176493883133,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.9285818597381876,
+        "quantiles": {
+          "p10": 0.007449641590937972,
+          "p50": 0.13804840296506882,
+          "p90": 2.746733212471009,
+          "p99": 5.287023525238036
+        },
+        "maximum": 5.629340171813965,
+        "top_decile_count": 7,
+        "top_decile_fraction": 0.109375,
+        "top_decile_norm_mass_fraction": 0.4658104764755408,
+        "top_decile_squared_norm_energy_fraction": 0.6809737833350258,
+        "norm_mass_effective_sample_size": 20.280003663560855,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.034496571868658066,
+      "relative_l2": 3.0039799213409424,
+      "norm_ratio": 2.484314441680908
+    },
+    "train_mean": {
+      "cosine": -0.03976704552769661,
+      "relative_l2": 7.25183629989624,
+      "norm_ratio": 6.705147743225098
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.07426361739635468,
+        "ci95": [
+          0.008491368405520916,
+          0.13817588686943044
+        ]
+      },
+      "relative_l2": {
+        "mean": -4.247856140136719,
+        "ci95": [
+          -5.991898679733277,
+          -2.7961498498916644
+        ]
+      },
+      "norm_ratio": {
+        "mean": -4.2208333015441895,
+        "ci95": [
+          -5.924794352054596,
+          -2.802053374052049
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.494723916053772,
+      "relative_l2": 0.6846036911010742,
+      "norm_ratio": 0.6203353404998779
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.526291012763977,
+      "relative_l2": 0.5499998927116394,
+      "norm_ratio": 0.5683420896530151
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.000835698563605547,
+      "mean_per_example_cosine": 0.001399726839736104,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": -0.02299797721207142,
+      "relative_l2": 1.011043667793274,
+      "norm_ratio": 0.126914381980896
+    },
+    "random_batch32_mean": {
+      "cosine": 0.520399808883667,
+      "relative_l2": 0.86431884765625,
+      "norm_ratio": 0.4301603436470032
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_arc_challenge",
+    "predictor": "predictor_s125",
+    "n": 64,
+    "resampling_group": "1p5b_arc_challenge",
+    "audit_source_sha256": "e2cfa462a22151c34a01b9e679730af72dc0cafc6ee7b82cd29c4a8ed824264a",
+    "resampling_seed": 2969640585,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 64,
+      "mean_pairwise_cosine": 0.11665942519903183,
+      "empirical_mean_energy_fraction": 0.024747010320425034,
+      "centered_participation_ratio": 9.389535177316054,
+      "centered_top8_variance_fraction": 0.7766110258439076,
+      "median_true_gradient_norm": 0.1289176493883133,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.9285818597381876,
+        "quantiles": {
+          "p10": 0.007449641590937972,
+          "p50": 0.13804840296506882,
+          "p90": 2.746733212471009,
+          "p99": 5.287023525238036
+        },
+        "maximum": 5.629340171813965,
+        "top_decile_count": 7,
+        "top_decile_fraction": 0.109375,
+        "top_decile_norm_mass_fraction": 0.4658104764755408,
+        "top_decile_squared_norm_energy_fraction": 0.6809737833350258,
+        "norm_mass_effective_sample_size": 20.280003663560855,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.0132759315893054,
+      "relative_l2": 3.2597901821136475,
+      "norm_ratio": 2.7391750812530518
+    },
+    "train_mean": {
+      "cosine": -0.03976704552769661,
+      "relative_l2": 7.25183629989624,
+      "norm_ratio": 6.705147743225098
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.053042974323034286,
+        "ci95": [
+          -0.017513950448483227,
+          0.12192338462918996
+        ]
+      },
+      "relative_l2": {
+        "mean": -3.9920458793640137,
+        "ci95": [
+          -5.648109567165375,
+          -2.599441206455231
+        ]
+      },
+      "norm_ratio": {
+        "mean": -3.9659721851348877,
+        "ci95": [
+          -5.595111322402954,
+          -2.5951980829238903
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.4861237406730652,
+      "relative_l2": 0.7061523199081421,
+      "norm_ratio": 0.642126202583313
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.526291012763977,
+      "relative_l2": 0.5499998927116394,
+      "norm_ratio": 0.5683420896530151
+    },
+    "across_example_centered": {
+      "frobenius_cosine": -0.0035443827509880066,
+      "mean_per_example_cosine": -0.00471535325050354,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": -0.13169945776462555,
+      "relative_l2": 1.02567458152771,
+      "norm_ratio": 0.13196904957294464
+    },
+    "random_batch32_mean": {
+      "cosine": 0.520399808883667,
+      "relative_l2": 0.86431884765625,
+      "norm_ratio": 0.4301603436470032
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_arc_easy",
+    "predictor": "predictor",
+    "n": 64,
+    "resampling_group": "1p5b_arc_easy",
+    "audit_source_sha256": "a23375507aa6c1ed67ff7351cfc96b591d8245fc7248165c6db86a5f934e64cb",
+    "resampling_seed": 1685812285,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 64,
+      "mean_pairwise_cosine": 0.37404412031173706,
+      "empirical_mean_energy_fraction": 0.025124991312623024,
+      "centered_participation_ratio": 3.6601186229398492,
+      "centered_top8_variance_fraction": 0.9966311458731695,
+      "median_true_gradient_norm": 0.02407141774892807,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.23711742868545116,
+        "quantiles": {
+          "p10": 0.008365898113697767,
+          "p50": 0.024917950853705406,
+          "p90": 0.43058576583862324,
+          "p99": 3.069125669002532
+        },
+        "maximum": 3.2957546710968018,
+        "top_decile_count": 7,
+        "top_decile_fraction": 0.109375,
+        "top_decile_norm_mass_fraction": 0.8044060581996729,
+        "top_decile_squared_norm_energy_fraction": 0.9829206638297064,
+        "norm_mass_effective_sample_size": 8.089636585242703,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.30190137028694153,
+      "relative_l2": 1.1172717809677124,
+      "norm_ratio": 0.6487590670585632
+    },
+    "train_mean": {
+      "cosine": 0.37652578949928284,
+      "relative_l2": 4.800854206085205,
+      "norm_ratio": 4.831252098083496
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": -0.07462435215711594,
+        "ci95": [
+          -0.14387499317526817,
+          -0.005198431294411468
+        ]
+      },
+      "relative_l2": {
+        "mean": -3.683582305908203,
+        "ci95": [
+          -4.808516788482666,
+          -2.671622383594513
+        ]
+      },
+      "norm_ratio": {
+        "mean": -4.182492733001709,
+        "ci95": [
+          -5.283752179145813,
+          -3.198275059461594
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.660700261592865,
+      "relative_l2": 0.5148348808288574,
+      "norm_ratio": 0.8758388757705688
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.6585234999656677,
+      "relative_l2": 0.5132728815078735,
+      "norm_ratio": 0.9012918472290039
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.00432094931602478,
+      "mean_per_example_cosine": 0.007496153935790062,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.23491865396499634,
+      "relative_l2": 0.982347846031189,
+      "norm_ratio": 0.08349025249481201
+    },
+    "random_batch32_mean": {
+      "cosine": 0.5618415474891663,
+      "relative_l2": 0.8751183152198792,
+      "norm_ratio": 0.7620983123779297
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_boolq",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_boolq",
+    "audit_source_sha256": "fc359f27f9d9a62f07681058906e98a47ff16f31f706dec33003fa5872c3cab0",
+    "resampling_seed": 4130163095,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.3524114787578583,
+      "empirical_mean_energy_fraction": 0.07254482060670853,
+      "centered_participation_ratio": 6.041751962606054,
+      "centered_top8_variance_fraction": 0.8156439361319756,
+      "median_true_gradient_norm": 0.46145254373550415,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.7850748853525147,
+        "quantiles": {
+          "p10": 0.13900419622659682,
+          "p50": 0.46789684891700745,
+          "p90": 1.864979076385498,
+          "p99": 4.097393858432771
+        },
+        "maximum": 6.884990215301514,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.3831931044472659,
+        "top_decile_squared_norm_energy_fraction": 0.7182712548299461,
+        "norm_mass_effective_sample_size": 53.27394280256192,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.6514633893966675,
+      "relative_l2": 0.82590252161026,
+      "norm_ratio": 0.5550488233566284
+    },
+    "train_mean": {
+      "cosine": 0.544057309627533,
+      "relative_l2": 1.1367528438568115,
+      "norm_ratio": 1.0031741857528687
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.10740609467029572,
+        "ci95": [
+          0.08705436252057552,
+          0.12723994627594948
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.3108503818511963,
+        "ci95": [
+          -0.43177368491888046,
+          -0.21148175597190896
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.44812536239624023,
+        "ci95": [
+          -0.5730016708374024,
+          -0.34186821654438976
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.43381983041763306,
+      "relative_l2": 0.8324326276779175,
+      "norm_ratio": 0.5498270392417908
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.21698082983493805,
+      "relative_l2": 1.0524876117706299,
+      "norm_ratio": 0.8146597743034363
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.19000853598117828,
+      "mean_per_example_cosine": 0.37196946144104004,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.7967060804367065,
+      "relative_l2": 0.6660787463188171,
+      "norm_ratio": 0.5048417448997498
+    },
+    "random_batch32_mean": {
+      "cosine": 0.8590238690376282,
+      "relative_l2": 0.5214707851409912,
+      "norm_ratio": 0.8582494854927063
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.6484819054603577,
+      "empirical_mean_energy_fraction": 0.6334710717201233,
+      "centered_participation_ratio": 18.931559377635416,
+      "centered_top8_variance_fraction": 0.47514518256124444,
+      "median_true_gradient_norm": 0.19029651582241058,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.18829579802695662,
+        "quantiles": {
+          "p10": 0.15087293088436127,
+          "p50": 0.1904350146651268,
+          "p90": 0.22204237729310988,
+          "p99": 0.25115603849291807
+        },
+        "maximum": 0.25882843136787415,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.12667861556371235,
+        "top_decile_squared_norm_energy_fraction": 0.15467994523864437,
+        "norm_mass_effective_sample_size": 125.04472593122628,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.8962752819061279,
+      "relative_l2": 0.42903003096580505,
+      "norm_ratio": 0.9134808778762817
+    },
+    "train_mean": {
+      "cosine": 0.8050188422203064,
+      "relative_l2": 0.5984974503517151,
+      "norm_ratio": 0.8008446097373962
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09125655889511108,
+        "ci95": [
+          0.08451756611466407,
+          0.09852556344121693
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.16946740448474884,
+        "ci95": [
+          -0.18108665607869626,
+          -0.15831001661717892
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.11263622343540192,
+        "ci95": [
+          0.09126266073435545,
+          0.13393752165138717
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.6939910054206848,
+      "relative_l2": 0.7102063298225403,
+      "norm_ratio": 0.7559219002723694
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.01670004427433014,
+      "relative_l2": 1.702134370803833,
+      "norm_ratio": 1.3683252334594727
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.6861932277679443,
+      "mean_per_example_cosine": 0.7046228647232056,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9908270239830017,
+      "relative_l2": 0.13554060459136963,
+      "norm_ratio": 1.000234603881836
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9910313487052917,
+      "relative_l2": 0.13584542274475098,
+      "norm_ratio": 0.9792376756668091
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown",
+    "predictor": "predictor_s124",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.6484819054603577,
+      "empirical_mean_energy_fraction": 0.6334710717201233,
+      "centered_participation_ratio": 18.931559377635416,
+      "centered_top8_variance_fraction": 0.47514518256124444,
+      "median_true_gradient_norm": 0.19029651582241058,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.18829579802695662,
+        "quantiles": {
+          "p10": 0.15087293088436127,
+          "p50": 0.1904350146651268,
+          "p90": 0.22204237729310988,
+          "p99": 0.25115603849291807
+        },
+        "maximum": 0.25882843136787415,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.12667861556371235,
+        "top_decile_squared_norm_energy_fraction": 0.15467994523864437,
+        "norm_mass_effective_sample_size": 125.04472593122628,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.8965843915939331,
+      "relative_l2": 0.4281606674194336,
+      "norm_ratio": 0.9148143529891968
+    },
+    "train_mean": {
+      "cosine": 0.8050188422203064,
+      "relative_l2": 0.5984974503517151,
+      "norm_ratio": 0.8008446097373962
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09156566113233566,
+        "ci95": [
+          0.08453198187053204,
+          0.09914465602487325
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.1703367680311203,
+        "ci95": [
+          -0.18271945416927338,
+          -0.15837512463331224
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.1139698326587677,
+        "ci95": [
+          0.09295277316123247,
+          0.1345656260848045
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.6946645379066467,
+      "relative_l2": 0.708970308303833,
+      "norm_ratio": 0.7626322507858276
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.01670004427433014,
+      "relative_l2": 1.702134370803833,
+      "norm_ratio": 1.3683252334594727
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.6902800798416138,
+      "mean_per_example_cosine": 0.7060381174087524,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9906108379364014,
+      "relative_l2": 0.1369427740573883,
+      "norm_ratio": 0.9977142214775085
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9910313487052917,
+      "relative_l2": 0.13584542274475098,
+      "norm_ratio": 0.9792376756668091
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown",
+    "predictor": "predictor_s125",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.6484819054603577,
+      "empirical_mean_energy_fraction": 0.6334710717201233,
+      "centered_participation_ratio": 18.931559377635416,
+      "centered_top8_variance_fraction": 0.47514518256124444,
+      "median_true_gradient_norm": 0.19029651582241058,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.18829579802695662,
+        "quantiles": {
+          "p10": 0.15087293088436127,
+          "p50": 0.1904350146651268,
+          "p90": 0.22204237729310988,
+          "p99": 0.25115603849291807
+        },
+        "maximum": 0.25882843136787415,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.12667861556371235,
+        "top_decile_squared_norm_energy_fraction": 0.15467994523864437,
+        "norm_mass_effective_sample_size": 125.04472593122628,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.8958211541175842,
+      "relative_l2": 0.4299682676792145,
+      "norm_ratio": 0.9123924970626831
+    },
+    "train_mean": {
+      "cosine": 0.8050188422203064,
+      "relative_l2": 0.5984974503517151,
+      "norm_ratio": 0.8008446097373962
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09080235660076141,
+        "ci95": [
+          0.08368634432554245,
+          0.09839425832033157
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.16852915287017822,
+        "ci95": [
+          -0.18064702525734902,
+          -0.15651150532066824
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.11154793202877045,
+        "ci95": [
+          0.0908394206315279,
+          0.13211937248706818
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.6921873092651367,
+      "relative_l2": 0.7122617959976196,
+      "norm_ratio": 0.7673021554946899
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.01670004427433014,
+      "relative_l2": 1.702134370803833,
+      "norm_ratio": 1.3683252334594727
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.6886892318725586,
+      "mean_per_example_cosine": 0.7042871713638306,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9900950193405151,
+      "relative_l2": 0.14050567150115967,
+      "norm_ratio": 0.9929497838020325
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9910313487052917,
+      "relative_l2": 0.13584542274475098,
+      "norm_ratio": 0.9792376756668091
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown_sensitivity_w0",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.6412739157676697,
+      "empirical_mean_energy_fraction": 0.6265747547149658,
+      "centered_participation_ratio": 18.953625848836417,
+      "centered_top8_variance_fraction": 0.47441460380960876,
+      "median_true_gradient_norm": 0.18056175112724304,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.17894360021455213,
+        "quantiles": {
+          "p10": 0.14248908013105394,
+          "p50": 0.18142271786928177,
+          "p90": 0.21210155934095382,
+          "p99": 0.24189163878560072
+        },
+        "maximum": 0.2476266622543335,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.12715246734901603,
+        "top_decile_squared_norm_energy_fraction": 0.15581246765840603,
+        "norm_mass_effective_sample_size": 124.99391836584283,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.8974592685699463,
+      "relative_l2": 0.4262368977069855,
+      "norm_ratio": 0.9061609506607056
+    },
+    "train_mean": {
+      "cosine": 0.8004569411277771,
+      "relative_l2": 0.605103611946106,
+      "norm_ratio": 0.797437310218811
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09700220823287964,
+        "ci95": [
+          0.08987337630242109,
+          0.10457796715199948
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.17886674404144287,
+        "ci95": [
+          -0.1909131020307541,
+          -0.1671140171587467
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.10872361063957214,
+        "ci95": [
+          0.08733382858335972,
+          0.1293469328433275
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.7051726579666138,
+      "relative_l2": 0.69772869348526,
+      "norm_ratio": 0.761316180229187
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.014761995524168015,
+      "relative_l2": 1.6819894313812256,
+      "norm_ratio": 1.3457292318344116
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.6994914412498474,
+      "mean_per_example_cosine": 0.7158632278442383,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9907076954841614,
+      "relative_l2": 0.13603010773658752,
+      "norm_ratio": 0.9878135323524475
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9907627105712891,
+      "relative_l2": 0.13776713609695435,
+      "norm_ratio": 0.9798948764801025
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown_sensitivity_w0.0005",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.1907576471567154,
+      "empirical_mean_energy_fraction": 0.14697079360485077,
+      "centered_participation_ratio": 17.82267861101347,
+      "centered_top8_variance_fraction": 0.5560499482544562,
+      "median_true_gradient_norm": 1.735692024230957,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 1.7994916862808168,
+        "quantiles": {
+          "p10": 1.1582326292991638,
+          "p50": 1.7375859022140503,
+          "p90": 2.3617898941040036,
+          "p99": 3.8962294602394123
+        },
+        "maximum": 6.125443935394287,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.1835687393300433,
+        "top_decile_squared_norm_energy_fraction": 0.31589179817084045,
+        "norm_mass_effective_sample_size": 112.382861064657,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.7277098894119263,
+      "relative_l2": 0.6651122570037842,
+      "norm_ratio": 0.7898206114768982
+    },
+    "train_mean": {
+      "cosine": 0.41897857189178467,
+      "relative_l2": 0.9049204587936401,
+      "norm_ratio": 0.44112926721572876
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.308731347322464,
+        "ci95": [
+          0.2778169006109238,
+          0.3397148050367832
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.23980812728405,
+        "ci95": [
+          -0.2663416363298893,
+          -0.21361466944217683
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.3486913740634918,
+        "ci95": [
+          0.32862875089049337,
+          0.36832834854722024
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.6587809324264526,
+      "relative_l2": 0.7353723645210266,
+      "norm_ratio": 0.7376328706741333
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.005468474235385656,
+      "relative_l2": 1.1173973083496094,
+      "norm_ratio": 0.49607402086257935
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.5997586250305176,
+      "mean_per_example_cosine": 0.66410231590271,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9198464751243591,
+      "relative_l2": 0.3974745273590088,
+      "norm_ratio": 0.9955796003341675
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9099552035331726,
+      "relative_l2": 0.4149148464202881,
+      "norm_ratio": 0.9298629760742188
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_countdown_sensitivity_w5e-05",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 1032381628,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.7219510078430176,
+      "empirical_mean_energy_fraction": 0.7069365382194519,
+      "centered_participation_ratio": 12.929586655818634,
+      "centered_top8_variance_fraction": 0.5409564029988905,
+      "median_true_gradient_norm": 0.3775267004966736,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.3709010954480618,
+        "quantiles": {
+          "p10": 0.2979532957077026,
+          "p50": 0.37772659957408905,
+          "p90": 0.44334177374839784,
+          "p99": 0.47533060431480406
+        },
+        "maximum": 0.4876546859741211,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.12532511487739947,
+        "top_decile_squared_norm_energy_fraction": 0.15133383915220502,
+        "norm_mass_effective_sample_size": 125.16285317037267,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.9282537698745728,
+      "relative_l2": 0.3585379719734192,
+      "norm_ratio": 0.9375928044319153
+    },
+    "train_mean": {
+      "cosine": 0.8496397733688354,
+      "relative_l2": 0.5371953248977661,
+      "norm_ratio": 0.8427050709724426
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.07861387729644775,
+        "ci95": [
+          0.07262228410691023,
+          0.08512816857546568
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.1786573827266693,
+        "ci95": [
+          -0.19156432300806045,
+          -0.16547494158148768
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.09488769620656967,
+        "ci95": [
+          0.07304430324584246,
+          0.11652782633900637
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.7433308959007263,
+      "relative_l2": 0.6615790128707886,
+      "norm_ratio": 0.8295193910598755
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.02209898643195629,
+      "relative_l2": 1.896047830581665,
+      "norm_ratio": 1.6007558107376099
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.7417650818824768,
+      "mean_per_example_cosine": 0.7535581588745117,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9937244057655334,
+      "relative_l2": 0.11228884756565094,
+      "norm_ratio": 0.9837886691093445
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9938702583312988,
+      "relative_l2": 0.11340164393186569,
+      "norm_ratio": 0.9781988263130188
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_gsm8k",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 3322436671,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.213127002120018,
+      "empirical_mean_energy_fraction": 0.1783028393983841,
+      "centered_participation_ratio": 31.89421095678879,
+      "centered_top8_variance_fraction": 0.41005041025740796,
+      "median_true_gradient_norm": 0.11566251516342163,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.13150745930033736,
+        "quantiles": {
+          "p10": 0.07266666740179062,
+          "p50": 0.11642489954829216,
+          "p90": 0.21987052708864213,
+          "p99": 0.32923027932643906
+        },
+        "maximum": 0.4421923756599426,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.21095593645730065,
+        "top_decile_squared_norm_energy_fraction": 0.3763678250252887,
+        "norm_mass_effective_sample_size": 105.01501671307864,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.467087984085083,
+      "relative_l2": 0.881874680519104,
+      "norm_ratio": 0.47584453225135803
+    },
+    "train_mean": {
+      "cosine": 0.4555169343948364,
+      "relative_l2": 0.9079594612121582,
+      "norm_ratio": 0.48093369603157043
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.011571044102311134,
+        "ci95": [
+          0.006011492514517158,
+          0.017762973345816134
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.026084715500473976,
+        "ci95": [
+          -0.03418118190020323,
+          -0.018470940086990604
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.005089163314551115,
+        "ci95": [
+          -0.03805170152336359,
+          0.026931165391579255
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.2171553373336792,
+      "relative_l2": 0.9728763103485107,
+      "norm_ratio": 0.2726929485797882
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.014612868428230286,
+      "relative_l2": 1.1091722249984741,
+      "norm_ratio": 0.5293534398078918
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.2273654043674469,
+      "mean_per_example_cosine": 0.24224936962127686,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.907360851764679,
+      "relative_l2": 0.4211600422859192,
+      "norm_ratio": 0.8905389904975891
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9242285490036011,
+      "relative_l2": 0.3920510411262512,
+      "norm_ratio": 0.9841094017028809
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_gsm8k_sensitivity_w0",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 3322436671,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.18182356655597687,
+      "empirical_mean_energy_fraction": 0.1520429253578186,
+      "centered_participation_ratio": 35.627313531414764,
+      "centered_top8_variance_fraction": 0.37983529495703794,
+      "median_true_gradient_norm": 0.10314992815256119,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.11634060682263225,
+        "quantiles": {
+          "p10": 0.06433756947517395,
+          "p50": 0.10360753163695335,
+          "p90": 0.1940274178981781,
+          "p99": 0.2844051742553712
+        },
+        "maximum": 0.40550321340560913,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.2097043336121993,
+        "top_decile_squared_norm_energy_fraction": 0.3738256669428414,
+        "norm_mass_effective_sample_size": 104.97848124294498,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.45186740159988403,
+      "relative_l2": 0.8889169096946716,
+      "norm_ratio": 0.4963172674179077
+    },
+    "train_mean": {
+      "cosine": 0.4206556975841522,
+      "relative_l2": 0.9212071895599365,
+      "norm_ratio": 0.43899261951446533
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.031211674213409424,
+        "ci95": [
+          0.019696563202887773,
+          0.04289776002988219
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.032290369272232056,
+        "ci95": [
+          -0.04074472514912486,
+          -0.023842509463429452
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.057324688881635666,
+        "ci95": [
+          0.0260263251606375,
+          0.08869559355080125
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.26769107580184937,
+      "relative_l2": 0.965679407119751,
+      "norm_ratio": 0.374315083026886
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.009733336977660656,
+      "relative_l2": 1.0909463167190552,
+      "norm_ratio": 0.47635841369628906
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.2672271728515625,
+      "mean_per_example_cosine": 0.28873708844184875,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.8844475150108337,
+      "relative_l2": 0.4670965373516083,
+      "norm_ratio": 0.8753300905227661
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9094657301902771,
+      "relative_l2": 0.4240313470363617,
+      "norm_ratio": 0.9623268842697144
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_gsm8k_sensitivity_w0.0005",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 3322436671,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.008636493235826492,
+      "empirical_mean_energy_fraction": 0.01810852251946926,
+      "centered_participation_ratio": 26.2416380086763,
+      "centered_top8_variance_fraction": 0.44916334823740117,
+      "median_true_gradient_norm": 0.5121328234672546,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.5816000028280541,
+        "quantiles": {
+          "p10": 0.306680291891098,
+          "p50": 0.5133979618549347,
+          "p90": 0.8634218573570251,
+          "p99": 1.8236570250988016
+        },
+        "maximum": 1.8867684602737427,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.22284614638233474,
+        "top_decile_squared_norm_energy_fraction": 0.414770324866041,
+        "norm_mass_effective_sample_size": 101.01831034920761,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.17501160502433777,
+      "relative_l2": 0.981178343296051,
+      "norm_ratio": 0.20463110506534576
+    },
+    "train_mean": {
+      "cosine": 0.0837676003575325,
+      "relative_l2": 0.99928218126297,
+      "norm_ratio": 0.11104986816644669
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.09124399721622467,
+        "ci95": [
+          0.055381694436073305,
+          0.1268974207341671
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.018103772774338722,
+        "ci95": [
+          -0.02513088658452034,
+          -0.011355361016467216
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.09358124434947968,
+        "ci95": [
+          0.08136980570852756,
+          0.10667749047279358
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.16198864579200745,
+      "relative_l2": 0.9821775555610657,
+      "norm_ratio": 0.2158287912607193
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.02525726705789566,
+      "relative_l2": 1.0009396076202393,
+      "norm_ratio": 0.11092045158147812
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.19170209765434265,
+      "mean_per_example_cosine": 0.17667841911315918,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.1803928017616272,
+      "relative_l2": 1.0203777551651,
+      "norm_ratio": 0.4527794420719147
+    },
+    "random_batch32_mean": {
+      "cosine": 0.4872291088104248,
+      "relative_l2": 0.8767085671424866,
+      "norm_ratio": 0.48042574524879456
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_gsm8k_sensitivity_w3e-06",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 3322436671,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.19021233916282654,
+      "empirical_mean_energy_fraction": 0.15930716693401337,
+      "centered_participation_ratio": 34.549518712230814,
+      "centered_top8_variance_fraction": 0.3888862049451964,
+      "median_true_gradient_norm": 0.10720418393611908,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.12078362129977904,
+        "quantiles": {
+          "p10": 0.06653148978948593,
+          "p50": 0.10819240659475327,
+          "p90": 0.20093956142663955,
+          "p99": 0.29868078410625476
+        },
+        "maximum": 0.41708827018737793,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.20970780378010975,
+        "top_decile_squared_norm_energy_fraction": 0.37380956082784933,
+        "norm_mass_effective_sample_size": 105.05048072362844,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.44233301281929016,
+      "relative_l2": 0.8933331966400146,
+      "norm_ratio": 0.4596254825592041
+    },
+    "train_mean": {
+      "cosine": 0.43014219403266907,
+      "relative_l2": 0.917754054069519,
+      "norm_ratio": 0.4507017135620117
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.012190797366201878,
+        "ci95": [
+          0.0014521368808345875,
+          0.02347575686872005
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.024420790374279022,
+        "ci95": [
+          -0.03253263309597969,
+          -0.01664263554848731
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.008923811838030815,
+        "ci95": [
+          -0.024389762524515392,
+          0.0414007818326353
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.22702044248580933,
+      "relative_l2": 0.9747454524040222,
+      "norm_ratio": 0.32603004574775696
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.011486909352242947,
+      "relative_l2": 1.0955846309661865,
+      "norm_ratio": 0.4908633530139923
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.24362829327583313,
+      "mean_per_example_cosine": 0.2568972706794739,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.8784576654434204,
+      "relative_l2": 0.47914496064186096,
+      "norm_ratio": 0.841814398765564
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9139399528503418,
+      "relative_l2": 0.414590060710907,
+      "norm_ratio": 0.9690769910812378
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_gsm8k_sensitivity_w5e-05",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 3322436671,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.2166813611984253,
+      "empirical_mean_energy_fraction": 0.171018585562706,
+      "centered_participation_ratio": 21.714396666019706,
+      "centered_top8_variance_fraction": 0.4875470582241023,
+      "median_true_gradient_norm": 0.1673993021249771,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.19304903093143366,
+        "quantiles": {
+          "p10": 0.10990628898143769,
+          "p50": 0.17059966176748276,
+          "p90": 0.31042970120906827,
+          "p99": 0.5124505990743639
+        },
+        "maximum": 0.6105130314826965,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.21599203238200845,
+        "top_decile_squared_norm_energy_fraction": 0.38964882906034337,
+        "norm_mass_effective_sample_size": 103.72565690325943,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.4826831817626953,
+      "relative_l2": 0.8720712661743164,
+      "norm_ratio": 0.4653637409210205
+    },
+    "train_mean": {
+      "cosine": 0.4598563015460968,
+      "relative_l2": 0.9068850874900818,
+      "norm_ratio": 0.5138662457466125
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.022826913744211197,
+        "ci95": [
+          0.01120141064748168,
+          0.035485083051025865
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.034813858568668365,
+        "ci95": [
+          -0.044804160948842764,
+          -0.025388160999864344
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.04850250482559204,
+        "ci95": [
+          -0.082105453312397,
+          -0.01616217787377537
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.2511075735092163,
+      "relative_l2": 0.964227557182312,
+      "norm_ratio": 0.31918832659721375
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.04736322909593582,
+      "relative_l2": 1.1104938983917236,
+      "norm_ratio": 0.566292941570282
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.28183895349502563,
+      "mean_per_example_cosine": 0.27869749069213867,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9032836556434631,
+      "relative_l2": 0.4328199028968811,
+      "norm_ratio": 0.8442185521125793
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9292151927947998,
+      "relative_l2": 0.3914956748485565,
+      "norm_ratio": 1.0458505153656006
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_math",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_math",
+    "audit_source_sha256": "887ea8cb5beacc00b4ccd9bd31ddd12f9950e625103f13ec2551701bbe0c6653",
+    "resampling_seed": 2856794284,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.13843490183353424,
+      "empirical_mean_energy_fraction": 0.13093918561935425,
+      "centered_participation_ratio": 32.41771843156577,
+      "centered_top8_variance_fraction": 0.3674316378831373,
+      "median_true_gradient_norm": 0.07716702669858932,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.09469104038726073,
+        "quantiles": {
+          "p10": 0.0489499393850565,
+          "p50": 0.07724666222929955,
+          "p90": 0.17264549285173417,
+          "p99": 0.24049921378493314
+        },
+        "maximum": 0.2857915759086609,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.22740542743010742,
+        "top_decile_squared_norm_energy_fraction": 0.4026857539277133,
+        "norm_mass_effective_sample_size": 99.09856288840933,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.37078961730003357,
+      "relative_l2": 0.9196196794509888,
+      "norm_ratio": 0.4016813039779663
+    },
+    "train_mean": {
+      "cosine": 0.3717917799949646,
+      "relative_l2": 0.9512277841567993,
+      "norm_ratio": 0.34272655844688416
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": -0.0010021643247455359,
+        "ci95": [
+          -0.005809673632029444,
+          0.0035870339488610578
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.031608156859874725,
+        "ci95": [
+          -0.0431988044641912,
+          -0.021273602917790416
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.05895479395985603,
+        "ci95": [
+          0.01675135116092861,
+          0.10169302485883235
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.22049131989479065,
+      "relative_l2": 0.9685375690460205,
+      "norm_ratio": 0.28535541892051697
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.04579349607229233,
+      "relative_l2": 1.0574469566345215,
+      "norm_ratio": 0.3562277555465698
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.297850102186203,
+      "mean_per_example_cosine": 0.27715420722961426,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.8362025022506714,
+      "relative_l2": 0.5455307960510254,
+      "norm_ratio": 0.8425446152687073
+    },
+    "random_batch32_mean": {
+      "cosine": 0.8581091165542603,
+      "relative_l2": 0.5402067303657532,
+      "norm_ratio": 0.9831187725067139
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_openbookqa",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "1p5b_openbookqa",
+    "audit_source_sha256": "c4444c6507040f2fdb8fdbe4efaa30c85f4315b86aa544c6671ccb5576d5f174",
+    "resampling_seed": 1890324608,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.05326263979077339,
+      "empirical_mean_energy_fraction": 0.008434274233877659,
+      "centered_participation_ratio": 19.879828233925277,
+      "centered_top8_variance_fraction": 0.5141306403543309,
+      "median_true_gradient_norm": 0.773464560508728,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 1.0954733560320165,
+        "quantiles": {
+          "p10": 0.025229080207645894,
+          "p50": 0.7775991559028625,
+          "p90": 2.7454564332962037,
+          "p99": 3.776511957645417
+        },
+        "maximum": 3.8968441486358643,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.3068007450430076,
+        "top_decile_squared_norm_energy_fraction": 0.49814671587785064,
+        "norm_mass_effective_sample_size": 67.98733206279849,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.16142845153808594,
+      "relative_l2": 1.0082635879516602,
+      "norm_ratio": 0.1712123155593872
+    },
+    "train_mean": {
+      "cosine": -0.08788710832595825,
+      "relative_l2": 1.583319067955017,
+      "norm_ratio": 0.7661045789718628
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.24931557476520538,
+        "ci95": [
+          0.1801271576434374,
+          0.31908637285232544
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.5750555396080017,
+        "ci95": [
+          -0.853518146276474,
+          -0.3337844841182233
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.594892144203186,
+        "ci95": [
+          -0.8579315602779388,
+          -0.37041895166039474
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.31322169303894043,
+      "relative_l2": 0.851367712020874,
+      "norm_ratio": 0.2575201988220215
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.3004448115825653,
+      "relative_l2": 0.8581205606460571,
+      "norm_ratio": 0.24116529524326324
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.01674853451550007,
+      "mean_per_example_cosine": -0.011245006695389748,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": -0.15007291734218597,
+      "relative_l2": 1.0096557140350342,
+      "norm_ratio": 0.059840813279151917
+    },
+    "random_batch32_mean": {
+      "cosine": 0.15276920795440674,
+      "relative_l2": 0.9963434338569641,
+      "norm_ratio": 0.2577803134918213
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "1p5b_svamp",
+    "predictor": "predictor",
+    "n": 32,
+    "resampling_group": "1p5b_svamp",
+    "audit_source_sha256": "bc5241448b7188a8919d95a94fa0a7089be4f73ba47a11459fce31486ca35e3d",
+    "resampling_seed": 238196062,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 32,
+      "mean_pairwise_cosine": 0.450206995010376,
+      "empirical_mean_energy_fraction": 0.3815200924873352,
+      "centered_participation_ratio": 5.14571705983731,
+      "centered_top8_variance_fraction": 0.7664462450465995,
+      "median_true_gradient_norm": 0.8627250790596008,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.9443633873015642,
+        "quantiles": {
+          "p10": 0.6412014544010163,
+          "p50": 0.8906756341457367,
+          "p90": 1.3637211203575135,
+          "p99": 1.8010493683815008
+        },
+        "maximum": 1.9038174152374268,
+        "top_decile_count": 4,
+        "top_decile_fraction": 0.125,
+        "top_decile_norm_mass_fraction": 0.20715271514931405,
+        "top_decile_squared_norm_energy_fraction": 0.3144305337102747,
+        "norm_mass_effective_sample_size": 28.792270997324337,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.6990389823913574,
+      "relative_l2": 0.697772204875946,
+      "norm_ratio": 0.6776315569877625
+    },
+    "train_mean": {
+      "cosine": 0.674960732460022,
+      "relative_l2": 0.7401254773139954,
+      "norm_ratio": 0.7083996534347534
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.024078233167529106,
+        "ci95": [
+          0.00594068099744618,
+          0.04309314852580427
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.04235323518514633,
+        "ci95": [
+          -0.07030337974429131,
+          -0.018508757324889314
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.030768074095249176,
+        "ci95": [
+          -0.0938952375203371,
+          0.02335764979943631
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.3300764560699463,
+      "relative_l2": 0.9456006288528442,
+      "norm_ratio": 0.46622464060783386
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.03471522778272629,
+      "relative_l2": 1.3902204036712646,
+      "norm_ratio": 0.9997605085372925
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.3096029460430145,
+      "mean_per_example_cosine": 0.3597590923309326,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9615630507469177,
+      "relative_l2": 0.2792005240917206,
+      "norm_ratio": 0.9110183119773865
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9843711256980896,
+      "relative_l2": 0.1781969666481018,
+      "norm_ratio": 1.0115247964859009
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "7b_aqua",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "7b_aqua",
+    "audit_source_sha256": "1a684e362246301aed08cbaf4756ee9c12f4faad94d691497af8b9fcc1f1f016",
+    "resampling_seed": 1480927045,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.6270532608032227,
+      "empirical_mean_energy_fraction": 0.5336306095123291,
+      "centered_participation_ratio": 10.442944427593611,
+      "centered_top8_variance_fraction": 0.5503099570683434,
+      "median_true_gradient_norm": 0.7609968781471252,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.8739747825311497,
+        "quantiles": {
+          "p10": 0.4486564964056015,
+          "p50": 0.7631218433380127,
+          "p90": 1.3878159999847413,
+          "p99": 2.0455815768241883
+        },
+        "maximum": 2.4402801990509033,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.19396018879416072,
+        "top_decile_squared_norm_energy_fraction": 0.3178176467135731,
+        "norm_mass_effective_sample_size": 106.39297797363425,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.766301691532135,
+      "relative_l2": 0.6923124194145203,
+      "norm_ratio": 0.5630525350570679
+    },
+    "train_mean": {
+      "cosine": 0.7912213206291199,
+      "relative_l2": 0.7049087285995483,
+      "norm_ratio": 0.84336256980896
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": -0.024919603019952774,
+        "ci95": [
+          -0.028435844462364912,
+          -0.021489786449819807
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.012596266344189644,
+        "ci95": [
+          -0.06182723715901375,
+          0.026383794611319893
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.28031012415885925,
+        "ci95": [
+          -0.35234184861183165,
+          -0.21722345799207696
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.18367433547973633,
+      "relative_l2": 1.05703604221344,
+      "norm_ratio": 0.61208176612854
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.02593379281461239,
+      "relative_l2": 1.5704658031463623,
+      "norm_ratio": 1.2581257820129395
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.3552343249320984,
+      "mean_per_example_cosine": 0.3339846134185791,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9596042633056641,
+      "relative_l2": 0.432734876871109,
+      "norm_ratio": 0.6313323378562927
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9920756220817566,
+      "relative_l2": 0.1529630869626999,
+      "norm_ratio": 1.0341497659683228
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "7b_arc_challenge",
+    "predictor": "predictor",
+    "n": 64,
+    "resampling_group": "7b_arc_challenge",
+    "audit_source_sha256": "e2cfa462a22151c34a01b9e679730af72dc0cafc6ee7b82cd29c4a8ed824264a",
+    "resampling_seed": 910786223,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 64,
+      "mean_pairwise_cosine": 0.18130522966384888,
+      "empirical_mean_energy_fraction": 0.018740566447377205,
+      "centered_participation_ratio": 4.817496228028851,
+      "centered_top8_variance_fraction": 0.997285728140973,
+      "median_true_gradient_norm": 0.00011125295714009553,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 1.2015319190623472,
+        "quantiles": {
+          "p10": 1.1163869112351677e-05,
+          "p50": 0.00013066547398921102,
+          "p90": 5.734382414817818,
+          "p99": 15.042021131515499
+        },
+        "maximum": 15.971274375915527,
+        "top_decile_count": 7,
+        "top_decile_fraction": 0.109375,
+        "top_decile_norm_mass_fraction": 0.9077978137859122,
+        "top_decile_squared_norm_energy_fraction": 0.9793419828813722,
+        "norm_mass_effective_sample_size": 7.394243274763668,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": -0.0012779623502865434,
+      "relative_l2": 5690.65380859375,
+      "norm_ratio": 5690.46435546875
+    },
+    "train_mean": {
+      "cosine": -0.10140451788902283,
+      "relative_l2": 6893.01220703125,
+      "norm_ratio": 6892.716796875
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.10012654960155487,
+        "ci95": [
+          0.06751904245465994,
+          0.13142368569970128
+        ]
+      },
+      "relative_l2": {
+        "mean": -1202.35888671875,
+        "ci95": [
+          -1787.5279724121094,
+          -639.1594253540047
+        ]
+      },
+      "norm_ratio": {
+        "mean": -1202.2518310546875,
+        "ci95": [
+          -1787.4397094726562,
+          -639.0558975219734
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.6388827562332153,
+      "relative_l2": 0.8438282012939453,
+      "norm_ratio": 1.0778402090072632
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.8145281672477722,
+      "relative_l2": 0.20990842580795288,
+      "norm_ratio": 0.8259325623512268
+    },
+    "across_example_centered": {
+      "frobenius_cosine": -0.0045893932692706585,
+      "mean_per_example_cosine": 4.935718607157469e-06,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": -0.002594136632978916,
+      "relative_l2": 1.0246447324752808,
+      "norm_ratio": 0.2131516933441162
+    },
+    "random_batch32_mean": {
+      "cosine": 0.23073722422122955,
+      "relative_l2": 0.9915056824684143,
+      "norm_ratio": 0.3720426857471466
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "7b_countdown",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "7b_countdown",
+    "audit_source_sha256": "91fb43ca813140eec6e741234ffa4202865cae5048ec593de54575ec9fe744ee",
+    "resampling_seed": 3675878185,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.7822437286376953,
+      "empirical_mean_energy_fraction": 0.7696537971496582,
+      "centered_participation_ratio": 30.94273764674133,
+      "centered_top8_variance_fraction": 0.39999877889892393,
+      "median_true_gradient_norm": 0.2634173035621643,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.26166509184986353,
+        "quantiles": {
+          "p10": 0.22451926171779632,
+          "p50": 0.26341764628887177,
+          "p90": 0.29665327072143555,
+          "p99": 0.30947272390127184
+        },
+        "maximum": 0.38083237409591675,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.11975906115257315,
+        "top_decile_squared_norm_energy_fraction": 0.14021213508666672,
+        "norm_mass_effective_sample_size": 126.49600719797127,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.92074054479599,
+      "relative_l2": 0.3728788197040558,
+      "norm_ratio": 0.9314029216766357
+    },
+    "train_mean": {
+      "cosine": 0.884171187877655,
+      "relative_l2": 0.4608916640281677,
+      "norm_ratio": 0.8743830919265747
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.03656932711601257,
+        "ci95": [
+          0.03269361387938261,
+          0.04115246655419469
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.08801289647817612,
+        "ci95": [
+          -0.09575337376445532,
+          -0.08081712685525418
+        ]
+      },
+      "norm_ratio": {
+        "mean": 0.0570199117064476,
+        "ci95": [
+          0.04151546889916062,
+          0.07281511295586825
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.5879878401756287,
+      "relative_l2": 0.8013839721679688,
+      "norm_ratio": 0.6526402235031128
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": -0.03407159447669983,
+      "relative_l2": 2.2698769569396973,
+      "norm_ratio": 1.9988795518875122
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.5814016461372375,
+      "mean_per_example_cosine": 0.6031227111816406,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9940812587738037,
+      "relative_l2": 0.1088423803448677,
+      "norm_ratio": 1.0016189813613892
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9949504733085632,
+      "relative_l2": 0.10128451883792877,
+      "norm_ratio": 0.9862760901451111
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  },
+  {
+    "condition": "7b_gsm8k",
+    "predictor": "predictor",
+    "n": 128,
+    "resampling_group": "7b_gsm8k",
+    "audit_source_sha256": "87e31f9fb0ca258e140e015566e51eb3d5b53fc9e24046267b61f63d97dc770e",
+    "resampling_seed": 2345366548,
+    "resampling_scope": "Base-condition-stable bootstrap indices and batch partitions, shared across predictor seeds and warmup-sensitivity states after verifying matching source and ordered token counts. Collection uses the same deterministic length-sorted audit order. Adding other conditions does not change these groups.",
+    "geometry": {
+      "audit_n": 128,
+      "mean_pairwise_cosine": 0.3678581118583679,
+      "empirical_mean_energy_fraction": 0.2761530578136444,
+      "centered_participation_ratio": 12.222345548708384,
+      "centered_top8_variance_fraction": 0.595600255002359,
+      "median_true_gradient_norm": 0.7177212834358215,
+      "interpretation": "Empirical geometry of held-out token-normalized LoRA gradients at this state. Rank is capped by audit sample count; does not establish population rank or isolate adapter factorization effects.",
+      "norm_distribution": {
+        "mean": 0.850195464445278,
+        "quantiles": {
+          "p10": 0.41755298972129823,
+          "p50": 0.7233084440231323,
+          "p90": 1.3972530245780945,
+          "p99": 3.010795586109163
+        },
+        "maximum": 3.43452787399292,
+        "top_decile_count": 13,
+        "top_decile_fraction": 0.1015625,
+        "top_decile_norm_mass_fraction": 0.2529184551930817,
+        "top_decile_squared_norm_energy_fraction": 0.4945381991509916,
+        "norm_mass_effective_sample_size": 92.3581024071011,
+        "scope": "Post-hoc descriptive distribution of individual token-normalized LoRA gradient norms. Top decile uses ceil(0.1*n) examples. Squared-norm energy is not the vector norm of their sum and does not measure cancellation. No training or selection feedback."
+      }
+    },
+    "predictor_metrics": {
+      "cosine": 0.6225106120109558,
+      "relative_l2": 0.7879433631896973,
+      "norm_ratio": 0.5863652229309082
+    },
+    "train_mean": {
+      "cosine": 0.6055371165275574,
+      "relative_l2": 0.8462655544281006,
+      "norm_ratio": 0.6779789328575134
+    },
+    "paired_predictor_minus_mean": {
+      "cosine": {
+        "mean": 0.016973569989204407,
+        "ci95": [
+          0.006651889125350863,
+          0.027680860273540015
+        ]
+      },
+      "relative_l2": {
+        "mean": -0.0583222433924675,
+        "ci95": [
+          -0.07566986791789532,
+          -0.04224435025826098
+        ]
+      },
+      "norm_ratio": {
+        "mean": -0.09161366522312164,
+        "ci95": [
+          -0.1409882716834545,
+          -0.04224920896813274
+        ]
+      }
+    },
+    "residual_after_fixed_train_mean": {
+      "cosine": 0.32719430327415466,
+      "relative_l2": 0.9393500685691833,
+      "norm_ratio": 0.3907116651535034
+    },
+    "zero_output_residual_after_fixed_train_mean": {
+      "cosine": 0.051532842218875885,
+      "relative_l2": 1.2086050510406494,
+      "norm_ratio": 0.801875114440918
+    },
+    "across_example_centered": {
+      "frobenius_cosine": 0.4205603003501892,
+      "mean_per_example_cosine": 0.37162697315216064,
+      "scope": "Descriptive covariation across held-out examples after subtracting each matrix own held-out mean. Uses audit means only for this diagnostic, never training or selection. Constant predictions have zero centered variation; this is not an out-of-sample fitted centering rule."
+    },
+    "random_batch32_predictor": {
+      "cosine": 0.9582875967025757,
+      "relative_l2": 0.3082743287086487,
+      "norm_ratio": 0.8480368852615356
+    },
+    "random_batch32_mean": {
+      "cosine": 0.9702708721160889,
+      "relative_l2": 0.26805394887924194,
+      "norm_ratio": 1.0469179153442383
+    },
+    "uncertainty": "Bootstrap over the declared held-out gradient examples conditional on this fitted predictor; random batch partitions overlap and are descriptive only."
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "time": 1790838794.9809685,
+  "native_fused_encoder_flops": 483840,
+  "native_fused_output_bit_identical": true,
+  "bf16_frozen_linear_forward_input_backward_flops": {
+    "default": 229376,
+    "native": 229376
+  },
+  "expected_forward_backward_flops": 229376,
+  "native_backward_bit_identical": true,
+  "default_backward_max_difference": 0.0,
+  "native_coverage": {
+    "seen_operations": [
+      "aten._transformer_encoder_layer_fwd"
+    ],
+    "operations_without_flop_formula": [],
+    "custom_formula_operations": [
+      "aten._transformer_encoder_layer_fwd"
+    ],
+    "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+  }
+}

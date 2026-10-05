@@ -1,0 +1,111 @@
+{
+  "complete": true,
+  "post_hoc_descriptive": true,
+  "results": {
+    "Base": {
+      "runs": [
+        {
+          "tag": "base",
+          "correct": 964,
+          "strict_correct": 949,
+          "boxed": 1290
+        }
+      ],
+      "mean_accuracy_pct": 73.08567096285064,
+      "mean_strict_accuracy_pct": 71.94844579226687,
+      "mean_boxed_pct": 97.8013646702047
+    },
+    "reference": {
+      "runs": [
+        {
+          "tag": "reference_lr3e-05_s101__step32",
+          "correct": 973,
+          "strict_correct": 930,
+          "boxed": 1262
+        },
+        {
+          "tag": "reference_lr3e-05_s102__step32",
+          "correct": 967,
+          "strict_correct": 918,
+          "boxed": 1255
+        },
+        {
+          "tag": "reference_lr3e-05_s103__step32",
+          "correct": 971,
+          "strict_correct": 921,
+          "boxed": 1252
+        }
+      ],
+      "mean_accuracy_pct": 73.56583270154158,
+      "mean_strict_accuracy_pct": 69.97725549658833,
+      "mean_boxed_pct": 95.24892595400556
+    },
+    "student": {
+      "runs": [
+        {
+          "tag": "student_lr0.0003_s101__step32",
+          "correct": 974,
+          "strict_correct": 964,
+          "boxed": 1297
+        },
+        {
+          "tag": "student_lr0.0003_s102__step32",
+          "correct": 973,
+          "strict_correct": 965,
+          "boxed": 1301
+        },
+        {
+          "tag": "student_lr0.0003_s103__step32",
+          "correct": 974,
+          "strict_correct": 964,
+          "boxed": 1299
+        }
+      ],
+      "mean_accuracy_pct": 73.81854940611574,
+      "mean_strict_accuracy_pct": 73.11094263330807,
+      "mean_boxed_pct": 98.48369977255497
+    },
+    "teacher": {
+      "runs": [
+        {
+          "tag": "teacher_lr0.0001_s101__step256",
+          "correct": 985,
+          "strict_correct": 985,
+          "boxed": 1315
+        },
+        {
+          "tag": "teacher_lr0.0001_s102__step256",
+          "correct": 997,
+          "strict_correct": 997,
+          "boxed": 1313
+        },
+        {
+          "tag": "teacher_lr0.0001_s103__step256",
+          "correct": 989,
+          "strict_correct": 989,
+          "boxed": 1312
+        }
+      ],
+      "mean_accuracy_pct": 75.08213292898661,
+      "mean_strict_accuracy_pct": 75.08213292898661,
+      "mean_boxed_pct": 99.57038160222389
+    }
+  },
+  "complete_box_disagreements": [],
+  "report_lines": [
+    "### Answer-extraction sensitivity",
+    "",
+    "The primary score uses the saved `math_verify` full-response extraction and equivalence check. A separately saved strict score requires a correct answer in the last complete `\\boxed{}`. The table below reuses the frozen dev-selected checkpoints. This descriptive diagnostic does not replace the primary metric, select recipes, or claim a new significant result.",
+    "",
+    "| Version | Primary accuracy | Strict boxed-answer accuracy | Outputs with a complete final box |",
+    "|---|---:|---:|---:|",
+    "| Base | 73.09% | 71.95% | 97.80% |",
+    "| reference | 73.57% | 69.98% | 95.25% |",
+    "| student | 73.82% | 73.11% | 98.48% |",
+    "| teacher | 75.08% | 75.08% | 99.57% |",
+    "",
+    "Teacher-target endpoints have identical primary and strict correct counts. Reference-target training reduces boxed-answer compliance relative to Base. Thus target choice changes output behavior as well as the primary task score; the strict-versus-primary difference should not be presented as a pure reasoning gain.",
+    "",
+    "Among these frozen versions, **0** responses were primary-correct but strict-incorrect despite containing a complete final box. Complete raw outputs remain available for inspection. [Scoring diagnostic](results/scoring_diagnostic.json) · [Scorer implementation](scripts/evaluate.py)."
+  ]
+}

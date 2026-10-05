@@ -1,0 +1,86 @@
+[
+  {
+    "model": "1p5b",
+    "task": "aqua",
+    "n": 254,
+    "seeds": [
+      101,
+      102,
+      103
+    ],
+    "predictor_mean_accuracy": 0.5341207349081365,
+    "real_mean_accuracy": 0.5393700787401575,
+    "delta_pp": -0.5249343832020996,
+    "ci95_pp": [
+      -3.1496062992125977,
+      2.0997375328083985
+    ],
+    "predictor_per_seed": [
+      0.5393700787401575,
+      0.531496062992126,
+      0.531496062992126
+    ],
+    "real_per_seed": [
+      0.5551181102362205,
+      0.515748031496063,
+      0.547244094488189
+    ],
+    "interpretation": "Questions resampled jointly across3 runs sharing warmup and split; no full-pipeline uncertainty or seed selection. Policies and LRs frozen from primary development."
+  },
+  {
+    "model": "1p5b",
+    "task": "arc_challenge",
+    "n": 1172,
+    "seeds": [
+      101,
+      102,
+      103
+    ],
+    "predictor_mean_accuracy": 0.7329351535836177,
+    "real_mean_accuracy": 0.7323663253697383,
+    "delta_pp": 0.05688282138794084,
+    "ci95_pp": [
+      -0.2844141069397042,
+      0.39817974971558595
+    ],
+    "predictor_per_seed": [
+      0.7286689419795221,
+      0.7320819112627986,
+      0.7380546075085325
+    ],
+    "real_per_seed": [
+      0.734641638225256,
+      0.7320819112627986,
+      0.7303754266211604
+    ],
+    "interpretation": "Questions resampled jointly across3 runs sharing warmup and split; no full-pipeline uncertainty or seed selection. Policies and LRs frozen from primary development."
+  },
+  {
+    "model": "1p5b",
+    "task": "countdown",
+    "n": 2048,
+    "seeds": [
+      101,
+      102,
+      103
+    ],
+    "predictor_mean_accuracy": 0.10677083333333333,
+    "real_mean_accuracy": 0.10270182291666667,
+    "delta_pp": 0.4069010416666667,
+    "ci95_pp": [
+      -0.439453125,
+      1.2532552083333335
+    ],
+    "predictor_per_seed": [
+      0.1025390625,
+      0.1142578125,
+      0.103515625
+    ],
+    "real_per_seed": [
+      0.0986328125,
+      0.1015625,
+      0.10791015625
+    ],
+    "interpretation": "Questions resampled jointly across3 runs sharing warmup and split; no full-pipeline uncertainty or seed selection. Policies and LRs frozen from primary development."
+  }
+]

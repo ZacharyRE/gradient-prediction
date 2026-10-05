@@ -1,0 +1,86 @@
+{
+  "complete": true,
+  "time": 1791200712.9079027,
+  "unique_training_questions": 907,
+  "teacher_trajectories": [
+    {
+      "seed": 101,
+      "coverage": [
+        {
+          "steps": 32,
+          "question_exposures": 1024,
+          "unique_questions": 907,
+          "passes": 1.1289966923925028,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 128,
+          "question_exposures": 4096,
+          "unique_questions": 907,
+          "passes": 4.515986769570011,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 256,
+          "question_exposures": 8192,
+          "unique_questions": 907,
+          "passes": 9.031973539140022,
+          "new_unique_questions_after_step32": 0
+        }
+      ]
+    },
+    {
+      "seed": 102,
+      "coverage": [
+        {
+          "steps": 32,
+          "question_exposures": 1024,
+          "unique_questions": 907,
+          "passes": 1.1289966923925028,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 128,
+          "question_exposures": 4096,
+          "unique_questions": 907,
+          "passes": 4.515986769570011,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 256,
+          "question_exposures": 8192,
+          "unique_questions": 907,
+          "passes": 9.031973539140022,
+          "new_unique_questions_after_step32": 0
+        }
+      ]
+    },
+    {
+      "seed": 103,
+      "coverage": [
+        {
+          "steps": 32,
+          "question_exposures": 1024,
+          "unique_questions": 907,
+          "passes": 1.1289966923925028,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 128,
+          "question_exposures": 4096,
+          "unique_questions": 907,
+          "passes": 4.515986769570011,
+          "new_unique_questions_after_step32": 0
+        },
+        {
+          "steps": 256,
+          "question_exposures": 8192,
+          "unique_questions": 907,
+          "passes": 9.031973539140022,
+          "new_unique_questions_after_step32": 0
+        }
+      ]
+    }
+  ],
+  "note": "Same seeded order applies to all target arms. By32 steps, every training question has been seen; continuation revisits the same pool, with no new unique questions."
+}

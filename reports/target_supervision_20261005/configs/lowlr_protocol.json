@@ -1,0 +1,74 @@
+{
+  "created_epoch": 1791188221.5738206,
+  "model": "Qwen2.5-1.5B-Instruct",
+  "teacher": "Qwen2.5-7B-Instruct",
+  "physical_gpu": 2,
+  "layer": 8,
+  "module": "o_proj",
+  "rank": 64,
+  "alpha": 64,
+  "starting_state": "base, zero LoRA B, paired initialized A; no task warmup",
+  "candidate_training_questions": 1024,
+  "dev_questions": 256,
+  "test_questions": 1319,
+  "split_seed": 20261005,
+  "target_generation": {
+    "n": 2,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "seed": 20261005,
+    "max_new_tokens": 2048,
+    "selection": "first normally terminated candidate with complete boxed answer verified against gold; same rule both sources"
+  },
+  "training_set": "intersection of verified student and teacher candidate question IDs; raw references restricted to exactly that intersection",
+  "arms": [
+    "reference",
+    "student",
+    "teacher",
+    "reference_clean"
+  ],
+  "lrs": [
+    1e-05
+  ],
+  "checkpoint_steps": [
+    32
+  ],
+  "max_steps": 32,
+  "batch": 32,
+  "micro_max": 4,
+  "weight_decay": 0,
+  "clip": 1,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "search_seed": 101,
+  "selection": "No search or selection: fixed historical GSM8K warmup LR1e-5 and32 updates, from the original base, applied equally to four target arms and all three seeds.",
+  "replication": "fixed selected LR/step per arm, fresh initialization and order for seeds102/103; generation targets and split held fixed",
+  "uncertainty": "paired questions plus three fitted seeds, not repeated target generation/splits",
+  "input_truncation": false,
+  "evaluation_max_new_tokens": 2048,
+  "historical_test": true,
+  "historical_training_and_dev_reuse": "GSM8K official train/test have been used by prior studies; current question partition freshly fixed, not a fresh unseen benchmark",
+  "budget_scope": "record generation, optimization, evaluation and search separately; equal sample exposures do not match target tokens",
+  "deadline_epoch": 1791206244.257676,
+  "compute_cutoff_epoch": 1791205644.257676,
+  "environment_incident": "shell sandbox failed between initial goal creation and restoration around08:15UTC; no earlier compute launched",
+  "budget_restart": "User explicitly restarted five hours after execution restored",
+  "matched_target_control": "Also evaluate all arms at the LR/stopping point selected by the reference-only dev search, for every training seed. Report this separately from per-arm independently tuned recipes.",
+  "recorded_epoch": 1791190129.4785478,
+  "secondary": true,
+  "rationale": "Historical scaling_domains_20260930/REPORT.md selected1e-5 x32 for GSM8K warmup; primary target search begins at3e-5. Cover the known smaller-LR setting without changing the frozen primary selection grid.",
+  "before_any_current_test_generation": true,
+  "contrasts": [
+    "reference_minus_base",
+    "student_minus_base",
+    "teacher_minus_base",
+    "reference_clean_minus_base",
+    "student_minus_reference",
+    "teacher_minus_reference",
+    "reference_clean_minus_reference"
+  ],
+  "statistical_status": "Separate seven-comparison secondary family, joint seed/question bootstrap; no test-based choice of LR, steps, or target."
+}

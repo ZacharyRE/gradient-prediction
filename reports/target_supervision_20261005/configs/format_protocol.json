@@ -1,0 +1,75 @@
+{
+  "created_epoch": 1791188221.5738206,
+  "model": "Qwen2.5-1.5B-Instruct",
+  "teacher": "Qwen2.5-7B-Instruct",
+  "physical_gpu": 2,
+  "layer": 8,
+  "module": "o_proj",
+  "rank": 64,
+  "alpha": 64,
+  "starting_state": "base, zero LoRA B, paired initialized A; no task warmup",
+  "candidate_training_questions": 1024,
+  "dev_questions": 256,
+  "test_questions": 1319,
+  "split_seed": 20261005,
+  "target_generation": {
+    "n": 2,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "seed": 20261005,
+    "max_new_tokens": 2048,
+    "selection": "first normally terminated candidate with complete boxed answer verified against gold; same rule both sources"
+  },
+  "training_set": "intersection of verified student and teacher candidate question IDs; raw references restricted to exactly that intersection",
+  "arms": [
+    "reference_clean"
+  ],
+  "lrs": [
+    3e-05,
+    0.0001,
+    0.0003
+  ],
+  "checkpoint_steps": [
+    32,
+    128,
+    256
+  ],
+  "max_steps": 256,
+  "batch": 32,
+  "micro_max": 4,
+  "weight_decay": 0,
+  "clip": 1,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "search_seed": 101,
+  "selection": "same independent dev LR/stopping grid; additionally primary reference-selected LR/stopping matched control",
+  "replication": "fixed selected LR/step per arm, fresh initialization and order for seeds102/103; generation targets and split held fixed",
+  "uncertainty": "paired questions plus three fitted seeds, not repeated target generation/splits",
+  "input_truncation": false,
+  "evaluation_max_new_tokens": 2048,
+  "historical_test": true,
+  "historical_training_and_dev_reuse": "GSM8K official train/test have been used by prior studies; current question partition freshly fixed, not a fresh unseen benchmark",
+  "budget_scope": "record generation, optimization, evaluation and search separately; equal sample exposures do not match target tokens",
+  "deadline_epoch": 1791206244.257676,
+  "compute_cutoff_epoch": 1791205644.257676,
+  "environment_incident": "shell sandbox failed between initial goal creation and restoration around08:15UTC; no earlier compute launched",
+  "budget_restart": "User explicitly restarted five hours after execution restored",
+  "matched_target_control": "Also evaluate all arms at the LR/stopping point selected by the reference-only dev search, for every training seed. Report this separately from per-arm independently tuned recipes.",
+  "supplement": "Reference calculator-annotation ablation",
+  "recorded_epoch": 1791189379.4626896,
+  "preregistered_before_primary_dev_scores": true,
+  "parent_protocol_sha256": "f6bedbf3c2f5bb413918aff9e3252d35594436eab5dfecdb781911110b95f7d9",
+  "training_data_sha256": "04c7ea8d60f4e8724063388aa4c5e05efcbda82460e032cb6045f1d3cf3bcef2",
+  "removed_calculator_annotations": 2794,
+  "transformation": "Only remove redundant <<...>> calculator annotations. Boxed final answers, visible rationale, question order and matched training pool remain fixed.",
+  "statistical_status": "Secondary diagnostic; four contrasts use a separate Bonferroni family of four and are not added to or selected by primary seven-comparison outcomes.",
+  "contrasts": [
+    "clean_independent_minus_base",
+    "clean_independent_minus_reference_independent",
+    "clean_matched_minus_reference_matched",
+    "clean_matched_minus_student_matched"
+  ]
+}

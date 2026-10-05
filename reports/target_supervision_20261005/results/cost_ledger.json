@@ -1,0 +1,82 @@
+{
+  "hardware": "one NVIDIA H200 at a time: primary search on GPU2; primary replications also on GPU2 but affected by external contention; subsequent evaluations/controls route to GPU7",
+  "generation": {
+    "student": {
+      "complete": true,
+      "questions": 1024,
+      "candidates": 2048,
+      "accepted_questions": 912,
+      "total_output_tokens": 578002,
+      "last_chunk_generation_seconds": 33.84838523995131,
+      "process_wall_seconds": 176.99722599983215
+    },
+    "teacher": {
+      "complete": true,
+      "questions": 1024,
+      "candidates": 2048,
+      "accepted_questions": 997,
+      "total_output_tokens": 595235,
+      "last_chunk_generation_seconds": 13.165759477997199,
+      "process_wall_seconds": 125.87177610397339
+    }
+  },
+  "orchestrator_stages": [
+    {
+      "stage": "generate_teacher",
+      "started_epoch": 1791188490.2740898,
+      "ended_epoch": 1791188630.2782059,
+      "wall_seconds": 140.00411653518677,
+      "exit_code": 0
+    },
+    {
+      "stage": "match_targets",
+      "started_epoch": 1791188630.2789574,
+      "ended_epoch": 1791188635.282446,
+      "wall_seconds": 5.003488779067993,
+      "exit_code": 0
+    },
+    {
+      "stage": "search_train",
+      "started_epoch": 1791188635.2827442,
+      "ended_epoch": 1791189890.3087623,
+      "wall_seconds": 1255.026019334793,
+      "exit_code": 0
+    },
+    {
+      "stage": "evaluate_dev",
+      "started_epoch": 1791189890.3115015,
+      "ended_epoch": 1791191215.340416,
+      "wall_seconds": 1325.0289151668549,
+      "exit_code": 0
+    },
+    {
+      "stage": "select",
+      "started_epoch": 1791191215.3411074,
+      "ended_epoch": 1791191220.3452697,
+      "wall_seconds": 5.0041632652282715,
+      "exit_code": 0
+    },
+    {
+      "stage": "replicate_train",
+      "started_epoch": 1791191220.3459234,
+      "ended_epoch": 1791192670.3793817,
+      "wall_seconds": 1450.033459186554,
+      "exit_code": 0
+    },
+    {
+      "stage": "evaluate_final",
+      "started_epoch": 1791192670.418283,
+      "ended_epoch": 1791195605.4824646,
+      "wall_seconds": 2935.0641820430756,
+      "exit_code": 0
+    }
+  ],
+  "total_synchronized_training_seconds": 2668.102181347669,
+  "total_trajectory_wall_seconds": 2679.2298599319765,
+  "total_optimizer_steps": 3072,
+  "total_supervised_tokens": 23156064,
+  "total_input_tokens": 33555883,
+  "training_runs": 19,
+  "flops_measured": false,
+  "timing_notes": "Synchronized update time includes batch construction, forward, backward, clipping and optimizer update. It excludes model loading, target generation, checkpoint serialization and evaluation. Stage wall time includes process startup and up to five seconds of polling granularity. Generator internal wall time includes engine initialization, generation, verification and file writes up to the last progress record, and excludes final engine shutdown. Evaluation summary time includes generation, grading and output writes, but not engine initialization. Do not add overlapping internal and stage timers."
+}

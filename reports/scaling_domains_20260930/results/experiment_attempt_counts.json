@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-10-01T16:50:44.995731+00:00",
+  "attempt_registry_sha256": "9252e5fa9b0ea4799379d1fd8cbf6001d8047e72cc84c672cc7f77ff63fa1d05",
+  "registered_attempt_records": 516,
+  "statuses": {
+    "complete": 501,
+    "initialized": 13,
+    "archived_failed": 1,
+    "archived_complete_rerun": 1
+  },
+  "completed_training_configurations": 501,
+  "completed_by_stage": {
+    "update": 406,
+    "predictor_fit": 30,
+    "warmup": 65
+  },
+  "completed_update_breakdown": {
+    "primary": 312,
+    "seed_replication": 20,
+    "mean_matrix": 52,
+    "warmup_closed_loop_additional": 22
+  },
+  "zero_step_initializations": 13,
+  "separately_recorded_controlled_efficiency_conditions": 13,
+  "scope": "Counts of registered training/configuration attempts, not evaluation versions, optimizer/calibration calls, epochs, or statistically independent experiments. Of516 registry records,501 training configurations are complete (65 warmup,30 predictor fits,406 update trajectories);13 are zero-step initializations;2 are archived failed/replaced attempts. The13 controlled efficiency conditions are counted separately. Final tests and report subsequently completed; see results/completion_audit.json. This training-configuration registry does not count every failed evaluator/supervisor process launch; those execution failures and repairs are documented separately in failures.json and AMENDMENTS.md.",
+  "execution_failure_log": "results/failures.json",
+  "completion_annotation_time_utc": "2026-10-02T04:01:53.978121+00:00"
+}

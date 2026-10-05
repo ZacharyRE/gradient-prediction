@@ -1,0 +1,68 @@
+{
+  "time": 1790842625.5253315,
+  "scope": "Development diagnostic only; primary grading and selection unchanged. Inspect terminal sentence with explicit answer/option label and exact original option text, with no boxed answer. No free-letter search or approximate numeric matching. The uncapped intersection is post-generation descriptive selection, not an unbiased evaluation subset.",
+  "records": [
+    {
+      "lr": "1e-05",
+      "correct": 75,
+      "n": 128,
+      "limit_hits": 13,
+      "matched_uncapped_correct": 69,
+      "matched_uncapped_n": 103,
+      "unparsed_explicit_final_option_text": [
+        {
+          "sample_id": "7aa1471e7393bcbfdd07cb6dc57ecd86de302a0ec6e47c014145b643b2ee032c",
+          "label": "B",
+          "matches_gold": true
+        }
+      ]
+    },
+    {
+      "lr": "0.0001",
+      "correct": 36,
+      "n": 128,
+      "limit_hits": 18,
+      "matched_uncapped_correct": 33,
+      "matched_uncapped_n": 103,
+      "unparsed_explicit_final_option_text": [
+        {
+          "sample_id": "646ad22fdabcb20160d7ec60b4208dfcdb14fee1324aa620ee0ef088629517d4",
+          "label": "A",
+          "matches_gold": true
+        },
+        {
+          "sample_id": "0f525914b875ba3a5a6e7eeb733cdc49f16a649c7153c7121e2009179b12d6a1",
+          "label": "C",
+          "matches_gold": false
+        },
+        {
+          "sample_id": "87fdbfe8c0c4fc476ec4f2f187f5ffdd6b3e6d980f4be44b91d4f2c019e3d150",
+          "label": "C",
+          "matches_gold": true
+        },
+        {
+          "sample_id": "b6230effe433316a1460c2ea69e99f6d3b7be324575fb063ae2ef9b152cf7c59",
+          "label": "C",
+          "matches_gold": false
+        },
+        {
+          "sample_id": "097519fd5ee6d7bb8349575ecfca7dfc46f0660845b2a72f94f15f26b9e9dbd0",
+          "label": "D",
+          "matches_gold": true
+        },
+        {
+          "sample_id": "9fba25e0a31b65e65d2fa6ba06bb057d721dbfd942fbc573b66f3d21c7140274",
+          "label": "C",
+          "matches_gold": true
+        },
+        {
+          "sample_id": "b86ca2b8af1b80e3719852aa9d09105d6bff3cee6fc843a5ca1a3fad6a159c57",
+          "label": "B",
+          "matches_gold": true
+        }
+      ]
+    }
+  ],
+  "gained": 11,
+  "lost": 50
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "provenance/failures/external_gpu0_occupancy/phase3_error.json",
+    "record": {
+      "error": "RuntimeError('mean_matrix_controls failed 1; inspect /mnt/micron/yixiaore/adapter/predictor/scaling_domains_20260930/logs/mean_matrix_controls.log')",
+      "time": 1790865980.6686385
+    }
+  },
+  {
+    "path": "provenance/failures/initial_eval_path/phase1_error.json",
+    "record": {
+      "error": "RuntimeError('warmup_dev_1p5b failed 1; inspect /mnt/micron/yixiaore/adapter/predictor/scaling_domains_20260930/logs/warmup_dev_1p5b.log')",
+      "time": 1790829841.4149606
+    }
+  },
+  {
+    "path": "provenance/failures/initial_eval_path/phase2_error.json",
+    "record": {
+      "error": "RuntimeError('Phase1 requires repair')",
+      "time": 1790829841.8531694
+    }
+  },
+  {
+    "path": "provenance/failures/initial_eval_path/phase3_error.json",
+    "record": {
+      "error": "RuntimeError('Phase2 requires repair before final freeze')",
+      "time": 1790829850.0838096
+    }
+  },
+  {
+    "path": "provenance/failures/mixed_feature_gradient_rows/phase2_error.json",
+    "record": {
+      "error": "RuntimeError('updates_1p5b_countdown failed 1; inspect /mnt/micron/yixiaore/adapter/predictor/scaling_domains_20260930/logs/updates_1p5b_countdown.log')",
+      "time": 1790836066.9093356
+    }
+  },
+  {
+    "path": "provenance/failures/mixed_feature_gradient_rows/phase3_error.json",
+    "record": {
+      "error": "RuntimeError('Phase2 requires repair before final freeze')",
+      "time": 1790836068.4339182
+    }
+  }
+]

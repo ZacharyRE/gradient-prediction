@@ -1,0 +1,18 @@
+{
+  "time": 1790841121.95352,
+  "motivation": "High batch cosine of a frozen training mean in the first two development pilots motivates an independent cheap closed-loop control; no final tests have run.",
+  "method": "train_mean_matrix",
+  "definition": "Freeze M=sum(G.T@X)/sum(supervised tokens) on predictor_train at the common warmup. At each update use gA=s*B.T@M, gB=s*M@A.T with current factors, same AdamW/clip1 and32steps. Uses no current batch features or online true gradients; it is a local linearization, not current-model full-batch SFT.",
+  "update_lrs": [
+    3e-06,
+    1e-05,
+    3e-05,
+    0.0001
+  ],
+  "start_reserve_hours": 11,
+  "stop_reserve_hours": 8,
+  "selection_rule": "Independently select step32 LR by full generation-dev correct count, then CE, then smallerLR, before final freeze.",
+  "primary_family": "Existing26 comparisons unchanged.",
+  "supplementary_family": "13 planned predictor-minus-train_mean_matrix comparisons. Also report a conservative Holm adjustment over the combined39 planned comparisons; missing comparisons have p=1.",
+  "final_inputs": "Full official test split; no truncation or final-test-based selection."
+}

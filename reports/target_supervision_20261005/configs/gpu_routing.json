@@ -1,0 +1,9 @@
+{
+  "recorded_epoch": 1791191468.1818504,
+  "original_gpu": 2,
+  "future_gpu": 7,
+  "wait_for_pid": 2037824,
+  "wait_for_create_time": 1791191219.62,
+  "reason": "External user processes began sharing GPU2 around09:07UTC. Finish the live replication process there, then route subsequent GPU workers to idle physicalGPU7. Never allocate both concurrently.",
+  "idle_gpu7_observation": "0 MiB, 0 %"
+}

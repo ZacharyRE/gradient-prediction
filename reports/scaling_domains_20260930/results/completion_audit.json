@@ -1,0 +1,182 @@
+{
+  "time_utc": "2026-10-02T04:01:56.358101+00:00",
+  "complete": true,
+  "all_requirements_passed": true,
+  "selection_sha256": "120d7061cff4422cd7426565a85d3c6064488de73bc3bb972e50d45d409e866a",
+  "checks": [
+    {
+      "requirement": "Pre-test selection, grading and frozen source preservation",
+      "passed": true,
+      "evidence": {
+        "configs/final_selection.json": "120d7061cff4422cd7426565a85d3c6064488de73bc3bb972e50d45d409e866a",
+        "data/manifest.json": "aac12272b8274a44ccf10a97b1bcfc55f48b92380e3e62576b60965a70f6c436",
+        "provenance/final_frozen_source/manifest.json": "48655f77b9ee29194132b00b904ff41ec20d804765f19dc39880bc9499907610",
+        "AMENDMENTS.md": "05125de4332b1fbdc54f76b06071838e59546a5832d2e07fd43d2a432e1d6f0a"
+      },
+      "details": {
+        "frozen_files": 46,
+        "live_changes": [
+          "scripts/figures.py"
+        ],
+        "post_experiment_helpers": "finalize_narrative.py and completion_audit.py are new report/audit helpers, not experiment changes"
+      }
+    },
+    {
+      "requirement": "Dataset/domain/model coverage and full-input split integrity",
+      "passed": true,
+      "evidence": {
+        "data/manifest.json": "aac12272b8274a44ccf10a97b1bcfc55f48b92380e3e62576b60965a70f6c436",
+        "results/token_audit.json": "cc5b9ae52b94602a6c382533aaf2af21262a9bdb7b777c7b7b0d91d42a318ce1",
+        "results/gsm8k_split_prompt_audit.json": "aef9bcbe03e91419f60e79eb14f2426d0d53dbcb11168d61581b9b378bfe927c"
+      },
+      "details": {
+        "task_configurations": 9,
+        "dataset_families": 8,
+        "conditions": 13,
+        "models": [
+          "1p5b",
+          "7b"
+        ],
+        "split_files": 63,
+        "tokenized_model_split_records": 126,
+        "split_and_cross_task_train_test_normalized_question_overlap": 0,
+        "limitation": "Single Qwen family and target module; historical three math tests are not pristine new holdouts."
+      }
+    },
+    {
+      "requirement": "Complete warmup/update search, baselines, calibration and sensitivity",
+      "passed": true,
+      "evidence": {
+        "results/attempts.json": "9252e5fa9b0ea4799379d1fd8cbf6001d8047e72cc84c672cc7f77ff63fa1d05",
+        "results/development_endpoints.json": "6d55c6aff55a1e3770d2ae62c38836b2b83a197023376da2cc11b65e13327d50",
+        "results/trajectory_integrity.json": "17452c4cc201b2d59060e8665e9d370ee82926392c0f502ccfc0ce2e04fe148e",
+        "results/warmup_closed_loop.json": "f8fe9d66bed56b7bf8225d88b15f84c8274645fea132df36dec403b184805d68",
+        "results/warmup_closed_loop_result_audit.json": "c21b4339c179217d5489f416abfeffb5149ae1be813875d09a93016e49301656",
+        "results/mean_matrix_status.json": "88914ee404a2630b581bcc5060292265b94664facd6fab0fec42e38a6038d9dc"
+      },
+      "details": {
+        "complete_training_configs": 501,
+        "by_stage": {
+          "update": 406,
+          "predictor_fit": 30,
+          "warmup": 65
+        },
+        "primary_update_endpoints": 312,
+        "paired_trajectory_groups": 125,
+        "warmup_closed_loop_states": 14,
+        "warmup_closed_loop_endpoints": 28,
+        "limitation": "Sequential development choices; not a globally joint optimum. Calibration LR fixed."
+      }
+    },
+    {
+      "requirement": "All planned final and checkpoint readouts, full-input raw files and adapter identities",
+      "passed": true,
+      "evidence": {
+        "results/evaluation_input_audit.json": "a4992fd92759c3a4487563877fb11b815a65d740d507729ac0bde878a015d94f",
+        "results/final_integrity.json": "58f8145868416f648f6c886efad14badd6430493cb8fe10fbf328c486f74301b",
+        "results/checkpoint_curves.json": "c8c98a85e57013147d8e223f914e3bed1bc23c0eecd1a111e583fff6dca3a13c",
+        "configs/checkpoint_selection.json": "b0665652e72ffcf39416016e43a14ea560a1855ba83289810aad27239aaee581"
+      },
+      "details": {
+        "complete_versions": {
+          "checkpoint": 52,
+          "final": 156,
+          "development": 529
+        },
+        "raw_output_rows": {
+          "checkpoint": 6400,
+          "final": 198030,
+          "development": 65216
+        },
+        "current_raw_hashes_match_prior_full_row_audit": true,
+        "input_limit": null,
+        "new_output_token_cap": 2048,
+        "checkpoint_curve_points": 104
+      }
+    },
+    {
+      "requirement": "Prespecified statistics, seed repetitions, strong baselines and output budget",
+      "passed": true,
+      "evidence": {
+        "results/primary_multiplicity.json": "705a725a4ecfe3a6a6de1e7305ac859b83ecbfef6323c8be8f7e63143b72c87f",
+        "results/mean_matrix_comparisons.json": "9efd299ce06f170bbfac684e4a8b72d7e26f05b3c1e286ee60d0bf0e78254a6b",
+        "results/combined_multiplicity.json": "4d4670e74aca801d9f65c178b916a9adb735f33ce5d1d1852db8f585b4171538",
+        "results/seed_replications.json": "a2e5145e4b1d8231d767ad1b6f3c33ca8d4e5256d35e953502ba09c1ffee5dbf",
+        "results/final_output_budget_diagnostic.json": "df8cf3eb79aa6ce91ba8d8eff3d0ce6f9cce00bffaf1d86bcbcbddf234a4ff91",
+        "results/final_narrative_evidence.json": "783e5597f6ec4bf84cd46ac739a5501940ff9cd327d1a69e63936f74b3cef2f4"
+      },
+      "details": {
+        "primary": 26,
+        "secondary": 13,
+        "combined": 39,
+        "replication_groups": 3,
+        "repeat_only_final_versions": 12,
+        "significant_primary_holm": 0,
+        "significant_combined_holm": 0,
+        "limitation": "Question-level conditional inference; no full-pipeline/seed-population CI or equivalence conclusion."
+      }
+    },
+    {
+      "requirement": "Controlled GPU0 wall time/FLOPs and offline-plus-online costs",
+      "passed": true,
+      "evidence": {
+        "results/efficiency_conclusions.json": "bd62ffdf990158be78f05f088611120be38e000b677c006afb2c2d9848e4f843",
+        "results/cost_amortization.json": "e6cf2cbd839fc4f4a7e4ae2b42208f5f7783e9fa21ed58b6220973a30da5cc59",
+        "results/research_costs.json": "c97333d32d6749f6e05f104ae6693a234dd367ef22a0284ef8e646fcde9896f2"
+      },
+      "details": {
+        "controlled_conditions": 13,
+        "warmups": 2,
+        "random_order_repeats": 7,
+        "all_profile_delta_checks_zero": true,
+        "limitations": [
+          "Counted matmul/attention arithmetic excludes scalar/nonlinear/optimizer work.",
+          "Offline wall time recorded; no offline FLOP profile.",
+          "Whole backbone/predictor resident fixture; not optimized deployment memory.",
+          "Later shared-device MeanM timing disclosed; no equal-quality or long-run amortization claim."
+        ]
+      }
+    },
+    {
+      "requirement": "Resource policy, deadline, cleanup and retained reproducibility artifacts",
+      "passed": true,
+      "evidence": {
+        "configs/resources.json": "c38ced40a45a679e165f42359e6b1b592cf34477d9936af977227f159710cd09",
+        "results/phase3_status.json": "f1e1ef0a30924323824587046f2b70b864cc59c30c38a104bafd12db205caed2",
+        "results/resource_monitor_shutdown.json": "3c3a9be8ae944eeac72e03bd196f11ba365b2a7bf082a6ff8dbb5c8845372d0f",
+        "results/storage_retention_audit.json": "12dfb9a9460ac0329614836f79bcb81bbf8cb7e860ff7a2565d57023cd43adef",
+        "AMENDMENTS.md": "05125de4332b1fbdc54f76b06071838e59546a5832d2e07fd43d2a432e1d6f0a"
+      },
+      "details": {
+        "authorized_gpu": 0,
+        "automated_finish_epoch": 1790890169.6471753,
+        "deadline_epoch": 1790914752,
+        "current_free_gib": 719.0901107788086,
+        "minimum_sampled_free_gib": 90.91084289550781,
+        "deleted_shards": 1528,
+        "deleted_gib": 141.43145564943552,
+        "retained_final_checkpoint_adapters": 195,
+        "retained_predictor_fits": 30,
+        "retained_terminal_predictors": 177,
+        "limitation": "Resource samples may miss instantaneous peaks; external GPU processes were never stopped."
+      }
+    },
+    {
+      "requirement": "Final Chinese report, configuration tables, insights, limitations and figures",
+      "passed": true,
+      "evidence": {
+        "REPORT.md": "5ce25717c921277e71e1ff03190905690b821da499a577cd9d2c4172ca482f52",
+        "results/final_visual_review.json": "f0ada5ee0eca5d511e152b3dfc1eac14dc8fd0574b203320bc33473c41adb057",
+        "scripts/finalize_narrative.py": "4f243256d005709cda66502da6358a10b7a0c3d7025dbf11c03465ec2f90b94d"
+      },
+      "details": {
+        "report_lines": 675,
+        "local_links_checked": 51,
+        "figures_reviewed": 9,
+        "manual_review": "Primary conclusions checked against frozen outputs; selected real baseline distinguished from other tested real methods and MeanM; original Ben and PLAN scope retained."
+      }
+    }
+  ],
+  "completion_within_authorized_deadline": true,
+  "scope": "Final requirement-by-requirement audit of the authorized experiment. Current file hashes bind prior full-row checks to retained raw outputs. This is not a claim of scientific superiority, global optimality, equal quality or universal generalization."
+}

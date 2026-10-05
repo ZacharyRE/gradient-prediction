@@ -1,0 +1,103 @@
+{
+  "time": 1790850826.8394885,
+  "condition": "1p5b_boolq",
+  "split": "accuracy_dev",
+  "records": [
+    {
+      "method": "frozen",
+      "lr": 0.0001,
+      "tag": "1p5b_boolq__frozen_lr0.0001_s101__step32",
+      "dev_ce": 2.018258667550981,
+      "metrics": {
+        "n": 128,
+        "correct": 102,
+        "accuracy": 0.796875,
+        "strict_accuracy": 0.0,
+        "legacy_correct": 102,
+        "legacy_accuracy": 0.796875,
+        "literal_option_text_count": 0,
+        "limit_hits": 0,
+        "mean_tokens": 2.0,
+        "seconds": 0.39487123489379883
+      },
+      "output_styles": {
+        "plain_boolean": 128
+      },
+      "source": "results/eval/update_dev_1p5b_boolq/1p5b_boolq__frozen_lr0.0001_s101__step32__boolq.jsonl",
+      "source_sha256": "4917dd8fe4eee20d541f6f5e1e48d367e580f193c4a03670a4c17094d718fa29"
+    },
+    {
+      "method": "frozen",
+      "lr": 1e-05,
+      "tag": "1p5b_boolq__frozen_lr1e-05_s101__step32",
+      "dev_ce": 0.09222617177147185,
+      "metrics": {
+        "n": 128,
+        "correct": 105,
+        "accuracy": 0.8203125,
+        "strict_accuracy": 0.8125,
+        "legacy_correct": 104,
+        "legacy_accuracy": 0.8125,
+        "literal_option_text_count": 0,
+        "limit_hits": 0,
+        "mean_tokens": 6.0,
+        "seconds": 0.5555946826934814
+      },
+      "output_styles": {
+        "boxed": 128
+      },
+      "source": "results/eval/update_dev_1p5b_boolq/1p5b_boolq__frozen_lr1e-05_s101__step32__boolq.jsonl",
+      "source_sha256": "c2bdeb1780c9e10489e974a96eee2c014d02995fac7fa86b5b4c4e7c249e9e7a"
+    },
+    {
+      "method": "adaptive",
+      "lr": 1e-05,
+      "tag": "1p5b_boolq__adaptive_lr1e-05_s101__step32",
+      "dev_ce": 0.09180612157069845,
+      "metrics": {
+        "n": 128,
+        "correct": 106,
+        "accuracy": 0.828125,
+        "strict_accuracy": 0.8203125,
+        "legacy_correct": 105,
+        "legacy_accuracy": 0.8203125,
+        "literal_option_text_count": 0,
+        "limit_hits": 0,
+        "mean_tokens": 6.0,
+        "seconds": 0.5449292659759521
+      },
+      "output_styles": {
+        "boxed": 128
+      },
+      "source": "results/eval/update_dev_1p5b_boolq/1p5b_boolq__adaptive_lr1e-05_s101__step32__boolq.jsonl",
+      "source_sha256": "5c327196821ffb448b0cfc7eb0008b55cd1766fa7096ced253aec05294587458"
+    },
+    {
+      "method": "oracle",
+      "lr": 3e-06,
+      "tag": "1p5b_boolq__oracle_lr3e-06_s101__step32",
+      "dev_ce": 0.09930768344202079,
+      "metrics": {
+        "n": 128,
+        "correct": 107,
+        "accuracy": 0.8359375,
+        "strict_accuracy": 0.828125,
+        "legacy_correct": 106,
+        "legacy_accuracy": 0.828125,
+        "literal_option_text_count": 0,
+        "limit_hits": 0,
+        "mean_tokens": 6.0,
+        "seconds": 0.6005358695983887
+      },
+      "output_styles": {
+        "boxed": 128
+      },
+      "source": "results/eval/update_dev_1p5b_boolq/1p5b_boolq__oracle_lr3e-06_s101__step32__boolq.jsonl",
+      "source_sha256": "941627ddad54600e1bd7510b85fd78680267336a0454bde2915a79c1067573fa"
+    }
+  ],
+  "summary_sha256": "3ea9a4e7b70e8e58501e9fd8384cc958354be53833155a37dc0f7b134316bfda",
+  "entries_sha256": "eb93ac69b4fbb9db6f10452abade3f5b2512b37bb06fa55690931b5c6aa19c11",
+  "style_rule": "Contains literal LaTeX boxed marker, otherwise full-string case-insensitive yes/no/true/false with optional terminal period or exclamation, otherwise other.",
+  "scope": "Post-hoc descriptive format audit after the complete24-endpoint development grid. No grading or selection changes. Large teacher-forced CE accompanies a switch to plain yes/no, while semantic correctness changes much less; this does not isolate the causal contribution of format to token loss."
+}
