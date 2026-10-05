@@ -4,7 +4,9 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 **Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration across model sizes and math tasks.
 
-**Latest results — broader domains and measured cost:** across 13 model/task conditions, Adaptive is close to Oracle, but adds only **+0.10 pp** over warmup on average (Oracle: **+0.02 pp**). Frozen is **4.1–5.9× faster per online step**; Adaptive uses fewer counted FLOPs but takes **2.18–2.97×** the Oracle time. Four long-run Frozen tests deteriorate. [Results, settings and figures →](predictor/countdown_predictor_results/scaling-domains-20260930/README.md)
+**Latest follow-up — efficient 0.5B updates:** a smaller predictor with four true-gradient probes reaches **12.89% vs Oracle's 23.54%** on the original Countdown test. Estimated optimization FLOPs are lower, but matched-quality efficiency and GPU wall-time savings remain unverified. [Setup, results and limitations →](predictor/countdown_predictor_results/efficient-test-20261002/README.md)
+
+**Cross-domain results — broader domains and measured cost:** across 13 model/task conditions, Adaptive is close to Oracle, but adds only **+0.10 pp** over warmup on average (Oracle: **+0.02 pp**). Frozen is **4.1–5.9× faster per online step**; Adaptive uses fewer counted FLOPs but takes **2.18–2.97×** the Oracle time. Four long-run Frozen tests deteriorate. [Results, settings and figures →](predictor/countdown_predictor_results/scaling-domains-20260930/README.md)
 
 **Earlier scaling result — 1.5B / 7B:** across Countdown, GSM8K and MATH, activation gradients remain learnable and calibration prevents some frozen-predictor failures. However, all six gentle-warmup three-seed Adaptive-versus-Mean accuracy intervals include zero. No general downstream or compute advantage is established. [Results, configuration and attempts →](predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md)
 

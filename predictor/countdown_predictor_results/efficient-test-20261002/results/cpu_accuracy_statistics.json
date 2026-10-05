@@ -1,0 +1,84 @@
+{
+  "backend": "Separate CPU supplementary evaluation",
+  "dataset": "countdown_test2048",
+  "groups": {
+    "Predictor": {
+      "n": 2048,
+      "correct": 264,
+      "accuracy": 0.12890625,
+      "seed": 101,
+      "n_training_runs": 1,
+      "mean_generated_tokens": 525.6748046875,
+      "total_generated_tokens": 1076582,
+      "limit_hits": 442,
+      "question_bootstrap_ci95": [
+        0.11474609375,
+        0.1435546875
+      ]
+    },
+    "Oracle32": {
+      "n": 2048,
+      "correct": 482,
+      "accuracy": 0.2353515625,
+      "seed": 101,
+      "n_training_runs": 1,
+      "mean_generated_tokens": 91.0751953125,
+      "total_generated_tokens": 186522,
+      "limit_hits": 9,
+      "question_bootstrap_ci95": [
+        0.21728515625,
+        0.25390625
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "candidate": "Predictor",
+      "reference": "Oracle32",
+      "delta": -0.1064453125,
+      "unadjusted_ci95": [
+        -0.123046875,
+        -0.08984375
+      ],
+      "familywise_ci95_bonferroni": [
+        -0.130859375,
+        -0.08235575358072822
+      ],
+      "one_sided_familywise_lower95": -0.12890625,
+      "exploratory_noninferiority_margin": 0.005,
+      "noninferiority_supported": false,
+      "zero_margin_lower_positive": false,
+      "wins": 54,
+      "losses": 272,
+      "mcnemar_exact_two_sided": 3.896489072694989e-36
+    }
+  ],
+  "missing_groups": [
+    "EarlyOracle32",
+    "Oracle8",
+    "ProbeOnly4"
+  ],
+  "family_size": 12,
+  "family_scope": "Conservative eight originally planned GPU contrasts plus four added CPU contrasts; do not substitute these CPU data for the primary fresh8192 GPU outcome.",
+  "bootstrap_replicates": 20000,
+  "uncertainty_scope": "Paired questions for fixed seed101 checkpoints; does not measure variation over new training seeds.",
+  "audit": [
+    {
+      "label": "Predictor",
+      "file": "efficient_test/results/accuracy/cpu_predictor2048/Predictor.jsonl",
+      "sha256": "b7b5c9e915c2208eae3881dfa4835b4945762e7315581af166f1711b75f03a73",
+      "full_inputs_reconstructed": true,
+      "exact_checker_recomputed": true,
+      "full2048": true
+    },
+    {
+      "label": "Oracle32",
+      "file": "efficient_test/results/accuracy/cpu_oracles2048/Oracle32.jsonl",
+      "sha256": "e07d61561bcb36a1f53456a8c79fbed05a710f3e899482d1b8313bb6a5ba1a2e",
+      "full_inputs_reconstructed": true,
+      "exact_checker_recomputed": true,
+      "full2048": true
+    }
+  ],
+  "partial_outputs_unscored": true
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "label": "Predictor",
+    "role": "predictor",
+    "configuration": {
+      "name": "benchmark_Predictor",
+      "method": "calcv",
+      "lagged": true,
+      "k": 4,
+      "lr": 0.001,
+      "steps": 256,
+      "save": [
+        256
+      ],
+      "epochs": 1,
+      "cal_lr": 0.0003,
+      "frequency": 4,
+      "seed": 101,
+      "predictor_seed": 123,
+      "micro": 32,
+      "predictor": "efficient_test/models/fresh_n128_w128_e30_s123/best.pt",
+      "cached": true,
+      "cache_implementation_sha256": "3e5caf4d62e13d09c2de1a093495a95c87b5d7eb16c72ed0e3b56a9702d448ad",
+      "linear_cached": true,
+      "adaptive_control": true,
+      "alpha_initial": 0.0,
+      "control_decay": 0.9,
+      "vectorized": true
+    },
+    "adapter": "efficient_test/models/long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4/step-256"
+  },
+  {
+    "label": "Oracle32",
+    "role": "oracle_full",
+    "configuration": {
+      "name": "benchmark_Oracle32",
+      "method": "oracle",
+      "k": 32,
+      "lr": 0.001,
+      "steps": 1024,
+      "save": [
+        1024
+      ],
+      "seed": 101,
+      "predictor_seed": 123,
+      "micro": 32,
+      "cached": true,
+      "linear_cached": true
+    },
+    "adapter": "efficient_test/models/long_oracle32_lr0.001/step-1024"
+  },
+  {
+    "label": "EarlyOracle32",
+    "role": "oracle_early_stop",
+    "configuration": {
+      "name": "benchmark_EarlyOracle32",
+      "method": "oracle",
+      "k": 32,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        512
+      ],
+      "seed": 101,
+      "predictor_seed": 123,
+      "micro": 32,
+      "cached": true,
+      "linear_cached": true
+    },
+    "adapter": "efficient_test/models/long_oracle32_lr0.001/step-512"
+  },
+  {
+    "label": "Oracle8",
+    "role": "oracle_small",
+    "configuration": {
+      "name": "benchmark_Oracle8",
+      "method": "oracle",
+      "k": 8,
+      "lr": 0.001,
+      "steps": 1024,
+      "save": [
+        1024
+      ],
+      "seed": 101,
+      "predictor_seed": 123,
+      "micro": 32,
+      "cached": true,
+      "linear_cached": true
+    },
+    "adapter": "efficient_test/models/long_oracle8_lr0.001/step-1024"
+  },
+  {
+    "label": "ProbeOnly4",
+    "role": "probe_matched",
+    "configuration": {
+      "method": "oracle_norm",
+      "k": 4,
+      "steps": 256,
+      "save": [
+        256
+      ],
+      "seed": 101,
+      "predictor_seed": 123,
+      "micro": 32,
+      "cached": true,
+      "linear_cached": true,
+      "name": "benchmark_ProbeOnly4",
+      "lr": 0.001
+    },
+    "adapter": "efficient_test/models/norm_oracle4_lr0.001/step-256"
+  }
+]

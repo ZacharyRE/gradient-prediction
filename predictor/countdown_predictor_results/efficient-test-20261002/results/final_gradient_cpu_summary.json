@@ -1,0 +1,187 @@
+{
+  "created_epoch": 1790938766.5263982,
+  "device": "CPU",
+  "precision": "FP32 weights; BF16 CPU SDPA model autocast; FP32 predictor",
+  "n_examples": 256,
+  "n_fixed_batches": 8,
+  "n_probe_trials_per_k_per_batch": 20,
+  "fixed_model_entries": [
+    {
+      "name": "Predictor_s101",
+      "adapter": "efficient_test/models/long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4/step-256",
+      "predictor": "efficient_test/models/long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4/predictor-step-256.pt",
+      "control_alpha": [
+        -0.0041401114892949805,
+        0.010287980072040528
+      ]
+    }
+  ],
+  "raw_predictor": {
+    "overall": {
+      "cosine": -0.029698550468310714,
+      "relative_l2": 1.8108730763196945,
+      "norm_ratio": 1.4746111929416656
+    },
+    "A": {
+      "cosine": -0.3159879632294178,
+      "relative_l2": 1.9154471457004547,
+      "norm_ratio": 1.3476401567459106
+    },
+    "B": {
+      "cosine": -0.0010969099239446223,
+      "relative_l2": 1.799663782119751,
+      "norm_ratio": 1.488942489027977
+    }
+  },
+  "control_variance": {
+    "A": {
+      "mean_ratio": 0.9999936148524284,
+      "min_ratio": 0.9999627470970154,
+      "max_ratio": 1.000023365020752,
+      "per_batch": [
+        1.000023365020752,
+        1.000000238418579,
+        0.9999627470970154,
+        0.9999987483024597,
+        0.9999970197677612,
+        0.9999958872795105,
+        0.9999906420707703,
+        0.9999802708625793
+      ]
+    },
+    "B": {
+      "mean_ratio": 1.000001572072506,
+      "min_ratio": 0.9999934434890747,
+      "max_ratio": 1.0000091791152954,
+      "per_batch": [
+        1.0000019073486328,
+        1.000006079673767,
+        1.000008463859558,
+        1.0000091791152954,
+        0.9999979138374329,
+        0.9999934434890747,
+        0.9999953508377075,
+        1.000000238418579
+      ]
+    }
+  },
+  "probe_metrics": {
+    "4": {
+      "corrected": {
+        "overall": {
+          "cosine": 0.43621774597559126,
+          "relative_l2": 2.0141388472169637,
+          "norm_ratio": 2.202101369202137
+        },
+        "A": {
+          "cosine": 0.4534323171712458,
+          "relative_l2": 1.849859207496047,
+          "norm_ratio": 2.032653746753931
+        },
+        "B": {
+          "cosine": 0.4343673141673207,
+          "relative_l2": 2.0302025310695173,
+          "norm_ratio": 2.218562649935484
+        }
+      },
+      "small_oracle": {
+        "overall": {
+          "cosine": 0.43621919259894637,
+          "relative_l2": 2.014138551056385,
+          "norm_ratio": 2.2021027162671087
+        },
+        "A": {
+          "cosine": 0.45343823535367844,
+          "relative_l2": 1.849855498597026,
+          "norm_ratio": 2.0326523188501597
+        },
+        "B": {
+          "cosine": 0.4343683571089059,
+          "relative_l2": 2.030202292650938,
+          "norm_ratio": 2.218563910201192
+        }
+      }
+    },
+    "8": {
+      "corrected": {
+        "overall": {
+          "cosine": 0.5777266241726465,
+          "relative_l2": 1.323352075368166,
+          "norm_ratio": 1.594439383968711
+        },
+        "A": {
+          "cosine": 0.6170155095402151,
+          "relative_l2": 1.2143968723714351,
+          "norm_ratio": 1.5086875479668378
+        },
+        "B": {
+          "cosine": 0.5736970776866656,
+          "relative_l2": 1.3345045994967222,
+          "norm_ratio": 1.603133201599121
+        }
+      },
+      "small_oracle": {
+        "overall": {
+          "cosine": 0.5777268230100162,
+          "relative_l2": 1.3233517229557037,
+          "norm_ratio": 1.5944395158439875
+        },
+        "A": {
+          "cosine": 0.6170196653343737,
+          "relative_l2": 1.2143923047930003,
+          "norm_ratio": 1.5086857080459595
+        },
+        "B": {
+          "cosine": 0.5736969232675619,
+          "relative_l2": 1.3345046490430832,
+          "norm_ratio": 1.6031334962695838
+        }
+      }
+    },
+    "16": {
+      "corrected": {
+        "overall": {
+          "cosine": 0.7676748547703027,
+          "relative_l2": 0.7811154745519161,
+          "norm_ratio": 1.2083418413996696
+        },
+        "A": {
+          "cosine": 0.7881203718483448,
+          "relative_l2": 0.7250294055789709,
+          "norm_ratio": 1.166851944848895
+        },
+        "B": {
+          "cosine": 0.7656745422631502,
+          "relative_l2": 0.7865960635244846,
+          "norm_ratio": 1.212621945887804
+        }
+      },
+      "small_oracle": {
+        "overall": {
+          "cosine": 0.7676754135638475,
+          "relative_l2": 0.7811148814857006,
+          "norm_ratio": 1.2083424132317304
+        },
+        "A": {
+          "cosine": 0.7881195261143148,
+          "relative_l2": 0.7250319203361869,
+          "norm_ratio": 1.1668531134724618
+        },
+        "B": {
+          "cosine": 0.7656752951443195,
+          "relative_l2": 0.7865951489657164,
+          "norm_ratio": 1.2126223385334014
+        }
+      }
+    }
+  },
+  "reconstruction_max_relative_l2": 0.002260795561596751,
+  "reconstruction_min_cosine": 0.9999945163726807,
+  "sources_datasets_adapters_predictors_unchanged": true,
+  "source_hashes": {
+    "results/final_gradient_cpu_seed101.json": "1c914da0befb56361966917fb5b465e47405085828d7838d4e9a0ed31ada25ee",
+    "scripts/gradient_audit_cpu.py": "54f571ef64b18acc2a538bb5c8efbd9a73e4294204bce969e14f635c47d06155",
+    "scripts/summarize_cpu_gradient.py": "f1a173fe65dc1bffbc05e2e772714a5bee021bdd700831b4d550cdedf193dc4a"
+  },
+  "interpretation": "Means over eight fixed32-example batches. Monte Carlo trials reuse these batches and are not160 independent test datasets. Finite-population variance ratios concern unclipped raw gradient estimators, not Adam updates. Separate CPU numerical diagnostic, not GPU timing or downstream generation evidence."
+}

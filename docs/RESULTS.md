@@ -6,7 +6,8 @@ Each topic has one main report with its configuration, result tables, and limita
 
 | Topic | Main report | Status / scope |
 |---|---|---|
-| Domain sensitivity and computational cost | [Accuracy, configurations and cost](../predictor/countdown_predictor_results/scaling-domains-20260930/README.md) | Latest; 13 conditions / 9 tasks, warmup and update LR sweeps; short-run Adaptive near Oracle, long-run Frozen degradation |
+| Efficient 0.5B predictor updates | [Accuracy, corrected FLOP estimates and gradient audit](../predictor/countdown_predictor_results/efficient-test-20261002/README.md) | Latest follow-up; 149 grid runs, two complete CPU accuracy groups; predictor trails Oracle, GPU timing incomplete |
+| Domain sensitivity and computational cost | [Accuracy, configurations and cost](../predictor/countdown_predictor_results/scaling-domains-20260930/README.md) | 13 conditions / 9 tasks, warmup and update LR sweeps; short-run Adaptive near Oracle, long-run Frozen degradation |
 | Model and task scaling | [1.5B/7B results, configuration and attempts](../predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md) | Earlier study; three math tasks, 12 main conditions, 8 modified families; no general accuracy or compute advantage established |
 | Predictor history transfer | [Matched carry/reset report and figure](../predictor/countdown_predictor_results/predictor-history-transfer/README.md) | 24 paired probes, fresh test1024, better gradient prediction without established net model improvement |
 | Countdown one-step inputs and dynamic calibration | [Countdown report](../predictor/countdown_predictor_results/README.md) | Current; one-step selection, calibration, and completed independent/joint 3/8/19 comparisons |

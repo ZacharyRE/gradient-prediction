@@ -1,0 +1,1134 @@
+{
+  "completed_only": true,
+  "counts": {
+    "completed_training_runs": 154,
+    "online_update_steps": 45514,
+    "online_true_gradient_example_calls": 460888,
+    "calibration_optimizer_steps": 23180,
+    "grid_training_runs": 149,
+    "additional_smoke_or_validation_runs": 5
+  },
+  "runs": [
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k8_lr0.0003_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k8_lr0.0003_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k8_lr0.001_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "adaptive_linear_micro32_cached_lagcv_k8_lr0.001_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "cached_cal5_lr0.0001_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "cached_cal5_lr0.0001_freq2",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 320
+    },
+    {
+      "name": "cached_cal5_lr0.0001_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "cached_cal5_lr0.0003_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "cached_cal5_lr0.0003_freq2",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 320
+    },
+    {
+      "name": "cached_cal5_lr0.0003_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "cached_lagcv_k4_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "cached_lagcv_k4_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "cached_lagcv_k8_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "cached_lagcv_k8_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "cached_oracle32_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cached_oracle32_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cached_oracle32_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cached_oracle4_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cached_oracle4_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cached_oracle4_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cal5_lr0.0001_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "cal5_lr0.0001_freq2",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 320
+    },
+    {
+      "name": "cal5_lr0.0001_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "cal5_lr0.0001_freq8",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 80
+    },
+    {
+      "name": "cal5_lr0.0003_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "cal5_lr0.0003_freq2",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 320
+    },
+    {
+      "name": "cal5_lr0.0003_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "cal5_lr0.0003_freq8",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 80
+    },
+    {
+      "name": "calLR_vec_adaptive4_lr0.001_cal0.001_freq4",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "calibrate_lr0.0001_cal_lr0.0001_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "calibrate_lr0.0001_cal_lr0.0003_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "calibrate_lr0.0001_cal_lr3e-05_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "calibrate_lr0.0003_cal_lr0.0001_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "calibrate_lr0.0003_cal_lr0.0003_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "calibrate_lr0.0003_cal_lr3e-05_epochs3_frequency4",
+      "method": "calibrate",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "cv_lr0.0001_beta0.5",
+      "method": "cv",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cv_lr0.0001_beta1.0",
+      "method": "cv",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cv_lr0.0003_beta0.5",
+      "method": "cv",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "cv_lr0.0003_beta1.0",
+      "method": "cv",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh128w128_calibrate",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "fresh128w128_cv",
+      "method": "cv",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh128w128_frozen",
+      "method": "frozen",
+      "steps": 128,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh512w128_calibrate",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "fresh512w128_cv",
+      "method": "cv",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh512w128_frozen",
+      "method": "frozen",
+      "steps": 128,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh512w512_calibrate",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "fresh512w512_cv",
+      "method": "cv",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "fresh512w512_frozen",
+      "method": "frozen",
+      "steps": 128,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "frozen_lr0.0001",
+      "method": "frozen",
+      "steps": 64,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "frozen_lr0.0003",
+      "method": "frozen",
+      "steps": 64,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "frozen_lr3e-05",
+      "method": "frozen",
+      "steps": 64,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "head_lr0.0001_cal_lr0.0003_epochs3_frequency1",
+      "method": "head",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 192
+    },
+    {
+      "name": "head_lr0.0001_cal_lr0.0003_epochs3_frequency4",
+      "method": "head",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "head_lr0.0003_cal_lr0.0003_epochs3_frequency1",
+      "method": "head",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 192
+    },
+    {
+      "name": "head_lr0.0003_cal_lr0.0003_epochs3_frequency4",
+      "method": "head",
+      "steps": 64,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 48
+    },
+    {
+      "name": "high_oracle32_lr0.003",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 32768,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "high_oracle32_lr0.01",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 32768,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "high_vec_adaptive4_lr0.003_freq4",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "high_vec_adaptive4_lr0.01_freq4",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "hybrid_lr0.0001_frequency2",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "hybrid_lr0.0001_frequency4",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "hybrid_lr0.0001_frequency8",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "hybrid_lr0.0003_frequency2",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "hybrid_lr0.0003_frequency4",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "hybrid_lr0.0003_frequency8",
+      "method": "hybrid",
+      "steps": 64,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "lagcv_k4_lr0.0001_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k4_lr0.0001_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "lagcv_k4_lr0.0003_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k4_lr0.0003_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "lagcv_k4_lr0.001_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k4_lr0.001_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "lagcv_k8_lr0.0001_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k8_lr0.0001_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "lagcv_k8_lr0.0003_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k8_lr0.0003_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "lagcv_k8_lr0.001_e1_cl0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "lagcv_k8_lr0.001_e3_cl0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 768
+    },
+    {
+      "name": "linear_cached_cal5_lr0.0001_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "linear_cached_cal5_lr0.0001_freq2",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 256,
+      "calibration_optimizer_steps": 320
+    },
+    {
+      "name": "linear_cached_cal5_lr0.0001_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "linear_cached_oracle4_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "linear_cached_oracle4_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "linear_cached_oracle4_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "linear_micro32_cached_lagcv_k4_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "linear_micro32_cached_lagcv_k4_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "linear_micro32_cached_lagcv_k8_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "linear_micro32_cached_lagcv_k8_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "linear_micro32_cached_oracle32_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "linear_micro32_cached_oracle32_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "linear_micro32_cached_oracle32_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle32_lr0.0001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 32768,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle32_lr0.0003",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 32768,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle32_lr0.001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 32768,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle4_lr0.0001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle4_lr0.0003",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle4_lr0.001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle8_lr0.0001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle8_lr0.0003",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_oracle8_lr0.001",
+      "method": "oracle",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq1",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 1024
+    },
+    {
+      "name": "long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq4",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq1",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 1024
+    },
+    {
+      "name": "long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4",
+      "method": "calcv",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "micro32_cached_lagcv_k4_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "micro32_cached_lagcv_k4_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "micro32_cached_lagcv_k8_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "micro32_cached_lagcv_k8_lr0.001",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "micro32_cached_oracle32_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "micro32_cached_oracle32_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "micro32_cached_oracle32_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "norm_oracle4_lr0.0001",
+      "method": "oracle_norm",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "norm_oracle4_lr0.0003",
+      "method": "oracle_norm",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "norm_oracle4_lr0.001",
+      "method": "oracle_norm",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "norm_oracle4_lr0.003",
+      "method": "oracle_norm",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "norm_oracle4_lr0.01",
+      "method": "oracle_norm",
+      "steps": 1024,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle128_lr0.0001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle128_lr0.0003",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle128_lr0.001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 4096,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle16_lr0.0001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle16_lr0.0003",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle16_lr0.001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle256_lr0.0001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle256_lr0.0003",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle256_lr0.001",
+      "method": "oracle",
+      "steps": 256,
+      "online_true_gradient_example_calls": 8192,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle4_lr0.0001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle4_lr0.0003",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle4_lr0.001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle8_lr0.0001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle8_lr0.0003",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle8_lr0.001",
+      "method": "oracle",
+      "steps": 128,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle_lr0.0001",
+      "method": "oracle",
+      "steps": 64,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle_lr0.0003",
+      "method": "oracle",
+      "steps": 64,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle_lr0.001",
+      "method": "oracle",
+      "steps": 64,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "oracle_lr3e-05",
+      "method": "oracle",
+      "steps": 64,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "smoke_calibrate",
+      "method": "calibrate",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 6
+    },
+    {
+      "name": "smoke_cv",
+      "method": "cv",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "smoke_frozen",
+      "method": "frozen",
+      "steps": 2,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "smoke_head",
+      "method": "head",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 6
+    },
+    {
+      "name": "smoke_oracle",
+      "method": "oracle",
+      "steps": 2,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k8_lr0.0003_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k8_lr0.0003_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k8_lr0.001_freq1",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 256
+    },
+    {
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k8_lr0.001_freq4",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 2048,
+      "calibration_optimizer_steps": 64
+    },
+    {
+      "name": "vec_linear_cached_cal5_lr0.0001_freq1",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 512,
+      "calibration_optimizer_steps": 640
+    },
+    {
+      "name": "vec_linear_cached_cal5_lr0.0001_freq4",
+      "method": "calibrate",
+      "steps": 128,
+      "online_true_gradient_example_calls": 128,
+      "calibration_optimizer_steps": 160
+    },
+    {
+      "name": "vec_linear_micro32_cached_lagcv_k4_lr0.0003",
+      "method": "calcv",
+      "steps": 256,
+      "online_true_gradient_example_calls": 1024,
+      "calibration_optimizer_steps": 256
+    }
+  ],
+  "note": "Research exploration counts, not selected-method deployment costs. Repeated accesses count repeatedly; excludes partial interrupted runs, diagnostics, offline predictor fitting, cache construction, generation evaluation and benchmark/profile replays. No precise totalGPUtime claim.",
+  "grid_counts": {
+    "steps": 45504,
+    "online_true_gradient_example_calls": 460800,
+    "calibration_optimizer_steps": 23168
+  },
+  "additional_validation_runs": [
+    {
+      "name": "smoke_calibrate",
+      "method": "calibrate",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 6
+    },
+    {
+      "name": "smoke_cv",
+      "method": "cv",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "smoke_frozen",
+      "method": "frozen",
+      "steps": 2,
+      "online_true_gradient_example_calls": 0,
+      "calibration_optimizer_steps": 0
+    },
+    {
+      "name": "smoke_head",
+      "method": "head",
+      "steps": 2,
+      "online_true_gradient_example_calls": 8,
+      "calibration_optimizer_steps": 6
+    },
+    {
+      "name": "smoke_oracle",
+      "method": "oracle",
+      "steps": 2,
+      "online_true_gradient_example_calls": 64,
+      "calibration_optimizer_steps": 0
+    }
+  ]
+}

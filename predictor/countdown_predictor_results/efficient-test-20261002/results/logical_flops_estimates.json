@@ -1,0 +1,431 @@
+{
+  "estimate_only": true,
+  "not_full_gpu_trajectory_profile": true,
+  "method": "CPU operator shape representatives plus dense logical fused-attention arithmetic; exact polynomial scaling validation and GPU two-step smoke checks; sum actual saved batch orders/full token lengths.",
+  "coefficient_strings": {
+    "truth": [
+      "161280",
+      "1493581888",
+      "0"
+    ],
+    "prediction": [
+      "1024",
+      "3147008",
+      "0"
+    ],
+    "individual": [
+      "0",
+      "458752",
+      "0"
+    ],
+    "fit": [
+      "3072",
+      "4213248",
+      "0"
+    ]
+  },
+  "shape_profiles": [
+    {
+      "kind": "truth",
+      "batch": 1,
+      "length": 32,
+      "direct_matrix_flops": 47794620416,
+      "fused_dense_attention_flops": 165150720,
+      "total": 47959771136,
+      "operators": {
+        "aten::bmm": 2048,
+        "aten::mm": 46803714048,
+        "aten::addmm": 990904320
+      }
+    },
+    {
+      "kind": "truth",
+      "batch": 1,
+      "length": 48,
+      "direct_matrix_flops": 71691930624,
+      "fused_dense_attention_flops": 371589120,
+      "total": 72063519744,
+      "operators": {
+        "aten::bmm": 3072,
+        "aten::mm": 70205571072,
+        "aten::addmm": 1486356480
+      }
+    },
+    {
+      "kind": "truth",
+      "batch": 1,
+      "length": 64,
+      "direct_matrix_flops": 95589240832,
+      "fused_dense_attention_flops": 660602880,
+      "total": 96249843712,
+      "operators": {
+        "aten::bmm": 4096,
+        "aten::mm": 93607428096,
+        "aten::addmm": 1981808640
+      }
+    },
+    {
+      "kind": "truth",
+      "batch": 4,
+      "length": 88,
+      "direct_matrix_flops": 525740807680,
+      "fused_dense_attention_flops": 4995809280,
+      "total": 530736616960,
+      "operators": {
+        "aten::bmm": 5632,
+        "aten::mm": 514840854528,
+        "aten::addmm": 10899947520
+      }
+    },
+    {
+      "kind": "truth",
+      "batch": 3,
+      "length": 104,
+      "direct_matrix_flops": 465997535744,
+      "fused_dense_attention_flops": 5233213440,
+      "total": 471230749184,
+      "operators": {
+        "aten::bmm": 6656,
+        "aten::mm": 456336211968,
+        "aten::addmm": 9661317120
+      }
+    },
+    {
+      "kind": "prediction",
+      "batch": 1,
+      "length": 32,
+      "direct_matrix_flops": 101752832,
+      "fused_dense_attention_flops": 0,
+      "total": 101752832,
+      "operators": {
+        "aten::mm": 79732736,
+        "aten::addmm": 20971520,
+        "aten::bmm": 1048576
+      }
+    },
+    {
+      "kind": "prediction",
+      "batch": 1,
+      "length": 48,
+      "direct_matrix_flops": 153415680,
+      "fused_dense_attention_flops": 0,
+      "total": 153415680,
+      "operators": {
+        "aten::mm": 119599104,
+        "aten::addmm": 31457280,
+        "aten::bmm": 2359296
+      }
+    },
+    {
+      "kind": "prediction",
+      "batch": 1,
+      "length": 64,
+      "direct_matrix_flops": 205602816,
+      "fused_dense_attention_flops": 0,
+      "total": 205602816,
+      "operators": {
+        "aten::mm": 159465472,
+        "aten::addmm": 41943040,
+        "aten::bmm": 4194304
+      }
+    },
+    {
+      "kind": "prediction",
+      "batch": 4,
+      "length": 88,
+      "direct_matrix_flops": 1139466240,
+      "fused_dense_attention_flops": 0,
+      "total": 1139466240,
+      "operators": {
+        "aten::mm": 877060096,
+        "aten::addmm": 230686720,
+        "aten::bmm": 31719424
+      }
+    },
+    {
+      "kind": "prediction",
+      "batch": 3,
+      "length": 104,
+      "direct_matrix_flops": 1015093248,
+      "fused_dense_attention_flops": 0,
+      "total": 1015093248,
+      "operators": {
+        "aten::mm": 777394176,
+        "aten::addmm": 204472320,
+        "aten::bmm": 33226752
+      }
+    },
+    {
+      "kind": "individual",
+      "batch": 1,
+      "length": 32,
+      "direct_matrix_flops": 14680064,
+      "fused_dense_attention_flops": 0,
+      "total": 14680064,
+      "operators": {
+        "aten::mm": 7340032,
+        "aten::bmm": 7340032
+      }
+    },
+    {
+      "kind": "individual",
+      "batch": 1,
+      "length": 48,
+      "direct_matrix_flops": 22020096,
+      "fused_dense_attention_flops": 0,
+      "total": 22020096,
+      "operators": {
+        "aten::mm": 11010048,
+        "aten::bmm": 11010048
+      }
+    },
+    {
+      "kind": "individual",
+      "batch": 1,
+      "length": 64,
+      "direct_matrix_flops": 29360128,
+      "fused_dense_attention_flops": 0,
+      "total": 29360128,
+      "operators": {
+        "aten::mm": 14680064,
+        "aten::bmm": 14680064
+      }
+    },
+    {
+      "kind": "individual",
+      "batch": 4,
+      "length": 88,
+      "direct_matrix_flops": 161480704,
+      "fused_dense_attention_flops": 0,
+      "total": 161480704,
+      "operators": {
+        "aten::mm": 80740352,
+        "aten::bmm": 80740352
+      }
+    },
+    {
+      "kind": "individual",
+      "batch": 3,
+      "length": 104,
+      "direct_matrix_flops": 143130624,
+      "fused_dense_attention_flops": 0,
+      "total": 143130624,
+      "operators": {
+        "aten::mm": 71565312,
+        "aten::bmm": 71565312
+      }
+    },
+    {
+      "kind": "fit",
+      "batch": 1,
+      "length": 32,
+      "direct_matrix_flops": 134823936,
+      "fused_dense_attention_flops": 3145728,
+      "total": 137969664,
+      "operators": {
+        "aten::mm": 81346560,
+        "aten::bmm": 22020096,
+        "aten::addmm": 31457280
+      }
+    },
+    {
+      "kind": "fit",
+      "batch": 1,
+      "length": 48,
+      "direct_matrix_flops": 202235904,
+      "fused_dense_attention_flops": 7077888,
+      "total": 209313792,
+      "operators": {
+        "aten::mm": 122019840,
+        "aten::bmm": 33030144,
+        "aten::addmm": 47185920
+      }
+    },
+    {
+      "kind": "fit",
+      "batch": 1,
+      "length": 64,
+      "direct_matrix_flops": 269647872,
+      "fused_dense_attention_flops": 12582912,
+      "total": 282230784,
+      "operators": {
+        "aten::mm": 162693120,
+        "aten::bmm": 44040192,
+        "aten::addmm": 62914560
+      }
+    },
+    {
+      "kind": "fit",
+      "batch": 4,
+      "length": 88,
+      "direct_matrix_flops": 1483063296,
+      "fused_dense_attention_flops": 95158272,
+      "total": 1578221568,
+      "operators": {
+        "aten::mm": 964018176,
+        "aten::bmm": 242221056,
+        "aten::addmm": 276824064
+      }
+    },
+    {
+      "kind": "fit",
+      "batch": 3,
+      "length": 104,
+      "direct_matrix_flops": 1314533376,
+      "fused_dense_attention_flops": 99680256,
+      "total": 1414213632,
+      "operators": {
+        "aten::mm": 854470656,
+        "aten::bmm": 214695936,
+        "aten::addmm": 245366784
+      }
+    }
+  ],
+  "shape_validation": [
+    {
+      "kind": "truth",
+      "withheld_batch": 4,
+      "withheld_length": 88,
+      "exact_match": true
+    },
+    {
+      "kind": "truth",
+      "withheld_batch": 3,
+      "withheld_length": 104,
+      "exact_match": true
+    },
+    {
+      "kind": "prediction",
+      "withheld_batch": 4,
+      "withheld_length": 88,
+      "exact_match": true
+    },
+    {
+      "kind": "prediction",
+      "withheld_batch": 3,
+      "withheld_length": 104,
+      "exact_match": true
+    },
+    {
+      "kind": "individual",
+      "withheld_batch": 4,
+      "withheld_length": 88,
+      "exact_match": true
+    },
+    {
+      "kind": "individual",
+      "withheld_batch": 3,
+      "withheld_length": 104,
+      "exact_match": true
+    },
+    {
+      "kind": "fit",
+      "withheld_batch": 4,
+      "withheld_length": 88,
+      "exact_match": true
+    },
+    {
+      "kind": "fit",
+      "withheld_batch": 3,
+      "withheld_length": 104,
+      "exact_match": true
+    }
+  ],
+  "gpu_smoke_validation": [
+    {
+      "source": "profile_smoke.json",
+      "name": "micro32_cached_oracle32_lr0.001_timing_m32",
+      "estimated": 22331085844992,
+      "measured": 22331085844992,
+      "relative_difference": 0.0
+    },
+    {
+      "source": "profile_vector_smoke.json",
+      "name": "vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.0003_freq1",
+      "estimated": 2800043417600,
+      "measured": 2800043417600,
+      "relative_difference": 0.0
+    }
+  ],
+  "entries": [
+    {
+      "label": "Predictor",
+      "adapter": "efficient_test/models/long_vec_adaptive_linear_micro32_cached_lagcv_k4_lr0.001_freq4/step-256",
+      "online_estimated_dense_matrix_flops": 355121203642368,
+      "stage_estimates": {
+        "truth": 348479253094400,
+        "prediction": 6160164581376,
+        "individual": 207524724736,
+        "fit": 274261241856
+      },
+      "shared_cache_estimated_dense_matrix_flops": 86449621125120,
+      "offline_estimated_dense_matrix_flops": 69100088210944,
+      "total_estimated_dense_matrix_flops": 510670912978432,
+      "history_sha256": "86e11cbbd5d70d20a19663aeb35f34664eaac943231c75995199ebf570a3e732"
+    },
+    {
+      "label": "Oracle32",
+      "adapter": "efficient_test/models/long_oracle32_lr0.001/step-1024",
+      "online_estimated_dense_matrix_flops": 11380158463407616,
+      "stage_estimates": {
+        "truth": 11380158463407616,
+        "prediction": 0,
+        "individual": 0,
+        "fit": 0
+      },
+      "shared_cache_estimated_dense_matrix_flops": 86449621125120,
+      "offline_estimated_dense_matrix_flops": 0,
+      "total_estimated_dense_matrix_flops": 11466608084532736,
+      "history_sha256": "dc2a0d4b26d4e96522d92a6180a17c0db238beb03940bbe1a2dd7614b79d10e3"
+    },
+    {
+      "label": "EarlyOracle32",
+      "adapter": "efficient_test/models/long_oracle32_lr0.001/step-512",
+      "online_estimated_dense_matrix_flops": 5687070350732288,
+      "stage_estimates": {
+        "truth": 5687070350732288,
+        "prediction": 0,
+        "individual": 0,
+        "fit": 0
+      },
+      "shared_cache_estimated_dense_matrix_flops": 86449621125120,
+      "offline_estimated_dense_matrix_flops": 0,
+      "total_estimated_dense_matrix_flops": 5773519971857408,
+      "history_sha256": "dc2a0d4b26d4e96522d92a6180a17c0db238beb03940bbe1a2dd7614b79d10e3"
+    },
+    {
+      "label": "Oracle8",
+      "adapter": "efficient_test/models/long_oracle8_lr0.001/step-1024",
+      "online_estimated_dense_matrix_flops": 2812151281247744,
+      "stage_estimates": {
+        "truth": 2812151281247744,
+        "prediction": 0,
+        "individual": 0,
+        "fit": 0
+      },
+      "shared_cache_estimated_dense_matrix_flops": 86449621125120,
+      "offline_estimated_dense_matrix_flops": 0,
+      "total_estimated_dense_matrix_flops": 2898600902372864,
+      "history_sha256": "a812820f5c99be7c6a046faaceab592246857b966ecedb00fa559e0e10fcdcc5"
+    },
+    {
+      "label": "ProbeOnly4",
+      "adapter": "efficient_test/models/norm_oracle4_lr0.001/step-256",
+      "online_estimated_dense_matrix_flops": 348479253094400,
+      "stage_estimates": {
+        "truth": 348479253094400,
+        "prediction": 0,
+        "individual": 0,
+        "fit": 0
+      },
+      "shared_cache_estimated_dense_matrix_flops": 86449621125120,
+      "offline_estimated_dense_matrix_flops": 0,
+      "total_estimated_dense_matrix_flops": 434928874219520,
+      "history_sha256": "27cd48bf5d0e0e0b1c9a4ce2e75705bc5b8cae42966703d555dacda0eec7a280"
+    }
+  ],
+  "offline_profile": "efficient_test/results/offline_flops_corrected.json",
+  "exclusions": "Elementwise, normalization, softmax, optimizer scalar operations. Does not measure time, retrain checkpoints, or prove equal downstream quality.",
+  "source_sha256": "41114dd8ede7f4d82b76b83e40dec2c184e88c86bed03ac480367d5fe5645de0",
+  "offline_backward_accounting_corrected": true
+}

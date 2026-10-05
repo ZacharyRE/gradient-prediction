@@ -4,6 +4,8 @@
 
 Experiments: September 30–October 2, 2026. Updated analysis: October 4.
 
+**Subsequent study:** [Efficient 0.5B Countdown updates](../efficient-test-20261002/README.md) tests smaller predictors, residual correction and caching. Its separate CPU accuracy and estimated FLOPs are not included in the tables below.
+
 **Adaptive reaches accuracy close to the true-gradient Oracle, but neither consistently improves on warmup. Frozen updates are cheaper per step; long runs lose accuracy. A reliable improvement at lower total cost is not yet established.**
 
 ![Accuracy gains after warmup and measured computational cost](figures/overview.png)

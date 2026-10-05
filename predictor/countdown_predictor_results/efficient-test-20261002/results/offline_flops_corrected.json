@@ -1,0 +1,788 @@
+{
+  "time": 1790943506.2684805,
+  "valid": true,
+  "estimate_only": true,
+  "scope": "Corrected complete offline160-label collection +30epochs predictor fit +30validation passes; CPU isolated total-event profiles and exact actualshape sums. Not new selectedmodeltraining or GPUtime.",
+  "total_estimated_dense_matrix_flops": 69100088210944,
+  "stages": {
+    "offline_labels": {
+      "direct": 62819561256448,
+      "fused": 1587626901504,
+      "total": 64407188157952
+    },
+    "offline_fit_total": 4264930885632,
+    "offline_validation": {
+      "direct": 427969167360,
+      "fused": 0,
+      "total": 427969167360
+    },
+    "offline_fit_direct": 3660874334208
+  },
+  "old_total": 38782231811584,
+  "old_label_count_exactly_matches_forward_only": true,
+  "underestimated_by": 30317856399360,
+  "cause": "Original GPU label scope exactly matches forward-only work; complete isolated CPU profiles expose omitted backward work. Inferred mechanism: GPU autograd events outside the filtered CPU parent scopes.",
+  "shape_profiles": [
+    {
+      "kind": "labels",
+      "batch": 1,
+      "length": 32,
+      "direct": 55494313984,
+      "fused": 198180864,
+      "total": 55692494848,
+      "ancestor_filtered_direct": 55494313984,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 2048,
+        "aten::addmm": 1585446912,
+        "aten::mm": 53908865024
+      }
+    },
+    {
+      "kind": "labels",
+      "batch": 1,
+      "length": 48,
+      "direct": 83241470976,
+      "fused": 445906944,
+      "total": 83687377920,
+      "ancestor_filtered_direct": 83241470976,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 3072,
+        "aten::addmm": 2378170368,
+        "aten::mm": 80863297536
+      }
+    },
+    {
+      "kind": "labels",
+      "batch": 1,
+      "length": 64,
+      "direct": 110988627968,
+      "fused": 792723456,
+      "total": 111781351424,
+      "ancestor_filtered_direct": 110988627968,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 4096,
+        "aten::addmm": 3170893824,
+        "aten::mm": 107817730048
+      }
+    },
+    {
+      "kind": "labels",
+      "batch": 4,
+      "length": 88,
+      "direct": 610437436928,
+      "fused": 5994971136,
+      "total": 616432408064,
+      "ancestor_filtered_direct": 610437436928,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 5632,
+        "aten::addmm": 17439916032,
+        "aten::mm": 592997515264
+      }
+    },
+    {
+      "kind": "forward_only",
+      "batch": 1,
+      "length": 32,
+      "direct": 31620859904,
+      "fused": 88080384,
+      "total": 31708940288,
+      "ancestor_filtered_direct": 31620859904,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 2048,
+        "aten::addmm": 1585446912,
+        "aten::mm": 30035410944
+      }
+    },
+    {
+      "kind": "forward_only",
+      "batch": 1,
+      "length": 48,
+      "direct": 47431289856,
+      "fused": 198180864,
+      "total": 47629470720,
+      "ancestor_filtered_direct": 47431289856,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 3072,
+        "aten::addmm": 2378170368,
+        "aten::mm": 45053116416
+      }
+    },
+    {
+      "kind": "forward_only",
+      "batch": 1,
+      "length": 64,
+      "direct": 63241719808,
+      "fused": 352321536,
+      "total": 63594041344,
+      "ancestor_filtered_direct": 63241719808,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 4096,
+        "aten::addmm": 3170893824,
+        "aten::mm": 60070821888
+      }
+    },
+    {
+      "kind": "forward_only",
+      "batch": 4,
+      "length": 88,
+      "direct": 347829442048,
+      "fused": 2664431616,
+      "total": 350493873664,
+      "ancestor_filtered_direct": 347829442048,
+      "unparented_operators": {},
+      "operators": {
+        "aten::bmm": 5632,
+        "aten::addmm": 17439916032,
+        "aten::mm": 330389520384
+      }
+    },
+    {
+      "kind": "validation",
+      "batch": 1,
+      "length": 32,
+      "direct": 57712640,
+      "fused": 0,
+      "total": 57712640,
+      "ancestor_filtered_direct": 57712640,
+      "unparented_operators": {},
+      "operators": {
+        "aten::addmm": 20971520,
+        "aten::mm": 21012480,
+        "aten::bmm": 15728640
+      }
+    },
+    {
+      "kind": "validation",
+      "batch": 1,
+      "length": 48,
+      "direct": 87355392,
+      "fused": 0,
+      "total": 87355392,
+      "ancestor_filtered_direct": 87355392,
+      "unparented_operators": {},
+      "operators": {
+        "aten::addmm": 31457280,
+        "aten::mm": 31518720,
+        "aten::bmm": 24379392
+      }
+    },
+    {
+      "kind": "validation",
+      "batch": 1,
+      "length": 64,
+      "direct": 117522432,
+      "fused": 0,
+      "total": 117522432,
+      "ancestor_filtered_direct": 117522432,
+      "unparented_operators": {},
+      "operators": {
+        "aten::addmm": 41943040,
+        "aten::mm": 42024960,
+        "aten::bmm": 33554432
+      }
+    },
+    {
+      "kind": "validation",
+      "batch": 4,
+      "length": 88,
+      "direct": 655024128,
+      "fused": 0,
+      "total": 655024128,
+      "ancestor_filtered_direct": 655024128,
+      "unparented_operators": {},
+      "operators": {
+        "aten::addmm": 230686720,
+        "aten::mm": 231137280,
+        "aten::bmm": 193200128
+      }
+    }
+  ],
+  "coefficient_strings": {
+    "labels": {
+      "direct": [
+        "0",
+        "1734197312",
+        "0"
+      ],
+      "fused": [
+        "193536",
+        "0",
+        "0"
+      ],
+      "total": [
+        "193536",
+        "1734197312",
+        "0"
+      ]
+    },
+    "forward_only": {
+      "direct": [
+        "0",
+        "988151872",
+        "0"
+      ],
+      "fused": [
+        "86016",
+        "0",
+        "0"
+      ],
+      "total": [
+        "86016",
+        "988151872",
+        "0"
+      ]
+    },
+    "validation": {
+      "direct": [
+        "1024",
+        "1770752",
+        "0"
+      ],
+      "fused": [
+        "0",
+        "0",
+        "0"
+      ],
+      "total": [
+        "1024",
+        "1770752",
+        "0"
+      ]
+    }
+  },
+  "label_shapes": [
+    [
+      16,
+      232
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      232
+    ],
+    [
+      16,
+      232
+    ],
+    [
+      16,
+      224
+    ],
+    [
+      16,
+      224
+    ]
+  ],
+  "fit_shapes": [
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      221
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      221
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      220
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      221
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      220
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      221
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      220
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      226
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      222
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      228
+    ],
+    [
+      32,
+      224
+    ],
+    [
+      32,
+      221
+    ]
+  ],
+  "source_sha256": "d63b58b78c542bd39039c4990c97482d2f0a705c5c5d30f4603a9d9558b01b7c",
+  "supersedes": "efficient_test/results/offline_profile/flops.json",
+  "total_direct_matrix_flops": 66908404758016,
+  "direct_field_note": "Shape-derived direct matrix-work estimate; not a complete GPU trace count."
+}

@@ -12,6 +12,7 @@ The current predictor reads module output Y, supervision mask, and position. A b
 
 | Topic | Main question | Where to read |
 |---|---|---|
+| Efficient 0.5B updates | Do a smaller predictor and four true-gradient probes preserve quality at lower cost? | [CPU accuracy, corrected FLOPs and missing controls](countdown_predictor_results/efficient-test-20261002/README.md) |
 | Domain sensitivity and computational cost | Does continued training improve on warmup at lower total cost? | [13 conditions, sensitivity and long-run results](countdown_predictor_results/scaling-domains-20260930/README.md) |
 | History versus ordinary training | Does sequential history beat training on the same labels and budget? | [Ben learning audit: setup, results and cost](countdown_predictor_results/ben-learning-audit-20260927/README.md) |
 | Model and task scaling | Does calibration help 1.5B/7B across Countdown, GSM8K and MATH? | [Results, configuration and attempts](countdown_predictor_results/scaling-benchmarks-20260926/README.md) |

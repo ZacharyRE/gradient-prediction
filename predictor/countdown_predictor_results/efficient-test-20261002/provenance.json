@@ -1,0 +1,16 @@
+{
+  "source_folder": "efficient_test",
+  "experiment_date": "2026-10-02",
+  "publication_date": "2026-10-04",
+  "source_sha256": {
+    "results/cpu_accuracy_statistics.json": "62c2823f8600b5f33341e6aca3fb9b04f7f46cb177dfd61ed35368c6ef5217ab",
+    "results/logical_flops_estimates.json": "631434fde9d32f092c079f2e62fff2159acf5ad0b2b0296a0a76dbe6acf04abb",
+    "results/offline_flops_corrected.json": "cc87b6039ff07a96000f0d95a3e0d1fc26cb8b551dd604ca659d2a42229fe98b",
+    "results/final_gradient_cpu_summary.json": "49565c74467361c794db145cd4f4767b260464c17d3e6a448e8d420d6668e3e7",
+    "results/completed_search_work.json": "3348b57c18d064280dc4c28bd818c9cd5007c43542b45e099d62e07276491893",
+    "configs/final_selected.json": "e3627213b274b23e821d9cffe2f8f51cf8848776373096b7783120c529f0c449",
+    "results/cpu_figures/quality_compute.png": "272a8e53b76eab95bb1ec1dbada0007d68cba00ce5e8e18723211efee1319d1e"
+  },
+  "scope": "Compact English evidence release. Source artifact paths identify local files, not bundled models or generations. Corrected offline FLOPs supersede the original undercount. Full CPU accuracy is complete only for Predictor and Oracle32; no controlled GPU timing result.",
+  "source_path_rewrite": "Removed machine-specific absolute project prefix from JSON strings; scientific values unchanged."
+}
