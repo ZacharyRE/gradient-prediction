@@ -4,7 +4,9 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 **Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration across model sizes and math tasks.
 
-**Latest published result — scaling to 1.5B / 7B:** across Countdown, GSM8K and MATH, activation gradients remain learnable and calibration prevents some frozen-predictor failures. However, all six gentle-warmup three-seed Adaptive-versus-Mean accuracy intervals include zero. No general downstream or compute advantage is established. [Results, configuration and attempts →](predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md)
+**Latest results — broader domains and measured cost:** across 13 model/task conditions, Adaptive is close to Oracle, but adds only **+0.10 pp** over warmup on average (Oracle: **+0.02 pp**). Frozen is **4.1–5.9× faster per online step**; Adaptive uses fewer counted FLOPs but takes **2.18–2.97×** the Oracle time. Four long-run Frozen tests deteriorate. [Results, settings and figures →](predictor/countdown_predictor_results/scaling-domains-20260930/README.md)
+
+**Earlier scaling result — 1.5B / 7B:** across Countdown, GSM8K and MATH, activation gradients remain learnable and calibration prevents some frozen-predictor failures. However, all six gentle-warmup three-seed Adaptive-versus-Mean accuracy intervals include zero. No general downstream or compute advantage is established. [Results, configuration and attempts →](predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md)
 
 **Predictor history transfer:** keeping past calibration weights reduces held-out gradient error in **24/24 paired probes**. On a fresh 1,024-question one-update evaluation, carry-history reaches **6.93% vs reset's 6.12%**, but remains near the **7.00%** unchanged-model baseline. [History-transfer report →](predictor/countdown_predictor_results/predictor-history-transfer/README.md)
 
@@ -21,6 +23,7 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 | 5. Layer scope | Does the single-layer method transfer to joint updates? | [Completed independent 3/8/19 and joint 3+8+19 comparison](predictor/countdown_predictor_results/README.md#joint-and-independent-layer-updates); all-layer expansion deferred |
 | 6. History transfer | Does retaining predictor experience help on new model states and data? | [Matched carry/reset comparison](predictor/countdown_predictor_results/predictor-history-transfer/README.md): better gradient prediction, limited downstream benefit |
 | 7. Model and task scaling | Does the method remain useful at 1.5B/7B on Countdown, GSM8K and MATH? | [Scaling results and tested changes](predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md): learnable gradients without established general accuracy gains |
+| 8. Domain sensitivity and cost | Do predicted updates improve on warmup and reduce total cost? | [13 conditions, warmup/update LR sweeps, controlled profiling and 1,024-step follow-up](predictor/countdown_predictor_results/scaling-domains-20260930/README.md): limited extra accuracy; no established improvement at lower total cost |
 
 The [SFT diagnosis studies](research/README.md) provide supporting evidence about training stability, supervision targets, and evaluation. Their settings differ from the Countdown predictor experiments.
 

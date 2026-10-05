@@ -4,7 +4,9 @@
 
 **Research question:** can a gradient predictor produce useful LoRA updates, and can small calibration batches keep it effective as the model changes?
 
-**Latest published result:** [Ben learning audit: history versus ordinary training](ben-learning-audit-20260927/README.md). With matched historical labels and training budgets, sequential history and pooled training reach similar gradient errors. Eight-step accuracy is 8.95% versus 8.56%, without a stable advantage across seeds; controlled online updates take about 3× the Oracle time. The report includes the exact setup and compact evidence tables.
+**Latest published result:** [Domain sensitivity, downstream accuracy and computational cost](scaling-domains-20260930/README.md). Across 13 conditions, Adaptive averages +0.10 pp over warmup and +0.08 pp over Oracle. Frozen is faster per step, but all four 1,024-step follow-ups lose accuracy; Adaptive calibration reduces counted FLOPs while increasing wall time.
+
+**Earlier learning audit:** [Ben learning audit: history versus ordinary training](ben-learning-audit-20260927/README.md). With matched historical labels and training budgets, sequential history and pooled training reach similar gradient errors. Eight-step accuracy is 8.95% versus 8.56%, without a stable advantage across seeds; controlled online updates take about 3× the Oracle time. The report includes the exact setup and compact evidence tables.
 
 [Model/task scaling: 1.5B / 7B on Countdown, GSM8K and MATH](scaling-benchmarks-20260926/README.md) remains available with configurations, aggregate results and stepwise gradient metrics.
 
