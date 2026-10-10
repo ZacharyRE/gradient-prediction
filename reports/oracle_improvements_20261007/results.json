@@ -1,0 +1,2141 @@
+{
+  "description": "Oracle improvement experiments, October 7, 2026. All accuracy_pct and gain/delta_pp values use percentage units. Main report uses family11 for scope/confirmation/pool, family8 for target/layer policies, and family3 for the old-protocol step bridge.",
+  "scope_search": {
+    "arc_challenge": {
+      "n": 1172,
+      "base_correct": 851,
+      "warmup_correct": 879,
+      "warmup_accuracy_pct": 75.0,
+      "recipe": {
+        "arm": "layer8_o",
+        "modules": [
+          "model.layers.8.self_attn.o_proj"
+        ],
+        "lr": 0.0003,
+        "steps": 32,
+        "trainable_parameters": 196608,
+        "dev_correct": 232
+      },
+      "oracle_correct_by_seed": [
+        884,
+        884,
+        889,
+        884,
+        886
+      ],
+      "oracle_accuracy_pct": 75.54607508532423,
+      "comparison_family11": {
+        "delta_pp": 0.5460750853242321,
+        "seed_gains_pp": [
+          0.42662116040955633,
+          0.42662116040955633,
+          0.8532423208191127,
+          0.42662116040955633,
+          0.5972696245733788
+        ],
+        "joint_ci95": [
+          -1.023890784982935,
+          2.1160409556313993
+        ],
+        "familywise_ci95": [
+          -1.7235494880546076,
+          2.8327645051194534
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 1172,
+        "rows": 1172,
+        "stable_positive": false
+      },
+      "development_n": 299,
+      "development_best_per_scope": {
+        "layer23_o": {
+          "arm": "layer23_o",
+          "modules": [
+            "model.layers.23.self_attn.o_proj"
+          ],
+          "lr": 0.0001,
+          "steps": 32,
+          "trainable_parameters": 196608,
+          "dev_correct": 230
+        },
+        "layer8_o": {
+          "arm": "layer8_o",
+          "modules": [
+            "model.layers.8.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 32,
+          "trainable_parameters": 196608,
+          "dev_correct": 232
+        },
+        "upper3_down": {
+          "arm": "upper3_down",
+          "modules": [
+            "model.layers.19.mlp.down_proj",
+            "model.layers.23.mlp.down_proj",
+            "model.layers.27.mlp.down_proj"
+          ],
+          "lr": 0.0001,
+          "steps": 128,
+          "trainable_parameters": 2015232,
+          "dev_correct": 231
+        },
+        "upper3_o": {
+          "arm": "upper3_o",
+          "modules": [
+            "model.layers.19.self_attn.o_proj",
+            "model.layers.23.self_attn.o_proj",
+            "model.layers.27.self_attn.o_proj"
+          ],
+          "lr": 0.0001,
+          "steps": 32,
+          "trainable_parameters": 589824,
+          "dev_correct": 231
+        }
+      }
+    },
+    "boolq": {
+      "n": 3270,
+      "base_correct": 2545,
+      "warmup_correct": 2583,
+      "warmup_accuracy_pct": 78.9908256880734,
+      "recipe": {
+        "arm": "layer8_o",
+        "modules": [
+          "model.layers.8.self_attn.o_proj"
+        ],
+        "lr": 0.0003,
+        "steps": 256,
+        "trainable_parameters": 196608,
+        "dev_correct": 857
+      },
+      "oracle_correct_by_seed": [
+        2706,
+        2714,
+        2706,
+        2717,
+        2651
+      ],
+      "oracle_accuracy_pct": 82.53211009174312,
+      "comparison_family11": {
+        "delta_pp": 3.541284403669725,
+        "seed_gains_pp": [
+          3.761467889908257,
+          4.00611620795107,
+          3.761467889908257,
+          4.097859327217125,
+          2.079510703363914
+        ],
+        "joint_ci95": [
+          2.2399963381141292,
+          4.822351582992256
+        ],
+        "familywise_ci95": [
+          1.6131787314986763,
+          5.377365452478721
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 2938,
+        "rows": 3270,
+        "stable_positive": true
+      },
+      "development_n": 1024,
+      "development_best_per_scope": {
+        "layer23_o": {
+          "arm": "layer23_o",
+          "modules": [
+            "model.layers.23.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 196608,
+          "dev_correct": 831
+        },
+        "layer8_o": {
+          "arm": "layer8_o",
+          "modules": [
+            "model.layers.8.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 196608,
+          "dev_correct": 857
+        },
+        "upper3_down": {
+          "arm": "upper3_down",
+          "modules": [
+            "model.layers.19.mlp.down_proj",
+            "model.layers.23.mlp.down_proj",
+            "model.layers.27.mlp.down_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 2015232,
+          "dev_correct": 841
+        },
+        "upper3_o": {
+          "arm": "upper3_o",
+          "modules": [
+            "model.layers.19.self_attn.o_proj",
+            "model.layers.23.self_attn.o_proj",
+            "model.layers.27.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 589824,
+          "dev_correct": 835
+        }
+      }
+    },
+    "arc_easy": {
+      "n": 2376,
+      "base_correct": 2051,
+      "warmup_correct": 2067,
+      "warmup_accuracy_pct": 86.9949494949495,
+      "recipe": {
+        "arm": "layer8_o",
+        "modules": [
+          "model.layers.8.self_attn.o_proj"
+        ],
+        "lr": 0.0003,
+        "steps": 128,
+        "trainable_parameters": 196608,
+        "dev_correct": 518
+      },
+      "oracle_correct_by_seed": [
+        2152,
+        2141,
+        2156,
+        2151,
+        2148
+      ],
+      "oracle_accuracy_pct": 90.47138047138047,
+      "comparison_family11": {
+        "delta_pp": 3.476430976430976,
+        "seed_gains_pp": [
+          3.577441077441077,
+          3.1144781144781146,
+          3.745791245791246,
+          3.535353535353535,
+          3.4090909090909087
+        ],
+        "joint_ci95": [
+          2.4663299663299663,
+          4.494949494949495
+        ],
+        "familywise_ci95": [
+          2.02020202020202,
+          4.94949494949495
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 2376,
+        "rows": 2376,
+        "stable_positive": true
+      },
+      "development_n": 570,
+      "development_best_per_scope": {
+        "layer23_o": {
+          "arm": "layer23_o",
+          "modules": [
+            "model.layers.23.self_attn.o_proj"
+          ],
+          "lr": 0.0001,
+          "steps": 128,
+          "trainable_parameters": 196608,
+          "dev_correct": 510
+        },
+        "layer8_o": {
+          "arm": "layer8_o",
+          "modules": [
+            "model.layers.8.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 128,
+          "trainable_parameters": 196608,
+          "dev_correct": 518
+        },
+        "upper3_down": {
+          "arm": "upper3_down",
+          "modules": [
+            "model.layers.19.mlp.down_proj",
+            "model.layers.23.mlp.down_proj",
+            "model.layers.27.mlp.down_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 2015232,
+          "dev_correct": 515
+        },
+        "upper3_o": {
+          "arm": "upper3_o",
+          "modules": [
+            "model.layers.19.self_attn.o_proj",
+            "model.layers.23.self_attn.o_proj",
+            "model.layers.27.self_attn.o_proj"
+          ],
+          "lr": 0.0003,
+          "steps": 256,
+          "trainable_parameters": 589824,
+          "dev_correct": 513
+        }
+      }
+    }
+  },
+  "fresh_warmup": {
+    "arc_challenge": {
+      "n": 1172,
+      "warmup_correct_by_seed": [
+        882,
+        880,
+        876
+      ],
+      "continuation_correct_by_seed": [
+        887,
+        885,
+        889
+      ],
+      "warmup_accuracy_pct": 75.02844141069397,
+      "continuation_accuracy_pct": 75.68259385665529,
+      "comparison_family11": {
+        "delta_pp": 0.6541524459613196,
+        "seed_gains_pp": [
+          0.42662116040955633,
+          0.42662116040955633,
+          1.1092150170648465
+        ],
+        "joint_ci95": [
+          -0.8532423208191127,
+          2.161547212741752
+        ],
+        "familywise_ci95": [
+          -1.564277588168373,
+          2.8156996587030716
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 1172,
+        "rows": 1172,
+        "stable_positive": false
+      }
+    },
+    "boolq": {
+      "n": 3270,
+      "warmup_correct_by_seed": [
+        2584,
+        2585,
+        2588
+      ],
+      "continuation_correct_by_seed": [
+        2708,
+        2727,
+        2724
+      ],
+      "warmup_accuracy_pct": 79.072375127421,
+      "continuation_accuracy_pct": 83.17023445463812,
+      "comparison_family11": {
+        "delta_pp": 4.097859327217125,
+        "seed_gains_pp": [
+          3.7920489296636086,
+          4.342507645259939,
+          4.159021406727828
+        ],
+        "joint_ci95": [
+          2.8880848198646003,
+          5.3255676880545835
+        ],
+        "familywise_ci95": [
+          2.3515335978151097,
+          5.906157518936737
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 2938,
+        "rows": 3270,
+        "stable_positive": true
+      }
+    },
+    "arc_easy": {
+      "n": 2376,
+      "warmup_correct_by_seed": [
+        2057,
+        2061,
+        2068
+      ],
+      "continuation_correct_by_seed": [
+        2154,
+        2152,
+        2148
+      ],
+      "warmup_accuracy_pct": 86.78451178451179,
+      "continuation_accuracy_pct": 90.54433221099887,
+      "comparison_family11": {
+        "delta_pp": 3.7598204264870936,
+        "seed_gains_pp": [
+          4.082491582491583,
+          3.82996632996633,
+          3.3670033670033668
+        ],
+        "joint_ci95": [
+          2.6795735129068463,
+          4.84006734006734
+        ],
+        "familywise_ci95": [
+          2.1885521885521886,
+          5.345117845117845
+        ],
+        "family": 11,
+        "repeats": 100000,
+        "question_clusters": 2376,
+        "rows": 2376,
+        "stable_positive": true
+      }
+    }
+  },
+  "boolq_pool_bridge": {
+    "old_correct_by_seed": [
+      2674,
+      2672,
+      2669,
+      2615,
+      2645
+    ],
+    "expanded_correct_by_seed": [
+      2706,
+      2714,
+      2706,
+      2717,
+      2651
+    ],
+    "warmup_correct": 2583,
+    "n": 3270,
+    "old_accuracy_pct": 81.19266055045871,
+    "expanded_accuracy_pct": 82.53211009174312,
+    "old_minus_warmup": {
+      "delta_pp": 2.2018348623853212,
+      "seed_gains_pp": [
+        2.782874617737003,
+        2.7217125382262997,
+        2.6299694189602447,
+        0.9785932721712538,
+        1.8960244648318043
+      ],
+      "joint_ci95": [
+        0.9497544768369881,
+        3.4200985682897014
+      ],
+      "familywise_ci95": [
+        0.37051464742276013,
+        3.939298452742712
+      ],
+      "family": 11,
+      "repeats": 100000,
+      "question_clusters": 2938,
+      "rows": 3270,
+      "stable_positive": true
+    },
+    "expanded_minus_old": {
+      "delta_pp": 1.3394495412844036,
+      "seed_gains_pp": [
+        0.9785932721712538,
+        1.2844036697247707,
+        1.1314984709480123,
+        3.1192660550458715,
+        0.1834862385321101
+      ],
+      "joint_ci95": [
+        0.17629045411682792,
+        2.6226578672444805
+      ],
+      "familywise_ci95": [
+        -0.31506869015514577,
+        3.308868501529052
+      ],
+      "family": 11,
+      "repeats": 100000,
+      "question_clusters": 2938,
+      "rows": 3270,
+      "stable_positive": false
+    }
+  },
+  "target_layer_experiments": {
+    "openbookqa": {
+      "n": 500,
+      "base_correct": 359,
+      "warmup_correct": 382,
+      "primary": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            407,
+            407,
+            408
+          ],
+          "mean_accuracy_pct": 81.46666666666667,
+          "gain_over_warmup_pp": 5.066666666666666,
+          "gain_over_base_pp": 9.666666666666666
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 0,
+          "steps": 0,
+          "correct_by_seed": [
+            382,
+            382,
+            382
+          ],
+          "mean_accuracy_pct": 76.4,
+          "gain_over_warmup_pp": 0.0,
+          "gain_over_base_pp": 4.6
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            406,
+            402,
+            406
+          ],
+          "mean_accuracy_pct": 80.93333333333334,
+          "gain_over_warmup_pp": 4.533333333333333,
+          "gain_over_base_pp": 9.133333333333333
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 0,
+          "steps": 0,
+          "correct_by_seed": [
+            382,
+            382,
+            382
+          ],
+          "mean_accuracy_pct": 76.4,
+          "gain_over_warmup_pp": 0.0,
+          "gain_over_base_pp": 4.6
+        }
+      ],
+      "best_trained": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            407,
+            407,
+            408
+          ],
+          "mean_accuracy_pct": 81.46666666666667,
+          "gain_over_warmup_pp": 5.066666666666666,
+          "gain_over_base_pp": 9.666666666666666
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 3e-06,
+          "steps": 32,
+          "correct_by_seed": [
+            380,
+            383,
+            383
+          ],
+          "mean_accuracy_pct": 76.4,
+          "gain_over_warmup_pp": 0.0,
+          "gain_over_base_pp": 4.6
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            406,
+            402,
+            406
+          ],
+          "mean_accuracy_pct": 80.93333333333334,
+          "gain_over_warmup_pp": 4.533333333333333,
+          "gain_over_base_pp": 9.133333333333333
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 3e-06,
+          "steps": 32,
+          "correct_by_seed": [
+            381,
+            377,
+            379
+          ],
+          "mean_accuracy_pct": 75.8,
+          "gain_over_warmup_pp": -0.6,
+          "gain_over_base_pp": 4.0
+        }
+      ],
+      "matched": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            407,
+            407,
+            408
+          ],
+          "mean_accuracy_pct": 81.46666666666667,
+          "gain_over_warmup_pp": 5.066666666666666,
+          "gain_over_base_pp": 9.666666666666666
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            373,
+            372,
+            366
+          ],
+          "mean_accuracy_pct": 74.06666666666666,
+          "gain_over_warmup_pp": -2.3333333333333335,
+          "gain_over_base_pp": 2.2666666666666666
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            411,
+            411,
+            409
+          ],
+          "mean_accuracy_pct": 82.06666666666666,
+          "gain_over_warmup_pp": 5.666666666666666,
+          "gain_over_base_pp": 10.266666666666667
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            366,
+            364,
+            366
+          ],
+          "mean_accuracy_pct": 73.06666666666666,
+          "gain_over_warmup_pp": -3.3333333333333335,
+          "gain_over_base_pp": 1.2666666666666666
+        }
+      ],
+      "comparisons": {
+        "primary": {
+          "single_answer_policy_minus_warmup": {
+            "delta_pp": 5.066666666666666,
+            "per_seed_delta_pp": [
+              5.0,
+              5.0,
+              5.2
+            ],
+            "question_ci95": [
+              2.6666666666666665,
+              7.6
+            ],
+            "joint_seed_question_ci95": [
+              2.6,
+              7.6
+            ],
+            "familywise_ci95": [
+              1.9333333333333333,
+              8.333333333333332
+            ],
+            "family_size": 4,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "single_teacher_policy_minus_warmup": {
+            "delta_pp": 0.0,
+            "per_seed_delta_pp": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "question_ci95": [
+              0.0,
+              0.0
+            ],
+            "joint_seed_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "familywise_ci95": [
+              0.0,
+              0.0
+            ],
+            "family_size": 4,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "multi_answer_policy_minus_warmup": {
+            "delta_pp": 4.533333333333333,
+            "per_seed_delta_pp": [
+              4.8,
+              4.0,
+              4.8
+            ],
+            "question_ci95": [
+              1.6666666666666663,
+              7.466666666666668
+            ],
+            "joint_seed_question_ci95": [
+              1.5333333333333337,
+              7.533333333333335
+            ],
+            "familywise_ci95": [
+              0.7333333333333336,
+              8.4
+            ],
+            "family_size": 4,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_teacher_policy_minus_warmup": {
+            "delta_pp": 0.0,
+            "per_seed_delta_pp": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "question_ci95": [
+              0.0,
+              0.0
+            ],
+            "joint_seed_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "familywise_ci95": [
+              0.0,
+              0.0
+            ],
+            "family_size": 4,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          }
+        },
+        "secondary": {
+          "single_answer_best_trained_minus_warmup": {
+            "delta_pp": 5.066666666666666,
+            "per_seed_delta_pp": [
+              5.0,
+              5.0,
+              5.2
+            ],
+            "question_ci95": [
+              2.6,
+              7.6
+            ],
+            "joint_seed_question_ci95": [
+              2.6,
+              7.6
+            ],
+            "familywise_ci95": [
+              1.4666666666666672,
+              8.912948717949137
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "single_teacher_best_trained_minus_warmup": {
+            "delta_pp": 0.0,
+            "per_seed_delta_pp": [
+              -0.4,
+              0.2,
+              0.2
+            ],
+            "question_ci95": [
+              -1.0,
+              0.9333333333333335
+            ],
+            "joint_seed_question_ci95": [
+              -1.1333333333333333,
+              1.0666666666666669
+            ],
+            "familywise_ci95": [
+              -1.6666666666666667,
+              1.6666666666666663
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "multi_answer_best_trained_minus_warmup": {
+            "delta_pp": 4.533333333333333,
+            "per_seed_delta_pp": [
+              4.8,
+              4.0,
+              4.8
+            ],
+            "question_ci95": [
+              1.6666666666666663,
+              7.466666666666666
+            ],
+            "joint_seed_question_ci95": [
+              1.6,
+              7.533333333333333
+            ],
+            "familywise_ci95": [
+              0.13333333333333286,
+              9.0
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_teacher_best_trained_minus_warmup": {
+            "delta_pp": -0.6,
+            "per_seed_delta_pp": [
+              -0.2,
+              -1.0,
+              -0.6
+            ],
+            "question_ci95": [
+              -1.6,
+              0.2666666666666668
+            ],
+            "joint_seed_question_ci95": [
+              -1.7333333333333332,
+              0.4666666666666666
+            ],
+            "familywise_ci95": [
+              -2.2666666666666666,
+              1.0
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "single_answer_best_trained_minus_base": {
+            "delta_pp": 9.666666666666666,
+            "per_seed_delta_pp": [
+              9.6,
+              9.6,
+              9.8
+            ],
+            "question_ci95": [
+              6.666666666666667,
+              12.733333333333333
+            ],
+            "joint_seed_question_ci95": [
+              6.666666666666667,
+              12.733333333333336
+            ],
+            "familywise_ci95": [
+              5.266666666666666,
+              14.266666666666666
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "single_teacher_best_trained_minus_base": {
+            "delta_pp": 4.6,
+            "per_seed_delta_pp": [
+              4.2,
+              4.8,
+              4.8
+            ],
+            "question_ci95": [
+              1.5333333333333337,
+              7.7333333333333325
+            ],
+            "joint_seed_question_ci95": [
+              1.533333333333333,
+              7.7333333333333325
+            ],
+            "familywise_ci95": [
+              0.06666666666666714,
+              9.266666666666667
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_answer_best_trained_minus_base": {
+            "delta_pp": 9.133333333333333,
+            "per_seed_delta_pp": [
+              9.4,
+              8.6,
+              9.4
+            ],
+            "question_ci95": [
+              6.066666666666666,
+              12.266666666666667
+            ],
+            "joint_seed_question_ci95": [
+              6.0,
+              12.333333333333334
+            ],
+            "familywise_ci95": [
+              4.6,
+              13.933333333333334
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_teacher_best_trained_minus_base": {
+            "delta_pp": 4.0,
+            "per_seed_delta_pp": [
+              4.3999999999999995,
+              3.5999999999999996,
+              4.0
+            ],
+            "question_ci95": [
+              0.8666666666666665,
+              7.133333333333335
+            ],
+            "joint_seed_question_ci95": [
+              0.8,
+              7.199999999999999
+            ],
+            "familywise_ci95": [
+              -0.6,
+              8.733333333333333
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "matched_target_effect_single": {
+            "delta_pp": -7.3999999999999995,
+            "per_seed_delta_pp": [
+              -6.800000000000001,
+              -7.000000000000001,
+              -8.4
+            ],
+            "question_ci95": [
+              -10.6,
+              -4.199999999999999
+            ],
+            "joint_seed_question_ci95": [
+              -10.866666666666665,
+              -4.0
+            ],
+            "familywise_ci95": [
+              -12.6,
+              -2.3999999999999986
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_target_effect_multi": {
+            "delta_pp": -9.0,
+            "per_seed_delta_pp": [
+              -9.0,
+              -9.4,
+              -8.6
+            ],
+            "question_ci95": [
+              -12.199999999999998,
+              -5.866666666666666
+            ],
+            "joint_seed_question_ci95": [
+              -12.4,
+              -5.666666666666666
+            ],
+            "familywise_ci95": [
+              -14.066666666666668,
+              -4.066666666666667
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_scope_effect_answer": {
+            "delta_pp": 0.6,
+            "per_seed_delta_pp": [
+              0.8,
+              0.8,
+              0.2
+            ],
+            "question_ci95": [
+              -0.8666666666666665,
+              2.0666666666666664
+            ],
+            "joint_seed_question_ci95": [
+              -1.0,
+              2.1999999999999997
+            ],
+            "familywise_ci95": [
+              -1.7333333333333336,
+              3.0
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "matched_scope_effect_teacher": {
+            "delta_pp": -1.0,
+            "per_seed_delta_pp": [
+              -1.4000000000000001,
+              -1.6,
+              0.0
+            ],
+            "question_ci95": [
+              -3.3999999999999995,
+              1.4000000000000001
+            ],
+            "joint_seed_question_ci95": [
+              -3.7999999999999994,
+              1.7999999999999998
+            ],
+            "familywise_ci95": [
+              -5.133333333333333,
+              3.2
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_interaction": {
+            "delta_pp": -1.6,
+            "per_seed_delta_pp": [
+              -2.1999999999999997,
+              -2.4,
+              -0.2
+            ],
+            "question_ci95": [
+              -4.333333333333333,
+              1.1333333333333333
+            ],
+            "joint_seed_question_ci95": [
+              -4.8,
+              1.6000000000000008
+            ],
+            "familywise_ci95": [
+              -6.4,
+              3.3333333333333335
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          }
+        }
+      }
+    },
+    "arc_challenge": {
+      "n": 1172,
+      "base_correct": 851,
+      "warmup_correct": 879,
+      "primary": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            898,
+            894,
+            900
+          ],
+          "mean_accuracy_pct": 76.56427758816837,
+          "gain_over_warmup_pp": 1.564277588168373,
+          "gain_over_base_pp": 3.9533560864618886
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 0,
+          "steps": 0,
+          "correct_by_seed": [
+            879,
+            879,
+            879
+          ],
+          "mean_accuracy_pct": 75.0,
+          "gain_over_warmup_pp": 0.0,
+          "gain_over_base_pp": 2.3890784982935154
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            900,
+            890,
+            899
+          ],
+          "mean_accuracy_pct": 76.47895335608646,
+          "gain_over_warmup_pp": 1.4789533560864618,
+          "gain_over_base_pp": 3.8680318543799777
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 3e-05,
+          "steps": 128,
+          "correct_by_seed": [
+            840,
+            834,
+            840
+          ],
+          "mean_accuracy_pct": 71.50170648464163,
+          "gain_over_warmup_pp": -3.4982935153583616,
+          "gain_over_base_pp": -1.1092150170648465
+        }
+      ],
+      "best_trained": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            898,
+            894,
+            900
+          ],
+          "mean_accuracy_pct": 76.56427758816837,
+          "gain_over_warmup_pp": 1.564277588168373,
+          "gain_over_base_pp": 3.9533560864618886
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 3e-06,
+          "steps": 32,
+          "correct_by_seed": [
+            881,
+            883,
+            887
+          ],
+          "mean_accuracy_pct": 75.39817974971558,
+          "gain_over_warmup_pp": 0.39817974971558584,
+          "gain_over_base_pp": 2.7872582480091013
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 128,
+          "correct_by_seed": [
+            900,
+            890,
+            899
+          ],
+          "mean_accuracy_pct": 76.47895335608646,
+          "gain_over_warmup_pp": 1.4789533560864618,
+          "gain_over_base_pp": 3.8680318543799777
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 3e-05,
+          "steps": 128,
+          "correct_by_seed": [
+            840,
+            834,
+            840
+          ],
+          "mean_accuracy_pct": 71.50170648464163,
+          "gain_over_warmup_pp": -3.4982935153583616,
+          "gain_over_base_pp": -1.1092150170648465
+        }
+      ],
+      "matched": [
+        {
+          "arm": "single_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            898,
+            894,
+            900
+          ],
+          "mean_accuracy_pct": 76.56427758816837,
+          "gain_over_warmup_pp": 1.564277588168373,
+          "gain_over_base_pp": 3.9533560864618886
+        },
+        {
+          "arm": "single_teacher",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            847,
+            852,
+            857
+          ],
+          "mean_accuracy_pct": 72.6962457337884,
+          "gain_over_warmup_pp": -2.303754266211604,
+          "gain_over_base_pp": 0.08532423208191127
+        },
+        {
+          "arm": "multi_answer",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            896,
+            900,
+            903
+          ],
+          "mean_accuracy_pct": 76.76336746302617,
+          "gain_over_warmup_pp": 1.763367463026166,
+          "gain_over_base_pp": 4.152445961319681
+        },
+        {
+          "arm": "multi_teacher",
+          "lr": 0.0001,
+          "steps": 256,
+          "correct_by_seed": [
+            871,
+            870,
+            871
+          ],
+          "mean_accuracy_pct": 74.28896473265074,
+          "gain_over_warmup_pp": -0.7110352673492605,
+          "gain_over_base_pp": 1.678043230944255
+        }
+      ],
+      "comparisons": {
+        "primary": {
+          "single_answer_policy_minus_warmup": {
+            "delta_pp": 1.564277588168373,
+            "per_seed_delta_pp": [
+              1.621160409556314,
+              1.2798634812286689,
+              1.7918088737201365
+            ],
+            "question_ci95": [
+              -6.062651329011094e-16,
+              3.1569965870307164
+            ],
+            "joint_seed_question_ci95": [
+              -0.056882821387940645,
+              3.1854379977246876
+            ],
+            "familywise_ci95": [
+              -0.5119453924914675,
+              3.640500568828214
+            ],
+            "family_size": 4,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "single_teacher_policy_minus_warmup": {
+            "delta_pp": 0.0,
+            "per_seed_delta_pp": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "question_ci95": [
+              0.0,
+              0.0
+            ],
+            "joint_seed_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "familywise_ci95": [
+              0.0,
+              0.0
+            ],
+            "family_size": 4,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "multi_answer_policy_minus_warmup": {
+            "delta_pp": 1.4789533560864618,
+            "per_seed_delta_pp": [
+              1.7918088737201365,
+              0.938566552901024,
+              1.7064846416382253
+            ],
+            "question_ci95": [
+              -0.028441410693970624,
+              3.0147895335608643
+            ],
+            "joint_seed_question_ci95": [
+              -0.1422070534698519,
+              3.0716723549488054
+            ],
+            "familywise_ci95": [
+              -0.5972696245733788,
+              3.4982935153583625
+            ],
+            "family_size": 4,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "multi_teacher_policy_minus_warmup": {
+            "delta_pp": -3.4982935153583616,
+            "per_seed_delta_pp": [
+              -3.3276450511945397,
+              -3.839590443686007,
+              -3.3276450511945397
+            ],
+            "question_ci95": [
+              -5.7451649601820245,
+              -1.222980659840729
+            ],
+            "joint_seed_question_ci95": [
+              -5.8304891922639355,
+              -1.1945392491467577
+            ],
+            "familywise_ci95": [
+              -6.456200227531288,
+              -0.5119453924914675
+            ],
+            "family_size": 4,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          }
+        },
+        "secondary": {
+          "single_answer_best_trained_minus_warmup": {
+            "delta_pp": 1.564277588168373,
+            "per_seed_delta_pp": [
+              1.621160409556314,
+              1.2798634812286689,
+              1.7918088737201365
+            ],
+            "question_ci95": [
+              -0.028441410693970017,
+              3.1569965870307164
+            ],
+            "joint_seed_question_ci95": [
+              -0.05688282138794125,
+              3.185437997724688
+            ],
+            "familywise_ci95": [
+              -0.7963594994311719,
+              3.9533560864618886
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "single_teacher_best_trained_minus_warmup": {
+            "delta_pp": 0.39817974971558584,
+            "per_seed_delta_pp": [
+              0.17064846416382254,
+              0.3412969283276451,
+              0.6825938566552902
+            ],
+            "question_ci95": [
+              -0.19908987485779284,
+              0.995449374288965
+            ],
+            "joint_seed_question_ci95": [
+              -0.2844141069397042,
+              1.080773606370876
+            ],
+            "familywise_ci95": [
+              -0.6257110352673494,
+              1.4220705346985212
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "multi_answer_best_trained_minus_warmup": {
+            "delta_pp": 1.4789533560864618,
+            "per_seed_delta_pp": [
+              1.7918088737201365,
+              0.938566552901024,
+              1.7064846416382253
+            ],
+            "question_ci95": [
+              -0.028441410693970624,
+              3.0147895335608643
+            ],
+            "joint_seed_question_ci95": [
+              -0.1137656427758819,
+              3.0716723549488054
+            ],
+            "familywise_ci95": [
+              -0.910125142207054,
+              3.839590443686007
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "multi_teacher_best_trained_minus_warmup": {
+            "delta_pp": -3.4982935153583616,
+            "per_seed_delta_pp": [
+              -3.3276450511945397,
+              -3.839590443686007,
+              -3.3276450511945397
+            ],
+            "question_ci95": [
+              -5.745164960182024,
+              -1.2514220705346988
+            ],
+            "joint_seed_question_ci95": [
+              -5.8304891922639355,
+              -1.1945392491467566
+            ],
+            "familywise_ci95": [
+              -6.968145620022752,
+              -0.08532423208191127
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "single_answer_best_trained_minus_base": {
+            "delta_pp": 3.9533560864618886,
+            "per_seed_delta_pp": [
+              4.010238907849829,
+              3.668941979522184,
+              4.180887372013651
+            ],
+            "question_ci95": [
+              1.9055745164960183,
+              6.0295790671217295
+            ],
+            "joint_seed_question_ci95": [
+              1.877133105802048,
+              6.0295790671217295
+            ],
+            "familywise_ci95": [
+              0.910125142207054,
+              7.025028441410695
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "single_teacher_best_trained_minus_base": {
+            "delta_pp": 2.7872582480091013,
+            "per_seed_delta_pp": [
+              2.5597269624573378,
+              2.7303754266211606,
+              3.0716723549488054
+            ],
+            "question_ci95": [
+              1.0523321956769058,
+              4.522184300341298
+            ],
+            "joint_seed_question_ci95": [
+              1.023890784982935,
+              4.550625711035267
+            ],
+            "familywise_ci95": [
+              0.2275312855517632,
+              5.432309442548351
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_answer_best_trained_minus_base": {
+            "delta_pp": 3.8680318543799777,
+            "per_seed_delta_pp": [
+              4.180887372013651,
+              3.3276450511945397,
+              4.09556313993174
+            ],
+            "question_ci95": [
+              1.7918088737201359,
+              5.972696245733788
+            ],
+            "joint_seed_question_ci95": [
+              1.7064846416382253,
+              6.029579067121729
+            ],
+            "familywise_ci95": [
+              0.7394766780432314,
+              7.025028441410694
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": true
+          },
+          "multi_teacher_best_trained_minus_base": {
+            "delta_pp": -1.1092150170648465,
+            "per_seed_delta_pp": [
+              -0.938566552901024,
+              -1.4505119453924915,
+              -0.938566552901024
+            ],
+            "question_ci95": [
+              -3.3845278725824794,
+              1.1660978384527865
+            ],
+            "joint_seed_question_ci95": [
+              -3.469852104664392,
+              1.2229806598407276
+            ],
+            "familywise_ci95": [
+              -4.579067121729237,
+              2.303754266211604
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_target_effect_single": {
+            "delta_pp": -3.8680318543799777,
+            "per_seed_delta_pp": [
+              -4.351535836177475,
+              -3.583617747440273,
+              -3.668941979522184
+            ],
+            "question_ci95": [
+              -6.171786120591582,
+              -1.5642775881683741
+            ],
+            "joint_seed_question_ci95": [
+              -6.313993174061433,
+              -1.4505119453924915
+            ],
+            "familywise_ci95": [
+              -7.508532423208192,
+              -0.2844141069397038
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_target_effect_multi": {
+            "delta_pp": -2.474402730375427,
+            "per_seed_delta_pp": [
+              -2.1331058020477816,
+              -2.5597269624573378,
+              -2.7303754266211606
+            ],
+            "question_ci95": [
+              -4.721274175199088,
+              -0.2275312855517638
+            ],
+            "joint_seed_question_ci95": [
+              -4.863481228668941,
+              -0.08532423208191127
+            ],
+            "familywise_ci95": [
+              -5.963999737463901,
+              1.0807736063708764
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_scope_effect_answer": {
+            "delta_pp": 0.19908987485779292,
+            "per_seed_delta_pp": [
+              -0.17064846416382254,
+              0.5119453924914675,
+              0.25597269624573377
+            ],
+            "question_ci95": [
+              -0.9670079635949945,
+              1.3936291240045502
+            ],
+            "joint_seed_question_ci95": [
+              -1.1092150170648465,
+              1.5073947667804322
+            ],
+            "familywise_ci95": [
+              -1.763367463026166,
+              2.1331058020477816
+            ],
+            "family_size": 13,
+            "all_seeds_positive": false,
+            "stable_positive": false
+          },
+          "matched_scope_effect_teacher": {
+            "delta_pp": 1.5927189988623434,
+            "per_seed_delta_pp": [
+              2.04778156996587,
+              1.5358361774744027,
+              1.1945392491467577
+            ],
+            "question_ci95": [
+              0.028441410693971228,
+              3.156996587030716
+            ],
+            "joint_seed_question_ci95": [
+              -0.19908987485779375,
+              3.4129692832764507
+            ],
+            "familywise_ci95": [
+              -1.1092150170648465,
+              4.351535836177475
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          },
+          "matched_interaction": {
+            "delta_pp": 1.3936291240045506,
+            "per_seed_delta_pp": [
+              2.218430034129693,
+              1.023890784982935,
+              0.938566552901024
+            ],
+            "question_ci95": [
+              -0.5688282138794089,
+              3.3845278725824794
+            ],
+            "joint_seed_question_ci95": [
+              -0.8816837315130832,
+              3.6973833902161544
+            ],
+            "familywise_ci95": [
+              -2.0193401592718994,
+              4.948805460750854
+            ],
+            "family_size": 13,
+            "all_seeds_positive": true,
+            "stable_positive": false
+          }
+        }
+      }
+    }
+  },
+  "target_layer_primary_family8": {
+    "OpenBookQA/single_answer": {
+      "delta_pp": 5.066666666666666,
+      "per_seed_delta_pp": [
+        5.0,
+        5.0,
+        5.2
+      ],
+      "question_ci95": [
+        2.6666666666666665,
+        7.6
+      ],
+      "joint_seed_question_ci95": [
+        2.6,
+        7.6
+      ],
+      "familywise_ci95": [
+        1.6666666666666663,
+        8.63354166666589
+      ],
+      "family_size": 8,
+      "all_seeds_positive": true,
+      "stable_positive": true
+    },
+    "OpenBookQA/single_teacher": {
+      "delta_pp": 0.0,
+      "per_seed_delta_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "question_ci95": [
+        0.0,
+        0.0
+      ],
+      "joint_seed_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "familywise_ci95": [
+        0.0,
+        0.0
+      ],
+      "family_size": 8,
+      "all_seeds_positive": false,
+      "stable_positive": false
+    },
+    "OpenBookQA/multi_answer": {
+      "delta_pp": 4.533333333333333,
+      "per_seed_delta_pp": [
+        4.8,
+        4.0,
+        4.8
+      ],
+      "question_ci95": [
+        1.6666666666666663,
+        7.466666666666666
+      ],
+      "joint_seed_question_ci95": [
+        1.5999999999999988,
+        7.533333333333333
+      ],
+      "familywise_ci95": [
+        0.4,
+        8.733333333333334
+      ],
+      "family_size": 8,
+      "all_seeds_positive": true,
+      "stable_positive": true
+    },
+    "OpenBookQA/multi_teacher": {
+      "delta_pp": 0.0,
+      "per_seed_delta_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "question_ci95": [
+        0.0,
+        0.0
+      ],
+      "joint_seed_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "familywise_ci95": [
+        0.0,
+        0.0
+      ],
+      "family_size": 8,
+      "all_seeds_positive": false,
+      "stable_positive": false
+    },
+    "ARC-Challenge/single_answer": {
+      "delta_pp": 1.564277588168373,
+      "per_seed_delta_pp": [
+        1.621160409556314,
+        1.2798634812286689,
+        1.7918088737201365
+      ],
+      "question_ci95": [
+        -0.028441410693970017,
+        3.1569965870307164
+      ],
+      "joint_seed_question_ci95": [
+        -0.056882821387940645,
+        3.2138794084186575
+      ],
+      "familywise_ci95": [
+        -0.6825938566552902,
+        3.8680318543799768
+      ],
+      "family_size": 8,
+      "all_seeds_positive": true,
+      "stable_positive": false
+    },
+    "ARC-Challenge/single_teacher": {
+      "delta_pp": 0.0,
+      "per_seed_delta_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "question_ci95": [
+        0.0,
+        0.0
+      ],
+      "joint_seed_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "familywise_ci95": [
+        0.0,
+        0.0
+      ],
+      "family_size": 8,
+      "all_seeds_positive": false,
+      "stable_positive": false
+    },
+    "ARC-Challenge/multi_answer": {
+      "delta_pp": 1.4789533560864618,
+      "per_seed_delta_pp": [
+        1.7918088737201365,
+        0.938566552901024,
+        1.7064846416382253
+      ],
+      "question_ci95": [
+        -0.028441410693970624,
+        3.0147895335608643
+      ],
+      "joint_seed_question_ci95": [
+        -0.1422070534698519,
+        3.0716723549488054
+      ],
+      "familywise_ci95": [
+        -0.7679180887372014,
+        3.7258248009101256
+      ],
+      "family_size": 8,
+      "all_seeds_positive": true,
+      "stable_positive": false
+    },
+    "ARC-Challenge/multi_teacher": {
+      "delta_pp": -3.4982935153583616,
+      "per_seed_delta_pp": [
+        -3.3276450511945397,
+        -3.839590443686007,
+        -3.3276450511945397
+      ],
+      "question_ci95": [
+        -5.7451649601820245,
+        -1.2514220705346988
+      ],
+      "joint_seed_question_ci95": [
+        -5.8304891922639355,
+        -1.1945392491467566
+      ],
+      "familywise_ci95": [
+        -6.74061433447099,
+        -0.25597269624573316
+      ],
+      "family_size": 8,
+      "all_seeds_positive": false,
+      "stable_positive": false
+    }
+  },
+  "openbookqa_old_protocol": {
+    "n": 500,
+    "base_correct": 368,
+    "warmup_correct": 381,
+    "step32_correct": [
+      390,
+      390,
+      387
+    ],
+    "step128_correct": [
+      400,
+      400,
+      398
+    ],
+    "comparisons": {
+      "step128_minus_step32": {
+        "delta_pp": 2.0666666666666664,
+        "per_seed_delta_pp": [
+          2.0,
+          2.0,
+          2.1999999999999997
+        ],
+        "question_ci95": [
+          -0.06666666666666679,
+          4.266666666666667
+        ],
+        "joint_seed_question_ci95": [
+          -0.13333333333333322,
+          4.266666666666667
+        ],
+        "familywise_ci95": [
+          -0.6,
+          4.8
+        ],
+        "family_size": 3,
+        "all_seeds_positive": true,
+        "stable_positive": false
+      },
+      "step128_minus_warmup": {
+        "delta_pp": 3.6666666666666665,
+        "per_seed_delta_pp": [
+          3.8,
+          3.8,
+          3.4000000000000004
+        ],
+        "question_ci95": [
+          1.2666666666666668,
+          6.133333333333333
+        ],
+        "joint_seed_question_ci95": [
+          1.2666666666666668,
+          6.133333333333333
+        ],
+        "familywise_ci95": [
+          0.7333333333333336,
+          6.666666666666667
+        ],
+        "family_size": 3,
+        "all_seeds_positive": true,
+        "stable_positive": true
+      },
+      "step32_minus_warmup": {
+        "delta_pp": 1.6,
+        "per_seed_delta_pp": [
+          1.7999999999999998,
+          1.7999999999999998,
+          1.2
+        ],
+        "question_ci95": [
+          0.13333333333333322,
+          3.1333333333333337
+        ],
+        "joint_seed_question_ci95": [
+          1.7763568394002506e-16,
+          3.2
+        ],
+        "familywise_ci95": [
+          -0.3333333333333332,
+          3.6666666666666665
+        ],
+        "family_size": 3,
+        "all_seeds_positive": true,
+        "stable_positive": false
+      }
+    },
+    "scope": "Exploratory historical protocol bridge declared after primary OpenBookQA test; not part of the eight primary comparisons"
+  },
+  "arc_format_sensitivity": {
+    "scope": "Post-hoc alternative format metric, not a new primary test or selection. Preserve primary scores. Parser never consults gold when extracting; require unique standalone labeled option or explicit answer statement. Existing recognized/boxed answers take precedence.",
+    "tasks": {
+      "arc_challenge": {
+        "n": 1172,
+        "base_accuracy_pct": 75.68259385665529,
+        "warmup_accuracy_pct": 75.0853242320819,
+        "oracle_accuracy_pct": 75.54607508532423,
+        "primary_gain_pp": 0.5460750853242321,
+        "format_sensitivity": {
+          "delta_pp": 0.46075085324232085,
+          "seed_gains_pp": [
+            0.3412969283276451,
+            0.3412969283276451,
+            0.7679180887372014,
+            0.3412969283276451,
+            0.5119453924914675
+          ],
+          "joint_ci95": [
+            -1.0921501706484642,
+            2.013651877133106
+          ],
+          "familywise_ci95": [
+            -1.7747440273037542,
+            2.7303754266211606
+          ],
+          "family": 11,
+          "repeats": 100000,
+          "question_clusters": 1172,
+          "rows": 1172
+        },
+        "fresh_warmup_sensitivity": {
+          "warmup_accuracy_pct": 75.11376564277589,
+          "oracle_accuracy_pct": 75.68259385665529,
+          "comparison": {
+            "delta_pp": 0.5688282138794084,
+            "seed_gains_pp": [
+              0.3412969283276451,
+              0.3412969283276451,
+              1.023890784982935
+            ],
+            "joint_ci95": [
+              -0.9385665529010239,
+              2.0762229806598405
+            ],
+            "familywise_ci95": [
+              -1.621160409556314,
+              2.7588168373151305
+            ],
+            "family": 11,
+            "repeats": 100000,
+            "question_clusters": 1172,
+            "rows": 1172
+          }
+        }
+      },
+      "arc_easy": {
+        "n": 2376,
+        "base_accuracy_pct": 88.93097643097643,
+        "warmup_accuracy_pct": 89.05723905723906,
+        "oracle_accuracy_pct": 90.47138047138047,
+        "primary_gain_pp": 3.476430976430976,
+        "format_sensitivity": {
+          "delta_pp": 1.4141414141414141,
+          "seed_gains_pp": [
+            1.5151515151515151,
+            1.0521885521885523,
+            1.6835016835016834,
+            1.4730639730639732,
+            1.3468013468013467
+          ],
+          "joint_ci95": [
+            0.5723905723905723,
+            2.2643097643097643
+          ],
+          "familywise_ci95": [
+            0.20202020202020202,
+            2.6767676767676765
+          ],
+          "family": 11,
+          "repeats": 100000,
+          "question_clusters": 2376,
+          "rows": 2376
+        },
+        "fresh_warmup_sensitivity": {
+          "warmup_accuracy_pct": 88.98709315375982,
+          "oracle_accuracy_pct": 90.54433221099887,
+          "comparison": {
+            "delta_pp": 1.5572390572390573,
+            "seed_gains_pp": [
+              1.80976430976431,
+              1.5572390572390573,
+              1.3047138047138047
+            ],
+            "joint_ci95": [
+              0.6734006734006734,
+              2.455106621773288
+            ],
+            "familywise_ci95": [
+              0.25252525252525254,
+              2.875982042648709
+            ],
+            "family": 11,
+            "repeats": 100000,
+            "question_clusters": 2376,
+            "rows": 2376
+          }
+        }
+      }
+    }
+  },
+  "boolq_unseen_passages": {
+    "primary_winner": {
+      "rows": 2577,
+      "delta_pp": 2.9569266589057044,
+      "seed_gains_pp": [
+        3.4536282499029882,
+        3.220799379123011,
+        2.9879705083430346,
+        3.531237873496314,
+        1.590997283663174
+      ],
+      "scope": "Exclude passages occurring in warmup/update/dev; descriptive subset, no selection or primary significance claim"
+    },
+    "primary_reference": {
+      "rows": 2577,
+      "delta_pp": 2.9569266589057044,
+      "seed_gains_pp": [
+        3.4536282499029882,
+        3.220799379123011,
+        2.9879705083430346,
+        3.531237873496314,
+        1.590997283663174
+      ],
+      "scope": "Exclude passages occurring in warmup/update/dev; descriptive subset, no selection or primary significance claim"
+    },
+    "fresh_warmup": {
+      "rows": 2577,
+      "delta_pp": 3.4924330616996504,
+      "seed_gains_pp": [
+        3.220799379123011,
+        3.7640667442762905,
+        3.4924330616996504
+      ],
+      "scope": "Exclude passages occurring in warmup/update/dev; descriptive subset, no selection or primary significance claim"
+    }
+  },
+  "protocol": {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "teacher": "Qwen2.5-7B-Instruct (target experiments only)",
+    "lora_rank": 64,
+    "lora_alpha": 64,
+    "batch_size": 32,
+    "optimizer": "fresh AdamW",
+    "weight_decay": 0,
+    "gradient_clip": 1,
+    "input_truncation": false,
+    "max_new_tokens": 2048,
+    "scope_search": {
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "lrs": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003
+      ],
+      "steps": [
+        32,
+        128,
+        256
+      ],
+      "arms": {
+        "layer8_o": [
+          8
+        ],
+        "layer23_o": [
+          23
+        ],
+        "upper3_o": [
+          19,
+          23,
+          27
+        ],
+        "upper3_down": [
+          19,
+          23,
+          27
+        ]
+      },
+      "selection": "Highest full-development accuracy; ties fewer parameters, fewer steps, lower LR, lexical arm; stop at Warmup unless strict improvement. Select overall winner and layer8 reference before final test.",
+      "update_dev_test_sizes": {
+        "boolq": [
+          4096,
+          1024,
+          3270
+        ],
+        "arc_easy": [
+          1993,
+          570,
+          2376
+        ],
+        "arc_challenge": [
+          862,
+          299,
+          1172
+        ]
+      }
+    },
+    "target_layer": {
+      "seeds": [
+        101,
+        102,
+        103
+      ],
+      "lrs": [
+        3e-06,
+        1e-05,
+        3e-05,
+        0.0001
+      ],
+      "steps": [
+        32,
+        128,
+        256
+      ],
+      "single_layers": [
+        8
+      ],
+      "multi_layers": [
+        3,
+        8,
+        19
+      ],
+      "module": "o_proj",
+      "loss": "Mean supervised-token cross-entropy",
+      "selection": "Each arm selects full-development accuracy with seed101; ties fewer steps then lower LR; primary policy stops at Warmup unless strict improvement. Fixed-LR/step contrasts use the single-answer development recipe.",
+      "update_dev_test_sizes": {
+        "openbookqa": [
+          933,
+          500,
+          500
+        ],
+        "arc_challenge": [
+          932,
+          299,
+          1172
+        ]
+      },
+      "teacher_filter": "Same teacher-answer-verified training questions across all four arms; explanations not exhaustively verified; no student-success filter."
+    },
+    "fresh_warmup_seeds": [
+      201,
+      202,
+      203
+    ],
+    "boolq_pool_bridge": "Fixed historical Warmup, layer8 o_proj, LR3e-4, 256 steps; 1024 vs 4096 examples; five paired seeds. Recipe selected on expanded pool.",
+    "openbookqa_step_bridge": "Original prompt, unfiltered 1024-example update pool, fixed historical Warmup, layer8 o_proj, LR1e-4; three paired seeds at32/128."
+  },
+  "source_sha256": {
+    "oracle_scope_search_20261007/results/final_analysis.json": "36f066c92b597eddf75bdc3460d902b4f4576c67a57cc0b996ab0186cc578f20",
+    "oracle_scope_confirm_20261007/results/final_analysis.json": "046af4ba0d7506df1217e62bca25c624d85e4efc3614e2e31a162864d25fc31d",
+    "oracle_pool_bridge_20261007/results/final_analysis.json": "009f54a5a8d698c544fa7558113eb6434c0549c024e3d3e0b871233680c0b2e2",
+    "oracle_step_bridge_20261007/results/final_analysis.json": "91f9e4303ce3a23f764f3e6992757bdddec4540a141551d73fef37b17ad159de",
+    "oracle_targets_layers_20261007/results/joint_analysis.json": "30c01d9667ee351ba1f6e846b7cb4e7d7f71a9a55525bff4c3549e254c6dccd0",
+    "oracle_scope_search_20261007/results/format_sensitivity.json": "ee89cc3bc7ce00a309bbd0551181871c39894278fa5134287b380a55bcf7ca42",
+    "oracle_scope_search_20261007/results/boolq_passage_sensitivity.json": "12170748a131674942f34414174fb38d2a08f8157cb894aa993599c46858532a",
+    "oracle_targets_layers_20261007/results/final_analysis.json": "c6704b67e5bcc8f275ad4f3504d48d22a521c73cfacb808a84a1be7b86681d9c",
+    "oracle_targets_layers_arc_20261007/results/final_analysis.json": "6f5fd7e799c2e1143994cedd6bbd8e7ea9f8d04e36363a5959756f3226e97bfc"
+  }
+}
