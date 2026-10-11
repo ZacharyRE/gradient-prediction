@@ -1,0 +1,24 @@
+{
+  "study": "benchmark_0p5b_16h_20261010",
+  "source_files_sha256": {
+    "results/report.json": "1d620b090ee160370a0e50141cd3c4632fb34819789cc6314c0909054b658841",
+    "results/final_results.csv": "26eb2c0822bc1497847d7e14b3d467748d40c935e4e32819246b7676d8fe4e55",
+    "results/final_delivery_validation.json": "9a6ce99ee5a6690283c47e8040307b66671de565ab910b3cb453a732b6576196",
+    "results/goal_completion_audit.json": "6408cdbbe1b1735ccfffcaf7bf4870fc3ec31c5a2c28149eda201f0e50a2568f",
+    "configs/protocol.json": "34549d22421909341a09841e7efd4c177b0a2eb8a7f28eb2bd998a9ae7084604",
+    "provenance/all_final_recipes_freeze.json": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139"
+  },
+  "primary_benchmarks": 13,
+  "completed_configurations": 18,
+  "final_variants": 156,
+  "raw_predictions_audited": 591561,
+  "elapsed_seconds_to_delivery": 50091.45679330826,
+  "scientific_limitations": [
+    "One dev-selected warmup seed201; update-seed intervals do not cover warmup variation.",
+    "Positive mean is the user-requested admission criterion, not a statistical-significance claim.",
+    "Previously used legacy test sets and reused supplementary confirmation data make this exploratory evidence.",
+    "Seven unreplicated oracle candidates are single-seed outcomes. No final-result-driven retuning was performed.",
+    "Predictor benefit does not by itself establish efficiency or superiority to true-gradient controls."
+  ],
+  "publication_scope": "Compact results and configurations; original datasets, raw generations, weights, offline caches, and machine-specific orchestration are not included."
+}

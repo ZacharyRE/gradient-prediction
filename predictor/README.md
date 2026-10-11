@@ -4,6 +4,8 @@
 
 The current research path is **gradient prediction → useful one-step updates → calibration under model changes → history transfer and broader layer scope**.
 
+**Latest study: [0.5B across 13 benchmarks](../reports/benchmark_0p5b_20261010/README.md).** Strong oracle gains on several tasks, partial predictor retention, and no established compute advantage. Includes three-seed results, unsuccessful screens, and selected configurations.
+
 ## Start here: Countdown
 
 **[Main report: gradient prediction, calibration, and layer updates](countdown_predictor_results/README.md)**

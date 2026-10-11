@@ -1,0 +1,3834 @@
+{
+  "boolq": {
+    "time": 1791664689.6067681,
+    "task": "boolq",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 66.57492354740062,
+        "source_disjoint_accuracy_pct": 66.67895318835238,
+        "n": 3270,
+        "prediction_sha256": "e2432f7979d3c207c58b341059142c5aa9ad1038555b3c190b9ecbc0bd30f9a1",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__warmup_lr0.0005_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 63.97553516819572,
+        "source_disjoint_accuracy_pct": 64.31994102469591,
+        "n": 3270,
+        "prediction_sha256": "c37de863908b50a1691f02dba106182e90860020fe8488c62cc3f592388f61a2",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__search_lr0.0003_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 73.79204892966361,
+        "source_disjoint_accuracy_pct": 73.3136748986362,
+        "n": 3270,
+        "prediction_sha256": "bec15a5da3617543038e291a8d309b214e905adb678102007bd4cd59a5397f77",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__replicate_lr0.0003_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 74.06727828746178,
+        "source_disjoint_accuracy_pct": 73.0925175082934,
+        "n": 3270,
+        "prediction_sha256": "922c25477fa3c7cfa8ba2303657f60afc3fe1d6d12978953b467e0f1105403b8",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__replicate_lr0.0003_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 73.57798165137615,
+        "source_disjoint_accuracy_pct": 72.87136011795062,
+        "n": 3270,
+        "prediction_sha256": "fb157e6e5e601912c430a5d4f38987570d33ae7632b495a044ba7000246a4481",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__cv4_correction4_lr9e-05_p123_u101__step128",
+        "method": "cv4_correction4",
+        "seed": 101,
+        "full_accuracy_pct": 66.85015290519878,
+        "source_disjoint_accuracy_pct": 67.12126796903797,
+        "n": 3270,
+        "prediction_sha256": "39889a5fb79d45a726e9fdf9db8413e76ea1307a89f12299196a6efa3a922024",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__cv4_correction4_lr9e-05_p124_u102__step128",
+        "method": "cv4_correction4",
+        "seed": 102,
+        "full_accuracy_pct": 67.55351681957187,
+        "source_disjoint_accuracy_pct": 67.82159970512348,
+        "n": 3270,
+        "prediction_sha256": "77ec7c65230d73b1f1eb6e3d5b9bdaa8504c4f5eedd581bdee9523cff4eb03e0",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__cv4_correction4_lr9e-05_p125_u103__step128",
+        "method": "cv4_correction4",
+        "seed": 103,
+        "full_accuracy_pct": 68.19571865443424,
+        "source_disjoint_accuracy_pct": 68.52193144120899,
+        "n": 3270,
+        "prediction_sha256": "cd49fb84f98641cd70221b98464881b3b5ec2b22fa16192e5456ef8797aebbff",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__adaptive_lr3e-05_p123_u101__step256",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 66.69724770642202,
+        "source_disjoint_accuracy_pct": 66.90011057869518,
+        "n": 3270,
+        "prediction_sha256": "5ecccf9c24777cef1df552a5adc15c316be78682043caf5a872dc40d6f8696ad",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__frozen_batchfit_lr3e-05_p123_u101__step8",
+        "method": "frozen_batchfit",
+        "seed": 101,
+        "full_accuracy_pct": 66.36085626911316,
+        "source_disjoint_accuracy_pct": 66.78953188352378,
+        "n": 3270,
+        "prediction_sha256": "24c44ce7a29a7d69000d0102611a7df2d5593e7c285409c02b3311af8aa15ea1",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__frozen_lr3e-05_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 66.26911314984709,
+        "source_disjoint_accuracy_pct": 66.60523405823811,
+        "n": 3270,
+        "prediction_sha256": "f218ab1c6d427d0aa10180aeafd042870847d660e0fcd59390f5ff9fd8dfe910",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__frozen_lr3e-05_p124_u102__step8",
+        "method": "frozen",
+        "seed": 102,
+        "full_accuracy_pct": 66.60550458715596,
+        "source_disjoint_accuracy_pct": 66.90011057869518,
+        "n": 3270,
+        "prediction_sha256": "ada4d04710aae932067fefe8bb49bfd538d1414a7a96456995d4a30a9d18c2d7",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__frozen_lr3e-05_p125_u103__step8",
+        "method": "frozen",
+        "seed": 103,
+        "full_accuracy_pct": 65.62691131498471,
+        "source_disjoint_accuracy_pct": 65.97862145226686,
+        "n": 3270,
+        "prediction_sha256": "aac211dc086f887d5ca7f99b4a63f591abc2302e77aba18de2b5459d397cb6ae",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__oracle4_correction4_lr9e-05_p123_u101__step128",
+        "method": "oracle4_correction4",
+        "seed": 101,
+        "full_accuracy_pct": 66.88073394495413,
+        "source_disjoint_accuracy_pct": 67.19498709915223,
+        "n": 3270,
+        "prediction_sha256": "883355451844d13151ad3f6fb4ef4ecccdca76f4a2d2564cf387c0cdcf374ef2",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__oracle4_correction4_lr9e-05_p124_u102__step128",
+        "method": "oracle4_correction4",
+        "seed": 102,
+        "full_accuracy_pct": 67.03363914373088,
+        "source_disjoint_accuracy_pct": 67.19498709915223,
+        "n": 3270,
+        "prediction_sha256": "beefca489ee663f81a23bbefd18f7a72c5b71048c1929335c6458dd4141f4321",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__oracle4_correction4_lr9e-05_p125_u103__step128",
+        "method": "oracle4_correction4",
+        "seed": 103,
+        "full_accuracy_pct": 67.73700305810397,
+        "source_disjoint_accuracy_pct": 67.89531883523775,
+        "n": 3270,
+        "prediction_sha256": "72e9d02fb87dc2131980bce8bc3a613b8ecb4d9e99d4306e69553e2f7cc718ef",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__mean_lr0.0003_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 69.63302752293578,
+        "source_disjoint_accuracy_pct": 69.40656100258018,
+        "n": 3270,
+        "prediction_sha256": "36cf0128424a694f620f5bea7faa695cf84d780fedc73d505c999c4ec0942542",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "boolq__mean_lr3e-05_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 66.91131498470948,
+        "source_disjoint_accuracy_pct": 67.2687062292665,
+        "n": 3270,
+        "prediction_sha256": "4d53c14ef953319afceae0ac16bcb780f6a3c50028e4e244bc3050da78794694",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 18,
+    "verified_prediction_rows": 58860,
+    "n_all": 3270,
+    "n_source_disjoint": 2713,
+    "final_stage_seconds": 122.97132229804993,
+    "max_prompt_tokens": 1299,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "6f804c194a868b11c00dd9bdf7cb1b859f31b4b877cb0c13332316c60f29c445",
+    "stage_sha256": "1389e8454c916e8eac1c1d9e1409bd2c839d31f918a25f23a438570543b8a6b7",
+    "base_accuracy_pct": 66.67895318835238,
+    "warmup_accuracy_pct": 64.31994102469591,
+    "oracle_mean_accuracy_pct": 73.0925175082934,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 8.772576483597494,
+      "ci95_pp": [
+        6.700797158174287,
+        10.856468763580374
+      ],
+      "ci97p5_two_look_pp": [
+        6.395672357534136,
+        11.152693986932514
+      ],
+      "ci95_family13_pp": [
+        5.769843201620537,
+        11.831833457682297
+      ],
+      "ci95_all_registered_recipes_pp": [
+        5.647601222195216,
+        12.038041471133457
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2541,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 6.413564319941025,
+      "ci95_pp": [
+        4.625071828970823,
+        8.202156044991419
+      ],
+      "ci97p5_two_look_pp": [
+        4.356884316501315,
+        8.480831413310991
+      ],
+      "ci95_family13_pp": [
+        3.786382035075733,
+        8.98796198554309
+      ],
+      "ci95_all_registered_recipes_pp": [
+        3.7273816659869268,
+        9.144823788291534
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2541,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "cv4_correction4",
+    "predictor_mean_accuracy_pct": 67.82159970512348,
+    "predictor_seed_accuracies_pct": [
+      67.12126796903797,
+      67.82159970512348,
+      68.52193144120899
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 3.501658680427571,
+      "ci95_pp": [
+        1.5446288188138124,
+        5.504645708282309
+      ],
+      "ci97p5_two_look_pp": [
+        1.2768459454916998,
+        5.777497130046422
+      ],
+      "ci95_family13_pp": [
+        0.5066284566041505,
+        6.626071715735016
+      ],
+      "ci95_all_registered_recipes_pp": [
+        0.40366130224206725,
+        6.753289877297071
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2541,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -5.270917803169923,
+      "ci95_pp": [
+        -7.080085629970543,
+        -3.4538130274720102
+      ],
+      "ci97p5_two_look_pp": [
+        -7.3628340658646305,
+        -3.2151474569240337
+      ],
+      "ci95_family13_pp": [
+        -7.935086705720463,
+        -2.666423980991599
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -8.071294839554968,
+        -2.4798982233584073
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2541,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.3991596638655462,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 8.772576483597494,
+      "ci95_pp": [
+        6.700797158174287,
+        10.856468763580374
+      ],
+      "ci97p5_two_look_pp": [
+        6.395672357534136,
+        11.152693986932514
+      ],
+      "ci95_family13_pp": [
+        5.769843201620537,
+        11.831833457682297
+      ],
+      "ci95_all_registered_recipes_pp": [
+        5.647601222195216,
+        12.038041471133457
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2541,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 3.501658680427571,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio.",
+    "four_label_control_comparisons": [
+      {
+        "control": "oracle4",
+        "cv4_minus_control": {
+          "mean_pp": 0.39316869394274484,
+          "ci95_pp": [
+            -0.28134814784877427,
+            1.0275323660563929
+          ],
+          "ci97p5_two_look_pp": [
+            -0.3701272502236572,
+            1.1148067455732993
+          ],
+          "ci95_family13_pp": [
+            -0.6292778351587204,
+            1.3806384580643207
+          ],
+          "ci95_all_registered_recipes_pp": [
+            -0.6983966508550703,
+            1.4418607358202147
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 2541,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "same_lr_and_stopping": true
+      }
+    ]
+  },
+  "mnli": {
+    "time": 1791664851.0133226,
+    "task": "mnli",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 39.011716760061134,
+        "source_disjoint_accuracy_pct": 39.011716760061134,
+        "n": 9815,
+        "prediction_sha256": "f85695462f0b04f220bce605711868bca301a534462f359e0d13c9fd8389e10e",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__warmup_lr0.0005_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 71.42129393785022,
+        "source_disjoint_accuracy_pct": 71.42129393785022,
+        "n": 9815,
+        "prediction_sha256": "83db546b8a39d51a649ba1e809f03cca566144e3cf6674560d545f609b30e0c7",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__search_lr0.001_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 80.34640855832909,
+        "source_disjoint_accuracy_pct": 80.34640855832909,
+        "n": 9815,
+        "prediction_sha256": "543f06ff7c4a2fb17a4e386fa01778b5009f23f993c137248fe8c8cb5033c5fb",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__replicate_lr0.001_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 79.35812531839022,
+        "source_disjoint_accuracy_pct": 79.35812531839022,
+        "n": 9815,
+        "prediction_sha256": "2244224a7fd24d46e062a3f6bf243ae2d2bc16f491a89dfc09cde736ed7b3f56",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__replicate_lr0.001_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 80.76413652572593,
+        "source_disjoint_accuracy_pct": 80.76413652572593,
+        "n": 9815,
+        "prediction_sha256": "a05167edb1364b2a5be81cb4d848d33645a085634bd55f43312eccc438114d4f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__adaptive_lr3e-05_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 71.17677024961793,
+        "source_disjoint_accuracy_pct": 71.17677024961793,
+        "n": 9815,
+        "prediction_sha256": "9ff8ba3c0e56b0b4538b1ebc54af17f7753db8f404b3b8283216042e3d1943f3",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__adaptive_lr3e-05_p124_u102__step8",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 70.49414161996943,
+        "source_disjoint_accuracy_pct": 70.49414161996943,
+        "n": 9815,
+        "prediction_sha256": "cd5016b0cf0f927aca3b7b21e53787261463991f61723302ebcdd37f60923b78",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__adaptive_lr3e-05_p125_u103__step8",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 70.8507386653082,
+        "source_disjoint_accuracy_pct": 70.8507386653082,
+        "n": 9815,
+        "prediction_sha256": "0189a83d84fd8cfe0a76a4dd724fe2c78547b878912128a74b31158514a4d752",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__frozen_lr3e-05_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 71.36016301579215,
+        "source_disjoint_accuracy_pct": 71.36016301579215,
+        "n": 9815,
+        "prediction_sha256": "c5d2bb5a6c3201f80c9f57dba433deaf4890156ab55daf79c7614e358f9c62cc",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__mean_lr0.001_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 76.1079979623026,
+        "source_disjoint_accuracy_pct": 76.1079979623026,
+        "n": 9815,
+        "prediction_sha256": "b01cb411343b49320b749e49cd31b846efc3d1559e92f63b9c6d09f293a21b46",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "mnli__mean_lr3e-05_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 72.1141110545084,
+        "source_disjoint_accuracy_pct": 72.1141110545084,
+        "n": 9815,
+        "prediction_sha256": "237e62a73c3bc71a6b634eb524ff0e159841e4a42a7eb3037ae034dbe66de646",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 107965,
+    "n_all": 9815,
+    "n_source_disjoint": 9815,
+    "final_stage_seconds": 183.81388235092163,
+    "max_prompt_tokens": 300,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "c85c905db1c9823f157eb8d5c7a1a6e4418346f44bcdf7c642d8600f45c3f9b1",
+    "stage_sha256": "fa34af4aaae01c9367f396a7dd963c3baf48bcb32b0cd192ffbfb7184ea936a9",
+    "base_accuracy_pct": 39.011716760061134,
+    "warmup_accuracy_pct": 71.42129393785022,
+    "oracle_mean_accuracy_pct": 80.15622346748175,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 8.734929529631517,
+      "ci95_pp": [
+        7.658139589288277,
+        9.76595836548337
+      ],
+      "ci97p5_two_look_pp": [
+        7.500674405323265,
+        9.914777179088153
+      ],
+      "ci95_family13_pp": [
+        7.1770242283396115,
+        10.199302978894046
+      ],
+      "ci95_all_registered_recipes_pp": [
+        7.088843691514848,
+        10.28164319257592
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 3334,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 41.14450670742061,
+      "ci95_pp": [
+        39.97556225880921,
+        42.27751895958131
+      ],
+      "ci97p5_two_look_pp": [
+        39.81609287338668,
+        42.433250224344135
+      ],
+      "ci95_family13_pp": [
+        39.40882952031677,
+        42.778512880876114
+      ],
+      "ci95_all_registered_recipes_pp": [
+        39.357151836052786,
+        42.84472830393527
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 3334,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "adaptive",
+    "predictor_mean_accuracy_pct": 70.84055017829853,
+    "predictor_seed_accuracies_pct": [
+      71.17677024961793,
+      70.49414161996943,
+      70.8507386653082
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": -0.5807437595517065,
+      "ci95_pp": [
+        -1.2084380002244919,
+        -0.010185270103627903
+      ],
+      "ci97p5_two_look_pp": [
+        -1.3079239384455903,
+        0.06452067508912167
+      ],
+      "ci95_family13_pp": [
+        -1.5214053255131157,
+        0.2268747119964883
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.5812475918826783,
+        0.24454051668759497
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 3334,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -9.315673289183222,
+      "ci95_pp": [
+        -10.28964483649813,
+        -8.383299414781677
+      ],
+      "ci97p5_two_look_pp": [
+        -10.458453700266102,
+        -8.254209303201865
+      ],
+      "ci95_family13_pp": [
+        -10.789718462661591,
+        -7.955939862747393
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -10.885931649630978,
+        -7.872763355256174
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 3334,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": -0.06648522550544324,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 8.734929529631517,
+      "ci95_pp": [
+        7.658139589288277,
+        9.76595836548337
+      ],
+      "ci97p5_two_look_pp": [
+        7.500674405323265,
+        9.914777179088153
+      ],
+      "ci95_family13_pp": [
+        7.1770242283396115,
+        10.199302978894046
+      ],
+      "ci95_all_registered_recipes_pp": [
+        7.088843691514848,
+        10.28164319257592
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 3334,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": -0.5807437595517065,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio."
+  },
+  "paws": {
+    "time": 1791665062.6153674,
+    "task": "paws",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 33.975,
+        "source_disjoint_accuracy_pct": 33.975,
+        "n": 8000,
+        "prediction_sha256": "ec902b7e3a4a8abebf3d743485c07e9843c386546cf581d318e7c1f301dbd277",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__warmup_lr0.0005_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 72.675,
+        "source_disjoint_accuracy_pct": 72.675,
+        "n": 8000,
+        "prediction_sha256": "94d63c334aa632dcddd8df032caf0530d8829e3a311778bf5132ae9225135edb",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__search_lr0.001_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 86.4875,
+        "source_disjoint_accuracy_pct": 86.4875,
+        "n": 8000,
+        "prediction_sha256": "063f81d1d073c03153d5c417e315f24163bd995eb67bebc6136d7a9d117b5861",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__replicate_lr0.001_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 86.41250000000001,
+        "source_disjoint_accuracy_pct": 86.41250000000001,
+        "n": 8000,
+        "prediction_sha256": "ebb570035655c18f7556dcbaf483ec5f7b406cf984cb1e5a3fd2824ecb9eb42e",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__replicate_lr0.001_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 84.675,
+        "source_disjoint_accuracy_pct": 84.675,
+        "n": 8000,
+        "prediction_sha256": "c49003336914afaf75f4643e1ab2cf45a0a759a0531a662df412be961770ae3d",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__cv4_correction4_paws_lr0.001_p123_u101__step128",
+        "method": "cv4_correction4_paws",
+        "seed": 101,
+        "full_accuracy_pct": 80.83749999999999,
+        "source_disjoint_accuracy_pct": 80.83749999999999,
+        "n": 8000,
+        "prediction_sha256": "cd658954f78a916a2eace5bef1b10d217fb01aa959dde2d06d26aec56ba05bb0",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__cv4_correction4_paws_lr0.001_p124_u102__step128",
+        "method": "cv4_correction4_paws",
+        "seed": 102,
+        "full_accuracy_pct": 79.5125,
+        "source_disjoint_accuracy_pct": 79.5125,
+        "n": 8000,
+        "prediction_sha256": "44549bf3b72c28818e8de1bf7c035a09be569dc4c71b61519d961ac986a3cff0",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__cv4_correction4_paws_lr0.001_p125_u103__step128",
+        "method": "cv4_correction4_paws",
+        "seed": 103,
+        "full_accuracy_pct": 78.71249999999999,
+        "source_disjoint_accuracy_pct": 78.71249999999999,
+        "n": 8000,
+        "prediction_sha256": "1b13f59c7580f354912eb1e499fa8d99b0fc37e2a206fce6eaf3e93aabd98016",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__frozen_lr0.0003_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 72.82499999999999,
+        "source_disjoint_accuracy_pct": 72.82499999999999,
+        "n": 8000,
+        "prediction_sha256": "e765805432e29ca97c4e879769fd11773437fffb2fdbe3279529c6d3079d5afe",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__adaptive_lr0.0001_p123_u101__step128",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 72.675,
+        "source_disjoint_accuracy_pct": 72.675,
+        "n": 8000,
+        "prediction_sha256": "84c41bd7cee1840aab820e94e1fef23ba883a3adc3bf505d7a656159ecaf3e58",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__adaptive_lr0.0001_p124_u102__step128",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 71.0125,
+        "source_disjoint_accuracy_pct": 71.0125,
+        "n": 8000,
+        "prediction_sha256": "00bf555c3b8f9fc6cb132c41a7c8770df07309238c9606a9a26ee36c402a3088",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__adaptive_lr0.0001_p125_u103__step128",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 72.25,
+        "source_disjoint_accuracy_pct": 72.25,
+        "n": 8000,
+        "prediction_sha256": "6aa9479c14c01dbadd68a6a58cdcf16af8737b2b5f4659fcd06d595fe826b6b3",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_correction4_paws_lr0.001_p123_u101__step256",
+        "method": "oracle4_correction4_paws",
+        "seed": 101,
+        "full_accuracy_pct": 83.0875,
+        "source_disjoint_accuracy_pct": 83.0875,
+        "n": 8000,
+        "prediction_sha256": "0afdb6dfb0faa573f51ad35b6fb34bca6badeb1c0801e082511ef7bce9551cc4",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_correction4_paws_lr0.001_p124_u102__step256",
+        "method": "oracle4_correction4_paws",
+        "seed": 102,
+        "full_accuracy_pct": 83.275,
+        "source_disjoint_accuracy_pct": 83.275,
+        "n": 8000,
+        "prediction_sha256": "4cdd1f921807f7d2db87d77f677f1085ff3d4de88ec747565732eee6f9bd2a26",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_correction4_paws_lr0.001_p125_u103__step256",
+        "method": "oracle4_correction4_paws",
+        "seed": 103,
+        "full_accuracy_pct": 80.125,
+        "source_disjoint_accuracy_pct": 80.125,
+        "n": 8000,
+        "prediction_sha256": "f0340c2bee893975ec6bc13ddad946a75b94ca159a0f5aa0879c2c8015d43f1b",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_matched_correction4_paws_lr0.001_p123_u101__step128",
+        "method": "oracle4_matched_correction4_paws",
+        "seed": 101,
+        "full_accuracy_pct": 68.25,
+        "source_disjoint_accuracy_pct": 68.25,
+        "n": 8000,
+        "prediction_sha256": "46b6be2c47fcd86fed1296c6944941d6ff1e3b98eabc6c1d78c0361b86ee5833",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_matched_correction4_paws_lr0.001_p124_u102__step128",
+        "method": "oracle4_matched_correction4_paws",
+        "seed": 102,
+        "full_accuracy_pct": 78.2875,
+        "source_disjoint_accuracy_pct": 78.2875,
+        "n": 8000,
+        "prediction_sha256": "7da7e6835460d9f72b7b546413aff4924a61fbc1b0f08a9b0f8cf97c8d91c97f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__oracle4_matched_correction4_paws_lr0.001_p125_u103__step128",
+        "method": "oracle4_matched_correction4_paws",
+        "seed": 103,
+        "full_accuracy_pct": 80.4875,
+        "source_disjoint_accuracy_pct": 80.4875,
+        "n": 8000,
+        "prediction_sha256": "5712cfd32ce63277886560f6cf727756abfe4549ae119f170b625dc5ed930975",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__mean_lr0.001_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 79.825,
+        "source_disjoint_accuracy_pct": 79.825,
+        "n": 8000,
+        "prediction_sha256": "e509d53ebe78274043e0f9344dd035195d8567a5e904c6b0681559514e5f8bcc",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "paws__mean_lr0.0001_p123_u101__control_selected_predictor__step128",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 75.8875,
+        "source_disjoint_accuracy_pct": 75.8875,
+        "n": 8000,
+        "prediction_sha256": "0e29e85acfb49430181f6f852db81f7d85f807d49d866b85c0f332696c028442",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 20,
+    "verified_prediction_rows": 160000,
+    "n_all": 8000,
+    "n_source_disjoint": 8000,
+    "final_stage_seconds": 241.84964561462402,
+    "max_prompt_tokens": 179,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "d6282a7d5e559dca35e7153111279d6362c4475fdb6bbc96694e387abbc60e06",
+    "stage_sha256": "1e7be2795b2f36727ad0e3dc51b68fb7adecdb1846e79bca3734f1383324370d",
+    "base_accuracy_pct": 33.975,
+    "warmup_accuracy_pct": 72.675,
+    "oracle_mean_accuracy_pct": 85.85833333333333,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 13.183333333333334,
+      "ci95_pp": [
+        11.684359865436607,
+        14.665850095281089
+      ],
+      "ci97p5_two_look_pp": [
+        11.47950121881518,
+        14.860789285146403
+      ],
+      "ci95_family13_pp": [
+        10.938483931925763,
+        15.294423858773198
+      ],
+      "ci95_all_registered_recipes_pp": [
+        10.804394159863216,
+        15.389052847865866
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1616,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 51.88333333333334,
+      "ci95_pp": [
+        49.713541978575,
+        53.96989296786745
+      ],
+      "ci97p5_two_look_pp": [
+        49.38424057561581,
+        54.27475196533828
+      ],
+      "ci95_family13_pp": [
+        48.727515362798684,
+        55.036765272014314
+      ],
+      "ci95_all_registered_recipes_pp": [
+        48.6134560819322,
+        55.16755459325277
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1616,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "cv4_correction4_paws",
+    "predictor_mean_accuracy_pct": 79.6875,
+    "predictor_seed_accuracies_pct": [
+      80.83749999999999,
+      79.5125,
+      78.71249999999999
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 7.012500000000001,
+      "ci95_pp": [
+        5.532213643355743,
+        8.520445088336661
+      ],
+      "ci97p5_two_look_pp": [
+        5.3627028298420285,
+        8.737308849012242
+      ],
+      "ci95_family13_pp": [
+        4.910984328565095,
+        9.329952296572019
+      ],
+      "ci95_all_registered_recipes_pp": [
+        4.8518591464398035,
+        9.45207841495554
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1616,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -6.170833333333333,
+      "ci95_pp": [
+        -7.297510104877549,
+        -5.1687613705962745
+      ],
+      "ci97p5_two_look_pp": [
+        -7.513394797933495,
+        -5.027452736490177
+      ],
+      "ci95_family13_pp": [
+        -7.99417470387448,
+        -4.6180830373513375
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -8.08294005510871,
+        -4.553894737486287
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1616,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.5319216182048041,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 13.183333333333334,
+      "ci95_pp": [
+        11.684359865436607,
+        14.665850095281089
+      ],
+      "ci97p5_two_look_pp": [
+        11.47950121881518,
+        14.860789285146403
+      ],
+      "ci95_family13_pp": [
+        10.938483931925763,
+        15.294423858773198
+      ],
+      "ci95_all_registered_recipes_pp": [
+        10.804394159863216,
+        15.389052847865866
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1616,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 7.012500000000001,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio.",
+    "four_label_control_comparisons": [
+      {
+        "control": "oracle4",
+        "cv4_minus_control": {
+          "mean_pp": -2.475,
+          "ci95_pp": [
+            -3.925331840583462,
+            -1.120225991556966
+          ],
+          "ci97p5_two_look_pp": [
+            -4.134037547421976,
+            -0.8854098711548396
+          ],
+          "ci95_family13_pp": [
+            -4.7361709620039605,
+            -0.34222694209794874
+          ],
+          "ci95_all_registered_recipes_pp": [
+            -4.928906213051824,
+            -0.22070830151385604
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "same_lr_and_stopping": false
+      },
+      {
+        "control": "oracle4_matched",
+        "cv4_minus_control": {
+          "mean_pp": 4.0125,
+          "ci95_pp": [
+            -1.5992018556197214,
+            12.387548988738603
+          ],
+          "ci97p5_two_look_pp": [
+            -1.9275104537993464,
+            12.85192540376855
+          ],
+          "ci95_family13_pp": [
+            -2.614387327038299,
+            13.514114670537491
+          ],
+          "ci95_all_registered_recipes_pp": [
+            -2.792816260497347,
+            13.600417859232458
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "same_lr_and_stopping": true
+      }
+    ]
+  },
+  "arc_easy": {
+    "time": 1791665185.7078595,
+    "task": "arc_easy",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 50.04208754208754,
+        "source_disjoint_accuracy_pct": 50.04208754208754,
+        "n": 2376,
+        "prediction_sha256": "85584ab90df741134834011ce2c57f6379eb4e12ae4025877d6fda1865d448ca",
+        "output_limit_hits": 450
+      },
+      {
+        "tag": "arc_easy__warmup_lr0.001_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 71.08585858585859,
+        "source_disjoint_accuracy_pct": 71.08585858585859,
+        "n": 2376,
+        "prediction_sha256": "051540d7c2f6d3905ac0ffe21d44af1f77d83f8bfda58b5aed9e17d57339b616",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__search_lr0.001_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 72.64309764309765,
+        "source_disjoint_accuracy_pct": 72.64309764309765,
+        "n": 2376,
+        "prediction_sha256": "b3b2eeeba961f4680379dcdf2a7dba88383e6525c2d78767fd405b49ae57d22d",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__replicate_lr0.001_s102__step8",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 72.3063973063973,
+        "source_disjoint_accuracy_pct": 72.3063973063973,
+        "n": 2376,
+        "prediction_sha256": "51ec5ebaf1aba0ea2ea7951f7010a901c105ad0182aebc05ffb01d792eee0744",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__replicate_lr0.001_s103__step8",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 72.72727272727273,
+        "source_disjoint_accuracy_pct": 72.72727272727273,
+        "n": 2376,
+        "prediction_sha256": "5b61ab9faf34fb9bd33073bd5da821697d7b3e81c826be696e27ab974b783a77",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__adaptive_lr3e-05_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 71.46464646464646,
+        "source_disjoint_accuracy_pct": 71.46464646464646,
+        "n": 2376,
+        "prediction_sha256": "f26e4afce4c67ab2bb89953787f13f115bb36c5db39529e5428c4fdbc77484ad",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__adaptive_lr3e-05_p124_u102__step8",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 71.63299663299664,
+        "source_disjoint_accuracy_pct": 71.63299663299664,
+        "n": 2376,
+        "prediction_sha256": "570e0309a092b7257a860efee53602958e671447ac390c44739c79fb0f4b3de5",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__adaptive_lr3e-05_p125_u103__step8",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 71.42255892255892,
+        "source_disjoint_accuracy_pct": 71.42255892255892,
+        "n": 2376,
+        "prediction_sha256": "d2216c4b91ef8a51070e6958bda27c3232c28a4286306ca7a18a4bb33003c7b0",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__frozen_lr3e-05_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 71.5909090909091,
+        "source_disjoint_accuracy_pct": 71.5909090909091,
+        "n": 2376,
+        "prediction_sha256": "7734b1f9b3e1f9fedea6bf2f75506c21296328932a8fce73013737fc75bc02b3",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__mean_lr0.001_p123_u101__control_oracle__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 71.92760942760943,
+        "source_disjoint_accuracy_pct": 71.92760942760943,
+        "n": 2376,
+        "prediction_sha256": "f9e928daca761d4a2473e842d89575058ac7e68cb874894d61af208e8153f1ab",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_easy__mean_lr3e-05_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 71.12794612794613,
+        "source_disjoint_accuracy_pct": 71.12794612794613,
+        "n": 2376,
+        "prediction_sha256": "c033e6c673194d813667e27a619e17e7dc380e1b760f24bb2d50684a36a76431",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 26136,
+    "n_all": 2376,
+    "n_source_disjoint": 2376,
+    "final_stage_seconds": 84.7729742527008,
+    "max_prompt_tokens": 224,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "c8ec226c05bf6ec1cbd3aeedf3f542f345ffd28ede78b26fef7c3d6ebfd3f893",
+    "stage_sha256": "76022e39ac156f42b7a6c62dea019e30b294cbd61820469882adab64f75c89e9",
+    "base_accuracy_pct": 50.04208754208754,
+    "warmup_accuracy_pct": 71.08585858585859,
+    "oracle_mean_accuracy_pct": 72.55892255892256,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 1.4730639730639732,
+      "ci95_pp": [
+        0.47699214365881043,
+        2.469135802469135
+      ],
+      "ci97p5_two_look_pp": [
+        0.3647586980920313,
+        2.6094276094276094
+      ],
+      "ci95_family13_pp": [
+        0.05932724682724675,
+        2.9882154882154883
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.043440355940355904,
+        3.1158309283309342
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2376,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 22.516835016835017,
+      "ci95_pp": [
+        20.35634118967452,
+        24.66329966329966
+      ],
+      "ci97p5_two_look_pp": [
+        20.005611672278338,
+        25.028233726150404
+      ],
+      "ci95_family13_pp": [
+        19.34945070361737,
+        25.715488215488215
+      ],
+      "ci95_all_registered_recipes_pp": [
+        19.302799823633155,
+        25.871162016995353
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2376,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "adaptive",
+    "predictor_mean_accuracy_pct": 71.506734006734,
+    "predictor_seed_accuracies_pct": [
+      71.46464646464646,
+      71.63299663299664,
+      71.42255892255892
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 0.42087542087542085,
+      "ci95_pp": [
+        -0.01402918069584735,
+        0.8557800224466892
+      ],
+      "ci97p5_two_look_pp": [
+        -0.08417508417508417,
+        0.9259259259259258
+      ],
+      "ci95_family13_pp": [
+        -0.22125636708970034,
+        1.0489780281446905
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.28058361391694714,
+        1.0815997274330666
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2376,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -1.0521885521885523,
+      "ci95_pp": [
+        -2.0622895622895623,
+        -0.08417508417508417
+      ],
+      "ci97p5_two_look_pp": [
+        -2.2306397306397305,
+        0.056116722783389326
+      ],
+      "ci95_family13_pp": [
+        -2.6234567901234565,
+        0.34751899335232234
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -2.7370430495430496,
+        0.4502865961199353
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2376,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.2857142857142857,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 1.4730639730639732,
+      "ci95_pp": [
+        0.47699214365881043,
+        2.469135802469135
+      ],
+      "ci97p5_two_look_pp": [
+        0.3647586980920313,
+        2.6094276094276094
+      ],
+      "ci95_family13_pp": [
+        0.05932724682724675,
+        2.9882154882154883
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.043440355940355904,
+        3.1158309283309342
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2376,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 0.42087542087542085,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio."
+  },
+  "openbookqa": {
+    "time": 1791665191.6158504,
+    "task": "openbookqa",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 42.4,
+        "source_disjoint_accuracy_pct": 42.4,
+        "n": 500,
+        "prediction_sha256": "fb87aa5bb8e57a4dfdc8929c4de22fb3e694673a6aa867d0209f775d2bb43fa8",
+        "output_limit_hits": 45
+      },
+      {
+        "tag": "openbookqa__warmup_lr0.001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 56.99999999999999,
+        "source_disjoint_accuracy_pct": 56.99999999999999,
+        "n": 500,
+        "prediction_sha256": "e364e247e50751ff2f6ef3c131d91af29369e30cffbbc1f43bb76b5f2951dd9f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__search_lr0.0001_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 60.199999999999996,
+        "source_disjoint_accuracy_pct": 60.199999999999996,
+        "n": 500,
+        "prediction_sha256": "ef00e68df94ebf54b569523b2e0bdf564c10867217bc69d180f15a79718d2770",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__replicate_lr0.0001_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 61.0,
+        "source_disjoint_accuracy_pct": 61.0,
+        "n": 500,
+        "prediction_sha256": "f2a911023b2a39601485fa6a1bd788be9f2d36271c6c9ec2ff8c5597770499e5",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__replicate_lr0.0001_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 60.8,
+        "source_disjoint_accuracy_pct": 60.8,
+        "n": 500,
+        "prediction_sha256": "0a2d7f148ad0d8d3ec988cc467e8a91dd576d567745fb2dd5608faa30561ec7f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_globalfit_lr3e-05_p123_u101__step32",
+        "method": "frozen_globalfit",
+        "seed": 101,
+        "full_accuracy_pct": 58.8,
+        "source_disjoint_accuracy_pct": 58.8,
+        "n": 500,
+        "prediction_sha256": "20e8fbecad84fe6bfa97d033bb54110420b04b06ed1becebba2d09510fbac3e8",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_globalfit_lr3e-05_p124_u102__step32",
+        "method": "frozen_globalfit",
+        "seed": 102,
+        "full_accuracy_pct": 58.4,
+        "source_disjoint_accuracy_pct": 58.4,
+        "n": 500,
+        "prediction_sha256": "06c8e35d49d5cf40be40ef9702080816f3fda6963de49f8523169a217809728d",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_globalfit_lr3e-05_p125_u103__step32",
+        "method": "frozen_globalfit",
+        "seed": 103,
+        "full_accuracy_pct": 56.99999999999999,
+        "source_disjoint_accuracy_pct": 56.99999999999999,
+        "n": 500,
+        "prediction_sha256": "f9968b492ba936f33c3541ba01d4ad8ebe2c3e139881cf9f89693df5b09d22e1",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__adaptive_lr0.0001_p123_u101__step32",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 55.800000000000004,
+        "source_disjoint_accuracy_pct": 55.800000000000004,
+        "n": 500,
+        "prediction_sha256": "e23084fc9a0d4717f50849d87510ed6212e62bec771e5bf70575d3b19723ebd7",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_lr0.0001_p123_u101__step32",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 55.400000000000006,
+        "source_disjoint_accuracy_pct": 55.400000000000006,
+        "n": 500,
+        "prediction_sha256": "55e5d7a226bde1cef9b5a8e85c3210198e95262bdfd97b14bb43f2471588f127",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_lr0.0001_p124_u102__step32",
+        "method": "frozen",
+        "seed": 102,
+        "full_accuracy_pct": 50.6,
+        "source_disjoint_accuracy_pct": 50.6,
+        "n": 500,
+        "prediction_sha256": "4345e80a1804bc8341e5418c28b0df51d3c247e63fb370646d0c3bb074858e5b",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__frozen_lr0.0001_p125_u103__step32",
+        "method": "frozen",
+        "seed": 103,
+        "full_accuracy_pct": 44.2,
+        "source_disjoint_accuracy_pct": 44.2,
+        "n": 500,
+        "prediction_sha256": "dd0e36fe5c3c7327c9ccc2b5c841ac4ae6d5b9caec159fd1aec59a1aa724403e",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__mean_lr0.0001_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 61.0,
+        "source_disjoint_accuracy_pct": 61.0,
+        "n": 500,
+        "prediction_sha256": "333b279b8af534aff58590b032f3d9a557995159724cc6abef1323b77cb4015a",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__mean_lr0.0001_p123_u101__control_selected_predictor__step32",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 57.99999999999999,
+        "source_disjoint_accuracy_pct": 57.99999999999999,
+        "n": 500,
+        "prediction_sha256": "39d8b007b369af21f806cf5e6eea2e74553589d6c4c33a797aef5ee88ce61d95",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "openbookqa__mean_lr3e-05_p123_u101__variant_globalfit__control_selected_predictor__step32",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 57.599999999999994,
+        "source_disjoint_accuracy_pct": 57.599999999999994,
+        "n": 500,
+        "prediction_sha256": "4a40f0c08c9b5aed968d53970841524ff166bb8616ff4b2fedebbc38ef4a8928",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 15,
+    "verified_prediction_rows": 7500,
+    "n_all": 500,
+    "n_source_disjoint": 500,
+    "final_stage_seconds": 35.13228487968445,
+    "max_prompt_tokens": 139,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "72a08b2fdcdc18b619fe987d9af8c11a5696e43d830a2a253bc08a4889f79477",
+    "stage_sha256": "e3c730204577b84d08c8e6d19e18154731db6c592a6e048eb5fde198cc71b0b2",
+    "base_accuracy_pct": 42.4,
+    "warmup_accuracy_pct": 56.99999999999999,
+    "oracle_mean_accuracy_pct": 60.66666666666667,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 3.6666666666666665,
+      "ci95_pp": [
+        0.0,
+        7.333333333333335
+      ],
+      "ci97p5_two_look_pp": [
+        -0.40000000000000036,
+        7.866666666666666
+      ],
+      "ci95_family13_pp": [
+        -1.651410256410256,
+        9.066666666666666
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.8730952380952381,
+        9.406428571428599
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 18.266666666666666,
+      "ci95_pp": [
+        12.8,
+        23.666666666666668
+      ],
+      "ci97p5_two_look_pp": [
+        12.0,
+        24.333333333333332
+      ],
+      "ci95_family13_pp": [
+        10.2,
+        26.200000000000003
+      ],
+      "ci95_all_registered_recipes_pp": [
+        9.980714285714287,
+        26.539761904761935
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "frozen_globalfit",
+    "predictor_mean_accuracy_pct": 58.06666666666666,
+    "predictor_seed_accuracies_pct": [
+      58.8,
+      58.4,
+      56.99999999999999
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 1.0666666666666667,
+      "ci95_pp": [
+        -1.5333333333333332,
+        3.5333333333333328
+      ],
+      "ci97p5_two_look_pp": [
+        -1.9333333333333331,
+        3.8
+      ],
+      "ci95_family13_pp": [
+        -2.9847435897435894,
+        4.6
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -3.073095238095238,
+        4.733333333333333
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -2.6,
+      "ci95_pp": [
+        -6.4,
+        1.1349999999999763
+      ],
+      "ci97p5_two_look_pp": [
+        -6.999999999999998,
+        1.6666666666666663
+      ],
+      "ci95_family13_pp": [
+        -8.533333333333333,
+        2.8000000000000003
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -8.67309523809524,
+        3.0
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.2909090909090909,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 3.6666666666666665,
+      "ci95_pp": [
+        0.0,
+        7.333333333333335
+      ],
+      "ci97p5_two_look_pp": [
+        -0.40000000000000036,
+        7.866666666666666
+      ],
+      "ci95_family13_pp": [
+        -1.651410256410256,
+        9.066666666666666
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.8730952380952381,
+        9.406428571428599
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 1.0666666666666667,
+    "retention_denominator_supported": false,
+    "retention_note": "Oracle gain is not clearly positive in this final population; the ratio is undefined or unstable and must not be interpreted as reliable benefit retention."
+  },
+  "hellaswag": {
+    "time": 1791665505.2386706,
+    "task": "hellaswag",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 20.17526389165505,
+        "source_disjoint_accuracy_pct": 20.17526389165505,
+        "n": 10042,
+        "prediction_sha256": "13ce3768a4a45f900ae2d348e8c1a6968dac28c193c13b2fa3a15bb0b58f6b98",
+        "output_limit_hits": 1
+      },
+      {
+        "tag": "hellaswag__warmup_lr0.001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 41.91396136227843,
+        "source_disjoint_accuracy_pct": 41.91396136227843,
+        "n": 10042,
+        "prediction_sha256": "a220b5d717276aee8ead86f16cccb315cff41daded1a3cdaef9a1589ae8a737a",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__search_lr0.001_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 56.303525194184424,
+        "source_disjoint_accuracy_pct": 56.303525194184424,
+        "n": 10042,
+        "prediction_sha256": "4f0155ca744a639e0d948664089ba4af23e250ff93965d457e66506767314308",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__replicate_lr0.001_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 55.89523999203346,
+        "source_disjoint_accuracy_pct": 55.89523999203346,
+        "n": 10042,
+        "prediction_sha256": "bdaf23e3db962e6b791858877450926c34a10604a8820ef7e69030c50413cd69",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__replicate_lr0.001_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 55.97490539733121,
+        "source_disjoint_accuracy_pct": 55.97490539733121,
+        "n": 10042,
+        "prediction_sha256": "17866c0bccaa6cc3bf7e3cec1af3b54ac69e2963e1dd912eb9f2aa949a6329e5",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__frozen_lr0.0003_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 42.74048994224258,
+        "source_disjoint_accuracy_pct": 42.74048994224258,
+        "n": 10042,
+        "prediction_sha256": "56d05d69efb39109cd5a0a51cc6e950c933ed9e187b89ac7d7f75f9023e3b104",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__frozen_lr0.0003_p124_u102__step8",
+        "method": "frozen",
+        "seed": 102,
+        "full_accuracy_pct": 43.60685122485561,
+        "source_disjoint_accuracy_pct": 43.60685122485561,
+        "n": 10042,
+        "prediction_sha256": "ecf6b27ad499af3361409fff8ef90d0cf3f61750875644dfbc2baa989cddf8a9",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__frozen_lr0.0003_p125_u103__step8",
+        "method": "frozen",
+        "seed": 103,
+        "full_accuracy_pct": 43.73630750846445,
+        "source_disjoint_accuracy_pct": 43.73630750846445,
+        "n": 10042,
+        "prediction_sha256": "64d18ee0c53a2113e76f28390c3aff8a8b6b0daeeac2287741c2cfa04340a7bf",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__adaptive_lr0.0003_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 43.26827325234017,
+        "source_disjoint_accuracy_pct": 43.26827325234017,
+        "n": 10042,
+        "prediction_sha256": "b9753de7984a0de9bef1fd5106277102e21237f2c7042b289c1fa47f800509c1",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__mean_lr0.001_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 47.54033061143198,
+        "source_disjoint_accuracy_pct": 47.54033061143198,
+        "n": 10042,
+        "prediction_sha256": "e66ae4f23c89fcdcb36f5da708f9e878f104670bb1ff2d2d280ed1177068fb2a",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "hellaswag__mean_lr0.0003_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 42.381995618402705,
+        "source_disjoint_accuracy_pct": 42.381995618402705,
+        "n": 10042,
+        "prediction_sha256": "978bad889f9f9369baae7afa458c83f4b2460c2b3eb743af8c33e9d5b2e9dc5a",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 110462,
+    "n_all": 10042,
+    "n_source_disjoint": 10042,
+    "final_stage_seconds": 294.34366965293884,
+    "max_prompt_tokens": 408,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "233a7bd7f4b802628fc69b5579de0a9fdbb7bb9438c596de16b7625c621f23e2",
+    "stage_sha256": "40eda50135428cd1debd20247c554ec6be800f250949bfda24072b80bf1d6b3c",
+    "base_accuracy_pct": 20.17526389165505,
+    "warmup_accuracy_pct": 41.91396136227843,
+    "oracle_mean_accuracy_pct": 56.05789019451637,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 14.143928832237934,
+      "ci95_pp": [
+        13.079786743053667,
+        15.263743347521222
+      ],
+      "ci97p5_two_look_pp": [
+        12.914993306559571,
+        15.399390905441434
+      ],
+      "ci95_family13_pp": [
+        12.51396014223411,
+        15.796734929654919
+      ],
+      "ci95_all_registered_recipes_pp": [
+        12.449235983321959,
+        15.903508525854468
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 8407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 35.88262630286131,
+      "ci95_pp": [
+        34.776853146439386,
+        36.981460264923385
+      ],
+      "ci97p5_two_look_pp": [
+        34.61360400792206,
+        37.14411513181625
+      ],
+      "ci95_family13_pp": [
+        34.29381098506352,
+        37.552439652282295
+      ],
+      "ci95_all_registered_recipes_pp": [
+        34.23713024207935,
+        37.698083683863175
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 8407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "frozen",
+    "predictor_mean_accuracy_pct": 43.36121622518754,
+    "predictor_seed_accuracies_pct": [
+      42.74048994224258,
+      43.60685122485561,
+      43.73630750846445
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 1.447254862909115,
+      "ci95_pp": [
+        0.5984336071574218,
+        2.2450843130958296
+      ],
+      "ci97p5_two_look_pp": [
+        0.44632650831087545,
+        2.348686268403458
+      ],
+      "ci95_family13_pp": [
+        0.0651552335177619,
+        2.579360580605255
+      ],
+      "ci95_all_registered_recipes_pp": [
+        0.017303347152102713,
+        2.640525538111816
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 8407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -12.69667396932882,
+      "ci95_pp": [
+        -13.981532844332438,
+        -11.47719373664933
+      ],
+      "ci97p5_two_look_pp": [
+        -14.201635193740444,
+        -11.296896714471027
+      ],
+      "ci95_family13_pp": [
+        -14.647325071997873,
+        -10.989737715140423
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -14.823230410094357,
+        -10.88802928553199
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 8407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.10232339826331847,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 14.143928832237934,
+      "ci95_pp": [
+        13.079786743053667,
+        15.263743347521222
+      ],
+      "ci97p5_two_look_pp": [
+        12.914993306559571,
+        15.399390905441434
+      ],
+      "ci95_family13_pp": [
+        12.51396014223411,
+        15.796734929654919
+      ],
+      "ci95_all_registered_recipes_pp": [
+        12.449235983321959,
+        15.903508525854468
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 8407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 1.447254862909115,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio."
+  },
+  "race": {
+    "time": 1791665704.3946233,
+    "task": "race",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 56.89096068098905,
+        "source_disjoint_accuracy_pct": 56.89096068098905,
+        "n": 4934,
+        "prediction_sha256": "0f29fc827ca9a57886d3d9480cd7e8b5aee6cfc85b8bca87d5aae5ecd40bad1c",
+        "output_limit_hits": 3
+      },
+      {
+        "tag": "race__warmup_lr0.0001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 60.84312930685043,
+        "source_disjoint_accuracy_pct": 60.84312930685043,
+        "n": 4934,
+        "prediction_sha256": "fdb7ea0f21992bb4adfa5c7f9861dbf93beaafc36cdfb6d697689e045c7f7e88",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__search_lr0.001_s101__step128",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 63.86299148763681,
+        "source_disjoint_accuracy_pct": 63.86299148763681,
+        "n": 4934,
+        "prediction_sha256": "7710e56e92462091beace98efcc7eb4213ceab671bbdcc5fe9e67b244de5730c",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__replicate_lr0.001_s102__step128",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 61.6335630320227,
+        "source_disjoint_accuracy_pct": 61.6335630320227,
+        "n": 4934,
+        "prediction_sha256": "f91f5d003c159ed7c2fec9c816c3fc7b13db6e8d477534fc94bfec6ef7d30322",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__replicate_lr0.001_s103__step128",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 64.85610052695581,
+        "source_disjoint_accuracy_pct": 64.85610052695581,
+        "n": 4934,
+        "prediction_sha256": "4c819e1879ca0fee4d11ed2c990793bf5b00a4d2f73a1ded8cb8202597c9d889",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__adaptive_lr0.0001_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 61.329550060802596,
+        "source_disjoint_accuracy_pct": 61.329550060802596,
+        "n": 4934,
+        "prediction_sha256": "bf8b513a092d322264127d379b758117cfa4a305d942766a45b99c270811ca1c",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__adaptive_lr0.0001_p124_u102__step8",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 61.18767734089988,
+        "source_disjoint_accuracy_pct": 61.18767734089988,
+        "n": 4934,
+        "prediction_sha256": "9ccba7118714df0e5a00b744fa9e0542a140e4826a3f98effde53d91248bdd7c",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__adaptive_lr0.0001_p125_u103__step8",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 61.2484799351439,
+        "source_disjoint_accuracy_pct": 61.2484799351439,
+        "n": 4934,
+        "prediction_sha256": "304eef1b09532397a8a4b4217bd82635b849bef9e26f69b8233bf63a65dfa551",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__frozen_lr3e-05_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 61.066072152411834,
+        "source_disjoint_accuracy_pct": 61.066072152411834,
+        "n": 4934,
+        "prediction_sha256": "fe16a6cec71c3816df310cec7cbf5b1aae665a0c24522512c9adef249b02bc01",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__mean_lr0.001_p123_u101__control_oracle__step128",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 62.50506688285367,
+        "source_disjoint_accuracy_pct": 62.50506688285367,
+        "n": 4934,
+        "prediction_sha256": "fdab84ec7e4cde2a3758a2754c9c19374067395f8cba42a7ed00c2203f5e89ec",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "race__mean_lr0.0001_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 61.207944872314556,
+        "source_disjoint_accuracy_pct": 61.207944872314556,
+        "n": 4934,
+        "prediction_sha256": "0ba35e7621864354423a8667e5cafc162c96d994c6a150acce9cf165b44c8fee",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 54274,
+    "n_all": 4934,
+    "n_source_disjoint": 4934,
+    "final_stage_seconds": 222.61962890625,
+    "max_prompt_tokens": 1182,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "4d421be34a910145321b92acb699c2dd9755aae1e1e975795f0898c7ca6a2791",
+    "stage_sha256": "2f0660884e1242987e26f170725ddc440a56678bfd60dd53b91e83301586c31c",
+    "base_accuracy_pct": 56.89096068098905,
+    "warmup_accuracy_pct": 60.84312930685043,
+    "oracle_mean_accuracy_pct": 63.45088501553844,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 2.607755708688015,
+      "ci95_pp": [
+        0.7130521049911197,
+        4.358548233263865
+      ],
+      "ci97p5_two_look_pp": [
+        0.41273166373687226,
+        4.561050314374066
+      ],
+      "ci95_family13_pp": [
+        -0.23278943012365405,
+        4.982375927717806
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.44244622890640883,
+        5.099545132814571
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 6.559924334549386,
+      "ci95_pp": [
+        4.581115156418554,
+        8.452708617018743
+      ],
+      "ci97p5_two_look_pp": [
+        4.269172452106466,
+        8.677909579768027
+      ],
+      "ci95_family13_pp": [
+        3.662807258796465,
+        9.15894803307131
+      ],
+      "ci95_all_registered_recipes_pp": [
+        3.4512903209574297,
+        9.262221811593868
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "adaptive",
+    "predictor_mean_accuracy_pct": 61.255235778948794,
+    "predictor_seed_accuracies_pct": [
+      61.329550060802596,
+      61.18767734089988,
+      61.2484799351439
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 0.4121064720983651,
+      "ci95_pp": [
+        -0.03364420793690411,
+        0.8471200448097284
+      ],
+      "ci97p5_two_look_pp": [
+        -0.09407038399278544,
+        0.9100170163993327
+      ],
+      "ci95_family13_pp": [
+        -0.24537388968285612,
+        1.0425035545711745
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.2780515467886035,
+        1.0776964772277604
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -2.19564923658965,
+      "ci95_pp": [
+        -3.917250994545918,
+        -0.37962732771473034
+      ],
+      "ci97p5_two_look_pp": [
+        -4.131612630000644,
+        -0.07412123045877778
+      ],
+      "ci95_family13_pp": [
+        -4.686879532248592,
+        0.6237122016449308
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -4.743345058901389,
+        0.7282200660726298
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 0.15803108808290156,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 2.607755708688015,
+      "ci95_pp": [
+        0.7130521049911197,
+        4.358548233263865
+      ],
+      "ci97p5_two_look_pp": [
+        0.41273166373687226,
+        4.561050314374066
+      ],
+      "ci95_family13_pp": [
+        -0.23278943012365405,
+        4.982375927717806
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.44244622890640883,
+        5.099545132814571
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1407,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 0.4121064720983651,
+    "retention_denominator_supported": true,
+    "retention_note": "Point estimate only; no confidence interval for the ratio."
+  },
+  "arc_challenge": {
+    "time": 1791670968.2844982,
+    "task": "arc_challenge",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 34.470989761092156,
+        "source_disjoint_accuracy_pct": 34.470989761092156,
+        "n": 1172,
+        "prediction_sha256": "edf2819ad529ff92d158625170663e5b4a754e1227872af16241097d5eb73f56",
+        "output_limit_hits": 301
+      },
+      {
+        "tag": "arc_challenge__warmup_lr0.0005_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 52.13310580204779,
+        "source_disjoint_accuracy_pct": 52.13310580204779,
+        "n": 1172,
+        "prediction_sha256": "7c82cabbc69e1201e15bc9786c18b2d031918a88a22ea00cff9c5846de8dc11f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "arc_challenge__search_lr3e-05_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 52.474402730375424,
+        "source_disjoint_accuracy_pct": 52.474402730375424,
+        "n": 1172,
+        "prediction_sha256": "05811deb36bea7cd69727b3c77828613167c1050939bc5f8417bd8a5839bbcc1",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 3516,
+    "n_all": 1172,
+    "n_source_disjoint": 1172,
+    "final_stage_seconds": 22.25059676170349,
+    "max_prompt_tokens": 228,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "afd45301f6bfdfb275868bd9f6de7bfe9f0a24fef2d2e0ff3d794c7630a89519",
+    "stage_sha256": "92e9840078533d04b242f211af9a4f49d0e97e252dccc949f15e7f53640b8e24",
+    "base_accuracy_pct": 34.470989761092156,
+    "warmup_accuracy_pct": 52.13310580204779,
+    "oracle_mean_accuracy_pct": 52.474402730375424,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 0.3412969283276451,
+      "ci95_pp": [
+        -0.5972696245733788,
+        1.2798634812286689
+      ],
+      "ci97p5_two_look_pp": [
+        -0.7679180887372014,
+        1.4505119453924915
+      ],
+      "ci95_family13_pp": [
+        -1.023890784982935,
+        1.7722827513782882
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.1092150170648465,
+        1.7918088737201365
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 18.00341296928328,
+      "ci95_pp": [
+        14.590443686006827,
+        21.416382252559725
+      ],
+      "ci97p5_two_look_pp": [
+        14.163822525597269,
+        21.843003412969285
+      ],
+      "ci95_family13_pp": [
+        12.988809398792334,
+        23.037542662116042
+      ],
+      "ci95_all_registered_recipes_pp": [
+        12.798634812286688,
+        23.2164188200878
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "svamp": {
+    "time": 1791671134.903298,
+    "task": "svamp",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 61.0,
+        "source_disjoint_accuracy_pct": 61.0,
+        "n": 300,
+        "prediction_sha256": "4d833ff39f81919a6bd09485884fac3923a1eed86124d03ed5bd30d467615022",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "svamp__warmup_lr0.0001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 65.66666666666666,
+        "source_disjoint_accuracy_pct": 65.66666666666666,
+        "n": 300,
+        "prediction_sha256": "06d043cef411eae03e3068e858ee23dcbb45ac860ec8a973e4ace26d2f64877f",
+        "output_limit_hits": 2
+      },
+      {
+        "tag": "svamp__search_lr0.0001_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 63.66666666666667,
+        "source_disjoint_accuracy_pct": 63.66666666666667,
+        "n": 300,
+        "prediction_sha256": "363ddf8c51c5da395e303566e1076bfa4da02ca7f50325d31c389d794d6ffb14",
+        "output_limit_hits": 2
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 900,
+    "n_all": 300,
+    "n_source_disjoint": 300,
+    "final_stage_seconds": 157.66806721687317,
+    "max_prompt_tokens": 121,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "ba964ec0e7ca4ea66bd06fb6818740ae7f8f60f344d8d4b67760bd0ab0b68fa7",
+    "stage_sha256": "9634461741a9479c0aa324f369b15f5f71434c7d61c654dbd77b71a7c954a3b3",
+    "base_accuracy_pct": 61.0,
+    "warmup_accuracy_pct": 65.66666666666666,
+    "oracle_mean_accuracy_pct": 63.66666666666667,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -2.0,
+      "ci95_pp": [
+        -5.666666666666666,
+        2.0
+      ],
+      "ci97p5_two_look_pp": [
+        -6.333333333333334,
+        2.3333333333333335
+      ],
+      "ci95_family13_pp": [
+        -7.333333333333333,
+        3.6666666666666665
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -7.666666666666666,
+        4.333333333333334
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 300,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 2.666666666666667,
+      "ci95_pp": [
+        -2.3333333333333335,
+        7.666666666666666
+      ],
+      "ci97p5_two_look_pp": [
+        -3.0,
+        8.666666666666668
+      ],
+      "ci95_family13_pp": [
+        -4.666666666666667,
+        10.0
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -5.0,
+        10.365476190476329
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 300,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "aqua": {
+    "time": 1791671312.0497859,
+    "task": "aqua",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 32.28346456692913,
+        "source_disjoint_accuracy_pct": 32.28346456692913,
+        "n": 254,
+        "prediction_sha256": "6b89331102f999dacde36978bec2a0a05c9190c137a69754f7c534eb62f9fa56",
+        "output_limit_hits": 29
+      },
+      {
+        "tag": "aqua__warmup_lr0.0005_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 32.28346456692913,
+        "source_disjoint_accuracy_pct": 32.28346456692913,
+        "n": 254,
+        "prediction_sha256": "0e368cebf4fc27dc20e176ceef746838a96142313dcc129d2b2b1c9274421326",
+        "output_limit_hits": 19
+      },
+      {
+        "tag": "aqua__search_lr0.001_s101__step128",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 22.440944881889763,
+        "source_disjoint_accuracy_pct": 22.440944881889763,
+        "n": 254,
+        "prediction_sha256": "d111df7abe9e3275708b75b1307795b6d2eafee2ebdc9c1fda4fc0e2f101f8c1",
+        "output_limit_hits": 54
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 762,
+    "n_all": 254,
+    "n_source_disjoint": 254,
+    "final_stage_seconds": 190.58044481277466,
+    "max_prompt_tokens": 203,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "f51453bdbed09cd26c9a45c1fcab4ab248cc3129af6979df03a33fe77267f735",
+    "stage_sha256": "18c609ccefe14d34eb0236b6a15f773729583b34e0d427d4bf13f54ce443e1c2",
+    "base_accuracy_pct": 32.28346456692913,
+    "warmup_accuracy_pct": 32.28346456692913,
+    "oracle_mean_accuracy_pct": 22.440944881889763,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -9.84251968503937,
+      "ci95_pp": [
+        -16.92913385826772,
+        -2.3622047244094486
+      ],
+      "ci97p5_two_look_pp": [
+        -18.11023622047244,
+        -1.574803149606299
+      ],
+      "ci95_family13_pp": [
+        -20.078740157480315,
+        0.7874015748031495
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -20.47244094488189,
+        1.1811023622047243
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 254,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": -9.84251968503937,
+      "ci95_pp": [
+        -16.535433070866144,
+        -3.149606299212598
+      ],
+      "ci97p5_two_look_pp": [
+        -17.716535433070867,
+        -1.968503937007874
+      ],
+      "ci95_family13_pp": [
+        -19.98864324651726,
+        0.39370078740157477
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -20.866141732283463,
+        0.8253655793027508
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 254,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "gsm8k": {
+    "time": 1791671927.8737538,
+    "task": "gsm8k",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 48.9764973464746,
+        "source_disjoint_accuracy_pct": 48.9764973464746,
+        "n": 1319,
+        "prediction_sha256": "5772ec4bbdca256b8b4f9162075260e42ff21934a5c6aedecba925a46cd4b239",
+        "output_limit_hits": 16
+      },
+      {
+        "tag": "gsm8k__warmup_lr0.0001_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 47.83927217589083,
+        "source_disjoint_accuracy_pct": 47.83927217589083,
+        "n": 1319,
+        "prediction_sha256": "0160d6dd483b626a892a8735685e3800b60b09b347888877863c2943d3edf1a5",
+        "output_limit_hits": 15
+      },
+      {
+        "tag": "gsm8k__search_lr0.0003_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 41.77407126611069,
+        "source_disjoint_accuracy_pct": 41.77407126611069,
+        "n": 1319,
+        "prediction_sha256": "1c73ac54e6caf5085c0ee72f81ec7938dd9f1c6f5081c7e43242f32a9b2f3d6d",
+        "output_limit_hits": 18
+      },
+      {
+        "tag": "gsm8k__replicate_lr0.0003_s102__step8",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 42.15314632297195,
+        "source_disjoint_accuracy_pct": 42.15314632297195,
+        "n": 1319,
+        "prediction_sha256": "3aaedd91b07115a6e3220d48861c25af04faeb865b38600880364a084f4e1fc9",
+        "output_limit_hits": 22
+      },
+      {
+        "tag": "gsm8k__replicate_lr0.0003_s103__step8",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 44.806671721000754,
+        "source_disjoint_accuracy_pct": 44.806671721000754,
+        "n": 1319,
+        "prediction_sha256": "e30d71ab209ec6ac91859c92522718b03f94bc37e83aa92cbfaefd1e3c27a9c3",
+        "output_limit_hits": 29
+      }
+    ],
+    "verified_variants": 5,
+    "verified_prediction_rows": 6595,
+    "n_all": 1319,
+    "n_source_disjoint": 1319,
+    "final_stage_seconds": 602.3940348625183,
+    "max_prompt_tokens": 236,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "2329ff1ed2bcb092dfa9b9977d2a524553616c655c7db9aaeba55df1739d4ba5",
+    "stage_sha256": "28444452f1ebcb7299ab9433e5b78e7b4ecddcfeec35d05cc2d1b4e65add3acd",
+    "base_accuracy_pct": 48.9764973464746,
+    "warmup_accuracy_pct": 47.83927217589083,
+    "oracle_mean_accuracy_pct": 42.91129643669447,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -4.927975739196361,
+      "ci95_pp": [
+        -7.707859489512257,
+        -1.996461966135962
+      ],
+      "ci97p5_two_look_pp": [
+        -8.112206216830932,
+        -1.592115238817286
+      ],
+      "ci95_family13_pp": [
+        -8.965659687797668,
+        -0.5675433992340895
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -9.07496660529261,
+        -0.4475793349940116
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": -6.0652009097801365,
+      "ci95_pp": [
+        -8.920899671468284,
+        -3.133687136719737
+      ],
+      "ci97p5_two_look_pp": [
+        -9.274703057872125,
+        -2.6535253980288096
+      ],
+      "ci95_family13_pp": [
+        -10.128156528838863,
+        -1.7437452615617892
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -10.391530380158128,
+        -1.5163002274450341
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "countdown": {
+    "time": 1791668791.7305603,
+    "task": "countdown",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 4.19921875,
+        "source_disjoint_accuracy_pct": 4.19921875,
+        "n": 2048,
+        "prediction_sha256": "53e230426df1804d55ec5d15a536d2370191abd03345f1cda09785859e0dc03c",
+        "output_limit_hits": 1377
+      },
+      {
+        "tag": "countdown__warmup_lr0.0001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 8.59375,
+        "source_disjoint_accuracy_pct": 8.59375,
+        "n": 2048,
+        "prediction_sha256": "3fd3ce95e563617ed9a866b84d97114fbaf8908d9851e0cf6515cec4f8634c8a",
+        "output_limit_hits": 1411
+      },
+      {
+        "tag": "countdown__search_lr0.001_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 14.892578125,
+        "source_disjoint_accuracy_pct": 14.892578125,
+        "n": 2048,
+        "prediction_sha256": "a64c1cca22987100a177450da985406e09f7fc75f368bd4b497c88addd3d59ed",
+        "output_limit_hits": 631
+      },
+      {
+        "tag": "countdown__replicate_lr0.001_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 13.232421875,
+        "source_disjoint_accuracy_pct": 13.232421875,
+        "n": 2048,
+        "prediction_sha256": "9661e57634c105b167231016a115bce07916f71229d978b8d1e43eaed7fc755f",
+        "output_limit_hits": 508
+      },
+      {
+        "tag": "countdown__replicate_lr0.001_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 8.203125,
+        "source_disjoint_accuracy_pct": 8.203125,
+        "n": 2048,
+        "prediction_sha256": "4b03a3221771f208d4b0004c0281c5929b31708f2f66cf2754fe5413ff2fb446",
+        "output_limit_hits": 735
+      },
+      {
+        "tag": "countdown__adaptive_lr3e-05_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 6.884765625,
+        "source_disjoint_accuracy_pct": 6.884765625,
+        "n": 2048,
+        "prediction_sha256": "9152a7405021d220d1eed8ba3afa82489e273f7e6278b6c0571a5de6c0a0b42a",
+        "output_limit_hits": 1359
+      },
+      {
+        "tag": "countdown__adaptive_lr3e-05_p124_u102__step8",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 7.12890625,
+        "source_disjoint_accuracy_pct": 7.12890625,
+        "n": 2048,
+        "prediction_sha256": "b6e039a1500811f60c5cd566f60310a86f57d7aae24196cd2d105ddb45e196e5",
+        "output_limit_hits": 1340
+      },
+      {
+        "tag": "countdown__adaptive_lr3e-05_p125_u103__step8",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 7.080078125,
+        "source_disjoint_accuracy_pct": 7.080078125,
+        "n": 2048,
+        "prediction_sha256": "fa164e0df99bf87eda426c76b360d1b3abeb4052e4bf08723d5ffe67a445a464",
+        "output_limit_hits": 1347
+      },
+      {
+        "tag": "countdown__frozen_lr0.0001_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 5.2734375,
+        "source_disjoint_accuracy_pct": 5.2734375,
+        "n": 2048,
+        "prediction_sha256": "0a62ea41fe0a4a438e16b71bb3b7447773e84cc3e2e3cf8cf1789ba282987efd",
+        "output_limit_hits": 1318
+      },
+      {
+        "tag": "countdown__mean_lr0.001_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 8.0078125,
+        "source_disjoint_accuracy_pct": 8.0078125,
+        "n": 2048,
+        "prediction_sha256": "0df2fa2636f27e73fd317f55c903dbbf063e9777b6d40cf55412f6fe30dac117",
+        "output_limit_hits": 435
+      },
+      {
+        "tag": "countdown__mean_lr3e-05_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 6.4453125,
+        "source_disjoint_accuracy_pct": 6.4453125,
+        "n": 2048,
+        "prediction_sha256": "b1f855b998f1840de7791a63772227beec1e753bda99faa33089cb1c32259e3f",
+        "output_limit_hits": 1332
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 22528,
+    "n_all": 2048,
+    "n_source_disjoint": 2048,
+    "final_stage_seconds": 3068.644410133362,
+    "max_prompt_tokens": 144,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "03d39924296632ce3766ffbabf92ee56af4fafbf3371b3e7c14f6304ec245dac",
+    "stage_sha256": "c4ced2a825fae953769adb4f25d1390c89b636fb3ff65dc256214068c2fc30d7",
+    "base_accuracy_pct": 4.19921875,
+    "warmup_accuracy_pct": 8.59375,
+    "oracle_mean_accuracy_pct": 12.109375,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 3.515625,
+      "ci95_pp": [
+        -0.244140625,
+        6.770833333333333
+      ],
+      "ci97p5_two_look_pp": [
+        -0.7330322265624994,
+        7.112630208333333
+      ],
+      "ci95_family13_pp": [
+        -1.7089843750000004,
+        7.8125
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.8113490513392856,
+        7.914864676339306
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2048,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 7.91015625,
+      "ci95_pp": [
+        4.248046875,
+        11.067708333333332
+      ],
+      "ci97p5_two_look_pp": [
+        3.7109375,
+        11.376953125
+      ],
+      "ci95_family13_pp": [
+        2.83203125,
+        12.060546875
+      ],
+      "ci95_all_registered_recipes_pp": [
+        2.734375,
+        12.241152808779768
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2048,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "adaptive",
+    "predictor_mean_accuracy_pct": 7.03125,
+    "predictor_seed_accuracies_pct": [
+      6.884765625,
+      7.12890625,
+      7.080078125
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": -1.5625,
+      "ci95_pp": [
+        -2.63671875,
+        -0.48828125000000017
+      ],
+      "ci97p5_two_look_pp": [
+        -2.8159586588541665,
+        -0.35807291666666685
+      ],
+      "ci95_family13_pp": [
+        -3.1663787059294872,
+        0.0
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -3.238932291666667,
+        0.05039760044643539
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2048,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": -5.078125,
+      "ci95_pp": [
+        -8.301188151041666,
+        -1.26953125
+      ],
+      "ci97p5_two_look_pp": [
+        -8.675130208333334,
+        -0.78125
+      ],
+      "ci95_family13_pp": [
+        -9.51031024639423,
+        0.18413837139421574
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -9.66796875,
+        0.29296875
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2048,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": -0.4444444444444444,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 3.515625,
+      "ci95_pp": [
+        -0.244140625,
+        6.770833333333333
+      ],
+      "ci97p5_two_look_pp": [
+        -0.7330322265624994,
+        7.112630208333333
+      ],
+      "ci95_family13_pp": [
+        -1.7089843750000004,
+        7.8125
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.8113490513392856,
+        7.914864676339306
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 2048,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": -1.5625,
+    "retention_denominator_supported": false,
+    "retention_note": "Oracle gain is not clearly positive in this final population; the ratio is undefined or unstable and must not be interpreted as reliable benefit retention."
+  },
+  "math": {
+    "time": 1791672174.2589557,
+    "task": "math",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 31.4,
+        "source_disjoint_accuracy_pct": 31.4,
+        "n": 500,
+        "prediction_sha256": "7598a6c166c6d37f863b2b7f8447af3366d962963d1f3721b26b231079fe8c63",
+        "output_limit_hits": 34
+      },
+      {
+        "tag": "math__warmup_lr0.0001_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 31.6,
+        "source_disjoint_accuracy_pct": 31.6,
+        "n": 500,
+        "prediction_sha256": "ab40f764527a9159757598cf353810f536d4d6f27b7d296509e1e0d37f4d9670",
+        "output_limit_hits": 41
+      },
+      {
+        "tag": "math__search_lr3e-05_s101__step32",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 32.2,
+        "source_disjoint_accuracy_pct": 32.2,
+        "n": 500,
+        "prediction_sha256": "533bbd5739ea4ec42bda3da1e3dfe624272f023edda7a5ae260f24af0b3ad205",
+        "output_limit_hits": 54
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 1500,
+    "n_all": 500,
+    "n_source_disjoint": 500,
+    "final_stage_seconds": 223.55407524108887,
+    "max_prompt_tokens": 839,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "f6ebcd89205632fe4d37af706953e4ce3b3ea430b0ed60f9d92e7b3154634c96",
+    "stage_sha256": "663994fb1546be28bfe48e95db199021dc960682eb0d1d44d2b21a92ffd6c604",
+    "base_accuracy_pct": 31.4,
+    "warmup_accuracy_pct": 31.6,
+    "oracle_mean_accuracy_pct": 32.2,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 0.6,
+      "ci95_pp": [
+        -2.4,
+        3.4000000000000004
+      ],
+      "ci97p5_two_look_pp": [
+        -2.8000000000000003,
+        3.8
+      ],
+      "ci95_family13_pp": [
+        -3.8,
+        4.8
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -4.019285714285714,
+        5.0
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 0.8,
+      "ci95_pp": [
+        -2.1999999999999997,
+        3.8
+      ],
+      "ci97p5_two_look_pp": [
+        -2.6,
+        4.2
+      ],
+      "ci95_family13_pp": [
+        -3.5999999999999996,
+        5.154230769230708
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -3.8,
+        5.2
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "explore_arc_challenge_pool": {
+    "time": 1791668845.4149585,
+    "task": "explore_arc_challenge_pool",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 34.470989761092156,
+        "source_disjoint_accuracy_pct": 34.470989761092156,
+        "n": 1172,
+        "prediction_sha256": "edf2819ad529ff92d158625170663e5b4a754e1227872af16241097d5eb73f56",
+        "output_limit_hits": 301
+      },
+      {
+        "tag": "arc_challenge__warmup_lr0.0005_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 52.13310580204779,
+        "source_disjoint_accuracy_pct": 52.13310580204779,
+        "n": 1172,
+        "prediction_sha256": "7c82cabbc69e1201e15bc9786c18b2d031918a88a22ea00cff9c5846de8dc11f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__search_lr0.0003_s101__step256",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 51.96245733788396,
+        "source_disjoint_accuracy_pct": 51.96245733788396,
+        "n": 1172,
+        "prediction_sha256": "4b291f24c49d0beaf242bf17f1fc7bab1773c87417696e13ad7a5f7a6da83910",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__replicate_lr0.0003_s102__step256",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 50.7679180887372,
+        "source_disjoint_accuracy_pct": 50.7679180887372,
+        "n": 1172,
+        "prediction_sha256": "e86424de124f393d03f304911c9dee6a6a1a08cc6bb5673d256f7bafe2ce3cdc",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__replicate_lr0.0003_s103__step256",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 51.5358361774744,
+        "source_disjoint_accuracy_pct": 51.5358361774744,
+        "n": 1172,
+        "prediction_sha256": "1b032abb762bdbebd1d26ae7fb91463294b3a1bf8b9cd4ffc8d42ba8054a3fdf",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__frozen_lr9e-06_p123_u101__step8",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 52.218430034129696,
+        "source_disjoint_accuracy_pct": 52.218430034129696,
+        "n": 1172,
+        "prediction_sha256": "28265c35ed745cd6dd6a4832095c051ac59ac97317da221b22ba4ba854b4311c",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__frozen_lr9e-06_p124_u102__step8",
+        "method": "frozen",
+        "seed": 102,
+        "full_accuracy_pct": 52.04778156996587,
+        "source_disjoint_accuracy_pct": 52.04778156996587,
+        "n": 1172,
+        "prediction_sha256": "7e86f3e4adf14ed7307203267e009f80153cad3283e62a3979e725625155ceff",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__frozen_lr9e-06_p125_u103__step8",
+        "method": "frozen",
+        "seed": 103,
+        "full_accuracy_pct": 52.218430034129696,
+        "source_disjoint_accuracy_pct": 52.218430034129696,
+        "n": 1172,
+        "prediction_sha256": "6d8009d5b5daac5b41768e97117a29d805ce893c99b61a35407dad2426398ad4",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__adaptive_lr9e-06_p123_u101__step8",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 52.218430034129696,
+        "source_disjoint_accuracy_pct": 52.218430034129696,
+        "n": 1172,
+        "prediction_sha256": "0a6b1a2771ca50e28c1b4691de1b4029a314b460019bd831526d21d801b183b7",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__mean_lr0.0003_p123_u101__control_oracle__step256",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 54.522184300341294,
+        "source_disjoint_accuracy_pct": 54.522184300341294,
+        "n": 1172,
+        "prediction_sha256": "2adb3ddac76ef6b07242088c6d60183a67095e8d3ea76e37d89af864af91758f",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "explore_arc_challenge_pool__mean_lr9e-06_p123_u101__control_selected_predictor__step8",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 51.877133105802045,
+        "source_disjoint_accuracy_pct": 51.877133105802045,
+        "n": 1172,
+        "prediction_sha256": "33d98f5eda6011c45892a0072630e956f878f64ba52020180ac74f5cdf7fd1a7",
+        "output_limit_hits": 0
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 12892,
+    "n_all": 1172,
+    "n_source_disjoint": 1172,
+    "final_stage_seconds": 60.12691688537598,
+    "max_prompt_tokens": 228,
+    "output_token_cap": 256,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "cc099d5e4e003ab9b07c778482e6ac2008d03fe7427248678b0b6e23d894f34f",
+    "stage_sha256": "abb5250b86359d73c03ceff3555dcb4527023c5e7ed1ac407c38c8cad0bba9c1",
+    "base_accuracy_pct": 34.470989761092156,
+    "warmup_accuracy_pct": 52.13310580204779,
+    "oracle_mean_accuracy_pct": 51.42207053469852,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -0.7110352673492605,
+      "ci95_pp": [
+        -3.44141069397042,
+        2.0193401592719
+      ],
+      "ci97p5_two_look_pp": [
+        -3.8680318543799768,
+        2.4175199089874857
+      ],
+      "ci95_family13_pp": [
+        -4.7716482891397565,
+        3.4283932790758547
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -4.868966357874207,
+        3.668941979522184
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 16.95108077360637,
+      "ci95_pp": [
+        13.538111490329921,
+        20.36405005688282
+      ],
+      "ci97p5_two_look_pp": [
+        13.054607508532424,
+        20.790671217292378
+      ],
+      "ci95_family13_pp": [
+        12.08759954493743,
+        21.72272906274612
+      ],
+      "ci95_all_registered_recipes_pp": [
+        11.689419795221843,
+        21.8741873882659
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "frozen",
+    "predictor_mean_accuracy_pct": 52.16154721274175,
+    "predictor_seed_accuracies_pct": [
+      52.218430034129696,
+      52.04778156996587,
+      52.218430034129696
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 0.02844141069397042,
+      "ci95_pp": [
+        -0.5119453924914675,
+        0.5688282138794084
+      ],
+      "ci97p5_two_look_pp": [
+        -0.5972696245733788,
+        0.6541524459613196
+      ],
+      "ci95_family13_pp": [
+        -0.7679180887372014,
+        0.8532423208191127
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -0.827543474727775,
+        0.938566552901024
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": 0.7394766780432309,
+      "ci95_pp": [
+        -1.9631683731513083,
+        3.385238907849818
+      ],
+      "ci97p5_two_look_pp": [
+        -2.3321956769055743,
+        3.754266211604096
+      ],
+      "ci95_family13_pp": [
+        -3.2926949330532946,
+        4.714765467751806
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -3.700125954818788,
+        4.948805460750854
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": null,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": -0.7110352673492605,
+      "ci95_pp": [
+        -3.44141069397042,
+        2.0193401592719
+      ],
+      "ci97p5_two_look_pp": [
+        -3.8680318543799768,
+        2.4175199089874857
+      ],
+      "ci95_family13_pp": [
+        -4.7716482891397565,
+        3.4283932790758547
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -4.868966357874207,
+        3.668941979522184
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1172,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 0.02844141069397042,
+    "retention_denominator_supported": false,
+    "retention_note": "Oracle gain is not clearly positive in this final population; the ratio is undefined or unstable and must not be interpreted as reliable benefit retention."
+  },
+  "explore_svamp_lowlr": {
+    "time": 1791672244.3114974,
+    "task": "explore_svamp_lowlr",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 61.0,
+        "source_disjoint_accuracy_pct": 61.0,
+        "n": 300,
+        "prediction_sha256": "4d833ff39f81919a6bd09485884fac3923a1eed86124d03ed5bd30d467615022",
+        "output_limit_hits": 0
+      },
+      {
+        "tag": "svamp__warmup_lr0.0001_s201__step32",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 65.66666666666666,
+        "source_disjoint_accuracy_pct": 65.66666666666666,
+        "n": 300,
+        "prediction_sha256": "06d043cef411eae03e3068e858ee23dcbb45ac860ec8a973e4ace26d2f64877f",
+        "output_limit_hits": 2
+      },
+      {
+        "tag": "explore_svamp_lowlr__search_lr3e-06_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 63.0,
+        "source_disjoint_accuracy_pct": 63.0,
+        "n": 300,
+        "prediction_sha256": "ae89e341b73022efdf31dbca01b54ba3de9b365634494d38ec7b5f5bd142803c",
+        "output_limit_hits": 4
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 900,
+    "n_all": 300,
+    "n_source_disjoint": 300,
+    "final_stage_seconds": 83.85711002349854,
+    "max_prompt_tokens": 121,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "ae43e68dd442a6752ce71e8b60bdac272c122aefbd3fee661c1ed18626aaacb0",
+    "stage_sha256": "f61cdef7be5aeaf20d8c6f98eaa07fed59875da2906447923c767e872cf967ef",
+    "base_accuracy_pct": 61.0,
+    "warmup_accuracy_pct": 65.66666666666666,
+    "oracle_mean_accuracy_pct": 63.0,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -2.666666666666667,
+      "ci95_pp": [
+        -5.666666666666666,
+        0.33333333333333337
+      ],
+      "ci97p5_two_look_pp": [
+        -6.0,
+        0.6666666666666667
+      ],
+      "ci95_family13_pp": [
+        -7.000000000000001,
+        1.6666666666666667
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -7.333333333333333,
+        2.0
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 300,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 2.0,
+      "ci95_pp": [
+        -2.666666666666667,
+        6.666666666666667
+      ],
+      "ci97p5_two_look_pp": [
+        -3.3333333333333335,
+        7.666666666666666
+      ],
+      "ci95_family13_pp": [
+        -4.666666666666667,
+        9.333333333333334
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -5.333333333333334,
+        9.666666666666666
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 300,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "explore_aqua_answer": {
+    "time": 1791672430.0567071,
+    "task": "explore_aqua_answer",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 34.25196850393701,
+        "source_disjoint_accuracy_pct": 34.25196850393701,
+        "n": 254,
+        "prediction_sha256": "7caa62772737ebf603f41863a4d2a25ef22ba22433e22282043bcfd1f2a1fab5",
+        "output_limit_hits": 24
+      },
+      {
+        "tag": "aqua__warmup_lr0.0005_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 37.00787401574803,
+        "source_disjoint_accuracy_pct": 37.00787401574803,
+        "n": 254,
+        "prediction_sha256": "1315e3d56745478197c3a06daeaee1703419457fdd84b3c9ea6c8131a2824546",
+        "output_limit_hits": 26
+      },
+      {
+        "tag": "explore_aqua_answer__search_lr1e-05_s101__step8",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 33.85826771653544,
+        "source_disjoint_accuracy_pct": 33.85826771653544,
+        "n": 254,
+        "prediction_sha256": "131bfe67f71d176c4846d47d70bb3912e568d0961cc33437eb182b211856dbb8",
+        "output_limit_hits": 26
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 762,
+    "n_all": 254,
+    "n_source_disjoint": 254,
+    "final_stage_seconds": 194.90974640846252,
+    "max_prompt_tokens": 199,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "f72745ac7b6313ac4d9674c6a2b9b171a53b9b5d7c4a1a025401834af5bc3121",
+    "stage_sha256": "c6f43e861a95c30b0d23eb7c6f4620e3a7779e97f60c9a8b588b6a2aeacf0fac",
+    "base_accuracy_pct": 34.25196850393701,
+    "warmup_accuracy_pct": 37.00787401574803,
+    "oracle_mean_accuracy_pct": 33.85826771653544,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": -3.149606299212598,
+      "ci95_pp": [
+        -8.661417322834646,
+        2.3622047244094486
+      ],
+      "ci97p5_two_look_pp": [
+        -9.060039370078735,
+        3.149606299212598
+      ],
+      "ci95_family13_pp": [
+        -11.720926711084191,
+        4.724409448818897
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -11.84898762654668,
+        5.118110236220472
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 254,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": -0.39370078740157477,
+      "ci95_pp": [
+        -6.692913385826772,
+        5.905511811023622
+      ],
+      "ci97p5_two_look_pp": [
+        -7.874015748031496,
+        6.692913385826772
+      ],
+      "ci95_family13_pp": [
+        -9.84251968503937,
+        8.965021199273046
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -10.62992125984252,
+        9.486782902137396
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 254,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  },
+  "explore_gsm8k_lowlr": {
+    "time": 1791670964.771068,
+    "task": "explore_gsm8k_lowlr",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 48.9764973464746,
+        "source_disjoint_accuracy_pct": 48.9764973464746,
+        "n": 1319,
+        "prediction_sha256": "5772ec4bbdca256b8b4f9162075260e42ff21934a5c6aedecba925a46cd4b239",
+        "output_limit_hits": 16
+      },
+      {
+        "tag": "gsm8k__warmup_lr0.0001_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 47.83927217589083,
+        "source_disjoint_accuracy_pct": 47.83927217589083,
+        "n": 1319,
+        "prediction_sha256": "0160d6dd483b626a892a8735685e3800b60b09b347888877863c2943d3edf1a5",
+        "output_limit_hits": 15
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__search_lr1e-05_s101__step32",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 47.915087187263076,
+        "source_disjoint_accuracy_pct": 47.915087187263076,
+        "n": 1319,
+        "prediction_sha256": "1cf79a87cc9dc3e64d2c3dcfe811ae9d750d8506887af6324b7f0ba408a1ec74",
+        "output_limit_hits": 23
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__replicate_lr1e-05_s102__step32",
+        "method": "oracle",
+        "seed": 102,
+        "full_accuracy_pct": 48.369977255496586,
+        "source_disjoint_accuracy_pct": 48.369977255496586,
+        "n": 1319,
+        "prediction_sha256": "a4edc184d90227509785f26d2fb524352812d0a87ed5ccda2c1a7b8a328d5f99",
+        "output_limit_hits": 15
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__replicate_lr1e-05_s103__step32",
+        "method": "oracle",
+        "seed": 103,
+        "full_accuracy_pct": 48.44579226686884,
+        "source_disjoint_accuracy_pct": 48.44579226686884,
+        "n": 1319,
+        "prediction_sha256": "609fbd6100ff0a4bb8d00d759431dd8c7caff4a09adb592944a6b0cf32c29c1f",
+        "output_limit_hits": 22
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__adaptive_lr3e-06_p123_u101__step128",
+        "method": "adaptive",
+        "seed": 101,
+        "full_accuracy_pct": 48.21834723275209,
+        "source_disjoint_accuracy_pct": 48.21834723275209,
+        "n": 1319,
+        "prediction_sha256": "1a28882a5984cdadc66c8ed9df76ab470e092114b648f5af34707bbfc68564eb",
+        "output_limit_hits": 16
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__adaptive_lr3e-06_p124_u102__step128",
+        "method": "adaptive",
+        "seed": 102,
+        "full_accuracy_pct": 47.83927217589083,
+        "source_disjoint_accuracy_pct": 47.83927217589083,
+        "n": 1319,
+        "prediction_sha256": "afeef10384853bf2f303279610425d80d439728d0f7658f4087c0e8ec02a6e72",
+        "output_limit_hits": 22
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__adaptive_lr3e-06_p125_u103__step128",
+        "method": "adaptive",
+        "seed": 103,
+        "full_accuracy_pct": 48.74905231235785,
+        "source_disjoint_accuracy_pct": 48.74905231235785,
+        "n": 1319,
+        "prediction_sha256": "0132ef96e138374b741f667ff57b346388c798c722ccb426500e1278b3afe10b",
+        "output_limit_hits": 20
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__frozen_lr3e-06_p123_u101__step256",
+        "method": "frozen",
+        "seed": 101,
+        "full_accuracy_pct": 47.83927217589083,
+        "source_disjoint_accuracy_pct": 47.83927217589083,
+        "n": 1319,
+        "prediction_sha256": "999036e5c3939d60082f394e915fbff8b2f96a08c414006814be23f3f0a825b8",
+        "output_limit_hits": 21
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__mean_lr1e-05_p123_u101__control_oracle__step32",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 48.6732373009856,
+        "source_disjoint_accuracy_pct": 48.6732373009856,
+        "n": 1319,
+        "prediction_sha256": "7a800b0d7cc1717fde759176fe462c9fef049f813cfe5506af5516d7e6ca0241",
+        "output_limit_hits": 15
+      },
+      {
+        "tag": "explore_gsm8k_lowlr__mean_lr3e-06_p123_u101__control_selected_predictor__step128",
+        "method": "mean",
+        "seed": 101,
+        "full_accuracy_pct": 47.61182714177407,
+        "source_disjoint_accuracy_pct": 47.61182714177407,
+        "n": 1319,
+        "prediction_sha256": "cd80eef46fd19697ab70b96b41c23460b348fe0d9a043c64e77a1e7cda6abb4b",
+        "output_limit_hits": 17
+      }
+    ],
+    "verified_variants": 11,
+    "verified_prediction_rows": 14509,
+    "n_all": 1319,
+    "n_source_disjoint": 1319,
+    "final_stage_seconds": 2105.2862050533295,
+    "max_prompt_tokens": 236,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "6ab39664a4931906a5d7d6fcd3956a8ae805310cd9d14ba6e6412ba0f2759fa1",
+    "stage_sha256": "803b66d39c6d422b14939c0eba1cc7e16eba8daf0b9b0e4d6c82f5b1761effd9",
+    "base_accuracy_pct": 48.9764973464746,
+    "warmup_accuracy_pct": 47.83927217589083,
+    "oracle_mean_accuracy_pct": 48.2436189032095,
+    "oracle_seeds": [
+      101,
+      102,
+      103
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 0.4043467273186757,
+      "ci95_pp": [
+        -0.9097801364670205,
+        1.743745261561789
+      ],
+      "ci97p5_two_look_pp": [
+        -1.086681829668941,
+        1.8953752843062925
+      ],
+      "ci95_family13_pp": [
+        -1.5163002274450341,
+        2.4008086934546373
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.6426585797321203,
+        2.4839344380663877
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": -0.7328784432650998,
+      "ci95_pp": [
+        -2.2997220116249686,
+        0.8339651250947688
+      ],
+      "ci97p5_two_look_pp": [
+        -2.501895375284306,
+        1.086681829668941
+      ],
+      "ci95_family13_pp": [
+        -3.007328784432651,
+        1.6173869092747029
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -3.110852377342143,
+        1.6956388317267876
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training.",
+    "predictor_method": "adaptive",
+    "predictor_mean_accuracy_pct": 48.268890573666916,
+    "predictor_seed_accuracies_pct": [
+      48.21834723275209,
+      47.83927217589083,
+      48.74905231235785
+    ],
+    "predictor_vs_warmup": {
+      "mean_pp": 0.429618397776093,
+      "ci95_pp": [
+        -1.061410159211524,
+        1.92064695476371
+      ],
+      "ci97p5_two_look_pp": [
+        -1.288855193328279,
+        2.1480919888804646
+      ],
+      "ci95_family13_pp": [
+        -1.8137769483485933,
+        2.6730137439007717
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.8219971840138633,
+        2.807592331853146
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "predictor_vs_oracle": {
+      "mean_pp": 0.025271670457417232,
+      "ci95_pp": [
+        -1.2635835228708616,
+        1.288855193328279
+      ],
+      "ci97p5_two_look_pp": [
+        -1.4657568865301993,
+        1.4657568865301998
+      ],
+      "ci95_family13_pp": [
+        -2.0412219824653484,
+        2.0101669874224686
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -2.1529658110401098,
+        2.122820318423048
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retained_oracle_gain_fraction": 1.0625,
+    "retention_paired_oracle_vs_warmup": {
+      "mean_pp": 0.4043467273186757,
+      "ci95_pp": [
+        -0.9097801364670205,
+        1.743745261561789
+      ],
+      "ci97p5_two_look_pp": [
+        -1.086681829668941,
+        1.8953752843062925
+      ],
+      "ci95_family13_pp": [
+        -1.5163002274450341,
+        2.4008086934546373
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -1.6426585797321203,
+        2.4839344380663877
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 3,
+      "groups": 1319,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "retention_numerator_pp": 0.429618397776093,
+    "retention_denominator_supported": false,
+    "retention_note": "Oracle gain is not clearly positive in this final population; the ratio is undefined or unstable and must not be interpreted as reliable benefit retention."
+  },
+  "explore_math_lowlr": {
+    "time": 1791672568.7700152,
+    "task": "explore_math_lowlr",
+    "passed": true,
+    "variants": [
+      {
+        "tag": "base",
+        "method": "base",
+        "seed": null,
+        "full_accuracy_pct": 31.4,
+        "source_disjoint_accuracy_pct": 31.4,
+        "n": 500,
+        "prediction_sha256": "7598a6c166c6d37f863b2b7f8447af3366d962963d1f3721b26b231079fe8c63",
+        "output_limit_hits": 34
+      },
+      {
+        "tag": "math__warmup_lr0.0001_s201__step8",
+        "method": "warmup",
+        "seed": 201,
+        "full_accuracy_pct": 31.6,
+        "source_disjoint_accuracy_pct": 31.6,
+        "n": 500,
+        "prediction_sha256": "ab40f764527a9159757598cf353810f536d4d6f27b7d296509e1e0d37f4d9670",
+        "output_limit_hits": 41
+      },
+      {
+        "tag": "explore_math_lowlr__search_lr1e-05_s101__step1",
+        "method": "oracle",
+        "seed": 101,
+        "full_accuracy_pct": 33.0,
+        "source_disjoint_accuracy_pct": 33.0,
+        "n": 500,
+        "prediction_sha256": "ea3b7b619bf24603c6ee5522df3a9440cb9fa3076b27a02d2d3b579e39c11df8",
+        "output_limit_hits": 46
+      }
+    ],
+    "verified_variants": 3,
+    "verified_prediction_rows": 1500,
+    "n_all": 500,
+    "n_source_disjoint": 500,
+    "final_stage_seconds": 95.08046007156372,
+    "max_prompt_tokens": 839,
+    "output_token_cap": 2048,
+    "full_source_prompts_verified": true,
+    "input_token_verification_enabled": true,
+    "global_freeze_sha256": "280f40963a4fc9611fcee60351b1babbb581132af99ca98508222ca11a2a7139",
+    "protocol_sha256": "77f931779c32f98dde0439bb072350502d35cd47a9fbb84001181b9886d248b1",
+    "stage_sha256": "a81dd17ca09a5931199e6c743249cf6b01c5860c1033d42fc6d97a3c8f360312",
+    "base_accuracy_pct": 31.4,
+    "warmup_accuracy_pct": 31.6,
+    "oracle_mean_accuracy_pct": 33.0,
+    "oracle_seeds": [
+      101
+    ],
+    "oracle_vs_warmup": {
+      "mean_pp": 1.4000000000000001,
+      "ci95_pp": [
+        -1.0,
+        3.8
+      ],
+      "ci97p5_two_look_pp": [
+        -1.4000000000000001,
+        4.2
+      ],
+      "ci95_family13_pp": [
+        -2.0,
+        4.8
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -2.1999999999999997,
+        5.0
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "oracle_vs_base": {
+      "mean_pp": 1.6,
+      "ci95_pp": [
+        -1.0,
+        4.2
+      ],
+      "ci97p5_two_look_pp": [
+        -1.2,
+        4.6
+      ],
+      "ci95_family13_pp": [
+        -2.4,
+        5.4
+      ],
+      "ci95_all_registered_recipes_pp": [
+        -2.419285714285714,
+        5.6000000000000005
+      ],
+      "registered_recipe_family_size": 21,
+      "seeds": 1,
+      "groups": 500,
+      "bootstrap": 10000,
+      "conditional_on_fixed_warmup": true
+    },
+    "interpretation": "Frozen final readout on the predeclared source-disjoint population. Intervals are conditional on one warmup; negative oracle screens may have only one update seed. This task audit does not establish whole-study completion or rerun grading/training."
+  }
+}
