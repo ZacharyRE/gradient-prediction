@@ -1,0 +1,175 @@
+{
+  "model": "Qwen2.5-1.5B-Instruct",
+  "created_utc": "2026-10-11 17:42:21 UTC",
+  "old_tasks": [],
+  "new_tasks": [
+    "mnli",
+    "paws",
+    "hellaswag",
+    "race",
+    "commonsense_qa",
+    "sciq",
+    "social_i_qa",
+    "winogrande",
+    "sst2"
+  ],
+  "priority": [
+    "mnli",
+    "paws",
+    "hellaswag",
+    "race",
+    "commonsense_qa",
+    "sciq",
+    "social_i_qa",
+    "winogrande",
+    "sst2"
+  ],
+  "layer": 8,
+  "lora_rank": 64,
+  "lora_alpha": 64,
+  "batch_size": 32,
+  "warmup_lrs": [
+    0.0001,
+    0.0005,
+    0.001
+  ],
+  "warmup_steps": [
+    8,
+    32
+  ],
+  "oracle_lrs": [
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001
+  ],
+  "oracle_steps": [
+    8,
+    32,
+    128,
+    256
+  ],
+  "warmup_seed": 201,
+  "update_seeds": [
+    101,
+    102,
+    103
+  ],
+  "optimizer": "fresh AdamW, constant LR, weight_decay=0, clip=1",
+  "precision": "FP32 master / BF16 autocast / SDPA math",
+  "selection": "development accuracy only; ties prefer fewer steps then lower LR",
+  "oracle_predictor_gate": {
+    "policy": "configs/oracle_admission_policy.json",
+    "revision": "user_mean_gain_v1",
+    "minimum_three_seed_mean_gain_pp": 0,
+    "strictly_positive": true,
+    "individual_positive_seeds_required": false,
+    "confidence_interval_gate": false,
+    "baseline": "same fixed warmup",
+    "populations": [
+      "accuracy_dev",
+      "oracle_confirmation"
+    ]
+  },
+  "full_inputs": true,
+  "input_truncation": false,
+  "output_caps": {
+    "short_label_tasks": 256,
+    "math_and_countdown": 2048
+  },
+  "predictor_plan": {
+    "methods": [
+      "frozen",
+      "adaptive"
+    ],
+    "lr_factors_relative_to_oracle": [
+      0.03,
+      0.1,
+      0.3,
+      1.0
+    ],
+    "checkpoint_steps": [
+      8,
+      32,
+      128,
+      256
+    ],
+    "offline_epochs": 30,
+    "calibration_epochs": 10,
+    "offline_seed": 123,
+    "replicate_seeds": [
+      124,
+      125
+    ],
+    "priority_metric": "fraction of paired oracle accuracy gain retained, and difference from warmup",
+    "matched_gradient_control": "mean:4current update rows +16predictor_dev rows;20truegradientexamples/update. RetainoracleLR/stoppingcontrolandaddselectedpredictorLR/stoppingcontrol;deduplicateifidentical. Seed101diagnostics only. Gradientexposurebudgetmatchesadaptiveatthesamesteps,notfrozen.",
+    "control_settings": [
+      "oracle",
+      "selected_predictor"
+    ],
+    "control_update_seeds": [
+      101
+    ]
+  },
+  "notes": [
+    "11-hour wall-clock budget including GPU wait, preparation, training and final evaluation.",
+    "Reuse dataset splits and prompts from the completed 0.5B study for cross-model comparison, but train independent 1.5B adapters and predictors.",
+    "No final-result-based retuning. Previously examined benchmark populations make this exploratory evidence.",
+    "Do not rerun completed equivalent 1.5B experiments.",
+    "At most one GPU; no foreign process intervention."
+  ],
+  "statistics": "Final paired source-group and update-seed bootstrap, conditional on one fixed warmup; family size is the currently declared benchmark scope, with separate intervals including registered oracle recipe extensions.",
+  "oracle_confirmation": {
+    "added_epoch": 1791623755.635892,
+    "seed": 20261011,
+    "target_examples": 512,
+    "all_available_if_fewer": true,
+    "min_examples": 32,
+    "disjoint_from_all_existing_splits": true,
+    "used_for": "binary predictor admission only, not choosing LR or checkpoint",
+    "criterion": "Fixed development-selected recipe; mean of3update seeds greater than the same fixed warmup. No individual-seed/base-model/CI gate.",
+    "heldout_final_test_untouched": true,
+    "criterion_before_user_mean_rule": "Historical rule only; not active in this study"
+  },
+  "gpu_allocation_policy": "At most one physical GPU; shared execution permitted when sufficient headroom exists, bounded worker allocator and no padding while shared; reserve an empty GPU at a safe worker boundary; never stop foreign processes.",
+  "benchmark_display_names": {
+    "boolq": "BoolQ",
+    "mnli": "MNLI matched",
+    "paws": "PAWS-Wiki labeled_final",
+    "arc_easy": "ARC-Easy",
+    "openbookqa": "OpenBookQA",
+    "hellaswag": "HellaSwag validation",
+    "race": "RACE all",
+    "arc_challenge": "ARC-Challenge",
+    "svamp": "SVAMP",
+    "aqua": "AQuA",
+    "gsm8k": "GSM8K",
+    "countdown": "Countdown fixed 2048 test",
+    "math": "MATH-500 (training: MATH)",
+    "commonsense_qa": "CommonsenseQA validation",
+    "sciq": "SciQ test",
+    "social_i_qa": "SocialIQA validation",
+    "winogrande": "WinoGrande XL validation",
+    "sst2": "SST-2 validation"
+  },
+  "resource_wait_budget_policy": "Measured resource waiting shifts planned oracle admission, capped at deadline minus 5 hours; the hard 11-hour wall-clock deadline and final-evaluation reserve remain fixed.",
+  "model_key": "1p5b",
+  "grading_revision": "v4_unambiguous_single_letter_closing_parenthesis",
+  "grading_amendment": "provenance/grading_v4_amendment/amendment.json",
+  "gpu_identity_scope": "Initial actual assignment for descriptive purposes; per-stage authoritative assignments are in results/stages and resource logs.",
+  "original_primary_tasks": [
+    "mnli",
+    "paws",
+    "hellaswag",
+    "race"
+  ],
+  "additional_benchmarks": [
+    "commonsense_qa",
+    "sciq",
+    "social_i_qa",
+    "winogrande",
+    "sst2"
+  ],
+  "model_repository": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+}

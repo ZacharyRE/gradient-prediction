@@ -1,0 +1,48 @@
+{
+  "time": 1791773490.4382403,
+  "records": [
+    {
+      "task": "mnli",
+      "n": 9815,
+      "oracle_gain_0p5b_pp": 8.734929529631529,
+      "oracle_gain_1p5b_pp": 6.574970283579555,
+      "predictor_gain_0p5b_pp": -0.5807437595516944,
+      "predictor_gain_1p5b_pp": 4.472745797249108,
+      "predictor_method_0p5b": "adaptive",
+      "predictor_method_1p5b": "cv4_correction4"
+    },
+    {
+      "task": "paws",
+      "n": 8000,
+      "oracle_gain_0p5b_pp": 13.183333333333337,
+      "oracle_gain_1p5b_pp": 4.820833333333333,
+      "predictor_gain_0p5b_pp": 7.012500000000017,
+      "predictor_gain_1p5b_pp": 2.7625,
+      "predictor_method_0p5b": "cv4_correction4_paws",
+      "predictor_method_1p5b": "cv4_correction4_paws"
+    },
+    {
+      "task": "hellaswag",
+      "n": 10042,
+      "oracle_gain_0p5b_pp": 14.14392883223794,
+      "oracle_gain_1p5b_pp": 7.0271526256389825,
+      "predictor_gain_0p5b_pp": 1.4472548629091193,
+      "predictor_gain_1p5b_pp": 0.06638783774812454,
+      "predictor_method_0p5b": "frozen",
+      "predictor_method_1p5b": "frozen_globalfit"
+    },
+    {
+      "task": "race",
+      "n": 4934,
+      "oracle_gain_0p5b_pp": 2.6077557086880105,
+      "oracle_gain_1p5b_pp": 4.945277665180381,
+      "predictor_gain_0p5b_pp": 0.4121064720983654,
+      "predictor_gain_1p5b_pp": 0.09458181326847723,
+      "predictor_method_0p5b": "adaptive",
+      "predictor_method_1p5b": "adaptive"
+    }
+  ],
+  "prior_readout_sha256": "a87ad54737a909a1f6bf1b58065babd83bc99dffcfd43ecb18a5b0bda3e637e2",
+  "selection_unchanged": true,
+  "interpretation": "Same full final populations and v4 grading; each model uses its own previously development-selected recipes and fixed warmup. This is a selected-pipeline comparison, not an isolated model-size effect."
+}

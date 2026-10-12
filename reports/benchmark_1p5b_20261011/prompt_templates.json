@@ -1,0 +1,170 @@
+{
+  "time": 1791773488.4856794,
+  "tasks": {
+    "mnli": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Determine the relationship between the premise and hypothesis. A means entailment, B means neutral, and C means contradiction. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDetermine the relationship between the premise and hypothesis. A means entailment, B means neutral, and C means contradiction. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/mnli/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "paws": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Determine whether the two sentences have the same meaning. Return only yes or no inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDetermine whether the two sentences have the same meaning. Return only yes or no inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/paws/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "hellaswag": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Choose the most plausible continuation of the context. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the most plausible continuation of the context. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/hellaswag/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "race": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Answer the multiple-choice question using the passage. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nAnswer the multiple-choice question using the passage. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/race/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "commonsense_qa": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Answer the following multiple-choice commonsense question. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nAnswer the following multiple-choice commonsense question. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/commonsense_qa/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "sciq": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Answer the following multiple-choice science question. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nAnswer the following multiple-choice science question. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/sciq/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "social_i_qa": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Answer the multiple-choice question about the social situation. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nAnswer the multiple-choice question about the social situation. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/social_i_qa/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "winogrande": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Choose the option that correctly fills the blank in the sentence. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that correctly fills the blank in the sentence. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/winogrande/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    },
+    "sst2": {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant."
+        },
+        {
+          "role": "user",
+          "content": "Classify the sentiment of the sentence. A means negative and B means positive. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM>"
+        }
+      ],
+      "rendered_chat_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nClassify the sentiment of the sentence. A means negative and B means positive. Return only the correct option letter inside \\boxed{}.\n\n<BENCHMARK_PROBLEM><|im_end|>\n<|im_start|>assistant\n",
+      "problem_placeholder": "<BENCHMARK_PROBLEM>",
+      "problem_source": "data/sst2/<split>.jsonl: problem",
+      "labels_used_only_in_training": "The solution field plus EOS is appended for teacher-forced training. Evaluation prompts do not append the solution.",
+      "output_generation_limit_new_tokens": 256,
+      "full_evaluation_inputs": true
+    }
+  },
+  "common_source_sha256": "811444a0effcf071e67603e55d6d41de54f5aee65c2092e9ea07a8a7b80c5f0d",
+  "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+  "final_predictions_consulted": false
+}

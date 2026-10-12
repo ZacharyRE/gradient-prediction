@@ -1,0 +1,267 @@
+{
+  "time": 1791773490.3708634,
+  "recipes": [
+    {
+      "task": "mnli",
+      "warmup_lr": 0.001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "cv4_correction4",
+      "predictor_lr": 0.0003,
+      "predictor_steps": 256,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 9815,
+      "final_freeze_sha256": "189dab7a4419ab794caa47544bac351a8b69eb0e7ddfd97b57668edc63159a93"
+    },
+    {
+      "task": "paws",
+      "warmup_lr": 0.001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "cv4_correction4_paws",
+      "predictor_lr": 0.0003,
+      "predictor_steps": 256,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 8000,
+      "final_freeze_sha256": "09dce0e19d09ed63b44348644b6ad5db2d5f193dd7afde0266c68b895af80ca3"
+    },
+    {
+      "task": "hellaswag",
+      "warmup_lr": 0.001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "frozen_globalfit",
+      "predictor_lr": 2.9999999999999997e-05,
+      "predictor_steps": 8,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 10042,
+      "final_freeze_sha256": "b2a2b94b0c3597c94e30966faf0683320b7ef1fa87ca8c4a9580419eccece222"
+    },
+    {
+      "task": "race",
+      "warmup_lr": 0.0001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 8.999999999999999e-06,
+      "predictor_steps": 8,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 4934,
+      "final_freeze_sha256": "f47d744734504b55a9fba9e4c30fb24cc0e7a560762cfdd34aa51fcefa780342"
+    },
+    {
+      "task": "commonsense_qa",
+      "warmup_lr": 0.0005,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.001,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 3e-05,
+      "predictor_steps": 128,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 1221,
+      "final_freeze_sha256": "92e91aad33b6a9efc030f59404c6ed415bb69fc36bc228de39c769518aec711f"
+    },
+    {
+      "task": "sciq",
+      "warmup_lr": 0.0001,
+      "warmup_steps": 8,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 8.999999999999999e-06,
+      "predictor_steps": 8,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 1000,
+      "final_freeze_sha256": "9bf6cd39501c8996c8c2bef34939b02d78f281d8ad0393ebc8040dacb9d6f7ab"
+    },
+    {
+      "task": "social_i_qa",
+      "warmup_lr": 0.0005,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 128,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 8.999999999999999e-06,
+      "predictor_steps": 32,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 1954,
+      "final_freeze_sha256": "5086b1287007c5e334b5579a5a40874ed3d661a62cd715df78d3845bc2da2d5e"
+    },
+    {
+      "task": "winogrande",
+      "warmup_lr": 0.001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 256,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 8.999999999999999e-06,
+      "predictor_steps": 128,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 1267,
+      "final_freeze_sha256": "2ba1ecab802b8187b00fa47887cdbe0a70d08676698cba6b1a5d871f7ff0f7aa"
+    },
+    {
+      "task": "sst2",
+      "warmup_lr": 0.001,
+      "warmup_steps": 32,
+      "warmup_seed": 201,
+      "oracle_lr": 0.0003,
+      "oracle_steps": 128,
+      "oracle_seeds": [
+        101,
+        102,
+        103
+      ],
+      "predictor_method": "adaptive",
+      "predictor_lr": 8.999999999999999e-05,
+      "predictor_steps": 8,
+      "predictor_fit_seeds": [
+        123,
+        124,
+        125
+      ],
+      "predictor_update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "oracle_admitted": true,
+      "final_population_n": 872,
+      "final_freeze_sha256": "9e7df5352627716096cfd169005baa117071ea4f5788d14d6d5f3d9c52280315"
+    }
+  ],
+  "protocol_sha256": "00c23cc29aa16868462f06f1d2a4f8f74e978e368b69b626fa705d2c7a9a1b15"
+}

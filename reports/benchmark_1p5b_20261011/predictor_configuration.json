@@ -1,0 +1,78 @@
+{
+  "time": 1791751457.8228672,
+  "model": "Qwen2.5-1.5B-Instruct",
+  "basis": "Documents the source constants used by the existing recorded runs; no training settings are changed.",
+  "model_adapter_updates": {
+    "optimizer": "AdamW",
+    "lr": "Chosen independently for oracle and predictor updates; see selected_recipes.json after final readout",
+    "weight_decay": 0,
+    "max_grad_norm": 1,
+    "schedule": "constant",
+    "nominal_update_batch_examples": 32
+  },
+  "predictor_architecture": {
+    "input_field": "y",
+    "dim": 1536,
+    "width": 512,
+    "depth": 2,
+    "label_dim": 0,
+    "label_vocab": 0
+  },
+  "predictor_offline_fitting": {
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1,
+    "epochs": 30,
+    "max_examples_per_packed_batch": 32,
+    "padded_token_packing_budget": 8192,
+    "packing_budget_is_not_truncation": true,
+    "epoch_zero_in_selection": true,
+    "primary_epoch_metric": "individual factor-balanced squared relative LoRA gradient error on predictor_dev",
+    "fit_seeds": [
+      123,
+      124,
+      125
+    ]
+  },
+  "adaptive_calibration": {
+    "optimizer": "fresh AdamW each model-update step",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1,
+    "epochs": 10,
+    "current_update_examples": 4,
+    "fixed_predictor_dev_examples": 16,
+    "epoch_zero_in_selection": true,
+    "epoch_metric": "individual factor-balanced relative error plus squared relative error of the aggregate gradient on the 16 calibration-validation rows"
+  },
+  "globalfit_registration": {
+    "optimizer_and_architecture_unchanged": true,
+    "loss_and_offline_epoch_metric_change_together": true,
+    "normalizers": "Fixed training mean raw-gradient energy, one per LoRA factor; no final data used",
+    "execution_status_source": "results/predictor_globalfit_stage.json (created when the registered follow-up starts)"
+  },
+  "source_sha256": {
+    "fit_predictor.py": "e4f82dee843ccef0249e3d0feaf30ca410d87ad83567261f59dc391b8b47428f",
+    "predictor_core.py": "ff420e5c7c0dc67af3fe4ed6b068f3193e27e3217bce8afa55b3e6b8243c45ef",
+    "train_predictor.py": "6dcf74ea8953d790952a777449129974ce09bbfc78fd9b2614e06c4bea290e79",
+    "updates_legacy.py": "429ed7509509086e91a8869876b5e01678b2539a64d34e9d7700eacd9f7a6fdc",
+    "global_gradient_objective.py": "8fb5da85d2a43491e3618d38423364375b70829dd6cb122e0495688bc18d984c"
+  },
+  "final_test_readout_used": false,
+  "conditional_label_globalfit": {
+    "tasks": [
+      "mnli"
+    ],
+    "label_features": "Frozen training-target-token one-hot vectors plus learned projection",
+    "label_dim": 8,
+    "label_vocab_size": 151936,
+    "predictor_trainable_parameters": 5791232,
+    "offline_optimizer_unchanged": true,
+    "architecture_source_sha256": "f433f903ec047fce513c9b294e8583912cca032b58a5ef17f3bf6dce0407b668",
+    "plan": "configs/predictor_extension_plan.json",
+    "execution_status_source": "results/predictor_extension_stage.json",
+    "configuration_record_only": true,
+    "fitting_worker_sha256": "731189b3bb20824ba5d44a0a22e333438ba5105e7a3a07f11630c9d2beae4188"
+  }
+}

@@ -4,7 +4,9 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 **Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration across model sizes and math tasks.
 
-**New — 0.5B across 13 benchmarks:** oracle gains reach **+8.77 pp on BoolQ** and **+13.18 pp on PAWS**; predictors retain **+3.50 / +7.01 pp** using four true-gradient corrections per step. Seven of ten admitted configurations have positive final mean gains for both methods; a compute advantage remains unproven. [Results, figure and configurations →](reports/benchmark_0p5b_20261010/README.md)
+**New — 1.5B across 9 benchmarks:** oracle gains are **+1.95–7.03 pp** across all nine tasks. CV4 retains **68% on MNLI / 57% on PAWS**; other predictor gains remain uncertain, and an advantage over true-gradient controls is unproven. [Results, figure and exact settings →](reports/benchmark_1p5b_20261011/README.md)
+
+**Previous — 0.5B across 13 benchmarks:** oracle gains reach **+8.77 pp on BoolQ** and **+13.18 pp on PAWS**; predictors retain **+3.50 / +7.01 pp** using four true-gradient corrections per step. Seven of ten admitted configurations have positive final mean gains for both methods; a compute advantage remains unproven. [Results, figure and configurations →](reports/benchmark_0p5b_20261010/README.md)
 
 **Oracle improvement follow-up — four tasks:** single-layer true-answer updates establish gains on BoolQ and OpenBookQA. ARC-Easy also improves, partly through formatting; ARC-Challenge remains uncertain. Teacher targets and extra layers show no established added benefit. [Six studies, confirmation runs and controlled comparisons →](reports/oracle_improvements_20261007/README.md)
 

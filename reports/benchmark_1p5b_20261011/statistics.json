@@ -1,0 +1,2203 @@
+{
+  "updated": 1791773208.566091,
+  "tasks": {
+    "mnli": {
+      "task": "mnli",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 9815,
+        "n_source_disjoint": 9815,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 6.574970283579555,
+        "ci95_pp": [
+          5.787955358334202,
+          7.422534335532469
+        ],
+        "ci97p5_two_look_pp": [
+          5.6699135358765576,
+          7.530119288618631
+        ],
+        "ci95_primary_family_pp": [
+          5.466973511055722,
+          7.75476214640525
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.39894501896807,
+          7.814458572736219
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 6.574970283579555,
+        "ci95_pp": [
+          5.787955358334202,
+          7.422534335532469
+        ],
+        "ci97p5_two_look_pp": [
+          5.6699135358765576,
+          7.530119288618631
+        ],
+        "ci95_primary_family_pp": [
+          5.466973511055722,
+          7.75476214640525
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.39894501896807,
+          7.814458572736219
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 19.45321786381389,
+        "ci95_pp": [
+          18.57132307227085,
+          20.393939531442836
+        ],
+        "ci97p5_two_look_pp": [
+          18.401820085590913,
+          20.52852034191467
+        ],
+        "ci95_primary_family_pp": [
+          18.164605508087625,
+          20.758773046712157
+        ],
+        "ci95_all_registered_recipes_pp": [
+          18.118489823949048,
+          20.79918261617678
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 4.472745797249108,
+        "ci95_pp": [
+          3.1856810024412536,
+          5.5849757543737315
+        ],
+        "ci97p5_two_look_pp": [
+          2.9889235760696593,
+          5.713630173712511
+        ],
+        "ci95_primary_family_pp": [
+          2.601578703681562,
+          5.944584438151743
+        ],
+        "ci95_all_registered_recipes_pp": [
+          2.5531956356651477,
+          5.970589610204032
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -2.1022244863304467,
+        "ci95_pp": [
+          -3.139975343229989,
+          -1.0785156060385424
+        ],
+        "ci97p5_two_look_pp": [
+          -3.259987851869197,
+          -0.928091996271847
+        ],
+        "ci95_primary_family_pp": [
+          -3.5451248509617845,
+          -0.6092651105901502
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -3.6003846293630084,
+          -0.5630987861655099
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 17.35099337748344,
+        "ci95_pp": [
+          16.01019005799325,
+          18.538124809121452
+        ],
+        "ci97p5_two_look_pp": [
+          15.815167010324977,
+          18.713324420858385
+        ],
+        "ci95_primary_family_pp": [
+          15.53214235868112,
+          18.97211192157735
+        ],
+        "ci95_all_registered_recipes_pp": [
+          15.474643622684026,
+          19.01912137801646
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.6802685950413223,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 6.574970283579555,
+        "ci95_pp": [
+          5.787955358334202,
+          7.422534335532469
+        ],
+        "ci97p5_two_look_pp": [
+          5.6699135358765576,
+          7.530119288618631
+        ],
+        "ci95_primary_family_pp": [
+          5.466973511055722,
+          7.75476214640525
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.39894501896807,
+          7.814458572736219
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 4.472745797249108,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "cv4_correction4",
+      "matched_mean_control_diagnostics": [],
+      "four_label_correction": {
+        "exploratory": true,
+        "comparisons": [
+          {
+            "control": "oracle4",
+            "predictor_minus_control": {
+              "mean_pp": 1.4365766683647478,
+              "ci95_pp": [
+                -0.24472690230914879,
+                3.0155014757575747
+              ],
+              "ci97p5_two_look_pp": [
+                -0.4183673469387755,
+                3.225187014133124
+              ],
+              "ci95_primary_family_pp": [
+                -0.6649442973366995,
+                3.49587988121641
+              ],
+              "ci95_all_registered_recipes_pp": [
+                -0.7217320202622349,
+                3.567798168605199
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 3334,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "same_lr_and_stopping": false,
+            "same_true_gradient_exposures_per_step": true,
+            "same_total_true_gradient_exposures": true
+          },
+          {
+            "control": "oracle4_matched",
+            "predictor_minus_control": {
+              "mean_pp": 1.2905416878926812,
+              "ci95_pp": [
+                -0.6109000276310473,
+                3.845782106751615
+              ],
+              "ci97p5_two_look_pp": [
+                -0.7342659179620985,
+                4.108063478314734
+              ],
+              "ci95_primary_family_pp": [
+                -0.8946750358141914,
+                4.426350662589199
+              ],
+              "ci95_all_registered_recipes_pp": [
+                -0.9156635345400367,
+                4.47900925604476
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 3334,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "same_lr_and_stopping": true,
+            "same_true_gradient_exposures_per_step": true,
+            "same_total_true_gradient_exposures": true
+          }
+        ],
+        "method_results": {
+          "cv4": {
+            "mean_source_disjoint_accuracy": 0.8271013754457464,
+            "vs_warmup": {
+              "mean_pp": 4.472745797249108,
+              "ci95_pp": [
+                3.1856810024412536,
+                5.5849757543737315
+              ],
+              "ci97p5_two_look_pp": [
+                2.9889235760696593,
+                5.713630173712511
+              ],
+              "ci95_primary_family_pp": [
+                2.601578703681562,
+                5.944584438151743
+              ],
+              "ci95_all_registered_recipes_pp": [
+                2.5531956356651477,
+                5.970589610204032
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 3334,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "lr": 0.0003,
+            "steps": 256
+          },
+          "oracle4": {
+            "mean_source_disjoint_accuracy": 0.8127356087620988,
+            "vs_warmup": {
+              "mean_pp": 3.0361691288843606,
+              "ci95_pp": [
+                2.0638147931525146,
+                4.016530498844879
+              ],
+              "ci97p5_two_look_pp": [
+                1.935362770174735,
+                4.159071803786571
+              ],
+              "ci95_primary_family_pp": [
+                1.7124388503619212,
+                4.409077079347347
+              ],
+              "ci95_all_registered_recipes_pp": [
+                1.6149579578050064,
+                4.447073557556892
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 3334,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "lr": 0.001,
+            "steps": 256
+          },
+          "oracle4_matched": {
+            "mean_source_disjoint_accuracy": 0.8141959585668195,
+            "vs_warmup": {
+              "mean_pp": 3.182204109356427,
+              "ci95_pp": [
+                1.4470266657169757,
+                4.64384041737191
+              ],
+              "ci97p5_two_look_pp": [
+                1.1414536231436252,
+                4.752198675849738
+              ],
+              "ci95_primary_family_pp": [
+                0.7727672715131296,
+                5.003656243678901
+              ],
+              "ci95_all_registered_recipes_pp": [
+                0.6933925074500986,
+                5.04044500132726
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 3334,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "lr": 0.0003,
+            "steps": 256
+          }
+        },
+        "interval_scope": "Nominal paired seed/source-group 95% intervals; not corrected for predictor variant selection. All recipes chosen before final readout."
+      }
+    },
+    "paws": {
+      "task": "paws",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 8000,
+        "n_source_disjoint": 8000,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 4.820833333333333,
+        "ci95_pp": [
+          3.8074890073362897,
+          5.836987706708525
+        ],
+        "ci97p5_two_look_pp": [
+          3.6595299924737112,
+          5.983144401946447
+        ],
+        "ci95_primary_family_pp": [
+          3.4001464630541585,
+          6.269588776582996
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.3155990109370204,
+          6.341480157882445
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 4.820833333333333,
+        "ci95_pp": [
+          3.8074890073362897,
+          5.836987706708525
+        ],
+        "ci97p5_two_look_pp": [
+          3.6595299924737112,
+          5.983144401946447
+        ],
+        "ci95_primary_family_pp": [
+          3.4001464630541585,
+          6.269588776582996
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.3155990109370204,
+          6.341480157882445
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 11.620833333333334,
+        "ci95_pp": [
+          10.249910303868067,
+          12.973139050231987
+        ],
+        "ci97p5_two_look_pp": [
+          10.057929871884681,
+          13.157710925706079
+        ],
+        "ci95_primary_family_pp": [
+          9.677280425136596,
+          13.5102481402084
+        ],
+        "ci95_all_registered_recipes_pp": [
+          9.546118313916907,
+          13.542194000873083
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 2.7625,
+        "ci95_pp": [
+          2.014079905273207,
+          3.5330107513566418
+        ],
+        "ci97p5_two_look_pp": [
+          1.8928071825898745,
+          3.648324963234745
+        ],
+        "ci95_primary_family_pp": [
+          1.6999626865671642,
+          3.8720059217044245
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.6534749542180964,
+          3.9217943719832378
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -2.058333333333333,
+        "ci95_pp": [
+          -2.946805397418023,
+          -1.1710462629948528
+        ],
+        "ci97p5_two_look_pp": [
+          -3.062072329855143,
+          -1.0180230472566392
+        ],
+        "ci95_primary_family_pp": [
+          -3.317281797110859,
+          -0.7802150859639216
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -3.3891225163933933,
+          -0.717540837404917
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 9.5625,
+        "ci95_pp": [
+          8.341789063570788,
+          10.767725544487606
+        ],
+        "ci97p5_two_look_pp": [
+          8.162726921036132,
+          10.928953523368465
+        ],
+        "ci95_primary_family_pp": [
+          7.851775475718042,
+          11.295663917022953
+        ],
+        "ci95_all_registered_recipes_pp": [
+          7.756312219879367,
+          11.343661356413463
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.5730337078651686,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 4.820833333333333,
+        "ci95_pp": [
+          3.8074890073362897,
+          5.836987706708525
+        ],
+        "ci97p5_two_look_pp": [
+          3.6595299924737112,
+          5.983144401946447
+        ],
+        "ci95_primary_family_pp": [
+          3.4001464630541585,
+          6.269588776582996
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.3155990109370204,
+          6.341480157882445
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 2.7625,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "cv4_correction4_paws",
+      "matched_mean_control_diagnostics": [],
+      "four_label_correction": {
+        "exploratory": true,
+        "comparisons": [
+          {
+            "control": "oracle4",
+            "predictor_minus_control": {
+              "mean_pp": -0.15416666666666667,
+              "ci95_pp": [
+                -0.3431035542517648,
+                0.042528398608108996
+              ],
+              "ci97p5_two_look_pp": [
+                -0.3683270175857531,
+                0.08215429436419383
+              ],
+              "ci95_primary_family_pp": [
+                -0.44104953124406326,
+                0.16292021226648995
+              ],
+              "ci95_all_registered_recipes_pp": [
+                -0.45700245859636424,
+                0.18712977541842596
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 1616,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "same_lr_and_stopping": true,
+            "same_true_gradient_exposures_per_step": true,
+            "same_total_true_gradient_exposures": true
+          }
+        ],
+        "method_results": {
+          "cv4": {
+            "mean_source_disjoint_accuracy": 0.8715,
+            "vs_warmup": {
+              "mean_pp": 2.7625,
+              "ci95_pp": [
+                2.014079905273207,
+                3.5330107513566418
+              ],
+              "ci97p5_two_look_pp": [
+                1.8928071825898745,
+                3.648324963234745
+              ],
+              "ci95_primary_family_pp": [
+                1.6999626865671642,
+                3.8720059217044245
+              ],
+              "ci95_all_registered_recipes_pp": [
+                1.6534749542180964,
+                3.9217943719832378
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 1616,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "lr": 0.0003,
+            "steps": 256
+          },
+          "oracle4": {
+            "mean_source_disjoint_accuracy": 0.8730416666666667,
+            "vs_warmup": {
+              "mean_pp": 2.9166666666666665,
+              "ci95_pp": [
+                2.184876787227497,
+                3.6852848378874405
+              ],
+              "ci97p5_two_look_pp": [
+                2.0924036849742214,
+                3.800648746862677
+              ],
+              "ci95_primary_family_pp": [
+                1.8742893646432497,
+                4.033190102125651
+              ],
+              "ci95_all_registered_recipes_pp": [
+                1.8397720219145017,
+                4.14008069409235
+              ],
+              "registered_recipe_family_size": 13,
+              "seeds": 3,
+              "groups": 1616,
+              "bootstrap": 10000,
+              "conditional_on_fixed_warmup": true
+            },
+            "lr": 0.0003,
+            "steps": 256
+          }
+        },
+        "interval_scope": "Nominal paired seed/source-group 95% intervals; not corrected for predictor variant selection. All recipes chosen before final readout."
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 10042,
+        "n_source_disjoint": 10042,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 7.0271526256389825,
+        "ci95_pp": [
+          6.3174894939081625,
+          7.745667660474401
+        ],
+        "ci97p5_two_look_pp": [
+          6.211607795989879,
+          7.845269850308947
+        ],
+        "ci95_primary_family_pp": [
+          6.029301202000723,
+          8.034834507158685
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.967789728713983,
+          8.060563511301446
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 7.0271526256389825,
+        "ci95_pp": [
+          6.3174894939081625,
+          7.745667660474401
+        ],
+        "ci97p5_two_look_pp": [
+          6.211607795989879,
+          7.845269850308947
+        ],
+        "ci95_primary_family_pp": [
+          6.029301202000723,
+          8.034834507158685
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.967789728713983,
+          8.060563511301446
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 15.780389032729204,
+        "ci95_pp": [
+          14.868866619074788,
+          16.694643042669412
+        ],
+        "ci97p5_two_look_pp": [
+          14.741729311459382,
+          16.817783715457175
+        ],
+        "ci95_primary_family_pp": [
+          14.493010854897053,
+          17.077836742863962
+        ],
+        "ci95_all_registered_recipes_pp": [
+          14.423404041674251,
+          17.121426248978732
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 0.06638783774812454,
+        "ci95_pp": [
+          -0.1163998203333929,
+          0.25328330994135145
+        ],
+        "ci97p5_two_look_pp": [
+          -0.1455060802385869,
+          0.2764070538425486
+        ],
+        "ci95_primary_family_pp": [
+          -0.20166583076720623,
+          0.32918804581016126
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.2144481287515726,
+          0.33925157800912653
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -6.960764787890858,
+        "ci95_pp": [
+          -7.675917187565574,
+          -6.250411008591475
+        ],
+        "ci97p5_two_look_pp": [
+          -7.758720198799718,
+          -6.1548683427518736
+        ],
+        "ci95_primary_family_pp": [
+          -7.952797458419226,
+          -5.958212480327341
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -7.993689694072574,
+          -5.906909381222808
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 8.819624244838344,
+        "ci95_pp": [
+          7.964344311470998,
+          9.679144091221668
+        ],
+        "ci97p5_two_look_pp": [
+          7.839244669088647,
+          9.80782694425377
+        ],
+        "ci95_primary_family_pp": [
+          7.600266621213076,
+          10.018455667692368
+        ],
+        "ci95_all_registered_recipes_pp": [
+          7.546937661783823,
+          10.036958557872886
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.00944733112895607,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 7.0271526256389825,
+        "ci95_pp": [
+          6.3174894939081625,
+          7.745667660474401
+        ],
+        "ci97p5_two_look_pp": [
+          6.211607795989879,
+          7.845269850308947
+        ],
+        "ci95_primary_family_pp": [
+          6.029301202000723,
+          8.034834507158685
+        ],
+        "ci95_all_registered_recipes_pp": [
+          5.967789728713983,
+          8.060563511301446
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 8407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 0.06638783774812454,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "frozen_globalfit",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 2.9999999999999997e-05,
+          "steps": 8,
+          "predictor_minus_control": {
+            "mean_pp": -0.28878709420434173,
+            "ci95_pp": [
+              -0.5509992311815926,
+              -0.02982085130082074
+            ],
+            "ci97p5_two_look_pp": [
+              -0.5889406430908143,
+              0.00012125327384545151
+            ],
+            "ci95_primary_family_pp": [
+              -0.6590049209319424,
+              0.05958057915667453
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -0.6748633744942187,
+              0.07010906756076139
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 8407,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": false,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "race": {
+      "task": "race",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 4934,
+        "n_source_disjoint": 4934,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 4.945277665180381,
+        "ci95_pp": [
+          3.9929498653852935,
+          5.897703757571103
+        ],
+        "ci97p5_two_look_pp": [
+          3.86787342538283,
+          6.052126119012677
+        ],
+        "ci95_primary_family_pp": [
+          3.626544749713505,
+          6.3082313478455765
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.584288057315366,
+          6.4039968409161725
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 4.945277665180381,
+        "ci95_pp": [
+          3.9929498653852935,
+          5.897703757571103
+        ],
+        "ci97p5_two_look_pp": [
+          3.86787342538283,
+          6.052126119012677
+        ],
+        "ci95_primary_family_pp": [
+          3.626544749713505,
+          6.3082313478455765
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.584288057315366,
+          6.4039968409161725
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 5.5127685447912445,
+        "ci95_pp": [
+          4.558155269962459,
+          6.500446938244886
+        ],
+        "ci97p5_two_look_pp": [
+          4.425423200250067,
+          6.6518857153225595
+        ],
+        "ci95_primary_family_pp": [
+          4.22115969768474,
+          6.8855876950850865
+        ],
+        "ci95_all_registered_recipes_pp": [
+          4.160868519091116,
+          6.953343962599455
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 0.09458181326847723,
+        "ci95_pp": [
+          -0.08206980171365642,
+          0.2804515280561122
+        ],
+        "ci97p5_two_look_pp": [
+          -0.11368065510252295,
+          0.3035822707953855
+        ],
+        "ci95_primary_family_pp": [
+          -0.1630333290374614,
+          0.3565584066312871
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.18198131498265988,
+          0.3651856360316495
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -4.850695851911904,
+        "ci95_pp": [
+          -5.785316011142171,
+          -3.914427392769098
+        ],
+        "ci97p5_two_look_pp": [
+          -5.931512433754587,
+          -3.7968738317994193
+        ],
+        "ci95_primary_family_pp": [
+          -6.1938317866202866,
+          -3.572737250928739
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -6.24055265175986,
+          -3.5212047606932297
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 0.6620726928793407,
+        "ci95_pp": [
+          -0.10165652965801082,
+          1.4283237103849262
+        ],
+        "ci97p5_two_look_pp": [
+          -0.18993497358392494,
+          1.5367877056983543
+        ],
+        "ci95_primary_family_pp": [
+          -0.4407205512489486,
+          1.7184982840336338
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.4992642336441959,
+          1.7747588539578045
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.01912568306010929,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 4.945277665180381,
+        "ci95_pp": [
+          3.9929498653852935,
+          5.897703757571103
+        ],
+        "ci97p5_two_look_pp": [
+          3.86787342538283,
+          6.052126119012677
+        ],
+        "ci95_primary_family_pp": [
+          3.626544749713505,
+          6.3082313478455765
+        ],
+        "ci95_all_registered_recipes_pp": [
+          3.584288057315366,
+          6.4039968409161725
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1407,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 0.09458181326847723,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 8.999999999999999e-06,
+          "steps": 8,
+          "predictor_minus_control": {
+            "mean_pp": 0.06080259424402108,
+            "ci95_pp": [
+              -0.16253555465258024,
+              0.2921847001656043
+            ],
+            "ci97p5_two_look_pp": [
+              -0.2018168563498617,
+              0.3240194620752765
+            ],
+            "ci95_primary_family_pp": [
+              -0.24510930521340302,
+              0.3830916466297872
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -0.26114813788250346,
+              0.3968648219582366
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 1407,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "commonsense_qa": {
+      "task": "commonsense_qa",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 1221,
+        "n_source_disjoint": 1221,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 4.2588042588042585,
+        "ci95_pp": [
+          2.293202293202293,
+          6.197106197106196
+        ],
+        "ci97p5_two_look_pp": [
+          1.9929019929019927,
+          6.442806442806444
+        ],
+        "ci95_primary_family_pp": [
+          1.4742014742014742,
+          6.967649467649478
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.3650013650013648,
+          7.016107016107017
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 4.2588042588042585,
+        "ci95_pp": [
+          2.293202293202293,
+          6.197106197106196
+        ],
+        "ci97p5_two_look_pp": [
+          1.9929019929019927,
+          6.442806442806444
+        ],
+        "ci95_primary_family_pp": [
+          1.4742014742014742,
+          6.967649467649478
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.3650013650013648,
+          7.016107016107017
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 7.28910728910729,
+        "ci95_pp": [
+          5.105105105105104,
+          9.5004095004095
+        ],
+        "ci97p5_two_look_pp": [
+          4.777163527163527,
+          9.773751023751045
+        ],
+        "ci95_primary_family_pp": [
+          4.231504231504232,
+          10.243652743652754
+        ],
+        "ci95_all_registered_recipes_pp": [
+          4.14960414960415,
+          10.319410319410318
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": -0.027300027300027303,
+        "ci95_pp": [
+          -1.0647010647010646,
+          1.0374010374010374
+        ],
+        "ci97p5_two_look_pp": [
+          -1.2285012285012284,
+          1.2012012012012012
+        ],
+        "ci95_primary_family_pp": [
+          -1.5561015561015559,
+          1.4257439257439357
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -1.6044541044541043,
+          1.5288015288015286
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -4.286104286104287,
+        "ci95_pp": [
+          -6.1698061698061695,
+          -2.375102375102375
+        ],
+        "ci97p5_two_look_pp": [
+          -6.415847665847666,
+          -2.0744608244608043
+        ],
+        "ci95_primary_family_pp": [
+          -6.961506961506962,
+          -1.610701610701611
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -7.0434070434070435,
+          -1.5015015015015012
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 3.003003003003003,
+        "ci95_pp": [
+          1.1732186732186733,
+          4.832104832104831
+        ],
+        "ci97p5_two_look_pp": [
+          0.9009009009009009,
+          5.078146328146348
+        ],
+        "ci95_primary_family_pp": [
+          0.34875784875784865,
+          5.575348075348085
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.27300027300027296,
+          5.705705705705705
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": -0.006410256410256411,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 4.2588042588042585,
+        "ci95_pp": [
+          2.293202293202293,
+          6.197106197106196
+        ],
+        "ci97p5_two_look_pp": [
+          1.9929019929019927,
+          6.442806442806444
+        ],
+        "ci95_primary_family_pp": [
+          1.4742014742014742,
+          6.967649467649478
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.3650013650013648,
+          7.016107016107017
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1221,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": -0.027300027300027303,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 3e-05,
+          "steps": 128,
+          "predictor_minus_control": {
+            "mean_pp": -0.4914004914004914,
+            "ci95_pp": [
+              -1.71990171990172,
+              0.7371007371007371
+            ],
+            "ci97p5_two_look_pp": [
+              -1.8837018837018837,
+              0.9828009828009828
+            ],
+            "ci95_primary_family_pp": [
+              -2.211302211302211,
+              1.2469287469287766
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -2.293202293202293,
+              1.3104013104013106
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 1221,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "sciq": {
+      "task": "sciq",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 1000,
+        "n_source_disjoint": 1000,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 2.966666666666667,
+        "ci95_pp": [
+          1.5666666666666667,
+          4.366666666666667
+        ],
+        "ci97p5_two_look_pp": [
+          1.3666666666666667,
+          4.6
+        ],
+        "ci95_primary_family_pp": [
+          1.0666666666666667,
+          5.0
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.0076282051282053,
+          5.066666666666667
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 2.966666666666667,
+        "ci95_pp": [
+          1.5666666666666667,
+          4.366666666666667
+        ],
+        "ci97p5_two_look_pp": [
+          1.3666666666666667,
+          4.6
+        ],
+        "ci95_primary_family_pp": [
+          1.0666666666666667,
+          5.0
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.0076282051282053,
+          5.066666666666667
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 3.0666666666666664,
+        "ci95_pp": [
+          1.633333333333333,
+          4.5
+        ],
+        "ci97p5_two_look_pp": [
+          1.4666666666666666,
+          4.733333333333333
+        ],
+        "ci95_primary_family_pp": [
+          1.1333333333333333,
+          5.1
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.0666666666666664,
+          5.225705128205117
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 0.1,
+        "ci95_pp": [
+          0.0,
+          0.3333333333333333
+        ],
+        "ci97p5_two_look_pp": [
+          0.0,
+          0.4
+        ],
+        "ci95_primary_family_pp": [
+          0.0,
+          0.5
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.0,
+          0.5
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -2.8666666666666667,
+        "ci95_pp": [
+          -4.3,
+          -1.4333333333333333
+        ],
+        "ci97p5_two_look_pp": [
+          -4.533333333333333,
+          -1.2333333333333334
+        ],
+        "ci95_primary_family_pp": [
+          -4.9075,
+          -0.8999999999999999
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -4.9923717948717945,
+          -0.8
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 0.2,
+        "ci95_pp": [
+          0.0,
+          0.5333333333333333
+        ],
+        "ci97p5_two_look_pp": [
+          0.0,
+          0.6
+        ],
+        "ci95_primary_family_pp": [
+          0.0,
+          0.7000000000000001
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.0,
+          0.7333333333333333
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.033707865168539325,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 2.966666666666667,
+        "ci95_pp": [
+          1.5666666666666667,
+          4.366666666666667
+        ],
+        "ci97p5_two_look_pp": [
+          1.3666666666666667,
+          4.6
+        ],
+        "ci95_primary_family_pp": [
+          1.0666666666666667,
+          5.0
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.0076282051282053,
+          5.066666666666667
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1000,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 0.1,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 8.999999999999999e-06,
+          "steps": 8,
+          "predictor_minus_control": {
+            "mean_pp": -0.1,
+            "ci95_pp": [
+              -0.3,
+              0.0
+            ],
+            "ci97p5_two_look_pp": [
+              -0.4,
+              0.0
+            ],
+            "ci95_primary_family_pp": [
+              -0.4224999999999998,
+              0.0
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -0.5,
+              0.0
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 1000,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "social_i_qa": {
+      "task": "social_i_qa",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 1954,
+        "n_source_disjoint": 1954,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 3.770044353462982,
+        "ci95_pp": [
+          2.2586689833096405,
+          5.282916125949478
+        ],
+        "ci97p5_two_look_pp": [
+          2.0544163798853297,
+          5.493040957555437
+        ],
+        "ci95_primary_family_pp": [
+          1.6845329249617151,
+          5.841511664564946
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.6251467793327594,
+          5.912345122429859
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 3.770044353462982,
+        "ci95_pp": [
+          2.2586689833096405,
+          5.282916125949478
+        ],
+        "ci97p5_two_look_pp": [
+          2.0544163798853297,
+          5.493040957555437
+        ],
+        "ci95_primary_family_pp": [
+          1.6845329249617151,
+          5.841511664564946
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.6251467793327594,
+          5.912345122429859
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 5.254179460934835,
+        "ci95_pp": [
+          3.5695462004043863,
+          6.933744221879815
+        ],
+        "ci97p5_two_look_pp": [
+          3.3265097236438077,
+          7.233026270897304
+        ],
+        "ci95_primary_family_pp": [
+          2.86459874352184,
+          7.754493300939885
+        ],
+        "ci95_all_registered_recipes_pp": [
+          2.769603991514104,
+          7.8305199297903565
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": -0.22176731490958718,
+        "ci95_pp": [
+          -0.6663249615581752,
+          0.20439709375290627
+        ],
+        "ci97p5_two_look_pp": [
+          -0.7498295841854125,
+          0.2562804741815506
+        ],
+        "ci95_primary_family_pp": [
+          -0.8914882772680938,
+          0.4098833301123426
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.9344692721518868,
+          0.42669397508107193
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -3.991811668372569,
+        "ci95_pp": [
+          -5.492813141683778,
+          -2.5166681202818078
+        ],
+        "ci97p5_two_look_pp": [
+          -5.708972305200472,
+          -2.302924140776958
+        ],
+        "ci95_primary_family_pp": [
+          -6.0592773165804825,
+          -1.9244775905715719
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -6.13458068249249,
+          -1.882621668750168
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 1.2623677925622654,
+        "ci95_pp": [
+          -0.06823609689525753,
+          2.608762439056968
+        ],
+        "ci97p5_two_look_pp": [
+          -0.25726087599661424,
+          2.800582352529076
+        ],
+        "ci95_primary_family_pp": [
+          -0.6462585034013606,
+          3.1421319591304306
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.694414241201011,
+          3.209026242347196
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": -0.058823529411764705,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 3.770044353462982,
+        "ci95_pp": [
+          2.2586689833096405,
+          5.282916125949478
+        ],
+        "ci97p5_two_look_pp": [
+          2.0544163798853297,
+          5.493040957555437
+        ],
+        "ci95_primary_family_pp": [
+          1.6845329249617151,
+          5.841511664564946
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.6251467793327594,
+          5.912345122429859
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1930,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": -0.22176731490958718,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 8.999999999999999e-06,
+          "steps": 32,
+          "predictor_minus_control": {
+            "mean_pp": -0.7164790174002047,
+            "ci95_pp": [
+              -1.438128387890612,
+              0.0
+            ],
+            "ci97p5_two_look_pp": [
+              -1.537672988211174,
+              0.10224948875255625
+            ],
+            "ci95_primary_family_pp": [
+              -1.7592502448365923,
+              0.25660110949394466
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -1.8428864263366367,
+              0.30702649226524437
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 1930,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 1267,
+        "n_source_disjoint": 1267,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 6.051039200210471,
+        "ci95_pp": [
+          3.735858984477769,
+          8.366219415943172
+        ],
+        "ci97p5_two_look_pp": [
+          3.4201525914233097,
+          8.708234675085503
+        ],
+        "ci95_primary_family_pp": [
+          2.788739805314391,
+          9.287029729018679
+        ],
+        "ci95_all_registered_recipes_pp": [
+          2.7218545726833017,
+          9.418574059458038
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 6.051039200210471,
+        "ci95_pp": [
+          3.735858984477769,
+          8.366219415943172
+        ],
+        "ci97p5_two_look_pp": [
+          3.4201525914233097,
+          8.708234675085503
+        ],
+        "ci95_primary_family_pp": [
+          2.788739805314391,
+          9.287029729018679
+        ],
+        "ci95_all_registered_recipes_pp": [
+          2.7218545726833017,
+          9.418574059458038
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 9.44488292554591,
+        "ci95_pp": [
+          6.3141278610891876,
+          12.57563799000263
+        ],
+        "ci97p5_two_look_pp": [
+          5.840568271507498,
+          13.049197579584321
+        ],
+        "ci95_primary_family_pp": [
+          5.045382794001578,
+          13.891081294396212
+        ],
+        "ci95_all_registered_recipes_pp": [
+          4.919757958431992,
+          14.154169955274925
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 0.3946329913180742,
+        "ci95_pp": [
+          -0.6314127861089187,
+          1.4206787687450668
+        ],
+        "ci97p5_two_look_pp": [
+          -0.7892659826361484,
+          1.5785319652722969
+        ],
+        "ci95_primary_family_pp": [
+          -1.0582741383846355,
+          1.8153117600631412
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -1.1312812417784792,
+          1.9145265415983566
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -5.656406208892397,
+        "ci95_pp": [
+          -7.997895290712971,
+          -3.3675348592475665
+        ],
+        "ci97p5_two_look_pp": [
+          -8.31360168376743,
+          -3.025519600105236
+        ],
+        "ci95_primary_family_pp": [
+          -8.918705603788474,
+          -2.4204156800841883
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -9.070538117499444,
+          -2.1956772509258853
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 3.7884767166535127,
+        "ci95_pp": [
+          0.6833727966324653,
+          6.8139963167587485
+        ],
+        "ci97p5_two_look_pp": [
+          0.2627598000526179,
+          7.287884767166553
+        ],
+        "ci95_primary_family_pp": [
+          -0.532096816627203,
+          8.155748487240201
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.678009835468399,
+          8.479701697933717
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.06521739130434782,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 6.051039200210471,
+        "ci95_pp": [
+          3.735858984477769,
+          8.366219415943172
+        ],
+        "ci97p5_two_look_pp": [
+          3.4201525914233097,
+          8.708234675085503
+        ],
+        "ci95_primary_family_pp": [
+          2.788739805314391,
+          9.287029729018679
+        ],
+        "ci95_all_registered_recipes_pp": [
+          2.7218545726833017,
+          9.418574059458038
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1267,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 0.3946329913180742,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 8.999999999999999e-06,
+          "steps": 128,
+          "predictor_minus_control": {
+            "mean_pp": -0.31570639305445936,
+            "ci95_pp": [
+              -1.7363851617995265,
+              1.1049723756906076
+            ],
+            "ci97p5_two_look_pp": [
+              -1.8942383583267564,
+              1.2628255722178374
+            ],
+            "ci95_primary_family_pp": [
+              -2.2888713496448303,
+              1.6574585635359116
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -2.367797947908445,
+              1.7363851617995265
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 1267,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "sst2": {
+      "task": "sst2",
+      "oracle_screened": true,
+      "predictor_screened": true,
+      "final_complete": true,
+      "primary_population": {
+        "n_all": 872,
+        "n_source_disjoint": 872,
+        "rule": "Source groups absent from all nonfinal splits, fixed before test predictions"
+      },
+      "oracle_vs_warmup_full_set": {
+        "mean_pp": 1.94954128440367,
+        "ci95_pp": [
+          0.8027522935779817,
+          3.1737385321100784
+        ],
+        "ci97p5_two_look_pp": [
+          0.6498470948012232,
+          3.3639143730886847
+        ],
+        "ci95_primary_family_pp": [
+          0.3736620795107034,
+          3.784403669724771
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.34403669724770647,
+          3.89908256880734
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_warmup": {
+        "mean_pp": 1.94954128440367,
+        "ci95_pp": [
+          0.8027522935779817,
+          3.1737385321100784
+        ],
+        "ci97p5_two_look_pp": [
+          0.6498470948012232,
+          3.3639143730886847
+        ],
+        "ci95_primary_family_pp": [
+          0.3736620795107034,
+          3.784403669724771
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.34403669724770647,
+          3.89908256880734
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "oracle_vs_base": {
+        "mean_pp": 3.89908256880734,
+        "ci95_pp": [
+          2.408256880733945,
+          5.58103975535168
+        ],
+        "ci97p5_two_look_pp": [
+          2.1788990825688073,
+          5.848623853211009
+        ],
+        "ci95_primary_family_pp": [
+          1.7966360856269115,
+          6.307339449541284
+        ],
+        "ci95_all_registered_recipes_pp": [
+          1.728931427899318,
+          6.383792048929663
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_warmup": {
+        "mean_pp": 0.0764525993883792,
+        "ci95_pp": [
+          -0.30581039755351686,
+          0.4969418960244649
+        ],
+        "ci97p5_two_look_pp": [
+          -0.38226299694189597,
+          0.573394495412844
+        ],
+        "ci95_primary_family_pp": [
+          -0.45871559633027525,
+          0.7645259938837919
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.5264202540578686,
+          0.8027522935779817
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_oracle": {
+        "mean_pp": -1.8730886850152906,
+        "ci95_pp": [
+          -3.0581039755351687,
+          -0.7645259938837919
+        ],
+        "ci97p5_two_look_pp": [
+          -3.249235474006116,
+          -0.5733944954128442
+        ],
+        "ci95_primary_family_pp": [
+          -3.555045871559633,
+          -0.34403669724770647
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -3.669724770642202,
+          -0.2675840978593272
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "predictor_vs_base": {
+        "mean_pp": 2.025993883792049,
+        "ci95_pp": [
+          0.8409785932721712,
+          3.2874617737003056
+        ],
+        "ci97p5_two_look_pp": [
+          0.6880733944954129,
+          3.4408448012232693
+        ],
+        "ci95_primary_family_pp": [
+          0.3822629969418961,
+          3.9373088685015287
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.34403669724770647,
+          3.9755351681957194
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retained_oracle_gain_fraction": 0.0392156862745098,
+      "retention_paired_oracle_vs_warmup": {
+        "mean_pp": 1.94954128440367,
+        "ci95_pp": [
+          0.8027522935779817,
+          3.1737385321100784
+        ],
+        "ci97p5_two_look_pp": [
+          0.6498470948012232,
+          3.3639143730886847
+        ],
+        "ci95_primary_family_pp": [
+          0.3736620795107034,
+          3.784403669724771
+        ],
+        "ci95_all_registered_recipes_pp": [
+          0.34403669724770647,
+          3.89908256880734
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 872,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "retention_numerator_pp": 0.0764525993883792,
+      "retention_denominator_supported": true,
+      "retention_note": "Point estimate only; no confidence interval for the ratio.",
+      "selected_predictor_method": "adaptive",
+      "matched_mean_control_diagnostics": [
+        {
+          "update_seed": 101,
+          "predictor_seed": 123,
+          "lr": 8.999999999999999e-05,
+          "steps": 8,
+          "predictor_minus_control": {
+            "mean_pp": 0.573394495412844,
+            "ci95_pp": [
+              0.0,
+              1.261467889908257
+            ],
+            "ci97p5_two_look_pp": [
+              -0.11467889908256881,
+              1.261467889908257
+            ],
+            "ci95_primary_family_pp": [
+              -0.22935779816513763,
+              1.4908256880733946
+            ],
+            "ci95_all_registered_recipes_pp": [
+              -0.22935779816513763,
+              1.6055045871559634
+            ],
+            "registered_recipe_family_size": 13,
+            "seeds": 1,
+            "groups": 872,
+            "bootstrap": 10000,
+            "conditional_on_fixed_warmup": true
+          },
+          "same_online_true_gradient_example_budget": true,
+          "control_true_gradient_examples_per_step": 20,
+          "interpretation": "One fixed seed diagnostic at matched optimizer/LR/stopping and calibration-row schedule; interval covers source-group sampling, not update-seed uncertainty. The frozen predictor uses zero online true-gradient examples, so the 20-example control does not match its gradient-computation budget. All update methods use labeled training examples; these counts do not measure annotation cost."
+        }
+      ]
+    },
+    "explore_mnli_lr": {
+      "task": "explore_mnli_lr",
+      "oracle_screened": false,
+      "predictor_screened": false,
+      "final_complete": false,
+      "exploratory": true,
+      "source_task": "mnli"
+    },
+    "explore_paws_lr": {
+      "task": "explore_paws_lr",
+      "oracle_screened": false,
+      "predictor_screened": false,
+      "final_complete": false,
+      "exploratory": true,
+      "source_task": "paws"
+    },
+    "explore_hellaswag_lr": {
+      "task": "explore_hellaswag_lr",
+      "oracle_screened": false,
+      "predictor_screened": false,
+      "final_complete": false,
+      "exploratory": true,
+      "source_task": "hellaswag"
+    },
+    "explore_race_lr": {
+      "task": "explore_race_lr",
+      "oracle_screened": false,
+      "predictor_screened": false,
+      "final_complete": false,
+      "exploratory": true,
+      "source_task": "race"
+    }
+  },
+  "primary_benchmark_count": 9,
+  "registered_exploration_recipes": 4,
+  "interpretation": {
+    "selection": "development only; final recipes frozen before test evaluation",
+    "oracle_gate": "User mean-gain rule: fixed recipe has positive three-update-seed average versus the same warmup on development and independent confirmation. No per-seed, minimum2pp, base-model or CI admission threshold. Original strict-rule results remain archived; mean-positive is not a significance claim.",
+    "statistics": "paired cluster and update-seed bootstrap, conditional on one fixed warmup; primary-family intervals and separate conservative intervals including every registered exploratory recipe, per contrast",
+    "exploration": "Exploratory recipe variants share their source benchmark and are not additional independent benchmarks; retain original negative results and all registered attempts",
+    "retention": "Ratio of paired predictor gain to paired oracle gain above warmup; point estimate only, flagged unstable if the oracle denominator is not clearly positive",
+    "historical_old_tests": true,
+    "new_tasks": "generation protocol; not comparable to standard likelihood benchmark leaderboards",
+    "input_truncation": false
+  }
+}

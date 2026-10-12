@@ -1,0 +1,10 @@
+task,source_repository,source_revision,primary_split_allocation_seed,confirmation_allocation_seed,grouping_unit,full_inputs,input_truncation,output_generation_limit_new_tokens,warmup_n,update_n,predictor_train_n,predictor_dev_n,gradient_test_n,accuracy_dev_n,oracle_confirmation_n,test_n,official_final_split
+mnli,nyu-mll/multi_nli,da70db2af9d09693783c3320c4249840212ee221,20261010,20261011,Premise,True,False,256,258,4097,2050,129,129,513,512,9815,validation_matched
+paws,google-research-datasets/paws,161ece9501cf0a11f3e48bd356eaa82de46d6a09,20261010,20261011,Connected component of shared sentences,True,False,256,260,4096,2055,130,132,512,512,8000,test
+hellaswag,Rowan/hellaswag,218ec52e09a7e7462a5400043bb9a69a41d06b76,20261010,20261011,Original source ID,True,False,256,257,4096,2048,128,128,517,512,10042,validation
+race,ehovy/race,2fec9fd81f1dc971569a9b729c43f2f0e6436637,20261010,20261011,Article,True,False,256,258,4098,2049,128,128,514,513,4934,test
+commonsense_qa,tau/commonsense_qa,,20261011,20261011,Normalized question,True,False,256,256,4096,2048,128,128,512,512,1221,validation
+sciq,allenai/sciq,,20261011,20261011,"Support text when available, otherwise question",True,False,256,256,4096,2048,128,128,512,512,1000,test
+social_i_qa,allenai/social_i_qa,,20261011,20261011,Context,True,False,256,256,4096,2048,128,128,512,512,1954,validation
+winogrande,allenai/winogrande,,20261011,20261011,Sentence template,True,False,256,256,4096,2048,128,128,512,512,1267,validation
+sst2,stanfordnlp/sst2,,20261011,20261011,Available sentence identity; review IDs unavailable,True,False,256,256,4096,2048,128,128,512,512,872,validation
