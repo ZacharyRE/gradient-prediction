@@ -1,0 +1,1709 @@
+{
+  "description": "Compact existing local evidence, exported without model paths or raw examples. No new experiments.",
+  "cost_0p5b": {
+    "boolq": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 118.40293981111608,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 120.00457506510429,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 114.7850058437325,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "cv4_correction4",
+          "seed": 101,
+          "steps": 128,
+          "lr": 8.999999999999999e-05,
+          "synchronized_update_seconds": 20.151850351598114,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.36236862721853,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 11.782106214435771,
+          "offline_collection_wall_seconds": 36.30712151527405,
+          "offline_fit_wall_seconds": 47.43337845802307,
+          "selected_recipe_setup_plus_updates_seconds": 103.89235032489523
+        },
+        {
+          "method": "cv4_correction4",
+          "seed": 102,
+          "steps": 128,
+          "lr": 8.999999999999999e-05,
+          "synchronized_update_seconds": 21.552553392015398,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.36187386722304,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 13.182517861016095,
+          "offline_collection_wall_seconds": 36.30712151527405,
+          "offline_fit_wall_seconds": 49.48101043701172,
+          "selected_recipe_setup_plus_updates_seconds": 107.34068534430116
+        },
+        {
+          "method": "cv4_correction4",
+          "seed": 103,
+          "steps": 128,
+          "lr": 8.999999999999999e-05,
+          "synchronized_update_seconds": 21.67008865857497,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.432656631572172,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 13.229524316033348,
+          "offline_collection_wall_seconds": 36.30712151527405,
+          "offline_fit_wall_seconds": 52.49906945228577,
+          "selected_recipe_setup_plus_updates_seconds": 110.47627962613478
+        }
+      ]
+    },
+    "mnli": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 114.44350148946978,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 107.25295755593106,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 105.46803558385,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "adaptive",
+          "seed": 101,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 5.369064409285784,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 2.4820825727656484,
+          "calibration_seconds": 2.2865142056252807,
+          "prediction_update_seconds": 0.6000173001084477,
+          "offline_collection_wall_seconds": 34.92522835731506,
+          "offline_fit_wall_seconds": 42.947752714157104,
+          "selected_recipe_setup_plus_updates_seconds": 83.24204548075795
+        },
+        {
+          "method": "adaptive",
+          "seed": 102,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 6.438891641329974,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.3720593492034823,
+          "calibration_seconds": 2.4126950113568455,
+          "prediction_update_seconds": 0.6536745659541339,
+          "offline_collection_wall_seconds": 34.92522835731506,
+          "offline_fit_wall_seconds": 44.38504648208618,
+          "selected_recipe_setup_plus_updates_seconds": 85.74916648073122
+        },
+        {
+          "method": "adaptive",
+          "seed": 103,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 5.477719342336059,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 2.6929901451803744,
+          "calibration_seconds": 2.158102211775258,
+          "prediction_update_seconds": 0.6261984598822892,
+          "offline_collection_wall_seconds": 34.92522835731506,
+          "offline_fit_wall_seconds": 43.3217978477478,
+          "selected_recipe_setup_plus_updates_seconds": 83.72474554739892
+        }
+      ]
+    },
+    "paws": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 116.26604201085865,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 115.94152555102482,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 115.93612420465797,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "cv4_correction4_paws",
+          "seed": 101,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 18.95096192113124,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.183014806592837,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 10.760185408173129,
+          "offline_collection_wall_seconds": 34.79239058494568,
+          "offline_fit_wall_seconds": 43.98806619644165,
+          "selected_recipe_setup_plus_updates_seconds": 97.73141870251857
+        },
+        {
+          "method": "cv4_correction4_paws",
+          "seed": 102,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 20.349012288963422,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.17640417907387,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 12.164422315079719,
+          "offline_collection_wall_seconds": 34.79239058494568,
+          "offline_fit_wall_seconds": 43.734867572784424,
+          "selected_recipe_setup_plus_updates_seconds": 98.87627044669352
+        },
+        {
+          "method": "cv4_correction4_paws",
+          "seed": 103,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 19.97626797761768,
+          "online_true_gradient_example_exposures": 512,
+          "label_seconds": 8.020580197917297,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 11.9476333623752,
+          "offline_collection_wall_seconds": 34.79239058494568,
+          "offline_fit_wall_seconds": 47.39127993583679,
+          "selected_recipe_setup_plus_updates_seconds": 102.15993849840015
+        }
+      ]
+    },
+    "arc_easy": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 0.001,
+          "synchronized_update_seconds": 3.1119959901552647,
+          "online_true_gradient_example_exposures": 256
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 8,
+          "lr": 0.001,
+          "synchronized_update_seconds": 5.056333232438192,
+          "online_true_gradient_example_exposures": 256
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 8,
+          "lr": 0.001,
+          "synchronized_update_seconds": 3.154604357201606,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "adaptive",
+          "seed": 101,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 5.396795984823257,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 2.588176280958578,
+          "calibration_seconds": 2.19411580148153,
+          "prediction_update_seconds": 0.6140522125642747,
+          "offline_collection_wall_seconds": 18.176883459091187,
+          "offline_fit_wall_seconds": 23.637492895126343,
+          "selected_recipe_setup_plus_updates_seconds": 47.211172339040786
+        },
+        {
+          "method": "adaptive",
+          "seed": 102,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 6.492807277245447,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.414012120338157,
+          "calibration_seconds": 2.4307225509546697,
+          "prediction_update_seconds": 0.6476045027375221,
+          "offline_collection_wall_seconds": 18.176883459091187,
+          "offline_fit_wall_seconds": 21.753857851028442,
+          "selected_recipe_setup_plus_updates_seconds": 46.423548587365076
+        },
+        {
+          "method": "adaptive",
+          "seed": 103,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 6.658756900578737,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.441886435961351,
+          "calibration_seconds": 2.573880302719772,
+          "prediction_update_seconds": 0.6424913913942873,
+          "offline_collection_wall_seconds": 18.176883459091187,
+          "offline_fit_wall_seconds": 21.10195803642273,
+          "selected_recipe_setup_plus_updates_seconds": 45.93759839609265
+        }
+      ]
+    },
+    "openbookqa": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 114.31565348175354,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 113.28647959558293,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 101.56016435474157,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "frozen_globalfit",
+          "seed": 101,
+          "steps": 32,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 2.556997925741598,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 2.5562922649551183,
+          "offline_collection_wall_seconds": 33.66553831100464,
+          "offline_fit_wall_seconds": 46.90315556526184,
+          "selected_recipe_setup_plus_updates_seconds": 83.12569180200808
+        },
+        {
+          "method": "frozen_globalfit",
+          "seed": 102,
+          "steps": 32,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 3.8371717154514045,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 3.836435474222526,
+          "offline_collection_wall_seconds": 33.66553831100464,
+          "offline_fit_wall_seconds": 50.44818329811096,
+          "selected_recipe_setup_plus_updates_seconds": 87.950893324567
+        },
+        {
+          "method": "frozen_globalfit",
+          "seed": 103,
+          "steps": 32,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 3.8842953890562057,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 3.8835478867404163,
+          "offline_collection_wall_seconds": 33.66553831100464,
+          "offline_fit_wall_seconds": 49.225736141204834,
+          "selected_recipe_setup_plus_updates_seconds": 86.77556984126568
+        }
+      ]
+    },
+    "hellaswag": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 110.67070468491875,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 114.91244106856175,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 111.65959219052456,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "frozen",
+          "seed": 101,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 0.7721870474051684,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 0.7719903159886599,
+          "offline_collection_wall_seconds": 37.347816467285156,
+          "offline_fit_wall_seconds": 58.376232862472534,
+          "selected_recipe_setup_plus_updates_seconds": 96.49623637716286
+        },
+        {
+          "method": "frozen",
+          "seed": 102,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 2.0032052739989012,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 2.002992676338181,
+          "offline_collection_wall_seconds": 37.347816467285156,
+          "offline_fit_wall_seconds": 54.51820659637451,
+          "selected_recipe_setup_plus_updates_seconds": 93.86922833765857
+        },
+        {
+          "method": "frozen",
+          "seed": 103,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 2.018770965980366,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 2.018550309818238,
+          "offline_collection_wall_seconds": 37.347816467285156,
+          "offline_fit_wall_seconds": 57.91230273246765,
+          "selected_recipe_setup_plus_updates_seconds": 97.27889016573317
+        }
+      ]
+    },
+    "race": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 75.33552989875898,
+          "online_true_gradient_example_exposures": 4096
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 81.13934224564582,
+          "online_true_gradient_example_exposures": 4096
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 77.96463695215061,
+          "online_true_gradient_example_exposures": 4096
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "adaptive",
+          "seed": 101,
+          "steps": 8,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 7.572806159732863,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.7072753934189677,
+          "calibration_seconds": 2.9430160177871585,
+          "prediction_update_seconds": 0.9219798156991601,
+          "offline_collection_wall_seconds": 44.97425866127014,
+          "offline_fit_wall_seconds": 82.49446821212769,
+          "selected_recipe_setup_plus_updates_seconds": 135.0415330331307
+        },
+        {
+          "method": "adaptive",
+          "seed": 102,
+          "steps": 8,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 8.747036984888837,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 4.565191627945751,
+          "calibration_seconds": 3.1493882236536592,
+          "prediction_update_seconds": 1.0319295518565923,
+          "offline_collection_wall_seconds": 44.97425866127014,
+          "offline_fit_wall_seconds": 83.38576412200928,
+          "selected_recipe_setup_plus_updates_seconds": 137.10705976816826
+        },
+        {
+          "method": "adaptive",
+          "seed": 103,
+          "steps": 8,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 9.225564644904807,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 4.8350110712926835,
+          "calibration_seconds": 3.2381164603866637,
+          "prediction_update_seconds": 1.1519346015993506,
+          "offline_collection_wall_seconds": 44.97425866127014,
+          "offline_fit_wall_seconds": 91.49377584457397,
+          "selected_recipe_setup_plus_updates_seconds": 145.69359915074892
+        }
+      ]
+    },
+    "arc_challenge": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 4.676902980078012,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": []
+    },
+    "svamp": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 0.0001,
+          "synchronized_update_seconds": 3.7429189127869904,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": []
+    },
+    "aqua": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 128,
+          "lr": 0.001,
+          "synchronized_update_seconds": 60.110986134270206,
+          "online_true_gradient_example_exposures": 4096
+        }
+      ],
+      "selected_predictors": []
+    },
+    "gsm8k": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 3.7089235314633697,
+          "online_true_gradient_example_exposures": 256
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 4.952149773947895,
+          "online_true_gradient_example_exposures": 256
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 8,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 3.699091195128858,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": []
+    },
+    "countdown": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 118.20440785354003,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 118.24881059862673,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.001,
+          "synchronized_update_seconds": 117.9656803845428,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "adaptive",
+          "seed": 101,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 5.641685859533027,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 2.6090411781333387,
+          "calibration_seconds": 2.3636078236158937,
+          "prediction_update_seconds": 0.6685982458293438,
+          "offline_collection_wall_seconds": 36.46725797653198,
+          "offline_fit_wall_seconds": 51.215808391571045,
+          "selected_recipe_setup_plus_updates_seconds": 93.32475222763605
+        },
+        {
+          "method": "adaptive",
+          "seed": 102,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 6.761307782260701,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.466183421900496,
+          "calibration_seconds": 2.6320390852633864,
+          "prediction_update_seconds": 0.6626154941041023,
+          "offline_collection_wall_seconds": 36.46725797653198,
+          "offline_fit_wall_seconds": 54.32403373718262,
+          "selected_recipe_setup_plus_updates_seconds": 97.5525994959753
+        },
+        {
+          "method": "adaptive",
+          "seed": 103,
+          "steps": 8,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 7.043753082631156,
+          "online_true_gradient_example_exposures": 160,
+          "label_seconds": 3.667829657671973,
+          "calibration_seconds": 2.6862753592431545,
+          "prediction_update_seconds": 0.6891891050618142,
+          "offline_collection_wall_seconds": 36.46725797653198,
+          "offline_fit_wall_seconds": 53.86780023574829,
+          "selected_recipe_setup_plus_updates_seconds": 97.37881129491143
+        }
+      ]
+    },
+    "math": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 32,
+          "lr": 3e-05,
+          "synchronized_update_seconds": 22.877541242633015,
+          "online_true_gradient_example_exposures": 1024
+        }
+      ],
+      "selected_predictors": []
+    },
+    "explore_arc_challenge_pool": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 117.47178713232279,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 118.2280660578981,
+          "online_true_gradient_example_exposures": 8192
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 256,
+          "lr": 0.0003,
+          "synchronized_update_seconds": 113.99660130194388,
+          "online_true_gradient_example_exposures": 8192
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "frozen",
+          "seed": 101,
+          "steps": 8,
+          "lr": 8.999999999999999e-06,
+          "synchronized_update_seconds": 1.868954555829987,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 1.8687536322977394,
+          "offline_collection_wall_seconds": 10.800818920135498,
+          "offline_fit_wall_seconds": 11.99847936630249,
+          "selected_recipe_setup_plus_updates_seconds": 24.668252842267975
+        },
+        {
+          "method": "frozen",
+          "seed": 102,
+          "steps": 8,
+          "lr": 8.999999999999999e-06,
+          "synchronized_update_seconds": 1.8633615397848189,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 1.8631664442364126,
+          "offline_collection_wall_seconds": 10.800818920135498,
+          "offline_fit_wall_seconds": 10.78674602508545,
+          "selected_recipe_setup_plus_updates_seconds": 23.450926485005766
+        },
+        {
+          "method": "frozen",
+          "seed": 103,
+          "steps": 8,
+          "lr": 8.999999999999999e-06,
+          "synchronized_update_seconds": 1.8663263532798737,
+          "online_true_gradient_example_exposures": 0,
+          "label_seconds": 0,
+          "calibration_seconds": 0,
+          "prediction_update_seconds": 1.8661392650101334,
+          "offline_collection_wall_seconds": 10.800818920135498,
+          "offline_fit_wall_seconds": 11.766569137573242,
+          "selected_recipe_setup_plus_updates_seconds": 24.433714410988614
+        }
+      ]
+    },
+    "explore_svamp_lowlr": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 3e-06,
+          "synchronized_update_seconds": 3.576158662792295,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": []
+    },
+    "explore_aqua_answer": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 8,
+          "lr": 1e-05,
+          "synchronized_update_seconds": 4.808813420357183,
+          "online_true_gradient_example_exposures": 256
+        }
+      ],
+      "selected_predictors": []
+    },
+    "explore_gsm8k_lowlr": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 32,
+          "lr": 1e-05,
+          "synchronized_update_seconds": 14.596321150427684,
+          "online_true_gradient_example_exposures": 1024
+        },
+        {
+          "method": "oracle",
+          "seed": 102,
+          "steps": 32,
+          "lr": 1e-05,
+          "synchronized_update_seconds": 15.610095794778317,
+          "online_true_gradient_example_exposures": 1024
+        },
+        {
+          "method": "oracle",
+          "seed": 103,
+          "steps": 32,
+          "lr": 1e-05,
+          "synchronized_update_seconds": 14.770949471974745,
+          "online_true_gradient_example_exposures": 1024
+        }
+      ],
+      "selected_predictors": [
+        {
+          "method": "adaptive",
+          "seed": 101,
+          "steps": 128,
+          "lr": 3e-06,
+          "synchronized_update_seconds": 92.45645286538638,
+          "online_true_gradient_example_exposures": 2560,
+          "label_seconds": 42.90664326609112,
+          "calibration_seconds": 38.628092403989285,
+          "prediction_update_seconds": 10.914392842445523,
+          "offline_collection_wall_seconds": 35.76801609992981,
+          "offline_fit_wall_seconds": 57.46179533004761,
+          "selected_recipe_setup_plus_updates_seconds": 185.6862642953638
+        },
+        {
+          "method": "adaptive",
+          "seed": 102,
+          "steps": 128,
+          "lr": 3e-06,
+          "synchronized_update_seconds": 93.13885130011477,
+          "online_true_gradient_example_exposures": 2560,
+          "label_seconds": 43.71546470280737,
+          "calibration_seconds": 38.534759926376864,
+          "prediction_update_seconds": 10.88113826373592,
+          "offline_collection_wall_seconds": 35.76801609992981,
+          "offline_fit_wall_seconds": 56.761656045913696,
+          "selected_recipe_setup_plus_updates_seconds": 185.66852344595827
+        },
+        {
+          "method": "adaptive",
+          "seed": 103,
+          "steps": 128,
+          "lr": 3e-06,
+          "synchronized_update_seconds": 92.3111712387763,
+          "online_true_gradient_example_exposures": 2560,
+          "label_seconds": 43.33822960522957,
+          "calibration_seconds": 38.2253740420565,
+          "prediction_update_seconds": 10.739718338707462,
+          "offline_collection_wall_seconds": 35.76801609992981,
+          "offline_fit_wall_seconds": 55.13956356048584,
+          "selected_recipe_setup_plus_updates_seconds": 183.21875089919195
+        }
+      ]
+    },
+    "explore_math_lowlr": {
+      "selected_oracles": [
+        {
+          "method": "oracle",
+          "seed": 101,
+          "steps": 1,
+          "lr": 1e-05,
+          "synchronized_update_seconds": 0.6321955670136958,
+          "online_true_gradient_example_exposures": 32
+        }
+      ],
+      "selected_predictors": []
+    }
+  },
+  "cv4_controls": [
+    {
+      "model": "0.5B",
+      "task": "boolq",
+      "control": "oracle4",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.6782159970512348,
+        "vs_warmup": {
+          "mean_pp": 3.501658680427571,
+          "ci95_pp": [
+            1.5446288188138124,
+            5.504645708282309
+          ],
+          "ci97p5_two_look_pp": [
+            1.2768459454916998,
+            5.777497130046422
+          ],
+          "ci95_family13_pp": [
+            0.5066284566041505,
+            6.626071715735016
+          ],
+          "ci95_all_registered_recipes_pp": [
+            0.40366130224206725,
+            6.753289877297071
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 2541,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 8.999999999999999e-05,
+        "steps": 128
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.6742843101118073,
+        "vs_warmup": {
+          "mean_pp": 3.1084899864848263,
+          "ci95_pp": [
+            1.2555275565392017,
+            5.016599040944301
+          ],
+          "ci97p5_two_look_pp": [
+            0.9840098400984013,
+            5.29412036936211
+          ],
+          "ci95_family13_pp": [
+            0.33209220241626686,
+            6.072940404449621
+          ],
+          "ci95_all_registered_recipes_pp": [
+            0.20602396958623606,
+            6.172608681335117
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 2541,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 8.999999999999999e-05,
+        "steps": 128
+      },
+      "predictor_minus_control": {
+        "mean_pp": 0.39316869394274484,
+        "ci95_pp": [
+          -0.28134814784877427,
+          1.0275323660563929
+        ],
+        "ci97p5_two_look_pp": [
+          -0.3701272502236572,
+          1.1148067455732993
+        ],
+        "ci95_family13_pp": [
+          -0.6292778351587204,
+          1.3806384580643207
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.6983966508550703,
+          1.4418607358202147
+        ],
+        "registered_recipe_family_size": 21,
+        "seeds": 3,
+        "groups": 2541,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": true,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": true
+    },
+    {
+      "model": "0.5B",
+      "task": "paws",
+      "control": "oracle4",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.796875,
+        "vs_warmup": {
+          "mean_pp": 7.012500000000001,
+          "ci95_pp": [
+            5.532213643355743,
+            8.520445088336661
+          ],
+          "ci97p5_two_look_pp": [
+            5.3627028298420285,
+            8.737308849012242
+          ],
+          "ci95_family13_pp": [
+            4.910984328565095,
+            9.329952296572019
+          ],
+          "ci95_all_registered_recipes_pp": [
+            4.8518591464398035,
+            9.45207841495554
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.001,
+        "steps": 128
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.821625,
+        "vs_warmup": {
+          "mean_pp": 9.4875,
+          "ci95_pp": [
+            7.484657706445521,
+            11.286872050499174
+          ],
+          "ci97p5_two_look_pp": [
+            7.224268627093096,
+            11.464773565883723
+          ],
+          "ci95_family13_pp": [
+            6.536428891215184,
+            11.972778009296897
+          ],
+          "ci95_all_registered_recipes_pp": [
+            6.419552947843143,
+            12.050221994669542
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.001,
+        "steps": 256
+      },
+      "predictor_minus_control": {
+        "mean_pp": -2.475,
+        "ci95_pp": [
+          -3.925331840583462,
+          -1.120225991556966
+        ],
+        "ci97p5_two_look_pp": [
+          -4.134037547421976,
+          -0.8854098711548396
+        ],
+        "ci95_family13_pp": [
+          -4.7361709620039605,
+          -0.34222694209794874
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -4.928906213051824,
+          -0.22070830151385604
+        ],
+        "registered_recipe_family_size": 21,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": false,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": false
+    },
+    {
+      "model": "0.5B",
+      "task": "paws",
+      "control": "oracle4_matched",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.796875,
+        "vs_warmup": {
+          "mean_pp": 7.012500000000001,
+          "ci95_pp": [
+            5.532213643355743,
+            8.520445088336661
+          ],
+          "ci97p5_two_look_pp": [
+            5.3627028298420285,
+            8.737308849012242
+          ],
+          "ci95_family13_pp": [
+            4.910984328565095,
+            9.329952296572019
+          ],
+          "ci95_all_registered_recipes_pp": [
+            4.8518591464398035,
+            9.45207841495554
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.001,
+        "steps": 128
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.75675,
+        "vs_warmup": {
+          "mean_pp": 3.0,
+          "ci95_pp": [
+            -4.138496763855411,
+            7.817361504998106
+          ],
+          "ci97p5_two_look_pp": [
+            -4.70664653733395,
+            8.113903369609291
+          ],
+          "ci95_family13_pp": [
+            -5.62484082802856,
+            8.674371512941388
+          ],
+          "ci95_all_registered_recipes_pp": [
+            -5.746975883720025,
+            8.74048962505741
+          ],
+          "registered_recipe_family_size": 21,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.001,
+        "steps": 128
+      },
+      "predictor_minus_control": {
+        "mean_pp": 4.0125,
+        "ci95_pp": [
+          -1.5992018556197214,
+          12.387548988738603
+        ],
+        "ci97p5_two_look_pp": [
+          -1.9275104537993464,
+          12.85192540376855
+        ],
+        "ci95_family13_pp": [
+          -2.614387327038299,
+          13.514114670537491
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -2.792816260497347,
+          13.600417859232458
+        ],
+        "registered_recipe_family_size": 21,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": true,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": true
+    },
+    {
+      "model": "1.5B",
+      "task": "mnli",
+      "control": "oracle4",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.8271013754457464,
+        "vs_warmup": {
+          "mean_pp": 4.472745797249108,
+          "ci95_pp": [
+            3.1856810024412536,
+            5.5849757543737315
+          ],
+          "ci97p5_two_look_pp": [
+            2.9889235760696593,
+            5.713630173712511
+          ],
+          "ci95_primary_family_pp": [
+            2.601578703681562,
+            5.944584438151743
+          ],
+          "ci95_all_registered_recipes_pp": [
+            2.5531956356651477,
+            5.970589610204032
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 3334,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.0003,
+        "steps": 256
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.8127356087620988,
+        "vs_warmup": {
+          "mean_pp": 3.0361691288843606,
+          "ci95_pp": [
+            2.0638147931525146,
+            4.016530498844879
+          ],
+          "ci97p5_two_look_pp": [
+            1.935362770174735,
+            4.159071803786571
+          ],
+          "ci95_primary_family_pp": [
+            1.7124388503619212,
+            4.409077079347347
+          ],
+          "ci95_all_registered_recipes_pp": [
+            1.6149579578050064,
+            4.447073557556892
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 3334,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.001,
+        "steps": 256
+      },
+      "predictor_minus_control": {
+        "mean_pp": 1.4365766683647478,
+        "ci95_pp": [
+          -0.24472690230914879,
+          3.0155014757575747
+        ],
+        "ci97p5_two_look_pp": [
+          -0.4183673469387755,
+          3.225187014133124
+        ],
+        "ci95_primary_family_pp": [
+          -0.6649442973366995,
+          3.49587988121641
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.7217320202622349,
+          3.567798168605199
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": false,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": true
+    },
+    {
+      "model": "1.5B",
+      "task": "mnli",
+      "control": "oracle4_matched",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.8271013754457464,
+        "vs_warmup": {
+          "mean_pp": 4.472745797249108,
+          "ci95_pp": [
+            3.1856810024412536,
+            5.5849757543737315
+          ],
+          "ci97p5_two_look_pp": [
+            2.9889235760696593,
+            5.713630173712511
+          ],
+          "ci95_primary_family_pp": [
+            2.601578703681562,
+            5.944584438151743
+          ],
+          "ci95_all_registered_recipes_pp": [
+            2.5531956356651477,
+            5.970589610204032
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 3334,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.0003,
+        "steps": 256
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.8141959585668195,
+        "vs_warmup": {
+          "mean_pp": 3.182204109356427,
+          "ci95_pp": [
+            1.4470266657169757,
+            4.64384041737191
+          ],
+          "ci97p5_two_look_pp": [
+            1.1414536231436252,
+            4.752198675849738
+          ],
+          "ci95_primary_family_pp": [
+            0.7727672715131296,
+            5.003656243678901
+          ],
+          "ci95_all_registered_recipes_pp": [
+            0.6933925074500986,
+            5.04044500132726
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 3334,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.0003,
+        "steps": 256
+      },
+      "predictor_minus_control": {
+        "mean_pp": 1.2905416878926812,
+        "ci95_pp": [
+          -0.6109000276310473,
+          3.845782106751615
+        ],
+        "ci97p5_two_look_pp": [
+          -0.7342659179620985,
+          4.108063478314734
+        ],
+        "ci95_primary_family_pp": [
+          -0.8946750358141914,
+          4.426350662589199
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.9156635345400367,
+          4.47900925604476
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 3334,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": true,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": true
+    },
+    {
+      "model": "1.5B",
+      "task": "paws",
+      "control": "oracle4",
+      "cv4": {
+        "mean_source_disjoint_accuracy": 0.8715,
+        "vs_warmup": {
+          "mean_pp": 2.7625,
+          "ci95_pp": [
+            2.014079905273207,
+            3.5330107513566418
+          ],
+          "ci97p5_two_look_pp": [
+            1.8928071825898745,
+            3.648324963234745
+          ],
+          "ci95_primary_family_pp": [
+            1.6999626865671642,
+            3.8720059217044245
+          ],
+          "ci95_all_registered_recipes_pp": [
+            1.6534749542180964,
+            3.9217943719832378
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.0003,
+        "steps": 256
+      },
+      "oracle4": {
+        "mean_source_disjoint_accuracy": 0.8730416666666667,
+        "vs_warmup": {
+          "mean_pp": 2.9166666666666665,
+          "ci95_pp": [
+            2.184876787227497,
+            3.6852848378874405
+          ],
+          "ci97p5_two_look_pp": [
+            2.0924036849742214,
+            3.800648746862677
+          ],
+          "ci95_primary_family_pp": [
+            1.8742893646432497,
+            4.033190102125651
+          ],
+          "ci95_all_registered_recipes_pp": [
+            1.8397720219145017,
+            4.14008069409235
+          ],
+          "registered_recipe_family_size": 13,
+          "seeds": 3,
+          "groups": 1616,
+          "bootstrap": 10000,
+          "conditional_on_fixed_warmup": true
+        },
+        "lr": 0.0003,
+        "steps": 256
+      },
+      "predictor_minus_control": {
+        "mean_pp": -0.15416666666666667,
+        "ci95_pp": [
+          -0.3431035542517648,
+          0.042528398608108996
+        ],
+        "ci97p5_two_look_pp": [
+          -0.3683270175857531,
+          0.08215429436419383
+        ],
+        "ci95_primary_family_pp": [
+          -0.44104953124406326,
+          0.16292021226648995
+        ],
+        "ci95_all_registered_recipes_pp": [
+          -0.45700245859636424,
+          0.18712977541842596
+        ],
+        "registered_recipe_family_size": 13,
+        "seeds": 3,
+        "groups": 1616,
+        "bootstrap": 10000,
+        "conditional_on_fixed_warmup": true
+      },
+      "same_lr_and_stopping": true,
+      "same_true_gradient_exposures_per_step": true,
+      "same_total_true_gradient_exposures": true
+    }
+  ],
+  "sources": [
+    {
+      "workspace_relative_path": "benchmark_0p5b_16h_20261010/results/report.json",
+      "sha256": "1d620b090ee160370a0e50141cd3c4632fb34819789cc6314c0909054b658841"
+    },
+    {
+      "workspace_relative_path": "benchmark_1p5b_11h_20261011/results/report.json",
+      "sha256": "618b289858cf082bf7f6f645b1454cb48746c4d438dfa6024bcb681d9a6dae16"
+    },
+    {
+      "workspace_relative_path": "benchmark_0p5b_16h_20261010/results/cost_accounting.json",
+      "sha256": "0c58a900cb1384d6f704145733d5739f1129b5dae50b140448522ecbde046ceb"
+    },
+    {
+      "workspace_relative_path": "predictor_longstep_20261007/results/final_analysis.json",
+      "sha256": "9ea2429b4ee0e9bb20129d07f64e75d6154fea2627e0be58e7a35fdb43012377"
+    }
+  ],
+  "openbookqa_128step": {
+    "complete": true,
+    "n": 500,
+    "base_correct": 368,
+    "warmup_correct": 381,
+    "table": [
+      {
+        "method": "oracle",
+        "category": "primary_policy",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          400,
+          400,
+          398
+        ],
+        "accuracy_pct": 79.86666666666666,
+        "gain_over_warmup_pp": 3.6666666666666665
+      },
+      {
+        "method": "oracle",
+        "category": "trained128",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          400,
+          400,
+          398
+        ],
+        "accuracy_pct": 79.86666666666666,
+        "gain_over_warmup_pp": 3.6666666666666665
+      },
+      {
+        "method": "oracle",
+        "category": "same_recipe32",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          390,
+          390,
+          387
+        ],
+        "accuracy_pct": 77.8,
+        "gain_over_warmup_pp": 1.6
+      },
+      {
+        "method": "frozen",
+        "category": "primary_policy",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          384,
+          385,
+          381
+        ],
+        "accuracy_pct": 76.66666666666667,
+        "gain_over_warmup_pp": 0.46666666666666673
+      },
+      {
+        "method": "frozen",
+        "category": "trained128",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          384,
+          385,
+          381
+        ],
+        "accuracy_pct": 76.66666666666667,
+        "gain_over_warmup_pp": 0.46666666666666673
+      },
+      {
+        "method": "frozen",
+        "category": "same_recipe32",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          380,
+          379,
+          381
+        ],
+        "accuracy_pct": 76.0,
+        "gain_over_warmup_pp": -0.2
+      },
+      {
+        "method": "adaptive",
+        "category": "primary_policy",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          381,
+          384,
+          383
+        ],
+        "accuracy_pct": 76.53333333333333,
+        "gain_over_warmup_pp": 0.33333333333333337
+      },
+      {
+        "method": "adaptive",
+        "category": "trained128",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          381,
+          384,
+          383
+        ],
+        "accuracy_pct": 76.53333333333333,
+        "gain_over_warmup_pp": 0.33333333333333337
+      },
+      {
+        "method": "adaptive",
+        "category": "same_recipe32",
+        "lr": 0.0001,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          387,
+          383,
+          378
+        ],
+        "accuracy_pct": 76.53333333333333,
+        "gain_over_warmup_pp": 0.33333333333333337
+      },
+      {
+        "method": "periodic8",
+        "category": "primary_policy",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          381,
+          379,
+          380
+        ],
+        "accuracy_pct": 76.0,
+        "gain_over_warmup_pp": -0.2
+      },
+      {
+        "method": "periodic8",
+        "category": "trained128",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          381,
+          379,
+          380
+        ],
+        "accuracy_pct": 76.0,
+        "gain_over_warmup_pp": -0.2
+      },
+      {
+        "method": "periodic8",
+        "category": "same_recipe32",
+        "lr": 1e-05,
+        "primary_stopped": false,
+        "correct_by_seed": [
+          382,
+          378,
+          381
+        ],
+        "accuracy_pct": 76.06666666666668,
+        "gain_over_warmup_pp": -0.13333333333333333
+      }
+    ],
+    "comparisons": {
+      "frozen_policy_minus_oracle": {
+        "delta_pp": -3.2,
+        "per_seed_delta_pp": [
+          -3.2,
+          -3.0,
+          -3.4000000000000004
+        ],
+        "question_ci95": [
+          -5.533333333333335,
+          -0.9333333333333329
+        ],
+        "joint_seed_question_ci95": [
+          -5.6000000000000005,
+          -0.8666666666666665
+        ],
+        "familywise_ci95": [
+          -6.466666666666667,
+          -0.06666666666666643
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      },
+      "frozen_policy_minus_warmup": {
+        "delta_pp": 0.46666666666666673,
+        "per_seed_delta_pp": [
+          0.6,
+          0.8,
+          0.0
+        ],
+        "question_ci95": [
+          -1.0666666666666667,
+          2.0
+        ],
+        "joint_seed_question_ci95": [
+          -1.1333333333333333,
+          2.0666666666666664
+        ],
+        "familywise_ci95": [
+          -1.6666666666666663,
+          2.666666666666667
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      },
+      "adaptive_policy_minus_oracle": {
+        "delta_pp": -3.3333333333333335,
+        "per_seed_delta_pp": [
+          -3.8,
+          -3.2,
+          -3.0
+        ],
+        "question_ci95": [
+          -5.666666666666666,
+          -1.0666666666666664
+        ],
+        "joint_seed_question_ci95": [
+          -5.800000000000001,
+          -0.9333333333333329
+        ],
+        "familywise_ci95": [
+          -6.733333333333334,
+          -0.06666666666666714
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      },
+      "adaptive_policy_minus_warmup": {
+        "delta_pp": 0.33333333333333337,
+        "per_seed_delta_pp": [
+          0.0,
+          0.6,
+          0.4
+        ],
+        "question_ci95": [
+          -1.6666666666666667,
+          2.3333333333333335
+        ],
+        "joint_seed_question_ci95": [
+          -1.7999999999999998,
+          2.533333333333333
+        ],
+        "familywise_ci95": [
+          -2.6,
+          3.266666666666667
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      },
+      "periodic8_policy_minus_oracle": {
+        "delta_pp": -3.8666666666666667,
+        "per_seed_delta_pp": [
+          -3.8,
+          -4.2,
+          -3.5999999999999996
+        ],
+        "question_ci95": [
+          -6.266666666666667,
+          -1.5999999999999996
+        ],
+        "joint_seed_question_ci95": [
+          -6.2666666666666675,
+          -1.533333333333333
+        ],
+        "familywise_ci95": [
+          -7.199999999999999,
+          -0.6666666666666672
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      },
+      "periodic8_policy_minus_warmup": {
+        "delta_pp": -0.2,
+        "per_seed_delta_pp": [
+          0.0,
+          -0.4,
+          -0.2
+        ],
+        "question_ci95": [
+          -1.4666666666666666,
+          1.0
+        ],
+        "joint_seed_question_ci95": [
+          -1.4666666666666668,
+          1.0666666666666667
+        ],
+        "familywise_ci95": [
+          -1.9333333333333333,
+          1.5333333333333332
+        ],
+        "family_size": 6,
+        "all_seeds_positive": false,
+        "stable_positive": false
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 
 The current research path is **gradient prediction → useful one-step updates → calibration under model changes → history transfer and broader layer scope**.
 
-**Latest study: [0.5B across 13 benchmarks](../reports/benchmark_0p5b_20261010/README.md).** Strong oracle gains on several tasks, partial predictor retention, and no established compute advantage. Includes three-seed results, unsuccessful screens, and selected configurations.
+**Start with the [consolidated 0.5B / 1.5B / 7B overview](../reports/experiment_overview_20261013/README.md).** Coverage, Base/Warmup/Oracle/predictor accuracy, Frozen/Adaptive/CV4 comparisons, configurations, FLOPs and time costs. The latest 1.5B study adds nine tasks; no matched-quality efficiency advantage is established.
 
 ## Start here: Countdown
 

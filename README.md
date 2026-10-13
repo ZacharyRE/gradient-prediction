@@ -2,7 +2,9 @@
 
 Can a learned predictor estimate useful gradients and keep improving a model as its parameters change?
 
-**Current focus:** use a bidirectional Transformer to predict activation gradients, reconstruct LoRA A/B gradients, and maintain useful updates through online calibration across model sizes and math tasks.
+**Current focus:** predict LoRA gradients at lower cost while preserving downstream learning; test frozen prediction, online calibration and small-sample true-gradient correction.
+
+**[Start here — consolidated 0.5B / 1.5B / 7B experiment overview](reports/experiment_overview_20261013/README.md)** (October 13): all evaluated task coverage, Base / Warmup / Oracle / predictor scores, exact settings, method comparisons, FLOPs and measured time. **Gradients are learnable; matched-quality training speedup remains unproven.** Includes one overview figure and downloadable evidence tables.
 
 **New — 1.5B across 9 benchmarks:** oracle gains are **+1.95–7.03 pp** across all nine tasks. CV4 retains **68% on MNLI / 57% on PAWS**; other predictor gains remain uncertain, and an advantage over true-gradient controls is unproven. [Results, figure and exact settings →](reports/benchmark_1p5b_20261011/README.md)
 

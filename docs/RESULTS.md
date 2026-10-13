@@ -6,6 +6,8 @@ Each topic has one main report with its configuration, result tables, and limita
 
 | Topic | Main report | Status / scope |
 |---|---|---|
+| Consolidated predictor experiments — October 13 | [0.5B / 1.5B / 7B overview](../reports/experiment_overview_20261013/README.md) | All task coverage, Base/Warmup/Oracle/predictor performance, exact settings, method comparisons, FLOPs and time |
+| 1.5B across nine benchmarks | [Oracle gains and predictor retention](../reports/benchmark_1p5b_20261011/README.md) | Three paired update seeds; CV4 gains on MNLI/PAWS; advantage over Oracle4 unproven |
 | 0.5B across 13 benchmarks | [Oracle gains and predictor retention](../reports/benchmark_0p5b_20261010/README.md) | 18 configurations; three-seed predictor results on 10 admitted configurations; 7 with positive final means for both methods |
 | Efficient 0.5B predictor updates | [Accuracy, corrected FLOP estimates and gradient audit](../predictor/countdown_predictor_results/efficient-test-20261002/README.md) | Latest follow-up; 149 grid runs, two complete CPU accuracy groups; predictor trails Oracle, GPU timing incomplete |
 | Domain sensitivity and computational cost | [Accuracy, configurations and cost](../predictor/countdown_predictor_results/scaling-domains-20260930/README.md) | 13 conditions / 9 tasks, warmup and update LR sweeps; short-run Adaptive near Oracle, long-run Frozen degradation |

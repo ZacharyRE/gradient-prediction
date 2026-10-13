@@ -2,6 +2,7 @@
 
 | Study | Scope | Read |
 |---|---|---|
+| Consolidated overview — 2026-10-13 | Qwen2.5 0.5B / 1.5B / 7B; accuracy, methods, setup, FLOPs and time across studies | [English overview and figure](experiment_overview_20261013/README.md) · [All October method comparisons](experiment_overview_20261013/METHODS.md) |
 | 1.5B oracle and predictor — 2026-10-11 | 9 benchmarks; 3 update seeds; oracle gains, predictor retention and true-gradient controls | [Results and figure](benchmark_1p5b_20261011/README.md) · [Settings and details](benchmark_1p5b_20261011/DETAILS.md) |
 | Scaling domains — 2026-09-30 | 13 model/task conditions; warmup and update sensitivity; predictor accuracy and computational efficiency | [Full original report (Chinese)](scaling_domains_20260930/REPORT.md) · [English summary](../predictor/countdown_predictor_results/scaling-domains-20260930/README.md) |
 | Supervision targets — 2026-10-05 | Qwen2.5-1.5B GSM8K Oracle SFT; reference/student/teacher targets; warmup-only and fresh-question controls | [English summary](target_supervision_20261005/README.md) · [Full English report](target_supervision_20261005/REPORT.md) |
