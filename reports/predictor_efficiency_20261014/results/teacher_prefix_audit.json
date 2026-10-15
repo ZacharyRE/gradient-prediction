@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "perturbation": 0.0,
+      "teacher_micro": 8,
+      "cosine": 1.0000001192092896,
+      "relative_l2": 0.0,
+      "norm_ratio": 1.0
+    },
+    {
+      "perturbation": 0.0,
+      "teacher_micro": 4,
+      "cosine": 1.0,
+      "relative_l2": 0.0,
+      "norm_ratio": 1.0
+    },
+    {
+      "perturbation": 0.001,
+      "teacher_micro": 8,
+      "cosine": 1.0,
+      "relative_l2": 0.0,
+      "norm_ratio": 1.0
+    },
+    {
+      "perturbation": 0.001,
+      "teacher_micro": 4,
+      "cosine": 0.9999998807907104,
+      "relative_l2": 0.0,
+      "norm_ratio": 1.0
+    }
+  ],
+  "cache_seconds": 0.8092434850987047,
+  "cache_bytes": 7114752,
+  "full_inputs": true,
+  "scope": "Same cache/teacher batch shape should match; different BF16 batch shapes may round differently. Two LoRA states; nontraining datasets bypass cache. Cache stores residual in original dtype."
+}

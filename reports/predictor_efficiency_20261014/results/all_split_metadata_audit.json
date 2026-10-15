@@ -1,0 +1,130 @@
+{
+  "timestamp": 1792007151.548903,
+  "scope": "Split metadata/group identities only; no model test readout",
+  "tasks": {
+    "paws": {
+      "counts": {
+        "warmup": 260,
+        "update": 4096,
+        "predictor_train": 2055,
+        "predictor_dev": 130,
+        "accuracy_dev": 512,
+        "oracle_confirmation": 512,
+        "gradient_test": 132,
+        "test": 8000
+      },
+      "group_counts": {
+        "warmup": 53,
+        "update": 850,
+        "predictor_train": 442,
+        "predictor_dev": 24,
+        "accuracy_dev": 111,
+        "oracle_confirmation": 111,
+        "gradient_test": 26,
+        "test": 1616
+      },
+      "pairwise_group_overlap": {
+        "warmup/update": 0,
+        "warmup/predictor_train": 0,
+        "warmup/predictor_dev": 0,
+        "warmup/accuracy_dev": 0,
+        "warmup/oracle_confirmation": 0,
+        "warmup/gradient_test": 0,
+        "warmup/test": 0,
+        "update/predictor_train": 0,
+        "update/predictor_dev": 0,
+        "update/accuracy_dev": 0,
+        "update/oracle_confirmation": 0,
+        "update/gradient_test": 0,
+        "update/test": 0,
+        "predictor_train/predictor_dev": 0,
+        "predictor_train/accuracy_dev": 0,
+        "predictor_train/oracle_confirmation": 0,
+        "predictor_train/gradient_test": 0,
+        "predictor_train/test": 0,
+        "predictor_dev/accuracy_dev": 0,
+        "predictor_dev/oracle_confirmation": 0,
+        "predictor_dev/gradient_test": 0,
+        "predictor_dev/test": 0,
+        "accuracy_dev/oracle_confirmation": 0,
+        "accuracy_dev/gradient_test": 0,
+        "accuracy_dev/test": 0,
+        "oracle_confirmation/gradient_test": 0,
+        "oracle_confirmation/test": 0,
+        "gradient_test/test": 0
+      },
+      "file_sha256": {
+        "warmup": "a74aef746741d7d79ab9db940735bcc2117c82cf4895ba128f2947daf6a0213f",
+        "update": "5f5abc48ffe6395fbd2dd50ab52adea2f63746a5249fda062b3e2a5020137156",
+        "predictor_train": "df9006d6d9cff89ba699bce492720151008e209931b3c09fbe88a9b62d6e4210",
+        "predictor_dev": "6f7b109f64bfd14e219501f26d653d0010ad9560aee36af6bc8da0645d7dd0b0",
+        "accuracy_dev": "a926e564cb803de8d8d441275d503005beec3e2bc796c2220e37c60af3e7ee22",
+        "oracle_confirmation": "3974bf8025cf23edfddabfc6193e2de4db57a5c4f770a0bb9682120164ab3176",
+        "gradient_test": "0a2f344bd40d988404a87dd285554ea7b96a962b689ef357dc4142cd08bc7eae",
+        "test": "715771e1989eab99805c839ab825106bed0a110d1bd1501ead7729cf85e59bab"
+      }
+    },
+    "mnli": {
+      "counts": {
+        "warmup": 258,
+        "update": 4097,
+        "predictor_train": 2050,
+        "predictor_dev": 129,
+        "accuracy_dev": 513,
+        "oracle_confirmation": 512,
+        "gradient_test": 129,
+        "test": 9815
+      },
+      "group_counts": {
+        "warmup": 84,
+        "update": 1333,
+        "predictor_train": 670,
+        "predictor_dev": 42,
+        "accuracy_dev": 165,
+        "oracle_confirmation": 171,
+        "gradient_test": 43,
+        "test": 3334
+      },
+      "pairwise_group_overlap": {
+        "warmup/update": 0,
+        "warmup/predictor_train": 0,
+        "warmup/predictor_dev": 0,
+        "warmup/accuracy_dev": 0,
+        "warmup/oracle_confirmation": 0,
+        "warmup/gradient_test": 0,
+        "warmup/test": 0,
+        "update/predictor_train": 0,
+        "update/predictor_dev": 0,
+        "update/accuracy_dev": 0,
+        "update/oracle_confirmation": 0,
+        "update/gradient_test": 0,
+        "update/test": 0,
+        "predictor_train/predictor_dev": 0,
+        "predictor_train/accuracy_dev": 0,
+        "predictor_train/oracle_confirmation": 0,
+        "predictor_train/gradient_test": 0,
+        "predictor_train/test": 0,
+        "predictor_dev/accuracy_dev": 0,
+        "predictor_dev/oracle_confirmation": 0,
+        "predictor_dev/gradient_test": 0,
+        "predictor_dev/test": 0,
+        "accuracy_dev/oracle_confirmation": 0,
+        "accuracy_dev/gradient_test": 0,
+        "accuracy_dev/test": 0,
+        "oracle_confirmation/gradient_test": 0,
+        "oracle_confirmation/test": 0,
+        "gradient_test/test": 0
+      },
+      "file_sha256": {
+        "warmup": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593",
+        "update": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4",
+        "predictor_train": "741bb803f93f78f2ed3d0f7ac33113904b7580433bea5f2ba16ec85db0e05728",
+        "predictor_dev": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986",
+        "accuracy_dev": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e",
+        "oracle_confirmation": "1e4b0cca865dfd93f5de6026ae880d5f49cb3c242d9f62737486b4dbf45430fc",
+        "gradient_test": "01d901807ecde0ef7bdb6d18241c15fb27a4d0c8f8c36c820ad6533169d0ebc4",
+        "test": "f975a26d3ff10ab2e424f7daf74cbc85b33018ed8d02ef3d5d6eed1b531b48f0"
+      }
+    }
+  }
+}

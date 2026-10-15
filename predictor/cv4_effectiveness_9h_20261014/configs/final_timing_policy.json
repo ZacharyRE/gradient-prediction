@@ -1,0 +1,24 @@
+{
+  "registered_epoch": 1792016692.5653257,
+  "rounds": [
+    {
+      "repeat": 1,
+      "update_seed": 101
+    },
+    {
+      "repeat": 2,
+      "update_seed": 102
+    },
+    {
+      "repeat": 3,
+      "update_seed": 103
+    }
+  ],
+  "predictor_seed": "Use the frozen adapter cohort mapping, preserving original predictor123/124/125 or explicitly recorded fitted checkpoints.",
+  "ordering": "Interleave selected methods within each task and rotate their order between seed rounds; record exact commands in final_timing_plan.json before execution.",
+  "report": "Median and range of three paired-seed standalone replays. Variation includes data order and execution variability. Report online, online+preparation, and standalone script time separately.",
+  "quality_identity": "Each replay must match the frozen evaluated reference weights bitwise for direct quality/time claims; preserve and investigate mismatches.",
+  "occupancy": "No foreign GPU context at benchmark start/end; reconcile sampled occupancy over each benchmark interval.",
+  "preflights": "Repeat0 validates the harness only and is excluded from final medians.",
+  "flops": "Separate instrumented replays; never use their duration as a speed result."
+}

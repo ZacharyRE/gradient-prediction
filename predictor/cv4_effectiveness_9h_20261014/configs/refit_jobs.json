@@ -1,0 +1,34 @@
+[
+  {
+    "name": "global512",
+    "width": 512,
+    "depth": 2,
+    "loss": "global",
+    "epochs": 30
+  },
+  {
+    "name": "global128",
+    "width": 128,
+    "depth": 1,
+    "loss": "global",
+    "epochs": 30,
+    "fit_lr": 0.001
+  },
+  {
+    "name": "center128",
+    "width": 128,
+    "depth": 1,
+    "loss": "centered",
+    "epochs": 30,
+    "fit_lr": 0.001
+  },
+  {
+    "name": "labelglobal128",
+    "width": 128,
+    "depth": 1,
+    "loss": "global",
+    "labels": true,
+    "epochs": 30,
+    "fit_lr": 0.001
+  }
+]

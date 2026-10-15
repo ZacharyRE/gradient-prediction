@@ -1,0 +1,19 @@
+{
+  "registered_epoch": 1792013338.7816126,
+  "reason": "Bounded refinement of completed query family: PAWSq.25 andMNLIq.5 closest to useful quality; q.125MNLI predictor clipped94.34% ofsteps and collapsed. Check whether learning-rate tuning changes these conclusions, with matched no-p controls. No new algorithm family.",
+  "task_query_rates": {
+    "paws": 0.25,
+    "mnli": 0.5
+  },
+  "learning_rates": [
+    0.0001,
+    0.001
+  ],
+  "additional_low_query_control": {
+    "q": 0.125,
+    "lr": 0.0001
+  },
+  "max_steps": 512,
+  "selection_split": "accuracy_dev",
+  "further_families_not_planned": true
+}

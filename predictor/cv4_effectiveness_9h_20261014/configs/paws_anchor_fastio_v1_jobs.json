@@ -1,0 +1,362 @@
+[
+  {
+    "name": "gpu_anchor2_lr0.0003",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold2_lr0.0003",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor2_lr0.001",
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold2_lr0.001",
+    "kind": "subset",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor2_lr0.003",
+    "kind": "cv",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold2_lr0.003",
+    "kind": "subset",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.0003",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold4_lr0.0003",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.001",
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold4_lr0.001",
+    "kind": "subset",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.003",
+    "kind": "cv",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_hold4_lr0.003",
+    "kind": "subset",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor2_lr0.0003_cached",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor2_lr0.001_cached",
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor2_lr0.003_cached",
+    "kind": "cv",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.0003_cached",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.001_cached",
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  },
+  {
+    "name": "gpu_anchor4_lr0.003_cached",
+    "kind": "cv",
+    "lr": 0.003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": true,
+    "anchor_every": 4,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  }
+]

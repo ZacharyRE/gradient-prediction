@@ -1,0 +1,290 @@
+[
+  {
+    "name": "refit_global512_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global512_p123/best.pt"
+  },
+  {
+    "name": "refit_global512_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global512_p123/best.pt"
+  },
+  {
+    "name": "refit_global512_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global512_p123/best.pt"
+  },
+  {
+    "name": "refit_global512_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global512_p123/best.pt"
+  },
+  {
+    "name": "refit_global128_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global128_p123/best.pt"
+  },
+  {
+    "name": "refit_global128_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global128_p123/best.pt"
+  },
+  {
+    "name": "refit_global128_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global128_p123/best.pt"
+  },
+  {
+    "name": "refit_global128_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_global128_p123/best.pt"
+  },
+  {
+    "name": "refit_center128_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_center128_p123/best.pt"
+  },
+  {
+    "name": "refit_center128_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_center128_p123/best.pt"
+  },
+  {
+    "name": "refit_center128_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_center128_p123/best.pt"
+  },
+  {
+    "name": "refit_center128_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_center128_p123/best.pt"
+  },
+  {
+    "name": "refit_labelglobal128_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_labelglobal128_p123/best.pt"
+  },
+  {
+    "name": "refit_labelglobal128_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_labelglobal128_p123/best.pt"
+  },
+  {
+    "name": "refit_labelglobal128_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_labelglobal128_p123/best.pt"
+  },
+  {
+    "name": "refit_labelglobal128_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__refit_labelglobal128_p123/best.pt"
+  }
+]

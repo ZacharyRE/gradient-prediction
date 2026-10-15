@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "coefficient": 0.0,
+      "max_absolute_expectation_bias": 4.440892098500626e-16
+    },
+    {
+      "coefficient": 0.5,
+      "max_absolute_expectation_bias": 4.440892098500626e-16
+    },
+    {
+      "coefficient": 1.0,
+      "max_absolute_expectation_bias": 4.440892098500626e-16
+    },
+    {
+      "coefficient": 3.0,
+      "max_absolute_expectation_bias": 2.220446049250313e-15
+    }
+  ],
+  "note": "Estimator algebra; raw-gradient reconstruction precision is covered by separate numerical audit."
+}

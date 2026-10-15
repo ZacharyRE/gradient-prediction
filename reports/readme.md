@@ -2,6 +2,7 @@
 
 | Study | Scope | Read |
 |---|---|---|
+| Predictor efficiency — 2026-10-14 | Nine-hour 1.5B PAWS/MNLI study; long trajectories, calibration, matched controls, frozen readouts and measured time | [Results](predictor_efficiency_20261014/README.md) · [All attempts](predictor_efficiency_20261014/DEVELOPMENT.md) · [Reproduction](predictor_efficiency_20261014/REPRODUCE.md) |
 | Consolidated overview — 2026-10-13 | Qwen2.5 0.5B / 1.5B / 7B; accuracy, methods, setup, FLOPs and time across studies | [English overview and figure](experiment_overview_20261013/README.md) · [All October method comparisons](experiment_overview_20261013/METHODS.md) |
 | 1.5B oracle and predictor — 2026-10-11 | 9 benchmarks; 3 update seeds; oracle gains, predictor retention and true-gradient controls | [Results and figure](benchmark_1p5b_20261011/README.md) · [Settings and details](benchmark_1p5b_20261011/DETAILS.md) |
 | Scaling domains — 2026-09-30 | 13 model/task conditions; warmup and update sensitivity; predictor accuracy and computational efficiency | [Full original report (Chinese)](scaling_domains_20260930/REPORT.md) · [English summary](../predictor/countdown_predictor_results/scaling-domains-20260930/README.md) |

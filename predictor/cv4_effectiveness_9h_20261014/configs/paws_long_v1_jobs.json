@@ -1,0 +1,352 @@
+[
+  {
+    "name": "long_oracle4_lr0.0003",
+    "kind": "subset",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle4_lr0.001",
+    "kind": "subset",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle8_lr0.0003",
+    "kind": "subset",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle8_lr0.001",
+    "kind": "subset",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "micro": 32,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "micro": 32,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_oracle4_lr0.0001",
+    "kind": "subset",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle8_lr0.0001",
+    "kind": "subset",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_oracle32_lr0.0001",
+    "kind": "oracle",
+    "k": 32,
+    "micro": 32,
+    "lr": 0.0001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192
+  },
+  {
+    "name": "long_cv4_lr0.0001",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv8_lr0.0001",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "long_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  }
+]

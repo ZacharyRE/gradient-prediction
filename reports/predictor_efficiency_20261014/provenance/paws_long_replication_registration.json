@@ -1,0 +1,17 @@
+{
+  "registered_epoch": 1792021135.9331737,
+  "selection_split": "accuracy_dev",
+  "reason": "PAWS seed101 CV8 LR.0003 at1024 reached94.7266%, compared with Oracle32 93.75% and matched Oracle8 93.5547%. Replicate all three trajectories at paired seeds102/103, keeping the original predictor124/125 mapping. All existing shorter/cheaper controls remain available. No confirmation/test outcomes used.",
+  "recipes": [
+    "long_oracle8_lr0.0003",
+    "long_oracle32_lr0.0003",
+    "long_cv8_lr0.0003"
+  ],
+  "steps": 1024,
+  "update_seeds": [
+    102,
+    103
+  ],
+  "queue": "round9 before multistate",
+  "budget_action": "Lower-priority smoothing can be omitted to preserve the final validation reserve."
+}

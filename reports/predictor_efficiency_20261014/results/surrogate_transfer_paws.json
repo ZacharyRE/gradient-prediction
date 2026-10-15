@@ -1,0 +1,1761 @@
+{
+  "rows": [
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws_predictor_p123",
+      "predictor_sha256": "998343bdb276b459ee3fd3577ad3a6640077a853e54d4eaed36dd8eb21a0ff3b",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.3370408082509856,
+          "unit_coefficient_residual_ratio": 0.9447138729865913,
+          "posthoc_optimal_coefficient": 3.52680502416915,
+          "posthoc_min_residual_ratio": 0.8864034719945928
+        },
+        "A": {
+          "centered_correlation": 0.2112672489566033,
+          "unit_coefficient_residual_ratio": 0.9630752109432696,
+          "posthoc_optimal_coefficient": 1.7111376285156619,
+          "posthoc_min_residual_ratio": 0.9553661943650014
+        },
+        "B": {
+          "centered_correlation": 0.34991149221777323,
+          "unit_coefficient_residual_ratio": 0.9434194636370502,
+          "posthoc_optimal_coefficient": 3.7510216813630537,
+          "posthoc_min_residual_ratio": 0.8775620100014625
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.4531228244304657,
+        "relative_l2": 0.9081385135650635,
+        "norm_ratio": 0.6264315247535706
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_center128_p123",
+      "predictor_sha256": "066ab5adb38559bb6c76cb642ec41b558ad2a06ca86e7b299407a6678e6a78b6",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.51632317916368,
+          "unit_coefficient_residual_ratio": 0.7502110283598739,
+          "posthoc_optimal_coefficient": 0.7993356940829078,
+          "posthoc_min_residual_ratio": 0.7334103250167069
+        },
+        "A": {
+          "centered_correlation": 0.5068790926302691,
+          "unit_coefficient_residual_ratio": 0.762023884944668,
+          "posthoc_optimal_coefficient": 0.7864210953145894,
+          "posthoc_min_residual_ratio": 0.7430736176596915
+        },
+        "B": {
+          "centered_correlation": 0.516987485169525,
+          "unit_coefficient_residual_ratio": 0.7493782067201639,
+          "posthoc_optimal_coefficient": 0.8002418246108436,
+          "posthoc_min_residual_ratio": 0.7327240026667907
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6277614831924438,
+        "relative_l2": 4.602539539337158,
+        "norm_ratio": 5.163999557495117
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_global128_p123",
+      "predictor_sha256": "77fca72b32e897427d3a6e01ad6d25593679b830e537196341fcc8ff50fda8dc",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.49269265289748665,
+          "unit_coefficient_residual_ratio": 0.7658772689889527,
+          "posthoc_optimal_coefficient": 0.8414114907382739,
+          "posthoc_min_residual_ratio": 0.7572539463531437
+        },
+        "A": {
+          "centered_correlation": 0.4969072208315144,
+          "unit_coefficient_residual_ratio": 0.7564994032421472,
+          "posthoc_optimal_coefficient": 0.8947561949449991,
+          "posthoc_min_residual_ratio": 0.753083248906185
+        },
+        "B": {
+          "centered_correlation": 0.49246101338758536,
+          "unit_coefficient_residual_ratio": 0.7665383955933578,
+          "posthoc_optimal_coefficient": 0.8380527462301239,
+          "posthoc_min_residual_ratio": 0.7574821694866446
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.7509136199951172,
+        "relative_l2": 0.9067866206169128,
+        "norm_ratio": 1.372309923171997
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_global512_p123",
+      "predictor_sha256": "a42be3a5fd646c56bf6689feeedbbfdbddc01c3fe996dad717a20b926510ff4c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5164258474173747,
+          "unit_coefficient_residual_ratio": 0.7363105144890895,
+          "posthoc_optimal_coefficient": 0.9040204701651846,
+          "posthoc_min_residual_ratio": 0.7333043661653313
+        },
+        "A": {
+          "centered_correlation": 0.49081498538423396,
+          "unit_coefficient_residual_ratio": 0.7726459094453821,
+          "posthoc_optimal_coefficient": 0.808326518811623,
+          "posthoc_min_residual_ratio": 0.7591006677883961
+        },
+        "B": {
+          "centered_correlation": 0.5184315838161927,
+          "unit_coefficient_residual_ratio": 0.733749164814502,
+          "posthoc_optimal_coefficient": 0.9117124337105067,
+          "posthoc_min_residual_ratio": 0.7312287610820468
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.604131817817688,
+        "relative_l2": 0.9027421474456787,
+        "norm_ratio": 1.0283002853393555
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_h_center128_p123",
+      "predictor_sha256": "d083eeefe2605c1af5c956d013f4c80da50a3c3b694642278f234ecef41db246",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5187607814503434,
+          "unit_coefficient_residual_ratio": 0.7335082374325264,
+          "posthoc_optimal_coefficient": 0.9101770017643858,
+          "posthoc_min_residual_ratio": 0.7308872169242796
+        },
+        "A": {
+          "centered_correlation": 0.5180425602587031,
+          "unit_coefficient_residual_ratio": 0.736450718862701,
+          "posthoc_optimal_coefficient": 0.8818342627197279,
+          "posthoc_min_residual_ratio": 0.7316319604968569
+        },
+        "B": {
+          "centered_correlation": 0.5188316707684788,
+          "unit_coefficient_residual_ratio": 0.7333008008804435,
+          "posthoc_optimal_coefficient": 0.9123090979228553,
+          "posthoc_min_residual_ratio": 0.7308138091014161
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.5352834463119507,
+        "relative_l2": 2.8331263065338135,
+        "norm_ratio": 3.2395639419555664
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_h_global128_p123",
+      "predictor_sha256": "600876f24f6a599ecd76868eec74ee40074610bafc18ddc903746843ec1370ec",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.4882146938473061,
+          "unit_coefficient_residual_ratio": 0.7630826995706591,
+          "posthoc_optimal_coefficient": 1.0841594538405233,
+          "posthoc_min_residual_ratio": 0.7616464531735565
+        },
+        "A": {
+          "centered_correlation": 0.4943689840722024,
+          "unit_coefficient_residual_ratio": 0.7589177858438764,
+          "posthoc_optimal_coefficient": 1.1318950091471138,
+          "posthoc_min_residual_ratio": 0.7555993025244381
+        },
+        "B": {
+          "centered_correlation": 0.48781140380874843,
+          "unit_coefficient_residual_ratio": 0.7633763644838824,
+          "posthoc_optimal_coefficient": 1.081006968713645,
+          "posthoc_min_residual_ratio": 0.7620400676870868
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6755356192588806,
+        "relative_l2": 0.7869833707809448,
+        "norm_ratio": 0.9506562352180481
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_h_global512_p123",
+      "predictor_sha256": "c46b3d9daf84620efa46c56ce52f4a02af884b0311e43b2c38f15434884145a8",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5022071671452688,
+          "unit_coefficient_residual_ratio": 0.7506169922085094,
+          "posthoc_optimal_coefficient": 1.1184548277129245,
+          "posthoc_min_residual_ratio": 0.7477879501663072
+        },
+        "A": {
+          "centered_correlation": 0.5161499623209707,
+          "unit_coefficient_residual_ratio": 0.7374367539974175,
+          "posthoc_optimal_coefficient": 1.1365901651869086,
+          "posthoc_min_residual_ratio": 0.7335892394353923
+        },
+        "B": {
+          "centered_correlation": 0.5012147248543026,
+          "unit_coefficient_residual_ratio": 0.7515462208813919,
+          "posthoc_optimal_coefficient": 1.1171449388135217,
+          "posthoc_min_residual_ratio": 0.7487838184957513
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.5041373372077942,
+        "relative_l2": 0.9286919236183167,
+        "norm_ratio": 0.8456386923789978
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_h_labelglobal128_p123",
+      "predictor_sha256": "5f5ebddd6eb176fdaff0f40aaa377634ef468a039188e21f5912e1fe994d66ce",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5052737163099285,
+          "unit_coefficient_residual_ratio": 0.7450513150840175,
+          "posthoc_optimal_coefficient": 1.0386103698865758,
+          "posthoc_min_residual_ratio": 0.7446984577100522
+        },
+        "A": {
+          "centered_correlation": 0.4792087575163811,
+          "unit_coefficient_residual_ratio": 0.7748030321263688,
+          "posthoc_optimal_coefficient": 0.877877069757573,
+          "posthoc_min_residual_ratio": 0.7703589606807035
+        },
+        "B": {
+          "centered_correlation": 0.5076437799882988,
+          "unit_coefficient_residual_ratio": 0.7429539993110882,
+          "posthoc_optimal_coefficient": 1.053141392668962,
+          "posthoc_min_residual_ratio": 0.7422978193736197
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6844311952590942,
+        "relative_l2": 0.7615594267845154,
+        "norm_ratio": 0.904474139213562
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__refit_labelglobal128_p123",
+      "predictor_sha256": "59aa9c3a484a9d4e704514e755e1d9bc8736dfd535fb87ea9ae827e98adf0f13",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.4914142191176551,
+          "unit_coefficient_residual_ratio": 0.7866909414922496,
+          "posthoc_optimal_coefficient": 0.7453801466906523,
+          "posthoc_min_residual_ratio": 0.7585120700768307
+        },
+        "A": {
+          "centered_correlation": 0.4894950275554111,
+          "unit_coefficient_residual_ratio": 0.8075186425030983,
+          "posthoc_optimal_coefficient": 0.6927709883090248,
+          "posthoc_min_residual_ratio": 0.7603945876912493
+        },
+        "B": {
+          "centered_correlation": 0.491656377985789,
+          "unit_coefficient_residual_ratio": 0.7852227044967955,
+          "posthoc_optimal_coefficient": 0.7496850444163266,
+          "posthoc_min_residual_ratio": 0.7582739466462333
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.7206140756607056,
+        "relative_l2": 0.6985173225402832,
+        "norm_ratio": 0.8055322766304016
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__multistate_h128_p123",
+      "predictor_sha256": "7d3a96c665dc12fd34a00bdbc2861493cca699c63223341c4f0f5fbd22126e3c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.47881432624147746,
+          "unit_coefficient_residual_ratio": 0.7716709566873079,
+          "posthoc_optimal_coefficient": 0.9399987268933178,
+          "posthoc_min_residual_ratio": 0.7707368078689057
+        },
+        "A": {
+          "centered_correlation": 0.4835013748979714,
+          "unit_coefficient_residual_ratio": 0.7688316753778763,
+          "posthoc_optimal_coefficient": 0.9045140715616432,
+          "posthoc_min_residual_ratio": 0.7662263914482312
+        },
+        "B": {
+          "centered_correlation": 0.47851080156301024,
+          "unit_coefficient_residual_ratio": 0.7718711609688179,
+          "posthoc_optimal_coefficient": 0.9427733106012984,
+          "posthoc_min_residual_ratio": 0.771027475143456
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.4821207523345947,
+        "relative_l2": 0.8849523663520813,
+        "norm_ratio": 0.6069455742835999
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__multistate_labelstate128_p123",
+      "predictor_sha256": "3a997bfd4e3787e669af383e10b98937ea857bbd28392634750e38db49eb0a80",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5052737163099285,
+          "unit_coefficient_residual_ratio": 0.7450513150840175,
+          "posthoc_optimal_coefficient": 1.0386103698865758,
+          "posthoc_min_residual_ratio": 0.7446984577100522
+        },
+        "A": {
+          "centered_correlation": 0.4792087575163811,
+          "unit_coefficient_residual_ratio": 0.7748030321263688,
+          "posthoc_optimal_coefficient": 0.877877069757573,
+          "posthoc_min_residual_ratio": 0.7703589606807035
+        },
+        "B": {
+          "centered_correlation": 0.5076437799882988,
+          "unit_coefficient_residual_ratio": 0.7429539993110882,
+          "posthoc_optimal_coefficient": 1.053141392668962,
+          "posthoc_min_residual_ratio": 0.7422978193736197
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6844311952590942,
+        "relative_l2": 0.7615594267845154,
+        "norm_ratio": 0.904474139213562
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__multistate_state128_p123",
+      "predictor_sha256": "80d44711967191174ddfafb8a6298a04b46afd409c1510118f18db9778baf020",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.4882146938473061,
+          "unit_coefficient_residual_ratio": 0.7630826995706591,
+          "posthoc_optimal_coefficient": 1.0841594538405233,
+          "posthoc_min_residual_ratio": 0.7616464531735565
+        },
+        "A": {
+          "centered_correlation": 0.4943689840722024,
+          "unit_coefficient_residual_ratio": 0.7589177858438764,
+          "posthoc_optimal_coefficient": 1.1318950091471138,
+          "posthoc_min_residual_ratio": 0.7555993025244381
+        },
+        "B": {
+          "centered_correlation": 0.48781140380874843,
+          "unit_coefficient_residual_ratio": 0.7633763644838824,
+          "posthoc_optimal_coefficient": 1.081006968713645,
+          "posthoc_min_residual_ratio": 0.7620400676870868
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6755356192588806,
+        "relative_l2": 0.7869833707809448,
+        "norm_ratio": 0.9506562352180481
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 0,
+      "predictor": "paws__multistate_state512_p123",
+      "predictor_sha256": "1bb26afbbf2a170d7741b888c7569ee7de99c851208a5c656cecf5999b408aad",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.5022071671452688,
+          "unit_coefficient_residual_ratio": 0.7506169922085094,
+          "posthoc_optimal_coefficient": 1.1184548277129245,
+          "posthoc_min_residual_ratio": 0.7477879501663072
+        },
+        "A": {
+          "centered_correlation": 0.5161499623209707,
+          "unit_coefficient_residual_ratio": 0.7374367539974175,
+          "posthoc_optimal_coefficient": 1.1365901651869086,
+          "posthoc_min_residual_ratio": 0.7335892394353923
+        },
+        "B": {
+          "centered_correlation": 0.5012147248543026,
+          "unit_coefficient_residual_ratio": 0.7515462208813919,
+          "posthoc_optimal_coefficient": 1.1171449388135217,
+          "posthoc_min_residual_ratio": 0.7487838184957513
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.5041373372077942,
+        "relative_l2": 0.9286919236183167,
+        "norm_ratio": 0.8456386923789978
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws_predictor_p123",
+      "predictor_sha256": "998343bdb276b459ee3fd3577ad3a6640077a853e54d4eaed36dd8eb21a0ff3b",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.2218201128401644,
+          "unit_coefficient_residual_ratio": 0.9698540639403719,
+          "posthoc_optimal_coefficient": 2.6480159013926854,
+          "posthoc_min_residual_ratio": 0.9507957187475136
+        },
+        "A": {
+          "centered_correlation": 0.1356019894044027,
+          "unit_coefficient_residual_ratio": 0.9818684987609622,
+          "posthoc_optimal_coefficient": 1.1338599459019532,
+          "posthoc_min_residual_ratio": 0.9816121003195023
+        },
+        "B": {
+          "centered_correlation": 0.23009197439990714,
+          "unit_coefficient_residual_ratio": 0.969189226801742,
+          "posthoc_optimal_coefficient": 2.82926303177904,
+          "posthoc_min_residual_ratio": 0.947057750201487
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.30981698632240295,
+        "relative_l2": 1.097365379333496,
+        "norm_ratio": 0.8577196598052979
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_center128_p123",
+      "predictor_sha256": "066ab5adb38559bb6c76cb642ec41b558ad2a06ca86e7b299407a6678e6a78b6",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.34798609654734575,
+          "unit_coefficient_residual_ratio": 0.9216105385725235,
+          "posthoc_optimal_coefficient": 0.6274115194304808,
+          "posthoc_min_residual_ratio": 0.878905696491324
+        },
+        "A": {
+          "centered_correlation": 0.3314906837224772,
+          "unit_coefficient_residual_ratio": 0.961128496777252,
+          "posthoc_optimal_coefficient": 0.5543542407538535,
+          "posthoc_min_residual_ratio": 0.8901140945729907
+        },
+        "B": {
+          "centered_correlation": 0.34903761261895383,
+          "unit_coefficient_residual_ratio": 0.9194231813670793,
+          "posthoc_optimal_coefficient": 0.6321547857089539,
+          "posthoc_min_residual_ratio": 0.8781728497054956
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.27670276165008545,
+        "relative_l2": 6.243459701538086,
+        "norm_ratio": 6.445766925811768
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_global128_p123",
+      "predictor_sha256": "77fca72b32e897427d3a6e01ad6d25593679b830e537196341fcc8ff50fda8dc",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.32431472697975244,
+          "unit_coefficient_residual_ratio": 0.9269994621759472,
+          "posthoc_optimal_coefficient": 0.6438633286365942,
+          "posthoc_min_residual_ratio": 0.8948199403609097
+        },
+        "A": {
+          "centered_correlation": 0.3222591045934404,
+          "unit_coefficient_residual_ratio": 0.935677729885843,
+          "posthoc_optimal_coefficient": 0.6184480079283486,
+          "posthoc_min_residual_ratio": 0.8961491031521467
+        },
+        "B": {
+          "centered_correlation": 0.32444397448905443,
+          "unit_coefficient_residual_ratio": 0.926519217558102,
+          "posthoc_optimal_coefficient": 0.6453747028293967,
+          "posthoc_min_residual_ratio": 0.8947360776144824
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.3608342409133911,
+        "relative_l2": 1.7143832445144653,
+        "norm_ratio": 1.7993443012237549
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_global512_p123",
+      "predictor_sha256": "a42be3a5fd646c56bf6689feeedbbfdbddc01c3fe996dad717a20b926510ff4c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.33551088520006467,
+          "unit_coefficient_residual_ratio": 0.9111843808449697,
+          "posthoc_optimal_coefficient": 0.6852369197739941,
+          "posthoc_min_residual_ratio": 0.8874323640047719
+        },
+        "A": {
+          "centered_correlation": 0.31489108788339126,
+          "unit_coefficient_residual_ratio": 0.95987243337975,
+          "posthoc_optimal_coefficient": 0.5644730260923991,
+          "posthoc_min_residual_ratio": 0.9008436235043099
+        },
+        "B": {
+          "centered_correlation": 0.3370155458061865,
+          "unit_coefficient_residual_ratio": 0.9084894851865204,
+          "posthoc_optimal_coefficient": 0.6940597093935442,
+          "posthoc_min_residual_ratio": 0.886420536651268
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.30462533235549927,
+        "relative_l2": 1.4666781425476074,
+        "norm_ratio": 1.4199464321136475
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_h_center128_p123",
+      "predictor_sha256": "d083eeefe2605c1af5c956d013f4c80da50a3c3b694642278f234ecef41db246",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.34384147947021604,
+          "unit_coefficient_residual_ratio": 0.9041764141541448,
+          "posthoc_optimal_coefficient": 0.6967137598026047,
+          "posthoc_min_residual_ratio": 0.8817730864874296
+        },
+        "A": {
+          "centered_correlation": 0.3287614998219662,
+          "unit_coefficient_residual_ratio": 0.941132776592845,
+          "posthoc_optimal_coefficient": 0.5970858949044217,
+          "posthoc_min_residual_ratio": 0.8919159906562566
+        },
+        "B": {
+          "centered_correlation": 0.3449153283897121,
+          "unit_coefficient_residual_ratio": 0.9021309204878185,
+          "posthoc_optimal_coefficient": 0.7036722973340126,
+          "posthoc_min_residual_ratio": 0.8810335086793658
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.23089027404785156,
+        "relative_l2": 3.9975838661193848,
+        "norm_ratio": 4.1082587242126465
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_h_global128_p123",
+      "predictor_sha256": "600876f24f6a599ecd76868eec74ee40074610bafc18ddc903746843ec1370ec",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.32490376080980327,
+          "unit_coefficient_residual_ratio": 0.8992875633660419,
+          "posthoc_optimal_coefficient": 0.8234880207281853,
+          "posthoc_min_residual_ratio": 0.8944374469205149
+        },
+        "A": {
+          "centered_correlation": 0.31577529561121037,
+          "unit_coefficient_residual_ratio": 0.9090888288222151,
+          "posthoc_optimal_coefficient": 0.7709388559767572,
+          "posthoc_min_residual_ratio": 0.9002859978960177
+        },
+        "B": {
+          "centered_correlation": 0.3254433641237481,
+          "unit_coefficient_residual_ratio": 0.8987451364370679,
+          "posthoc_optimal_coefficient": 0.8266365606892081,
+          "posthoc_min_residual_ratio": 0.8940867264261586
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.3266496956348419,
+        "relative_l2": 1.319629192352295,
+        "norm_ratio": 1.247584581375122
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_h_global512_p123",
+      "predictor_sha256": "c46b3d9daf84620efa46c56ce52f4a02af884b0311e43b2c38f15434884145a8",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.33249409670426333,
+          "unit_coefficient_residual_ratio": 0.8925082013907923,
+          "posthoc_optimal_coefficient": 0.8573492171137385,
+          "posthoc_min_residual_ratio": 0.8894475984642063
+        },
+        "A": {
+          "centered_correlation": 0.30805095868575566,
+          "unit_coefficient_residual_ratio": 0.9182276408922322,
+          "posthoc_optimal_coefficient": 0.728930192062893,
+          "posthoc_min_residual_ratio": 0.9051046172806145
+        },
+        "B": {
+          "centered_correlation": 0.3340551764475704,
+          "unit_coefficient_residual_ratio": 0.8910846876238976,
+          "posthoc_optimal_coefficient": 0.8658787119194319,
+          "posthoc_min_residual_ratio": 0.8884072552475849
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.33299994468688965,
+        "relative_l2": 1.241235613822937,
+        "norm_ratio": 1.140189528465271
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_h_labelglobal128_p123",
+      "predictor_sha256": "5f5ebddd6eb176fdaff0f40aaa377634ef468a039188e21f5912e1fe994d66ce",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.3446486645941166,
+          "unit_coefficient_residual_ratio": 0.8860592282834369,
+          "posthoc_optimal_coefficient": 0.8320162043155487,
+          "posthoc_min_residual_ratio": 0.8812173043807559
+        },
+        "A": {
+          "centered_correlation": 0.30846006770190826,
+          "unit_coefficient_residual_ratio": 0.9397117684775962,
+          "posthoc_optimal_coefficient": 0.6229418794709768,
+          "posthoc_min_residual_ratio": 0.9048523580768633
+        },
+        "B": {
+          "centered_correlation": 0.34746552737773295,
+          "unit_coefficient_residual_ratio": 0.8830895338256082,
+          "posthoc_optimal_coefficient": 0.8489552564201689,
+          "posthoc_min_residual_ratio": 0.8792677825251766
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.35986271500587463,
+        "relative_l2": 1.2474846839904785,
+        "norm_ratio": 1.1879442930221558
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__refit_labelglobal128_p123",
+      "predictor_sha256": "59aa9c3a484a9d4e704514e755e1d9bc8736dfd535fb87ea9ae827e98adf0f13",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.3199663240627289,
+          "unit_coefficient_residual_ratio": 0.9658672448897867,
+          "posthoc_optimal_coefficient": 0.5505222914760607,
+          "posthoc_min_residual_ratio": 0.8976216589335616
+        },
+        "A": {
+          "centered_correlation": 0.3186220661165306,
+          "unit_coefficient_residual_ratio": 1.0333146937471738,
+          "posthoc_optimal_coefficient": 0.4645853025138678,
+          "posthoc_min_residual_ratio": 0.8984801187726926
+        },
+        "B": {
+          "centered_correlation": 0.32036443787726565,
+          "unit_coefficient_residual_ratio": 0.9621338615202565,
+          "posthoc_optimal_coefficient": 0.5572926734135518,
+          "posthoc_min_residual_ratio": 0.8973666831102566
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.3884277641773224,
+        "relative_l2": 1.2594934701919556,
+        "norm_ratio": 1.2470312118530273
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__multistate_h128_p123",
+      "predictor_sha256": "7d3a96c665dc12fd34a00bdbc2861493cca699c63223341c4f0f5fbd22126e3c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.34170499522711995,
+          "unit_coefficient_residual_ratio": 0.8933923406147344,
+          "posthoc_optimal_coefficient": 0.7722573038610744,
+          "posthoc_min_residual_ratio": 0.8832377165272689
+        },
+        "A": {
+          "centered_correlation": 0.31771942515006263,
+          "unit_coefficient_residual_ratio": 0.9200795983221248,
+          "posthoc_optimal_coefficient": 0.6866341725864255,
+          "posthoc_min_residual_ratio": 0.8990543794306439
+        },
+        "B": {
+          "centered_correlation": 0.3431179991511496,
+          "unit_coefficient_residual_ratio": 0.8919152595315873,
+          "posthoc_optimal_coefficient": 0.7774672586161373,
+          "posthoc_min_residual_ratio": 0.8822701671685051
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.1763014793395996,
+        "relative_l2": 1.1779569387435913,
+        "norm_ratio": 0.8233445882797241
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__multistate_labelstate128_p123",
+      "predictor_sha256": "3a997bfd4e3787e669af383e10b98937ea857bbd28392634750e38db49eb0a80",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.3446486645941166,
+          "unit_coefficient_residual_ratio": 0.8860592282834369,
+          "posthoc_optimal_coefficient": 0.8320162043155487,
+          "posthoc_min_residual_ratio": 0.8812173043807559
+        },
+        "A": {
+          "centered_correlation": 0.30846006770190826,
+          "unit_coefficient_residual_ratio": 0.9397117684775962,
+          "posthoc_optimal_coefficient": 0.6229418794709768,
+          "posthoc_min_residual_ratio": 0.9048523580768633
+        },
+        "B": {
+          "centered_correlation": 0.34746552737773295,
+          "unit_coefficient_residual_ratio": 0.8830895338256082,
+          "posthoc_optimal_coefficient": 0.8489552564201689,
+          "posthoc_min_residual_ratio": 0.8792677825251766
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.35986271500587463,
+        "relative_l2": 1.2474846839904785,
+        "norm_ratio": 1.1879442930221558
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__multistate_state128_p123",
+      "predictor_sha256": "80d44711967191174ddfafb8a6298a04b46afd409c1510118f18db9778baf020",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.32490376080980327,
+          "unit_coefficient_residual_ratio": 0.8992875633660419,
+          "posthoc_optimal_coefficient": 0.8234880207281853,
+          "posthoc_min_residual_ratio": 0.8944374469205149
+        },
+        "A": {
+          "centered_correlation": 0.31577529561121037,
+          "unit_coefficient_residual_ratio": 0.9090888288222151,
+          "posthoc_optimal_coefficient": 0.7709388559767572,
+          "posthoc_min_residual_ratio": 0.9002859978960177
+        },
+        "B": {
+          "centered_correlation": 0.3254433641237481,
+          "unit_coefficient_residual_ratio": 0.8987451364370679,
+          "posthoc_optimal_coefficient": 0.8266365606892081,
+          "posthoc_min_residual_ratio": 0.8940867264261586
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.3266496956348419,
+        "relative_l2": 1.319629192352295,
+        "norm_ratio": 1.247584581375122
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 32,
+      "predictor": "paws__multistate_state512_p123",
+      "predictor_sha256": "1bb26afbbf2a170d7741b888c7569ee7de99c851208a5c656cecf5999b408aad",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.33249409670426333,
+          "unit_coefficient_residual_ratio": 0.8925082013907923,
+          "posthoc_optimal_coefficient": 0.8573492171137385,
+          "posthoc_min_residual_ratio": 0.8894475984642063
+        },
+        "A": {
+          "centered_correlation": 0.30805095868575566,
+          "unit_coefficient_residual_ratio": 0.9182276408922322,
+          "posthoc_optimal_coefficient": 0.728930192062893,
+          "posthoc_min_residual_ratio": 0.9051046172806145
+        },
+        "B": {
+          "centered_correlation": 0.3340551764475704,
+          "unit_coefficient_residual_ratio": 0.8910846876238976,
+          "posthoc_optimal_coefficient": 0.8658787119194319,
+          "posthoc_min_residual_ratio": 0.8884072552475849
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.33299994468688965,
+        "relative_l2": 1.241235613822937,
+        "norm_ratio": 1.140189528465271
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws_predictor_p123",
+      "predictor_sha256": "998343bdb276b459ee3fd3577ad3a6640077a853e54d4eaed36dd8eb21a0ff3b",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.17541925311808304,
+          "unit_coefficient_residual_ratio": 0.9812491887339865,
+          "posthoc_optimal_coefficient": 2.6668047126801597,
+          "posthoc_min_residual_ratio": 0.9692281274724824
+        },
+        "A": {
+          "centered_correlation": 0.26324050706896324,
+          "unit_coefficient_residual_ratio": 0.9587099384675069,
+          "posthoc_optimal_coefficient": 2.7451727786045446,
+          "posthoc_min_residual_ratio": 0.9307044567330445
+        },
+        "B": {
+          "centered_correlation": 0.1700036433537546,
+          "unit_coefficient_residual_ratio": 0.9823453554239232,
+          "posthoc_optimal_coefficient": 2.658235398820978,
+          "posthoc_min_residual_ratio": 0.9710988227640732
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.04928011819720268,
+        "relative_l2": 1.0285662412643433,
+        "norm_ratio": 0.2949976921081543
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_center128_p123",
+      "predictor_sha256": "066ab5adb38559bb6c76cb642ec41b558ad2a06ca86e7b299407a6678e6a78b6",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.2186338895558774,
+          "unit_coefficient_residual_ratio": 0.9705536521383292,
+          "posthoc_optimal_coefficient": 0.6174139427784493,
+          "posthoc_min_residual_ratio": 0.9521991454252025
+        },
+        "A": {
+          "centered_correlation": 0.18824494384129728,
+          "unit_coefficient_residual_ratio": 1.0148438620730411,
+          "posthoc_optimal_coefficient": 0.45637659033969846,
+          "posthoc_min_residual_ratio": 0.9645638298937063
+        },
+        "B": {
+          "centered_correlation": 0.22052478959637975,
+          "unit_coefficient_residual_ratio": 0.9683994064306805,
+          "posthoc_optimal_coefficient": 0.6282288993446047,
+          "posthoc_min_residual_ratio": 0.9513687810873771
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.24978584051132202,
+        "relative_l2": 2.2730374336242676,
+        "norm_ratio": 1.806689739227295
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_global128_p123",
+      "predictor_sha256": "77fca72b32e897427d3a6e01ad6d25593679b830e537196341fcc8ff50fda8dc",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.22290881526587034,
+          "unit_coefficient_residual_ratio": 0.9630128129629963,
+          "posthoc_optimal_coefficient": 0.6641935764649567,
+          "posthoc_min_residual_ratio": 0.9503116145705675
+        },
+        "A": {
+          "centered_correlation": 0.20157637716368138,
+          "unit_coefficient_residual_ratio": 1.000410939448805,
+          "posthoc_optimal_coefficient": 0.49874208274336645,
+          "posthoc_min_residual_ratio": 0.95936697691066
+        },
+        "B": {
+          "centered_correlation": 0.22441470848786355,
+          "unit_coefficient_residual_ratio": 0.961193699649622,
+          "posthoc_optimal_coefficient": 0.6761260963647948,
+          "posthoc_min_residual_ratio": 0.9496380317561811
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.2784477174282074,
+        "relative_l2": 1.2523165941238403,
+        "norm_ratio": 0.5251878499984741
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_global512_p123",
+      "predictor_sha256": "a42be3a5fd646c56bf6689feeedbbfdbddc01c3fe996dad717a20b926510ff4c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.23277845085939283,
+          "unit_coefficient_residual_ratio": 0.9505526512084902,
+          "posthoc_optimal_coefficient": 0.7717727563239829,
+          "posthoc_min_residual_ratio": 0.9458141503184407
+        },
+        "A": {
+          "centered_correlation": 0.1955386490240877,
+          "unit_coefficient_residual_ratio": 0.9900965856638966,
+          "posthoc_optimal_coefficient": 0.5374012154002901,
+          "posthoc_min_residual_ratio": 0.9617645804271292
+        },
+        "B": {
+          "centered_correlation": 0.2352465282592518,
+          "unit_coefficient_residual_ratio": 0.948629308838894,
+          "posthoc_optimal_coefficient": 0.7887384005705678,
+          "posthoc_min_residual_ratio": 0.944659044421639
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.09286777675151825,
+        "relative_l2": 1.143614411354065,
+        "norm_ratio": 0.46969616413116455
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_h_center128_p123",
+      "predictor_sha256": "d083eeefe2605c1af5c956d013f4c80da50a3c3b694642278f234ecef41db246",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.23093277505464083,
+          "unit_coefficient_residual_ratio": 0.9654964806528751,
+          "posthoc_optimal_coefficient": 0.6272923835961505,
+          "posthoc_min_residual_ratio": 0.9466699806993847
+        },
+        "A": {
+          "centered_correlation": 0.2189844151623107,
+          "unit_coefficient_residual_ratio": 1.0190812208893067,
+          "posthoc_optimal_coefficient": 0.45822574447922126,
+          "posthoc_min_residual_ratio": 0.952045785017069
+        },
+        "B": {
+          "centered_correlation": 0.23224091212379566,
+          "unit_coefficient_residual_ratio": 0.962890234553345,
+          "posthoc_optimal_coefficient": 0.6416271366973175,
+          "posthoc_min_residual_ratio": 0.9460641539986745
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.23831456899642944,
+        "relative_l2": 1.7746243476867676,
+        "norm_ratio": 1.246975064277649
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_h_global128_p123",
+      "predictor_sha256": "600876f24f6a599ecd76868eec74ee40074610bafc18ddc903746843ec1370ec",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.22708934976965772,
+          "unit_coefficient_residual_ratio": 0.9544011026497761,
+          "posthoc_optimal_coefficient": 0.7461207098665746,
+          "posthoc_min_residual_ratio": 0.9484303616327677
+        },
+        "A": {
+          "centered_correlation": 0.2147685161836035,
+          "unit_coefficient_residual_ratio": 0.9794977674156591,
+          "posthoc_optimal_coefficient": 0.5729586531398365,
+          "posthoc_min_residual_ratio": 0.9538744000331706
+        },
+        "B": {
+          "centered_correlation": 0.228155168305644,
+          "unit_coefficient_residual_ratio": 0.9531805694690106,
+          "posthoc_optimal_coefficient": 0.7592247016565389,
+          "posthoc_min_residual_ratio": 0.9479452984555107
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.09611013531684875,
+        "relative_l2": 1.1019682884216309,
+        "norm_ratio": 0.37672296166419983
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_h_global512_p123",
+      "predictor_sha256": "c46b3d9daf84620efa46c56ce52f4a02af884b0311e43b2c38f15434884145a8",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.224502496302387,
+          "unit_coefficient_residual_ratio": 0.9544571617944727,
+          "posthoc_optimal_coefficient": 0.7630819610587286,
+          "posthoc_min_residual_ratio": 0.9495985846922813
+        },
+        "A": {
+          "centered_correlation": 0.191465640713596,
+          "unit_coefficient_residual_ratio": 0.9923414421889574,
+          "posthoc_optimal_coefficient": 0.5292597416963083,
+          "posthoc_min_residual_ratio": 0.9633407816356653
+        },
+        "B": {
+          "centered_correlation": 0.22681276730045008,
+          "unit_coefficient_residual_ratio": 0.9526144087802566,
+          "posthoc_optimal_coefficient": 0.7807163377668871,
+          "posthoc_min_residual_ratio": 0.9485559657165873
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.01992480456829071,
+        "relative_l2": 1.0776044130325317,
+        "norm_ratio": 0.3821055293083191
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_h_labelglobal128_p123",
+      "predictor_sha256": "5f5ebddd6eb176fdaff0f40aaa377634ef468a039188e21f5912e1fe994d66ce",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.23068974840419926,
+          "unit_coefficient_residual_ratio": 0.9551330546999315,
+          "posthoc_optimal_coefficient": 0.7162662939920604,
+          "posthoc_min_residual_ratio": 0.9467821874101418
+        },
+        "A": {
+          "centered_correlation": 0.22613173891114105,
+          "unit_coefficient_residual_ratio": 0.9980076168562143,
+          "posthoc_optimal_coefficient": 0.5049677162868416,
+          "posthoc_min_residual_ratio": 0.9488644297771324
+        },
+        "B": {
+          "centered_correlation": 0.23194266864762128,
+          "unit_coefficient_residual_ratio": 0.9530476988062224,
+          "posthoc_optimal_coefficient": 0.7370793902648995,
+          "posthoc_min_residual_ratio": 0.9462024952609772
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.2687116265296936,
+        "relative_l2": 1.1878918409347534,
+        "norm_ratio": 0.4264810383319855
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__refit_labelglobal128_p123",
+      "predictor_sha256": "59aa9c3a484a9d4e704514e755e1d9bc8736dfd535fb87ea9ae827e98adf0f13",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.19601486737822743,
+          "unit_coefficient_residual_ratio": 0.9887403351028217,
+          "posthoc_optimal_coefficient": 0.543241905593055,
+          "posthoc_min_residual_ratio": 0.961578176334128
+        },
+        "A": {
+          "centered_correlation": 0.1550407524927103,
+          "unit_coefficient_residual_ratio": 1.0517548985078453,
+          "posthoc_optimal_coefficient": 0.36027063046208324,
+          "posthoc_min_residual_ratio": 0.9759623656195833
+        },
+        "B": {
+          "centered_correlation": 0.19860591808054814,
+          "unit_coefficient_residual_ratio": 0.9856753742539123,
+          "posthoc_optimal_coefficient": 0.5561665818658613,
+          "posthoc_min_residual_ratio": 0.9605557721129977
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.039324209094047546,
+        "relative_l2": 1.0765223503112793,
+        "norm_ratio": 0.3612338900566101
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__multistate_h128_p123",
+      "predictor_sha256": "7d3a96c665dc12fd34a00bdbc2861493cca699c63223341c4f0f5fbd22126e3c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.28735714468033696,
+          "unit_coefficient_residual_ratio": 0.9216011977204265,
+          "posthoc_optimal_coefficient": 0.8164172278712435,
+          "posthoc_min_residual_ratio": 0.9174258524968956
+        },
+        "A": {
+          "centered_correlation": 0.3135685329466249,
+          "unit_coefficient_residual_ratio": 0.9291513701238323,
+          "posthoc_optimal_coefficient": 0.6541818278698551,
+          "posthoc_min_residual_ratio": 0.9016747242094688
+        },
+        "B": {
+          "centered_correlation": 0.2865830251170027,
+          "unit_coefficient_residual_ratio": 0.9212338445778571,
+          "posthoc_optimal_coefficient": 0.8316861827452284,
+          "posthoc_min_residual_ratio": 0.917870167652549
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.6337841749191284,
+        "relative_l2": 0.7740038633346558,
+        "norm_ratio": 0.6061363220214844
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__multistate_labelstate128_p123",
+      "predictor_sha256": "3a997bfd4e3787e669af383e10b98937ea857bbd28392634750e38db49eb0a80",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.23068974840419926,
+          "unit_coefficient_residual_ratio": 0.9551330546999315,
+          "posthoc_optimal_coefficient": 0.7162662939920604,
+          "posthoc_min_residual_ratio": 0.9467821874101418
+        },
+        "A": {
+          "centered_correlation": 0.22613173891114105,
+          "unit_coefficient_residual_ratio": 0.9980076168562143,
+          "posthoc_optimal_coefficient": 0.5049677162868416,
+          "posthoc_min_residual_ratio": 0.9488644297771324
+        },
+        "B": {
+          "centered_correlation": 0.23194266864762128,
+          "unit_coefficient_residual_ratio": 0.9530476988062224,
+          "posthoc_optimal_coefficient": 0.7370793902648995,
+          "posthoc_min_residual_ratio": 0.9462024952609772
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.2687116265296936,
+        "relative_l2": 1.1878918409347534,
+        "norm_ratio": 0.4264810383319855
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__multistate_state128_p123",
+      "predictor_sha256": "80d44711967191174ddfafb8a6298a04b46afd409c1510118f18db9778baf020",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.22708934976965772,
+          "unit_coefficient_residual_ratio": 0.9544011026497761,
+          "posthoc_optimal_coefficient": 0.7461207098665746,
+          "posthoc_min_residual_ratio": 0.9484303616327677
+        },
+        "A": {
+          "centered_correlation": 0.2147685161836035,
+          "unit_coefficient_residual_ratio": 0.9794977674156591,
+          "posthoc_optimal_coefficient": 0.5729586531398365,
+          "posthoc_min_residual_ratio": 0.9538744000331706
+        },
+        "B": {
+          "centered_correlation": 0.228155168305644,
+          "unit_coefficient_residual_ratio": 0.9531805694690106,
+          "posthoc_optimal_coefficient": 0.7592247016565389,
+          "posthoc_min_residual_ratio": 0.9479452984555107
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.09611013531684875,
+        "relative_l2": 1.1019682884216309,
+        "norm_ratio": 0.37672296166419983
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 128,
+      "predictor": "paws__multistate_state512_p123",
+      "predictor_sha256": "1bb26afbbf2a170d7741b888c7569ee7de99c851208a5c656cecf5999b408aad",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.224502496302387,
+          "unit_coefficient_residual_ratio": 0.9544571617944727,
+          "posthoc_optimal_coefficient": 0.7630819610587286,
+          "posthoc_min_residual_ratio": 0.9495985846922813
+        },
+        "A": {
+          "centered_correlation": 0.191465640713596,
+          "unit_coefficient_residual_ratio": 0.9923414421889574,
+          "posthoc_optimal_coefficient": 0.5292597416963083,
+          "posthoc_min_residual_ratio": 0.9633407816356653
+        },
+        "B": {
+          "centered_correlation": 0.22681276730045008,
+          "unit_coefficient_residual_ratio": 0.9526144087802566,
+          "posthoc_optimal_coefficient": 0.7807163377668871,
+          "posthoc_min_residual_ratio": 0.9485559657165873
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.01992480456829071,
+        "relative_l2": 1.0776044130325317,
+        "norm_ratio": 0.3821055293083191
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws_predictor_p123",
+      "predictor_sha256": "998343bdb276b459ee3fd3577ad3a6640077a853e54d4eaed36dd8eb21a0ff3b",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.0924082709330972,
+          "unit_coefficient_residual_ratio": 0.9922004033777865,
+          "posthoc_optimal_coefficient": 1.4170463117692615,
+          "posthoc_min_residual_ratio": 0.991460661045574
+        },
+        "A": {
+          "centered_correlation": 0.1012128473534815,
+          "unit_coefficient_residual_ratio": 0.9900292059800512,
+          "posthoc_optimal_coefficient": 1.1951735120982767,
+          "posthoc_min_residual_ratio": 0.98975595823578
+        },
+        "B": {
+          "centered_correlation": 0.09195039258723196,
+          "unit_coefficient_residual_ratio": 0.9923400152475444,
+          "posthoc_optimal_coefficient": 1.442240185014323,
+          "posthoc_min_residual_ratio": 0.9915450051471701
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.01754337176680565,
+        "relative_l2": 1.2630616426467896,
+        "norm_ratio": 0.7893157601356506
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_center128_p123",
+      "predictor_sha256": "066ab5adb38559bb6c76cb642ec41b558ad2a06ca86e7b299407a6678e6a78b6",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.10784822200231317,
+          "unit_coefficient_residual_ratio": 1.0573506790839302,
+          "posthoc_optimal_coefficient": 0.2910945122535352,
+          "posthoc_min_residual_ratio": 0.9883688071510198
+        },
+        "A": {
+          "centered_correlation": 0.10955851630920498,
+          "unit_coefficient_residual_ratio": 1.066989433154022,
+          "posthoc_optimal_coefficient": 0.2804773470370659,
+          "posthoc_min_residual_ratio": 0.9879969056714024
+        },
+        "B": {
+          "centered_correlation": 0.10774271668153611,
+          "unit_coefficient_residual_ratio": 1.0567301725729674,
+          "posthoc_optimal_coefficient": 0.2918595359530799,
+          "posthoc_min_residual_ratio": 0.988391437333308
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.05480106174945831,
+        "relative_l2": 4.39134407043457,
+        "norm_ratio": 4.221518039703369
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_global128_p123",
+      "predictor_sha256": "77fca72b32e897427d3a6e01ad6d25593679b830e537196341fcc8ff50fda8dc",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.11101777359993681,
+          "unit_coefficient_residual_ratio": 1.0429275807273737,
+          "posthoc_optimal_coefficient": 0.32079000908864275,
+          "posthoc_min_residual_ratio": 0.9876750542976972
+        },
+        "A": {
+          "centered_correlation": 0.11889235409402601,
+          "unit_coefficient_residual_ratio": 1.0466706338789853,
+          "posthoc_optimal_coefficient": 0.32530357965030976,
+          "posthoc_min_residual_ratio": 0.9858645223132249
+        },
+        "B": {
+          "centered_correlation": 0.11049260800631967,
+          "unit_coefficient_residual_ratio": 1.0426865480794638,
+          "posthoc_optimal_coefficient": 0.3204636265742975,
+          "posthoc_min_residual_ratio": 0.9877913087664391
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.02958844229578972,
+        "relative_l2": 1.7258530855178833,
+        "norm_ratio": 1.3773386478424072
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_global512_p123",
+      "predictor_sha256": "a42be3a5fd646c56bf6689feeedbbfdbddc01c3fe996dad717a20b926510ff4c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.11805260153352838,
+          "unit_coefficient_residual_ratio": 1.0217349562196585,
+          "posthoc_optimal_coefficient": 0.3846348364400528,
+          "posthoc_min_residual_ratio": 0.9860635454149623
+        },
+        "A": {
+          "centered_correlation": 0.13309344949038374,
+          "unit_coefficient_residual_ratio": 1.0101118642311184,
+          "posthoc_optimal_coefficient": 0.44378737648282685,
+          "posthoc_min_residual_ratio": 0.9822861895011911
+        },
+        "B": {
+          "centered_correlation": 0.11711019106682133,
+          "unit_coefficient_residual_ratio": 1.0224830521328498,
+          "posthoc_optimal_coefficient": 0.3810104600040269,
+          "posthoc_min_residual_ratio": 0.986285201673667
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.01839723251760006,
+        "relative_l2": 1.506670594215393,
+        "norm_ratio": 1.1455150842666626
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_h_center128_p123",
+      "predictor_sha256": "d083eeefe2605c1af5c956d013f4c80da50a3c3b694642278f234ecef41db246",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.11398595269361442,
+          "unit_coefficient_residual_ratio": 1.0422774709509568,
+          "posthoc_optimal_coefficient": 0.3265304583346003,
+          "posthoc_min_residual_ratio": 0.9870071900796001
+        },
+        "A": {
+          "centered_correlation": 0.11816272126275272,
+          "unit_coefficient_residual_ratio": 1.051679556064576,
+          "posthoc_optimal_coefficient": 0.3156312206219367,
+          "posthoc_min_residual_ratio": 0.9860375253229113
+        },
+        "B": {
+          "centered_correlation": 0.11371694333604106,
+          "unit_coefficient_residual_ratio": 1.0416721817890908,
+          "posthoc_optimal_coefficient": 0.3273451057766048,
+          "posthoc_min_residual_ratio": 0.9870683906814494
+        }
+      },
+      "batch_lora": {
+        "cosine": -0.052579738199710846,
+        "relative_l2": 3.3132071495056152,
+        "norm_ratio": 3.106550931930542
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_h_global128_p123",
+      "predictor_sha256": "600876f24f6a599ecd76868eec74ee40074610bafc18ddc903746843ec1370ec",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.10900158841592365,
+          "unit_coefficient_residual_ratio": 1.025333554729396,
+          "posthoc_optimal_coefficient": 0.3610360697592654,
+          "posthoc_min_residual_ratio": 0.9881186806995063
+        },
+        "A": {
+          "centered_correlation": 0.11668292724243445,
+          "unit_coefficient_residual_ratio": 1.0239626145346619,
+          "posthoc_optimal_coefficient": 0.3757517280825292,
+          "posthoc_min_residual_ratio": 0.9863850673503142
+        },
+        "B": {
+          "centered_correlation": 0.10849518975194099,
+          "unit_coefficient_residual_ratio": 1.0254217591017833,
+          "posthoc_optimal_coefficient": 0.3600302762481332,
+          "posthoc_min_residual_ratio": 0.9882286891923413
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.011589152738451958,
+        "relative_l2": 1.4105019569396973,
+        "norm_ratio": 1.00640070438385
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_h_global512_p123",
+      "predictor_sha256": "c46b3d9daf84620efa46c56ce52f4a02af884b0311e43b2c38f15434884145a8",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.1152596631831791,
+          "unit_coefficient_residual_ratio": 1.0149223344853906,
+          "posthoc_optimal_coefficient": 0.40697705529492606,
+          "posthoc_min_residual_ratio": 0.9867152976727681
+        },
+        "A": {
+          "centered_correlation": 0.12813898485174233,
+          "unit_coefficient_residual_ratio": 1.0107575535013829,
+          "posthoc_optimal_coefficient": 0.437343571109563,
+          "posthoc_min_residual_ratio": 0.9835803975301961
+        },
+        "B": {
+          "centered_correlation": 0.11440489278568226,
+          "unit_coefficient_residual_ratio": 1.0151902704749232,
+          "posthoc_optimal_coefficient": 0.40487575916159746,
+          "posthoc_min_residual_ratio": 0.9869115530867787
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.048113688826560974,
+        "relative_l2": 1.343858003616333,
+        "norm_ratio": 0.9471517205238342
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_h_labelglobal128_p123",
+      "predictor_sha256": "5f5ebddd6eb176fdaff0f40aaa377634ef468a039188e21f5912e1fe994d66ce",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.11903155091867199,
+          "unit_coefficient_residual_ratio": 1.0236762127945702,
+          "posthoc_optimal_coefficient": 0.37960261179541743,
+          "posthoc_min_residual_ratio": 0.985831486258727
+        },
+        "A": {
+          "centered_correlation": 0.12937042509978208,
+          "unit_coefficient_residual_ratio": 1.0325455040357803,
+          "posthoc_optimal_coefficient": 0.3681922483559212,
+          "posthoc_min_residual_ratio": 0.9832632522932802
+        },
+        "B": {
+          "centered_correlation": 0.11833994834760096,
+          "unit_coefficient_residual_ratio": 1.0231054909308077,
+          "posthoc_optimal_coefficient": 0.3805401347964383,
+          "posthoc_min_residual_ratio": 0.985995668152295
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.01686122827231884,
+        "relative_l2": 1.4059052467346191,
+        "norm_ratio": 1.0052204132080078
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__refit_labelglobal128_p123",
+      "predictor_sha256": "59aa9c3a484a9d4e704514e755e1d9bc8736dfd535fb87ea9ae827e98adf0f13",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.08930007581976525,
+          "unit_coefficient_residual_ratio": 1.0920339417996887,
+          "posthoc_optimal_coefficient": 0.2201997944363466,
+          "posthoc_min_residual_ratio": 0.9920254400031661
+        },
+        "A": {
+          "centered_correlation": 0.09787106328840808,
+          "unit_coefficient_residual_ratio": 1.0797789635939419,
+          "posthoc_optimal_coefficient": 0.24665160821260063,
+          "posthoc_min_residual_ratio": 0.9904212113977939
+        },
+        "B": {
+          "centered_correlation": 0.0887625006169724,
+          "unit_coefficient_residual_ratio": 1.092822548917263,
+          "posthoc_optimal_coefficient": 0.21857444224560219,
+          "posthoc_min_residual_ratio": 0.9921212417874624
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.09043529629707336,
+        "relative_l2": 1.3871500492095947,
+        "norm_ratio": 1.0560251474380493
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__multistate_h128_p123",
+      "predictor_sha256": "7d3a96c665dc12fd34a00bdbc2861493cca699c63223341c4f0f5fbd22126e3c",
+      "explicit_state": false,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.136828191012312,
+          "unit_coefficient_residual_ratio": 1.0157033734925247,
+          "posthoc_optimal_coefficient": 0.4244460303790733,
+          "posthoc_min_residual_ratio": 0.9812781367816266
+        },
+        "A": {
+          "centered_correlation": 0.14191735514395767,
+          "unit_coefficient_residual_ratio": 1.0268313116368697,
+          "posthoc_optimal_coefficient": 0.3957015482907743,
+          "posthoc_min_residual_ratio": 0.9798594584989628
+        },
+        "B": {
+          "centered_correlation": 0.13652124393704318,
+          "unit_coefficient_residual_ratio": 1.014987147475456,
+          "posthoc_optimal_coefficient": 0.42677145000725036,
+          "posthoc_min_residual_ratio": 0.9813619663505108
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.19584500789642334,
+        "relative_l2": 1.5046792030334473,
+        "norm_ratio": 1.3370789289474487
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__multistate_labelstate128_p123",
+      "predictor_sha256": "3a997bfd4e3787e669af383e10b98937ea857bbd28392634750e38db49eb0a80",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.11903155091867199,
+          "unit_coefficient_residual_ratio": 1.0236762127945702,
+          "posthoc_optimal_coefficient": 0.37960261179541743,
+          "posthoc_min_residual_ratio": 0.985831486258727
+        },
+        "A": {
+          "centered_correlation": 0.12937042509978208,
+          "unit_coefficient_residual_ratio": 1.0325455040357803,
+          "posthoc_optimal_coefficient": 0.3681922483559212,
+          "posthoc_min_residual_ratio": 0.9832632522932802
+        },
+        "B": {
+          "centered_correlation": 0.11833994834760096,
+          "unit_coefficient_residual_ratio": 1.0231054909308077,
+          "posthoc_optimal_coefficient": 0.3805401347964383,
+          "posthoc_min_residual_ratio": 0.985995668152295
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.01686122827231884,
+        "relative_l2": 1.4059052467346191,
+        "norm_ratio": 1.0052204132080078
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__multistate_state128_p123",
+      "predictor_sha256": "80d44711967191174ddfafb8a6298a04b46afd409c1510118f18db9778baf020",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.10900158841592365,
+          "unit_coefficient_residual_ratio": 1.025333554729396,
+          "posthoc_optimal_coefficient": 0.3610360697592654,
+          "posthoc_min_residual_ratio": 0.9881186806995063
+        },
+        "A": {
+          "centered_correlation": 0.11668292724243445,
+          "unit_coefficient_residual_ratio": 1.0239626145346619,
+          "posthoc_optimal_coefficient": 0.3757517280825292,
+          "posthoc_min_residual_ratio": 0.9863850673503142
+        },
+        "B": {
+          "centered_correlation": 0.10849518975194099,
+          "unit_coefficient_residual_ratio": 1.0254217591017833,
+          "posthoc_optimal_coefficient": 0.3600302762481332,
+          "posthoc_min_residual_ratio": 0.9882286891923413
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.011589152738451958,
+        "relative_l2": 1.4105019569396973,
+        "norm_ratio": 1.00640070438385
+      }
+    },
+    {
+      "task": "paws",
+      "teacher_step": 256,
+      "predictor": "paws__multistate_state512_p123",
+      "predictor_sha256": "1bb26afbbf2a170d7741b888c7569ee7de99c851208a5c656cecf5999b408aad",
+      "explicit_state": true,
+      "n": 132,
+      "metrics": {
+        "all": {
+          "centered_correlation": 0.1152596631831791,
+          "unit_coefficient_residual_ratio": 1.0149223344853906,
+          "posthoc_optimal_coefficient": 0.40697705529492606,
+          "posthoc_min_residual_ratio": 0.9867152976727681
+        },
+        "A": {
+          "centered_correlation": 0.12813898485174233,
+          "unit_coefficient_residual_ratio": 1.0107575535013829,
+          "posthoc_optimal_coefficient": 0.437343571109563,
+          "posthoc_min_residual_ratio": 0.9835803975301961
+        },
+        "B": {
+          "centered_correlation": 0.11440489278568226,
+          "unit_coefficient_residual_ratio": 1.0151902704749232,
+          "posthoc_optimal_coefficient": 0.40487575916159746,
+          "posthoc_min_residual_ratio": 0.9869115530867787
+        }
+      },
+      "batch_lora": {
+        "cosine": 0.048113688826560974,
+        "relative_l2": 1.343858003616333,
+        "norm_ratio": 0.9471517205238342
+      }
+    }
+  ],
+  "teacher_receipts": [
+    {
+      "teacher_step": 0,
+      "adapter_sha256": "e551d23e6ca44dad14688e56c10bc0c6d9e0a9fa5edf2a6a239b5999a7b0daa6",
+      "collection_audit": {
+        "seconds": 1.5913233757019043,
+        "max_reconstruction_relative_l2": 0.002276469487696886,
+        "min_reconstruction_cosine": 0.9999974370002747
+      }
+    },
+    {
+      "teacher_step": 32,
+      "adapter_sha256": "27fa45ebc550fb32c8904c9321048ca3aeeea91e44f15743046e1f43cb97de6d",
+      "collection_audit": {
+        "seconds": 0.4368469715118408,
+        "max_reconstruction_relative_l2": 0.002269848482683301,
+        "min_reconstruction_cosine": 0.9999974966049194
+      }
+    },
+    {
+      "teacher_step": 128,
+      "adapter_sha256": "b08f73bcbef0f3fa396f007c42d98af30e083b1567dbec54c607f9153d11ed4f",
+      "collection_audit": {
+        "seconds": 0.443622350692749,
+        "max_reconstruction_relative_l2": 0.002318191109225154,
+        "min_reconstruction_cosine": 0.9999973177909851
+      }
+    },
+    {
+      "teacher_step": 256,
+      "adapter_sha256": "7a9de971bcdb48283638d9c3d51bf2aa6cc05d47b47acca6f3599a7936810857",
+      "collection_audit": {
+        "seconds": 0.4475436210632324,
+        "max_reconstruction_relative_l2": 0.0022786674089729786,
+        "min_reconstruction_cosine": 0.9999974370002747
+      }
+    }
+  ],
+  "gradient_data_sha256": "0a2f344bd40d988404a87dd285554ea7b96a962b689ef357dc4142cd08bc7eae",
+  "full_inputs": true,
+  "scope": "All frozen predictors evaluated on the same held-out gradient examples and same Oracle32 LR3e-4 seed101 states. No fitting or checkpoint selection uses these diagnostics. Post-hoc optimal coefficients use diagnostic labels and are never deployed; they quantify possible rescaling only. These audits are research overhead, excluded from adaptation timing."
+}

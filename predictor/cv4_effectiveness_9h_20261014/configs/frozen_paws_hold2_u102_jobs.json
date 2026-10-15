@@ -1,0 +1,22 @@
+[
+  {
+    "name": "gpu_hold2_lr0.0003",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "prefix_micro": 32,
+    "cache": false,
+    "anchor_every": 2,
+    "residual_ema": 0.0,
+    "pred_bf16": false
+  }
+]

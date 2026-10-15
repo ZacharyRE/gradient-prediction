@@ -1,0 +1,125 @@
+[
+  {
+    "name": "cachedhead_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "cachedhead_cv4_lr0.0003_cal1_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "cal_every": 1,
+    "cal_epochs": 1,
+    "cal_lr": 0.0003,
+    "cal_scope": "head",
+    "replay_size": 4
+  },
+  {
+    "name": "cachedhead_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "cachedhead_cv8_lr0.0003_cal1_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "cal_every": 1,
+    "cal_epochs": 1,
+    "cal_lr": 0.0003,
+    "cal_scope": "head",
+    "replay_size": 8
+  },
+  {
+    "name": "cachedhead_cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "cachedhead_cv16_lr0.0003_cal1_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "cal_every": 1,
+    "cal_epochs": 1,
+    "cal_lr": 0.0003,
+    "cal_scope": "head",
+    "replay_size": 16
+  }
+]

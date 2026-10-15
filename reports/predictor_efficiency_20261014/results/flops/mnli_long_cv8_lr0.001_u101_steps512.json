@@ -1,0 +1,2263 @@
+{
+  "task": "mnli",
+  "recipe": "long_cv8_lr0.001",
+  "module": "research_fastio",
+  "steps": 512,
+  "seed": 101,
+  "predictor_seed": 123,
+  "total_matrix_flops": 3363489015590912,
+  "online_matrix_flops": 2863357774072832,
+  "step_counts": [
+    {
+      "step": 1,
+      "matrix_flops": 5373739010048
+    },
+    {
+      "step": 2,
+      "matrix_flops": 5062589072384
+    },
+    {
+      "step": 3,
+      "matrix_flops": 4782919991296
+    },
+    {
+      "step": 4,
+      "matrix_flops": 5057951073280
+    },
+    {
+      "step": 5,
+      "matrix_flops": 4476632497152
+    },
+    {
+      "step": 6,
+      "matrix_flops": 5661099887616
+    },
+    {
+      "step": 7,
+      "matrix_flops": 5968907145216
+    },
+    {
+      "step": 8,
+      "matrix_flops": 6857207979008
+    },
+    {
+      "step": 9,
+      "matrix_flops": 5392543254528
+    },
+    {
+      "step": 10,
+      "matrix_flops": 6849385864192
+    },
+    {
+      "step": 11,
+      "matrix_flops": 5953297747968
+    },
+    {
+      "step": 12,
+      "matrix_flops": 6853804727296
+    },
+    {
+      "step": 13,
+      "matrix_flops": 7147252850688
+    },
+    {
+      "step": 14,
+      "matrix_flops": 5659641613312
+    },
+    {
+      "step": 15,
+      "matrix_flops": 5072136455168
+    },
+    {
+      "step": 16,
+      "matrix_flops": 5061461754880
+    },
+    {
+      "step": 17,
+      "matrix_flops": 5072327623680
+    },
+    {
+      "step": 18,
+      "matrix_flops": 7447887127552
+    },
+    {
+      "step": 19,
+      "matrix_flops": 5061727339520
+    },
+    {
+      "step": 20,
+      "matrix_flops": 5071014364160
+    },
+    {
+      "step": 21,
+      "matrix_flops": 5963471884288
+    },
+    {
+      "step": 22,
+      "matrix_flops": 5657967086592
+    },
+    {
+      "step": 23,
+      "matrix_flops": 7144165908480
+    },
+    {
+      "step": 24,
+      "matrix_flops": 5363174934528
+    },
+    {
+      "step": 25,
+      "matrix_flops": 5961646641152
+    },
+    {
+      "step": 26,
+      "matrix_flops": 4482267610112
+    },
+    {
+      "step": 27,
+      "matrix_flops": 5069208273920
+    },
+    {
+      "step": 28,
+      "matrix_flops": 5971039588352
+    },
+    {
+      "step": 29,
+      "matrix_flops": 5367787931648
+    },
+    {
+      "step": 30,
+      "matrix_flops": 5366134769664
+    },
+    {
+      "step": 31,
+      "matrix_flops": 4780240764928
+    },
+    {
+      "step": 32,
+      "matrix_flops": 5080797660160
+    },
+    {
+      "step": 33,
+      "matrix_flops": 5062980420608
+    },
+    {
+      "step": 34,
+      "matrix_flops": 5355252303872
+    },
+    {
+      "step": 35,
+      "matrix_flops": 5072377054208
+    },
+    {
+      "step": 36,
+      "matrix_flops": 5355631511552
+    },
+    {
+      "step": 37,
+      "matrix_flops": 4776901165056
+    },
+    {
+      "step": 38,
+      "matrix_flops": 5661452323840
+    },
+    {
+      "step": 39,
+      "matrix_flops": 5359746729984
+    },
+    {
+      "step": 40,
+      "matrix_flops": 5069505872896
+    },
+    {
+      "step": 41,
+      "matrix_flops": 6549326043136
+    },
+    {
+      "step": 42,
+      "matrix_flops": 5949438513152
+    },
+    {
+      "step": 43,
+      "matrix_flops": 5365633026048
+    },
+    {
+      "step": 44,
+      "matrix_flops": 7460057605120
+    },
+    {
+      "step": 45,
+      "matrix_flops": 5066604119040
+    },
+    {
+      "step": 46,
+      "matrix_flops": 5956619407360
+    },
+    {
+      "step": 47,
+      "matrix_flops": 5058165392384
+    },
+    {
+      "step": 48,
+      "matrix_flops": 6249098286080
+    },
+    {
+      "step": 49,
+      "matrix_flops": 5080939578368
+    },
+    {
+      "step": 50,
+      "matrix_flops": 5363379734528
+    },
+    {
+      "step": 51,
+      "matrix_flops": 5965655117824
+    },
+    {
+      "step": 52,
+      "matrix_flops": 5066984768512
+    },
+    {
+      "step": 53,
+      "matrix_flops": 5059781215232
+    },
+    {
+      "step": 54,
+      "matrix_flops": 5084798714880
+    },
+    {
+      "step": 55,
+      "matrix_flops": 5681099410432
+    },
+    {
+      "step": 56,
+      "matrix_flops": 5072261334016
+    },
+    {
+      "step": 57,
+      "matrix_flops": 5380223191040
+    },
+    {
+      "step": 58,
+      "matrix_flops": 4769264369664
+    },
+    {
+      "step": 59,
+      "matrix_flops": 5653788544000
+    },
+    {
+      "step": 60,
+      "matrix_flops": 6853866953728
+    },
+    {
+      "step": 61,
+      "matrix_flops": 6575798818816
+    },
+    {
+      "step": 62,
+      "matrix_flops": 4802806677504
+    },
+    {
+      "step": 63,
+      "matrix_flops": 5072963290112
+    },
+    {
+      "step": 64,
+      "matrix_flops": 5959678758912
+    },
+    {
+      "step": 65,
+      "matrix_flops": 5103059895296
+    },
+    {
+      "step": 66,
+      "matrix_flops": 5059617506304
+    },
+    {
+      "step": 67,
+      "matrix_flops": 6269158511616
+    },
+    {
+      "step": 68,
+      "matrix_flops": 6550721566720
+    },
+    {
+      "step": 69,
+      "matrix_flops": 5062600557568
+    },
+    {
+      "step": 70,
+      "matrix_flops": 5967549190144
+    },
+    {
+      "step": 71,
+      "matrix_flops": 4772203233280
+    },
+    {
+      "step": 72,
+      "matrix_flops": 5676189600768
+    },
+    {
+      "step": 73,
+      "matrix_flops": 5670991612928
+    },
+    {
+      "step": 74,
+      "matrix_flops": 5655145073664
+    },
+    {
+      "step": 75,
+      "matrix_flops": 5084852225024
+    },
+    {
+      "step": 76,
+      "matrix_flops": 5076591592448
+    },
+    {
+      "step": 77,
+      "matrix_flops": 5661590817792
+    },
+    {
+      "step": 78,
+      "matrix_flops": 5357036029952
+    },
+    {
+      "step": 79,
+      "matrix_flops": 5365084080128
+    },
+    {
+      "step": 80,
+      "matrix_flops": 5955474313216
+    },
+    {
+      "step": 81,
+      "matrix_flops": 6255366755328
+    },
+    {
+      "step": 82,
+      "matrix_flops": 5947777060864
+    },
+    {
+      "step": 83,
+      "matrix_flops": 6862828772352
+    },
+    {
+      "step": 84,
+      "matrix_flops": 5951401005056
+    },
+    {
+      "step": 85,
+      "matrix_flops": 5666721500160
+    },
+    {
+      "step": 86,
+      "matrix_flops": 5072860103680
+    },
+    {
+      "step": 87,
+      "matrix_flops": 5969186312192
+    },
+    {
+      "step": 88,
+      "matrix_flops": 4784279191552
+    },
+    {
+      "step": 89,
+      "matrix_flops": 5065514746880
+    },
+    {
+      "step": 90,
+      "matrix_flops": 5367882303488
+    },
+    {
+      "step": 91,
+      "matrix_flops": 5659491519488
+    },
+    {
+      "step": 92,
+      "matrix_flops": 5069505872896
+    },
+    {
+      "step": 93,
+      "matrix_flops": 5360774793216
+    },
+    {
+      "step": 94,
+      "matrix_flops": 5085365765120
+    },
+    {
+      "step": 95,
+      "matrix_flops": 5383667697664
+    },
+    {
+      "step": 96,
+      "matrix_flops": 5061791532032
+    },
+    {
+      "step": 97,
+      "matrix_flops": 5363432572928
+    },
+    {
+      "step": 98,
+      "matrix_flops": 5356010850304
+    },
+    {
+      "step": 99,
+      "matrix_flops": 8051239316480
+    },
+    {
+      "step": 100,
+      "matrix_flops": 9257844800512
+    },
+    {
+      "step": 101,
+      "matrix_flops": 5361815390208
+    },
+    {
+      "step": 102,
+      "matrix_flops": 5652976765952
+    },
+    {
+      "step": 103,
+      "matrix_flops": 5073997382656
+    },
+    {
+      "step": 104,
+      "matrix_flops": 6851909770240
+    },
+    {
+      "step": 105,
+      "matrix_flops": 5356884985856
+    },
+    {
+      "step": 106,
+      "matrix_flops": 5952266407936
+    },
+    {
+      "step": 107,
+      "matrix_flops": 5074761958400
+    },
+    {
+      "step": 108,
+      "matrix_flops": 6261116752896
+    },
+    {
+      "step": 109,
+      "matrix_flops": 5372584478720
+    },
+    {
+      "step": 110,
+      "matrix_flops": 4780188844032
+    },
+    {
+      "step": 111,
+      "matrix_flops": 7446980027392
+    },
+    {
+      "step": 112,
+      "matrix_flops": 6249502200832
+    },
+    {
+      "step": 113,
+      "matrix_flops": 5367744219136
+    },
+    {
+      "step": 114,
+      "matrix_flops": 7160991997952
+    },
+    {
+      "step": 115,
+      "matrix_flops": 5057473659904
+    },
+    {
+      "step": 116,
+      "matrix_flops": 5062916752384
+    },
+    {
+      "step": 117,
+      "matrix_flops": 9255619787776
+    },
+    {
+      "step": 118,
+      "matrix_flops": 5364174489600
+    },
+    {
+      "step": 119,
+      "matrix_flops": 5362910005248
+    },
+    {
+      "step": 120,
+      "matrix_flops": 5653391526912
+    },
+    {
+      "step": 121,
+      "matrix_flops": 5946970132480
+    },
+    {
+      "step": 122,
+      "matrix_flops": 6252913333248
+    },
+    {
+      "step": 123,
+      "matrix_flops": 5357200263168
+    },
+    {
+      "step": 124,
+      "matrix_flops": 4483091414016
+    },
+    {
+      "step": 125,
+      "matrix_flops": 5358175225856
+    },
+    {
+      "step": 126,
+      "matrix_flops": 5676373445632
+    },
+    {
+      "step": 127,
+      "matrix_flops": 5367644178432
+    },
+    {
+      "step": 128,
+      "matrix_flops": 5653419510784
+    },
+    {
+      "step": 129,
+      "matrix_flops": 5355201693696
+    },
+    {
+      "step": 130,
+      "matrix_flops": 5950322200576
+    },
+    {
+      "step": 131,
+      "matrix_flops": 5370063194112
+    },
+    {
+      "step": 132,
+      "matrix_flops": 5968472608768
+    },
+    {
+      "step": 133,
+      "matrix_flops": 5662611131392
+    },
+    {
+      "step": 134,
+      "matrix_flops": 5369176475648
+    },
+    {
+      "step": 135,
+      "matrix_flops": 5066388358144
+    },
+    {
+      "step": 136,
+      "matrix_flops": 4788297711616
+    },
+    {
+      "step": 137,
+      "matrix_flops": 8049641925632
+    },
+    {
+      "step": 138,
+      "matrix_flops": 4775997472768
+    },
+    {
+      "step": 139,
+      "matrix_flops": 5950272507904
+    },
+    {
+      "step": 140,
+      "matrix_flops": 5673452506112
+    },
+    {
+      "step": 141,
+      "matrix_flops": 7149363912704
+    },
+    {
+      "step": 142,
+      "matrix_flops": 5357744621568
+    },
+    {
+      "step": 143,
+      "matrix_flops": 5391237285888
+    },
+    {
+      "step": 144,
+      "matrix_flops": 5355303569408
+    },
+    {
+      "step": 145,
+      "matrix_flops": 5363772262400
+    },
+    {
+      "step": 146,
+      "matrix_flops": 5360939288576
+    },
+    {
+      "step": 147,
+      "matrix_flops": 5354888251392
+    },
+    {
+      "step": 148,
+      "matrix_flops": 5651899272192
+    },
+    {
+      "step": 149,
+      "matrix_flops": 6255912342528
+    },
+    {
+      "step": 150,
+      "matrix_flops": 6257170142208
+    },
+    {
+      "step": 151,
+      "matrix_flops": 5955909373952
+    },
+    {
+      "step": 152,
+      "matrix_flops": 5662012099584
+    },
+    {
+      "step": 153,
+      "matrix_flops": 5375826839552
+    },
+    {
+      "step": 154,
+      "matrix_flops": 5674928229376
+    },
+    {
+      "step": 155,
+      "matrix_flops": 6852008762368
+    },
+    {
+      "step": 156,
+      "matrix_flops": 5088986104832
+    },
+    {
+      "step": 157,
+      "matrix_flops": 5065350906880
+    },
+    {
+      "step": 158,
+      "matrix_flops": 5655854451712
+    },
+    {
+      "step": 159,
+      "matrix_flops": 4767113969664
+    },
+    {
+      "step": 160,
+      "matrix_flops": 5084218246144
+    },
+    {
+      "step": 161,
+      "matrix_flops": 6250482275328
+    },
+    {
+      "step": 162,
+      "matrix_flops": 4769807810560
+    },
+    {
+      "step": 163,
+      "matrix_flops": 5656781294592
+    },
+    {
+      "step": 164,
+      "matrix_flops": 5354064463872
+    },
+    {
+      "step": 165,
+      "matrix_flops": 5670053366784
+    },
+    {
+      "step": 166,
+      "matrix_flops": 5356277221376
+    },
+    {
+      "step": 167,
+      "matrix_flops": 5364055492608
+    },
+    {
+      "step": 168,
+      "matrix_flops": 5954441269248
+    },
+    {
+      "step": 169,
+      "matrix_flops": 5084124759040
+    },
+    {
+      "step": 170,
+      "matrix_flops": 4769326333952
+    },
+    {
+      "step": 171,
+      "matrix_flops": 5659718372352
+    },
+    {
+      "step": 172,
+      "matrix_flops": 5953626214400
+    },
+    {
+      "step": 173,
+      "matrix_flops": 5953574293504
+    },
+    {
+      "step": 174,
+      "matrix_flops": 5963565617152
+    },
+    {
+      "step": 175,
+      "matrix_flops": 5085455057920
+    },
+    {
+      "step": 176,
+      "matrix_flops": 7147898953728
+    },
+    {
+      "step": 177,
+      "matrix_flops": 5364007241728
+    },
+    {
+      "step": 178,
+      "matrix_flops": 5086970889216
+    },
+    {
+      "step": 179,
+      "matrix_flops": 5365466302464
+    },
+    {
+      "step": 180,
+      "matrix_flops": 5360672655360
+    },
+    {
+      "step": 181,
+      "matrix_flops": 4474419084288
+    },
+    {
+      "step": 182,
+      "matrix_flops": 5096900805632
+    },
+    {
+      "step": 183,
+      "matrix_flops": 5384850130944
+    },
+    {
+      "step": 184,
+      "matrix_flops": 5367860332544
+    },
+    {
+      "step": 185,
+      "matrix_flops": 6252913333248
+    },
+    {
+      "step": 186,
+      "matrix_flops": 5359911487488
+    },
+    {
+      "step": 187,
+      "matrix_flops": 7777156425728
+    },
+    {
+      "step": 188,
+      "matrix_flops": 6256458667008
+    },
+    {
+      "step": 189,
+      "matrix_flops": 5678933281792
+    },
+    {
+      "step": 190,
+      "matrix_flops": 6253837079552
+    },
+    {
+      "step": 191,
+      "matrix_flops": 5359531100160
+    },
+    {
+      "step": 192,
+      "matrix_flops": 4780469714944
+    },
+    {
+      "step": 193,
+      "matrix_flops": 5660765654016
+    },
+    {
+      "step": 194,
+      "matrix_flops": 5953245040640
+    },
+    {
+      "step": 195,
+      "matrix_flops": 5072963290112
+    },
+    {
+      "step": 196,
+      "matrix_flops": 5366446901248
+    },
+    {
+      "step": 197,
+      "matrix_flops": 5074652103680
+    },
+    {
+      "step": 198,
+      "matrix_flops": 5654281243648
+    },
+    {
+      "step": 199,
+      "matrix_flops": 5361599891456
+    },
+    {
+      "step": 200,
+      "matrix_flops": 5955256979456
+    },
+    {
+      "step": 201,
+      "matrix_flops": 6562995165184
+    },
+    {
+      "step": 202,
+      "matrix_flops": 5067365549056
+    },
+    {
+      "step": 203,
+      "matrix_flops": 5954120880128
+    },
+    {
+      "step": 204,
+      "matrix_flops": 5973793525760
+    },
+    {
+      "step": 205,
+      "matrix_flops": 5953297747968
+    },
+    {
+      "step": 206,
+      "matrix_flops": 5070620787712
+    },
+    {
+      "step": 207,
+      "matrix_flops": 5060720591872
+    },
+    {
+      "step": 208,
+      "matrix_flops": 5694305176576
+    },
+    {
+      "step": 209,
+      "matrix_flops": 5671358041088
+    },
+    {
+      "step": 210,
+      "matrix_flops": 5389267617792
+    },
+    {
+      "step": 211,
+      "matrix_flops": 5368577181696
+    },
+    {
+      "step": 212,
+      "matrix_flops": 6263919858688
+    },
+    {
+      "step": 213,
+      "matrix_flops": 6251463005184
+    },
+    {
+      "step": 214,
+      "matrix_flops": 4776969453568
+    },
+    {
+      "step": 215,
+      "matrix_flops": 5365833107456
+    },
+    {
+      "step": 216,
+      "matrix_flops": 5073293591552
+    },
+    {
+      "step": 217,
+      "matrix_flops": 5355898013696
+    },
+    {
+      "step": 218,
+      "matrix_flops": 5066934158336
+    },
+    {
+      "step": 219,
+      "matrix_flops": 5653535493120
+    },
+    {
+      "step": 220,
+      "matrix_flops": 5070103069696
+    },
+    {
+      "step": 221,
+      "matrix_flops": 5057144407040
+    },
+    {
+      "step": 222,
+      "matrix_flops": 6252876305408
+    },
+    {
+      "step": 223,
+      "matrix_flops": 5958472093696
+    },
+    {
+      "step": 224,
+      "matrix_flops": 4782736048128
+    },
+    {
+      "step": 225,
+      "matrix_flops": 6561727141888
+    },
+    {
+      "step": 226,
+      "matrix_flops": 5953306873856
+    },
+    {
+      "step": 227,
+      "matrix_flops": 5374247831552
+    },
+    {
+      "step": 228,
+      "matrix_flops": 5377896302592
+    },
+    {
+      "step": 229,
+      "matrix_flops": 4768669401088
+    },
+    {
+      "step": 230,
+      "matrix_flops": 5064785069056
+    },
+    {
+      "step": 231,
+      "matrix_flops": 5668682157056
+    },
+    {
+      "step": 232,
+      "matrix_flops": 4788614184960
+    },
+    {
+      "step": 233,
+      "matrix_flops": 4801945796608
+    },
+    {
+      "step": 234,
+      "matrix_flops": 5950653550592
+    },
+    {
+      "step": 235,
+      "matrix_flops": 5372049278976
+    },
+    {
+      "step": 236,
+      "matrix_flops": 6549662373888
+    },
+    {
+      "step": 237,
+      "matrix_flops": 5071298249728
+    },
+    {
+      "step": 238,
+      "matrix_flops": 5056503022592
+    },
+    {
+      "step": 239,
+      "matrix_flops": 5964401201152
+    },
+    {
+      "step": 240,
+      "matrix_flops": 5067416683520
+    },
+    {
+      "step": 241,
+      "matrix_flops": 6251179381760
+    },
+    {
+      "step": 242,
+      "matrix_flops": 5683864046592
+    },
+    {
+      "step": 243,
+      "matrix_flops": 6250364982272
+    },
+    {
+      "step": 244,
+      "matrix_flops": 5370710870016
+    },
+    {
+      "step": 245,
+      "matrix_flops": 5066142516224
+    },
+    {
+      "step": 246,
+      "matrix_flops": 4765105094656
+    },
+    {
+      "step": 247,
+      "matrix_flops": 6546748708864
+    },
+    {
+      "step": 248,
+      "matrix_flops": 5402294945792
+    },
+    {
+      "step": 249,
+      "matrix_flops": 4772253188096
+    },
+    {
+      "step": 250,
+      "matrix_flops": 6847871867904
+    },
+    {
+      "step": 251,
+      "matrix_flops": 5358074660864
+    },
+    {
+      "step": 252,
+      "matrix_flops": 6853700230144
+    },
+    {
+      "step": 253,
+      "matrix_flops": 4781304643584
+    },
+    {
+      "step": 254,
+      "matrix_flops": 5651394268160
+    },
+    {
+      "step": 255,
+      "matrix_flops": 5067549000704
+    },
+    {
+      "step": 256,
+      "matrix_flops": 5361218848768
+    },
+    {
+      "step": 257,
+      "matrix_flops": 5373042886656
+    },
+    {
+      "step": 258,
+      "matrix_flops": 5074650563584
+    },
+    {
+      "step": 259,
+      "matrix_flops": 6270757803008
+    },
+    {
+      "step": 260,
+      "matrix_flops": 6847224978432
+    },
+    {
+      "step": 261,
+      "matrix_flops": 6255038026752
+    },
+    {
+      "step": 262,
+      "matrix_flops": 5077825504256
+    },
+    {
+      "step": 263,
+      "matrix_flops": 5065547023360
+    },
+    {
+      "step": 264,
+      "matrix_flops": 6546410280960
+    },
+    {
+      "step": 265,
+      "matrix_flops": 5679165213696
+    },
+    {
+      "step": 266,
+      "matrix_flops": 5081411650560
+    },
+    {
+      "step": 267,
+      "matrix_flops": 6852443823104
+    },
+    {
+      "step": 268,
+      "matrix_flops": 5069747143680
+    },
+    {
+      "step": 269,
+      "matrix_flops": 5082920141824
+    },
+    {
+      "step": 270,
+      "matrix_flops": 6251678766080
+    },
+    {
+      "step": 271,
+      "matrix_flops": 5655577775104
+    },
+    {
+      "step": 272,
+      "matrix_flops": 4781367853056
+    },
+    {
+      "step": 273,
+      "matrix_flops": 5062056068096
+    },
+    {
+      "step": 274,
+      "matrix_flops": 5674928229376
+    },
+    {
+      "step": 275,
+      "matrix_flops": 5369058920448
+    },
+    {
+      "step": 276,
+      "matrix_flops": 5681442556928
+    },
+    {
+      "step": 277,
+      "matrix_flops": 5361484826624
+    },
+    {
+      "step": 278,
+      "matrix_flops": 5071585412096
+    },
+    {
+      "step": 279,
+      "matrix_flops": 4483492445184
+    },
+    {
+      "step": 280,
+      "matrix_flops": 5069505872896
+    },
+    {
+      "step": 281,
+      "matrix_flops": 5355910809600
+    },
+    {
+      "step": 282,
+      "matrix_flops": 5083515569152
+    },
+    {
+      "step": 283,
+      "matrix_flops": 5651634211840
+    },
+    {
+      "step": 284,
+      "matrix_flops": 5062701384704
+    },
+    {
+      "step": 285,
+      "matrix_flops": 5361104046080
+    },
+    {
+      "step": 286,
+      "matrix_flops": 5065894872064
+    },
+    {
+      "step": 287,
+      "matrix_flops": 5652659129344
+    },
+    {
+      "step": 288,
+      "matrix_flops": 5956784033792
+    },
+    {
+      "step": 289,
+      "matrix_flops": 5094520226816
+    },
+    {
+      "step": 290,
+      "matrix_flops": 5662164323328
+    },
+    {
+      "step": 291,
+      "matrix_flops": 5365608613888
+    },
+    {
+      "step": 292,
+      "matrix_flops": 5666978286592
+    },
+    {
+      "step": 293,
+      "matrix_flops": 5655042149376
+    },
+    {
+      "step": 294,
+      "matrix_flops": 7149844340736
+    },
+    {
+      "step": 295,
+      "matrix_flops": 7150061150208
+    },
+    {
+      "step": 296,
+      "matrix_flops": 4775733182464
+    },
+    {
+      "step": 297,
+      "matrix_flops": 5375746033664
+    },
+    {
+      "step": 298,
+      "matrix_flops": 5656286628864
+    },
+    {
+      "step": 299,
+      "matrix_flops": 4812811239424
+    },
+    {
+      "step": 300,
+      "matrix_flops": 5668536617984
+    },
+    {
+      "step": 301,
+      "matrix_flops": 5659656014848
+    },
+    {
+      "step": 302,
+      "matrix_flops": 5958418468864
+    },
+    {
+      "step": 303,
+      "matrix_flops": 4774804635648
+    },
+    {
+      "step": 304,
+      "matrix_flops": 5059996189696
+    },
+    {
+      "step": 305,
+      "matrix_flops": 5953732022272
+    },
+    {
+      "step": 306,
+      "matrix_flops": 6847440477184
+    },
+    {
+      "step": 307,
+      "matrix_flops": 5662763748352
+    },
+    {
+      "step": 308,
+      "matrix_flops": 5394027776000
+    },
+    {
+      "step": 309,
+      "matrix_flops": 8358541815808
+    },
+    {
+      "step": 310,
+      "matrix_flops": 8356620300288
+    },
+    {
+      "step": 311,
+      "matrix_flops": 5364957005824
+    },
+    {
+      "step": 312,
+      "matrix_flops": 6550477035520
+    },
+    {
+      "step": 313,
+      "matrix_flops": 5368577181696
+    },
+    {
+      "step": 314,
+      "matrix_flops": 5365369407488
+    },
+    {
+      "step": 315,
+      "matrix_flops": 6554702223360
+    },
+    {
+      "step": 316,
+      "matrix_flops": 5369416697856
+    },
+    {
+      "step": 317,
+      "matrix_flops": 5378081753088
+    },
+    {
+      "step": 318,
+      "matrix_flops": 6251129558016
+    },
+    {
+      "step": 319,
+      "matrix_flops": 5375620220928
+    },
+    {
+      "step": 320,
+      "matrix_flops": 4766899650560
+    },
+    {
+      "step": 321,
+      "matrix_flops": 7151820873728
+    },
+    {
+      "step": 322,
+      "matrix_flops": 5955092877312
+    },
+    {
+      "step": 323,
+      "matrix_flops": 5070075249664
+    },
+    {
+      "step": 324,
+      "matrix_flops": 5654712896512
+    },
+    {
+      "step": 325,
+      "matrix_flops": 5072975692800
+    },
+    {
+      "step": 326,
+      "matrix_flops": 5368410064896
+    },
+    {
+      "step": 327,
+      "matrix_flops": 5357087688704
+    },
+    {
+      "step": 328,
+      "matrix_flops": 5363009259520
+    },
+    {
+      "step": 329,
+      "matrix_flops": 5078310568960
+    },
+    {
+      "step": 330,
+      "matrix_flops": 5683631262720
+    },
+    {
+      "step": 331,
+      "matrix_flops": 5086058152960
+    },
+    {
+      "step": 332,
+      "matrix_flops": 5069840368640
+    },
+    {
+      "step": 333,
+      "matrix_flops": 5359418001408
+    },
+    {
+      "step": 334,
+      "matrix_flops": 5976039280640
+    },
+    {
+      "step": 335,
+      "matrix_flops": 5364819806208
+    },
+    {
+      "step": 336,
+      "matrix_flops": 5956344958976
+    },
+    {
+      "step": 337,
+      "matrix_flops": 5100591924224
+    },
+    {
+      "step": 338,
+      "matrix_flops": 5059945186304
+    },
+    {
+      "step": 339,
+      "matrix_flops": 4777642983424
+    },
+    {
+      "step": 340,
+      "matrix_flops": 5967532134400
+    },
+    {
+      "step": 341,
+      "matrix_flops": 5063727481856
+    },
+    {
+      "step": 342,
+      "matrix_flops": 7146958872576
+    },
+    {
+      "step": 343,
+      "matrix_flops": 5078927344640
+    },
+    {
+      "step": 344,
+      "matrix_flops": 5956508667904
+    },
+    {
+      "step": 345,
+      "matrix_flops": 4482648652800
+    },
+    {
+      "step": 346,
+      "matrix_flops": 5064237958144
+    },
+    {
+      "step": 347,
+      "matrix_flops": 5671018073088
+    },
+    {
+      "step": 348,
+      "matrix_flops": 5355088332800
+    },
+    {
+      "step": 349,
+      "matrix_flops": 5057852343296
+    },
+    {
+      "step": 350,
+      "matrix_flops": 4805539872768
+    },
+    {
+      "step": 351,
+      "matrix_flops": 5061841224704
+    },
+    {
+      "step": 352,
+      "matrix_flops": 5081376834560
+    },
+    {
+      "step": 353,
+      "matrix_flops": 5655257910272
+    },
+    {
+      "step": 354,
+      "matrix_flops": 7452451136512
+    },
+    {
+      "step": 355,
+      "matrix_flops": 5361484826624
+    },
+    {
+      "step": 356,
+      "matrix_flops": 6250697905152
+    },
+    {
+      "step": 357,
+      "matrix_flops": 7449262400512
+    },
+    {
+      "step": 358,
+      "matrix_flops": 5653106199552
+    },
+    {
+      "step": 359,
+      "matrix_flops": 6553942841344
+    },
+    {
+      "step": 360,
+      "matrix_flops": 4784238116864
+    },
+    {
+      "step": 361,
+      "matrix_flops": 6254495585280
+    },
+    {
+      "step": 362,
+      "matrix_flops": 5360446588928
+    },
+    {
+      "step": 363,
+      "matrix_flops": 5377967867904
+    },
+    {
+      "step": 364,
+      "matrix_flops": 5357898811392
+    },
+    {
+      "step": 365,
+      "matrix_flops": 5057194361856
+    },
+    {
+      "step": 366,
+      "matrix_flops": 5069149586432
+    },
+    {
+      "step": 367,
+      "matrix_flops": 9259377998848
+    },
+    {
+      "step": 368,
+      "matrix_flops": 5060653122560
+    },
+    {
+      "step": 369,
+      "matrix_flops": 5361640196096
+    },
+    {
+      "step": 370,
+      "matrix_flops": 6253078483968
+    },
+    {
+      "step": 371,
+      "matrix_flops": 5067668521984
+    },
+    {
+      "step": 372,
+      "matrix_flops": 5067581441024
+    },
+    {
+      "step": 373,
+      "matrix_flops": 4770567405568
+    },
+    {
+      "step": 374,
+      "matrix_flops": 5067252188160
+    },
+    {
+      "step": 375,
+      "matrix_flops": 5077173502976
+    },
+    {
+      "step": 376,
+      "matrix_flops": 5960444907520
+    },
+    {
+      "step": 377,
+      "matrix_flops": 5072261334016
+    },
+    {
+      "step": 378,
+      "matrix_flops": 5059566371840
+    },
+    {
+      "step": 379,
+      "matrix_flops": 5657875385344
+    },
+    {
+      "step": 380,
+      "matrix_flops": 4764954836992
+    },
+    {
+      "step": 381,
+      "matrix_flops": 5075273352192
+    },
+    {
+      "step": 382,
+      "matrix_flops": 7154923855872
+    },
+    {
+      "step": 383,
+      "matrix_flops": 5657444518912
+    },
+    {
+      "step": 384,
+      "matrix_flops": 5065643131904
+    },
+    {
+      "step": 385,
+      "matrix_flops": 6249406092288
+    },
+    {
+      "step": 386,
+      "matrix_flops": 4785890574336
+    },
+    {
+      "step": 387,
+      "matrix_flops": 5080390894592
+    },
+    {
+      "step": 388,
+      "matrix_flops": 6547605723136
+    },
+    {
+      "step": 389,
+      "matrix_flops": 5955421343744
+    },
+    {
+      "step": 390,
+      "matrix_flops": 5061841224704
+    },
+    {
+      "step": 391,
+      "matrix_flops": 5659005979648
+    },
+    {
+      "step": 392,
+      "matrix_flops": 5378244036608
+    },
+    {
+      "step": 393,
+      "matrix_flops": 5669619354624
+    },
+    {
+      "step": 394,
+      "matrix_flops": 5661018049536
+    },
+    {
+      "step": 395,
+      "matrix_flops": 5061133026304
+    },
+    {
+      "step": 396,
+      "matrix_flops": 7456685171712
+    },
+    {
+      "step": 397,
+      "matrix_flops": 6553290446848
+    },
+    {
+      "step": 398,
+      "matrix_flops": 5954502578176
+    },
+    {
+      "step": 399,
+      "matrix_flops": 5368361289728
+    },
+    {
+      "step": 400,
+      "matrix_flops": 6250339095552
+    },
+    {
+      "step": 401,
+      "matrix_flops": 6259030430720
+    },
+    {
+      "step": 402,
+      "matrix_flops": 7159660863488
+    },
+    {
+      "step": 403,
+      "matrix_flops": 5357631129600
+    },
+    {
+      "step": 404,
+      "matrix_flops": 5356277221376
+    },
+    {
+      "step": 405,
+      "matrix_flops": 7148207808512
+    },
+    {
+      "step": 406,
+      "matrix_flops": 8354833772544
+    },
+    {
+      "step": 407,
+      "matrix_flops": 4780586745856
+    },
+    {
+      "step": 408,
+      "matrix_flops": 5395247941632
+    },
+    {
+      "step": 409,
+      "matrix_flops": 5680005385216
+    },
+    {
+      "step": 410,
+      "matrix_flops": 5360192227328
+    },
+    {
+      "step": 411,
+      "matrix_flops": 5355252303872
+    },
+    {
+      "step": 412,
+      "matrix_flops": 4787527892992
+    },
+    {
+      "step": 413,
+      "matrix_flops": 4782361362432
+    },
+    {
+      "step": 414,
+      "matrix_flops": 5687779593216
+    },
+    {
+      "step": 415,
+      "matrix_flops": 5363327551488
+    },
+    {
+      "step": 416,
+      "matrix_flops": 5655741746176
+    },
+    {
+      "step": 417,
+      "matrix_flops": 5966141444096
+    },
+    {
+      "step": 418,
+      "matrix_flops": 5064452408320
+    },
+    {
+      "step": 419,
+      "matrix_flops": 5354557949952
+    },
+    {
+      "step": 420,
+      "matrix_flops": 5360394405888
+    },
+    {
+      "step": 421,
+      "matrix_flops": 5077276427264
+    },
+    {
+      "step": 422,
+      "matrix_flops": 5665176472576
+    },
+    {
+      "step": 423,
+      "matrix_flops": 5973235748864
+    },
+    {
+      "step": 424,
+      "matrix_flops": 5364575700992
+    },
+    {
+      "step": 425,
+      "matrix_flops": 5662112926720
+    },
+    {
+      "step": 426,
+      "matrix_flops": 5060768973824
+    },
+    {
+      "step": 427,
+      "matrix_flops": 5072543515648
+    },
+    {
+      "step": 428,
+      "matrix_flops": 5373092120576
+    },
+    {
+      "step": 429,
+      "matrix_flops": 6260126880768
+    },
+    {
+      "step": 430,
+      "matrix_flops": 5655689825280
+    },
+    {
+      "step": 431,
+      "matrix_flops": 5659718372352
+    },
+    {
+      "step": 432,
+      "matrix_flops": 4768731627520
+    },
+    {
+      "step": 433,
+      "matrix_flops": 5073510532096
+    },
+    {
+      "step": 434,
+      "matrix_flops": 7451504911360
+    },
+    {
+      "step": 435,
+      "matrix_flops": 5068292916224
+    },
+    {
+      "step": 436,
+      "matrix_flops": 7460172325888
+    },
+    {
+      "step": 437,
+      "matrix_flops": 5063727481856
+    },
+    {
+      "step": 438,
+      "matrix_flops": 6271239246848
+    },
+    {
+      "step": 439,
+      "matrix_flops": 5953678790656
+    },
+    {
+      "step": 440,
+      "matrix_flops": 4791851302912
+    },
+    {
+      "step": 441,
+      "matrix_flops": 6254710346752
+    },
+    {
+      "step": 442,
+      "matrix_flops": 5357467158528
+    },
+    {
+      "step": 443,
+      "matrix_flops": 5358935345152
+    },
+    {
+      "step": 444,
+      "matrix_flops": 5949676490752
+    },
+    {
+      "step": 445,
+      "matrix_flops": 4769212710912
+    },
+    {
+      "step": 446,
+      "matrix_flops": 4790947954688
+    },
+    {
+      "step": 447,
+      "matrix_flops": 5954711572480
+    },
+    {
+      "step": 448,
+      "matrix_flops": 4768074694656
+    },
+    {
+      "step": 449,
+      "matrix_flops": 5356985026560
+    },
+    {
+      "step": 450,
+      "matrix_flops": 4486415547392
+    },
+    {
+      "step": 451,
+      "matrix_flops": 6556838713344
+    },
+    {
+      "step": 452,
+      "matrix_flops": 5952863997952
+    },
+    {
+      "step": 453,
+      "matrix_flops": 5072035005440
+    },
+    {
+      "step": 454,
+      "matrix_flops": 6252810146816
+    },
+    {
+      "step": 455,
+      "matrix_flops": 5084890547200
+    },
+    {
+      "step": 456,
+      "matrix_flops": 4773436489728
+    },
+    {
+      "step": 457,
+      "matrix_flops": 5071817802752
+    },
+    {
+      "step": 458,
+      "matrix_flops": 4772623269888
+    },
+    {
+      "step": 459,
+      "matrix_flops": 6550606632960
+    },
+    {
+      "step": 460,
+      "matrix_flops": 5373095774208
+    },
+    {
+      "step": 461,
+      "matrix_flops": 6852995783680
+    },
+    {
+      "step": 462,
+      "matrix_flops": 5363577423872
+    },
+    {
+      "step": 463,
+      "matrix_flops": 7148114583552
+    },
+    {
+      "step": 464,
+      "matrix_flops": 5682312285184
+    },
+    {
+      "step": 465,
+      "matrix_flops": 5963130556416
+    },
+    {
+      "step": 466,
+      "matrix_flops": 5079394862080
+    },
+    {
+      "step": 467,
+      "matrix_flops": 5971612979200
+    },
+    {
+      "step": 468,
+      "matrix_flops": 6257865643008
+    },
+    {
+      "step": 469,
+      "matrix_flops": 5396861601792
+    },
+    {
+      "step": 470,
+      "matrix_flops": 4794462355456
+    },
+    {
+      "step": 471,
+      "matrix_flops": 5067365549056
+    },
+    {
+      "step": 472,
+      "matrix_flops": 4488534211584
+    },
+    {
+      "step": 473,
+      "matrix_flops": 5357099698176
+    },
+    {
+      "step": 474,
+      "matrix_flops": 5365227309056
+    },
+    {
+      "step": 475,
+      "matrix_flops": 5951200923648
+    },
+    {
+      "step": 476,
+      "matrix_flops": 5667511340032
+    },
+    {
+      "step": 477,
+      "matrix_flops": 5368145528832
+    },
+    {
+      "step": 478,
+      "matrix_flops": 5363009259520
+    },
+    {
+      "step": 479,
+      "matrix_flops": 4788228292608
+    },
+    {
+      "step": 480,
+      "matrix_flops": 4502125755392
+    },
+    {
+      "step": 481,
+      "matrix_flops": 5370029082624
+    },
+    {
+      "step": 482,
+      "matrix_flops": 4768681803776
+    },
+    {
+      "step": 483,
+      "matrix_flops": 5375620220928
+    },
+    {
+      "step": 484,
+      "matrix_flops": 6256294827008
+    },
+    {
+      "step": 485,
+      "matrix_flops": 5357682919424
+    },
+    {
+      "step": 486,
+      "matrix_flops": 5084376253440
+    },
+    {
+      "step": 487,
+      "matrix_flops": 5358175225856
+    },
+    {
+      "step": 488,
+      "matrix_flops": 5356492720128
+    },
+    {
+      "step": 489,
+      "matrix_flops": 6251845751808
+    },
+    {
+      "step": 490,
+      "matrix_flops": 5369042110464
+    },
+    {
+      "step": 491,
+      "matrix_flops": 5072210854912
+    },
+    {
+      "step": 492,
+      "matrix_flops": 5358175225856
+    },
+    {
+      "step": 493,
+      "matrix_flops": 5099592057856
+    },
+    {
+      "step": 494,
+      "matrix_flops": 4475081260032
+    },
+    {
+      "step": 495,
+      "matrix_flops": 5059566371840
+    },
+    {
+      "step": 496,
+      "matrix_flops": 6270202303488
+    },
+    {
+      "step": 497,
+      "matrix_flops": 5357251528704
+    },
+    {
+      "step": 498,
+      "matrix_flops": 4807537164288
+    },
+    {
+      "step": 499,
+      "matrix_flops": 5366164195328
+    },
+    {
+      "step": 500,
+      "matrix_flops": 5656555228160
+    },
+    {
+      "step": 501,
+      "matrix_flops": 5056602014720
+    },
+    {
+      "step": 502,
+      "matrix_flops": 5363441174528
+    },
+    {
+      "step": 503,
+      "matrix_flops": 6254278120448
+    },
+    {
+      "step": 504,
+      "matrix_flops": 4495021571072
+    },
+    {
+      "step": 505,
+      "matrix_flops": 5363657328640
+    },
+    {
+      "step": 506,
+      "matrix_flops": 4763112161280
+    },
+    {
+      "step": 507,
+      "matrix_flops": 4773712642048
+    },
+    {
+      "step": 508,
+      "matrix_flops": 5653039254528
+    },
+    {
+      "step": 509,
+      "matrix_flops": 5357200263168
+    },
+    {
+      "step": 510,
+      "matrix_flops": 5069589447680
+    },
+    {
+      "step": 511,
+      "matrix_flops": 4772799250432
+    },
+    {
+      "step": 512,
+      "matrix_flops": 5364917749760
+    }
+  ],
+  "coverage": {
+    "seen_operations": [
+      "_torchaudio.cuda_version",
+      "_torchaudio.is_align_available",
+      "aten._foreach_add_",
+      "aten._foreach_addcdiv_",
+      "aten._foreach_addcmul_",
+      "aten._foreach_div_",
+      "aten._foreach_lerp_",
+      "aten._foreach_mul_",
+      "aten._foreach_norm",
+      "aten._foreach_sqrt",
+      "aten._local_scalar_dense",
+      "aten._log_softmax",
+      "aten._log_softmax_backward_data",
+      "aten._safe_softmax",
+      "aten._softmax_backward_data",
+      "aten._to_copy",
+      "aten._transformer_encoder_layer_fwd",
+      "aten._unsafe_view",
+      "aten.abs",
+      "aten.add",
+      "aten.add_",
+      "aten.addmm",
+      "aten.alias",
+      "aten.all",
+      "aten.arange",
+      "aten.bitwise_and",
+      "aten.bitwise_not",
+      "aten.bmm",
+      "aten.cat",
+      "aten.clamp",
+      "aten.clamp_min",
+      "aten.clone",
+      "aten.copy_",
+      "aten.cos",
+      "aten.detach",
+      "aten.div",
+      "aten.embedding",
+      "aten.empty",
+      "aten.empty_like",
+      "aten.eq",
+      "aten.expand",
+      "aten.fill_",
+      "aten.full",
+      "aten.ge",
+      "aten.index",
+      "aten.index_put",
+      "aten.index_put_",
+      "aten.isinf",
+      "aten.isnan",
+      "aten.le",
+      "aten.lift_fresh",
+      "aten.linalg_vector_norm",
+      "aten.log",
+      "aten.logical_or",
+      "aten.masked_fill_",
+      "aten.mean",
+      "aten.mm",
+      "aten.mul",
+      "aten.native_layer_norm",
+      "aten.ne",
+      "aten.neg",
+      "aten.new_ones",
+      "aten.new_zeros",
+      "aten.nll_loss_backward",
+      "aten.nll_loss_forward",
+      "aten.normal_",
+      "aten.ones",
+      "aten.ones_like",
+      "aten.pow",
+      "aten.reciprocal",
+      "aten.rsqrt",
+      "aten.scalar_tensor",
+      "aten.select",
+      "aten.set_",
+      "aten.silu",
+      "aten.silu_backward",
+      "aten.sin",
+      "aten.slice",
+      "aten.slice_backward",
+      "aten.sqrt",
+      "aten.squeeze",
+      "aten.stack",
+      "aten.sub",
+      "aten.sum",
+      "aten.t",
+      "aten.transpose",
+      "aten.uniform_",
+      "aten.unsqueeze",
+      "aten.view",
+      "aten.where",
+      "aten.zero_",
+      "aten.zeros",
+      "aten.zeros_like",
+      "profiler._record_function_enter_new",
+      "profiler._record_function_exit",
+      "torchvision._cuda_version"
+    ],
+    "operations_without_flop_formula": [
+      "_torchaudio.cuda_version",
+      "_torchaudio.is_align_available",
+      "aten._foreach_add_",
+      "aten._foreach_addcdiv_",
+      "aten._foreach_addcmul_",
+      "aten._foreach_div_",
+      "aten._foreach_lerp_",
+      "aten._foreach_mul_",
+      "aten._foreach_norm",
+      "aten._foreach_sqrt",
+      "aten._local_scalar_dense",
+      "aten._log_softmax",
+      "aten._log_softmax_backward_data",
+      "aten._safe_softmax",
+      "aten._softmax_backward_data",
+      "aten._to_copy",
+      "aten._unsafe_view",
+      "aten.abs",
+      "aten.add",
+      "aten.add_",
+      "aten.alias",
+      "aten.all",
+      "aten.arange",
+      "aten.bitwise_and",
+      "aten.bitwise_not",
+      "aten.cat",
+      "aten.clamp",
+      "aten.clamp_min",
+      "aten.clone",
+      "aten.copy_",
+      "aten.cos",
+      "aten.detach",
+      "aten.div",
+      "aten.embedding",
+      "aten.empty",
+      "aten.empty_like",
+      "aten.eq",
+      "aten.expand",
+      "aten.fill_",
+      "aten.full",
+      "aten.ge",
+      "aten.index",
+      "aten.index_put",
+      "aten.index_put_",
+      "aten.isinf",
+      "aten.isnan",
+      "aten.le",
+      "aten.lift_fresh",
+      "aten.linalg_vector_norm",
+      "aten.log",
+      "aten.logical_or",
+      "aten.masked_fill_",
+      "aten.mean",
+      "aten.mul",
+      "aten.native_layer_norm",
+      "aten.ne",
+      "aten.neg",
+      "aten.new_ones",
+      "aten.new_zeros",
+      "aten.nll_loss_backward",
+      "aten.nll_loss_forward",
+      "aten.normal_",
+      "aten.ones",
+      "aten.ones_like",
+      "aten.pow",
+      "aten.reciprocal",
+      "aten.rsqrt",
+      "aten.scalar_tensor",
+      "aten.select",
+      "aten.set_",
+      "aten.silu",
+      "aten.silu_backward",
+      "aten.sin",
+      "aten.slice",
+      "aten.slice_backward",
+      "aten.sqrt",
+      "aten.squeeze",
+      "aten.stack",
+      "aten.sub",
+      "aten.sum",
+      "aten.t",
+      "aten.transpose",
+      "aten.uniform_",
+      "aten.unsqueeze",
+      "aten.view",
+      "aten.where",
+      "aten.zero_",
+      "aten.zeros",
+      "aten.zeros_like",
+      "profiler._record_function_enter_new",
+      "profiler._record_function_exit",
+      "torchvision._cuda_version"
+    ],
+    "custom_formula_operations": [
+      "aten._transformer_encoder_layer_fwd"
+    ],
+    "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+  },
+  "instrumented_wall_seconds": 105.43880105018616,
+  "source_jobs_sha256": "4e9e4d4bc3c2f61a26485d4303ccdc7d0a12c3cd8f2702dd8260107a47274708",
+  "profiler_sha256": "97880e090e883469e97d685ca04b6f3e73e4eceb6459e9993878235e2b172f3a",
+  "counter_sha256": "b46d3062dfb40d949eb8de79e64ed69e222193d826835f98e8edb002ea3ee6aa",
+  "scope": "Preparation plus online update matrix arithmetic. Excludes inherited offline fitting/gradient collection, model loading I/O, scalar/normalization/nonlinear/optimizer arithmetic; instrumented timings are not speed measurements."
+}

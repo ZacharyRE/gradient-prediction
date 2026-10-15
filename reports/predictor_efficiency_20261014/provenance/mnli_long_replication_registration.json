@@ -1,0 +1,37 @@
+{
+  "registered_epoch": 1792023053.1839771,
+  "selection_split": "accuracy_dev",
+  "reason": "MNLI seed101 strongest full Oracle32 point85.575% atLR.0003/512; CV8 LR.001/51284.405%. Replicate these plus matched Oracle8 LR.001/512 and independently tuned lowerLR Oracle8 .0001/1024 (84.211% seed101). Cached Oracle32 is numerically distinct, so replicate and independently evaluate it rather than assigning full-prefix accuracy to cached timing.",
+  "recipes": [
+    {
+      "name": "long_oracle8_lr0.001",
+      "steps": 512
+    },
+    {
+      "name": "long_oracle32_lr0.0003",
+      "steps": 512
+    },
+    {
+      "name": "long_cv8_lr0.001",
+      "steps": 512
+    },
+    {
+      "name": "long_oracle8_lr0.0001",
+      "steps": 1024
+    },
+    {
+      "name": "tcache_oracle32_lr0.0003",
+      "steps": 512
+    }
+  ],
+  "update_seeds": [
+    102,
+    103
+  ],
+  "predictor_seeds": [
+    124,
+    125
+  ],
+  "queue": "round10 after cached-head screen",
+  "scope": "Other candidate replications may be added on development evidence before this queue loads. No confirmation/test readouts used."
+}

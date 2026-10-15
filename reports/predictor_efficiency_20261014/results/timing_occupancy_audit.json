@@ -1,0 +1,2076 @@
+{
+  "updated": 1792032913.4210417,
+  "stages": [
+    {
+      "stage": "cached_head_audit",
+      "started": 1792026092.93379,
+      "finished": 1792026096.0521855,
+      "returncode": 0,
+      "sample_count": 2,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "fast_backend_audit",
+      "started": 1792002427.3917701,
+      "finished": 1792002438.3957307,
+      "returncode": 1,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "fast_backend_audit_v2",
+      "started": 1792002630.0559037,
+      "finished": 1792002642.0591834,
+      "returncode": 1,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "fast_backend_audit_v3",
+      "started": 1792002683.1268337,
+      "finished": 1792002695.1305277,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_mnli_cv4",
+      "started": 1792032498.6137447,
+      "finished": 1792032559.3180225,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_mnli_cv8",
+      "started": 1792032388.952374,
+      "finished": 1792032497.3311832,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_mnli_oracle_cached",
+      "started": 1792032199.951332,
+      "finished": 1792032288.2252352,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_mnli_oracle_quality",
+      "started": 1792032102.865223,
+      "finished": 1792032199.1922395,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_mnli_rls8",
+      "started": 1792032289.0078025,
+      "finished": 1792032388.236166,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_paws_cv16",
+      "started": 1792031981.6155987,
+      "finished": 1792032038.5086186,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_paws_cv4",
+      "started": 1792032039.235238,
+      "finished": 1792032102.126498,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_flops_paws_oracle_quality",
+      "started": 1792031891.1020222,
+      "finished": 1792031980.3756514,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv16_r1",
+      "started": 1792029800.9314632,
+      "finished": 1792029834.6076124,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv16_r2",
+      "started": 1792030840.7991977,
+      "finished": 1792030874.3872674,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv16_r3",
+      "started": 1792031503.340909,
+      "finished": 1792031537.9577434,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv4_r1",
+      "started": 1792029835.341578,
+      "finished": 1792029866.9175158,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv4_r2",
+      "started": 1792030493.9824984,
+      "finished": 1792030525.5980716,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv4_r3",
+      "started": 1792031538.7787225,
+      "finished": 1792031570.5241218,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv8_r1",
+      "started": 1792029868.2070305,
+      "finished": 1792029918.903229,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv8_r2",
+      "started": 1792030526.4152231,
+      "finished": 1792030577.1402633,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_cv8_r3",
+      "started": 1792031190.1915555,
+      "finished": 1792031239.8241653,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle8_r1",
+      "started": 1792029919.6468496,
+      "finished": 1792029962.299384,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle8_r2",
+      "started": 1792030577.896339,
+      "finished": 1792030620.592006,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle8_r3",
+      "started": 1792031241.1140354,
+      "finished": 1792031282.837648,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_cached_r1",
+      "started": 1792029963.0416327,
+      "finished": 1792030025.0447423,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_cached_r2",
+      "started": 1792030621.3292341,
+      "finished": 1792030683.2768626,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_cached_r3",
+      "started": 1792031283.5843995,
+      "finished": 1792031345.534776,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_early_r1",
+      "started": 1792030025.786481,
+      "finished": 1792030064.5199828,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_early_r2",
+      "started": 1792030684.57815,
+      "finished": 1792030724.3783152,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_early_r3",
+      "started": 1792031346.324762,
+      "finished": 1792031385.9089618,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_quality_r1",
+      "started": 1792030065.2587643,
+      "finished": 1792030132.4178047,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_quality_r2",
+      "started": 1792030725.1240034,
+      "finished": 1792030792.1266217,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_oracle_quality_r3",
+      "started": 1792031387.1911166,
+      "finished": 1792031455.1583438,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_rls8_r1",
+      "started": 1792030133.160631,
+      "finished": 1792030179.8161747,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_rls8_r2",
+      "started": 1792030793.3781223,
+      "finished": 1792030840.077285,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_mnli_rls8_r3",
+      "started": 1792031455.893718,
+      "finished": 1792031502.6000788,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_anchor2_r1",
+      "started": 1792030180.6652262,
+      "finished": 1792030209.0661793,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_anchor2_r2",
+      "started": 1792031161.0480146,
+      "finished": 1792031189.4524946,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_anchor2_r3",
+      "started": 1792031829.6819863,
+      "finished": 1792031858.1427484,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv16_r1",
+      "started": 1792030210.3184261,
+      "finished": 1792030240.72988,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv16_r2",
+      "started": 1792030875.675952,
+      "finished": 1792030906.1815035,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv16_r3",
+      "started": 1792031859.3951104,
+      "finished": 1792031889.825983,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv4_r1",
+      "started": 1792030242.0834224,
+      "finished": 1792030273.786354,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv4_r2",
+      "started": 1792030907.4530709,
+      "finished": 1792030937.949619,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv4_r3",
+      "started": 1792031571.952441,
+      "finished": 1792031603.6131666,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv8_long_r1",
+      "started": 1792030274.5748656,
+      "finished": 1792030356.8663316,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv8_long_r2",
+      "started": 1792030939.2399893,
+      "finished": 1792031023.371536,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_cv8_long_r3",
+      "started": 1792031604.909568,
+      "finished": 1792031690.0755737,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_hold2_r1",
+      "started": 1792030358.13309,
+      "finished": 1792030381.5986352,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_hold2_r2",
+      "started": 1792031024.1906736,
+      "finished": 1792031048.6580932,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_hold2_r3",
+      "started": 1792031691.3150415,
+      "finished": 1792031714.7162817,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle16_r1",
+      "started": 1792030382.9547343,
+      "finished": 1792030411.4481032,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle16_r2",
+      "started": 1792031049.9102297,
+      "finished": 1792031077.3945901,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle16_r3",
+      "started": 1792031716.0481286,
+      "finished": 1792031744.5797107,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_early_r1",
+      "started": 1792030412.6966422,
+      "finished": 1792030436.1279924,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_early_r2",
+      "started": 1792031078.676415,
+      "finished": 1792031102.1333604,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_early_r3",
+      "started": 1792031745.8336515,
+      "finished": 1792031770.2820115,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_quality_r1",
+      "started": 1792030437.4086292,
+      "finished": 1792030493.2437735,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_quality_r2",
+      "started": 1792031103.4144642,
+      "finished": 1792031160.307221,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "final_timing_paws_oracle_quality_r3",
+      "started": 1792031771.0246458,
+      "finished": 1792031828.9418828,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "flops_mnli_fast_cv8_cache",
+      "started": 1792008801.0823176,
+      "finished": 1792008869.9181807,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 6,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "flops_mnli_fast_oracle32",
+      "started": 1792008748.588309,
+      "finished": 1792008800.3309448,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 6,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "flops_paws_fast_cv8_cache",
+      "started": 1792008679.93623,
+      "finished": 1792008747.840075,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 6,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "flops_paws_fast_oracle32",
+      "started": 1792008625.4892223,
+      "finished": 1792008679.2062283,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 6,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "gpu_features_audit",
+      "started": 1792007563.3326378,
+      "finished": 1792007574.639966,
+      "returncode": 0,
+      "sample_count": 2,
+      "foreign_context_sample_count": 2,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "h_cache_audit",
+      "started": 1792017864.179793,
+      "finished": 1792017874.8154137,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_anchor_fastio_v1",
+      "started": 1792013539.3812194,
+      "finished": 1792013750.061095,
+      "returncode": 0,
+      "sample_count": 15,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_anchor_fastio_v1_eval",
+      "started": 1792013751.041512,
+      "finished": 1792014325.9078615,
+      "returncode": 0,
+      "sample_count": 40,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_anchor_v1",
+      "started": 1792005575.5427074,
+      "finished": 1792005773.5621321,
+      "returncode": 0,
+      "sample_count": 15,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_anchor_v1_eval",
+      "started": 1792005774.2838507,
+      "finished": 1792005949.2994134,
+      "returncode": 0,
+      "sample_count": 14,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_cachedhead_v1",
+      "started": 1792026431.1789913,
+      "finished": 1792026699.8547745,
+      "returncode": 0,
+      "sample_count": 20,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_cachedhead_v1_eval",
+      "started": 1792026700.7160094,
+      "finished": 1792026776.763093,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_forget_v1",
+      "started": 1792025881.6453388,
+      "finished": 1792026033.4766088,
+      "returncode": 0,
+      "sample_count": 12,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_forget_v1_eval",
+      "started": 1792026034.3328946,
+      "finished": 1792026092.164501,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_rep_s102",
+      "started": 1792011120.268864,
+      "finished": 1792011206.357013,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_rep_s102_eval",
+      "started": 1792011207.2059772,
+      "finished": 1792011248.8408804,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_rep_s103",
+      "started": 1792011249.5930393,
+      "finished": 1792011334.6819239,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_rep_s103_eval",
+      "started": 1792011335.506718,
+      "finished": 1792011378.1247988,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_v2",
+      "started": 1792010545.6816773,
+      "finished": 1792010787.193374,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_classrls_v2_eval",
+      "started": 1792010788.5758264,
+      "finished": 1792010863.6612086,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_rep_s102",
+      "started": 1792005951.8486435,
+      "finished": 1792006170.86993,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_rep_s102_eval",
+      "started": 1792006171.5784054,
+      "finished": 1792006261.588996,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_rep_s103",
+      "started": 1792006262.2039788,
+      "finished": 1792006479.2263315,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_rep_s103_eval",
+      "started": 1792006480.4780924,
+      "finished": 1792006573.491091,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_v1",
+      "started": 1792004645.273304,
+      "finished": 1792005009.3155127,
+      "returncode": 0,
+      "sample_count": 26,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fast_v1_eval",
+      "started": 1792005010.5349026,
+      "finished": 1792005138.549261,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_fastio_v1",
+      "started": 1792008291.1812682,
+      "finished": 1792008502.8585196,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 16,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "mnli_fastio_v1_eval",
+      "started": 1792008504.2316327,
+      "finished": 1792008624.7505333,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 10,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "mnli_frozen_confirmation",
+      "started": 1792028075.6051774,
+      "finished": 1792028134.4026556,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_frozen_test",
+      "started": 1792028195.7086906,
+      "finished": 1792029080.897541,
+      "returncode": 0,
+      "sample_count": 60,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_h_collect",
+      "started": 1792018615.7284074,
+      "finished": 1792018637.087538,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_h_cv_v1",
+      "started": 1792018883.329095,
+      "finished": 1792019242.0026398,
+      "returncode": 0,
+      "sample_count": 25,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_h_cv_v1_eval",
+      "started": 1792019242.8746011,
+      "finished": 1792019382.8122146,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_h_refit_v1",
+      "started": 1792018638.3517625,
+      "finished": 1792018882.5251782,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_rep_s102",
+      "started": 1792026778.5942738,
+      "finished": 1792026994.279029,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_rep_s102_eval",
+      "started": 1792026995.1213353,
+      "finished": 1792027053.883316,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_rep_s103",
+      "started": 1792027150.6222,
+      "finished": 1792027364.5718622,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_rep_s103_eval",
+      "started": 1792027365.4011562,
+      "finished": 1792027424.2641346,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_v1",
+      "started": 1792021079.7985432,
+      "finished": 1792022623.6904113,
+      "returncode": 0,
+      "sample_count": 103,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_long_v1_eval",
+      "started": 1792022624.50559,
+      "finished": 1792022858.7926123,
+      "returncode": 0,
+      "sample_count": 17,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_lr_v1",
+      "started": 1792005139.172594,
+      "finished": 1792005458.205776,
+      "returncode": 0,
+      "sample_count": 23,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_lr_v1_eval",
+      "started": 1792005458.9249856,
+      "finished": 1792005574.9379013,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_moments_v1",
+      "started": 1792014663.3436882,
+      "finished": 1792014938.934773,
+      "returncode": 0,
+      "sample_count": 20,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_moments_v1_eval",
+      "started": 1792014939.7582924,
+      "finished": 1792015014.7623508,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_multistate_collect",
+      "started": 1792024324.9624496,
+      "finished": 1792024352.349836,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_multistate_cv_v1",
+      "started": 1792024652.4652274,
+      "finished": 1792025073.0737221,
+      "returncode": 0,
+      "sample_count": 29,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_multistate_cv_v1_eval",
+      "started": 1792025073.9250662,
+      "finished": 1792025185.4159784,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_multistate_fit",
+      "started": 1792024353.1866775,
+      "finished": 1792024651.1755445,
+      "returncode": 0,
+      "sample_count": 22,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_refit_cv_v1",
+      "started": 1792015955.2684264,
+      "finished": 1792016295.8609364,
+      "returncode": 0,
+      "sample_count": 24,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_refit_cv_v1_eval",
+      "started": 1792016296.7045245,
+      "finished": 1792016436.7216861,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_refit_v1",
+      "started": 1792015741.9597557,
+      "finished": 1792015954.522129,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_strat_v1",
+      "started": 1792009652.3886435,
+      "finished": 1792009873.0396488,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 16,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "mnli_strat_v1_eval",
+      "started": 1792009874.4065864,
+      "finished": 1792009967.773342,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 8,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "mnli_tcache_rep_s102",
+      "started": 1792027054.6248236,
+      "finished": 1792027117.5565245,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tcache_rep_s102_eval",
+      "started": 1792027118.3960338,
+      "finished": 1792027149.8822834,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tcache_rep_s103",
+      "started": 1792027425.006551,
+      "finished": 1792027487.9464023,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tcache_rep_s103_eval",
+      "started": 1792027488.7977822,
+      "finished": 1792027520.357139,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tcache_v1",
+      "started": 1792011873.049808,
+      "finished": 1792012264.0306153,
+      "returncode": 0,
+      "sample_count": 28,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tcache_v1_eval",
+      "started": 1792012265.383793,
+      "finished": 1792012377.8553817,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_lr_v1",
+      "started": 1792017613.9987407,
+      "finished": 1792017785.4878745,
+      "returncode": 0,
+      "sample_count": 13,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_lr_v1_eval",
+      "started": 1792017786.30613,
+      "finished": 1792017863.4293396,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_rep_s102",
+      "started": 1792017057.914493,
+      "finished": 1792017190.7475226,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_rep_s102_eval",
+      "started": 1792017192.105785,
+      "finished": 1792017248.9361742,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_rep_s103",
+      "started": 1792017249.6911247,
+      "finished": 1792017364.315291,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_rep_s103_eval",
+      "started": 1792017365.6660042,
+      "finished": 1792017426.4512453,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_v1",
+      "started": 1792012716.4979162,
+      "finished": 1792012971.8025398,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "mnli_tquery_v1_eval",
+      "started": 1792012972.6374874,
+      "finished": 1792013106.3893163,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "numerical_audit",
+      "started": 1792001492.283251,
+      "finished": 1792001503.2867434,
+      "returncode": 1,
+      "sample_count": 0,
+      "foreign_context_sample_count": 0,
+      "timing_status": "unverified"
+    },
+    {
+      "stage": "numerical_audit_v2",
+      "started": 1792001517.8609858,
+      "finished": 1792001528.8643599,
+      "returncode": 0,
+      "sample_count": 0,
+      "foreign_context_sample_count": 0,
+      "timing_status": "unverified"
+    },
+    {
+      "stage": "paws_anchor_fastio_v1",
+      "started": 1792013107.132362,
+      "finished": 1792013391.8903847,
+      "returncode": 0,
+      "sample_count": 21,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_fastio_v1_eval",
+      "started": 1792013392.7300448,
+      "finished": 1792013538.6139822,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_rep_s102",
+      "started": 1792027747.158513,
+      "finished": 1792027792.7446828,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_rep_s102_eval",
+      "started": 1792027793.624798,
+      "finished": 1792027828.1468186,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_rep_s103",
+      "started": 1792027828.9123433,
+      "finished": 1792027874.5394275,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_rep_s103_eval",
+      "started": 1792027875.3758972,
+      "finished": 1792027909.9463677,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_v1",
+      "started": 1792003656.7992566,
+      "finished": 1792003847.8203046,
+      "returncode": 0,
+      "sample_count": 14,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_anchor_v1_eval",
+      "started": 1792003848.542544,
+      "finished": 1792003968.554775,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_cachedhead_v1",
+      "started": 1792026096.7971447,
+      "finished": 1792026361.6301808,
+      "returncode": 0,
+      "sample_count": 19,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_cachedhead_v1_eval",
+      "started": 1792026362.4817514,
+      "finished": 1792026430.391878,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_forget_v1",
+      "started": 1792025673.2335389,
+      "finished": 1792025828.2355745,
+      "returncode": 0,
+      "sample_count": 12,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_forget_v1_eval",
+      "started": 1792025829.0904949,
+      "finished": 1792025880.8889892,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_rep_s102",
+      "started": 1792010865.4460142,
+      "finished": 1792010953.7835517,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_rep_s102_eval",
+      "started": 1792010955.1609116,
+      "finished": 1792010992.722393,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_rep_s103",
+      "started": 1792010993.4843233,
+      "finished": 1792011079.6595778,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_rep_s103_eval",
+      "started": 1792011080.5110881,
+      "finished": 1792011119.0205457,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_v2",
+      "started": 1792010249.1679938,
+      "finished": 1792010475.143954,
+      "returncode": 0,
+      "sample_count": 17,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_classrls_v2_eval",
+      "started": 1792010475.9904428,
+      "finished": 1792010544.9318383,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fast_rep_s102",
+      "started": 1792006574.1103013,
+      "finished": 1792006734.12863,
+      "returncode": 0,
+      "sample_count": 12,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fast_rep_s102_eval",
+      "started": 1792006734.8484485,
+      "finished": 1792006800.8572178,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fast_rep_s103",
+      "started": 1792006801.4860532,
+      "finished": 1792006964.5060863,
+      "returncode": 0,
+      "sample_count": 12,
+      "foreign_context_sample_count": 3,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_fast_rep_s103_eval",
+      "started": 1792007497.5690212,
+      "finished": 1792007562.5774043,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 7,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_fast_v1",
+      "started": 1792003097.5402124,
+      "finished": 1792003296.5630383,
+      "returncode": 0,
+      "sample_count": 15,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fast_v1_eval",
+      "started": 1792003297.784218,
+      "finished": 1792003406.7978294,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fast_v1_tagfix_eval",
+      "started": 1792003969.3579981,
+      "finished": 1792004002.3638682,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_fastio_v1",
+      "started": 1792007575.384724,
+      "finished": 1792007921.0964077,
+      "returncode": 0,
+      "sample_count": 25,
+      "foreign_context_sample_count": 25,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_fastio_v1_eval",
+      "started": 1792007921.9199548,
+      "finished": 1792008031.2763758,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 9,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_frozen_confirmation",
+      "started": 1792028135.136477,
+      "finished": 1792028194.9292285,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_frozen_test",
+      "started": 1792029081.6329513,
+      "finished": 1792029775.912278,
+      "returncode": 0,
+      "sample_count": 48,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_h_collect",
+      "started": 1792017875.54774,
+      "finished": 1792017895.8798602,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_h_cv_v1",
+      "started": 1792018143.9524386,
+      "finished": 1792018495.5841327,
+      "returncode": 0,
+      "sample_count": 25,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_h_cv_v1_eval",
+      "started": 1792018496.4424496,
+      "finished": 1792018614.9725535,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_h_refit_v1",
+      "started": 1792017896.6724713,
+      "finished": 1792018143.2223575,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_rep_s102",
+      "started": 1792022860.6690648,
+      "finished": 1792023120.9951189,
+      "returncode": 0,
+      "sample_count": 19,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_rep_s102_eval",
+      "started": 1792023121.926252,
+      "finished": 1792023172.639852,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_rep_s103",
+      "started": 1792023173.901566,
+      "finished": 1792023435.43087,
+      "returncode": 0,
+      "sample_count": 19,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_rep_s103_eval",
+      "started": 1792023436.8166256,
+      "finished": 1792023486.527647,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_v1",
+      "started": 1792019385.0644536,
+      "finished": 1792020868.8451188,
+      "returncode": 0,
+      "sample_count": 99,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_long_v1_eval",
+      "started": 1792020869.6923583,
+      "finished": 1792021078.5479827,
+      "returncode": 0,
+      "sample_count": 16,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_lr_v1",
+      "started": 1792004237.4893875,
+      "finished": 1792004538.521604,
+      "returncode": 0,
+      "sample_count": 21,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_lr_v1_eval",
+      "started": 1792004539.237597,
+      "finished": 1792004643.2503524,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_memory_v1",
+      "started": 1792009968.523779,
+      "finished": 1792010187.688814,
+      "returncode": 0,
+      "sample_count": 17,
+      "foreign_context_sample_count": 9,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_memory_v1_eval",
+      "started": 1792010188.5372221,
+      "finished": 1792010248.4130685,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_moments_v1",
+      "started": 1792014326.6410627,
+      "finished": 1792014591.879165,
+      "returncode": 0,
+      "sample_count": 20,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_moments_v1_eval",
+      "started": 1792014592.7168262,
+      "finished": 1792014662.59153,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_multistate_collect",
+      "started": 1792023487.2924578,
+      "finished": 1792023512.773937,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_multistate_cv_v1",
+      "started": 1792023806.025649,
+      "finished": 1792024223.3479316,
+      "returncode": 0,
+      "sample_count": 30,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_multistate_cv_v1_eval",
+      "started": 1792024224.3530002,
+      "finished": 1792024323.7108,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_multistate_fit",
+      "started": 1792023513.529203,
+      "finished": 1792023805.2631385,
+      "returncode": 0,
+      "sample_count": 21,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_oracle_lr_rep_s102",
+      "started": 1792016579.2077222,
+      "finished": 1792016617.7233334,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_oracle_lr_rep_s102_eval",
+      "started": 1792016618.5638893,
+      "finished": 1792016647.9746218,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_oracle_lr_rep_s103",
+      "started": 1792016649.2239094,
+      "finished": 1792016686.756561,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_oracle_lr_rep_s103_eval",
+      "started": 1792016687.616318,
+      "finished": 1792016715.0236702,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_refit_cv_v1",
+      "started": 1792015251.2032976,
+      "finished": 1792015612.651927,
+      "returncode": 0,
+      "sample_count": 25,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_refit_cv_v1_eval",
+      "started": 1792015613.554774,
+      "finished": 1792015741.1926796,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_refit_v1",
+      "started": 1792015015.510124,
+      "finished": 1792015250.425807,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_ridge_v1",
+      "started": 1792003407.419901,
+      "finished": 1792003584.4384232,
+      "returncode": 0,
+      "sample_count": 14,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_ridge_v1_eval",
+      "started": 1792003585.162963,
+      "finished": 1792003656.1730216,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_screen_v1_eval",
+      "started": 1792002482.067674,
+      "finished": 1792002629.0832229,
+      "returncode": 0,
+      "sample_count": 11,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_state_v1",
+      "started": 1792004015.101541,
+      "finished": 1792004177.1210837,
+      "returncode": 0,
+      "sample_count": 13,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_state_v1_eval",
+      "started": 1792004177.8482444,
+      "finished": 1792004236.8557057,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_strat_v1",
+      "started": 1792009339.9200675,
+      "finished": 1792009562.5941088,
+      "returncode": 0,
+      "sample_count": 17,
+      "foreign_context_sample_count": 17,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_strat_v1_eval",
+      "started": 1792009563.467077,
+      "finished": 1792009651.5967844,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 8,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_strongcal_v1",
+      "started": 1792008870.6750922,
+      "finished": 1792009231.0076897,
+      "returncode": 0,
+      "sample_count": 26,
+      "foreign_context_sample_count": 26,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_strongcal_v1_eval",
+      "started": 1792009231.8290904,
+      "finished": 1792009339.1881292,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 9,
+      "timing_status": "requires_clean_replay"
+    },
+    {
+      "stage": "paws_tcache_rep_s102",
+      "started": 1792027521.1062312,
+      "finished": 1792027596.338226,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tcache_rep_s102_eval",
+      "started": 1792027597.695567,
+      "finished": 1792027633.2032125,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tcache_rep_s103",
+      "started": 1792027633.985995,
+      "finished": 1792027709.0069041,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tcache_rep_s103_eval",
+      "started": 1792027709.8557262,
+      "finished": 1792027746.4103518,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tcache_v1",
+      "started": 1792011390.9535108,
+      "finished": 1792011773.1945148,
+      "returncode": 0,
+      "sample_count": 27,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tcache_v1_eval",
+      "started": 1792011774.0265791,
+      "finished": 1792011872.292726,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_lr_v1",
+      "started": 1792017427.1954098,
+      "finished": 1792017543.8181899,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_lr_v1_eval",
+      "started": 1792017544.6708896,
+      "finished": 1792017612.7510226,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_rep_s102",
+      "started": 1792016715.857599,
+      "finished": 1792016835.4330406,
+      "returncode": 0,
+      "sample_count": 10,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_rep_s102_eval",
+      "started": 1792016836.283868,
+      "finished": 1792016890.1508398,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_rep_s103",
+      "started": 1792016891.404484,
+      "finished": 1792016999.1717954,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_rep_s103_eval",
+      "started": 1792017000.175464,
+      "finished": 1792017057.0590892,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_v1",
+      "started": 1792012378.59961,
+      "finished": 1792012612.5234857,
+      "returncode": 0,
+      "sample_count": 18,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "paws_tquery_v1_eval",
+      "started": 1792012613.3920674,
+      "finished": 1792012715.7584605,
+      "returncode": 0,
+      "sample_count": 8,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "ridge_audit",
+      "started": 1792002775.7144017,
+      "finished": 1792002778.7160578,
+      "returncode": 0,
+      "sample_count": 2,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "screen_paws_v1",
+      "started": 1792001545.9376824,
+      "finished": 1792002426.0276968,
+      "returncode": 0,
+      "sample_count": 55,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "smoke",
+      "started": 1792001435.4717484,
+      "finished": 1792001457.4761524,
+      "returncode": 0,
+      "sample_count": 0,
+      "foreign_context_sample_count": 0,
+      "timing_status": "unverified"
+    },
+    {
+      "stage": "state_feature_audit",
+      "started": 1792004002.984261,
+      "finished": 1792004013.987833,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "surrogate_transfer_mnli",
+      "started": 1792025244.648289,
+      "finished": 1792025302.4235017,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "surrogate_transfer_paws",
+      "started": 1792025186.1656594,
+      "finished": 1792025243.8865502,
+      "returncode": 0,
+      "sample_count": 6,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "teacher_prefix_audit",
+      "started": 1792011378.877826,
+      "finished": 1792011390.2274926,
+      "returncode": 0,
+      "sample_count": 3,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_fast_cv16_cache",
+      "started": 1792016475.2021985,
+      "finished": 1792016510.7949228,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_fast_oracle32",
+      "started": 1792016437.8783941,
+      "finished": 1792016474.4584901,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv16_fastio",
+      "started": 1792016544.876195,
+      "finished": 1792016578.456803,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv16_teacher_u101",
+      "started": 1792025396.827457,
+      "finished": 1792025429.5936172,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv16_teacher_u102",
+      "started": 1792025430.3712492,
+      "finished": 1792025461.9123616,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv16_teacher_u103",
+      "started": 1792025462.6654055,
+      "finished": 1792025494.2541342,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv8_512_teacher_u101",
+      "started": 1792027910.691592,
+      "finished": 1792027957.351212,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv8_512_teacher_u102",
+      "started": 1792027958.6107833,
+      "finished": 1792028005.3922842,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_mnli_cv8_512_teacher_u103",
+      "started": 1792028006.137411,
+      "finished": 1792028052.9021156,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_cv16_fastio",
+      "started": 1792016511.6099415,
+      "finished": 1792016544.1331718,
+      "returncode": 0,
+      "sample_count": 5,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_cv16_teacher_u101",
+      "started": 1792025303.2361636,
+      "finished": 1792025333.7131538,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_cv16_teacher_u102",
+      "started": 1792025334.4604897,
+      "finished": 1792025364.8637612,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_cv16_teacher_u103",
+      "started": 1792025365.6273777,
+      "finished": 1792025396.0764692,
+      "returncode": 0,
+      "sample_count": 4,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_teacher_long_cv8_lr0.0003_1024",
+      "started": 1792025495.0148938,
+      "finished": 1792025572.1910315,
+      "returncode": 0,
+      "sample_count": 7,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    },
+    {
+      "stage": "timing_preflight_paws_teacher_long_oracle32_lr0.0003_1024",
+      "started": 1792025572.9186206,
+      "finished": 1792025672.4427168,
+      "returncode": 0,
+      "sample_count": 9,
+      "foreign_context_sample_count": 0,
+      "timing_status": "sampled_owned_only"
+    }
+  ],
+  "scope": "Conservative15-second margins around stage intervals. Sampling cannot exclude activity between observations. Foreign CUDA contexts need not imply active computation; affected timings are excluded from final speed claims regardless. Numerical accuracy results remain eligible."
+}

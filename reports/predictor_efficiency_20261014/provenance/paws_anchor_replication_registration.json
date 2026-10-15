@@ -1,0 +1,56 @@
+{
+  "created_epoch": 1792024904.8927934,
+  "reason": "Replicate the existing fastest promising periodic-anchor screen and its matched no-predictor hold control before final selection. Both had93.55% seed101 development accuracy at256; no new method family or learning-rate search.",
+  "jobs": [
+    {
+      "name": "gpu_hold2_lr0.0003",
+      "kind": "subset",
+      "lr": 0.0003,
+      "steps": 256,
+      "save": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "fast_loss": true,
+      "token_budget": 8192,
+      "micro": 32,
+      "prefix_micro": 32,
+      "cache": false,
+      "anchor_every": 2,
+      "residual_ema": 0.0,
+      "pred_bf16": false
+    },
+    {
+      "name": "gpu_anchor2_lr0.0003_cached",
+      "kind": "cv",
+      "lr": 0.0003,
+      "steps": 256,
+      "save": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "fast_loss": true,
+      "token_budget": 8192,
+      "micro": 32,
+      "prefix_micro": 32,
+      "cache": true,
+      "anchor_every": 2,
+      "residual_ema": 0.0,
+      "pred_bf16": false
+    }
+  ],
+  "additional_update_seeds": [
+    102,
+    103
+  ],
+  "additional_predictor_seeds": [
+    124,
+    125
+  ],
+  "selection_split": "accuracy_dev",
+  "no_final_readouts_yet": true
+}

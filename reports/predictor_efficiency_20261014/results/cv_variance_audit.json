@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "n": 8,
+      "k": 1,
+      "observed": 1.9491033721390432,
+      "formula": 1.9491033721390432
+    },
+    {
+      "n": 8,
+      "k": 2,
+      "observed": 0.8353300166310184,
+      "formula": 0.8353300166310185
+    },
+    {
+      "n": 8,
+      "k": 4,
+      "observed": 0.27844333887700606,
+      "formula": 0.2784433388770062
+    },
+    {
+      "n": 8,
+      "k": 8,
+      "observed": 1.5262994809268844e-32,
+      "formula": 0.0
+    }
+  ],
+  "targets": [
+    {
+      "batch_size": 32,
+      "cv_true_examples": 4,
+      "oracle_true_examples": 8,
+      "maximum_centered_residual_variance_ratio": 0.42857142857142855,
+      "required_variance_reduction_fraction": 0.5714285714285714
+    },
+    {
+      "batch_size": 32,
+      "cv_true_examples": 4,
+      "oracle_true_examples": 16,
+      "maximum_centered_residual_variance_ratio": 0.14285714285714285,
+      "required_variance_reduction_fraction": 0.8571428571428572
+    },
+    {
+      "batch_size": 32,
+      "cv_true_examples": 8,
+      "oracle_true_examples": 16,
+      "maximum_centered_residual_variance_ratio": 0.3333333333333333,
+      "required_variance_reduction_fraction": 0.6666666666666667
+    }
+  ],
+  "formula": "E||CVmean - true_batch_mean||^2=(1/k-1/N)*S_residual^2; S uses N-1 denominator. Same fixed-batch token normalization multiplies both sides equally.",
+  "interpretation": "Targets concern conditional raw-gradient sampling variance, not downstream accuracy or Adam/clipping. Small held-out diagnostic samples are estimates, not population guarantees. Oracle32 has zero within-batch sampling error, so nonzero residuals cannot match that variance exactly."
+}

@@ -1,0 +1,20 @@
+{
+  "registered_epoch": 1792014436.2339118,
+  "reason": "Bounded refinement of online class-conditioned surrogate. Three-seed PAWS RLS8 residual variance ratios worsen from .79-.89 atstep32 toward about1.0 at512; original forgetting .99 may retain stale gradients. Test faster forgetting as a hypothesis, not an established explanation.",
+  "forgetting_rates": [
+    0.9,
+    0.95
+  ],
+  "original_rate": 0.99,
+  "correction_sizes": [
+    4,
+    8
+  ],
+  "lr": 0.0003,
+  "ridge": 10.0,
+  "steps": 512,
+  "update_seed": 101,
+  "predictor_seed": 0,
+  "selection_split": "accuracy_dev",
+  "no_new_algorithm_family": true
+}

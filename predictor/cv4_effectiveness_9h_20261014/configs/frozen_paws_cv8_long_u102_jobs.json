@@ -1,0 +1,21 @@
+[
+  {
+    "name": "long_cv8_lr0.0003",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  }
+]

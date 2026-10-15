@@ -1,0 +1,17 @@
+{
+  "recorded_epoch": 1792033025.598361,
+  "all_study_python_sources_compile": true,
+  "numerical_audits": "Published individual numerical audit receipts cover estimator algebra, reconstruction, state features, GPU feature transport, teacher-prefix limits, cached heads and the FLOP counter.",
+  "reproduction_launcher_prepare_only_override": "passed",
+  "reproduction_launcher_gpu_smoke": "passed: fresh32-step PAWS CV16 teacher-prefix training and512-example evaluation of selected adapter and warmup; weights and accuracies match originals",
+  "python_source_count": 90,
+  "replay_completion_guards": "Timing, FLOP and reproduction harnesses require complete history at the requested final update.",
+  "reproduction_absolute_cutoff_prepare_only": "passed",
+  "final_weight_matched_timing_replays": 48,
+  "matching_flop_profiles": 10,
+  "registered_flop_profiles": 8,
+  "supplementary_cost_profiles": 2,
+  "gpu_work_complete_before_cutoff": true,
+  "gpu0_empty_and_cooperative_lock_released_at_final_check": true,
+  "publication_formatting": "CSV exports use LF; parsed rows unchanged. Removed extra EOF blank lines from three Python files; no training arithmetic changes."
+}

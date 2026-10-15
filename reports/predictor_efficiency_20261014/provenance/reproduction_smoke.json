@@ -1,0 +1,27 @@
+{
+  "completed_epoch": 1792032687.210974,
+  "validated_epoch": 1792032813.2832475,
+  "task": "paws",
+  "recipe": "fast_cv16_cache",
+  "module": "research_teacher_cache",
+  "steps": 32,
+  "update_seed": 101,
+  "predictor_seed": 123,
+  "fresh_output_directory": "/mnt/micron/yixiaore/adapter/predictor/cv4_reproduction_smoke_20261015",
+  "weights_bitwise_equal_to_original_checkpoint": true,
+  "replayed_adapter_sha256": "be4e07d215f70aab2a91a544bf793db401a2f20c06711921de2149cd0f084ab2",
+  "reference_adapter_sha256": "be4e07d215f70aab2a91a544bf793db401a2f20c06711921de2149cd0f084ab2",
+  "dev_examples_per_adapter": 512,
+  "evaluated_adapters": [
+    "selected_step32",
+    "shared_warmup"
+  ],
+  "dev_accuracy_pct": 87.5,
+  "matches_original_dev_readout": true,
+  "warmup_dev_readout_also_matches": true,
+  "full_inputs": true,
+  "generation_input_token_ids_verified": true,
+  "generation_cap_new_tokens": 256,
+  "compute_cutoff_epoch": 1792032943.0,
+  "scope": "Fresh launcher smoke through training and development generation. Correctness/reproduction check, not a speed benchmark; no new method selection."
+}

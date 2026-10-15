@@ -1,0 +1,210 @@
+[
+  {
+    "name": "multi_h128_cv4",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": false,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_h128_p123/best.pt"
+  },
+  {
+    "name": "multi_h128_cv8",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": false,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_h128_p123/best.pt"
+  },
+  {
+    "name": "multi_state128_cv4",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_state128_p123/best.pt"
+  },
+  {
+    "name": "multi_state128_cv8",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_state128_p123/best.pt"
+  },
+  {
+    "name": "multi_labelstate128_cv4",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_labelstate128_p123/best.pt"
+  },
+  {
+    "name": "multi_labelstate128_cv8",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_labelstate128_p123/best.pt"
+  },
+  {
+    "name": "multi_state512_cv4",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_state512_p123/best.pt"
+  },
+  {
+    "name": "multi_state512_cv8",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__multistate_state512_p123/best.pt"
+  },
+  {
+    "name": "multicontrol_h128_cv4",
+    "kind": "cv",
+    "k": 4,
+    "micro": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__refit_h_global128_p123/best.pt"
+  },
+  {
+    "name": "multicontrol_h128_cv8",
+    "kind": "cv",
+    "k": 8,
+    "micro": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true,
+    "explicit_state": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__refit_h_global128_p123/best.pt"
+  }
+]

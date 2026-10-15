@@ -1,0 +1,326 @@
+{
+  "freeze_sha256": "f99382d2b1ed3f6067589f63ea6c8b69381e4d2d98a81aeb7ac425e003db762c",
+  "interpretation": "Supplementary descriptive paired comparisons among already-frozen cohorts. The MNLI CV16-versus-early-Oracle comparison was added after readouts, and is explicitly post-readout exploratory analysis. No multiplicity correction or post-readout recipe selection. Early-Oracle comparisons change stopping point and learning rate; see the frozen plan. One shared warmup and historically inspected evaluation populations limit inference.",
+  "rows": [
+    {
+      "task": "paws",
+      "split": "oracle_confirmation",
+      "candidate": "cv16",
+      "control": "oracle16",
+      "mean_gap_pp": 0.06510416666666666,
+      "ci95_gap_pp": [
+        -0.714763781174443,
+        0.8365575677291157
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.390625,
+        "102": -0.390625,
+        "103": 0.1953125
+      },
+      "n_examples": 512,
+      "n_source_groups": 111,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "paws",
+      "split": "oracle_confirmation",
+      "candidate": "anchor2",
+      "control": "hold2",
+      "mean_gap_pp": 0.1953125,
+      "ci95_gap_pp": [
+        -0.5905511811023622,
+        1.105071484432718
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.0,
+        "102": -0.1953125,
+        "103": 0.78125
+      },
+      "n_examples": 512,
+      "n_source_groups": 111,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "paws",
+      "split": "oracle_confirmation",
+      "candidate": "cv16",
+      "control": "oracle_early",
+      "mean_gap_pp": 0.1953125,
+      "ci95_gap_pp": [
+        -1.8267402851551577,
+        2.439058209217699
+      ],
+      "per_seed_gap_pp": {
+        "101": 1.171875,
+        "102": 0.0,
+        "103": -0.5859375
+      },
+      "n_examples": 512,
+      "n_source_groups": 111,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "oracle_confirmation",
+      "candidate": "rls8",
+      "control": "oracle8",
+      "mean_gap_pp": 0.1953125,
+      "ci95_gap_pp": [
+        -1.8193632228719947,
+        2.152747400329993
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.390625,
+        "102": -1.171875,
+        "103": 1.3671875
+      },
+      "n_examples": 512,
+      "n_source_groups": 171,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "oracle_confirmation",
+      "candidate": "cv8",
+      "control": "oracle8",
+      "mean_gap_pp": -0.5859375,
+      "ci95_gap_pp": [
+        -2.729178088450292,
+        1.3739727859954691
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.390625,
+        "102": -1.5625,
+        "103": 0.1953125
+      },
+      "n_examples": 512,
+      "n_source_groups": 171,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "oracle_confirmation",
+      "candidate": "rls8",
+      "control": "oracle_early",
+      "mean_gap_pp": -0.7161458333333333,
+      "ci95_gap_pp": [
+        -3.000799406520599,
+        1.5625
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.390625,
+        "102": -2.34375,
+        "103": 0.5859375
+      },
+      "n_examples": 512,
+      "n_source_groups": 171,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "oracle_confirmation",
+      "candidate": "oracle_cached",
+      "control": "oracle_quality",
+      "mean_gap_pp": 0.06510416666666666,
+      "ci95_gap_pp": [
+        -0.6523157208088715,
+        0.8480104370515329
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.1953125,
+        "102": 0.390625,
+        "103": -0.390625
+      },
+      "n_examples": 512,
+      "n_source_groups": 171,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "oracle_confirmation",
+      "candidate": "cv16",
+      "control": "oracle_early",
+      "mean_gap_pp": -0.32552083333333337,
+      "ci95_gap_pp": [
+        -2.3483365949119372,
+        1.7578125
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.390625,
+        "102": -0.78125,
+        "103": 0.1953125
+      },
+      "n_examples": 512,
+      "n_source_groups": 171,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "post_readout_secondary"
+    },
+    {
+      "task": "paws",
+      "split": "test",
+      "candidate": "cv16",
+      "control": "oracle16",
+      "mean_gap_pp": -0.07083333333333333,
+      "ci95_gap_pp": [
+        -0.22357980409267253,
+        0.075781748997888
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.13749999999999998,
+        "102": -0.0375,
+        "103": -0.0375
+      },
+      "n_examples": 8000,
+      "n_source_groups": 1616,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "paws",
+      "split": "test",
+      "candidate": "anchor2",
+      "control": "hold2",
+      "mean_gap_pp": -0.1,
+      "ci95_gap_pp": [
+        -0.28781077501646657,
+        0.09570410844319675
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.0375,
+        "102": -0.15,
+        "103": -0.1875
+      },
+      "n_examples": 8000,
+      "n_source_groups": 1616,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "paws",
+      "split": "test",
+      "candidate": "cv16",
+      "control": "oracle_early",
+      "mean_gap_pp": -0.25416666666666665,
+      "ci95_gap_pp": [
+        -0.8239402047201635,
+        0.33169603991962265
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.125,
+        "102": -0.3375,
+        "103": -0.5499999999999999
+      },
+      "n_examples": 8000,
+      "n_source_groups": 1616,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "test",
+      "candidate": "rls8",
+      "control": "oracle8",
+      "mean_gap_pp": 0.44489726608931907,
+      "ci95_gap_pp": [
+        -0.1328023825495581,
+        1.0417727189703256
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.10188487009679062,
+        "102": 0.5094243504839532,
+        "103": 0.9271523178807948
+      },
+      "n_examples": 9815,
+      "n_source_groups": 3334,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "test",
+      "candidate": "cv8",
+      "control": "oracle8",
+      "mean_gap_pp": -0.7131940906775344,
+      "ci95_gap_pp": [
+        -1.4549154634275647,
+        -0.07795820122261472
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.21395822720326033,
+        "102": -1.4263881813550687,
+        "103": -0.49923586347427407
+      },
+      "n_examples": 9815,
+      "n_source_groups": 3334,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "test",
+      "candidate": "rls8",
+      "control": "oracle_early",
+      "mean_gap_pp": -0.47546272711835624,
+      "ci95_gap_pp": [
+        -1.0648841750691005,
+        0.1119604275306614
+      ],
+      "per_seed_gap_pp": {
+        "101": -0.5399898115129903,
+        "102": -0.8252674477840042,
+        "103": -0.061130922058074376
+      },
+      "n_examples": 9815,
+      "n_source_groups": 3334,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "test",
+      "candidate": "oracle_cached",
+      "control": "oracle_quality",
+      "mean_gap_pp": 0.10867719476991,
+      "ci95_gap_pp": [
+        -0.030596712391012738,
+        0.24477557239135278
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.18339276617422312,
+        "102": 0.10188487009679062,
+        "103": 0.04075394803871625
+      },
+      "n_examples": 9815,
+      "n_source_groups": 3334,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "registered_during_frozen_readout"
+    },
+    {
+      "task": "mnli",
+      "split": "test",
+      "candidate": "cv16",
+      "control": "oracle_early",
+      "mean_gap_pp": -0.28188147393445406,
+      "ci95_gap_pp": [
+        -0.8222567058028133,
+        0.2615597971568847
+      ],
+      "per_seed_gap_pp": {
+        "101": 0.15282730514518594,
+        "102": -0.38716250636780436,
+        "103": -0.6113092205807438
+      },
+      "n_examples": 9815,
+      "n_source_groups": 3334,
+      "bootstrap_draws": 5000,
+      "analysis_registration_phase": "post_readout_secondary"
+    }
+  ]
+}

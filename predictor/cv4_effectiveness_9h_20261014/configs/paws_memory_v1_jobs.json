@@ -1,0 +1,82 @@
+[
+  {
+    "name": "memory4_init0",
+    "k": 4,
+    "initialize": false,
+    "class_fallback": true,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "memory_cv"
+  },
+  {
+    "name": "memory4_init1",
+    "k": 4,
+    "initialize": true,
+    "class_fallback": false,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "memory_cv"
+  },
+  {
+    "name": "memory8_init0",
+    "k": 8,
+    "initialize": false,
+    "class_fallback": true,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "memory_cv"
+  },
+  {
+    "name": "memory8_init1",
+    "k": 8,
+    "initialize": true,
+    "class_fallback": false,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "memory_cv"
+  },
+  {
+    "name": "memory4_init1_c0.5",
+    "k": 4,
+    "initialize": true,
+    "coefficient": 0.5,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "memory_cv"
+  }
+]

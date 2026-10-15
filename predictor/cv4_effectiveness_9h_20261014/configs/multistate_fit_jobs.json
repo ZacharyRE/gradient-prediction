@@ -1,0 +1,29 @@
+[
+  {
+    "name": "h128",
+    "base": "global128",
+    "explicit_state": false,
+    "epochs": 20
+  },
+  {
+    "name": "state128",
+    "base": "global128",
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "epochs": 20
+  },
+  {
+    "name": "labelstate128",
+    "base": "labelglobal128",
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "epochs": 20
+  },
+  {
+    "name": "state512",
+    "base": "global512",
+    "explicit_state": true,
+    "delta_gain": 100.0,
+    "epochs": 20
+  }
+]

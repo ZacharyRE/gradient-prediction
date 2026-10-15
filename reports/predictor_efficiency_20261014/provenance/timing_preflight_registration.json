@@ -1,0 +1,31 @@
+{
+  "registered_epoch": 1792016324.9654148,
+  "purpose": "Validate standalone timing harness and saved-weight equality before final-validation window. Repeat0 is a preflight, excluded from final timing summary; final selected methods receive separate repeated benchmarks.",
+  "recipes": [
+    "fast_oracle32",
+    "fast_cv16_cache"
+  ],
+  "added_fastio_checks_epoch": 1792016396.4385748,
+  "additional_checks": [
+    {
+      "task": "paws",
+      "recipe": "fast_cv16_cache",
+      "module": "research_fastio",
+      "reference_module": "research_v3",
+      "update_seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "repeat": 0
+    },
+    {
+      "task": "mnli",
+      "recipe": "fast_cv16_cache",
+      "module": "research_fastio",
+      "reference_module": "research_v3",
+      "update_seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "repeat": 0
+    }
+  ]
+}

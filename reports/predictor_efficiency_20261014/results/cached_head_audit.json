@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "head_changed": false,
+      "max_absolute_output_error": 0.0
+    },
+    {
+      "head_changed": true,
+      "max_absolute_output_error": 0.0
+    }
+  ],
+  "note": "Exact encoder caching at the same warmup inputs; stale body features during later LoRA changes are intentional and corrected by CV."
+}

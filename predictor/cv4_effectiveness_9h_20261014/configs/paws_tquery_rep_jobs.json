@@ -1,0 +1,78 @@
+[
+  {
+    "name": "tquery_nop_q0.5_b0.9",
+    "kind": "subset",
+    "cache": false,
+    "query_probability": 0.5,
+    "residual_ema": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  },
+  {
+    "name": "tquery_nop_q0.25_b0.9",
+    "kind": "subset",
+    "cache": false,
+    "query_probability": 0.25,
+    "residual_ema": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  },
+  {
+    "name": "tquery_cv_q0.5_b0.9",
+    "kind": "cv",
+    "cache": true,
+    "query_probability": 0.5,
+    "residual_ema": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  },
+  {
+    "name": "tquery_cv_q0.25_b0.9",
+    "kind": "cv",
+    "cache": true,
+    "query_probability": 0.25,
+    "residual_ema": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  }
+]

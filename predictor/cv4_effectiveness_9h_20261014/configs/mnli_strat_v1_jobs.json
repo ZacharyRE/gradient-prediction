@@ -1,0 +1,174 @@
+[
+  {
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": false,
+    "name": "strat_subset4_lr0.0003"
+  },
+  {
+    "kind": "subset",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": false,
+    "name": "strat_subset4_lr0.001"
+  },
+  {
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": true,
+    "name": "strat_cv4_lr0.0003"
+  },
+  {
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": true,
+    "name": "strat_cv4_lr0.001"
+  },
+  {
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 8,
+    "k": 8,
+    "cache": false,
+    "name": "strat_subset8_lr0.0003"
+  },
+  {
+    "kind": "subset",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 8,
+    "k": 8,
+    "cache": false,
+    "name": "strat_subset8_lr0.001"
+  },
+  {
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 8,
+    "k": 8,
+    "cache": true,
+    "name": "strat_cv8_lr0.0003"
+  },
+  {
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 8,
+    "k": 8,
+    "cache": true,
+    "name": "strat_cv8_lr0.001"
+  },
+  {
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": false,
+    "name": "recon_uniform4_lr0.0003",
+    "stratified": false
+  },
+  {
+    "kind": "subset",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 4,
+    "k": 4,
+    "cache": false,
+    "name": "recon_uniform4_lr0.001",
+    "stratified": false
+  }
+]

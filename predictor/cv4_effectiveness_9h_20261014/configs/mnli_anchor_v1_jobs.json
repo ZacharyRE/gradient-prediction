@@ -1,0 +1,315 @@
+[
+  {
+    "name": "hold4",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": false,
+    "pred_bf16": true,
+    "anchor_every": 4
+  },
+  {
+    "name": "anchor4_ema0",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 4,
+    "residual_ema": 0.0
+  },
+  {
+    "name": "anchor4_ema0.5",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 4,
+    "residual_ema": 0.5
+  },
+  {
+    "name": "hold8",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": false,
+    "pred_bf16": true,
+    "anchor_every": 8
+  },
+  {
+    "name": "anchor8_ema0",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 8,
+    "residual_ema": 0.0
+  },
+  {
+    "name": "anchor8_ema0.5",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 8,
+    "residual_ema": 0.5
+  },
+  {
+    "name": "hold16",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": false,
+    "pred_bf16": true,
+    "anchor_every": 16
+  },
+  {
+    "name": "anchor16_ema0",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 16,
+    "residual_ema": 0.0
+  },
+  {
+    "name": "anchor16_ema0.5",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 16,
+    "residual_ema": 0.5
+  },
+  {
+    "name": "anchor8_cal_head",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 8,
+    "cal_on_refresh": true,
+    "cal_scope": "head",
+    "cal_lr": 0.0001,
+    "cal_epochs": 2
+  },
+  {
+    "name": "anchor8_cal_all",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 8,
+    "cal_on_refresh": true,
+    "cal_scope": "all",
+    "cal_lr": 0.0001,
+    "cal_epochs": 2
+  },
+  {
+    "name": "anchor16_cal_head",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 16,
+    "cal_on_refresh": true,
+    "cal_scope": "head",
+    "cal_lr": 0.0001,
+    "cal_epochs": 2
+  },
+  {
+    "name": "anchor16_cal_all",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": true,
+    "anchor_every": 16,
+    "cal_on_refresh": true,
+    "cal_scope": "all",
+    "cal_lr": 0.0001,
+    "cal_epochs": 2
+  },
+  {
+    "name": "hold2",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": false,
+    "pred_bf16": false,
+    "anchor_every": 2,
+    "residual_ema": 0
+  },
+  {
+    "name": "anchor2_ema0",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": false,
+    "anchor_every": 2,
+    "residual_ema": 0
+  },
+  {
+    "name": "anchor2_ema0.5",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32,
+    "cache": true,
+    "pred_bf16": false,
+    "anchor_every": 2,
+    "residual_ema": 0.5
+  }
+]

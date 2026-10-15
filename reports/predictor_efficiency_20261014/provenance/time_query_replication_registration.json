@@ -1,0 +1,49 @@
+{
+  "registered_epoch": 1792012771.2315116,
+  "selection_evidence": "PAWS seed101 development: query q=.25 beta=.9 CV93.359% vs matched no-p92.773% at512; q=.5 beta=.9 no-p92.578% at256. Replicate both query rates and matched no-p controls, and test cross-task transfer on MNLI. Registered before MNLI time-query accuracy evaluation.",
+  "selected": [
+    {
+      "task": "paws",
+      "recipe": "tquery_nop_q0.5_b0.9"
+    },
+    {
+      "task": "paws",
+      "recipe": "tquery_nop_q0.25_b0.9"
+    },
+    {
+      "task": "paws",
+      "recipe": "tquery_cv_q0.5_b0.9"
+    },
+    {
+      "task": "paws",
+      "recipe": "tquery_cv_q0.25_b0.9"
+    },
+    {
+      "task": "mnli",
+      "recipe": "tquery_nop_q0.5_b0.9"
+    },
+    {
+      "task": "mnli",
+      "recipe": "tquery_nop_q0.25_b0.9"
+    },
+    {
+      "task": "mnli",
+      "recipe": "tquery_cv_q0.5_b0.9"
+    },
+    {
+      "task": "mnli",
+      "recipe": "tquery_cv_q0.25_b0.9"
+    }
+  ],
+  "update_seeds": [
+    102,
+    103
+  ],
+  "predictor_seeds": [
+    124,
+    125
+  ],
+  "steps": 512,
+  "selection_split": "accuracy_dev",
+  "confirmation_and_test_not_read": true
+}

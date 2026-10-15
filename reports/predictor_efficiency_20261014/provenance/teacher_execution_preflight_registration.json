@@ -1,0 +1,13 @@
+{
+  "registered_epoch": 1792019879.941972,
+  "purpose": "Check whether the already-tested shared teacher-prefix execution optimization preserves each of the six paired CV16 weights, and whether standalone first-use time improves. Repeat0 is preflight only, excluded from final medians. No new predictor method.",
+  "stages": [
+    "timing_preflight_paws_cv16_teacher_u101",
+    "timing_preflight_paws_cv16_teacher_u102",
+    "timing_preflight_paws_cv16_teacher_u103",
+    "timing_preflight_mnli_cv16_teacher_u101",
+    "timing_preflight_mnli_cv16_teacher_u102",
+    "timing_preflight_mnli_cv16_teacher_u103"
+  ],
+  "decision": "Use an execution module in the frozen final schedule only after inspecting numerical identity. Stronger Oracle stopping/LR and cheap Oracle controls remain required."
+}

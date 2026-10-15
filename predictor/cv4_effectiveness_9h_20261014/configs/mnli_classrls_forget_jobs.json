@@ -1,0 +1,70 @@
+[
+  {
+    "name": "classrls4_lr0.0003_forget0.9",
+    "k": 4,
+    "projection_dim": 0,
+    "ridge": 10.0,
+    "forget": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "online_ridge"
+  },
+  {
+    "name": "classrls4_lr0.0003_forget0.95",
+    "k": 4,
+    "projection_dim": 0,
+    "ridge": 10.0,
+    "forget": 0.95,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "online_ridge"
+  },
+  {
+    "name": "classrls8_lr0.0003_forget0.9",
+    "k": 8,
+    "projection_dim": 0,
+    "ridge": 10.0,
+    "forget": 0.9,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "online_ridge"
+  },
+  {
+    "name": "classrls8_lr0.0003_forget0.95",
+    "k": 8,
+    "projection_dim": 0,
+    "ridge": 10.0,
+    "forget": 0.95,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kind": "online_ridge"
+  }
+]

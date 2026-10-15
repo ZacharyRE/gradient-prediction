@@ -1,0 +1,37 @@
+[
+  {
+    "name": "tcache_oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "micro": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  },
+  {
+    "name": "tcache_oracle16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "micro": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  }
+]

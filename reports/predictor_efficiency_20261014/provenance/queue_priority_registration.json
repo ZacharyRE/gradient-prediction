@@ -1,0 +1,32 @@
+{
+  "registered_epoch": 1792018026.0591486,
+  "reason": "Prioritize state-aware/multi-state surrogate readouts early enough to replicate selected candidates and stronger long-horizon Oracle controls before final validation. No new recipe family added.",
+  "round9_order": [
+    "paws_multistate_collect",
+    "paws_multistate_fit",
+    "paws_multistate_cv_v1",
+    "paws_multistate_cv_v1_entries",
+    "paws_multistate_cv_v1_eval",
+    "mnli_multistate_collect",
+    "mnli_multistate_fit",
+    "mnli_multistate_cv_v1",
+    "mnli_multistate_cv_v1_entries",
+    "mnli_multistate_cv_v1_eval",
+    "surrogate_transfer_paws",
+    "surrogate_transfer_mnli",
+    "paws_classrls_forget_v1",
+    "paws_classrls_forget_v1_entries",
+    "paws_classrls_forget_v1_eval",
+    "mnli_classrls_forget_v1",
+    "mnli_classrls_forget_v1_entries",
+    "mnli_classrls_forget_v1_eval",
+    "cached_head_audit",
+    "paws_cachedhead_v1",
+    "paws_cachedhead_v1_entries",
+    "paws_cachedhead_v1_eval",
+    "mnli_cachedhead_v1",
+    "mnli_cachedhead_v1_entries",
+    "mnli_cachedhead_v1_eval"
+  ],
+  "round11": "Empty queue; waiting controller will exit after smooth-stage gate. Lower-priority smoothing may be skipped at validation reserve."
+}

@@ -1,0 +1,42 @@
+{
+  "registered_epoch": 1792028491.4697917,
+  "purpose": "Supplementary descriptive paired comparisons of already-frozen cohorts; no recipe/primary changes and no multiplicity-adjusted discovery claim.",
+  "paws_pairs": [
+    [
+      "cv16",
+      "oracle16"
+    ],
+    [
+      "anchor2",
+      "hold2"
+    ],
+    [
+      "cv16",
+      "oracle_early"
+    ]
+  ],
+  "mnli_pairs": [
+    [
+      "rls8",
+      "oracle8"
+    ],
+    [
+      "cv8",
+      "oracle8"
+    ],
+    [
+      "rls8",
+      "oracle_early"
+    ],
+    [
+      "oracle_cached",
+      "oracle_quality"
+    ]
+  ],
+  "splits": [
+    "oracle_confirmation",
+    "test"
+  ],
+  "bootstrap_draws": 5000,
+  "analysis_script": "analyze_frozen_controls.py"
+}

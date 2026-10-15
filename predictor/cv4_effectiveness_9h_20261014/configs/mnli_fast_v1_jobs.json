@@ -1,0 +1,279 @@
+[
+  {
+    "name": "fast_oracle32",
+    "kind": "oracle",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  },
+  {
+    "name": "fast_oracle4",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 4
+  },
+  {
+    "name": "fast_oracle8",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 8,
+    "micro": 8
+  },
+  {
+    "name": "fast_oracle16",
+    "kind": "subset",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 16,
+    "micro": 16
+  },
+  {
+    "name": "fast_cv4_cache",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 4,
+    "cache": true
+  },
+  {
+    "name": "fast_cv8_cache",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 8,
+    "micro": 8,
+    "cache": true
+  },
+  {
+    "name": "fast_cv16_cache",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 16,
+    "micro": 16,
+    "cache": true
+  },
+  {
+    "name": "fast_cv4_cache_bf16",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 4,
+    "cache": true,
+    "pred_bf16": true
+  },
+  {
+    "name": "fast_cv4_refresh16",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 16
+  },
+  {
+    "name": "fast_cv4_refresh16_cal_head",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 16,
+    "cal_on_refresh": true,
+    "cal_scope": "head",
+    "cal_lr": 0.0001,
+    "cal_epochs": 4
+  },
+  {
+    "name": "fast_cv4_refresh16_cal_all",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 16,
+    "cal_on_refresh": true,
+    "cal_scope": "all",
+    "cal_lr": 0.0001,
+    "cal_epochs": 4
+  },
+  {
+    "name": "fast_cv4_refresh32",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 32
+  },
+  {
+    "name": "fast_cv4_refresh32_cal_head",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 32,
+    "cal_on_refresh": true,
+    "cal_scope": "head",
+    "cal_lr": 0.0001,
+    "cal_epochs": 4
+  },
+  {
+    "name": "fast_cv4_refresh32_cal_all",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 32,
+    "cache": true,
+    "refresh_every": 32,
+    "cal_on_refresh": true,
+    "cal_scope": "all",
+    "cal_lr": 0.0001,
+    "cal_epochs": 4
+  },
+  {
+    "name": "fast_cv4_cache_centered",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "cache": true,
+    "cal_every": 8,
+    "cal_lr": 0.0001,
+    "cal_epochs": 2,
+    "replay_size": 32,
+    "cal_loss": "centered"
+  }
+]

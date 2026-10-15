@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "tf32": true,
+      "recursive_vs_closed_form_relative_l2": 0.0003453100050029974,
+      "inverse_relative_l2": 3.0767270566616778e-16
+    },
+    {
+      "tf32": false,
+      "recursive_vs_closed_form_relative_l2": 7.527492299992585e-08,
+      "inverse_relative_l2": 3.0767270566616778e-16
+    }
+  ]
+}

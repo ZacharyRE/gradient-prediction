@@ -1,0 +1,223 @@
+{
+  "comparison_reference": {
+    "paws": "oracle_quality",
+    "mnli": "oracle_quality"
+  },
+  "selection_reason": "Development-only selection across three paired update seeds, common recipe/LR/horizon per cohort. PAWS CV16 is the close-to-Oracle direct CV candidate with shorter adaptation than the quality Oracle; MNLI class-only RLS8 has the highest replicated predictor mean (tied LR0.0003), lower time at LR0.001, no offline fit, and a matched Oracle8 LR0.001 control. Its development gap still exceeds1pp, so success is not presumed. Neural CV8/CV16 and original CV4 remain explicit comparators. Retain independently tuned early Oracle32 and cheap true-gradient controls, PAWS long CV8, and the period2 predictor/no-predictor pair. PAWS quality reference uses the cached Oracle32 path, with the same best replicated dev mean as full-prefix; MNLI uses the stronger full-prefix Oracle32 and separately includes cached Oracle32. Long Oracle8 variants are development-only because stronger/faster Oracle controls dominate them on development. No final readouts inspected. Numerical execution fallback, if required, is restricted to the declared original trainer and never changes selected adapter, LR, stopping point, or accuracy.",
+  "cohorts": [
+    {
+      "task": "paws",
+      "cohort": "oracle_quality",
+      "tags": [
+        "paws__tcache_oracle32_lr0.0003_u101_p123__step512",
+        "paws__tcache_oracle32_lr0.0003_u102_p124__step512",
+        "paws__tcache_oracle32_lr0.0003_u103_p125__step512"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_teacher_cache",
+      "profile": true,
+      "label": "Oracle32, cached prefix"
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle16",
+      "tags": [
+        "paws__fast_oracle16_u101_p123__step256",
+        "paws__fast_oracle16_u102_p124__step256",
+        "paws__fast_oracle16_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_v3",
+      "profile": false,
+      "label": "Oracle16"
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle_early",
+      "tags": [
+        "paws__fast_oracle32_lr0.001_u101_p123__step128",
+        "paws__fast_oracle32_lr0.001_u102_p124__step128",
+        "paws__fast_oracle32_lr0.001_u103_p125__step128"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_v3",
+      "profile": false,
+      "label": "Oracle32, early stop"
+    },
+    {
+      "task": "paws",
+      "cohort": "cv16",
+      "tags": [
+        "paws__fast_cv16_cache_u101_p123__step256",
+        "paws__fast_cv16_cache_u102_p124__step256",
+        "paws__fast_cv16_cache_u103_p125__step256"
+      ],
+      "primary_candidate": true,
+      "replay_module": "research_teacher_cache",
+      "profile": true,
+      "label": "CV16",
+      "fallback_module": "research_v3"
+    },
+    {
+      "task": "paws",
+      "cohort": "cv4",
+      "tags": [
+        "paws__fast_cv4_cache_u101_p123__step256",
+        "paws__fast_cv4_cache_u102_p124__step256",
+        "paws__fast_cv4_cache_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_fastio",
+      "profile": true,
+      "label": "CV4",
+      "fallback_module": "research_v3"
+    },
+    {
+      "task": "paws",
+      "cohort": "cv8_long",
+      "tags": [
+        "paws__long_cv8_lr0.0003_u101_p123__step1024",
+        "paws__long_cv8_lr0.0003_u102_p124__step1024",
+        "paws__long_cv8_lr0.0003_u103_p125__step1024"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_fastio",
+      "profile": false,
+      "label": "CV8, long run",
+      "fallback_module": "research_v3"
+    },
+    {
+      "task": "paws",
+      "cohort": "hold2",
+      "tags": [
+        "paws__gpu_hold2_lr0.0003_u101_p123__step256",
+        "paws__gpu_hold2_lr0.0003_u102_p124__step256",
+        "paws__gpu_hold2_lr0.0003_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "anchored_fastio",
+      "profile": false,
+      "label": "Gradient hold, period 2"
+    },
+    {
+      "task": "paws",
+      "cohort": "anchor2",
+      "tags": [
+        "paws__gpu_anchor2_lr0.0003_cached_u101_p123__step256",
+        "paws__gpu_anchor2_lr0.0003_cached_u102_p124__step256",
+        "paws__gpu_anchor2_lr0.0003_cached_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "anchored_fastio",
+      "profile": false,
+      "label": "Predictor anchor, period 2"
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_quality",
+      "tags": [
+        "mnli__long_oracle32_lr0.0003_u101_p123__step512",
+        "mnli__long_oracle32_lr0.0003_u102_p124__step512",
+        "mnli__long_oracle32_lr0.0003_u103_p125__step512"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_v3",
+      "profile": true,
+      "label": "Oracle32"
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_cached",
+      "tags": [
+        "mnli__tcache_oracle32_lr0.0003_u101_p123__step512",
+        "mnli__tcache_oracle32_lr0.0003_u102_p124__step512",
+        "mnli__tcache_oracle32_lr0.0003_u103_p125__step512"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_teacher_cache",
+      "profile": true,
+      "label": "Oracle32, cached prefix"
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_early",
+      "tags": [
+        "mnli__fast_oracle32_lr0.001_u101_p123__step256",
+        "mnli__fast_oracle32_lr0.001_u102_p124__step256",
+        "mnli__fast_oracle32_lr0.001_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_v3",
+      "profile": false,
+      "label": "Oracle32, early stop"
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle8",
+      "tags": [
+        "mnli__long_oracle8_lr0.001_u101_p123__step512",
+        "mnli__long_oracle8_lr0.001_u102_p124__step512",
+        "mnli__long_oracle8_lr0.001_u103_p125__step512"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_v3",
+      "profile": false,
+      "label": "Oracle8"
+    },
+    {
+      "task": "mnli",
+      "cohort": "rls8",
+      "tags": [
+        "mnli__classrls8_lr0.001_u101_p0__step512",
+        "mnli__classrls8_lr0.001_u102_p0__step512",
+        "mnli__classrls8_lr0.001_u103_p0__step512"
+      ],
+      "primary_candidate": true,
+      "replay_module": "online_ridge_v2",
+      "profile": true,
+      "label": "Online class RLS8"
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv8",
+      "tags": [
+        "mnli__long_cv8_lr0.001_u101_p123__step512",
+        "mnli__long_cv8_lr0.001_u102_p124__step512",
+        "mnli__long_cv8_lr0.001_u103_p125__step512"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_fastio",
+      "profile": true,
+      "label": "CV8",
+      "fallback_module": "research_v3"
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv16",
+      "tags": [
+        "mnli__fast_cv16_cache_u101_p123__step256",
+        "mnli__fast_cv16_cache_u102_p124__step256",
+        "mnli__fast_cv16_cache_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_fastio",
+      "profile": false,
+      "label": "CV16",
+      "fallback_module": "research_v3"
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv4",
+      "tags": [
+        "mnli__fast_cv4_cache_u101_p123__step256",
+        "mnli__fast_cv4_cache_u102_p124__step256",
+        "mnli__fast_cv4_cache_u103_p125__step256"
+      ],
+      "primary_candidate": false,
+      "replay_module": "research_fastio",
+      "profile": true,
+      "label": "CV4",
+      "fallback_module": "research_v3"
+    }
+  ]
+}

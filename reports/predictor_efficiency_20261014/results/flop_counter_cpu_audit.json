@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "linear_forward_backward_flops": 144,
+  "encoder_matrix_flops": 95424,
+  "encoder_output_bitwise_equal": true,
+  "coverage": {
+    "seen_operations": [
+      "aten._transformer_encoder_layer_fwd"
+    ],
+    "operations_without_flop_formula": [],
+    "custom_formula_operations": [
+      "aten._transformer_encoder_layer_fwd"
+    ],
+    "scope": "Fused dense encoder/MHA matrix arithmetic counted by explicit shape formulas; scalar, normalization, activation, softmax, copies, and optimizer operations remain excluded. Unsupported opaque attention operations cause failure."
+  }
+}

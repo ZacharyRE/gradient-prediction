@@ -1,0 +1,38 @@
+{
+  "created_epoch": 1792025791.4478204,
+  "reason": "Preserve about80\u201390 minutes for complete frozen evaluations and clean timing. Retain all correction sizes with a frozen/head-calibrated pair; defer the second head-calibration learning rate before any cached-head result is observed.",
+  "changes": {
+    "paws": {
+      "kept": [
+        "cachedhead_cv4_lr0.0003",
+        "cachedhead_cv4_lr0.0003_cal1_lr0.0003",
+        "cachedhead_cv8_lr0.0003",
+        "cachedhead_cv8_lr0.0003_cal1_lr0.0003",
+        "cachedhead_cv16_lr0.0003",
+        "cachedhead_cv16_lr0.0003_cal1_lr0.0003"
+      ],
+      "deferred": [
+        "cachedhead_cv4_lr0.0003_cal1_lr0.001",
+        "cachedhead_cv8_lr0.0003_cal1_lr0.001",
+        "cachedhead_cv16_lr0.0003_cal1_lr0.001"
+      ]
+    },
+    "mnli": {
+      "kept": [
+        "cachedhead_cv4_lr0.0003",
+        "cachedhead_cv4_lr0.0003_cal1_lr0.0003",
+        "cachedhead_cv8_lr0.0003",
+        "cachedhead_cv8_lr0.0003_cal1_lr0.0003",
+        "cachedhead_cv16_lr0.0003",
+        "cachedhead_cv16_lr0.0003_cal1_lr0.0003"
+      ],
+      "deferred": [
+        "cachedhead_cv4_lr0.0003_cal1_lr0.001",
+        "cachedhead_cv8_lr0.0003_cal1_lr0.001",
+        "cachedhead_cv16_lr0.0003_cal1_lr0.001"
+      ]
+    }
+  },
+  "remaining_queue10_stages": 27,
+  "no_final_readouts_yet": true
+}

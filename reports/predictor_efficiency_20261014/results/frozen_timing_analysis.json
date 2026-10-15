@@ -1,0 +1,996 @@
+{
+  "freeze_sha256": "f99382d2b1ed3f6067589f63ea6c8b69381e4d2d98a81aeb7ac425e003db762c",
+  "rows": [
+    {
+      "task": "mnli",
+      "cohort": "cv16",
+      "recipe": "fast_cv16_cache",
+      "module": "research_fastio",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_fast_cv16_cache_u101_r1_1792029801013138060.json",
+        "mnli_fast_cv16_cache_u102_r2_1792030840880941816.json",
+        "mnli_fast_cv16_cache_u103_r3_1792031503422280663.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 19.670071167172864,
+        "minimum": 19.550421309657395,
+        "maximum": 19.8474449145142
+      },
+      "prefix_seconds": {
+        "median": 3.5272344211116433,
+        "minimum": 3.5166065650992095,
+        "maximum": 3.533108677016571
+      },
+      "standalone_pipeline_seconds": {
+        "median": 30.853759203106165,
+        "minimum": 30.827394765103236,
+        "maximum": 31.29920891695656
+      },
+      "standalone_script_seconds": {
+        "median": 32.16726457909681,
+        "minimum": 32.16277877311222,
+        "maximum": 32.60788046591915
+      },
+      "online_plus_preparation_seconds": {
+        "median": 23.197305588284507,
+        "minimum": 23.067027874756604,
+        "maximum": 23.38055359153077
+      },
+      "inherited_preparation_seconds": [
+        108.4356529712677,
+        110.00721144676208,
+        112.32753729820251
+      ],
+      "cold_standalone_seconds": {
+        "median": 142.1699902198743,
+        "minimum": 140.6029175503645,
+        "maximum": 144.93541776412167
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv4",
+      "recipe": "fast_cv4_cache",
+      "module": "research_fastio",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_fast_cv4_cache_u101_r1_1792029835422597886.json",
+        "mnli_fast_cv4_cache_u102_r2_1792030494060568095.json",
+        "mnli_fast_cv4_cache_u103_r3_1792031538861142039.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 17.491243932861835,
+        "minimum": 17.39773222641088,
+        "maximum": 18.131960653699934
+      },
+      "prefix_seconds": {
+        "median": 3.50268358620815,
+        "minimum": 3.489621537970379,
+        "maximum": 3.5757999818306416
+      },
+      "standalone_pipeline_seconds": {
+        "median": 28.498992297099903,
+        "minimum": 28.459557360969484,
+        "maximum": 29.100605522980914
+      },
+      "standalone_script_seconds": {
+        "median": 29.732195532880723,
+        "minimum": 29.713111311895773,
+        "maximum": 30.393821254139766
+      },
+      "online_plus_preparation_seconds": {
+        "median": 20.980865470832214,
+        "minimum": 20.90041581261903,
+        "maximum": 21.707760635530576
+      },
+      "inherited_preparation_seconds": [
+        108.4356529712677,
+        110.00721144676208,
+        112.32753729820251
+      ],
+      "cold_standalone_seconds": {
+        "median": 140.40103270090185,
+        "minimum": 138.16784850414842,
+        "maximum": 142.0406486100983
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv8",
+      "recipe": "long_cv8_lr0.001",
+      "module": "research_fastio",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_long_cv8_lr0.001_u101_r1_1792029868288581820.json",
+        "mnli_long_cv8_lr0.001_u102_r2_1792030526506088720.json",
+        "mnli_long_cv8_lr0.001_u103_r3_1792031190271749981.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 36.262227206723765,
+        "minimum": 35.35848363209516,
+        "maximum": 36.949700884055346
+      },
+      "prefix_seconds": {
+        "median": 3.530712092993781,
+        "minimum": 3.5079815690405667,
+        "maximum": 3.5712255861144513
+      },
+      "standalone_pipeline_seconds": {
+        "median": 47.662911443039775,
+        "minimum": 46.685311685083434,
+        "maximum": 48.3205236508511
+      },
+      "standalone_script_seconds": {
+        "median": 48.94119562301785,
+        "minimum": 48.00716490694322,
+        "maximum": 49.588300787843764
+      },
+      "online_plus_preparation_seconds": {
+        "median": 39.77020877576433,
+        "minimum": 38.92970921820961,
+        "maximum": 40.48041297704913
+      },
+      "inherited_preparation_seconds": [
+        108.4356529712677,
+        110.00721144676208,
+        112.32753729820251
+      ],
+      "cold_standalone_seconds": {
+        "median": 158.94840706977993,
+        "minimum": 158.02395375911146,
+        "maximum": 160.33470220514573
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle8",
+      "recipe": "long_oracle8_lr0.001",
+      "module": "research_v3",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_long_oracle8_lr0.001_u101_r1_1792029919739939830.json",
+        "mnli_long_oracle8_lr0.001_u102_r2_1792030577977475502.json",
+        "mnli_long_oracle8_lr0.001_u103_r3_1792031241195554462.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 32.24768941476941,
+        "minimum": 31.410722175380215,
+        "maximum": 32.38041085237637
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 39.89349428610876,
+        "minimum": 39.21778616402298,
+        "maximum": 39.99301184294745
+      },
+      "standalone_script_seconds": {
+        "median": 41.17653638403863,
+        "minimum": 40.52965866215527,
+        "maximum": 41.28707620501518
+      },
+      "online_plus_preparation_seconds": {
+        "median": 32.24768941476941,
+        "minimum": 31.410722175380215,
+        "maximum": 32.38041085237637
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 41.17653638403863,
+        "minimum": 40.52965866215527,
+        "maximum": 41.28707620501518
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_cached",
+      "recipe": "tcache_oracle32_lr0.0003",
+      "module": "research_teacher_cache",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_tcache_oracle32_lr0.0003_u101_r1_1792029963123671442.json",
+        "mnli_tcache_oracle32_lr0.0003_u102_r2_1792030621411238325.json",
+        "mnli_tcache_oracle32_lr0.0003_u103_r3_1792031283669561690.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 47.42118277982809,
+        "minimum": 47.39417108637281,
+        "maximum": 47.51519946940243
+      },
+      "prefix_seconds": {
+        "median": 3.548309784149751,
+        "minimum": 3.5434139538556337,
+        "maximum": 3.6616466478444636
+      },
+      "standalone_pipeline_seconds": {
+        "median": 59.013798551866785,
+        "minimum": 58.86659060395323,
+        "maximum": 59.11309711798094
+      },
+      "standalone_script_seconds": {
+        "median": 60.33135108696297,
+        "minimum": 60.19738738401793,
+        "maximum": 60.41887177689932
+      },
+      "online_plus_preparation_seconds": {
+        "median": 51.058613423258066,
+        "minimum": 50.94248087052256,
+        "maximum": 51.08282942767255
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 60.33135108696297,
+        "minimum": 60.19738738401793,
+        "maximum": 60.41887177689932
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_early",
+      "recipe": "fast_oracle32_lr0.001",
+      "module": "research_v3",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_fast_oracle32_lr0.001_u101_r1_1792030025867730571.json",
+        "mnli_fast_oracle32_lr0.001_u102_r2_1792030684659735632.json",
+        "mnli_fast_oracle32_lr0.001_u103_r3_1792031346404698373.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 28.930376511998475,
+        "minimum": 28.892440741881728,
+        "maximum": 28.999908277764916
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 36.61006860784255,
+        "minimum": 36.149252018891275,
+        "maximum": 36.74348967708647
+      },
+      "standalone_script_seconds": {
+        "median": 37.947092132177204,
+        "minimum": 37.451976478798315,
+        "maximum": 38.00328353699297
+      },
+      "online_plus_preparation_seconds": {
+        "median": 28.930376511998475,
+        "minimum": 28.892440741881728,
+        "maximum": 28.999908277764916
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 37.947092132177204,
+        "minimum": 37.451976478798315,
+        "maximum": 38.00328353699297
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_quality",
+      "recipe": "long_oracle32_lr0.0003",
+      "module": "research_v3",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_long_oracle32_lr0.0003_u101_r1_1792030065340193403.json",
+        "mnli_long_oracle32_lr0.0003_u102_r2_1792030725206592140.json",
+        "mnli_long_oracle32_lr0.0003_u103_r3_1792031387272500601.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 56.57059956295416,
+        "minimum": 56.54860350606032,
+        "maximum": 56.682591878809035
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 64.28942678216845,
+        "minimum": 64.18294003000483,
+        "maximum": 65.03328988607973
+      },
+      "standalone_script_seconds": {
+        "median": 65.66320380801335,
+        "minimum": 65.60310904402286,
+        "maximum": 66.3806812139228
+      },
+      "online_plus_preparation_seconds": {
+        "median": 56.57059956295416,
+        "minimum": 56.54860350606032,
+        "maximum": 56.682591878809035
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 65.66320380801335,
+        "minimum": 65.60310904402286,
+        "maximum": 66.3806812139228
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "mnli",
+      "cohort": "rls8",
+      "recipe": "classrls8_lr0.001",
+      "module": "online_ridge_v2",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "mnli_classrls8_lr0.001_u101_r1_1792030133242029758.json",
+        "mnli_classrls8_lr0.001_u102_r2_1792030793460750944.json",
+        "mnli_classrls8_lr0.001_u103_r3_1792031455976510388.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 35.846686152974144,
+        "minimum": 35.51418091612868,
+        "maximum": 35.95426629227586
+      },
+      "prefix_seconds": {
+        "median": 0.09951979899778962,
+        "minimum": 0.09842992690391839,
+        "maximum": 0.09995226305909455
+      },
+      "standalone_pipeline_seconds": {
+        "median": 43.620833720080554,
+        "minimum": 43.60735248099081,
+        "maximum": 43.71197884599678
+      },
+      "standalone_script_seconds": {
+        "median": 44.97839669696987,
+        "minimum": 44.930288061033934,
+        "maximum": 45.08552653808147
+      },
+      "online_plus_preparation_seconds": {
+        "median": 35.94663841603324,
+        "minimum": 35.6126108430326,
+        "maximum": 36.05378609127365
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 44.97839669696987,
+        "minimum": 44.930288061033934,
+        "maximum": 45.08552653808147
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "anchor2",
+      "recipe": "gpu_anchor2_lr0.0003_cached",
+      "module": "anchored_fastio",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_gpu_anchor2_lr0.0003_cached_u101_r1_1792030180754119157.json",
+        "paws_gpu_anchor2_lr0.0003_cached_u102_r2_1792031161127957738.json",
+        "paws_gpu_anchor2_lr0.0003_cached_u103_r3_1792031829760180130.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 14.982141620013863,
+        "minimum": 14.71353107993491,
+        "maximum": 15.00611052266322
+      },
+      "prefix_seconds": {
+        "median": 3.1742421709932387,
+        "minimum": 3.1625583779532462,
+        "maximum": 3.1817364401649684
+      },
+      "standalone_pipeline_seconds": {
+        "median": 25.516331130173057,
+        "minimum": 25.461066484916955,
+        "maximum": 25.921604812145233
+      },
+      "standalone_script_seconds": {
+        "median": 26.80904240300879,
+        "minimum": 26.724315993022174,
+        "maximum": 27.203381672967225
+      },
+      "online_plus_preparation_seconds": {
+        "median": 18.14469999796711,
+        "minimum": 17.89526752009988,
+        "maximum": 18.18035269365646
+      },
+      "inherited_preparation_seconds": [
+        84.17567658424377,
+        84.56409788131714,
+        86.59742856025696
+      ],
+      "cold_standalone_seconds": {
+        "median": 111.37314028432593,
+        "minimum": 110.89999257726595,
+        "maximum": 113.80081023322418
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "cv16",
+      "recipe": "fast_cv16_cache",
+      "module": "research_teacher_cache",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_fast_cv16_cache_u101_r1_1792030210398387854.json",
+        "paws_fast_cv16_cache_u102_r2_1792030875758141647.json",
+        "paws_fast_cv16_cache_u103_r3_1792031859479300511.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 16.475342938909307,
+        "minimum": 16.311045221751556,
+        "maximum": 16.490976307773963
+      },
+      "prefix_seconds": {
+        "median": 3.8753908188082278,
+        "minimum": 3.8674249390605837,
+        "maximum": 4.000221157912165
+      },
+      "standalone_pipeline_seconds": {
+        "median": 27.91993884695694,
+        "minimum": 27.619338331976905,
+        "maximum": 27.96511398605071
+      },
+      "standalone_script_seconds": {
+        "median": 29.22056839102879,
+        "minimum": 28.863038611831143,
+        "maximum": 29.226925958879292
+      },
+      "online_plus_preparation_seconds": {
+        "median": 20.350733757717535,
+        "minimum": 20.17847016081214,
+        "maximum": 20.491197465686128
+      },
+      "inherited_preparation_seconds": [
+        84.17567658424377,
+        84.56409788131714,
+        86.59742856025696
+      ],
+      "cold_standalone_seconds": {
+        "median": 113.78466627234593,
+        "minimum": 113.03871519607492,
+        "maximum": 115.82435451913625
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "cv4",
+      "recipe": "fast_cv4_cache",
+      "module": "research_fastio",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_fast_cv4_cache_u101_r1_1792030242169446594.json",
+        "paws_fast_cv4_cache_u102_r2_1792030907533488681.json",
+        "paws_fast_cv4_cache_u103_r3_1792031572034999685.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 17.503456119913608,
+        "minimum": 17.277803890407085,
+        "maximum": 17.6860300374683
+      },
+      "prefix_seconds": {
+        "median": 3.180094256065786,
+        "minimum": 3.1723109299782664,
+        "maximum": 3.1868419349193573
+      },
+      "standalone_pipeline_seconds": {
+        "median": 28.199930327013135,
+        "minimum": 27.86917458102107,
+        "maximum": 28.254173350986093
+      },
+      "standalone_script_seconds": {
+        "median": 29.52585286903195,
+        "minimum": 29.13640309800394,
+        "maximum": 29.596894433023408
+      },
+      "online_plus_preparation_seconds": {
+        "median": 20.690298054832965,
+        "minimum": 20.450114820385352,
+        "maximum": 20.866124293534085
+      },
+      "inherited_preparation_seconds": [
+        84.17567658424377,
+        84.56409788131714,
+        86.59742856025696
+      ],
+      "cold_standalone_seconds": {
+        "median": 113.77257101726718,
+        "minimum": 113.70050097932108,
+        "maximum": 116.12328142928891
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "cv8_long",
+      "recipe": "long_cv8_lr0.0003",
+      "module": "research_fastio",
+      "steps": 1024,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_long_cv8_lr0.0003_u101_r1_1792030274656495257.json",
+        "paws_long_cv8_lr0.0003_u102_r2_1792030939320742875.json",
+        "paws_long_cv8_lr0.0003_u103_r3_1792031604996236486.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 69.69592643342912,
+        "minimum": 68.54145649308339,
+        "maximum": 70.22947289003059
+      },
+      "prefix_seconds": {
+        "median": 3.1671796198934317,
+        "minimum": 3.1589474799111485,
+        "maximum": 3.178572691977024
+      },
+      "standalone_pipeline_seconds": {
+        "median": 81.00801502307877,
+        "minimum": 80.00741902808659,
+        "maximum": 81.9346277709119
+      },
+      "standalone_script_seconds": {
+        "median": 82.31921119778417,
+        "minimum": 81.25905160605907,
+        "maximum": 83.28165301703848
+      },
+      "online_plus_preparation_seconds": {
+        "median": 72.85487391334027,
+        "minimum": 71.72002918506041,
+        "maximum": 73.39665250992402
+      },
+      "inherited_preparation_seconds": [
+        84.17567658424377,
+        84.56409788131714,
+        86.59742856025696
+      ],
+      "cold_standalone_seconds": {
+        "median": 166.8833090791013,
+        "minimum": 165.43472819030285,
+        "maximum": 169.87908157729544
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "hold2",
+      "recipe": "gpu_hold2_lr0.0003",
+      "module": "anchored_fastio",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_gpu_hold2_lr0.0003_u101_r1_1792030358218279267.json",
+        "paws_gpu_hold2_lr0.0003_u102_r2_1792031024273139378.json",
+        "paws_gpu_hold2_lr0.0003_u103_r3_1792031691396075365.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 14.017280872445554,
+        "minimum": 13.82911054440774,
+        "maximum": 14.09627452865243
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 21.130232979077846,
+        "minimum": 21.034394066082314,
+        "maximum": 21.744393325177953
+      },
+      "standalone_script_seconds": {
+        "median": 22.474646732909605,
+        "minimum": 22.34360709087923,
+        "maximum": 23.02109727403149
+      },
+      "online_plus_preparation_seconds": {
+        "median": 14.017280872445554,
+        "minimum": 13.82911054440774,
+        "maximum": 14.09627452865243
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 22.474646732909605,
+        "minimum": 22.34360709087923,
+        "maximum": 23.02109727403149
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle16",
+      "recipe": "fast_oracle16",
+      "module": "research_v3",
+      "steps": 256,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_fast_oracle16_u101_r1_1792030383037505505.json",
+        "paws_fast_oracle16_u102_r2_1792031049992322746.json",
+        "paws_fast_oracle16_u103_r3_1792031716129277831.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 17.983394041657448,
+        "minimum": 17.760846179444343,
+        "maximum": 18.09990825690329
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 25.65925421495922,
+        "minimum": 25.121178475907072,
+        "maximum": 25.984788527013734
+      },
+      "standalone_script_seconds": {
+        "median": 27.02496971585788,
+        "minimum": 26.3879710319452,
+        "maximum": 27.272555745905265
+      },
+      "online_plus_preparation_seconds": {
+        "median": 17.983394041657448,
+        "minimum": 17.760846179444343,
+        "maximum": 18.09990825690329
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 27.02496971585788,
+        "minimum": 26.3879710319452,
+        "maximum": 27.272555745905265
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle_early",
+      "recipe": "fast_oracle32_lr0.001",
+      "module": "research_v3",
+      "steps": 128,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_fast_oracle32_lr0.001_u101_r1_1792030412776087831.json",
+        "paws_fast_oracle32_lr0.001_u102_r2_1792031078757609965.json",
+        "paws_fast_oracle32_lr0.001_u103_r3_1792031745915253160.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 13.544881094945595,
+        "minimum": 13.532176976790652,
+        "maximum": 13.565567447105423
+      },
+      "prefix_seconds": {
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "standalone_pipeline_seconds": {
+        "median": 21.000993984984234,
+        "minimum": 20.966759177856147,
+        "maximum": 21.151167813921347
+      },
+      "standalone_script_seconds": {
+        "median": 22.29976699501276,
+        "minimum": 22.234177054837346,
+        "maximum": 22.468100488884374
+      },
+      "online_plus_preparation_seconds": {
+        "median": 13.544881094945595,
+        "minimum": 13.532176976790652,
+        "maximum": 13.565567447105423
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 22.29976699501276,
+        "minimum": 22.234177054837346,
+        "maximum": 22.468100488884374
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle_quality",
+      "recipe": "tcache_oracle32_lr0.0003",
+      "module": "research_teacher_cache",
+      "steps": 512,
+      "repeats": 3,
+      "update_seeds": [
+        101,
+        102,
+        103
+      ],
+      "all_weights_bitwise_equal": true,
+      "maximum_relative_weight_difference": 0.0,
+      "receipts": [
+        "paws_tcache_oracle32_lr0.0003_u101_r1_1792030437489901152.json",
+        "paws_tcache_oracle32_lr0.0003_u102_r2_1792031103494793109.json",
+        "paws_tcache_oracle32_lr0.0003_u103_r3_1792031771104098441.json"
+      ],
+      "registered_three_seed_schedule_complete": true,
+      "online_seconds": {
+        "median": 42.79613807750866,
+        "minimum": 42.54758273251355,
+        "maximum": 43.39562818547711
+      },
+      "prefix_seconds": {
+        "median": 3.2141976931598037,
+        "minimum": 3.207976798992604,
+        "maximum": 3.5080122898798436
+      },
+      "standalone_pipeline_seconds": {
+        "median": 53.951964404201135,
+        "minimum": 53.22241898206994,
+        "maximum": 54.47774206707254
+      },
+      "standalone_script_seconds": {
+        "median": 55.226323298877105,
+        "minimum": 54.5213143248111,
+        "maximum": 55.914984192932025
+      },
+      "online_plus_preparation_seconds": {
+        "median": 46.3041503673885,
+        "minimum": 45.76178042567335,
+        "maximum": 46.60360498446971
+      },
+      "inherited_preparation_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cold_standalone_seconds": {
+        "median": 55.226323298877105,
+        "minimum": 54.5213143248111,
+        "maximum": 55.914984192932025
+      },
+      "cold_total_scope": "Sum of standalone replay and recorded predictor-preparation components, not a separately timed end-to-end cold pipeline; preparation startup/data loading outside historical timers may be omitted.",
+      "eligible_for_direct_frozen_quality_speed_claim": true
+    }
+  ],
+  "rejected_receipts": [
+    {
+      "receipt": "mnli_fast_cv16_cache_u101_r0_1792016544956819546.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_fast_cv16_cache_u101_r0_1792025396906446631.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_fast_cv16_cache_u102_r0_1792025430453267568.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_fast_cv16_cache_u103_r0_1792025462745271829.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_long_cv8_lr0.001_u101_r0_1792027910770487189.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_long_cv8_lr0.001_u102_r0_1792027958691552916.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "mnli_long_cv8_lr0.001_u103_r0_1792028006218002204.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_cv16_cache_u101_r0_1792016475284607421.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_cv16_cache_u101_r0_1792016511692186579.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_cv16_cache_u101_r0_1792025303314782008.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_cv16_cache_u102_r0_1792025334539436388.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_cv16_cache_u103_r0_1792025365711041749.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_fast_oracle32_u101_r0_1792016437960301944.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_long_cv8_lr0.0003_u101_r0_1792025495105499232.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    },
+    {
+      "receipt": "paws_long_oracle32_lr0.0003_u101_r0_1792025572995193906.json",
+      "reason": "Timing-harness preflight, not a final benchmark repeat"
+    }
+  ],
+  "scope": "Repeated standalone replays without intermediate research diagnostics. GPU occupancy observations exclude intervals with foreign contexts; samples are not continuous proof of exclusivity. Cold totals add recorded inherited predictor preparation, which may come from the historical implementation. All times exclude shared warmup training and downstream evaluation. A timing/quality claim additionally requires the paired frozen accuracy results. Non-identical replay weights remain explicit and cannot be silently assigned reference accuracy."
+}

@@ -1,0 +1,14 @@
+{
+  "registered_epoch": 1792021175.8375497,
+  "decision": "Defer unstarted temporal-smoothing screen to prioritize paired replications and complete final validation within9h. Existing anchor/query no-p controls already test related gradient-reuse effects. No completed result is removed.",
+  "round10": "Reserved for selected MNLI/remaining candidate replications; controller waits mnli_cachedhead_v1_eval and reads queue only after gate. Populate before gate.",
+  "round11": "Empty waiting controller terminated; its multistate work was already moved into round9.",
+  "deferred_stages": [
+    "paws_smooth_v1",
+    "paws_smooth_v1_entries",
+    "paws_smooth_v1_eval",
+    "mnli_smooth_v1",
+    "mnli_smooth_v1_entries",
+    "mnli_smooth_v1_eval"
+  ]
+}

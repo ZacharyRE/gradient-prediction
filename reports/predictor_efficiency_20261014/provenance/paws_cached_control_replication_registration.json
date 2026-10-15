@@ -1,0 +1,48 @@
+{
+  "created_epoch": 1792023744.1883962,
+  "reason": "Apply the shared frozen-prefix optimization to the quality and cheap Oracle controls, validating both numerical behavior and three-seed downstream accuracy before final selection.",
+  "jobs": [
+    {
+      "name": "tcache_oracle32_lr0.0003",
+      "kind": "oracle",
+      "k": 32,
+      "micro": 32,
+      "lr": 0.0003,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "fast_loss": true,
+      "token_budget": 8192,
+      "cache": false
+    },
+    {
+      "name": "tcache_oracle16_lr0.0003",
+      "kind": "subset",
+      "k": 16,
+      "micro": 16,
+      "lr": 0.0003,
+      "steps": 256,
+      "save": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "fast_loss": true,
+      "token_budget": 8192,
+      "cache": false
+    }
+  ],
+  "update_seeds": [
+    102,
+    103
+  ],
+  "existing_seed": 101,
+  "selection_split": "accuracy_dev",
+  "no_final_readouts_yet": true
+}

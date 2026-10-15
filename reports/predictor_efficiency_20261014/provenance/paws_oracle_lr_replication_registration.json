@@ -1,0 +1,24 @@
+{
+  "registered_epoch": 1792013088.9988105,
+  "recipe": {
+    "name": "fast_oracle32_lr0.001",
+    "kind": "oracle",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  },
+  "update_seeds": [
+    102,
+    103
+  ],
+  "reason": "Independent Oracle32 learning-rate and stopping comparison: seed101 LR.001 reaches92.578% at64 updates (~6.22s), versus93.359% at256 forLR.0003 (~26.07s). A predictor reaching93.36% in19s is not a time-to-quality win if a shorter independently tuned Oracle already lies within the practical1pp target.",
+  "selection_split": "accuracy_dev"
+}

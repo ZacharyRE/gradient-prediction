@@ -1,0 +1,15 @@
+{
+  "recorded_epoch": 1792031961.3476746,
+  "comparison": [
+    "mnli",
+    "cv16",
+    "oracle_early"
+  ],
+  "phase": "post_readout_secondary_analysis",
+  "reason": "Quantify the predeclared secondary CV16 against the frozen cheaper Oracle control; descriptive only. No candidate, stopping point, learning rate, reference or primary identity changes.",
+  "splits": [
+    "oracle_confirmation",
+    "test"
+  ],
+  "bootstrap_draws": 5000
+}

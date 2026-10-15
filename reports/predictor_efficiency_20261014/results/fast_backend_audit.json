@@ -1,0 +1,304 @@
+{
+  "records": [
+    {
+      "precision": "normal_bf16",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "original": {
+        "loss": 0.04929398372769356,
+        "seconds": 1.0369627529289573,
+        "reconstruction": {
+          "seconds": 1.0253708362579346,
+          "max_reconstruction_relative_l2": 0.002275242703035474,
+          "min_reconstruction_cosine": 0.9999974966049194
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.049293991178274155,
+        "seconds": 0.16030771611258388,
+        "reconstruction": {
+          "seconds": 0.16020631790161133,
+          "max_reconstruction_relative_l2": 0.0022745453752577305,
+          "min_reconstruction_cosine": 0.9999973773956299
+        }
+      },
+      "loss_absolute_difference": 7.450580596923828e-09,
+      "gradient": {
+        "cosine": 0.9999154210090637,
+        "relative_l2": 0.013272005133330822,
+        "norm_ratio": 0.9972978234291077
+      }
+    },
+    {
+      "precision": "normal_bf16",
+      "indices": [
+        16,
+        21,
+        25,
+        29
+      ],
+      "original": {
+        "loss": 0.0318368561565876,
+        "seconds": 0.07977499486878514,
+        "reconstruction": {
+          "seconds": 0.07969355583190918,
+          "max_reconstruction_relative_l2": 0.0022647015284746885,
+          "min_reconstruction_cosine": 0.9999974966049194
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.0318368561565876,
+        "seconds": 0.05872599594295025,
+        "reconstruction": {
+          "seconds": 0.05865001678466797,
+          "max_reconstruction_relative_l2": 0.0022679269313812256,
+          "min_reconstruction_cosine": 0.9999973773956299
+        }
+      },
+      "loss_absolute_difference": 0.0,
+      "gradient": {
+        "cosine": 0.9999229311943054,
+        "relative_l2": 0.012416278012096882,
+        "norm_ratio": 0.9999305009841919
+      }
+    },
+    {
+      "precision": "normal_bf16",
+      "indices": [
+        100,
+        111,
+        130,
+        190
+      ],
+      "original": {
+        "loss": 0.023123493418097496,
+        "seconds": 0.08225287590175867,
+        "reconstruction": {
+          "seconds": 0.08217453956604004,
+          "max_reconstruction_relative_l2": 0.0022752436343580484,
+          "min_reconstruction_cosine": 0.9999973773956299
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.023123493418097496,
+        "seconds": 0.05899246293120086,
+        "reconstruction": {
+          "seconds": 0.0589146614074707,
+          "max_reconstruction_relative_l2": 0.0022739535197615623,
+          "min_reconstruction_cosine": 0.9999973773956299
+        }
+      },
+      "loss_absolute_difference": 0.0,
+      "gradient": {
+        "cosine": 0.999951958656311,
+        "relative_l2": 0.009805808775126934,
+        "norm_ratio": 1.0002821683883667
+      }
+    },
+    {
+      "precision": "fp32_head_no_tf32",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "original": {
+        "loss": 0.0492175817489624,
+        "seconds": 0.09144803392700851,
+        "reconstruction": {
+          "seconds": 0.09136652946472168,
+          "max_reconstruction_relative_l2": 0.0022864402271807194,
+          "min_reconstruction_cosine": 0.9999974370002747
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.04921757057309151,
+        "seconds": 0.0628354421351105,
+        "reconstruction": {
+          "seconds": 0.06275486946105957,
+          "max_reconstruction_relative_l2": 0.002271433128044009,
+          "min_reconstruction_cosine": 0.9999974370002747
+        }
+      },
+      "loss_absolute_difference": 1.1175870895385742e-08,
+      "gradient": {
+        "cosine": 0.9999167919158936,
+        "relative_l2": 0.012912456877529621,
+        "norm_ratio": 0.9994227886199951
+      }
+    },
+    {
+      "precision": "fp32_head_no_tf32",
+      "indices": [
+        16,
+        21,
+        25,
+        29
+      ],
+      "original": {
+        "loss": 0.030776316300034523,
+        "seconds": 0.0702481190674007,
+        "reconstruction": {
+          "seconds": 0.07016348838806152,
+          "max_reconstruction_relative_l2": 0.002242974005639553,
+          "min_reconstruction_cosine": 0.9999974966049194
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.030776316300034523,
+        "seconds": 0.06754249497316778,
+        "reconstruction": {
+          "seconds": 0.06746363639831543,
+          "max_reconstruction_relative_l2": 0.002232176251709461,
+          "min_reconstruction_cosine": 0.9999974370002747
+        }
+      },
+      "loss_absolute_difference": 0.0,
+      "gradient": {
+        "cosine": 0.999923050403595,
+        "relative_l2": 0.012434572912752628,
+        "norm_ratio": 1.0008162260055542
+      }
+    },
+    {
+      "precision": "fp32_head_no_tf32",
+      "indices": [
+        100,
+        111,
+        130,
+        190
+      ],
+      "original": {
+        "loss": 0.023826785385608673,
+        "seconds": 0.07003518100827932,
+        "reconstruction": {
+          "seconds": 0.06995201110839844,
+          "max_reconstruction_relative_l2": 0.002288314513862133,
+          "min_reconstruction_cosine": 0.9999974370002747
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.023826787248253822,
+        "seconds": 0.06649611191824079,
+        "reconstruction": {
+          "seconds": 0.06641006469726562,
+          "max_reconstruction_relative_l2": 0.0022933867294341326,
+          "min_reconstruction_cosine": 0.9999973177909851
+        }
+      },
+      "loss_absolute_difference": 1.862645149230957e-09,
+      "gradient": {
+        "cosine": 0.9999567270278931,
+        "relative_l2": 0.009637825191020966,
+        "norm_ratio": 0.9974432587623596
+      }
+    },
+    {
+      "precision": "full_fp32_no_tf32",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "original": {
+        "loss": 0.04894563555717468,
+        "seconds": 0.0791842311155051,
+        "reconstruction": {
+          "seconds": 0.07909631729125977,
+          "max_reconstruction_relative_l2": 1.9003397255801247e-07,
+          "min_reconstruction_cosine": 0.9999999403953552
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.048945631831884384,
+        "seconds": 0.07237571384757757,
+        "reconstruction": {
+          "seconds": 0.07229185104370117,
+          "max_reconstruction_relative_l2": 1.9131657325033302e-07,
+          "min_reconstruction_cosine": 0.9999999403953552
+        }
+      },
+      "loss_absolute_difference": 3.725290298461914e-09,
+      "gradient": {
+        "cosine": 1.0,
+        "relative_l2": 2.5565641408320516e-06,
+        "norm_ratio": 1.0000003576278687
+      }
+    },
+    {
+      "precision": "full_fp32_no_tf32",
+      "indices": [
+        16,
+        21,
+        25,
+        29
+      ],
+      "original": {
+        "loss": 0.03089742548763752,
+        "seconds": 0.08930839085951447,
+        "reconstruction": {
+          "seconds": 0.08922362327575684,
+          "max_reconstruction_relative_l2": 1.888404455030468e-07,
+          "min_reconstruction_cosine": 0.9999999403953552
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.03089742548763752,
+        "seconds": 0.08421878586523235,
+        "reconstruction": {
+          "seconds": 0.08414006233215332,
+          "max_reconstruction_relative_l2": 1.876002500011964e-07,
+          "min_reconstruction_cosine": 1.0000001192092896
+        }
+      },
+      "loss_absolute_difference": 0.0,
+      "gradient": {
+        "cosine": 1.0,
+        "relative_l2": 2.425393859084579e-06,
+        "norm_ratio": 0.9999998807907104
+      }
+    },
+    {
+      "precision": "full_fp32_no_tf32",
+      "indices": [
+        100,
+        111,
+        130,
+        190
+      ],
+      "original": {
+        "loss": 0.024817006662487984,
+        "seconds": 0.09862053510732949,
+        "reconstruction": {
+          "seconds": 0.0985422134399414,
+          "max_reconstruction_relative_l2": 1.2949695360475744e-07,
+          "min_reconstruction_cosine": 1.0
+        }
+      },
+      "supervised_logits_only": {
+        "loss": 0.024817006662487984,
+        "seconds": 0.08965874905698001,
+        "reconstruction": {
+          "seconds": 0.08958029747009277,
+          "max_reconstruction_relative_l2": 1.2955717920704046e-07,
+          "min_reconstruction_cosine": 1.0
+        }
+      },
+      "loss_absolute_difference": 0.0,
+      "gradient": {
+        "cosine": 0.9999999403953552,
+        "relative_l2": 2.118912334481138e-06,
+        "norm_ratio": 1.0
+      }
+    }
+  ],
+  "reason_for_extended_audit": "First BF16 check had 1.33% gradient difference despite matching loss; isolate GEMM shape-dependent precision using an FP32 vocabulary head.",
+  "passed": true,
+  "limitation": "Same mathematical supervised-token loss; normal BF16 kernels can differ numerically with GEMM shape. Both oracle and predictor must be evaluated under this backend; no bitwise-equivalence claim."
+}

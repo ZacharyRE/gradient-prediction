@@ -1,0 +1,37 @@
+{
+  "start_epoch": 1792001183,
+  "deadline_epoch": 1792033583,
+  "compute_cutoff_epoch": 1792032983,
+  "gpu_index": 0,
+  "gpu_uuid": "GPU-dcbc7fd5-e3f0-efa9-a7d9-b3933e35790d",
+  "tasks": [
+    "paws",
+    "mnli"
+  ],
+  "priority": "Total measured time at comparable downstream accuracy, retaining effectiveness past step32",
+  "source_study": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011",
+  "preserve_full_inputs": true,
+  "output_generation_cap": 256,
+  "primary_update_seeds": [
+    101,
+    102,
+    103
+  ],
+  "predictor_seeds": [
+    123,
+    124,
+    125
+  ],
+  "selection": "Use accuracy_dev only for screening; freeze shortlisted recipes before oracle_confirmation and final test. Existing test populations previously inspected, so exploratory evidence, not pristine new benchmarks.",
+  "quality_target": "Report gap and paired confidence intervals versus independently tuned Oracle32; within 1 percentage point is the predeclared practical target, not automatic evidence of noninferiority.",
+  "accounting": "Separate synchronized online updates including calibration; cached prefix preparation; original offline predictor fitting/label costs; selection/evaluation research overhead. Apply comparable optimizations to true-gradient baselines.",
+  "candidate_families": [
+    "CV4 with residual coefficient shrinkage",
+    "CV8/CV16",
+    "CV4 with delayed sparse calibration on already-paid correction labels",
+    "periodic full-batch true updates",
+    "cached frozen-prefix features",
+    "multi-state calibration if earlier diagnostics warrant"
+  ],
+  "no_guaranteed_success": true
+}

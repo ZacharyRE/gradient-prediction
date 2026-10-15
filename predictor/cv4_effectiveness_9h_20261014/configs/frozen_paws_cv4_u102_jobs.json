@@ -1,0 +1,19 @@
+[
+  {
+    "name": "fast_cv4_cache",
+    "kind": "cv",
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "k": 4,
+    "micro": 4,
+    "cache": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "perturbed": false,
+      "max_h_relative_l2": 0.0
+    },
+    {
+      "perturbed": true,
+      "max_h_relative_l2": 0.0001012111606542021
+    }
+  ],
+  "scope": "Full input preserved; FP32 LoRA delta added to BF16 cached H, approximate under autocast rounding."
+}

@@ -1,0 +1,336 @@
+{
+  "selection_only": true,
+  "note": "Best observed single development readout is optimistic after screening; it is not independent validation or a multi-seed average. All configurations and negative results remain in experiment_index.csv. Timing occupancy is audited separately.",
+  "rows": [
+    {
+      "task": "mnli",
+      "family": "Bernoulli true-gradient queries and matched controls",
+      "trajectories": 24,
+      "readouts": 120,
+      "best_observed_development_accuracy_pct": 85.57504873294347,
+      "best_method": "tquery_nop_q0.5_b0.9",
+      "best_step": 512,
+      "best_seed": 103
+    },
+    {
+      "task": "mnli",
+      "family": "Cached predictor body / head calibration",
+      "trajectories": 6,
+      "readouts": 30,
+      "best_observed_development_accuracy_pct": 82.84600389863547,
+      "best_method": "cachedhead_cv8_lr0.0003",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Delayed covariance/variance coefficient calibration",
+      "trajectories": 6,
+      "readouts": 30,
+      "best_observed_development_accuracy_pct": 83.23586744639377,
+      "best_method": "moments_cv8_lr0.001",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Frozen teacher-prefix cache (shared optimization)",
+      "trajectories": 12,
+      "readouts": 60,
+      "best_observed_development_accuracy_pct": 85.57504873294347,
+      "best_method": "tcache_oracle32_lr0.0003",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "GPU-resident features (shared optimization)",
+      "trajectories": 12,
+      "readouts": 48,
+      "best_observed_development_accuracy_pct": 82.65107212475633,
+      "best_method": "gpu_cv16_cached_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Long-horizon Oracle/CV curves",
+      "trajectories": 27,
+      "readouts": 156,
+      "best_observed_development_accuracy_pct": 85.57504873294347,
+      "best_method": "long_oracle32_lr0.0003",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Offline multi-state surrogate",
+      "trajectories": 8,
+      "readouts": 40,
+      "best_observed_development_accuracy_pct": 83.04093567251462,
+      "best_method": "multi_state512_cv8",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Offline predictor refit",
+      "trajectories": 16,
+      "readouts": 64,
+      "best_observed_development_accuracy_pct": 81.48148148148148,
+      "best_method": "refit_labelglobal128_cv8_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Online neural predictor calibration",
+      "trajectories": 7,
+      "readouts": 28,
+      "best_observed_development_accuracy_pct": 79.92202729044834,
+      "best_method": "fast_cv4_cache_centered",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Online recursive least squares",
+      "trajectories": 14,
+      "readouts": 70,
+      "best_observed_development_accuracy_pct": 84.99025341130604,
+      "best_method": "classrls8_lr0.001",
+      "best_step": 512,
+      "best_seed": 102
+    },
+    {
+      "task": "mnli",
+      "family": "Oracle/CV baselines and learning-rate controls",
+      "trajectories": 39,
+      "readouts": 156,
+      "best_observed_development_accuracy_pct": 84.7953216374269,
+      "best_method": "fast_oracle32_lr0.001",
+      "best_step": 256,
+      "best_seed": 102
+    },
+    {
+      "task": "mnli",
+      "family": "Periodic full-batch true-gradient refresh",
+      "trajectories": 2,
+      "readouts": 8,
+      "best_observed_development_accuracy_pct": 80.11695906432749,
+      "best_method": "fast_cv4_refresh32",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Periodic gradient anchors and no-predictor hold",
+      "trajectories": 34,
+      "readouts": 136,
+      "best_observed_development_accuracy_pct": 82.26120857699804,
+      "best_method": "gpu_hold4_lr0.001",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Residual hidden-state predictor refit",
+      "trajectories": 18,
+      "readouts": 74,
+      "best_observed_development_accuracy_pct": 83.23586744639377,
+      "best_method": "multicontrol_h128_cv8",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "mnli",
+      "family": "Stratified sampling and reconstruction controls",
+      "trajectories": 10,
+      "readouts": 40,
+      "best_observed_development_accuracy_pct": 82.06627680311891,
+      "best_method": "strat_subset8_lr0.001",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Bernoulli true-gradient queries and matched controls",
+      "trajectories": 24,
+      "readouts": 120,
+      "best_observed_development_accuracy_pct": 93.9453125,
+      "best_method": "tquery_cv_q0.5_b0.9",
+      "best_step": 512,
+      "best_seed": 103
+    },
+    {
+      "task": "paws",
+      "family": "Cached predictor body / head calibration",
+      "trajectories": 6,
+      "readouts": 30,
+      "best_observed_development_accuracy_pct": 93.5546875,
+      "best_method": "cachedhead_cv16_lr0.0003_cal1_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Control-variate coefficient tuning",
+      "trajectories": 3,
+      "readouts": 12,
+      "best_observed_development_accuracy_pct": 90.4296875,
+      "best_method": "cv4_ema",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Delayed covariance/variance coefficient calibration",
+      "trajectories": 6,
+      "readouts": 30,
+      "best_observed_development_accuracy_pct": 93.5546875,
+      "best_method": "moments_cv16_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Explicit LoRA-state conditioning",
+      "trajectories": 6,
+      "readouts": 24,
+      "best_observed_development_accuracy_pct": 93.359375,
+      "best_method": "state_cv8_refresh32_g100",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Frozen teacher-prefix cache (shared optimization)",
+      "trajectories": 14,
+      "readouts": 68,
+      "best_observed_development_accuracy_pct": 93.9453125,
+      "best_method": "tcache_oracle32_lr0.0003",
+      "best_step": 512,
+      "best_seed": 102
+    },
+    {
+      "task": "paws",
+      "family": "GPU-resident features (shared optimization)",
+      "trajectories": 12,
+      "readouts": 48,
+      "best_observed_development_accuracy_pct": 93.359375,
+      "best_method": "gpu_cv8_cached_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Long-horizon Oracle/CV curves",
+      "trajectories": 25,
+      "readouts": 150,
+      "best_observed_development_accuracy_pct": 94.7265625,
+      "best_method": "long_cv8_lr0.0003",
+      "best_step": 1024,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Offline multi-state surrogate",
+      "trajectories": 8,
+      "readouts": 40,
+      "best_observed_development_accuracy_pct": 93.9453125,
+      "best_method": "multi_state512_cv8",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Offline predictor refit",
+      "trajectories": 16,
+      "readouts": 64,
+      "best_observed_development_accuracy_pct": 93.5546875,
+      "best_method": "refit_center128_cv8_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Online neural predictor calibration",
+      "trajectories": 26,
+      "readouts": 104,
+      "best_observed_development_accuracy_pct": 93.1640625,
+      "best_method": "cv8_cal16_e1_lr3e-5",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Online recursive least squares",
+      "trajectories": 22,
+      "readouts": 102,
+      "best_observed_development_accuracy_pct": 94.3359375,
+      "best_method": "classrls8_lr0.0003",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Oracle/CV baselines and learning-rate controls",
+      "trajectories": 47,
+      "readouts": 188,
+      "best_observed_development_accuracy_pct": 93.75,
+      "best_method": "fast_cv16_cache",
+      "best_step": 256,
+      "best_seed": 102
+    },
+    {
+      "task": "paws",
+      "family": "Per-example gradient memory",
+      "trajectories": 5,
+      "readouts": 25,
+      "best_observed_development_accuracy_pct": 92.578125,
+      "best_method": "memory4_init1_c0.5",
+      "best_step": 512,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Periodic full-batch true-gradient refresh",
+      "trajectories": 4,
+      "readouts": 16,
+      "best_observed_development_accuracy_pct": 90.8203125,
+      "best_method": "cv4_refresh8",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Periodic gradient anchors and no-predictor hold",
+      "trajectories": 38,
+      "readouts": 152,
+      "best_observed_development_accuracy_pct": 93.5546875,
+      "best_method": "anchor2_ema0",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Residual hidden-state predictor refit",
+      "trajectories": 18,
+      "readouts": 74,
+      "best_observed_development_accuracy_pct": 93.5546875,
+      "best_method": "h_global128_cv8_lr0.0003",
+      "best_step": 256,
+      "best_seed": 101
+    },
+    {
+      "task": "paws",
+      "family": "Stratified sampling and reconstruction controls",
+      "trajectories": 10,
+      "readouts": 40,
+      "best_observed_development_accuracy_pct": 93.75,
+      "best_method": "strat_cv8_lr0.001",
+      "best_step": 256,
+      "best_seed": 101
+    }
+  ]
+}

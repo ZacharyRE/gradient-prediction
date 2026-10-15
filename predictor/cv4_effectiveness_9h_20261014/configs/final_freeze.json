@@ -1,0 +1,1204 @@
+{
+  "frozen_epoch": 1792028074.5328362,
+  "selection_split": "accuracy_dev",
+  "selection_reason": "Development-only selection across three paired update seeds, common recipe/LR/horizon per cohort. PAWS CV16 is the close-to-Oracle direct CV candidate with shorter adaptation than the quality Oracle; MNLI class-only RLS8 has the highest replicated predictor mean (tied LR0.0003), lower time at LR0.001, no offline fit, and a matched Oracle8 LR0.001 control. Its development gap still exceeds1pp, so success is not presumed. Neural CV8/CV16 and original CV4 remain explicit comparators. Retain independently tuned early Oracle32 and cheap true-gradient controls, PAWS long CV8, and the period2 predictor/no-predictor pair. PAWS quality reference uses the cached Oracle32 path, with the same best replicated dev mean as full-prefix; MNLI uses the stronger full-prefix Oracle32 and separately includes cached Oracle32. Long Oracle8 variants are development-only because stronger/faster Oracle controls dominate them on development. No final readouts inspected. Numerical execution fallback, if required, is restricted to the declared original trainer and never changes selected adapter, LR, stopping point, or accuracy.",
+  "selection_plan_sha256": "23a9c708d9e192904229ef17b2b64104821b0c261f9b1181fa649ed9b33ad481",
+  "comparison_reference": {
+    "paws": "oracle_quality",
+    "mnli": "oracle_quality"
+  },
+  "entries": [
+    {
+      "task": "paws",
+      "tag": "paws__tcache_oracle32_lr0.0003_u101_p123__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__tcache_oracle32_lr0.0003_u101_p123/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 512,
+      "online_seconds": 43.02348716976121,
+      "cache_seconds": 3.1224274679552764,
+      "dev_ce": 0.0528057096653356,
+      "adapter_sha256": "0678a2d914a087279b9ada7943af9ca2616c68a36395bfdd6e62f1916286bd49",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__tcache_oracle32_lr0.0003_u102_p124__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__tcache_oracle32_lr0.0003_u102_p124/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 512,
+      "online_seconds": 42.64349633688107,
+      "cache_seconds": 3.2901889870408922,
+      "dev_ce": 0.048591107448373805,
+      "adapter_sha256": "db00bb23013499c50fa45ea41cd629afb8417402655ce9bb0b44e535c99545eb",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__tcache_oracle32_lr0.0003_u103_p125__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__tcache_oracle32_lr0.0003_u103_p125/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 512,
+      "online_seconds": 42.7403723213356,
+      "cache_seconds": 3.178797369124368,
+      "dev_ce": 0.05229889777365315,
+      "adapter_sha256": "5cfe08e78e834e860e7bec19afc95d273917b4725092fea03e5d93ec0b7548f7",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle16_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle16_u101_p123/step-256",
+      "method": "fast_oracle16",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 15.611543965991586,
+      "cache_seconds": 0,
+      "dev_ce": 0.050619199173524976,
+      "adapter_sha256": "d815b431bb9655f10085627d4bf31b8dc7311a8bfa688717bfdb02c13b76bce7",
+      "cohort": "oracle16",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle16_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle16_u102_p124/step-256",
+      "method": "fast_oracle16",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 16.77932258718647,
+      "cache_seconds": 0,
+      "dev_ce": 0.059216768451733515,
+      "adapter_sha256": "32ec12c5ed317ee93468ad444c543d62a64d4e2abb480c56636387c2057d8708",
+      "cohort": "oracle16",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle16_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle16_u103_p125/step-256",
+      "method": "fast_oracle16",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 16.8685779357329,
+      "cache_seconds": 0,
+      "dev_ce": 0.053534260048763826,
+      "adapter_sha256": "e53000467c487e131f31dba105297051b87bc895c52946d0ea3b2ddf7015fffa",
+      "cohort": "oracle16",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle32_lr0.001_u101_p123__step128",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle32_lr0.001_u101_p123/step-128",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 128,
+      "online_seconds": 12.45946589531377,
+      "cache_seconds": 0,
+      "dev_ce": 0.05338990280870348,
+      "adapter_sha256": "94b0b7880857667e6c8f04ab3b2408581af0d68f4001579062286d1f687f4ddf",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle32_lr0.001_u102_p124__step128",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle32_lr0.001_u102_p124/step-128",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 128,
+      "online_seconds": 13.626161086373031,
+      "cache_seconds": 0,
+      "dev_ce": 0.04951137988973642,
+      "adapter_sha256": "79f5ba857df042091467badbe2b09c66ae3285016a333aebdd2b30e8cec7bc55",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_oracle32_lr0.001_u103_p125__step128",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_oracle32_lr0.001_u103_p125/step-128",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 128,
+      "online_seconds": 13.598476846236736,
+      "cache_seconds": 0,
+      "dev_ce": 0.05689397068636026,
+      "adapter_sha256": "a312728a57d805a64b82dc22ffb4e31ae5746804fd01d6867db31ef53ba4977d",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv16_cache_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv16_cache_u101_p123/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 18.686280828434974,
+      "cache_seconds": 5.386994695989415,
+      "dev_ce": 0.05087017558980733,
+      "adapter_sha256": "c4ff1ca3df7f1fb84f2751b7f6e2e918ba4c5723ab0dd74fc8940ad9e445c2e8",
+      "cohort": "cv16",
+      "primary_candidate": true
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv16_cache_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv16_cache_u102_p124/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 18.66120566241443,
+      "cache_seconds": 4.949089125962928,
+      "dev_ce": 0.06014242261881009,
+      "adapter_sha256": "9cb93c7b927c01ed554b15b12e905e61b441ae0e61b43d4e8bbbb376e188ed52",
+      "cohort": "cv16",
+      "primary_candidate": true
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv16_cache_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv16_cache_u103_p125/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 19.123423310928047,
+      "cache_seconds": 4.9408572618849576,
+      "dev_ce": 0.05444192246068269,
+      "adapter_sha256": "31e85dc68c702f81707e22df856620f46ffe255ee12b38225bcaf84024b15ce4",
+      "cohort": "cv16",
+      "primary_candidate": true
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv4_cache_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv4_cache_u101_p123/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 16.234840091317892,
+      "cache_seconds": 5.386994695989415,
+      "dev_ce": 0.06433142902096733,
+      "adapter_sha256": "1b30cf5cdc14e8dd7d7829ec8f4d39848b5a2ee54de9fd25fa259ede78b8c8f0",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv4_cache_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv4_cache_u102_p124/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 17.597010959871113,
+      "cache_seconds": 4.949089125962928,
+      "dev_ce": 0.07105147023685277,
+      "adapter_sha256": "f69bfbe0686006f87ffd74a5ad9c3eb05bd4c745c6183ea7dc0b7a5cca90d069",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__fast_cv4_cache_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__fast_cv4_cache_u103_p125/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 17.60300618293695,
+      "cache_seconds": 4.9408572618849576,
+      "dev_ce": 0.06674965849379078,
+      "adapter_sha256": "488ea6521218be46bf7f0c3bddd2004625f0d978aae28b604049b54681a88da0",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__long_cv8_lr0.0003_u101_p123__step1024",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__long_cv8_lr0.0003_u101_p123/step-1024",
+      "method": "long_cv8_lr0.0003",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 1024,
+      "online_seconds": 71.32570205512457,
+      "cache_seconds": 4.878787267953157,
+      "dev_ce": 0.05091234087376506,
+      "adapter_sha256": "64b7d9ebc6523f7816d59a86e6029463d359db0e17b9eab31cfcf8fc1fa3d428",
+      "cohort": "cv8_long",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__long_cv8_lr0.0003_u102_p124__step1024",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__long_cv8_lr0.0003_u102_p124/step-1024",
+      "method": "long_cv8_lr0.0003",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 1024,
+      "online_seconds": 70.16533728130162,
+      "cache_seconds": 5.089276070939377,
+      "dev_ce": 0.0490531372888654,
+      "adapter_sha256": "44154c9440fb5e56927121949d7ef06082698f736435356c3d850bb6a459be66",
+      "cohort": "cv8_long",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__long_cv8_lr0.0003_u103_p125__step1024",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__long_cv8_lr0.0003_u103_p125/step-1024",
+      "method": "long_cv8_lr0.0003",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 1024,
+      "online_seconds": 70.60184250026941,
+      "cache_seconds": 5.018534803995863,
+      "dev_ce": 0.06878776914800255,
+      "adapter_sha256": "e46511e66ee7991eae383f5df8862822fe81e82f0b68efa8f85786a1b281f573",
+      "cohort": "cv8_long",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_hold2_lr0.0003_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_hold2_lr0.0003_u101_p123/step-256",
+      "method": "gpu_hold2_lr0.0003",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 12.839062972227111,
+      "cache_seconds": 0,
+      "dev_ce": 0.052458192920312285,
+      "adapter_sha256": "fdd572c9d8c753c1bc2b22119e7b6c6dd63552a826515d6b87f186f17f5609c8",
+      "cohort": "hold2",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_hold2_lr0.0003_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_hold2_lr0.0003_u102_p124/step-256",
+      "method": "gpu_hold2_lr0.0003",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 14.050500972662121,
+      "cache_seconds": 0,
+      "dev_ce": 0.05794549667916726,
+      "adapter_sha256": "23720b95bb4344c73a9579753ba2154ea60103a544a32fae9c8b88d57a63c9f7",
+      "cohort": "hold2",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_hold2_lr0.0003_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_hold2_lr0.0003_u103_p125/step-256",
+      "method": "gpu_hold2_lr0.0003",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 14.112247925018892,
+      "cache_seconds": 0,
+      "dev_ce": 0.0624185097112786,
+      "adapter_sha256": "81a45789797ded14315c1314865c519e4edf3c918de2e7cd4aed9cfc3be6743c",
+      "cohort": "hold2",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_anchor2_lr0.0003_cached_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_anchor2_lr0.0003_cached_u101_p123/step-256",
+      "method": "gpu_anchor2_lr0.0003_cached",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 14.85217271046713,
+      "cache_seconds": 2.6057698659133166,
+      "dev_ce": 0.05330341210355982,
+      "adapter_sha256": "8d2ea5ef0d7237ed689dc31c1311813c268d1709d102d7e196a184333d3c39d0",
+      "cohort": "anchor2",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_anchor2_lr0.0003_cached_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_anchor2_lr0.0003_cached_u102_p124/step-256",
+      "method": "gpu_anchor2_lr0.0003_cached",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 14.604609464295208,
+      "cache_seconds": 2.330857462948188,
+      "dev_ce": 0.05968789532198571,
+      "adapter_sha256": "bb80fa57c4ffaf2c3e2398a902a2a815587d2e632b7b1a51f8e2b29ccda8f9f8",
+      "cohort": "anchor2",
+      "primary_candidate": false
+    },
+    {
+      "task": "paws",
+      "tag": "paws__gpu_anchor2_lr0.0003_cached_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/paws__gpu_anchor2_lr0.0003_cached_u103_p125/step-256",
+      "method": "gpu_anchor2_lr0.0003_cached",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 14.61946471966803,
+      "cache_seconds": 2.330519316950813,
+      "dev_ce": 0.0616491463733837,
+      "adapter_sha256": "c23301011b46b4a47e691d00f48a7729986994bb626da771d11636f34d51ec3a",
+      "cohort": "anchor2",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle32_lr0.0003_u101_p123__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle32_lr0.0003_u101_p123/step-512",
+      "method": "long_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 512,
+      "online_seconds": 55.71017058799043,
+      "cache_seconds": 0,
+      "dev_ce": 0.06144455724279396,
+      "adapter_sha256": "fe6463d647fb9aa8943add7969f601e8069ea3ea968c7ba3228be032f956767d",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle32_lr0.0003_u102_p124__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle32_lr0.0003_u102_p124/step-512",
+      "method": "long_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 512,
+      "online_seconds": 55.46698920452036,
+      "cache_seconds": 0,
+      "dev_ce": 0.07332811853848398,
+      "adapter_sha256": "5a934cba2a2fab4c3dd3d084f2ce7899d7a8d757a5f2d0b1d1377f753dbc9558",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle32_lr0.0003_u103_p125__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle32_lr0.0003_u103_p125/step-512",
+      "method": "long_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 512,
+      "online_seconds": 55.27258300688118,
+      "cache_seconds": 0,
+      "dev_ce": 0.06471709217294119,
+      "adapter_sha256": "264cb4c00c77389fec74b7b288e90a57184db7b939bff6fcfa84422fab93fe37",
+      "cohort": "oracle_quality",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__tcache_oracle32_lr0.0003_u101_p123__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__tcache_oracle32_lr0.0003_u101_p123/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 512,
+      "online_seconds": 48.62988151283935,
+      "cache_seconds": 3.4065118690486997,
+      "dev_ce": 0.061870924197137356,
+      "adapter_sha256": "cbd820cdbd9b371103d259a0b6c6d41a5710b3f61a19f8b6e866940fb76dbbd1",
+      "cohort": "oracle_cached",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__tcache_oracle32_lr0.0003_u102_p124__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__tcache_oracle32_lr0.0003_u102_p124/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 512,
+      "online_seconds": 47.25850352901034,
+      "cache_seconds": 3.5797652730252594,
+      "dev_ce": 0.07364678126759827,
+      "adapter_sha256": "480974159cec9211ea243db66f82226f360e6178296485403c192778478b029a",
+      "cohort": "oracle_cached",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__tcache_oracle32_lr0.0003_u103_p125__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__tcache_oracle32_lr0.0003_u103_p125/step-512",
+      "method": "tcache_oracle32_lr0.0003",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 512,
+      "online_seconds": 47.159894526936114,
+      "cache_seconds": 3.50414183200337,
+      "dev_ce": 0.06373217882355675,
+      "adapter_sha256": "ac2ebaff939aef8c0ee3d13793229104eb59e164216bc13bb434b3160819e2b1",
+      "cohort": "oracle_cached",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_oracle32_lr0.001_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_lr0.001_u101_p123/step-256",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 28.197516697458923,
+      "cache_seconds": 0,
+      "dev_ce": 0.06993830081773922,
+      "adapter_sha256": "e4f5e56103683b7909a312991d037cba3b8d0ba6a0aeb239e6c3ef96a0678c11",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_oracle32_lr0.001_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_lr0.001_u102_p124/step-256",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 27.93060824018903,
+      "cache_seconds": 0,
+      "dev_ce": 0.05718768629594706,
+      "adapter_sha256": "9daced12004401c2c258098dfb88945a321e732f346ee86095b0f10d178976eb",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_oracle32_lr0.001_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_lr0.001_u103_p125/step-256",
+      "method": "fast_oracle32_lr0.001",
+      "lr": 0.001,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 27.69559914455749,
+      "cache_seconds": 0,
+      "dev_ce": 0.06707593688042834,
+      "adapter_sha256": "aa789348429f1e7d0b6cf0090f1b5e57345af66d92e85cfedca2b524d0d92e8b",
+      "cohort": "oracle_early",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle8_lr0.001_u101_p123__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle8_lr0.001_u101_p123/step-512",
+      "method": "long_oracle8_lr0.001",
+      "lr": 0.001,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 512,
+      "online_seconds": 31.31887546624057,
+      "cache_seconds": 0,
+      "dev_ce": 0.0653715074295178,
+      "adapter_sha256": "1eda0de3bbde1b4fcb98976e97231ebb25a855d9ea8bb2b1697b930aeeb66655",
+      "cohort": "oracle8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle8_lr0.001_u102_p124__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle8_lr0.001_u102_p124/step-512",
+      "method": "long_oracle8_lr0.001",
+      "lr": 0.001,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 512,
+      "online_seconds": 32.35168031021021,
+      "cache_seconds": 0,
+      "dev_ce": 0.06603183050174266,
+      "adapter_sha256": "76b110301c3f0e159ad791de49bb91254f53b29d8aa7eaa42ecf449b744289c0",
+      "cohort": "oracle8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_oracle8_lr0.001_u103_p125__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_oracle8_lr0.001_u103_p125/step-512",
+      "method": "long_oracle8_lr0.001",
+      "lr": 0.001,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 512,
+      "online_seconds": 30.629882601089776,
+      "cache_seconds": 0,
+      "dev_ce": 0.07073003097320907,
+      "adapter_sha256": "4d21e85ca89279366efeb194ab3db3ce4830c1551c3d4f15359c29fc2eddc451",
+      "cohort": "oracle8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__classrls8_lr0.001_u101_p0__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__classrls8_lr0.001_u101_p0/step-512",
+      "method": "classrls8_lr0.001",
+      "lr": 0.001,
+      "seed": 101,
+      "predictor_seed": 0,
+      "steps": 512,
+      "online_seconds": 36.0448675584048,
+      "cache_seconds": 0.10880405292846262,
+      "offline_fit_seconds": 0.0,
+      "offline_gradient_examples": 0,
+      "dev_ce": 0.06752958579454571,
+      "adapter_sha256": "5fecc7f0a995e824a9408ef1932a381900ffdf430535da2ad315ccfb504edc90",
+      "cohort": "rls8",
+      "primary_candidate": true
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__classrls8_lr0.001_u102_p0__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__classrls8_lr0.001_u102_p0/step-512",
+      "method": "classrls8_lr0.001",
+      "lr": 0.001,
+      "seed": 102,
+      "predictor_seed": 0,
+      "steps": 512,
+      "online_seconds": 35.10960742505267,
+      "cache_seconds": 0.09881368489004672,
+      "offline_fit_seconds": 0.0,
+      "offline_gradient_examples": 0,
+      "dev_ce": 0.0727986057754606,
+      "adapter_sha256": "7cd20c76bd2dc8f113652de925c06391b2f587964f5a9d50bb9d9ffa944558a3",
+      "cohort": "rls8",
+      "primary_candidate": true
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__classrls8_lr0.001_u103_p0__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__classrls8_lr0.001_u103_p0/step-512",
+      "method": "classrls8_lr0.001",
+      "lr": 0.001,
+      "seed": 103,
+      "predictor_seed": 0,
+      "steps": 512,
+      "online_seconds": 34.74505558726378,
+      "cache_seconds": 0.10208872891962528,
+      "offline_fit_seconds": 0.0,
+      "offline_gradient_examples": 0,
+      "dev_ce": 0.06825582985766232,
+      "adapter_sha256": "f3899cb2ccf33bbf5dbd01cd454a17c4ac7fd3fe118fc7d17992fdb031edbae3",
+      "cohort": "rls8",
+      "primary_candidate": true
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_cv8_lr0.001_u101_p123__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_cv8_lr0.001_u101_p123/step-512",
+      "method": "long_cv8_lr0.001",
+      "lr": 0.001,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 512,
+      "online_seconds": 36.220299584791064,
+      "cache_seconds": 5.412405674112961,
+      "dev_ce": 0.07306387901189737,
+      "adapter_sha256": "f2d236e101c92264eb6b6508cd8562da00a286bc2531ee2635ee2373d485a8af",
+      "cohort": "cv8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_cv8_lr0.001_u102_p124__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_cv8_lr0.001_u102_p124/step-512",
+      "method": "long_cv8_lr0.001",
+      "lr": 0.001,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 512,
+      "online_seconds": 35.586117829661816,
+      "cache_seconds": 5.3318227720446885,
+      "dev_ce": 0.07625796151114628,
+      "adapter_sha256": "d51758b718e350a1692ed69addc27fd5f8d7a23d53c0e3a741fe4ac1f2d35e70",
+      "cohort": "cv8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__long_cv8_lr0.001_u103_p125__step512",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__long_cv8_lr0.001_u103_p125/step-512",
+      "method": "long_cv8_lr0.001",
+      "lr": 0.001,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 512,
+      "online_seconds": 35.42632009764202,
+      "cache_seconds": 5.4459898909553885,
+      "dev_ce": 0.07049999284208752,
+      "adapter_sha256": "d4c1cbec7bfc10df1a8a0fcd1366ebb41d999e63ed07e57fbd7084ffed6f6524",
+      "cohort": "cv8",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv16_cache_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv16_cache_u101_p123/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 20.92232364299707,
+      "cache_seconds": 6.738367054844275,
+      "dev_ce": 0.07874708663439378,
+      "adapter_sha256": "e0a93cc47e5df6f25f098959d8513d495ec01eb19e4fc393042b99d3763894e0",
+      "cohort": "cv16",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv16_cache_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv16_cache_u102_p124/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 18.95585818309337,
+      "cache_seconds": 5.346364690922201,
+      "dev_ce": 0.0675402112537995,
+      "adapter_sha256": "312bdd641d0fcea86b36427b12ce6bcca46529eafd835573e904efd5044c2b5d",
+      "cohort": "cv16",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv16_cache_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv16_cache_u103_p125/step-256",
+      "method": "fast_cv16_cache",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 19.327216083183885,
+      "cache_seconds": 5.453731243964285,
+      "dev_ce": 0.06907764496281743,
+      "adapter_sha256": "44a45aee9a95ee9ac3f33ef68f6d80f60d59ec29db00cfb5b738683e7de16492",
+      "cohort": "cv16",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv4_cache_u101_p123__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv4_cache_u101_p123/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 101,
+      "predictor_seed": 123,
+      "steps": 256,
+      "online_seconds": 22.259089425439015,
+      "cache_seconds": 6.738367054844275,
+      "dev_ce": 0.07472074206452817,
+      "adapter_sha256": "e032feae16293fbabdc100371da6c56bc005a3d28ce5cb15594409043e2b5eb0",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv4_cache_u102_p124__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv4_cache_u102_p124/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 102,
+      "predictor_seed": 124,
+      "steps": 256,
+      "online_seconds": 17.90359628922306,
+      "cache_seconds": 5.346364690922201,
+      "dev_ce": 0.07803630083799362,
+      "adapter_sha256": "7a44eb1b6f7bc87ef3c56e1cf5b7aa92dcc76a2eef590186a63a1d02d1dedb28",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__fast_cv4_cache_u103_p125__step256",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_cv4_cache_u103_p125/step-256",
+      "method": "fast_cv4_cache",
+      "lr": 0.0003,
+      "seed": 103,
+      "predictor_seed": 125,
+      "steps": 256,
+      "online_seconds": 17.136437928071246,
+      "cache_seconds": 5.453731243964285,
+      "dev_ce": 0.07740225200541317,
+      "adapter_sha256": "6693436345b0d3c34de6e997c850ec15aabc993d823278ed0e3f1d4b2cde2f31",
+      "cohort": "cv4",
+      "primary_candidate": false
+    },
+    {
+      "task": "mnli",
+      "tag": "mnli__warmup_lr0.001_s201__step32",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli__warmup_lr0.001_s201/step-32",
+      "method": "warmup",
+      "phase": "warmup",
+      "lr": 0.001,
+      "seed": 201,
+      "steps": 32,
+      "adapter_sha256": "c07d28a378a386d4ce59b2dff9203683ad16c419ac5ee33af4fdf1845e83a418",
+      "dev_accuracy": 0.7504873294346979,
+      "base_dev_accuracy": 0.6413255360623782,
+      "cohort": "warmup",
+      "primary_candidate": false,
+      "online_seconds": 0.0,
+      "cache_seconds": 0.0
+    },
+    {
+      "task": "paws",
+      "tag": "paws__warmup_lr0.001_s201__step32",
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/paws__warmup_lr0.001_s201/step-32",
+      "method": "warmup",
+      "phase": "warmup",
+      "lr": 0.001,
+      "seed": 201,
+      "steps": 32,
+      "adapter_sha256": "e551d23e6ca44dad14688e56c10bc0c6d9e0a9fa5edf2a6a239b5999a7b0daa6",
+      "dev_accuracy": 0.841796875,
+      "base_dev_accuracy": 0.7578125,
+      "cohort": "warmup",
+      "primary_candidate": false,
+      "online_seconds": 0.0,
+      "cache_seconds": 0.0
+    }
+  ],
+  "development_review": [
+    {
+      "task": "paws",
+      "cohort": "oracle_quality",
+      "method_names": [
+        "tcache_oracle32_lr0.0003"
+      ],
+      "steps": 512,
+      "lr": 0.0003,
+      "dev_mean_pct": 93.359375,
+      "dev_seed_values_pct": [
+        92.96875,
+        93.9453125,
+        93.1640625
+      ],
+      "online_seconds_mean": 42.802451942659296,
+      "prefix_seconds_mean": 3.197137941373512,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle16",
+      "method_names": [
+        "fast_oracle16"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 93.1640625,
+      "dev_seed_values_pct": [
+        93.1640625,
+        93.75,
+        92.578125
+      ],
+      "online_seconds_mean": 16.419814829636987,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "oracle_early",
+      "method_names": [
+        "fast_oracle32_lr0.001"
+      ],
+      "steps": 128,
+      "lr": 0.001,
+      "dev_mean_pct": 92.70833333333333,
+      "dev_seed_values_pct": [
+        92.3828125,
+        93.5546875,
+        92.1875
+      ],
+      "online_seconds_mean": 13.228034609307846,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "cv16",
+      "method_names": [
+        "fast_cv16_cache"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 93.03385416666667,
+      "dev_seed_values_pct": [
+        93.1640625,
+        93.75,
+        92.1875
+      ],
+      "online_seconds_mean": 18.823636600592483,
+      "prefix_seconds_mean": 5.092313694612433,
+      "primary_candidate": true,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "cv4",
+      "method_names": [
+        "fast_cv4_cache"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 89.77864583333333,
+      "dev_seed_values_pct": [
+        90.4296875,
+        88.671875,
+        90.234375
+      ],
+      "online_seconds_mean": 17.144952411375318,
+      "prefix_seconds_mean": 5.092313694612433,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "cv8_long",
+      "method_names": [
+        "long_cv8_lr0.0003"
+      ],
+      "steps": 1024,
+      "lr": 0.0003,
+      "dev_mean_pct": 93.68489583333333,
+      "dev_seed_values_pct": [
+        94.7265625,
+        93.75,
+        92.578125
+      ],
+      "online_seconds_mean": 70.69762727889854,
+      "prefix_seconds_mean": 4.995532714296132,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "hold2",
+      "method_names": [
+        "gpu_hold2_lr0.0003"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 92.31770833333333,
+      "dev_seed_values_pct": [
+        93.5546875,
+        91.6015625,
+        91.796875
+      ],
+      "online_seconds_mean": 13.667270623302707,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "paws",
+      "cohort": "anchor2",
+      "method_names": [
+        "gpu_anchor2_lr0.0003_cached"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 92.1875,
+      "dev_seed_values_pct": [
+        93.5546875,
+        91.6015625,
+        91.40625
+      ],
+      "online_seconds_mean": 14.692082298143456,
+      "prefix_seconds_mean": 2.4223822152707726,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_quality",
+      "method_names": [
+        "long_oracle32_lr0.0003"
+      ],
+      "steps": 512,
+      "lr": 0.0003,
+      "dev_mean_pct": 84.7953216374269,
+      "dev_seed_values_pct": [
+        85.57504873294347,
+        84.01559454191033,
+        84.7953216374269
+      ],
+      "online_seconds_mean": 55.48324759979732,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_cached",
+      "method_names": [
+        "tcache_oracle32_lr0.0003"
+      ],
+      "steps": 512,
+      "lr": 0.0003,
+      "dev_mean_pct": 84.73034437946718,
+      "dev_seed_values_pct": [
+        85.57504873294347,
+        83.4307992202729,
+        85.18518518518519
+      ],
+      "online_seconds_mean": 47.68275985626193,
+      "prefix_seconds_mean": 3.496806324692443,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle_early",
+      "method_names": [
+        "fast_oracle32_lr0.001"
+      ],
+      "steps": 256,
+      "lr": 0.001,
+      "dev_mean_pct": 83.23586744639375,
+      "dev_seed_values_pct": [
+        82.45614035087719,
+        84.7953216374269,
+        82.45614035087719
+      ],
+      "online_seconds_mean": 27.941241360735148,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "oracle8",
+      "method_names": [
+        "long_oracle8_lr0.001"
+      ],
+      "steps": 512,
+      "lr": 0.001,
+      "dev_mean_pct": 82.58609486679661,
+      "dev_seed_values_pct": [
+        83.23586744639377,
+        82.06627680311891,
+        82.45614035087719
+      ],
+      "online_seconds_mean": 31.433479459180187,
+      "prefix_seconds_mean": 0.0,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "rls8",
+      "method_names": [
+        "classrls8_lr0.001"
+      ],
+      "steps": 512,
+      "lr": 0.001,
+      "dev_mean_pct": 83.56075373619234,
+      "dev_seed_values_pct": [
+        83.4307992202729,
+        84.99025341130604,
+        82.26120857699804
+      ],
+      "online_seconds_mean": 35.29984352357375,
+      "prefix_seconds_mean": 0.10323548891271155,
+      "primary_candidate": true,
+      "predictor_seeds": [
+        0
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv8",
+      "method_names": [
+        "long_cv8_lr0.001"
+      ],
+      "steps": 512,
+      "lr": 0.001,
+      "dev_mean_pct": 83.36582196231318,
+      "dev_seed_values_pct": [
+        84.40545808966861,
+        83.04093567251462,
+        82.65107212475633
+      ],
+      "online_seconds_mean": 35.744245837364964,
+      "prefix_seconds_mean": 5.396739445704346,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv16",
+      "method_names": [
+        "fast_cv16_cache"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 82.91098115659518,
+      "dev_seed_values_pct": [
+        82.65107212475633,
+        82.45614035087719,
+        83.62573099415205
+      ],
+      "online_seconds_mean": 19.735132636424776,
+      "prefix_seconds_mean": 5.846154329910253,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "task": "mnli",
+      "cohort": "cv4",
+      "method_names": [
+        "fast_cv4_cache"
+      ],
+      "steps": 256,
+      "lr": 0.0003,
+      "dev_mean_pct": 79.59714100064977,
+      "dev_seed_values_pct": [
+        80.50682261208577,
+        80.31189083820662,
+        77.97270955165692
+      ],
+      "online_seconds_mean": 19.099707880911108,
+      "prefix_seconds_mean": 5.846154329910253,
+      "primary_candidate": false,
+      "predictor_seeds": [
+        123,
+        124,
+        125
+      ]
+    }
+  ],
+  "evaluation_names": {
+    "mnli": {
+      "oracle_confirmation": "mnli_frozen_confirmation",
+      "test": "mnli_frozen_test"
+    },
+    "paws": {
+      "oracle_confirmation": "paws_frozen_confirmation",
+      "test": "paws_frozen_test"
+    }
+  },
+  "selection_data_sha256": {
+    "mnli": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e",
+    "paws": "a926e564cb803de8d8d441275d503005beec3e2bc796c2220e37c60af3e7ee22"
+  },
+  "quality_margin_pp": 1.0,
+  "scope": "Three paired update seeds, conditional on fixed task warmups; exploratory test populations previously used in older studies. No changes to selected recipes after frozen confirmation/test readouts."
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "fast_oracle32_lr0.001",
+    "kind": "oracle",
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "fast_loss": true,
+    "token_budget": 8192,
+    "micro": 32
+  }
+]
