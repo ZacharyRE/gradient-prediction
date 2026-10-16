@@ -1,0 +1,52 @@
+[
+  {
+    "name": "graph_oracle32",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 24,
+    "save": [
+      24
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "graph_subset4",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 24,
+    "save": [
+      24
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "graph_cv4",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 24,
+    "save": [
+      24
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "graph_class4",
+    "kind": "class_cov",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 24,
+    "save": [
+      24
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt",
+    "class_cov_reduction": "per_example"
+  }
+]

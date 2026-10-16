@@ -1,0 +1,20 @@
+{
+  "epoch": 1792109254.6773975,
+  "scope": "Execution-order only: schedule the exact previously registered fit_distill_critic item ahead of optional table/token grids. Same stage name and queue signature allow the original later queue entry to skip after success; fit_critic also skips complete models. No scientific recipe change.",
+  "original_item": {
+    "name": "fit_distill_critic",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "fit_distill_critic",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/fit_critic.py",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/distill_fit_jobs.json",
+      "--cache",
+      "critic_hidden"
+    ]
+  },
+  "reason": "Ensure previously registered distillation fits and their bounded downstream readout finish while the post-validation completion window remains available."
+}

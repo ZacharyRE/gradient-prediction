@@ -1,0 +1,114 @@
+[
+  {
+    "name": "state256_prediction_lr3e-05",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 3e-05,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_prediction_lr0.0001",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.0001,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_mean0_prediction_lr3e-05",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 3e-05,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean0/best.pt"
+  },
+  {
+    "name": "state256_mean0_prediction_lr0.0001",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.0001,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean0/best.pt"
+  },
+  {
+    "name": "state256_mean0_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean0/best.pt"
+  },
+  {
+    "name": "state256_mean4_prediction_lr3e-05",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 3e-05,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean4/best.pt"
+  },
+  {
+    "name": "state256_mean4_prediction_lr0.0001",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.0001,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean4/best.pt"
+  },
+  {
+    "name": "state256_mean4_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean4/best.pt"
+  }
+]

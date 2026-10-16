@@ -1,0 +1,11 @@
+{
+  "epoch": 1792078000.2911856,
+  "states": 13,
+  "scope": "Read-only gradient diagnostics on129 predictor_dev examples along alreadytraineddevelopment trajectories; compare gradientbias/variance after32 to512. No new method family or fitting.",
+  "followup_gate": "Consider on-policy refitting only if at least2 later CV trajectory states have centeredresidualratio at least1.5x same-stepOracle or batch32error at least2x. Otherwise prioritize existing model/objective branches.",
+  "states_sha256": "033b7f71d303397e1ee17f83a3789c9ac588688f3067fc4b664ea44865749c69",
+  "_publication_redaction": {
+    "original_sha256": "2c7aa954cbcb7424dd0dbce0318fff0be6e3c785fd96b1900c704f5052bf7519",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "created_epoch": 1792115262.2562482,
+  "recorded_stage_attempts": 506,
+  "successful_stage_attempts": 495,
+  "nonzero_stage_attempts": 11,
+  "recorded_stage_active_wall_seconds": 53238.45869016647,
+  "final_training_manifest_completion": {
+    "candidate_matched_and_short_oracle": {
+      "completed_manifests": 30,
+      "required_manifests": 30
+    },
+    "candidate_independently_tuned_oracles": {
+      "completed_manifests": 30,
+      "required_manifests": 30
+    },
+    "candidate_zero_gradient_control": {
+      "completed_manifests": 30,
+      "required_manifests": 30
+    },
+    "fullpool_matched_and_short_oracle": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    },
+    "fullpool_tuned_oracle_and_zero_control": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    },
+    "fullpool_independently_tuned_original_cv16": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    },
+    "fullpool_graph_cv8_and_matched_oracle8": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    },
+    "fullpool_state_predictor_early_cutoff": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    },
+    "fullpool_higher_quality_graph_oracle_control": {
+      "completed_manifests": 3,
+      "required_manifests": 3
+    }
+  },
+  "authorized_deadline_epoch": 1792118298,
+  "scope": "Union of available stage start/finish receipts, including process setup, evaluation, fitting, failed attempts and profiling. This is not GPU kernel time, not total reservation time and not total FLOPs. An interrupted attempt lacking a completion receipt may be absent; original queue logs and local provenance remain the detailed record. Operational PID and foreign-process information is not exported.",
+  "source_sha256": "d3467d1cf078ca5da153459259a96d7aeac51acb0efef8494d4a791e2806759a",
+  "authorized_seconds": 57600,
+  "study_elapsed_seconds_at_summary": 54564.26462364197,
+  "resource_release": {
+    "released": true,
+    "epoch": 1792115237.058825,
+    "gpu_index": 0,
+    "final_evidence_audit_sha256": "c44437c42059844c91b4a167a8bccba5554d4fac1cc4a157797558d2c9a0504c",
+    "stopped_script_counts": {
+      "monitor_gpu.py": 1,
+      "reserve_gpu.py": 1
+    },
+    "scope": "Verified owned controllers and reservation exited; no active study stage was interrupted. PID identity was checked before pidfd-based SIGTERM. Other users may acquire the GPU after release."
+  },
+  "sampled_resource_accounting": {
+    "updated": 1792115262.0888083,
+    "gpu_index": 0,
+    "observation_count": 3550,
+    "observed_only_receipted_owned_processes": true,
+    "scope": "One GPU, cooperative admission lock plus held VRAM and reusable worker allocator cache; sampled every15seconds. Historical holder renewals use verified transition time ranges; worker matching uses recorded PIDs and is not continuous process-lifetime attestation. This is not administrator-enforced exclusive mode and cannot rule out activity between samples. Reservation memory is not algorithm memory usage.",
+    "unmatched_observation_count": 0
+  }
+}

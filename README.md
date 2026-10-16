@@ -2,9 +2,11 @@
 
 Can a learned predictor estimate useful gradients and keep improving a model as its parameters change?
 
-**Current focus:** predict LoRA gradients at lower cost while preserving downstream learning; test frozen prediction, online calibration and small-sample true-gradient correction.
+**Current focus:** predict LoRA gradients at lower cost while preserving downstream learning, then test whether the predictor can be reused across starting models and training datasets as a training surrogate.
 
-**Latest — nine-hour predictor efficiency study (October 14):** CV4 still misses the quality target. Online RLS8 approaches Oracle on MNLI without offline fitting, but early-stopped Oracle remains faster. A secondary MNLI CV16 result reaches **84.68% vs early Oracle's 84.97%**, using **23.20 vs 28.93 seconds** of adaptation with an already-fitted predictor; offline preparation is additional. PAWS's primary CV16 falls short. Includes 48 verified timing replays, FLOPs and long-run diagnostics. [Results and conclusions →](reports/predictor_efficiency_20261014/README.md)
+**Latest — reusable training surrogates (October 15):** early predictor use approaches Oracle accuracy, but no overall efficiency or data-selection advantage is established. Tests three new starting adapters, random and source-disjoint genre datasets, behavior prediction, matched/tuned/shorter Oracle controls and complete time/cost accounting. [Study, evidence and reproduction →](reports/predictor_surrogate_20261015/README.md)
+
+**Previous — nine-hour predictor efficiency study (October 14):** CV4 still misses the quality target. Online RLS8 approaches Oracle on MNLI without offline fitting, but early-stopped Oracle remains faster. A secondary MNLI CV16 result reaches **84.68% vs early Oracle's 84.97%**, using **23.20 vs 28.93 seconds** of adaptation with an already-fitted predictor; offline preparation is additional. PAWS's primary CV16 falls short. Includes 48 verified timing replays, FLOPs and long-run diagnostics. [Results and conclusions →](reports/predictor_efficiency_20261014/README.md)
 
 **[Start here — consolidated 0.5B / 1.5B / 7B experiment overview](reports/experiment_overview_20261013/README.md)** (October 13): all evaluated task coverage, Base / Warmup / Oracle / predictor scores, exact settings, method comparisons, FLOPs and measured time. **Gradients are learnable; matched-quality training speedup remains unproven.** Includes one overview figure and downloadable evidence tables.
 
@@ -39,6 +41,7 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 | 7. Model and task scaling | Does the method remain useful at 1.5B/7B on Countdown, GSM8K and MATH? | [Scaling results and tested changes](predictor/countdown_predictor_results/scaling-benchmarks-20260926/README.md): learnable gradients without established general accuracy gains |
 | 8. Domain sensitivity and cost | Do predicted updates improve on warmup and reduce total cost? | [13 conditions, warmup/update LR sweeps, controlled profiling and 1,024-step follow-up](predictor/countdown_predictor_results/scaling-domains-20260930/README.md): limited extra accuracy; no established improvement at lower total cost |
 | 9. Time to downstream quality | Can a gradient surrogate approach a tuned Oracle faster, beyond 32 updates? | [Nine-hour 1.5B PAWS/MNLI study](reports/predictor_efficiency_20261014/README.md): calibration, long trajectories, online linear surrogates, frozen readouts and complete cost definitions |
+| 10. Reusable training surrogates | Can one fitted predictor transfer to new starting adapters/data, select useful data, and predict changed behavior? | [Frozen 1.5B/MNLI transfer and selection study](reports/predictor_surrogate_20261015/README.md): separate direct-training and data-selection endpoints, repeated timing and explicit offline costs |
 
 The [SFT diagnosis studies](research/README.md) provide supporting evidence about training stability, supervision targets, and evaluation. Their settings differ from the Countdown predictor experiments.
 

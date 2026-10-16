@@ -1,0 +1,13 @@
+{
+  "epoch": 1792074978.0741386,
+  "diagnostic_reason": "Many pure/periodic prediction runs collapse, while CV16 state256 has a positive development point. Checkpointselection usedcentered residual variance, which doesnotpenalize meanbias. CVcancelsconstantbias butpureupdates do not.",
+  "experiment": "Same explicit-state256 architecture,30epochs forboth: mean penalty0versus4, both selectedby empiricalbatch32 error includingbias. Mean0 is the matched selection-only control. Compare lowerLRpureupdates with originalstate256 atsameLR; CV16 remains secondary.",
+  "new_method_family": false,
+  "additional_teacher_labels": 0,
+  "fitting_and_diagnostics_charged": true,
+  "fit_data": "Same8 developmentOracle states and512training/129predictor-dev examples perstate; no newstarts or selection readouts",
+  "interpretation_limit": "Originalstate256 alsochanges labelconditioning, hiddenrepresentation,width andtraining-state coverage versus inheritedglobalfit; any whole-packagegain isnot uniquelyattributed to explicitstate input.",
+  "initial_proposal": "weights1and4, notexecuted",
+  "amendment_epoch": 1792075018.79084,
+  "amendment_reason": "Replace redundant penalty1 arm with matched penalty0 control before anyfit; same2fit/8rollout budget."
+}

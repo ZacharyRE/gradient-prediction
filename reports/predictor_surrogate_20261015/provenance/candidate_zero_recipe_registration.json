@@ -1,0 +1,39 @@
+{
+  "epoch": 1792077590.4627988,
+  "chosen": {
+    "method": "zero_every4_lr0.0003",
+    "steps": 256,
+    "lr": 0.0003,
+    "complete": true,
+    "warmup_seeds": [
+      301,
+      311,
+      321
+    ],
+    "mean_accuracy_pct": 80.31189083820664,
+    "accuracy_per_start": [
+      81.28654970760235,
+      79.33723196881091,
+      80.31189083820662
+    ],
+    "mean_preparation_plus_online_seconds": 7.933054227769996,
+    "seconds_per_start": [
+      7.846779485233128,
+      7.9830259785521775,
+      7.969357219524682
+    ],
+    "tags": [
+      "mnli__w301_candidate_0_zero_every4_lr0.0003_u401_statecandidate__step256",
+      "mnli__w311_candidate_0_zero_every4_lr0.0003_u411_statecandidate__step256",
+      "mnli__w321_candidate_0_zero_every4_lr0.0003_u421_statecandidate__step256"
+    ]
+  },
+  "oracle_reference_mean_accuracy_pct": 81.22157244964264,
+  "rule": "Exploratory development choice: fastest mean prep+online zero-gradient/Adam control within1pp of tunedOracle32 developmentmean; all three starts required. This is not an inferential noninferiority decision.",
+  "final_outcomes_unread": true,
+  "development_summary_sha256": "dcadb521d9939ba4b77241c924a05902d387de2427e96f9317d1c96c54061c52",
+  "_publication_redaction": {
+    "original_sha256": "cd606a33754db4c3460837a1c9f27dd8fc778cb0eebe018f24d25f4ba28b8b4e",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

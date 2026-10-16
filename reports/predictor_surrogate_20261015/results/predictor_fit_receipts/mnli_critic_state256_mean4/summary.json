@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "best_epoch": 28,
+  "best_centered_cv_ratio": 0.9999261945486069,
+  "selection_metric": "batch32_error_ratio",
+  "best_selection_score": 0.9472545236349106,
+  "seconds": 183.8886271819938,
+  "mean_normalization_preparation_seconds": 2.8148463882971555,
+  "optimizer_steps": 7920,
+  "best_sha256": "09f02f817a3fe547289ad2042f15d76cdca6975db4b7dff1e0ce60fc297bbacd",
+  "value_and_gradient_supervision": {
+    "name": "state256_mean4",
+    "kind": "state",
+    "width": 256,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "mean_weight": 4,
+    "selection_metric": "batch32_error_ratio"
+  },
+  "collection_cost_seconds": 39.526340251322836,
+  "teacher_trajectory_cost_additional": true
+}

@@ -1,0 +1,613 @@
+[
+  {
+    "name": "surrogate_supplement_timing_302_cv16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_cv16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_cv16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_128_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_128_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-128",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_cv16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_cv16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_cv16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_128_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_128_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-128",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_cv16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_cv16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_cv16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_128_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_128_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-128",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_cv16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_cv16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_cv16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_128_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_128_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-128",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_cv16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_cv16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_cv16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_128_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_128_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-128",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_cv16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_cv16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_cv16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle16_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle16_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_128_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_128_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-128",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_512_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_512_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_cv16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_cv16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_cv16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle16_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_128_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_128_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-128",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_304_oracle32_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_304_oracle32_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w304_update_oracle32_matched_u403_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_cv16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_cv16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_cv16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_128_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_128_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-128",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_302_oracle32_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_302_oracle32_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_cv16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_cv16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_cv16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle16_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle16_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle16_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_128_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_128_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-128",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_timing_303_oracle32_matched_512_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_timing_303_oracle32_matched_512_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w303_update_oracle32_matched_u402_blindfullpool/step-512",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_flops_302_cv16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_flops_302_cv16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_cv16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1",
+      "--flops"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_flops_302_oracle16_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_flops_302_oracle16_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle16_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1",
+      "--flops"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_flops_302_oracle32_matched_128_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_flops_302_oracle32_matched_128_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-128",
+      "--repeat",
+      "1",
+      "--flops"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_flops_302_oracle32_matched_512_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_supplement_flops_302_oracle32_matched_512_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+      "--reference-adapter",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_update_oracle32_matched_u401_blindfullpool/step-512",
+      "--repeat",
+      "1",
+      "--flops"
+    ]
+  },
+  {
+    "name": "surrogate_supplement_summarize_timing",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/summarize_reuse_timings.py"
+    ]
+  }
+]

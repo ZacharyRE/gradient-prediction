@@ -1,0 +1,30 @@
+{
+  "job": {
+    "name": "state256_coverage_fast",
+    "kind": "state",
+    "width": 256,
+    "epochs": 40,
+    "gradient_weight": 1,
+    "value_weight": 0
+  },
+  "cache": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_coverage_v1",
+  "cache_sha256": "35029384f40a2c5d6713c1212ff730d8d1e8c10945ed504a85d6bd01475d15f3",
+  "train_examples": 6144,
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256",
+    "w301_fast_step32",
+    "w301_fast_step128",
+    "w301_fast_step256",
+    "w301_fast_step512"
+  ],
+  "source_sha256": "afaed40caf6c83170f4c551277e0c292354dcfde6b094cc81a7863182d00b1c7",
+  "selection": "Mean within-state centered_cv_ratio on predictor_dev; no downstream final examples",
+  "batch32_metric_scope": "Expected squared mean-gradient error for32 IID draws from the empirical validation-gradient distribution, including mean bias; a diagnostic proxy, not a downstream guarantee"
+}

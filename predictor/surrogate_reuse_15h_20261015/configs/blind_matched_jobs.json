@@ -1,0 +1,50 @@
+[
+  {
+    "name": "oracle32_matched",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "oracle16_matched",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "cv16_matched",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  }
+]

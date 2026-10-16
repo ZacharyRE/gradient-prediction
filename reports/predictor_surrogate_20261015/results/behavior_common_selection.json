@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "selected": {
+    "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt",
+    "eligible": true,
+    "model": "mnli_behavior_anchored128_coverage",
+    "predictor_sha256": "9b7801c77ff4c149d44c885d8c91e79c1f1943d06a492d4eb4217d547011b675",
+    "metrics": {
+      "normalized_logit_mse": 0.12319609522819519,
+      "normalized_state_change_mse": 0.8145126700401306,
+      "joint_score": 0.9377087652683258,
+      "teacher_class_agreement": 0.881136953830719,
+      "student_accuracy": 0.7351421117782593
+    }
+  },
+  "rows": [
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_anchored64",
+      "predictor_sha256": "3eac2c249f51c00ee8a93cc1f8b22155104427832b91f3098849e67968c12276",
+      "metrics": {
+        "normalized_logit_mse": 0.12722083926200867,
+        "normalized_state_change_mse": 0.8761605024337769,
+        "joint_score": 1.0033813416957855,
+        "teacher_class_agreement": 0.8708010315895081,
+        "student_accuracy": 0.7293281555175781
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_anchored128",
+      "predictor_sha256": "b061a3ec43e220c0004d4185b794f61faa4a1bcae15e9ea93c60276e3405197c",
+      "metrics": {
+        "normalized_logit_mse": 0.12732407450675964,
+        "normalized_state_change_mse": 0.8663132190704346,
+        "joint_score": 0.9936372935771942,
+        "teacher_class_agreement": 0.8708010315895081,
+        "student_accuracy": 0.7293281555175781
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64_coverage/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_anchored64_coverage",
+      "predictor_sha256": "097d39a0d3db8d17e30633c79bc0c7901753f0984ae28404a57f62030e8397cf",
+      "metrics": {
+        "normalized_logit_mse": 0.12320732325315475,
+        "normalized_state_change_mse": 0.8149034380912781,
+        "joint_score": 0.9381107613444328,
+        "teacher_class_agreement": 0.8791989684104919,
+        "student_accuracy": 0.7338501214981079
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_anchored128_coverage",
+      "predictor_sha256": "9b7801c77ff4c149d44c885d8c91e79c1f1943d06a492d4eb4217d547011b675",
+      "metrics": {
+        "normalized_logit_mse": 0.12319609522819519,
+        "normalized_state_change_mse": 0.8145126700401306,
+        "joint_score": 0.9377087652683258,
+        "teacher_class_agreement": 0.881136953830719,
+        "student_accuracy": 0.7351421117782593
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_delta256",
+      "predictor_sha256": "15c1eeae32dd3788a1092a6138c894a201e2cb69a0c983a63b4d50b3c2f468ab",
+      "metrics": {
+        "normalized_logit_mse": 0.9143921136856079,
+        "normalized_state_change_mse": 1.0019842386245728,
+        "joint_score": 1.9163763523101807,
+        "teacher_class_agreement": 0.3695090413093567,
+        "student_accuracy": 0.3682170510292053
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta512/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_delta512",
+      "predictor_sha256": "8a27fa8f077e1d956b6749474bda86815fe9c59cfaa1faaeeb7056eacdae4937",
+      "metrics": {
+        "normalized_logit_mse": 0.9235207438468933,
+        "normalized_state_change_mse": 1.060247540473938,
+        "joint_score": 1.9837682843208313,
+        "teacher_class_agreement": 0.39470285177230835,
+        "student_accuracy": 0.39082688093185425
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256_nochange/best.pt",
+      "eligible": true,
+      "model": "mnli_behavior_delta256_nochange",
+      "predictor_sha256": "dd971eb73d0c5798a5efc3c2eeaf48aea6977210cd72fb6ef8ecaff8ff5e6613",
+      "metrics": {
+        "normalized_logit_mse": 0.950189471244812,
+        "normalized_state_change_mse": 0.949191153049469,
+        "joint_score": 1.899380624294281,
+        "teacher_class_agreement": 0.33074936270713806,
+        "student_accuracy": 0.32299742102622986
+      }
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_no_explicit_delta256/best.pt",
+      "eligible": false,
+      "model": "mnli_behavior_no_explicit_delta256",
+      "predictor_sha256": "3e6eb1df6e5a5cf9f3559484f7accbc226edff6c681ef1a51c0c006262394b5a",
+      "metrics": {
+        "normalized_logit_mse": 0.9504563808441162,
+        "normalized_state_change_mse": 0.9314458966255188,
+        "joint_score": 1.881902277469635,
+        "teacher_class_agreement": 0.3204134404659271,
+        "student_accuracy": 0.2984496057033539
+      }
+    }
+  ],
+  "initial_teacher_baseline": {
+    "normalized_logit_mse": 0.14671070873737335,
+    "normalized_state_change_mse": 1.0212781429290771,
+    "joint_score": 1.1679888516664505,
+    "teacher_class_agreement": 0.8927648663520813,
+    "student_accuracy": 0.7441860437393188
+  },
+  "feature_preparation_seconds": 13.8716615291778,
+  "wall_seconds": 14.109043332049623,
+  "cache_sha256": "7cdfdaec12881019c6f20532e0689940b7bc1355504b2cb82143cf443d5095b8",
+  "plan_sha256": "5d6ede994b1fbbfee6b3c947c5a3a4210d73765e5e245e10bcaf17cb113d7792",
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256",
+    "w301_fast_step32",
+    "w301_fast_step128",
+    "w301_fast_step256",
+    "w301_fast_step512"
+  ],
+  "source_sha256": "bddf5c8f77501000bf40a7cd4a923bc281f0ee4969f796c2d249746f2656f63b",
+  "scope": "All models use identical12 development states,129 predictor_dev examples and common training-derived normalizers. Select at most one eligible behavior model; no selection_dev/holdout outcome used. Coverage-specific fit scores are not directly compared."
+}

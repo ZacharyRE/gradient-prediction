@@ -1,0 +1,64 @@
+{
+  "epoch": 1792082101.2630591,
+  "choices": {
+    "candidate": {
+      "method": "cv16_lr0.001",
+      "steps": 128,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 80.89668615984407,
+      "accuracy_per_start": [
+        80.11695906432749,
+        80.31189083820662,
+        82.26120857699804
+      ],
+      "mean_preparation_plus_online_seconds": 10.051661306914562,
+      "seconds_per_start": [
+        10.260487276362255,
+        10.00368654821068,
+        9.890810096170753
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_cv16_lr0.001_u401_candidate_reference__step128",
+        "mnli__w311_candidate_0_cv16_lr0.001_u411_candidate_reference__step128",
+        "mnli__w321_candidate_0_cv16_lr0.001_u421_candidate_reference__step128"
+      ]
+    },
+    "fullpool": {
+      "method": "cv16_lr0.0003",
+      "steps": 512,
+      "lr": 0.0003,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 83.49577647823261,
+      "accuracy_per_start": [
+        83.4307992202729,
+        83.82066276803118,
+        83.23586744639377
+      ],
+      "mean_preparation_plus_online_seconds": 37.45962209169132,
+      "seconds_per_start": [
+        37.24841741099954,
+        37.38874637428671,
+        37.74170248978771
+      ],
+      "tags": [
+        "mnli__w301_update_cv16_lr0.0003_u401_fullpoolconfirm__step512",
+        "mnli__w311_update_cv16_lr0.0003_u411_reference__step512",
+        "mnli__w321_update_cv16_lr0.0003_u421_reference__step512"
+      ]
+    }
+  },
+  "rule": "Highest mean development accuracy over3starts and3LRs x5horizons; same time/steps/LR tie rule as Oracle. Compare same recipe families on equal tuning budget.",
+  "before_any_final_outcomes": true,
+  "implementation": "Candidate selected recipe is already present as cv16_matched@128/.001. Fullpool independently selected cv16_lr0.0003@512 requires separate blind training; matched.001256/512 arms remain unchanged."
+}

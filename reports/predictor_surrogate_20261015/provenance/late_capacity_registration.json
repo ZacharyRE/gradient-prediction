@@ -1,0 +1,42 @@
+{
+  "epoch": 1792109201.581952,
+  "scope": "Post-freeze development only; prompted by model-capacity hypothesis during the bounded2048-input fit. No change to frozen final models or outcomes.",
+  "hypothesis": "Width256 compression may limit multi-state gradient prediction; compare width512 with identical fitting rows/states/epochs and charge extra compute.",
+  "fit": {
+    "width": 512,
+    "unique_inputs": 2048,
+    "states": 12,
+    "epochs": 10,
+    "example_state_visits": 245760
+  },
+  "development_starts": [
+    301,
+    311,
+    321
+  ],
+  "update_seeds": [
+    401,
+    411,
+    421
+  ],
+  "split": "accuracy_dev",
+  "policies": [
+    "CV16",
+    "CV16 first32 thenOracle16",
+    "CV8"
+  ],
+  "primary_steps": [
+    256,
+    512
+  ],
+  "secondary_steps": [
+    32,
+    128
+  ],
+  "cutoff": "Unchanged original two-hour fitting reserve; incomplete fitting is not counted as a completed model.",
+  "config_sha256": {
+    "capacity_fit_jobs.json": "882b22d208f348dddb8bad1f219c4ff80dbac777802ced2f7cdb0f88a84a2243",
+    "capacity_rollout_jobs.json": "56042e3d9d4e46e858dd6c38d1d2c36202b6650f6ea99b8f62d9e76e03c0f0e2",
+    "queue_capacity512.json": "1ba077c0e4d6c8e4ae5f1b2503e92a121ed0638c52df49ee145503a778d8ddb8"
+  }
+}

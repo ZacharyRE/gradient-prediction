@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+  "models": [
+    {
+      "name": "mnli_predictor_globalfit_p123",
+      "role": "gradient",
+      "kind": "gradient_predictor",
+      "config": {
+        "dim": 1536,
+        "width": 512,
+        "depth": 2,
+        "label_dim": 0,
+        "label_vocab": 0,
+        "input_field": "y"
+      },
+      "parameter_count": 5787136,
+      "buffer_elements": 1,
+      "checkpoint_bytes": 23157253,
+      "checkpoint_sha256": "b27b0083056bc34fb34faf40b9cf5a24ba0574e0dd032602c461eb23caf3220d",
+      "strict_state_load_passed": true
+    },
+    {
+      "name": "mnli_behavior_anchored128_coverage",
+      "role": "behavior",
+      "kind": "anchored_behavior",
+      "config": {
+        "dim": 1536,
+        "width": 128,
+        "class_tokens": [
+          32,
+          33,
+          34
+        ],
+        "delta_features": true,
+        "kind": "anchored_behavior"
+      },
+      "parameter_count": 1197056,
+      "buffer_elements": 18441,
+      "checkpoint_bytes": 4865443,
+      "checkpoint_sha256": "9b7801c77ff4c149d44c885d8c91e79c1f1943d06a492d4eb4217d547011b675",
+      "strict_state_load_passed": true
+    },
+    {
+      "name": "mnli_critic_state256",
+      "role": "gradient",
+      "kind": "state_predictor",
+      "config": {
+        "dim": 1536,
+        "width": 256,
+        "depth": 2,
+        "label_dim": 8,
+        "label_vocab": 151646,
+        "input_field": "h",
+        "kind": "state_predictor"
+      },
+      "parameter_count": 2245888,
+      "buffer_elements": 1213169,
+      "checkpoint_bytes": 11420065,
+      "checkpoint_sha256": "0398d160f6568dc8e4d085a7ecce3b74ad0426571775f97252ccdcf2d02bc928",
+      "strict_state_load_passed": true
+    }
+  ],
+  "scope": "CPU constructor and strict checkpoint-state validation. Parameter counts exclude buffers; checkpoint bytes include metadata/buffers and are not inference memory measurements. No checkpoint tensors are exported.",
+  "source_sha256": "3b55bf32d7721da8d430d2990309a40d5a1d9728c5173295a98ad0a9c2b8bb62"
+}

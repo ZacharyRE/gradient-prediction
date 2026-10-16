@@ -1,0 +1,18 @@
+{
+  "epoch": 1792089232.7834933,
+  "before_selection_outcomes": true,
+  "configs": {
+    "surrogate_final_recipe_plan.json": "90bf803c9182156f4d6e7541f02891713ef18f87bad80123917b17d3a4109312",
+    "surrogate_analysis_spec.json": "18c0261dbc3f4298be6747f23e3af65c7b994f539aeab325d908536ec264d8a3",
+    "surrogate_cost_policy.json": "e383effe4c44a00dd5a55753082f85f9848f3414b19f27876f3a42e6a907edcc",
+    "secondary_analysis_plan.json": "34e5fc451defb89faceee5c8cb01d722c0f3c47c1e679bc0896c078860ed7ce3"
+  },
+  "critical_code": {
+    "evaluate.py": "775cf03f6ce6d4def135605892a53f117551ac354f58d2959fd528c42f95b6e9",
+    "common.py": "3ae70ad1c1dbaf63363bfe87493f2807167a40c7ad76ff626821911524f0515f",
+    "surrogate_freeze.py": "4a5fb7028e6f84cd37ca88790fbd74500ed371d756d25f645c394dffee3b2da2",
+    "freeze_selection_decisions.py": "031223fa90688d6b6038979e316451977a8402ca48fbf53bc0d555cb8e13b965",
+    "analyze_selection.py": "06dc448dbdeece4a630abeba4529d335e06f156a6830b63b3c16dcbbca8799ad"
+  },
+  "scope": "All predictor choices, practical/matched/stronger-Oracle controls, train-all random-family comparison and timing plans are closed. Later changes, if required, must be documented bug fixes or explicit incomplete measurements, not outcome-dependent method selection."
+}

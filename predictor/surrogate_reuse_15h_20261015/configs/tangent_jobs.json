@@ -1,0 +1,364 @@
+[
+  {
+    "name": "oracle_class32_lr0.0003",
+    "kind": "oracle_class",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "oracle_class16_lr0.0003",
+    "kind": "oracle_class",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear0_lr0.0003",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_class4_lr0.0003",
+    "kind": "linear_cv_class",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_full4_lr0.0003",
+    "kind": "linear_cv_full",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_full16_lr0.0003",
+    "kind": "linear_cv_full",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_refresh128_lr0.0003",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "refresh_every": 128
+  },
+  {
+    "name": "linear_refresh256_lr0.0003",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "refresh_every": 256
+  },
+  {
+    "name": "oracle_class32_lr0.001",
+    "kind": "oracle_class",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "oracle_class16_lr0.001",
+    "kind": "oracle_class",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear0_lr0.001",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_class4_lr0.001",
+    "kind": "linear_cv_class",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_full4_lr0.001",
+    "kind": "linear_cv_full",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_cv_full16_lr0.001",
+    "kind": "linear_cv_full",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "linear_refresh128_lr0.001",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "refresh_every": 128
+  },
+  {
+    "name": "linear_refresh256_lr0.001",
+    "kind": "linear",
+    "k": 0,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "refresh_every": 256
+  },
+  {
+    "name": "oracle_full32_lr0.0003",
+    "kind": "oracle_full",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "oracle_full16_lr0.0003",
+    "kind": "oracle_full",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hybrid_full_every4_lr0.0003",
+    "kind": "hybrid_full",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hybrid_full_every8_lr0.0003",
+    "kind": "hybrid_full",
+    "k": 32,
+    "true_every": 8,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "oracle_full32_lr0.001",
+    "kind": "oracle_full",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "oracle_full16_lr0.001",
+    "kind": "oracle_full",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hybrid_full_every4_lr0.001",
+    "kind": "hybrid_full",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hybrid_full_every8_lr0.001",
+    "kind": "hybrid_full",
+    "k": 32,
+    "true_every": 8,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hold_full_every4_lr0.001",
+    "kind": "hold_full",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "skip_full_every4_lr0.001",
+    "kind": "skip_full",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  },
+  {
+    "name": "hybrid_class_every4_lr0.001",
+    "kind": "hybrid_class",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ]
+  }
+]

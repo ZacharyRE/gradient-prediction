@@ -1,0 +1,336 @@
+{
+  "registered_epoch": 1792111341.560409,
+  "training_source_sha256": "6da6417cb07215c2aa0f9fff0087cc87ffcff4cc826f64a461ccb13798d38d9e",
+  "validation_audit_sha256": "9deb97751672e26de6efd534031be56ee3bd0bf0fbdef45f7b05accc5fa2cd73",
+  "warmup_sha256": "15dc376e1c5d2dcdf61705ad073d9747979d58a79b4a418e2f760c44535991ce",
+  "data_sha256": {
+    "update": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4",
+    "candidate_0": "d87c313c61c378bdfe52854d283281e3646a78f10bfbfd59989d40edbaf9eb95"
+  },
+  "training_cutoff_epoch": 1792114998,
+  "readout_cutoff_epoch": 1792115598,
+  "stages": {
+    "needed_oracle32_s32": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s32.json",
+        "--suffix",
+        "_needed_oracle32_s32",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "0bcab0365049bd6724f07fb668450a728415628e177a813b2783a5555e05d095",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_oracle32_s32",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s32.json",
+        "--suffix",
+        "_needed_oracle32_s32",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_oracle32_s64": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s64.json",
+        "--suffix",
+        "_needed_oracle32_s64",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "d8f40b666c8807e0353902cccecba7c8309b33615a8ef9dee8ab4d0108c7c607",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_oracle32_s64",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s64.json",
+        "--suffix",
+        "_needed_oracle32_s64",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_oracle32_s128": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s128.json",
+        "--suffix",
+        "_needed_oracle32_s128",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "2a1b6b20d97d91eb426a54250fa3a0b15409c7da9965da49da33f8def89c206a",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_oracle32_s128",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_oracle32_s128.json",
+        "--suffix",
+        "_needed_oracle32_s128",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_subset16_s128": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_subset16_s128.json",
+        "--suffix",
+        "_needed_subset16_s128",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "e75379c40a71ce52f351940da265ba23f9d411f15a0d00ba9eb1c85b4679d7c6",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_subset16_s128",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_subset16_s128.json",
+        "--suffix",
+        "_needed_subset16_s128",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_subset16_s256": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_subset16_s256.json",
+        "--suffix",
+        "_needed_subset16_s256",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "25a24b6783c90dbc360b879a1156c59f5ea484bff81b7a33f8c4b746994aa321",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_subset16_s256",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_subset16_s256.json",
+        "--suffix",
+        "_needed_subset16_s256",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_cv16_s256": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_cv16_s256.json",
+        "--suffix",
+        "_needed_cv16_s256",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "98bfae6ded9ecedc311f47b6a67657a1d68a04a5ebee1196e605cd45023bb69e",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_cv16_s256",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_cv16_s256.json",
+        "--suffix",
+        "_needed_cv16_s256",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_class_cov4_s256": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_class_cov4_s256.json",
+        "--suffix",
+        "_needed_class_cov4_s256",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "5ccbad97be0523762aaa65275472c86f4c34b3465af7b7aeaf26d8b2b0aced19",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_class_cov4_s256",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_class_cov4_s256.json",
+        "--suffix",
+        "_needed_class_cov4_s256",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "needed_class_cov16_s256": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_class_cov16_s256.json",
+        "--suffix",
+        "_needed_class_cov16_s256",
+        "--cache-policy",
+        "needed"
+      ],
+      "jobs_sha256": "a5313e776e7fb9be8dfe03b18dd90dc5e6901550368c3a16030758d55a05b04d",
+      "original_queue": "queue_needed.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "needed_class_cov16_s256",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/needed_class_cov16_s256.json",
+        "--suffix",
+        "_needed_class_cov16_s256",
+        "--cache-policy",
+        "needed"
+      ]
+    },
+    "pilot_class_batched": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/class_batched_jobs.json",
+        "--suffix",
+        "_classbatched"
+      ],
+      "jobs_sha256": "224c6b7dd1a4eedb9f42d6747dc78dddcbf10e6e8a90dac82b31ece7af45cc19",
+      "original_queue": "queue_class_batched.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "pilot_class_batched",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/class_batched_jobs.json",
+        "--suffix",
+        "_classbatched"
+      ]
+    },
+    "pilot_table": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--subset",
+        "candidate_0",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/table_rollout_jobs.json",
+        "--suffix",
+        "_table"
+      ],
+      "jobs_sha256": "a266375c0ff75b8f2a2cc8d4a959507ba876b3e97c6e35544b8e9711c73323f5",
+      "original_queue": "queue_followup3_after_state.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "pilot_table",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--subset",
+        "candidate_0",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/table_rollout_jobs.json",
+        "--suffix",
+        "_table"
+      ]
+    },
+    "pilot_token": {
+      "training_argv": [
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/token_rollout_jobs.json",
+        "--suffix",
+        "_token"
+      ],
+      "jobs_sha256": "b91a3e8805de378cb02a742db432eae1b5d56c72b114bb339cfa768b58951fa0",
+      "original_queue": "queue_followup3_after_state.json",
+      "original_command": [
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+        "--name",
+        "pilot_token",
+        "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+        "--warmup-seed",
+        "301",
+        "--jobs",
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/token_rollout_jobs.json",
+        "--suffix",
+        "_token"
+      ]
+    }
+  }
+}

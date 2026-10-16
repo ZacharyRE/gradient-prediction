@@ -1,0 +1,22 @@
+{
+  "epoch": 1792090592.0866644,
+  "deferred": [
+    {
+      "name": "pilot_behavior",
+      "priority": 1,
+      "queue": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/queue_followup3_after_state.json",
+      "scope": "Waiting controller only; no GPU worker started, no training interrupted"
+    },
+    {
+      "name": "needed_subset16_s128",
+      "priority": 1,
+      "queue": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/queue_needed.json",
+      "scope": "Waiting controller only; no GPU worker started, no training interrupted"
+    }
+  ],
+  "reason": "Prevent a long optional research stage entering between final validation stages. Resume the same predeclared queues only after complete selection-workflow timing, if at least90minutes remain. No scientific recipe changes.",
+  "_publication_redaction": {
+    "original_sha256": "d687d6f74d96a2b253882c47c5b499e742b25edc5e29b56fcdd1be11cbc72c55",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

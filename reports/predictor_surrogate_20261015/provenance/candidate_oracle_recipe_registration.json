@@ -1,0 +1,108 @@
+{
+  "epoch": 1792077261.2297628,
+  "choices": {
+    "independent_oracle32": {
+      "ready": true,
+      "chosen": {
+        "method": "oracle32_lr0.0003",
+        "steps": 128,
+        "lr": 0.0003,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 81.22157244964264,
+        "accuracy_per_start": [
+          81.0916179337232,
+          81.48148148148148,
+          81.0916179337232
+        ],
+        "mean_preparation_plus_online_seconds": 13.786016000434756,
+        "seconds_per_start": [
+          14.002978249685839,
+          13.800711103482172,
+          13.554358648136258
+        ],
+        "tags": [
+          "mnli__w301_candidate_0_oracle32_lr0.0003_u401_candidate_reference__step128",
+          "mnli__w311_candidate_0_oracle32_lr0.0003_u411_candidate_reference__step128",
+          "mnli__w321_candidate_0_oracle32_lr0.0003_u421_candidate_reference__step128"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    },
+    "short_oracle32": {
+      "ready": true,
+      "chosen": {
+        "method": "oracle32_lr0.0003",
+        "steps": 128,
+        "lr": 0.0003,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 81.22157244964264,
+        "accuracy_per_start": [
+          81.0916179337232,
+          81.48148148148148,
+          81.0916179337232
+        ],
+        "mean_preparation_plus_online_seconds": 13.786016000434756,
+        "seconds_per_start": [
+          14.002978249685839,
+          13.800711103482172,
+          13.554358648136258
+        ],
+        "tags": [
+          "mnli__w301_candidate_0_oracle32_lr0.0003_u401_candidate_reference__step128",
+          "mnli__w311_candidate_0_oracle32_lr0.0003_u411_candidate_reference__step128",
+          "mnli__w321_candidate_0_oracle32_lr0.0003_u421_candidate_reference__step128"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    },
+    "independent_oracle16": {
+      "ready": true,
+      "chosen": {
+        "method": "subset16_lr0.0003",
+        "steps": 256,
+        "lr": 0.0003,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 80.57179987004548,
+        "accuracy_per_start": [
+          80.89668615984405,
+          80.50682261208577,
+          80.31189083820662
+        ],
+        "mean_preparation_plus_online_seconds": 16.601177148520947,
+        "seconds_per_start": [
+          16.943240480031818,
+          16.358622533734888,
+          16.501668431796134
+        ],
+        "tags": [
+          "mnli__w301_candidate_0_subset16_lr0.0003_u401_candidate_reference__step256",
+          "mnli__w311_candidate_0_subset16_lr0.0003_u411_candidate_reference__step256",
+          "mnli__w321_candidate_0_subset16_lr0.0003_u421_candidate_reference__step256"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    }
+  },
+  "development_summary_sha256": "12d4054ab57956d0ac312e9e4c3ef8f7c51a9ca35880b7efad1223bc65734797",
+  "rule_sha256": "e36096830dc8e0fc35945407d7d9517428b2c64b8b5844a508c85cf375d66e4a",
+  "scope": "Prespecified three-start development argmax choices; train-only on finalstarts/candidates; selection outcomes remain unread. Oracle32 chosen fullreference is also the shortOraclecontrol.",
+  "_publication_redaction": {
+    "original_sha256": "89bff29db760608b97b1adeb7af5feac1f374d19e6583c3c25b6057aab10435b",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

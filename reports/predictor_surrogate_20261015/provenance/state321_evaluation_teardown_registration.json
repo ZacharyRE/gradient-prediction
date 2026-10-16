@@ -1,0 +1,12 @@
+{
+  "epoch": 1792078580.4353456,
+  "original_stage_sha256": "8aa125860dda767bed71a23a9d8027fe8001440474e0ff6048e5dae52f4be569",
+  "original_runtime_sha256": "6db91ec23d1cd64ccf8b17f4dd8505ef9cfe2fb5aac74aa21e7a3a954609e5ce",
+  "observed": "All30 readouts andruntime receipt completed, then resourceguard SIGTERM during vLLMteardown. Reported PID3523181 is the exact EngineCore PID in the same stage log, not evidence of a foreign GPU workload.",
+  "fix": "Future controllers retain already-verified owned PID/start identities through environment disappearance duringNVML teardown. No unknown/reused PID exemption.",
+  "action": "Keep original failedstage receipt. Fresh-generation same30 adapters, then checkper-exampleoutputs; final timing neveruses this interrupted stage.",
+  "_publication_redaction": {
+    "original_sha256": "c8911591595867efdf898532cd6a39cdf04eddd7dd09b9503bafe4a6f46af62a",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

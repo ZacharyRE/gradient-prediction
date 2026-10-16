@@ -1,0 +1,15 @@
+{
+  "epoch": 1792108536.2820532,
+  "scope": "Post-freeze development readout only, registered before three original KD fits complete; no final recipe promotion.",
+  "jobs_sha256": "a094e5c3856b8bb4d384503f78c223196df989ac6355bb62f5bf7beef1838f23",
+  "warmup_seed": 301,
+  "update_seed": 401,
+  "split": "accuracy_dev",
+  "primary_steps": 256,
+  "secondary_steps": [
+    32,
+    128
+  ],
+  "comparators": "Existing token critics, originalCV16 and warmup; exploratory single start.",
+  "budget": "Existing queue90minute reserve; if fit finishes too late the downstream readout remains explicitly unexecuted."
+}

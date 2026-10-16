@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "audits": [
+    {
+      "config": {
+        "kind": "token_critic",
+        "dim": 1536,
+        "width": 128,
+        "depth": 2,
+        "label_tokens": [
+          32,
+          33,
+          34,
+          59,
+          90,
+          92,
+          79075,
+          151645
+        ],
+        "pretrained_readout": true
+      },
+      "label_and_future_invariance_max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "config": {
+        "kind": "token_critic",
+        "dim": 1536,
+        "width": 128,
+        "depth": 2,
+        "label_tokens": [
+          32,
+          33,
+          34,
+          59,
+          90,
+          92,
+          79075,
+          151645
+        ],
+        "pretrained_readout": true
+      },
+      "label_and_future_invariance_max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "config": {
+        "kind": "token_critic",
+        "dim": 1536,
+        "width": 256,
+        "depth": 2,
+        "label_tokens": [
+          32,
+          33,
+          34,
+          59,
+          90,
+          92,
+          79075,
+          151645
+        ],
+        "pretrained_readout": true
+      },
+      "label_and_future_invariance_max_abs": 0.0,
+      "passed": true
+    }
+  ],
+  "full_original_prompts": true,
+  "gold_class_never_enters_model_input": true,
+  "scope": "Strict existing checkpoint loads; fixed common answer template; first batch per model is invariant to label-identity and future-hidden changes. Output is forced-formatABC, not free-generation behavior. The one-time checks are included in the first small-model timer."
+}

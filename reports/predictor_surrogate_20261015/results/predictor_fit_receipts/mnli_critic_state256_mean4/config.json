@@ -1,0 +1,28 @@
+{
+  "job": {
+    "name": "state256_mean4",
+    "kind": "state",
+    "width": 256,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "mean_weight": 4,
+    "selection_metric": "batch32_error_ratio"
+  },
+  "cache": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_v1",
+  "cache_sha256": "167cc34e1c1e5b4dfc56f82a15c53578e2d77207b6e18e9a07ff052b1c079680",
+  "train_examples": 4096,
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256"
+  ],
+  "source_sha256": "258deb3e68cf8a35d73ab66d7e48f0d41597cc3d87ad42880d56bd583285d7fa",
+  "selection": "Mean within-state batch32_error_ratio on predictor_dev; no downstream final examples",
+  "batch32_metric_scope": "Expected squared mean-gradient error for32 IID draws from the empirical validation-gradient distribution, including mean bias; a diagnostic proxy, not a downstream guarantee"
+}

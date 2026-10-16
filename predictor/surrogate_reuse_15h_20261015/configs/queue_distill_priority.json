@@ -1,0 +1,17 @@
+[
+  {
+    "name": "fit_distill_critic",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "fit_distill_critic",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/fit_critic.py",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/distill_fit_jobs.json",
+      "--cache",
+      "critic_hidden"
+    ]
+  }
+]

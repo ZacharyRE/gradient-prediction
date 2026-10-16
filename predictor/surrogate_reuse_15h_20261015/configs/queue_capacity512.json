@@ -1,0 +1,137 @@
+[
+  {
+    "name": "late_capacity_fit",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_fit",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/fit_critic.py",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/capacity_fit_jobs.json",
+      "--cache",
+      "critic_diversity2048"
+    ]
+  },
+  {
+    "name": "late_capacity_rollout_w301",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_rollout_w301",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "301",
+      "--seed",
+      "401",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/capacity_rollout_jobs.json",
+      "--suffix",
+      "_capacity512"
+    ]
+  },
+  {
+    "name": "late_capacity_eval_w301",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_eval_w301",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w301_update_u401_capacity512.json",
+      "--name",
+      "late_capacity_w301",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "late_capacity_rollout_w311",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_rollout_w311",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "311",
+      "--seed",
+      "411",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/capacity_rollout_jobs.json",
+      "--suffix",
+      "_capacity512"
+    ]
+  },
+  {
+    "name": "late_capacity_eval_w311",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_eval_w311",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w311_update_u411_capacity512.json",
+      "--name",
+      "late_capacity_w311",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "late_capacity_rollout_w321",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_rollout_w321",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "321",
+      "--seed",
+      "421",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/capacity_rollout_jobs.json",
+      "--suffix",
+      "_capacity512"
+    ]
+  },
+  {
+    "name": "late_capacity_eval_w321",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_capacity_eval_w321",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w321_update_u421_capacity512.json",
+      "--name",
+      "late_capacity_w321",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  }
+]

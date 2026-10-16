@@ -1,0 +1,14 @@
+{
+  "registered_epoch": 1792112553.257558,
+  "split": "accuracy_dev",
+  "entries": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/token_behavior_entries.json",
+  "entries_sha256": "3d8bb9179d684b149a37d43d275c1de54773fe28077a3b9fd1f50a47e39aa697",
+  "name": "token_behavior_dev",
+  "predictors": [
+    "token_kd128",
+    "token_kd128_nograd",
+    "token_kd256"
+  ],
+  "cutoff_epoch": 1792115598,
+  "scope": "Additional development-only behavior readout of already registered KD fits. Fifteen warmup/Oracle states, no new fitting or method promotion; compare forcedABC behavior and changes against exact teacher and unchanged initial teacher. Registered after gradient fitting diagnostics but before any token-critic behavior outcomes."
+}

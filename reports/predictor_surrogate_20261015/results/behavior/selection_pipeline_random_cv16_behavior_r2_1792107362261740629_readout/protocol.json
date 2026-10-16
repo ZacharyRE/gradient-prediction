@@ -1,0 +1,44 @@
+{
+  "args": {
+    "entries": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_cv16_behavior_r2_1792107362261740629/entries.json",
+    "predictors": [
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt"
+    ],
+    "split": "selection_dev",
+    "name": "selection_pipeline_random_cv16_behavior_r2_1792107362261740629_readout",
+    "teacher": false
+  },
+  "entries_sha256": "dc362d25278f1af1bb3726b88897c9065ec49f3f2f8e2f4f7fd394a333126728",
+  "predictor_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt": "9b7801c77ff4c149d44c885d8c91e79c1f1943d06a492d4eb4217d547011b675"
+  },
+  "data_sha256": "b7f65e892cc8b832829ea6a193d21ba7e7377f65d23f048210188856ee48d912",
+  "adapter_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_0_cv16_matched_u401_blindmatched/step-128": "02cda5cc1272804ad21494a22046e6f078b6f525614d8e22b2edcaa6b07f67ab",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_1_cv16_matched_u401_blindmatched/step-128": "35e3eb9b3476f55099fc826215b60dfcc196142664a0acfb20380e3aba9cf337",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_2_cv16_matched_u401_blindmatched/step-128": "4a7b8403d55edac06d062fe6152faac83da71c2a8b07cf4c2ba0674854d4d6a5",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_3_cv16_matched_u401_blindmatched/step-128": "d5b32fabd1b479be3ac05393843731e72f616dd391b9fdc5e4763a1f1c63078a",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_4_cv16_matched_u401_blindmatched/step-128": "3dba2e33636b97df9227c5d01fda1554e8afaa33b3d79f80fc75384cf9e55fe2"
+  },
+  "source_sha256": "eda8c4559376b6716b2d45747b7fafe8bf32537a76ca71b524ca3a6df3f380d9",
+  "full_original_prompts": true,
+  "fixed_answer_template": "\\boxed{A}",
+  "gold_class_never_enters_model_input": true,
+  "target": "ABC next-token distribution under fixed boxed-answer prefix; NOT free generation accuracy",
+  "cache_seconds": 1.5332089520525187,
+  "metadata_seconds": 0.042416242184117436,
+  "freeze": {
+    "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+    "frozen_at": 1792092469.3405645,
+    "purpose": "Frozen transfer, downstream quality, candidate-selection and cost evaluation after bounded development; no selection outcomes used for method choice."
+  },
+  "initial_teacher_anchors": {
+    "302": {
+      "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w302",
+      "adapter_sha256": "a0d3853a380322508e34d39b1ec2e0ecc74874c42c6c8fe42893060815166b22",
+      "seconds": 1.3590627568773925,
+      "accuracy": 0.7660818696022034,
+      "scope": "Paid initial-agent forced-format readout and features, once per warmup and evaluation population; reused across candidate adapters/models. A no-change selector ties all candidates."
+    }
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  },
+  {
+    "name": "oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  },
+  {
+    "name": "subset16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  },
+  {
+    "name": "subset16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": false
+  },
+  {
+    "name": "cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  },
+  {
+    "name": "cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "fast_loss": true,
+    "token_budget": 8192,
+    "cache": true
+  }
+]

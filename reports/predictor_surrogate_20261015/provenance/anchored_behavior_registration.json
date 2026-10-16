@@ -1,0 +1,14 @@
+{
+  "epoch": 1792080595.5392592,
+  "reason": "DirectbehaviorMLPs fitinitialclassification poorly onpredictor_dev: selecteddelta256/512 accuracy~37/41%, teacheragreement~38/41%. Retainpaid initialteacherlogits andfitonlychanges, anchoredexactlyatinitialweights.",
+  "definition": "initial_teacher_logits + f(initial_features,current_delta-initial_delta,initial_logits) - f(initial_features,zero_delta,initial_logits). Zerooutputheadinitialization. Same8states/512trainingexamples and129predictor_dev; widths64/128,200epochs.",
+  "selection": "Common normalized teacherlogit+within-example state-change MSE, evaluatedat eachmodelselectedcheckpoint. Originalmodelbest_scorewithchange_weight0 isnotdirectlycomparable; recompute jointscorefromhistory. Exactinitialteacher/no-change control required.",
+  "cost": "One initialteacher forced-format readout pernewwarmup/evaluationpopulation, chargedandsharedacrosscandidateadapters; no goldclassidentity features. Forced-format endpoint isnotfreegeneration.",
+  "development_entries": 39,
+  "cpu_audit_sha256": "12d97edb4b666ea9b171ec32a5b43b51bafeead40ec5231a07b0493555bebb66",
+  "all_final_outcomes_unread": true,
+  "_publication_redaction": {
+    "original_sha256": "786a218e36cbcfa544c83e5f1afe06ce5e129c5821ac4978b0748d968f9b8c95",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

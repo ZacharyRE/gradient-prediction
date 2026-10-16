@@ -1,0 +1,46 @@
+{
+  "args": {
+    "entries": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/token_behavior_entries.json",
+    "predictors": [
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128/best.pt",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128_nograd/best.pt",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd256/best.pt"
+    ],
+    "split": "accuracy_dev",
+    "name": "token_behavior_dev",
+    "teacher": true
+  },
+  "entries_sha256": "3d8bb9179d684b149a37d43d275c1de54773fe28077a3b9fd1f50a47e39aa697",
+  "predictor_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128/best.pt": "428566315718b4c5627d594f57ede5d220cdcce27789b597858704dd892c3552",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128_nograd/best.pt": "cda32f21cdb12d2f4876300055953c2a56d0987a702a3a7e442fd6a78c6e757e",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd256/best.pt": "9bf320056f7271bf5a4b89c171ce8a74bdfca9cc3df915c68ca16d35295aec02"
+  },
+  "data_sha256": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e",
+  "adapter_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w301": "d26faf685aeec590739ecc053f3d7cf5b4470d873809e05a770c0d7151037dfb",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w311": "8eac065b3ebca5558c4c03f99e6944c87ae859dce173a2a39ab2c248f3d8276e",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w321": "de50dc4517a4003a19fa663f627d78a42d788a38f9cc01e506d3ab8c0be2ccc3",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-32": "01714dd041c8ade2b51f6aedbae4e6f69acef655b4f8ecdf5c7e8d688c645a35",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_oracle32_lr0.001_u411_reference/step-32": "20a1d255498eefd03cc83e48e6ae686be66be49409a65fb001117302b0d68f45",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_oracle32_lr0.001_u421_reference/step-32": "cf80fc47631cfa10b5efe22db32a739f2da3f2f8b1edd825f23f913a9c0c3039",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-128": "f35c8ca76f5ad9bc2be3aeb4b0daa2d871825b4cc0f0010c638998ca438c3b8c",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_oracle32_lr0.001_u411_reference/step-128": "66283203a1aed3b345a9b95e2582d243d2eb55c7c1c22edd5c4dd178242b18ee",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_oracle32_lr0.001_u421_reference/step-128": "c481f926504fc3dc05f002ac5fc060573f1a6bdfb53608b98fbf0a143ea37554",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-256": "e81af69d6f7a57e8318e0f41ec27ce4bb7669c64b4af65f6543ceca1205dd80c",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_oracle32_lr0.001_u411_reference/step-256": "4fba3b7b3dbad823ef847b16e9854aa655d9f1f9dc766d7ef792c2da77322c34",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_oracle32_lr0.001_u421_reference/step-256": "a4d9462ac3db1758ab44e401568561b3903b90d33123a68acc773904ea804d0a",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-512": "f209efb36f529158cbd2861933b759cd64e9bc932f1e9ec4f2f7384e0c51213c",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_oracle32_lr0.001_u411_reference/step-512": "82fb9961add5303421687f683b7fabd129207442a1d5ac45319ca65ae66b3573",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_oracle32_lr0.001_u421_reference/step-512": "c403e6fff3648695baba065f77d4d49b8a74b6010176ab0a125bdf30e1ca9682"
+  },
+  "source_sha256": "8cc6b4bd6e5fc27554ed7ae35ad5620d0d478fcdce7855bb955cfd4fdabfb2ae",
+  "full_original_prompts": true,
+  "fixed_answer_template": "\\boxed{A}",
+  "gold_class_never_enters_model_input": true,
+  "target": "ABC next-token distribution under fixed boxed-answer prefix; NOT free generation accuracy",
+  "cache_seconds": 1.1783658531494439,
+  "metadata_seconds": 0.020797915058210492,
+  "freeze": null,
+  "initial_teacher_anchors": {}
+}

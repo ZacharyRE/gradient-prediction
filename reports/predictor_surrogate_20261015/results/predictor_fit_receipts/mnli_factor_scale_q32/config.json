@@ -1,0 +1,9 @@
+{
+  "q": 32,
+  "source_predictor_sha256": "7232dc79a4c5a035a6ef5b6ee86aa317964953b251691aaac608006a694fddb6",
+  "source_cache_sha256": "79327e0c2c25d0a3000a418d6d9a178184985c2c456b3f922a2a183dbaebc52c",
+  "source_sha256": "b086eae8c6386dec635920d53a11670f60e874f710cfb35b597d9da27f90d06c",
+  "selection": "Mean within-state centered gradient residual ratio on predictor_dev; no downstream data used",
+  "features": "Training-only PCA of current H/X features, loglength and class-specific regressors",
+  "hypothesis": "Predict a few bounded magnitudes instead of an entire high-dimensional gradient matrix"
+}

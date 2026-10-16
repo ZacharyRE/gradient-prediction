@@ -1,0 +1,19 @@
+{
+  "epoch": 1792082211.7545667,
+  "command": [
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+    "--name",
+    "audit_coverage_rollout_shift",
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/audit_predictor_rollout_shift.py",
+    "--states",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/rollout_shift_states.json",
+    "--predictors",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt",
+    "--name",
+    "coverage_rollout_shift"
+  ],
+  "scope": "Common13 existing development states and129 predictor_dev examples; compare original and expanded-coverage predictors on identical gradients. No new fit, final outcome, or additional method family. Registered after completed coverage fit; gradient selection data remain development."
+}

@@ -1,0 +1,37 @@
+{
+  "epoch": 1792073806.6077485,
+  "development_evidence": {
+    "warmup301_fullpool_256steps_lr001": {
+      "original_cv16": 82.45614035087719,
+      "state128_cv16": 83.43079922027292,
+      "state256_cv16": 84.99025341130606,
+      "oracle32": 84.40545808966861
+    }
+  },
+  "decision": "Shortlist explicit-state family for candidate-size and two additional-start development confirmation. The initial winner is exploratory; do not claim robust improvement.",
+  "confirmation": {
+    "starts": [
+      301,
+      311,
+      321
+    ],
+    "subset": "candidate_0",
+    "predictors": [
+      "state128",
+      "state256"
+    ],
+    "lr": [
+      0.0003,
+      0.001
+    ],
+    "horizons": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ]
+  },
+  "heldout_starts_or_selection_outcomes_used": false,
+  "additional_new_method_family": false
+}

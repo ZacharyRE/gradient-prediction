@@ -1,0 +1,45 @@
+{
+  "epoch": 1792110313.6490545,
+  "scope": "Conditional independent confirmation of an already registered development method; no new method search and no replacement of the original frozen435-entry study.",
+  "decision_after": "All three-start diversity and capacity readouts complete; no further fitting or hyperparameter edits",
+  "eligible_methods": [
+    "diversity2048_cv16_lr0.001",
+    "diversity2048_cv16_until32_lr0.001",
+    "capacity512_cv16_lr0.001",
+    "capacity512_cv16_until32_lr0.001",
+    "capacity512_cv8_lr0.001"
+  ],
+  "eligible_steps": [
+    256,
+    512
+  ],
+  "minimum_development_accuracy_pct": 83.45,
+  "maximum_development_preparation_updates_seconds": 27.43,
+  "threshold_reason": "At least approximately within0.5percentage points of the pre-existing83.95% nativeOracle32 development mean and no slower than its27.43s component time. Both quality and time must pass; fitting cost remains additional.",
+  "selection": "Among eligible passing points select highest three-start mean accuracy, then lowest time, then lexical method name; choose at most one predictor.",
+  "minimum_seconds_before_user_deadline_at_decision": 5400,
+  "confirmation_warmup_seeds": [
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
+  "confirmation_update_seeds": [
+    404,
+    405,
+    406,
+    407,
+    408
+  ],
+  "test_population": "If triggered, create fresh MNLI source groups excluded from all existing study/prior-study groups, approximately2048examples, with deterministic seed2026101601. Freeze method/control/data hashes before any new generated outcome.",
+  "controls": [
+    "Warmup only",
+    "NativeOracle32/LR0.001/256",
+    "GraphOracle32/LR0.0003/256",
+    "Matched exact-subsetOracle at selected horizon andLR",
+    "Existing original8-state State256 early32/LR0.001/256"
+  ],
+  "timing": "Three fresh exact-weight repetitions per trained adapter if the confirmation is triggered; original training/readout costs and offline dependencies remain explicit.",
+  "budget": "No new research methods. Skip the entire confirmation if no point passes both gates or insufficient time remains. Confirmation results are a separate prospectively frozen extension, never inserted into the original435-entry analysis."
+}

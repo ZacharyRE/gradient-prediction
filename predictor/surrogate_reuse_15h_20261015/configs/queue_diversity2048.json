@@ -1,0 +1,154 @@
+[
+  {
+    "name": "late_diversity_collect",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_collect",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/collect_critic.py",
+      "--states",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/diversity_states.json",
+      "--name",
+      "critic_diversity2048",
+      "--train-examples",
+      "2048"
+    ]
+  },
+  {
+    "name": "late_diversity_fit",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_fit",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/fit_critic.py",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/diversity_fit_jobs.json",
+      "--cache",
+      "critic_diversity2048"
+    ]
+  },
+  {
+    "name": "late_diversity_rollout_w301",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_rollout_w301",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "301",
+      "--seed",
+      "401",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/diversity_rollout_jobs.json",
+      "--suffix",
+      "_diversity2048"
+    ]
+  },
+  {
+    "name": "late_diversity_eval_w301",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_eval_w301",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w301_update_u401_diversity2048.json",
+      "--name",
+      "late_diversity_w301",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "late_diversity_rollout_w311",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_rollout_w311",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "311",
+      "--seed",
+      "411",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/diversity_rollout_jobs.json",
+      "--suffix",
+      "_diversity2048"
+    ]
+  },
+  {
+    "name": "late_diversity_eval_w311",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_eval_w311",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w311_update_u411_diversity2048.json",
+      "--name",
+      "late_diversity_w311",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "late_diversity_rollout_w321",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_rollout_w321",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "321",
+      "--seed",
+      "421",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/diversity_rollout_jobs.json",
+      "--suffix",
+      "_diversity2048"
+    ]
+  },
+  {
+    "name": "late_diversity_eval_w321",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_diversity_eval_w321",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w321_update_u421_diversity2048.json",
+      "--name",
+      "late_diversity_w321",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  }
+]

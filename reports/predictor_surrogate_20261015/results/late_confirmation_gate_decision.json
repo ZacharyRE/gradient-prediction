@@ -1,0 +1,134 @@
+{
+  "complete": true,
+  "epoch": 1792110828.5435174,
+  "gate_sha256": "ce58141d6891c9777e6778485d6f6ba3d4ae82c78089befa3a75bb6d031e66b1",
+  "development_summary_sha256": "2baa5441ac1eda76e136c4f9bc3eb1efbc8dd5d7cde18cd9583454fef2d753e1",
+  "candidate_rows": [
+    {
+      "method": "capacity512_cv16_lr0.001",
+      "steps": 256,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 82.39116309291747,
+      "mean_preparation_updates_seconds": 21.363013601473842,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "capacity512_cv16_lr0.001",
+      "steps": 512,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 80.89668615984407,
+      "mean_preparation_updates_seconds": 38.51206509186886,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "capacity512_cv16_until32_lr0.001",
+      "steps": 256,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 82.58609486679661,
+      "mean_preparation_updates_seconds": 19.252469152212143,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "capacity512_cv16_until32_lr0.001",
+      "steps": 512,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 83.10591293047433,
+      "mean_preparation_updates_seconds": 34.39899565457987,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "capacity512_cv8_lr0.001",
+      "steps": 256,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 80.24691358024691,
+      "mean_preparation_updates_seconds": 19.942602180022124,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "capacity512_cv8_lr0.001",
+      "steps": 512,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 83.82066276803118,
+      "mean_preparation_updates_seconds": 36.04932871530764,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "diversity2048_cv16_lr0.001",
+      "steps": 256,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 82.0662768031189,
+      "mean_preparation_updates_seconds": 21.134683786270518,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "diversity2048_cv16_lr0.001",
+      "steps": 512,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 83.17089018843404,
+      "mean_preparation_updates_seconds": 37.963213882564254,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "diversity2048_cv16_until32_lr0.001",
+      "steps": 256,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 82.13125406107862,
+      "mean_preparation_updates_seconds": 19.019215205917135,
+      "output_cap_hits": 0
+    },
+    {
+      "method": "diversity2048_cv16_until32_lr0.001",
+      "steps": 512,
+      "starts": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 83.9506172839506,
+      "mean_preparation_updates_seconds": 33.98424725420773,
+      "output_cap_hits": 0
+    }
+  ],
+  "passing_rows": [],
+  "selected": null,
+  "remaining_seconds": 7469.456483840942,
+  "triggered": false,
+  "reason": "No point passed both quality and time thresholds.",
+  "scope": "Conditional confirmation decision for a previously registered method; original frozen results unchanged."
+}

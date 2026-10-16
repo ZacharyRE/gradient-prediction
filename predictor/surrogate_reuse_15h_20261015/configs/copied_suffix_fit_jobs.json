@@ -1,0 +1,32 @@
+[
+  {
+    "name": "copied2_sobolev",
+    "kind": "copied_suffix",
+    "source_layers": [
+      18,
+      27
+    ],
+    "epochs": 15,
+    "lr": 3e-05,
+    "micro": 8,
+    "token_budget": 2048,
+    "gradient_weight": 0.2,
+    "value_weight": 0,
+    "distillation_weight": 1
+  },
+  {
+    "name": "copied2_distill",
+    "kind": "copied_suffix",
+    "source_layers": [
+      18,
+      27
+    ],
+    "epochs": 15,
+    "lr": 3e-05,
+    "micro": 8,
+    "token_budget": 2048,
+    "gradient_weight": 0,
+    "value_weight": 0,
+    "distillation_weight": 1
+  }
+]

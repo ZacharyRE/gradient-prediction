@@ -1,0 +1,11 @@
+{
+  "epoch": 1792075157.5572321,
+  "stage": "pilot_state_eval",
+  "completed_readouts": 67,
+  "reason": "Reprioritize after repeated all-output-cap zero-accuracy pure/periodic-prediction results. Preserve all completed and partial readouts; continue remaining CV and true-gradient controls first. Remaining exploratory negative variants deferred, not declared complete.",
+  "action": "SIGINT only this owned stage process group; stage records actual interrupted returncode; downstream queues will be restarted with a new completed-screen prerequisite.",
+  "_publication_redaction": {
+    "original_sha256": "9a9a18a880dc87abfcb75fed242536e191bf25fc89ead235183fd72556a64c5b",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "job": {
+    "name": "token_kd256",
+    "kind": "token",
+    "width": 256,
+    "epochs": 50,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  },
+  "cache": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_hidden",
+  "cache_sha256": "dcb6349f9ece8c61b8f2b8b4aa58a83b260b37a4d0c4da3c2bbe8979b59aad1c",
+  "train_examples": 4096,
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256"
+  ],
+  "source_sha256": "ac33539a02692e49d6ddbaebdd109a452e2ce6cce4a57a86e213ab3a2592cd69",
+  "selection": "Mean within-state centered_cv_ratio on predictor_dev; no downstream final examples",
+  "batch32_metric_scope": "Expected squared mean-gradient error for32 IID draws from the empirical validation-gradient distribution, including mean bias; a diagnostic proxy, not a downstream guarantee",
+  "completion_budget": {
+    "cutoff_epoch": 1792115598,
+    "policy_sha256": "6b7583a88c1f47d1e95e54372b41d428d2a849cb9eb59c6dcd883b7927421141",
+    "validation_audit_sha256": "9deb97751672e26de6efd534031be56ee3bd0bf0fbdef45f7b05accc5fa2cd73",
+    "scope": "Only the three previously registered KD fits; unchanged scientific recipes. Mandatory validation already passed. At least45minutes remain before the authorized study deadline and30minutes before the GPU cutoff."
+  }
+}

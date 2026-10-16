@@ -1,0 +1,315 @@
+[
+  {
+    "name": "surrogate_pipeline_random_oracle_generated_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_generated_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_oracle_forced_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_forced_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_generated_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_generated_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_forced_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_forced_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_behavior_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_behavior_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_behavior",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_short_oracle_forced_r1",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_short_oracle_forced_r1",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "short_oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_oracle_forced_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_forced_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_generated_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_generated_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_forced_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_forced_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_behavior_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_behavior_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_behavior",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_short_oracle_forced_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_short_oracle_forced_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "short_oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_oracle_generated_r2",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_generated_r2",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_generated_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_generated_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_forced_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_forced_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_cv16_behavior_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_cv16_behavior_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "cv16_behavior",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_short_oracle_forced_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_short_oracle_forced_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "short_oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_oracle_generated_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_generated_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_generated",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_random_oracle_forced_r3",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_pipeline_random_oracle_forced_r3",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py",
+      "--condition",
+      "oracle_forced",
+      "--family",
+      "random",
+      "--repeat",
+      "3"
+    ]
+  },
+  {
+    "name": "surrogate_pipeline_summary",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/summarize_selection_pipeline.py"
+    ]
+  }
+]

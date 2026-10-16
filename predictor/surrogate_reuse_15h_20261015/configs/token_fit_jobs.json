@@ -1,0 +1,38 @@
+[
+  {
+    "name": "token_pre128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 1,
+    "pretrained_readout": true
+  },
+  {
+    "name": "token_random128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 1,
+    "pretrained_readout": false
+  },
+  {
+    "name": "token_value128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 30,
+    "gradient_weight": 0,
+    "value_weight": 1,
+    "pretrained_readout": true
+  },
+  {
+    "name": "token_pre256",
+    "kind": "token",
+    "width": 256,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 1,
+    "pretrained_readout": true
+  }
+]

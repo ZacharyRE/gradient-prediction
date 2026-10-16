@@ -1,0 +1,11 @@
+{
+  "epoch": 1792078275.8437364,
+  "diagnostic_sha256": "94747886ef1f7c1339863710350605b7b7a7aa4b3009737132440f66a027c7df",
+  "reason": "Residual ratios worsen on both highLR Oracle andCV trajectories. Original fitting covered lowLR Oracle0/32/128/256. AddhighLR Oracle32/128/256/512; noCV-induced labels andnoDAggerclaim, since the prespecified CV-specific shift gate was not met at2 later checkpoints.",
+  "architecture": "Same state256, same initial seed, same512unique training examples and129predictor_dev.12states x40epochs versus original8states x60epochs approximates the same optimizer-step budget; verify actual steps. Checkpoint selection remainscenteredCVratio.",
+  "scope": "One bounded state-family coverage ablation, not a new predictor family. Additional labels/teachertrajectory/fit costs must be charged; finalheldoutstarts remainexcluded.",
+  "_publication_redaction": {
+    "original_sha256": "f62e2d344dca7a480e5cc124770547dcfe27b964e83327a84d1c15fcae6f491b",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "job": {
+    "name": "sobolev128_value01",
+    "kind": "critic",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0.1
+  },
+  "cache": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_v1",
+  "cache_sha256": "167cc34e1c1e5b4dfc56f82a15c53578e2d77207b6e18e9a07ff052b1c079680",
+  "train_examples": 4096,
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256"
+  ],
+  "source_sha256": "9acadcfa19b93c84fbc2ad2e3e404aa68380f0ce61aa6c060fd48509b6cef8f0",
+  "selection": "Mean within-state centered LoRA gradient residual variance ratio on predictor_dev; no downstream final examples"
+}

@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "best_epoch": 28,
+  "best_centered_cv_ratio": 0.9298811331391335,
+  "seconds": 461.10237012500875,
+  "optimizer_steps": 7920,
+  "best_sha256": "1d332373f3bfe967b7ebbc50f53094d7624c31256d47d61c2af6cbab2aa32f4e",
+  "value_and_gradient_supervision": {
+    "name": "sobolev128",
+    "kind": "critic",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 1
+  },
+  "collection_cost_seconds": 39.526340251322836,
+  "teacher_trajectory_cost_additional": true
+}

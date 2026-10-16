@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "best_epoch": 8,
+  "best_centered_cv_ratio": 2.9984482526779175,
+  "seconds": 173.4307873561047,
+  "optimizer_steps": 7920,
+  "best_sha256": "b69ed81b10d47301094edede6808367954abeccaceae27e8dec5c93e22148e52",
+  "value_and_gradient_supervision": {
+    "name": "token_value128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 30,
+    "gradient_weight": 0,
+    "value_weight": 1,
+    "pretrained_readout": true
+  },
+  "collection_cost_seconds": 39.526340251322836,
+  "teacher_trajectory_cost_additional": true
+}

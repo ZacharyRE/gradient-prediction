@@ -1,0 +1,65 @@
+{
+  "epoch": 1792084322.702597,
+  "selected": {
+    "backend": "graph",
+    "method": "cv8_lr0.001",
+    "steps": 512,
+    "lr": 0.001,
+    "complete": true,
+    "warmup_seeds": [
+      301,
+      311,
+      321
+    ],
+    "mean_accuracy_pct": 83.49577647823263,
+    "accuracy_per_start": [
+      84.01559454191033,
+      83.04093567251462,
+      83.4307992202729
+    ],
+    "mean_preparation_plus_online_seconds": 24.87972160692637,
+    "seconds_per_start": [
+      24.88386536692269,
+      24.73915612627752,
+      25.016143327578902
+    ],
+    "tags": [
+      "mnli__w301_update_cv8_lr0.001_u401_graph__step512",
+      "mnli__w311_update_cv8_lr0.001_u411_graphconfirm__step512",
+      "mnli__w321_update_cv8_lr0.001_u421_graphconfirm__step512"
+    ]
+  },
+  "matched_control": {
+    "backend": "graph",
+    "method": "subset8_lr0.001",
+    "steps": 512,
+    "lr": 0.001,
+    "complete": true,
+    "warmup_seeds": [
+      301,
+      311,
+      321
+    ],
+    "mean_accuracy_pct": 82.52111760883692,
+    "accuracy_per_start": [
+      82.65107212475633,
+      81.67641325536063,
+      83.23586744639377
+    ],
+    "mean_preparation_plus_online_seconds": 21.325548230825614,
+    "seconds_per_start": [
+      21.276735585648566,
+      21.22669696016237,
+      21.4732121466659
+    ],
+    "tags": [
+      "mnli__w301_update_subset8_lr0.001_u401_graphconfirm__step512",
+      "mnli__w311_update_subset8_lr0.001_u411_graphconfirm__step512",
+      "mnli__w321_update_subset8_lr0.001_u421_graphconfirm__step512"
+    ]
+  },
+  "reason": "Highest mean quality among the two original-predictor graph finalists confirmed on all3 development starts. CV8@512/.001 has83.4958% at24.8795s, versus independently best nativeCV16 at83.4958%/37.4596s and nativeOracle32 reference83.9506%/27.426s. Lower-than-Oracle accuracy and offline costs remain explicit; zero-gradient control is still cheaper.",
+  "interpretation": "A recipe combines smaller correction batches with a common engineering backend, not a newly learned predictor. Matched graphOracle8 isolates the CV contribution; fastest independently tuned nativeOracle controls remain the practical reference.",
+  "final_population": "Full4097 pool, heldout starts302/303/304 only; candidate-size selection remains separate.",
+  "before_final_outcomes": true
+}

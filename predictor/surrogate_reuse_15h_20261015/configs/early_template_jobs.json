@@ -1,0 +1,19 @@
+[
+  {
+    "name": "position_warmup_cv16_until32_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_stop_step": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b4/best.pt"
+  }
+]

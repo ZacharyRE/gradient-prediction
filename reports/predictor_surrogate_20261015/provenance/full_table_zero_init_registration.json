@@ -1,0 +1,96 @@
+{
+  "epoch": 1792073654.1036553,
+  "before_full_table_outcomes": true,
+  "reason": "Bootstrap requires one full-dataset gradient collection; test the alreadyimplemented zero-initialized table as a cheaper same-family control. Unseen predictions remainzero and the IID mean correction remains unbiased before rounding/clipping/Adam.",
+  "added_jobs": [
+    {
+      "name": "fulltable_activation4_zeroinit_lr0.0003",
+      "kind": "full_table",
+      "table_mode": "activation",
+      "table_bootstrap": false,
+      "k": 4,
+      "lr": 0.0003,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "dataset_sampling": "iid",
+      "graph_capture_batch_sizes": [
+        4
+      ]
+    },
+    {
+      "name": "fulltable_activation16_zeroinit_lr0.0003",
+      "kind": "full_table",
+      "table_mode": "activation",
+      "table_bootstrap": false,
+      "k": 16,
+      "lr": 0.0003,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "dataset_sampling": "iid",
+      "graph_capture_batch_sizes": [
+        16
+      ]
+    },
+    {
+      "name": "fulltable_activation4_zeroinit_lr0.001",
+      "kind": "full_table",
+      "table_mode": "activation",
+      "table_bootstrap": false,
+      "k": 4,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "dataset_sampling": "iid",
+      "graph_capture_batch_sizes": [
+        4
+      ]
+    },
+    {
+      "name": "fulltable_activation16_zeroinit_lr0.001",
+      "kind": "full_table",
+      "table_mode": "activation",
+      "table_bootstrap": false,
+      "k": 16,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "dataset_sampling": "iid",
+      "graph_capture_batch_sizes": [
+        16
+      ]
+    }
+  ],
+  "not_a_new_method_family": true
+}

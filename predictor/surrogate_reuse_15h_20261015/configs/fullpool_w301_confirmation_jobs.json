@@ -1,0 +1,197 @@
+[
+  {
+    "name": "oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "subset16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "subset16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "oracle32_lr0.003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "subset16_lr0.003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "cv16_lr0.003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  },
+  {
+    "name": "state128_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state256_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "zero_every4_lr0.001",
+    "kind": "zero_gradient",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "state256_mean0",
+    "kind": "state",
+    "width": 256,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "mean_weight": 0,
+    "selection_metric": "batch32_error_ratio"
+  },
+  {
+    "name": "state256_mean4",
+    "kind": "state",
+    "width": 256,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "mean_weight": 4,
+    "selection_metric": "batch32_error_ratio"
+  }
+]

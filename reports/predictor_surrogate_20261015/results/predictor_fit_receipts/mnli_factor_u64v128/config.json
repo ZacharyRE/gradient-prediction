@@ -1,0 +1,55 @@
+{
+  "job": {
+    "name": "u64v128",
+    "rank_u": 64,
+    "rank_v": 128,
+    "width": 256,
+    "epochs": 100,
+    "lr": 0.0003
+  },
+  "cache_sha256": "79327e0c2c25d0a3000a418d6d9a178184985c2c456b3f922a2a183dbaebc52c",
+  "source_sha256": "93d33259b358449dddc8a9623a4cac8cad52768c2919c1c8acdad107fafca749",
+  "projection_only_diagnostic": {
+    "w201_step0": {
+      "centered_cv_ratio": 0.4186808168888092,
+      "centered_correlation": 0.762458324432373,
+      "relative_l2": 0.645584225654602
+    },
+    "w201_step32": {
+      "centered_cv_ratio": 0.41225960850715637,
+      "centered_correlation": 0.7666432857513428,
+      "relative_l2": 0.6424810290336609
+    },
+    "w201_step128": {
+      "centered_cv_ratio": 0.5051705837249756,
+      "centered_correlation": 0.7034412622451782,
+      "relative_l2": 0.7097078561782837
+    },
+    "w201_step256": {
+      "centered_cv_ratio": 0.5883393287658691,
+      "centered_correlation": 0.6416078805923462,
+      "relative_l2": 0.7675803303718567
+    },
+    "w301_step0": {
+      "centered_cv_ratio": 0.42466282844543457,
+      "centered_correlation": 0.7585161924362183,
+      "relative_l2": 0.6512861251831055
+    },
+    "w301_step32": {
+      "centered_cv_ratio": 0.42740386724472046,
+      "centered_correlation": 0.7567010521888733,
+      "relative_l2": 0.6500130891799927
+    },
+    "w301_step128": {
+      "centered_cv_ratio": 0.4976765513420105,
+      "centered_correlation": 0.7087478637695312,
+      "relative_l2": 0.7050045728683472
+    },
+    "w301_step256": {
+      "centered_cv_ratio": 0.5595718622207642,
+      "centered_correlation": 0.6636481285095215,
+      "relative_l2": 0.7485646605491638
+    }
+  },
+  "meaning": "Predict C in learned training-only U/V basis; reconstruct with CURRENT LoRA factors; class means plus neural residual; gradients use the original full-vocabulary teacher"
+}

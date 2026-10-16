@@ -1,0 +1,189 @@
+{
+  "complete": true,
+  "cost_policy_sha256": "e383effe4c44a00dd5a55753082f85f9848f3414b19f27876f3a42e6a907edcc",
+  "rows": [
+    {
+      "family": "random",
+      "condition": "oracle_generated",
+      "method": "oracle32_lr0.0003",
+      "steps": 128,
+      "selector": "generated_accuracy",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 152.1547880540602,
+      "pipeline_seconds_min": 151.85477848700248,
+      "pipeline_seconds_max": 152.57491101208143,
+      "selected_subsets": [
+        "candidate_4"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_generated_r1_1792099330291144281.json",
+          "sha256": "1759be2bf64dfc00883c5fe38e541aec27d70d1559f0b170399ad4a2a9c65552"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_generated_r2_1792107624355154494.json",
+          "sha256": "709cc28099c18d14b7401418f27e4f857120eecbf8e55f431f1ba29e0bee5955"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_generated_r3_1792108336463539456.json",
+          "sha256": "3aa842cbdfe804919a3cc9680f0c4c60d5632bd36cc44dfd46c538192d0d638e"
+        }
+      ]
+    },
+    {
+      "family": "random",
+      "condition": "oracle_forced",
+      "method": "oracle32_lr0.0003",
+      "steps": 128,
+      "selector": "exact_teacher_gold_probability",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 132.04931184696034,
+      "pipeline_seconds_min": 131.51040611392818,
+      "pipeline_seconds_max": 133.33436192804947,
+      "selected_subsets": [
+        "candidate_2"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_forced_r1_1792099483810730716.json",
+          "sha256": "26f4685bffc7b83a7e7cc1b089e5c9e47676a82c2f2bf94dafab0677e2412941"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_forced_r2_1792105988376533024.json",
+          "sha256": "97e52a09bad93cfb378a7ea60d48e4715212782ffcc96cf77e4e0b50adf892df"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_oracle_forced_r3_1792108490641499882.json",
+          "sha256": "02f680d616312798657ef78058d18ad4d79da4c47e91dd39f2993d9fc2216192"
+        }
+      ]
+    },
+    {
+      "family": "random",
+      "condition": "cv16_generated",
+      "method": "cv16_matched",
+      "steps": 128,
+      "selector": "generated_accuracy",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 157.93440339295194,
+      "pipeline_seconds_min": 155.30621623503976,
+      "pipeline_seconds_max": 159.98240991216153,
+      "selected_subsets": [
+        "candidate_2"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_generated_r1_1792099618084268463.json",
+          "sha256": "6f6cb4b20abe156bbe64f76e00a1e8fbe312e988dbd37363a7db1366aa114a5d"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_generated_r2_1792106758094195066.json",
+          "sha256": "3d5ea318808af7a95bbf04cec42b8fdc292ce7e33eecbc8690975c09aa39eae8"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_generated_r3_1792107778844579200.json",
+          "sha256": "1162836b0140f8a9d589c57bf258b7bd2291cce3f2107f8e52b96f74fd3cd74f"
+        }
+      ]
+    },
+    {
+      "family": "random",
+      "condition": "cv16_forced",
+      "method": "cv16_matched",
+      "steps": 128,
+      "selector": "exact_teacher_gold_probability",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 136.55536538222805,
+      "pipeline_seconds_min": 136.44113921606913,
+      "pipeline_seconds_max": 140.83631388517097,
+      "selected_subsets": [
+        "candidate_3"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_forced_r1_1792099779735531745.json",
+          "sha256": "56d49270535d2f2e177940c756c3d877446e2b7aa10e1d5a3b7ffb0beb5a11e7"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_forced_r2_1792107011518801522.json",
+          "sha256": "4b47bd975e94f40b5339bee60fe4ba76d81da4a2b5361929d825748c2eec95bd"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_forced_r3_1792107938439986289.json",
+          "sha256": "d26db73de4fc9c9e3ba94301d8378c3be18b4553cc0425d70b42c80d09bc0315"
+        }
+      ]
+    },
+    {
+      "family": "random",
+      "condition": "cv16_behavior",
+      "method": "cv16_matched",
+      "steps": 128,
+      "selector": "mnli_behavior_anchored128_coverage:gold_probability",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 133.650261961855,
+      "pipeline_seconds_min": 132.49956688517705,
+      "pipeline_seconds_max": 133.66390428389423,
+      "selected_subsets": [
+        "candidate_2"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_behavior_r1_1792099944783077587.json",
+          "sha256": "7dfd1b473d38fc81b4efa8cc80ae337055b96c918cd95588282fc9e49302dea9"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_behavior_r2_1792107362261740629.json",
+          "sha256": "b152385d33c4c3f9a7c1108188b8619ac0abe20a5d283788e30891eec64cb92a"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_cv16_behavior_r3_1792108076038152059.json",
+          "sha256": "3451d9dc9253377ddfea8946f6fb8760b33aee84e4af3aa87796e6afa653ea13"
+        }
+      ]
+    },
+    {
+      "family": "random",
+      "condition": "short_oracle_forced",
+      "method": "oracle32_matched",
+      "steps": 64,
+      "selector": "exact_teacher_gold_probability",
+      "warmup_seed": 302,
+      "qualified_repetitions": 3,
+      "three_repeats_complete": true,
+      "pipeline_seconds_median": 123.92920964909717,
+      "pipeline_seconds_min": 123.79590444313362,
+      "pipeline_seconds_max": 124.77661831397563,
+      "selected_subsets": [
+        "candidate_0"
+      ],
+      "receipts": [
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_short_oracle_forced_r1_1792100078686488055.json",
+          "sha256": "184e5bcebad005b5193f167260dde103a17d5306688c2719bc02c146fa680cb1"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_short_oracle_forced_r2_1792107497745665600.json",
+          "sha256": "188201412185d91f5810e87d93ca9808f8116fe8353e9e6cce4776fc70ae5f30"
+        },
+        {
+          "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline/selection_pipeline_random_short_oracle_forced_r3_1792108210689118433.json",
+          "sha256": "2ebe7325bff8091d366af10df26bcc7544828b383c1feb80d3a9383ee341da79"
+        }
+      ]
+    }
+  ],
+  "scope": "Fresh full workflow: five independently launched adaptation processes, one fresh readout process, fixed candidate choice, and a final reference-Oracle adaptation if not already trained. Includes process/model startup, serialization and exact-weight/readout verification. Common target warmup and once-only predictor preparation excluded and charged separately. Representative start302 only; three timing repeats are not three scientific seed replications. Code uses existing subprocess boundaries rather than an optimized persistent model server.",
+  "qualification": "All freshly trained weights must be bitwise identical to frozen references. Readout logits/correctness and selected candidate must match frozen dev decisions exactly. No recipe or choice changes from timing outcomes. Separate exact-teacher-only scorer avoids charging learned-behavior features or initial anchors to the teacher control.",
+  "important": "One scientific warmup/update-seed pair and one candidate family, with repeated fresh workflow timing. This does not estimate across-start timing or generalize workflow cost to genre subsets. Once-only predictor preparation and the common target warmup are additional. Predictions and selected candidates reproduce the pre-existing frozen choices; no recipe is selected from these timings."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "w201_step0",
+    "warmup_seed": 201,
+    "step": 0,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli__warmup_lr0.001_s201/step-32"
+  },
+  {
+    "name": "w201_step32",
+    "warmup_seed": 201,
+    "step": 32,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_u101_p123/step-32"
+  },
+  {
+    "name": "w201_step128",
+    "warmup_seed": 201,
+    "step": 128,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_u101_p123/step-128"
+  },
+  {
+    "name": "w201_step256",
+    "warmup_seed": 201,
+    "step": 256,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_u101_p123/step-256"
+  },
+  {
+    "name": "w301_step0",
+    "warmup_seed": 301,
+    "step": 0,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w301"
+  },
+  {
+    "name": "w301_step32",
+    "warmup_seed": 301,
+    "step": 32,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.0003_u401/step-32"
+  },
+  {
+    "name": "w301_step128",
+    "warmup_seed": 301,
+    "step": 128,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.0003_u401/step-128"
+  },
+  {
+    "name": "w301_step256",
+    "warmup_seed": 301,
+    "step": 256,
+    "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.0003_u401/step-256"
+  }
+]

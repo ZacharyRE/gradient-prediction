@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "seconds": 14.672717094421387,
+  "source_result_sha256": "7b1fd2d4d0b7f5fbffb4a34f8d941039714b282c748bf7fdfd2f00e2f1f40140",
+  "bundle_sha256": "f520631991996cffae7b3a57e31481be69edd721dccbbba786d077336aca2fd4",
+  "checked_fields": {
+    "complete": true,
+    "freeze_sha256": true,
+    "decisions_sha256": true,
+    "spec": true,
+    "groups": true,
+    "per_start": true,
+    "direct_quality": true,
+    "direct_paired_comparisons": true,
+    "units": true,
+    "important": true
+  },
+  "command": [
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/analyze_selection.py",
+    "--analysis-spec",
+    "/tmp/surrogate-statistics-replay-h6ljt8af/reproduced/configs/surrogate_analysis_spec.json",
+    "--prediction-bundle",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/frozen_correctness.npz"
+  ],
+  "scope": "Published frozen recipes/choices/spec, reconstructed complete input rows and pickle-free correctness bundle. Exact equality of all numerical quality, ranking, regret and paired bootstrap outputs, in a new relocated layout. No model weights, GPU or original absolute artifact paths are needed. Raw generated responses are absent, so this does not independently regrade text.",
+  "source_sha256": "84f5d9c61a8f7d39582ed252b7575b32e60e4b5a5c173a4a7d257dd3e2cadc95"
+}

@@ -1,0 +1,53 @@
+{
+  "args": {
+    "model": "1p5b",
+    "tasks": [
+      "mnli"
+    ],
+    "split": "selection_dev",
+    "adapters": [
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_0_cv16_matched_u401_blindmatched/step-128",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_1_cv16_matched_u401_blindmatched/step-128",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_2_cv16_matched_u401_blindmatched/step-128",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_3_cv16_matched_u401_blindmatched/step-128",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_4_cv16_matched_u401_blindmatched/step-128"
+    ],
+    "base": false,
+    "name": "selection_pipeline_random_cv16_generated_r2_1792106758094195066_readout",
+    "max_new_tokens": 256,
+    "max_seqs": 128,
+    "entries": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_cv16_generated_r2_1792106758094195066/entries.json",
+    "memory_fraction": 0.25,
+    "fresh_generation": true
+  },
+  "base": "/mnt/shared/shared_hf_home/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "input_sha256": {
+    "mnli": "b7f65e892cc8b832829ea6a193d21ba7e7377f65d23f048210188856ee48d912"
+  },
+  "adapter_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_0_cv16_matched_u401_blindmatched/step-128": "02cda5cc1272804ad21494a22046e6f078b6f525614d8e22b2edcaa6b07f67ab",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_1_cv16_matched_u401_blindmatched/step-128": "35e3eb9b3476f55099fc826215b60dfcc196142664a0acfb20380e3aba9cf337",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_2_cv16_matched_u401_blindmatched/step-128": "4a7b8403d55edac06d062fe6152faac83da71c2a8b07cf4c2ba0674854d4d6a5",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_3_cv16_matched_u401_blindmatched/step-128": "d5b32fabd1b479be3ac05393843731e72f616dd391b9fdc5e4763a1f1c63078a",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_4_cv16_matched_u401_blindmatched/step-128": "3dba2e33636b97df9227c5d01fda1554e8afaa33b3d79f80fc75384cf9e55fe2"
+  },
+  "full_inputs": true,
+  "input_token_ids_verified_at_generation": true,
+  "max_prompt_tokens": 176,
+  "max_new_tokens": 256,
+  "context": 512,
+  "backend": "native vLLM BF16 LoRA",
+  "batch_invariant": true,
+  "seed": 42,
+  "temperature": 0,
+  "system": "You are a helpful assistant.",
+  "user": "Solve the following mathematics problem. Show your reasoning clearly and place only the final answer inside \\boxed{{}}.\n\nProblem:\n{problem}",
+  "gpu_memory_utilization": 0.25,
+  "kv_cache_memory_bytes": 17179869184,
+  "grading_revision": "v4_unambiguous_single_letter_closing_parenthesis",
+  "surrogate_final_freeze": {
+    "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+    "frozen_at": 1792092469.3405645,
+    "purpose": "Frozen transfer, downstream quality, candidate-selection and cost evaluation after bounded development; no selection outcomes used for method choice."
+  }
+}

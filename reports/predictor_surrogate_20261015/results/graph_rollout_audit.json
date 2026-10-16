@@ -1,0 +1,730 @@
+{
+  "passed": true,
+  "full_inputs": true,
+  "results": [
+    {
+      "recipe": "graph_oracle32",
+      "weights_bitwise_equal": true,
+      "max_weight_difference": 0.0,
+      "records": {
+        "graph": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_oracle32_u401_graph_smoke_graph__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_oracle32_u401_graph_smoke_graph/step-24",
+              "method": "graph_oracle32",
+              "kind": "oracle",
+              "k": 32,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 2.8281920622102916,
+              "cache_seconds": 1.4962986970786005,
+              "dev_ce": null,
+              "adapter_sha256": "147c3e223159692a446a31adc8d57741e7ce88179f7a38ccf85b5d66bb9e66cc",
+              "save_seconds": 0.015780272893607616,
+              "diagnostic_seconds": 7.658964022994041e-06
+            }
+          ],
+          "wall_seconds": 2.8501200675964355,
+          "online_seconds": 2.8281920622102916,
+          "cache_seconds": 1.4962986970786005,
+          "true_gradient_examples": 768,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "graph",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(32, 192)": {
+                "batch_size": 32,
+                "padded_length": 192,
+                "calls": 17,
+                "capture_seconds": 0.04989184392616153,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": false,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 12884901888
+              },
+              "(32, 256)": {
+                "batch_size": 32,
+                "padded_length": 256,
+                "calls": 7,
+                "capture_seconds": 0.0017666800413280725,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": false,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 17179869184
+              }
+            },
+            "capture_and_initialization_seconds": 0.0516585239674896,
+            "additional_capture_backward_examples": 0,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        },
+        "eager_static": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_oracle32_u401_graph_smoke_eager_static__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_oracle32_u401_graph_smoke_eager_static/step-24",
+              "method": "graph_oracle32",
+              "kind": "oracle",
+              "k": 32,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 2.9376587194856256,
+              "cache_seconds": 1.5636419679503888,
+              "dev_ce": null,
+              "adapter_sha256": "147c3e223159692a446a31adc8d57741e7ce88179f7a38ccf85b5d66bb9e66cc",
+              "save_seconds": 0.01585008203983307,
+              "diagnostic_seconds": 7.916009053587914e-06
+            }
+          ],
+          "wall_seconds": 2.9597220420837402,
+          "online_seconds": 2.9376587194856256,
+          "cache_seconds": 1.5636419679503888,
+          "true_gradient_examples": 768,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "eager_static",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(32, 192)": {
+                "batch_size": 32,
+                "padded_length": 192,
+                "calls": 17,
+                "capture_seconds": 0.04928261390887201,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": false,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 12884901888
+              },
+              "(32, 256)": {
+                "batch_size": 32,
+                "padded_length": 256,
+                "calls": 7,
+                "capture_seconds": 0.0018062358722090721,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": false,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 17179869184
+              }
+            },
+            "capture_and_initialization_seconds": 0.05108884978108108,
+            "additional_capture_backward_examples": 0,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        }
+      }
+    },
+    {
+      "recipe": "graph_subset4",
+      "weights_bitwise_equal": true,
+      "max_weight_difference": 0.0,
+      "records": {
+        "graph": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_subset4_u401_graph_smoke_graph__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_subset4_u401_graph_smoke_graph/step-24",
+              "method": "graph_subset4",
+              "kind": "subset",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 1.8776927762664855,
+              "cache_seconds": 1.4962986970786005,
+              "dev_ce": null,
+              "adapter_sha256": "075f5459506b73022703ddf698204fb931d89eb16104d164352288d74f629eb3",
+              "save_seconds": 0.014651010977104306,
+              "diagnostic_seconds": 8.06804746389389e-06
+            }
+          ],
+          "wall_seconds": 1.8983345031738281,
+          "online_seconds": 1.8776927762664855,
+          "cache_seconds": 1.4962986970786005,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "graph",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.36623881198465824,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4099932160
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.6384947509504855,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 4099932160,
+                "estimated_new_pool_bytes": 1073741824,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 0.9999999403953552,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 3573547008
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.3987115719355643,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 7673479168,
+                "estimated_new_pool_bytes": 2147483648,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4617928704
+              }
+            },
+            "capture_and_initialization_seconds": 1.403445134870708,
+            "additional_capture_backward_examples": 60,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        },
+        "eager_static": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_subset4_u401_graph_smoke_eager_static__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_subset4_u401_graph_smoke_eager_static/step-24",
+              "method": "graph_subset4",
+              "kind": "subset",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 1.231411159504205,
+              "cache_seconds": 1.5636419679503888,
+              "dev_ce": null,
+              "adapter_sha256": "075f5459506b73022703ddf698204fb931d89eb16104d164352288d74f629eb3",
+              "save_seconds": 0.018054204061627388,
+              "diagnostic_seconds": 9.862007573246956e-06
+            }
+          ],
+          "wall_seconds": 1.2563772201538086,
+          "online_seconds": 1.231411159504205,
+          "cache_seconds": 1.5636419679503888,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "eager_static",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.000709467800334096,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.0006576720625162125,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1073741824
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.0006579658947885036,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 2147483648
+              }
+            },
+            "capture_and_initialization_seconds": 0.002025105757638812,
+            "additional_capture_backward_examples": 0,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        }
+      }
+    },
+    {
+      "recipe": "graph_cv4",
+      "weights_bitwise_equal": true,
+      "max_weight_difference": 0.0,
+      "records": {
+        "graph": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_graph__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_graph/step-24",
+              "method": "graph_cv4",
+              "kind": "cv",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": 123,
+              "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli_predictor_globalfit_p123/best.pt",
+              "steps": 24,
+              "online_seconds": 2.6101036542095244,
+              "cache_seconds": 1.5898103369399905,
+              "dev_ce": null,
+              "adapter_sha256": "b68f7ac7788f5b31756b7577f3c4302e21cfb8d25ab1e6b75c9d9497ed2b5805",
+              "save_seconds": 0.014362385962158442,
+              "diagnostic_seconds": 7.565133273601532e-06
+            }
+          ],
+          "wall_seconds": 2.6313462257385254,
+          "online_seconds": 2.6101036542095244,
+          "cache_seconds": 1.5898103369399905,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "graph",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.5499154550489038,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4099932160
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.9321035819593817,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 4099932160,
+                "estimated_new_pool_bytes": 1073741824,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0000001192092896,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 3573547008
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.42735248687677085,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 7673479168,
+                "estimated_new_pool_bytes": 2147483648,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4617928704
+              }
+            },
+            "capture_and_initialization_seconds": 1.9093715238850564,
+            "additional_capture_backward_examples": 60,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        },
+        "eager_static": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_eager_static__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_eager_static/step-24",
+              "method": "graph_cv4",
+              "kind": "cv",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": 123,
+              "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli_predictor_globalfit_p123/best.pt",
+              "steps": 24,
+              "online_seconds": 1.6233084022533149,
+              "cache_seconds": 1.6534716801252216,
+              "dev_ce": null,
+              "adapter_sha256": "b68f7ac7788f5b31756b7577f3c4302e21cfb8d25ab1e6b75c9d9497ed2b5805",
+              "save_seconds": 0.015315326862037182,
+              "diagnostic_seconds": 8.048024028539658e-06
+            }
+          ],
+          "wall_seconds": 1.6456570625305176,
+          "online_seconds": 1.6233084022533149,
+          "cache_seconds": 1.6534716801252216,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "eager_static",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.0006119520403444767,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.0006051431410014629,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1073741824
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.000616016099229455,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 2147483648
+              }
+            },
+            "capture_and_initialization_seconds": 0.0018331112805753946,
+            "additional_capture_backward_examples": 0,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        }
+      }
+    },
+    {
+      "recipe": "graph_class4",
+      "weights_bitwise_equal": true,
+      "max_weight_difference": 0.0,
+      "records": {
+        "graph": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_class4_u401_graph_smoke_graph__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_class4_u401_graph_smoke_graph/step-24",
+              "method": "graph_class4",
+              "kind": "class_cov",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 1.952423496171832,
+              "cache_seconds": 1.5725416040513664,
+              "dev_ce": null,
+              "adapter_sha256": "a7ebcb527d587df5aa0295635189c449511d870758a27902d144fb3e0c060273",
+              "save_seconds": 0.015133827924728394,
+              "diagnostic_seconds": 7.196096703410149e-06
+            }
+          ],
+          "wall_seconds": 1.9735519886016846,
+          "online_seconds": 1.952423496171832,
+          "cache_seconds": 1.5725416040513664,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "graph",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.3905710377730429,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4099932160
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.6863777940161526,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 4099932160,
+                "estimated_new_pool_bytes": 1073741824,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 0.9999999403953552,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 3573547008
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.3821069630794227,
+                "capture_warmup_backward_examples": 12,
+                "audit_backward_examples": 8,
+                "graph": true,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 7673479168,
+                "estimated_new_pool_bytes": 2147483648,
+                "capture_traced_backward_examples": 4,
+                "graph_vs_same_shape_eager": {
+                  "cosine": 1.0,
+                  "relative_l2": 0.0,
+                  "norm_ratio": 1.0
+                },
+                "graph_reserved_bytes": 4617928704
+              }
+            },
+            "capture_and_initialization_seconds": 1.4590557948686182,
+            "additional_capture_backward_examples": 60,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        },
+        "eager_static": {
+          "complete": true,
+          "entries": [
+            {
+              "task": "mnli",
+              "tag": "mnli__w301_candidate_0_graph_class4_u401_graph_smoke_eager_static__step24",
+              "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_candidate_0_graph_class4_u401_graph_smoke_eager_static/step-24",
+              "method": "graph_class4",
+              "kind": "class_cov",
+              "k": 4,
+              "lr": 0.001,
+              "seed": 401,
+              "warmup_seed": 301,
+              "subset": "candidate_0",
+              "predictor_seed": null,
+              "predictor_path": null,
+              "steps": 24,
+              "online_seconds": 1.645002604695037,
+              "cache_seconds": 1.642213406972587,
+              "dev_ce": null,
+              "adapter_sha256": "a7ebcb527d587df5aa0295635189c449511d870758a27902d144fb3e0c060273",
+              "save_seconds": 0.01815917482599616,
+              "diagnostic_seconds": 1.0831048712134361e-05
+            }
+          ],
+          "wall_seconds": 1.6710965633392334,
+          "online_seconds": 1.645002604695037,
+          "cache_seconds": 1.642213406972587,
+          "true_gradient_examples": 96,
+          "calibration_seconds": 0.0,
+          "base_unchanged": true,
+          "initialization_true_gradient_examples": 0,
+          "teacher_backend_receipt": {
+            "mode": "eager_static",
+            "bucket": 64,
+            "max_graphs": 4,
+            "full_inputs": true,
+            "shapes": {
+              "(4, 192)": {
+                "batch_size": 4,
+                "padded_length": 192,
+                "calls": 15,
+                "capture_seconds": 0.0006364108994603157,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1610612736
+              },
+              "(4, 128)": {
+                "batch_size": 4,
+                "padded_length": 128,
+                "calls": 8,
+                "capture_seconds": 0.000798417953774333,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 1073741824
+              },
+              "(4, 256)": {
+                "batch_size": 4,
+                "padded_length": 256,
+                "calls": 1,
+                "capture_seconds": 0.0007750049699097872,
+                "capture_warmup_backward_examples": 0,
+                "audit_backward_examples": 0,
+                "graph": false,
+                "capture_allowed_by_memory_policy": true,
+                "graph_pool_bytes_before": 0,
+                "estimated_new_pool_bytes": 2147483648
+              }
+            },
+            "capture_and_initialization_seconds": 0.002209833823144436,
+            "additional_capture_backward_examples": 0,
+            "capture_cost_included_in_online_seconds": true,
+            "all_recipes_receive_same_backend": true,
+            "memory_policy": "Capture at most4096 padded batch tokens and12GiB estimated total graph-private pools; other shapes use identical eager-static arithmetic without truncation"
+          }
+        }
+      }
+    }
+  ],
+  "scope": "24 updates with changed batches/weights, lazy multiple-shape capture, common padding and optimizer; not equivalence to different native padding shapes"
+}

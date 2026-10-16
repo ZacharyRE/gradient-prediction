@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "best_epoch": 30,
+  "best_centered_cv_ratio": 0.8924321457743645,
+  "seconds": 171.32653105910867,
+  "optimizer_steps": 7920,
+  "best_sha256": "78a3b5b12795fbd84fc34db11b00408413ce6749babcd301a8733c5e6d42939d",
+  "value_and_gradient_supervision": {
+    "name": "vector128",
+    "kind": "vector",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0
+  },
+  "collection_cost_seconds": 39.526340251322836,
+  "teacher_trajectory_cost_additional": true
+}

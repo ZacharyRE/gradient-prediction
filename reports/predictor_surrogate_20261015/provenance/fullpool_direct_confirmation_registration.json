@@ -1,0 +1,24 @@
+{
+  "epoch": 1792076497.36797,
+  "reason": "Direct training acceleration on original4097-example population is a separate endpoint from ranking1024-example candidates. Complete three-start fullpool state128/state256CV16 and zero-momentum controls at LR.001; fill w301 Oracle reference512 grid. No new predictor family. All selection outcomes remain unread.",
+  "warmup_update_pairs": [
+    [
+      301,
+      401
+    ],
+    [
+      311,
+      411
+    ],
+    [
+      321,
+      421
+    ]
+  ],
+  "final_direct_proposal": "Heldout302/303/304 onfullupdate, matchedO32/O16/CV16 plus selectedstate and zero controls at256/512. Independent fullpoolOracle choice uses fullpool development grid, not candidate0 outcomes.",
+  "queue_sha256": "5f03d840ff7b9ad7708e1ffb8aa6822189bc365fa315a58c2be84a9ad7b63bb0",
+  "_publication_redaction": {
+    "original_sha256": "7aeb525e73b08b391d2fa3e1737dafadaf4150ea65558efa19070b71dc374179",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

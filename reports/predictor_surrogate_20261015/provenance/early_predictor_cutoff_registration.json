@@ -1,0 +1,8 @@
+{
+  "epoch": 1792081265.8838065,
+  "reason": "Diagnostic residual-variance ratio ceases improving after32 updates on both Oracle and own trajectories. Test whether the predictor is useful only early.",
+  "diagnostic": "results/predictor_rollout_shift.json",
+  "method": "Use existing state256CV16 for32 updates then exact-subset16 updates with unchanged Adam state, LR, data and correction sampling. Charge initial predictor/cache preparation even after switching off.",
+  "scope": "Three development starts301/311/321, full4097 update pool, LR.001,512updates. No final outcomes inspected. Same predictor family; no new fit.",
+  "validation": "Compare first32 adapter weights exactly with existing full state256CV16; later history must show zero prediction time and16 true-gradient examples perstep."
+}

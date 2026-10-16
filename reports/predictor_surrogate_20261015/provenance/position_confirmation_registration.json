@@ -1,0 +1,23 @@
+{
+  "epoch": 1792079879.744425,
+  "scope": "Two fixed template recipes shortlisted fromw301 development, then replicatefullpool on311/321. No newpredictor family andnofinaloutcomes. MatchedgraphOracle8/32 alreadyin graphconfirmation; addOracle4.001 here.",
+  "shortlist": [
+    {
+      "method": "position_w301_step0_b4_cv4_lr0.001",
+      "w301_step512_accuracy": 83.4307992202729,
+      "prep_online_seconds_approx": 18.7,
+      "preparation": "Warmup301-only four-bin template, recorded4.491s construction+labels excluding sourcewarmup"
+    },
+    {
+      "method": "position_all_b4_cv8_lr0.001",
+      "w301_step512_accuracy": 84.99025341130604,
+      "prep_online_seconds_approx": 24.24,
+      "preparation": "All8developmentstates, additionaltrajectory/labelcosts apply"
+    }
+  ],
+  "jobs_sha256": "6f3414095a7fa7653e35bce6a7ee85ac08a1f85e7359540d4b12809c9cda9590",
+  "_publication_redaction": {
+    "original_sha256": "39d9204ef91b6df3d70feb12ab5cc697a42c8fed7eb6e6445585847ed58efc3b",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

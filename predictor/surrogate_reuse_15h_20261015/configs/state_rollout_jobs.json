@@ -1,0 +1,492 @@
+[
+  {
+    "name": "state128_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_prediction0_lr0.0003",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_prediction0_lr0.001",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state256_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_prediction0_lr0.0003",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_prediction0_lr0.001",
+    "kind": "prediction",
+    "k": 0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state128_hybrid4_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_hybrid4_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_hybrid8_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state128_hybrid8_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/best.pt"
+  },
+  {
+    "name": "state256_hybrid4_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_hybrid4_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_hybrid8_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "state256_hybrid8_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  {
+    "name": "original_hybrid4_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "original_hybrid4_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "original_hybrid8_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "original_hybrid8_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "held_gradient_every4",
+    "kind": "held_gradient",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "held_gradient_every8",
+    "kind": "held_gradient",
+    "k": 32,
+    "true_every": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "zero_gradient_every4",
+    "kind": "zero_gradient",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "zero_gradient_every8",
+    "kind": "zero_gradient",
+    "k": 32,
+    "true_every": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32
+  },
+  {
+    "name": "factor128_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_hybrid4_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_hybrid4_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 4,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_hybrid8_scale0.25",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 0.25,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_hybrid8_scale1.0",
+    "kind": "neural_hybrid",
+    "k": 32,
+    "true_every": 8,
+    "pred_scale": 1.0,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  }
+]

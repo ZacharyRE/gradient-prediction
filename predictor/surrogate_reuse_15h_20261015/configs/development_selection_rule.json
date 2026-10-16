@@ -1,0 +1,157 @@
+{
+  "registered_epoch": 1792072751.4543347,
+  "status": "Prospective rule for remaining development and final recipe freeze; substantial development results already observed and explicitly exploratory. No selection_dev/selection_holdout outcomes observed.",
+  "development_metric": "Generated accuracy on fixed513-example accuracy_dev; full inputs; no output-protocol changes",
+  "primary_matched_arms": {
+    "methods": [
+      "Oracle32",
+      "Oracle16",
+      "original frozenCV16"
+    ],
+    "learning_rate": 0.001,
+    "horizons": [
+      256,
+      512
+    ],
+    "new_start_seeds": [
+      302,
+      303,
+      304
+    ],
+    "candidate_families": [
+      "random",
+      "genre"
+    ]
+  },
+  "independent_oracle_reference": {
+    "population": "candidate_0 size1024, development starts301/311/321 paired with401/411/421",
+    "grid_lr": [
+      0.0003,
+      0.001,
+      0.003
+    ],
+    "grid_steps": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "selection": "Highest mean development accuracy over all3 starts; ties prefer lower mean preparation+online seconds, then fewer steps, then lower learning rate",
+    "frozen_before_candidate_readouts": true
+  },
+  "short_oracle_control": {
+    "grid_steps": [
+      32,
+      64,
+      128
+    ],
+    "selection": "Highest mean candidate_0 development accuracy over3 starts among short Oracle32 configurations; same tie rule. Include even if it is also the chosen full reference."
+  },
+  "new_method_screening": {
+    "max_new_final_method_families": 2,
+    "screening": "Use only development results. Prefer accuracy/time Pareto candidates; a candidate must be tested on candidate_0 and starts301/311/321 before a positive generalization claim. Full4097 pool results alone are insufficient for final candidate-size recipe choice.",
+    "confirmation": "Fixed shortlist selected from initial development; then confirm on the two additional development starts and candidate_0. Report all shortlisted failures.",
+    "final_choice": "Prefer highest mean accuracy among new methods no slower than originalCV16, then fastest configuration within1percentage point of best available development Oracle; if none meet both, retain at most one informative failure for surrogate fidelity rather than claim success.",
+    "stopping": "No new method families beyond currently implemented queues without a concrete diagnostic reason; target method freeze around6hours fromstudy start."
+  },
+  "behavior_readout": "Select at most one explicit-state behavior model by predictor_dev teacher logit+state-change error. Retain the no-explicit-delta ablation if used in finalstudy. It reconstructs base H from BF16 stored H, so small rounding-dependent state information may remain; do not call it a mathematically state-invariant control. A separate constant-choice baseline is truly independent of candidate outcomes. Forced-format teacher is mandatory; free-generation outcome is separate.",
+  "final_outcomes": "Do not select a new recipe, stopping point or success threshold from selection_dev/holdout. selection_dev chooses only candidate dataset under each frozen recipe.",
+  "scope_note": "Development LR/horizon selection is exploratory and uses a repeatedly examined small set; final independent source-group readouts and new starts provide the confirmation, with three-start uncertainty limitations.",
+  "clarifications": [
+    {
+      "epoch": 1792074437.4046786,
+      "before_behavior_fit_and_selection_outcomes": true,
+      "reason": "Precisely describe the no-explicit-delta ablation; no method implementation or selection metric changed."
+    },
+    {
+      "epoch": 1792075747.7494266,
+      "before_selection_outcomes": true,
+      "reason": "Include independentlytunedOracle16 as well asmatchedOracle16, usingalreadyplannedcandidate-referencegrid. Fair comparison when the newpredictor LR/horizon is selected independently."
+    }
+  ],
+  "independent_oracle16_control": {
+    "population": "candidate_0 size1024, development starts301/311/321 paired with401/411/421",
+    "grid_lr": [
+      0.0003,
+      0.001,
+      0.003
+    ],
+    "grid_steps": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "selection": "Highest mean development accuracy over all3 starts; ties prefer lower mean preparation+online seconds, then fewer steps, then lower learning rate",
+    "frozen_before_candidate_readouts": true,
+    "purpose": "Practical no-predictor efficiency control. Select Oracle16 independently on the same development starts/grid; matched Oracle16 remains a separate attribution control."
+  },
+  "direct_fullpool_endpoint": {
+    "registered_epoch": 1792076525.8027,
+    "population": "Original4097-example update pool, separate fromcandidate1024",
+    "development_starts": [
+      301,
+      311,
+      321
+    ],
+    "heldout_starts": [
+      302,
+      303,
+      304
+    ],
+    "matched_arms": [
+      "Oracle32",
+      "Oracle16",
+      "originalCV16"
+    ],
+    "matched_lr": 0.001,
+    "matched_horizons": [
+      256,
+      512
+    ],
+    "independent_oracle": "Choose Oracle32 and Oracle16 on fullpool three-start development LR.0003/.001/.003 x steps32/64/128/256/512; same tie rule. Reference selection is separate from candidate0 selection.",
+    "new_methods": "Same at-most2 finalpredictor-family limit across both endpoints. Explicitstate128/256 andzeroevery4 confirmation queued; maxone statevariant selected perendpoint before heldout readouts."
+  },
+  "secondary_short_matched": {
+    "registered_epoch": 1792077261.23011,
+    "horizon": 128,
+    "lr": 0.001,
+    "methods": [
+      "Oracle32",
+      "Oracle16",
+      "originalCV16"
+    ],
+    "population": "candidate1024",
+    "reason": "After inspecting complete development grid, originalCV16 best mean is128steps/.001. Retain this explicitly development-selected shorter matched comparison in addition to primary256/512 arms; all finalreadouts stillunseen. It is not a new predictorfamily."
+  },
+  "secondary_budget_oracle32": {
+    "registered_epoch": 1792077667.9521003,
+    "population": "candidate1024",
+    "selected_method": "oracle32_lr0.001",
+    "selected_steps": 64,
+    "selection": "Highest developmentmeanquality under selectedCV16@128/.001 historicaltimebudget; fullheldoutreadoutstillunseen",
+    "purpose": "A shorterOracle efficiencycontrol, separate fromhighest-qualityOracle128/.0003"
+  },
+  "independent_original_cv16": {
+    "registered_epoch": 1792082122.9476626,
+    "rule": "Same3LR x5horizon development grid and tie rule as independently tuned Oracle, separate candidate/fullpool populations.",
+    "candidate_selected": {
+      "lr": 0.001,
+      "steps": 128
+    },
+    "fullpool_selected": {
+      "lr": 0.0003,
+      "steps": 512
+    },
+    "screening_time_comparator": "For new-method screening, compare with independently best originalCV16 on the same population. Matched originalCV16 remains a distinct attribution control.",
+    "registration": "provenance/independent_original_cv16_registration.json"
+  },
+  "behavior_common_selection_amendment": {
+    "epoch": 1792082503.8825753,
+    "reason": "Bounded coverage diagnostic after original anchored behavior failed to track higher-LR/later agent changes; before all final outcomes.",
+    "plan": "configs/behavior_common_selection_plan.json",
+    "rule": "Common12-state score, at most one explicit behavior model, mandatory unchanged-initial and exact-current-teacher controls. Original8-state scores remain published; never directly compare across state populations."
+  }
+}

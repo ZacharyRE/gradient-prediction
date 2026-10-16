@@ -1,0 +1,8 @@
+{
+  "epoch": 1792082503.8824122,
+  "reason": "Original behavior fit covers only low-LR Oracle states through256, while its39-entry pilot includesLR.001 and512updates. Gradient coverage ablation improves late-state errors, motivating the same bounded coverage control for anchored behavior.",
+  "architecture": "Unchanged anchored64/128; same512 fitting examples; add4 high-LR Oracle states, no new warmup seeds or candidate/selection outcomes.",
+  "fit": "Same200 epochs and1600 optimizer updates;12 rather than8 states per minibatch. All additional collection and trajectory costs charged.",
+  "selection": "All old and new candidate checkpoints rescored on the same12 development states and common normalizers. This prospectively replaces the8-state cross-model score before new fit/final readouts. At most one explicit behavior model in final study.",
+  "no_new_method_family": true
+}

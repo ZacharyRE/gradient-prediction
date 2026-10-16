@@ -1,0 +1,32 @@
+[
+  {
+    "name": "token_kd128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 50,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  },
+  {
+    "name": "token_kd128_nograd",
+    "kind": "token",
+    "width": 128,
+    "epochs": 50,
+    "gradient_weight": 0,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  },
+  {
+    "name": "token_kd256",
+    "kind": "token",
+    "width": 256,
+    "epochs": 50,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  }
+]

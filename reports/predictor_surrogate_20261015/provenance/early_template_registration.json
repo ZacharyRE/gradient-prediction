@@ -1,0 +1,30 @@
+{
+  "epoch": 1792084540.2908032,
+  "reason": "Three-start state256 cutoff control preserves83.3658% mean@256 while using the predictor only for32 updates, versus the same83.3658% for fullstateCV16. Its469s offline construction is disproportionate to this use. Test the already-built4.491s warmup-only template in exactly the same early-CV16 intervention.",
+  "jobs": [
+    {
+      "name": "position_warmup_cv16_until32_lr0.001",
+      "kind": "cv",
+      "k": 16,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "predictor_stop_step": 32,
+      "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b4/best.pt"
+    }
+  ],
+  "starts": [
+    301,
+    311,
+    321
+  ],
+  "scope": "Last bounded combination of two already implemented mechanisms; no new predictor family, labels, fitting, optimizer, LR search, or final outcomes.",
+  "comparison": "Existing Oracle16, fullstateCV16 andstateCV16-until32 trajectories; all3starts required. Initialtemplate already passedalgebra audits; cutoffdispatch passed3 exact first32-weight checks onstateCV16."
+}

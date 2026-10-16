@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "seconds": 12.385345458984375,
+  "source_result_sha256": "7b1fd2d4d0b7f5fbffb4a34f8d941039714b282c748bf7fdfd2f00e2f1f40140",
+  "bundle_sha256": "f520631991996cffae7b3a57e31481be69edd721dccbbba786d077336aca2fd4",
+  "checked_fields": {
+    "complete": true,
+    "freeze_sha256": true,
+    "decisions_sha256": true,
+    "spec": true,
+    "groups": true,
+    "per_start": true,
+    "direct_quality": true,
+    "direct_paired_comparisons": true,
+    "units": true,
+    "important": true
+  },
+  "command": [
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/tmp/gradient-predictor-surrogate-20261015/predictor/surrogate_reuse_15h_20261015/scripts/analyze_selection.py",
+    "--analysis-spec",
+    "/tmp/surrogate-public-statistics-check-20261015/configs/surrogate_analysis_spec.json",
+    "--prediction-bundle",
+    "/tmp/gradient-predictor-surrogate-20261015/reports/predictor_surrogate_20261015/results/frozen_correctness.npz"
+  ],
+  "scope": "Actual CPU statistical reproduction invoked from the isolated publication worktree using its copied scripts, frozen recipes/choices, public report artifacts and full reconstructed MNLI rows. All registered numerical fields exactly match. This is a local publication-layout check, not evidence of remote GitHub publication or independent response regrading.",
+  "checked_epoch": 1792099771.9254942,
+  "publication_layout": "/tmp/gradient-predictor-surrogate-20261015"
+}

@@ -2,9 +2,11 @@
 
 [Project overview](../README.md) · [Results index](../docs/RESULTS.md) · [Current roadmap](../docs/EXPERIMENTS.md)
 
-The current research path is **gradient prediction → useful one-step updates → calibration under model changes → history transfer and broader layer scope**.
+The current research path is **gradient prediction → useful updates → calibration under model changes → time to quality → reusable training surrogates**.
 
-**Start with the [consolidated 0.5B / 1.5B / 7B overview](../reports/experiment_overview_20261013/README.md).** Coverage, Base/Warmup/Oracle/predictor accuracy, Frozen/Adaptive/CV4 comparisons, configurations, FLOPs and time costs. The latest 1.5B study adds nine tasks; no matched-quality efficiency advantage is established.
+**Start with the [consolidated 0.5B / 1.5B / 7B overview](../reports/experiment_overview_20261013/README.md).** Coverage, Base/Warmup/Oracle/predictor accuracy, Frozen/Adaptive/CV4 comparisons, configurations, FLOPs and time costs. The October 11 benchmark study covers nine tasks at 1.5B; the October 15 surrogate study below adds 1.5B/MNLI transfer and selection tests.
+
+**Latest: [reusable training surrogates](../reports/predictor_surrogate_20261015/README.md)** — 1.5B/MNLI, frozen transfer across new starts/data, direct training versus candidate selection, behavior prediction and complete cost accounting. [Previous efficiency study](../reports/predictor_efficiency_20261014/README.md).
 
 ## Start here: Countdown
 

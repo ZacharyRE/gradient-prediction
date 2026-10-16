@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "seconds": 0.767264663008973,
+  "mean_centered_cv_ratio": 0.9743527323007584,
+  "states": {
+    "w201_step0": {
+      "centered_cv_ratio": 0.962037205696106,
+      "centered_correlation": 0.20364613831043243,
+      "relative_l2": 0.981535792350769
+    },
+    "w201_step32": {
+      "centered_cv_ratio": 0.9612722396850586,
+      "centered_correlation": 0.2187526375055313,
+      "relative_l2": 0.98358154296875
+    },
+    "w201_step128": {
+      "centered_cv_ratio": 1.0418250560760498,
+      "centered_correlation": 0.13616469502449036,
+      "relative_l2": 1.0216691493988037
+    },
+    "w201_step256": {
+      "centered_cv_ratio": 1.0306048393249512,
+      "centered_correlation": 0.11162988096475601,
+      "relative_l2": 1.0178279876708984
+    },
+    "w301_step0": {
+      "centered_cv_ratio": 0.8788790106773376,
+      "centered_correlation": 0.3554515838623047,
+      "relative_l2": 0.9357069730758667
+    },
+    "w301_step32": {
+      "centered_cv_ratio": 0.9103062748908997,
+      "centered_correlation": 0.3062644600868225,
+      "relative_l2": 0.9563760161399841
+    },
+    "w301_step128": {
+      "centered_cv_ratio": 1.0009989738464355,
+      "centered_correlation": 0.17787988483905792,
+      "relative_l2": 1.0030092000961304
+    },
+    "w301_step256": {
+      "centered_cv_ratio": 1.0088982582092285,
+      "centered_correlation": 0.1849396675825119,
+      "relative_l2": 1.009201169013977
+    }
+  },
+  "answer_position_activation_gradient_energy_fraction": {
+    "w201_step0": 0.148664828279064,
+    "w201_step32": 0.16384174407937346,
+    "w201_step128": 0.1873418844323044,
+    "w201_step256": 0.14227438263703007,
+    "w301_step0": 0.16953276558879155,
+    "w301_step32": 0.16192520036532268,
+    "w301_step128": 0.1340483771097007,
+    "w301_step256": 0.15699949586923184
+  },
+  "training_label_collection_seconds": 3.723903268808499,
+  "teacher_trajectory_cost_required": false,
+  "evaluation_gradient_data_not_used_to_fit_templates": true,
+  "best_sha256": "98bb80a5e38d9d155ef05a3b5b08584480db44a431d3928d1b3239d13dde9ac7"
+}

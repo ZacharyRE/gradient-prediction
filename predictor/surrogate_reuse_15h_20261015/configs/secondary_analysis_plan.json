@@ -1,0 +1,49 @@
+{
+  "registered_before_any_selection_readout": true,
+  "primary_target": "All selection examples; candidate choices on selection_dev; outcomes on selection_holdout",
+  "secondary_targets": [
+    "fiction",
+    "government",
+    "slate",
+    "telephone",
+    "travel"
+  ],
+  "secondary_analysis": "Reuse the same generated predictions, partitioned by recorded genre; select within each candidate family separately on dev and evaluate fixed choices on holdout",
+  "metadata_baseline": "For genre candidates, choose matching candidate genre for each target genre, without adaptation/evaluation-based search",
+  "other_baselines": [
+    "mean Oracle accuracy across candidate choices (random choice expectation)",
+    "short true-gradient rollout ranking",
+    "matched Oracle16 ranking",
+    "constant initial-agent readout: all candidate ties, lexicographic choice",
+    "Random family only: train the entire original4097-example pool once, with its preselected Oracle32 recipe; explicitly allows more data than a1024-example candidate."
+  ],
+  "uncertainty": "Source-premise group bootstrap, paired across methods; heldout-start variability; secondary endpoints descriptive, no selective success claim",
+  "model_selection": "No selection_dev or selection_holdout outcome may change model recipes or checkpoints",
+  "registered_epoch": 1792064934.162472,
+  "readout_selectors": {
+    "primary": "Generated-answer selection_dev accuracy",
+    "secondary": [
+      "Exact teacher forced-format ABC accuracy",
+      "Behavior-surrogate forced-format ABC accuracy",
+      "Behavior-surrogate mean probability assigned to the true selection_dev class",
+      "Exact teacher mean probability assigned to the true selection_dev class"
+    ]
+  },
+  "selector_amendment_epoch": 1792067109.3425891,
+  "all_amendments_before_selection_outcomes": true,
+  "exact_teacher_probability_control_amendment": {
+    "epoch": 1792084176.6390684,
+    "reason": "Match the continuous gold-probability selector already declared for the learned behavior surrogate. Any benefit must not be attributed to learning when it comes from using probability rather than discrete accuracy. No extra teacher calls; logits already recorded. Before finalreadouts."
+  },
+  "behavior_fidelity_reporting": {
+    "registered_epoch": 1792086851.0972352,
+    "before_final_outcomes": true,
+    "metrics": [
+      "forced ABC accuracy",
+      "agreement with current teacher versus unchanged initial teacher",
+      "centered logit MSE versus unchanged initial logits",
+      "fraction of class decisions changed from initial teacher"
+    ],
+    "uncertainty": "Same paired start/source-group bootstrap; candidate metrics average five fixed subsets within each start. Diagnostic reporting only; no recipe selection."
+  }
+}

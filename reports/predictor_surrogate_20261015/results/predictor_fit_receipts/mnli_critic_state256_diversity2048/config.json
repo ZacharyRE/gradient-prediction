@@ -1,0 +1,31 @@
+{
+  "job": {
+    "name": "state256_diversity2048",
+    "kind": "state",
+    "width": 256,
+    "epochs": 10,
+    "gradient_weight": 1,
+    "value_weight": 0
+  },
+  "cache": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_diversity2048",
+  "cache_sha256": "371b61539062e1d5a64cc8fbb781174264126dbfbe91463fde8aa555d8bf0573",
+  "train_examples": 24576,
+  "states": [
+    "w201_step0",
+    "w201_step32",
+    "w201_step128",
+    "w201_step256",
+    "w301_step0",
+    "w301_step32",
+    "w301_step128",
+    "w301_step256",
+    "w301_fast_step32",
+    "w301_fast_step128",
+    "w301_fast_step256",
+    "w301_fast_step512"
+  ],
+  "source_sha256": "edbed8fc25da96d42ab9a3d970d348861d7efe02325582358f8f3531b1a5ff86",
+  "selection": "Mean within-state centered_cv_ratio on predictor_dev; no downstream final examples",
+  "batch32_metric_scope": "Expected squared mean-gradient error for32 IID draws from the empirical validation-gradient distribution, including mean bias; a diagnostic proxy, not a downstream guarantee",
+  "completion_budget": null
+}

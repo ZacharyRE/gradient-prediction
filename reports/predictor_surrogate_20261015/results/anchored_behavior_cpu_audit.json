@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "initial_output_bitwise_equal": true,
+  "large_logit_case": true,
+  "changes_affect_outputs": true,
+  "finite_parameter_gradients": true,
+  "source_sha256": "fac238be4e3f236a506e531556f5b1b3e3c2be019a22e128c181f9abe30b9d65",
+  "scope": "Center only the learned correction; preserve initialteacher logits exactly, including floating-point centering residue. Initial GPUassertion caught recenteringroundoff before any fittedcheckpoint or outcome."
+}

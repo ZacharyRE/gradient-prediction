@@ -6,6 +6,8 @@ Each topic has one main report with its configuration, result tables, and limita
 
 | Topic | Main report | Status / scope |
 |---|---|---|
+| Reusable training surrogates — October 15 | [Frozen transfer, candidate selection and complete cost](../reports/predictor_surrogate_20261015/README.md) | 1.5B/MNLI; three new starts, random and source-disjoint genre candidates, gradient and behavior surrogates |
+| Predictor time to quality — October 14 | [Nine-hour efficiency study](../reports/predictor_efficiency_20261014/README.md) | 1.5B PAWS/MNLI; CV4/CV16, adaptive calibration, true-gradient controls, timing and FLOPs |
 | Consolidated predictor experiments — October 13 | [0.5B / 1.5B / 7B overview](../reports/experiment_overview_20261013/README.md) | All task coverage, Base/Warmup/Oracle/predictor performance, exact settings, method comparisons, FLOPs and time |
 | 1.5B across nine benchmarks | [Oracle gains and predictor retention](../reports/benchmark_1p5b_20261011/README.md) | Three paired update seeds; CV4 gains on MNLI/PAWS; advantage over Oracle4 unproven |
 | 0.5B across 13 benchmarks | [Oracle gains and predictor retention](../reports/benchmark_0p5b_20261010/README.md) | 18 configurations; three-seed predictor results on 10 admitted configurations; 7 with positive final means for both methods |

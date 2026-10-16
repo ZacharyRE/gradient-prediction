@@ -1,0 +1,68 @@
+{
+  "epoch": 1792075543.543828,
+  "before_copied_suffix_fitting_or_rollouts": true,
+  "reason": "Include intermediate truegradient budget8 for the alreadyimplemented compactteacher surrogate. AgainstOracle16 in a32-examplebatch, CV8 requires residualratio<=1/3 rather thanCV4<=1/7; performance remains empirical.",
+  "added_jobs": [
+    {
+      "name": "copied2_sobolev_cv8_lr0.0003",
+      "kind": "cv",
+      "k": 8,
+      "lr": 0.0003,
+      "steps": 256,
+      "save": [
+        32,
+        128,
+        256
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_sobolev/best.pt"
+    },
+    {
+      "name": "copied2_sobolev_cv8_lr0.001",
+      "kind": "cv",
+      "k": 8,
+      "lr": 0.001,
+      "steps": 256,
+      "save": [
+        32,
+        128,
+        256
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_sobolev/best.pt"
+    },
+    {
+      "name": "copied2_distill_cv8_lr0.0003",
+      "kind": "cv",
+      "k": 8,
+      "lr": 0.0003,
+      "steps": 256,
+      "save": [
+        32,
+        128,
+        256
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_distill/best.pt"
+    },
+    {
+      "name": "copied2_distill_cv8_lr0.001",
+      "kind": "cv",
+      "k": 8,
+      "lr": 0.001,
+      "steps": 256,
+      "save": [
+        32,
+        128,
+        256
+      ],
+      "micro": 32,
+      "diagnostics": false,
+      "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_distill/best.pt"
+    }
+  ],
+  "new_family": false
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "name": "iid_oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_subset4_lr0.0003",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_subset16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "fulltable_activation4_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": true,
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_activation16_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": true,
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  },
+  {
+    "name": "fulltable_factor4_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "factor",
+    "table_bootstrap": true,
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_factor16_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "factor",
+    "table_bootstrap": true,
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  },
+  {
+    "name": "iid_oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_subset4_lr0.001",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_subset16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "iid_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid"
+  },
+  {
+    "name": "fulltable_activation4_lr0.001",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": true,
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_activation16_lr0.001",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": true,
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  },
+  {
+    "name": "fulltable_factor4_lr0.001",
+    "kind": "full_table",
+    "table_mode": "factor",
+    "table_bootstrap": true,
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_factor16_lr0.001",
+    "kind": "full_table",
+    "table_mode": "factor",
+    "table_bootstrap": true,
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  },
+  {
+    "name": "fulltable_activation4_zeroinit_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": false,
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_activation16_zeroinit_lr0.0003",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": false,
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  },
+  {
+    "name": "fulltable_activation4_zeroinit_lr0.001",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": false,
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      4
+    ]
+  },
+  {
+    "name": "fulltable_activation16_zeroinit_lr0.001",
+    "kind": "full_table",
+    "table_mode": "activation",
+    "table_bootstrap": false,
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "dataset_sampling": "iid",
+    "graph_capture_batch_sizes": [
+      16
+    ]
+  }
+]

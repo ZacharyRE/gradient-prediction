@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "epoch": 1792115227.015129,
+  "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+  "decision_sha256": "24722e9bb9496ed69404c0ca269e081425d9d70544d88d0e3060c518288fe45f",
+  "gradient_predictor_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli_predictor_globalfit_p123/best.pt": "b27b0083056bc34fb34faf40b9cf5a24ba0574e0dd032602c461eb23caf3220d",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": "0398d160f6568dc8e4d085a7ecce3b74ad0426571775f97252ccdcf2d02bc928"
+  },
+  "readout_coverage": {
+    "selection_dev": {
+      "generated_entries": 435,
+      "behavior_entries": 435,
+      "examples": 1026
+    },
+    "selection_holdout": {
+      "generated_entries": 435,
+      "behavior_entries": 435,
+      "examples": 2049
+    }
+  },
+  "timing_references": 60,
+  "primary_timing_references": 48,
+  "supplemental_timing_references": 12,
+  "supplement_registered_after_quality_readouts": true,
+  "timing_repetitions": 3,
+  "flop_profiles": 20,
+  "workflow_conditions": 6,
+  "workflow_repetitions": 3,
+  "evidence_sha256": {
+    "configs/surrogate_final_recipe_plan.json": "90bf803c9182156f4d6e7541f02891713ef18f87bad80123917b17d3a4109312",
+    "configs/surrogate_final_freeze.json": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+    "configs/surrogate_selection_decisions.json": "24722e9bb9496ed69404c0ca269e081425d9d70544d88d0e3060c518288fe45f",
+    "results/selected_predictor_architectures.json": "e63bc5cd4674ca1bbc17589e5133e69218e97a043849e6588a4a2f3483c90cab",
+    "results/eval/surrogate_final_selection_dev/protocol.json": "ecccc7048b0fc5d29a1998b302438bc725607a8c9506e98c146bb5058cc1a630",
+    "results/eval/surrogate_final_selection_dev/summary.json": "b06c296d3bd361cc20e30d237da14f1f90657f3bc5d4973bc669c49a6a017e2b",
+    "results/behavior/surrogate_final_behavior_selection_dev/complete.json": "de678b0333c92f5ef4048166e31d9df59c50a087a1deacc4cd6bdfc271aab001",
+    "results/behavior/surrogate_final_behavior_selection_dev/summary.json": "24da0b315187abdaaed50b7ea0b8a64a06160cc6cb99c40d59d128f3abcd5141",
+    "results/behavior/surrogate_final_behavior_selection_dev/protocol.json": "ca1e4e43ab44b3ddccc18b4c06a1cac24c0f05085f7d188fb66dedb06a1dcf5f",
+    "results/eval/surrogate_final_selection_holdout/protocol.json": "9d88df7090f8387b3fc9a6f25848784ddb1cb67e854615baae44db26d30ce9fd",
+    "results/eval/surrogate_final_selection_holdout/summary.json": "aa355c6214455235da2c65d5d5bb2aaa7d245fd65606b883451502fb80e803da",
+    "results/behavior/surrogate_final_behavior_selection_holdout/complete.json": "9301b8f77a1b4f2fefba2a3cbac58fecec109906f585a5fb252e548aaf7812b2",
+    "results/behavior/surrogate_final_behavior_selection_holdout/summary.json": "b8edbfcf1f74fb1d1baea4b508325a6bb93b05c4a6c7e86b3affa553ed5c6303",
+    "results/behavior/surrogate_final_behavior_selection_holdout/protocol.json": "926e012aaa75482c5dc41861d65753b7786497da7d304d5cd9d701f3a9c4746a",
+    "results/final_selection_analysis.json": "7b1fd2d4d0b7f5fbffb4a34f8d941039714b282c748bf7fdfd2f00e2f1f40140",
+    "results/frozen_correctness_audit.json": "4a7e3adebc0c60a3a62ba014998e1ba0a970e583feef4d80ed061553e6a62acc",
+    "results/surrogate_analysis_reproduction_audit.json": "43c929dc87f79e8caeaa05104b2ba269d5182341281937df269befa0b95f3382",
+    "results/final_behavior_fidelity.json": "4869fc699c374b091684755e51f1fd59bfe2fff9b9d6b3df3aa305594f7288b8",
+    "results/split_integrity_audit.json": "3cda241c3d1ef37ad7e10bd520e3b6ed26c3e42378b414533305530d49d51387",
+    "results/generated_records_audit.json": "6f6a9b8b15ea54de24b6e48471e32f4e34f8e0ecf4d4db20a29c000fa6f2aebc",
+    "results/surrogate_timing_queue_receipt.json": "778f5fe4f653bf3b20d6f0d2c321a12d3e7c809a924fda86a1ee772d07728189",
+    "configs/surrogate_supplemental_timing_plan.json": "3452d8133ba0ecefb99181fc7b5623bd6cc667633b5a549d41c1616d735446bb",
+    "results/standalone_reuse_timing_summary.json": "60883cb92c6e731b8410107e28276841315c39303cc2a74eb521efdb956be0e4",
+    "results/selection_pipeline_summary.json": "e9e902d7f11e196dd2fdf591433600e9333b8e9836987120f7f9d9e294c43646",
+    "configs/surrogate_cost_policy.json": "e383effe4c44a00dd5a55753082f85f9848f3414b19f27876f3a42e6a907edcc",
+    "results/surrogate_cost_comparison.json": "312a9b20f621114f68603efd0374111cb52cb67aa285f98ba6250d25f2d28fb0"
+  },
+  "scope": "Registered experiment coverage, artifact identities, full-input protocols, separate dev/holdout decisions, statistical reproduction, qualified timing and actual workflow receipts. The timing-only supplement covers all previously omitted frozen fullpool conditions and was registered after quality readouts. This is not by itself scientific proof of superiority, a publication audit, or a resource cleanup receipt."
+}

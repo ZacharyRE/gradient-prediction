@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "best_epoch": 1,
+  "best_centered_cv_ratio": 1.180754080414772,
+  "selection_metric": "centered_cv_ratio",
+  "best_selection_score": 1.180754080414772,
+  "seconds": 230.82971930503845,
+  "mean_normalization_preparation_seconds": 0.0,
+  "optimizer_steps": 7800,
+  "best_sha256": "6f366b84b4dc77a0cc8635b19ae7b2d541b572dfa790f3c52d6e0a88eab3e41e",
+  "value_and_gradient_supervision": {
+    "name": "copied2_distill",
+    "kind": "copied_suffix",
+    "source_layers": [
+      18,
+      27
+    ],
+    "epochs": 15,
+    "lr": 3e-05,
+    "micro": 8,
+    "token_budget": 2048,
+    "gradient_weight": 0,
+    "value_weight": 0,
+    "distillation_weight": 1
+  },
+  "collection_cost_seconds": 43.25088133011013,
+  "teacher_trajectory_cost_additional": true
+}

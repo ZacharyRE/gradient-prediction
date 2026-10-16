@@ -1,0 +1,261 @@
+[
+  {
+    "name": "oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "oracle32_lr0.003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset16_lr0.003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv16_lr0.003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.003,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset4_lr0.001",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "factor128_cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_cv8_lr0.001",
+    "kind": "cv",
+    "k": 8,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "factor128_cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "class_cov4_lr0.001",
+    "kind": "class_cov",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "stratified4_lr0.001",
+    "kind": "stratified",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "stratified16_lr0.001",
+    "kind": "stratified",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  }
+]

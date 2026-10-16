@@ -1,0 +1,81 @@
+{
+  "finished": true,
+  "epoch": 1792115153.3028865,
+  "executed": [
+    {
+      "stage": "needed_subset16_s128",
+      "returncode": 0,
+      "started": 1792113028.1191108,
+      "finished": 1792113052.2574565
+    },
+    {
+      "stage": "needed_subset16_s256",
+      "returncode": 0,
+      "started": 1792113052.2579403,
+      "finished": 1792113081.573092
+    },
+    {
+      "stage": "needed_cv16_s256",
+      "returncode": 0,
+      "started": 1792113081.5741205,
+      "finished": 1792113138.526104
+    },
+    {
+      "stage": "needed_class_cov4_s256",
+      "returncode": 0,
+      "started": 1792113138.5275013,
+      "finished": 1792113165.9232478
+    },
+    {
+      "stage": "needed_class_cov16_s256",
+      "returncode": 0,
+      "started": 1792113165.9237945,
+      "finished": 1792113195.2384064
+    },
+    {
+      "stage": "eval_optional_completed_6f069d8684d16654",
+      "returncode": 0,
+      "started": 1792113195.3601215,
+      "finished": 1792113231.770705
+    },
+    {
+      "stage": "pilot_class_batched",
+      "returncode": 0,
+      "started": 1792113231.7722547,
+      "finished": 1792113325.7308607
+    },
+    {
+      "stage": "eval_optional_completed_c03388bc2640a1b9",
+      "returncode": 0,
+      "started": 1792113325.854151,
+      "finished": 1792113369.6820178
+    },
+    {
+      "stage": "pilot_token",
+      "returncode": 0,
+      "started": 1792113369.683707,
+      "finished": 1792113818.1555383
+    },
+    {
+      "stage": "eval_optional_completed_4a0ee321ea64c63e",
+      "returncode": 0,
+      "started": 1792113818.3244553,
+      "finished": 1792113976.9349034
+    },
+    {
+      "stage": "pilot_table",
+      "returncode": 1,
+      "started": 1792113976.936661,
+      "finished": 1792114999.5173066
+    },
+    {
+      "stage": "eval_optional_completed_b79bd7ef0b9c2bdd",
+      "returncode": 0,
+      "started": 1792114999.68664,
+      "finished": 1792115153.1711023
+    }
+  ],
+  "all_registered_recipes_completed": false,
+  "all_completed_recipes_scored": true,
+  "scope": "Unchanged registered development controls; short controls precede long memory-table grids. Fully completed recipes are scored by phase. Partial/unexecuted recipes are not measured failures."
+}

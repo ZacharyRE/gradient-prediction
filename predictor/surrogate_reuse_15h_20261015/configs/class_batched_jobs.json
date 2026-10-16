@@ -1,0 +1,62 @@
+[
+  {
+    "name": "class_batched4_lr0.0003",
+    "kind": "class_cov",
+    "class_cov_reduction": "per_example",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "class_batched4_lr0.001",
+    "kind": "class_cov",
+    "class_cov_reduction": "per_example",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "class_batched16_lr0.0003",
+    "kind": "class_cov",
+    "class_cov_reduction": "per_example",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "class_batched16_lr0.001",
+    "kind": "class_cov",
+    "class_cov_reduction": "per_example",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  }
+]

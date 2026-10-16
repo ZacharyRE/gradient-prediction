@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "seconds": 2.6217106010299176,
+  "mean_centered_cv_ratio": 0.9800391346216202,
+  "states": {
+    "w201_step0": {
+      "centered_cv_ratio": 0.9722849130630493,
+      "centered_correlation": 0.18035559356212616,
+      "relative_l2": 0.9859668016433716
+    },
+    "w201_step32": {
+      "centered_cv_ratio": 0.9785197377204895,
+      "centered_correlation": 0.14997074007987976,
+      "relative_l2": 0.9893257021903992
+    },
+    "w201_step128": {
+      "centered_cv_ratio": 0.9822777509689331,
+      "centered_correlation": 0.1331254094839096,
+      "relative_l2": 0.9912710785865784
+    },
+    "w201_step256": {
+      "centered_cv_ratio": 0.9897025227546692,
+      "centered_correlation": 0.10223572701215744,
+      "relative_l2": 0.9949313998222351
+    },
+    "w301_step0": {
+      "centered_cv_ratio": 0.9792451858520508,
+      "centered_correlation": 0.1453070193529129,
+      "relative_l2": 0.9895767569541931
+    },
+    "w301_step32": {
+      "centered_cv_ratio": 0.9675756692886353,
+      "centered_correlation": 0.1815321445465088,
+      "relative_l2": 0.9834994673728943
+    },
+    "w301_step128": {
+      "centered_cv_ratio": 0.9848669171333313,
+      "centered_correlation": 0.12510626018047333,
+      "relative_l2": 0.9925126433372498
+    },
+    "w301_step256": {
+      "centered_cv_ratio": 0.985840380191803,
+      "centered_correlation": 0.12215748429298401,
+      "relative_l2": 0.9931648373603821
+    }
+  },
+  "answer_position_activation_gradient_energy_fraction": {
+    "w201_step0": 0.148664828279064,
+    "w201_step32": 0.16384174407937346,
+    "w201_step128": 0.1873418844323044,
+    "w201_step256": 0.14227438263703007,
+    "w301_step0": 0.16953276558879155,
+    "w301_step32": 0.16192520036532268,
+    "w301_step128": 0.1340483771097007,
+    "w301_step256": 0.15699949586923184
+  },
+  "training_label_collection_seconds": 31.21414867695421,
+  "teacher_trajectory_cost_required": true,
+  "evaluation_gradient_data_not_used_to_fit_templates": true,
+  "best_sha256": "52c7ac7f4b66994598a83575715d134c8c59cca20e950afa8a4fa06da5ea2533"
+}

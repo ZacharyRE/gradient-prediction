@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "epoch": 1792111611.041773,
+  "first32_checks": [
+    {
+      "warmup_seed": 301,
+      "predictor": "diversity2048",
+      "first32_weights_exact": true,
+      "sha256": "5d049022d2aefe0a471a616e994475749b4af88e6ecc8889318122c6a27e748f"
+    },
+    {
+      "warmup_seed": 301,
+      "predictor": "diversity512_control",
+      "first32_weights_exact": true,
+      "sha256": "e8fb549284dd8c5d54e5a68032e1e90c54c94f3f77cddc3b9f19d175064f48ca"
+    },
+    {
+      "warmup_seed": 301,
+      "predictor": "capacity512",
+      "first32_weights_exact": true,
+      "sha256": "a574cf18ef85a4b0bd70a7be1ac32374adf0f7e0360da97529c6f38e6e2abb46"
+    },
+    {
+      "warmup_seed": 311,
+      "predictor": "diversity2048",
+      "first32_weights_exact": true,
+      "sha256": "72cacd6d7cafd1cc0c9fddf42a17ad58a295108c8faa9da12f2888cf0d25c917"
+    },
+    {
+      "warmup_seed": 311,
+      "predictor": "diversity512_control",
+      "first32_weights_exact": true,
+      "sha256": "f0e472389e17db033bd70cc2747d3342b463078e2b4bc34197e9b10f32ff9b21"
+    },
+    {
+      "warmup_seed": 311,
+      "predictor": "capacity512",
+      "first32_weights_exact": true,
+      "sha256": "acff631eb6270078665071e9273fc0f6971c5e39741fafa38eeed902b172e534"
+    },
+    {
+      "warmup_seed": 321,
+      "predictor": "diversity2048",
+      "first32_weights_exact": true,
+      "sha256": "ccfb2edb12f5e5515f0a9b40842711abeb924ed0ac1acb1f659821610fc87914"
+    },
+    {
+      "warmup_seed": 321,
+      "predictor": "diversity512_control",
+      "first32_weights_exact": true,
+      "sha256": "0db3d28f1f0a7c5b6dbb7762c97f4562760bfc4a672c871398608e0693b7c826"
+    },
+    {
+      "warmup_seed": 321,
+      "predictor": "capacity512",
+      "first32_weights_exact": true,
+      "sha256": "e1bdf71119d367c4b9bb91770f9dbaf4eed45d1bfcf04c96eb719c25747e10b9"
+    }
+  ],
+  "training_configs": [
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_diversity2048_cv16_lr0.001_u401_diversity2048/config.json",
+      "config_sha256": "ade393d108f957308c75da33fb72062a17a3ff4f4371c4962db4de710f77080d",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_diversity2048_cv16_until32_lr0.001_u401_diversity2048/config.json",
+      "config_sha256": "871c92884f2b54db6ce8f0b462e33c3f2b09db923f89dae56cf0472070900cef",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_diversity512_control_cv16_lr0.001_u401_diversity2048/config.json",
+      "config_sha256": "b0f5ea7b016b5079a4773d16a2ae5d1d9920c6337dbe34fa908f3c93e15bedcb",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_diversity512_control_cv16_until32_lr0.001_u401_diversity2048/config.json",
+      "config_sha256": "bbdc259d77dcc522a6cce4db14f0a7b0fa61855e2dc9b0f44fc10f31283e557c",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_capacity512_cv16_lr0.001_u401_capacity512/config.json",
+      "config_sha256": "0d4fbd271f7153084d161517a42a71183fd18059dc73a21d426355ec9b70217b",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_capacity512_cv16_until32_lr0.001_u401_capacity512/config.json",
+      "config_sha256": "226f34d7cdec1888692605b4e030a7b0927688981fab490b2bbbfffd7141e2e0",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_diversity2048_cv16_lr0.001_u411_diversity2048/config.json",
+      "config_sha256": "90791b0b11c0542929b880ff03bdea04d9d2e397be207ec970931f63252d36d0",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_diversity2048_cv16_until32_lr0.001_u411_diversity2048/config.json",
+      "config_sha256": "a99ea8df19e45a2741058570288261ce3800e7a1c5d273ef707d89dcf99c2c3b",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_diversity512_control_cv16_lr0.001_u411_diversity2048/config.json",
+      "config_sha256": "966034eb3cddb08e40dac436931c83c014dc10d5642c2e0c534a5069c405e17b",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_diversity512_control_cv16_until32_lr0.001_u411_diversity2048/config.json",
+      "config_sha256": "bbe91e99b38e8ea2da5404d92e99a0a6212a9d7599bcea2005ee175f3087a59c",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_capacity512_cv16_lr0.001_u411_capacity512/config.json",
+      "config_sha256": "8f552f62be36bf1335788ff15f16ca8b9471fc707399a9bd157c7de335365b0c",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w311_update_capacity512_cv16_until32_lr0.001_u411_capacity512/config.json",
+      "config_sha256": "6fd9bcfb40da0defc1ac76e7be4a1dcea9f59c6eca7dfdbafd154bdf921fdbbf",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_diversity2048_cv16_lr0.001_u421_diversity2048/config.json",
+      "config_sha256": "edf9d79a822e267c722b2ed2cf5932a773009e3c0befe0899f173d26abe00a5f",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_diversity2048_cv16_until32_lr0.001_u421_diversity2048/config.json",
+      "config_sha256": "b96cbbdec2b6a89fab8b5d92c1f5147cf2fd1f087b38a1c528e1ffde377b1b9a",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_diversity512_control_cv16_lr0.001_u421_diversity2048/config.json",
+      "config_sha256": "db7bc4c9401c94714ace6356ba71de4142d16f9ff6e435f5e8138d59099287bc",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_diversity512_control_cv16_until32_lr0.001_u421_diversity2048/config.json",
+      "config_sha256": "ee54390345e9962c8c72142dde61aaceae5b6d5bde100e1908bd057d2e90ea52",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_capacity512_cv16_lr0.001_u421_capacity512/config.json",
+      "config_sha256": "aba67b8b94a9a189ca5a8e1a2edeae8a34b1185662ddffa7c5f1c0c87eeb3c97",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    },
+    {
+      "config": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w321_update_capacity512_cv16_until32_lr0.001_u421_capacity512/config.json",
+      "config_sha256": "7aa643280fd7816001302f6e86dbc77893ac9294e79737db9024bf773b182ee3",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65"
+    }
+  ],
+  "scope": "Nine paired fullCV16/early32 trajectories have exactly identical first32 checkpoints. Predictor identities and paired start/update seeds match the registered inputs. This is an artifact-identity check, not evidence of downstream superiority."
+}

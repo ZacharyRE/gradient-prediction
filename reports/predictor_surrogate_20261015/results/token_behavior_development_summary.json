@@ -1,0 +1,714 @@
+{
+  "complete": true,
+  "plan_sha256": "8aaacff31785be4385c9be49b623b228890bb407076dc5993a00bb74ee4f224a",
+  "predictor_freeze_sha256": "c6b3e0df23c4847406f5661eba62d21cabeef2a0eee0df598023b079c6b86c4b",
+  "input_audit_sha256": "f918912f5353483c99b5007f4cb3755dbce53818fcb7ce51830e984df8a9e9ca",
+  "rows": [
+    {
+      "model": "token_kd128",
+      "steps": 0,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 44.639376218323584,
+          "teacher_accuracy_pct": 74.07407407407408,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 39.57115009746588,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -60.42884990253411,
+          "readout_seconds": 0.2555392165668309,
+          "teacher_seconds": 0.653844642220065
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 41.91033138401559,
+          "teacher_accuracy_pct": 76.41325536062378,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 40.93567251461988,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -59.06432748538012,
+          "readout_seconds": 0.08901898632757366,
+          "teacher_seconds": 0.6529077214654535
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 41.52046783625731,
+          "teacher_accuracy_pct": 76.0233918128655,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 40.5458089668616,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -59.4541910331384,
+          "readout_seconds": 0.08896522060967982,
+          "teacher_seconds": 0.6537840177770704
+        }
+      ],
+      "accuracy_pct": 42.69005847953216,
+      "teacher_accuracy_pct": 75.5035737491878,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 40.35087719298245,
+      "initial_teacher_agreement_pct": 100.0,
+      "agreement_delta_pp": -59.64912280701754,
+      "readout_seconds": 0.14450780783469477,
+      "teacher_seconds": 0.6535121271541963
+    },
+    {
+      "model": "token_kd128",
+      "steps": 32,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 43.66471734892787,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 40.35087719298245,
+          "initial_teacher_agreement_pct": 88.69395711500975,
+          "agreement_delta_pp": -48.343079922027286,
+          "readout_seconds": 0.08925905008800328,
+          "teacher_seconds": 0.6533559465315193
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 42.69005847953216,
+          "teacher_accuracy_pct": 77.58284600389864,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 32.748538011695906,
+          "initial_teacher_agreement_pct": 83.82066276803118,
+          "agreement_delta_pp": -51.07212475633528,
+          "readout_seconds": 0.08915383485145867,
+          "teacher_seconds": 0.6533515336923301
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 40.93567251461988,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 41.52046783625731,
+          "initial_teacher_agreement_pct": 90.05847953216374,
+          "agreement_delta_pp": -48.53801169590643,
+          "readout_seconds": 0.08950916933827102,
+          "teacher_seconds": 0.6558293497655541
+        }
+      ],
+      "accuracy_pct": 42.4301494476933,
+      "teacher_accuracy_pct": 78.88239116309292,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 38.20662768031189,
+      "initial_teacher_agreement_pct": 87.5243664717349,
+      "agreement_delta_pp": -49.31773879142299,
+      "readout_seconds": 0.089307351425911,
+      "teacher_seconds": 0.6541789433298012
+    },
+    {
+      "model": "token_kd128",
+      "steps": 128,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 44.834307992202724,
+          "teacher_accuracy_pct": 82.06627680311891,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 42.10526315789473,
+          "initial_teacher_agreement_pct": 84.40545808966861,
+          "agreement_delta_pp": -42.30019493177387,
+          "readout_seconds": 0.08995673293247819,
+          "teacher_seconds": 0.6532746166922152
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 42.8849902534113,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 39.76608187134503,
+          "initial_teacher_agreement_pct": 85.96491228070175,
+          "agreement_delta_pp": -46.198830409356724,
+          "readout_seconds": 0.09382912213914096,
+          "teacher_seconds": 0.654006430413574
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 41.71539961013645,
+          "teacher_accuracy_pct": 79.92202729044834,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 46.783625730994146,
+          "initial_teacher_agreement_pct": 85.57504873294347,
+          "agreement_delta_pp": -38.79142300194932,
+          "readout_seconds": 0.08945138263516128,
+          "teacher_seconds": 0.6536873129662126
+        }
+      ],
+      "accuracy_pct": 43.144899285250155,
+      "teacher_accuracy_pct": 82.19623131903833,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 42.8849902534113,
+      "initial_teacher_agreement_pct": 85.31513970110461,
+      "agreement_delta_pp": -42.4301494476933,
+      "readout_seconds": 0.09107907923559348,
+      "teacher_seconds": 0.6536561200240006
+    },
+    {
+      "model": "token_kd128",
+      "steps": 256,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 42.10526315789473,
+          "teacher_accuracy_pct": 83.82066276803118,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 42.69005847953216,
+          "initial_teacher_agreement_pct": 81.48148148148148,
+          "agreement_delta_pp": -38.79142300194932,
+          "readout_seconds": 0.09043078334070742,
+          "teacher_seconds": 0.6547582324128598
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 41.13060428849902,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 39.76608187134503,
+          "initial_teacher_agreement_pct": 84.7953216374269,
+          "agreement_delta_pp": -45.02923976608187,
+          "readout_seconds": 0.09352880204096437,
+          "teacher_seconds": 0.6552965159062296
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 41.13060428849902,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 41.32553606237816,
+          "initial_teacher_agreement_pct": 83.04093567251462,
+          "agreement_delta_pp": -41.71539961013645,
+          "readout_seconds": 0.09053674899041653,
+          "teacher_seconds": 0.6546708073001355
+        }
+      ],
+      "accuracy_pct": 41.45549057829759,
+      "teacher_accuracy_pct": 84.14554905782975,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 41.26055880441845,
+      "initial_teacher_agreement_pct": 83.10591293047433,
+      "agreement_delta_pp": -41.845354126055874,
+      "readout_seconds": 0.09149877812402944,
+      "teacher_seconds": 0.6549085185397416
+    },
+    {
+      "model": "token_kd128",
+      "steps": 512,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 42.8849902534113,
+          "teacher_accuracy_pct": 84.40545808966861,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 38.20662768031189,
+          "initial_teacher_agreement_pct": 82.06627680311891,
+          "agreement_delta_pp": -43.859649122807014,
+          "readout_seconds": 0.0896066336426884,
+          "teacher_seconds": 0.6539452471770346
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 42.49512670565302,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 36.45224171539961,
+          "initial_teacher_agreement_pct": 83.62573099415205,
+          "agreement_delta_pp": -47.173489278752434,
+          "readout_seconds": 0.09147259336896241,
+          "teacher_seconds": 0.6552435124758631
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 41.32553606237816,
+          "teacher_accuracy_pct": 81.67641325536063,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 40.93567251461988,
+          "initial_teacher_agreement_pct": 81.28654970760235,
+          "agreement_delta_pp": -40.35087719298245,
+          "readout_seconds": 0.09067631722427905,
+          "teacher_seconds": 0.6531188315711915
+        }
+      ],
+      "accuracy_pct": 42.23521767381416,
+      "teacher_accuracy_pct": 83.36582196231319,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 38.53151397011046,
+      "initial_teacher_agreement_pct": 82.32618583495777,
+      "agreement_delta_pp": -43.794671864847295,
+      "readout_seconds": 0.09058518141197662,
+      "teacher_seconds": 0.6541025304080298
+    },
+    {
+      "model": "token_kd128_nograd",
+      "steps": 0,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 44.44444444444444,
+          "teacher_accuracy_pct": 74.07407407407408,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 50.682261208576996,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -49.317738791423,
+          "readout_seconds": 0.13676556781865656,
+          "teacher_seconds": 0.653844642220065
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 46.393762183235864,
+          "teacher_accuracy_pct": 76.41325536062378,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 48.732943469785575,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -51.267056530214425,
+          "readout_seconds": 0.08725516148842871,
+          "teacher_seconds": 0.6529077214654535
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 45.808966861598435,
+          "teacher_accuracy_pct": 76.0233918128655,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 47.758284600389864,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -52.241715399610136,
+          "readout_seconds": 0.08695278456434608,
+          "teacher_seconds": 0.6537840177770704
+        }
+      ],
+      "accuracy_pct": 45.54905782975958,
+      "teacher_accuracy_pct": 75.5035737491878,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 49.057829759584145,
+      "initial_teacher_agreement_pct": 100.0,
+      "agreement_delta_pp": -50.942170240415855,
+      "readout_seconds": 0.10365783795714378,
+      "teacher_seconds": 0.6535121271541963
+    },
+    {
+      "model": "token_kd128_nograd",
+      "steps": 32,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 45.22417153996101,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 49.122807017543856,
+          "initial_teacher_agreement_pct": 88.69395711500975,
+          "agreement_delta_pp": -39.57115009746588,
+          "readout_seconds": 0.087296346668154,
+          "teacher_seconds": 0.6533559465315193
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 45.22417153996101,
+          "teacher_accuracy_pct": 77.58284600389864,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 45.808966861598435,
+          "initial_teacher_agreement_pct": 83.82066276803118,
+          "agreement_delta_pp": -38.01169590643275,
+          "readout_seconds": 0.0873283944092691,
+          "teacher_seconds": 0.6533515336923301
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 49.122807017543856,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 46.783625730994146,
+          "initial_teacher_agreement_pct": 90.05847953216374,
+          "agreement_delta_pp": -43.27485380116959,
+          "readout_seconds": 0.08758594607934356,
+          "teacher_seconds": 0.6558293497655541
+        }
+      ],
+      "accuracy_pct": 46.523716699155294,
+      "teacher_accuracy_pct": 78.88239116309292,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 47.238466536712146,
+      "initial_teacher_agreement_pct": 87.5243664717349,
+      "agreement_delta_pp": -40.28589993502274,
+      "readout_seconds": 0.08740356238558888,
+      "teacher_seconds": 0.6541789433298012
+    },
+    {
+      "model": "token_kd128_nograd",
+      "steps": 128,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 45.02923976608187,
+          "teacher_accuracy_pct": 82.06627680311891,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 46.00389863547758,
+          "initial_teacher_agreement_pct": 84.40545808966861,
+          "agreement_delta_pp": -38.40155945419103,
+          "readout_seconds": 0.08777672541327775,
+          "teacher_seconds": 0.6532746166922152
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 44.834307992202724,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 43.66471734892787,
+          "initial_teacher_agreement_pct": 85.96491228070175,
+          "agreement_delta_pp": -42.30019493177387,
+          "readout_seconds": 0.0920761963352561,
+          "teacher_seconds": 0.654006430413574
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 46.198830409356724,
+          "teacher_accuracy_pct": 79.92202729044834,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 43.27485380116959,
+          "initial_teacher_agreement_pct": 85.57504873294347,
+          "agreement_delta_pp": -42.30019493177387,
+          "readout_seconds": 0.08746514632366598,
+          "teacher_seconds": 0.6536873129662126
+        }
+      ],
+      "accuracy_pct": 45.35412605588044,
+      "teacher_accuracy_pct": 82.19623131903833,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 44.31448992852501,
+      "initial_teacher_agreement_pct": 85.31513970110461,
+      "agreement_delta_pp": -41.00064977257959,
+      "readout_seconds": 0.08910602269073327,
+      "teacher_seconds": 0.6536561200240006
+    },
+    {
+      "model": "token_kd128_nograd",
+      "steps": 256,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 46.588693957115005,
+          "teacher_accuracy_pct": 83.82066276803118,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 45.419103313840154,
+          "initial_teacher_agreement_pct": 81.48148148148148,
+          "agreement_delta_pp": -36.06237816764132,
+          "readout_seconds": 0.08816100237891078,
+          "teacher_seconds": 0.6547582324128598
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 40.74074074074074,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 41.52046783625731,
+          "initial_teacher_agreement_pct": 84.7953216374269,
+          "agreement_delta_pp": -43.27485380116959,
+          "readout_seconds": 0.09133503213524818,
+          "teacher_seconds": 0.6552965159062296
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 48.148148148148145,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 47.953216374269005,
+          "initial_teacher_agreement_pct": 83.04093567251462,
+          "agreement_delta_pp": -35.08771929824561,
+          "readout_seconds": 0.08849179046228528,
+          "teacher_seconds": 0.6546708073001355
+        }
+      ],
+      "accuracy_pct": 45.159194282001295,
+      "teacher_accuracy_pct": 84.14554905782975,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 44.964262508122154,
+      "initial_teacher_agreement_pct": 83.10591293047433,
+      "agreement_delta_pp": -38.14165042235217,
+      "readout_seconds": 0.08932927499214809,
+      "teacher_seconds": 0.6549085185397416
+    },
+    {
+      "model": "token_kd128_nograd",
+      "steps": 512,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 45.614035087719294,
+          "teacher_accuracy_pct": 84.40545808966861,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 46.588693957115005,
+          "initial_teacher_agreement_pct": 82.06627680311891,
+          "agreement_delta_pp": -35.4775828460039,
+          "readout_seconds": 0.08772972458973527,
+          "teacher_seconds": 0.6539452471770346
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 44.2495126705653,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 38.59649122807017,
+          "initial_teacher_agreement_pct": 83.62573099415205,
+          "agreement_delta_pp": -45.02923976608187,
+          "readout_seconds": 0.08926711673848331,
+          "teacher_seconds": 0.6552435124758631
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 47.563352826510716,
+          "teacher_accuracy_pct": 81.67641325536063,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 49.512670565302145,
+          "initial_teacher_agreement_pct": 81.28654970760235,
+          "agreement_delta_pp": -31.773879142300192,
+          "readout_seconds": 0.08851027698256075,
+          "teacher_seconds": 0.6531188315711915
+        }
+      ],
+      "accuracy_pct": 45.808966861598435,
+      "teacher_accuracy_pct": 83.36582196231319,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 44.89928525016244,
+      "initial_teacher_agreement_pct": 82.32618583495777,
+      "agreement_delta_pp": -37.42690058479532,
+      "readout_seconds": 0.08850237277025978,
+      "teacher_seconds": 0.6541025304080298
+    },
+    {
+      "model": "token_kd256",
+      "steps": 0,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 53.80116959064327,
+          "teacher_accuracy_pct": 74.07407407407408,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 55.945419103313846,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -44.054580896686154,
+          "readout_seconds": 0.13928958401083946,
+          "teacher_seconds": 0.653844642220065
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 52.241715399610136,
+          "teacher_accuracy_pct": 76.41325536062378,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 53.41130604288499,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -46.588693957115005,
+          "readout_seconds": 0.08775010844692588,
+          "teacher_seconds": 0.6529077214654535
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 53.41130604288499,
+          "teacher_accuracy_pct": 76.0233918128655,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 54.19103313840156,
+          "initial_teacher_agreement_pct": 100.0,
+          "agreement_delta_pp": -45.808966861598435,
+          "readout_seconds": 0.08751931390725076,
+          "teacher_seconds": 0.6537840177770704
+        }
+      ],
+      "accuracy_pct": 53.15139701104613,
+      "teacher_accuracy_pct": 75.5035737491878,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 54.515919428200135,
+      "initial_teacher_agreement_pct": 100.0,
+      "agreement_delta_pp": -45.484080571799865,
+      "readout_seconds": 0.10485300212167203,
+      "teacher_seconds": 0.6535121271541963
+    },
+    {
+      "model": "token_kd256",
+      "steps": 32,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 53.216374269005854,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 53.021442495126706,
+          "initial_teacher_agreement_pct": 88.69395711500975,
+          "agreement_delta_pp": -35.67251461988304,
+          "readout_seconds": 0.0878786793909967,
+          "teacher_seconds": 0.6533559465315193
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 53.021442495126706,
+          "teacher_accuracy_pct": 77.58284600389864,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 53.99610136452242,
+          "initial_teacher_agreement_pct": 83.82066276803118,
+          "agreement_delta_pp": -29.82456140350877,
+          "readout_seconds": 0.08788676327094436,
+          "teacher_seconds": 0.6533515336923301
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 49.317738791423,
+          "teacher_accuracy_pct": 79.53216374269006,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 51.07212475633528,
+          "initial_teacher_agreement_pct": 90.05847953216374,
+          "agreement_delta_pp": -38.98635477582846,
+          "readout_seconds": 0.0879863197915256,
+          "teacher_seconds": 0.6558293497655541
+        }
+      ],
+      "accuracy_pct": 51.85185185185185,
+      "teacher_accuracy_pct": 78.88239116309292,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 52.696556205328136,
+      "initial_teacher_agreement_pct": 87.5243664717349,
+      "agreement_delta_pp": -34.82781026640676,
+      "readout_seconds": 0.08791725415115555,
+      "teacher_seconds": 0.6541789433298012
+    },
+    {
+      "model": "token_kd256",
+      "steps": 128,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 52.046783625730995,
+          "teacher_accuracy_pct": 82.06627680311891,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 54.19103313840156,
+          "initial_teacher_agreement_pct": 84.40545808966861,
+          "agreement_delta_pp": -30.214424951267056,
+          "readout_seconds": 0.08838740922510624,
+          "teacher_seconds": 0.6532746166922152
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 52.436647173489284,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 53.606237816764136,
+          "initial_teacher_agreement_pct": 85.96491228070175,
+          "agreement_delta_pp": -32.35867446393762,
+          "readout_seconds": 0.09233784163370728,
+          "teacher_seconds": 0.654006430413574
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 46.783625730994146,
+          "teacher_accuracy_pct": 79.92202729044834,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 52.046783625730995,
+          "initial_teacher_agreement_pct": 85.57504873294347,
+          "agreement_delta_pp": -33.528265107212476,
+          "readout_seconds": 0.08805989753454924,
+          "teacher_seconds": 0.6536873129662126
+        }
+      ],
+      "accuracy_pct": 50.422352176738144,
+      "teacher_accuracy_pct": 82.19623131903833,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 53.28135152696556,
+      "initial_teacher_agreement_pct": 85.31513970110461,
+      "agreement_delta_pp": -32.033788174139055,
+      "readout_seconds": 0.08959504946445425,
+      "teacher_seconds": 0.6536561200240006
+    },
+    {
+      "model": "token_kd256",
+      "steps": 256,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 45.02923976608187,
+          "teacher_accuracy_pct": 83.82066276803118,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 48.148148148148145,
+          "initial_teacher_agreement_pct": 81.48148148148148,
+          "agreement_delta_pp": -33.33333333333333,
+          "readout_seconds": 0.0886628357693553,
+          "teacher_seconds": 0.6547582324128598
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 49.122807017543856,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 49.122807017543856,
+          "initial_teacher_agreement_pct": 84.7953216374269,
+          "agreement_delta_pp": -35.67251461988304,
+          "readout_seconds": 0.09194344631396234,
+          "teacher_seconds": 0.6552965159062296
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 45.614035087719294,
+          "teacher_accuracy_pct": 84.60038986354775,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 47.173489278752434,
+          "initial_teacher_agreement_pct": 83.04093567251462,
+          "agreement_delta_pp": -35.86744639376218,
+          "readout_seconds": 0.0887652060482651,
+          "teacher_seconds": 0.6546708073001355
+        }
+      ],
+      "accuracy_pct": 46.588693957115005,
+      "teacher_accuracy_pct": 84.14554905782975,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 48.148148148148145,
+      "initial_teacher_agreement_pct": 83.10591293047433,
+      "agreement_delta_pp": -34.95776478232619,
+      "readout_seconds": 0.08979049604386091,
+      "teacher_seconds": 0.6549085185397416
+    },
+    {
+      "model": "token_kd256",
+      "steps": 512,
+      "per_start": [
+        {
+          "warmup_seed": 301,
+          "accuracy_pct": 43.66471734892787,
+          "teacher_accuracy_pct": 84.40545808966861,
+          "initial_accuracy_pct": 74.07407407407408,
+          "teacher_agreement_pct": 42.49512670565302,
+          "initial_teacher_agreement_pct": 82.06627680311891,
+          "agreement_delta_pp": -39.57115009746588,
+          "readout_seconds": 0.08813143707811832,
+          "teacher_seconds": 0.6539452471770346
+        },
+        {
+          "warmup_seed": 311,
+          "accuracy_pct": 49.317738791423,
+          "teacher_accuracy_pct": 84.01559454191033,
+          "initial_accuracy_pct": 76.41325536062378,
+          "teacher_agreement_pct": 47.563352826510716,
+          "initial_teacher_agreement_pct": 83.62573099415205,
+          "agreement_delta_pp": -36.06237816764132,
+          "readout_seconds": 0.08990355022251606,
+          "teacher_seconds": 0.6552435124758631
+        },
+        {
+          "warmup_seed": 321,
+          "accuracy_pct": 44.834307992202724,
+          "teacher_accuracy_pct": 81.67641325536063,
+          "initial_accuracy_pct": 76.0233918128655,
+          "teacher_agreement_pct": 46.198830409356724,
+          "initial_teacher_agreement_pct": 81.28654970760235,
+          "agreement_delta_pp": -35.08771929824561,
+          "readout_seconds": 0.08908107643947005,
+          "teacher_seconds": 0.6531188315711915
+        }
+      ],
+      "accuracy_pct": 45.938921377517865,
+      "teacher_accuracy_pct": 83.36582196231319,
+      "initial_accuracy_pct": 75.5035737491878,
+      "teacher_agreement_pct": 45.41910331384016,
+      "initial_teacher_agreement_pct": 82.32618583495777,
+      "agreement_delta_pp": -36.90708252111761,
+      "readout_seconds": 0.08903868791336815,
+      "teacher_seconds": 0.6541025304080298
+    }
+  ],
+  "scope": "Post-freeze development diagnostic only:15 existing warmup/Oracle states and513 development inputs. ForcedABC class behavior, not generation. Initial-teacher predictions are retained as a state-insensitive baseline. Readout times are single-process components; prefix preparation and offline fitting remain additional; first batch includes one-time causal/label-invariance checks."
+}

@@ -1,0 +1,27 @@
+{
+  "epoch": 1792085400.1522663,
+  "reason": "Necessary matched ablation of the state256 cutoff improvement: apply the identical32-update cutoff to the inherited predictor. Separate the stopping policy from expensive state-predictor construction; prefer the cheaper inherited model if quality is comparable.",
+  "job": {
+    "name": "original_cv16_until32_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_stop_step": 32
+  },
+  "starts": [
+    301,
+    311,
+    321
+  ],
+  "scope": "No new method family, fitting, labels, learning-rate grid or final outcomes. Three-start development comparison against existing originalCV16, stateCV16 cutoff and Oracle16.",
+  "offline_comparison": "Inherited predictor108.436s recorded preparation versusstate256468.980s, sourcewarmups additional."
+}

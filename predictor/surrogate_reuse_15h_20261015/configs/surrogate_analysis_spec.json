@@ -1,0 +1,242 @@
+{
+  "registered_epoch": 1792081758.8038223,
+  "heldout_warmups": [
+    302,
+    303,
+    304
+  ],
+  "oracle_reference": {
+    "method": "oracle32_lr0.0003",
+    "kind": "oracle",
+    "steps": 128,
+    "lr": 0.0003
+  },
+  "oracle_reference_by_population": {
+    "fullpool": {
+      "method": "oracle32_matched",
+      "kind": "oracle",
+      "steps": 256,
+      "lr": 0.001
+    }
+  },
+  "reference_selection": "Independent development Oracle grids, separate candidate1024 and full4097 populations. All three development starts required; fixed before selection readouts.",
+  "quality_target_percentage_points": 1,
+  "uncertainty": "Paired crossed start/premise-group bootstrap, conditional on frozen candidate choices; three starts, descriptive intervals and no automatic noninferiority claim.",
+  "primary_selection_target": "all",
+  "secondary_selection_targets": [
+    "fiction",
+    "government",
+    "slate",
+    "telephone",
+    "travel"
+  ],
+  "recipe_choice": "No final outcome may select a method, LR, stopping point, behavior model or success threshold.",
+  "notes": [
+    "Primary matched long-horizon arms and development-selected short/tuned arms are reported separately.",
+    "The chosen candidate is evaluated under the same population-specific Oracle reference for every selector.",
+    "Direct fullpool accuracy uses one4097-example pool per start. Candidate direct accuracy averages the five fixed candidates within each start.",
+    "Initial-agent/no-change choice ties all candidates and uses lexicographic order; it is not evaluated as a learned surrogate.",
+    "Positive acceleration requires actual time/quality evidence against shorter and independently tuned no-predictor controls, not just lower true-gradient counts.",
+    "Candidate0 was also used for development recipe selection; random candidates overlap the original update pool. Genre candidates are the separate group-disjoint training-data transfer condition. All final selection/readout groups remain independent."
+  ],
+  "method_label_note": "Fullpool Oracle32 LR.001/256 already exists in blind_matched_jobs under method label oracle32_matched; candidate tuned reference retains oracle32_lr0.0003.",
+  "direct_paired_controls": [
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "graph_cv8_lr0.001",
+        "steps": 512
+      },
+      "reference": {
+        "method": "graph_subset8_lr0.001",
+        "steps": 512
+      },
+      "purpose": "Matched true-gradient subset control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "graph_cv8_lr0.001",
+        "steps": 512
+      },
+      "reference": {
+        "method": "cv16_lr0.0003",
+        "steps": 512
+      },
+      "purpose": "Independently selected original CV16"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "graph_cv8_lr0.001",
+        "steps": 512
+      },
+      "reference": {
+        "method": "zero_every4_lr0.001",
+        "steps": 256
+      },
+      "purpose": "Cheap no-predictor control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "graph_cv8_lr0.001",
+        "steps": 512
+      },
+      "reference": {
+        "method": "graph_oracle32_lr0.0003",
+        "steps": 256
+      },
+      "purpose": "Higher-quality development graph Oracle control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "state256_cv16_until32_lr0.001",
+        "steps": 256
+      },
+      "reference": {
+        "method": "oracle16_matched",
+        "steps": 256
+      },
+      "purpose": "Matched true-gradient subset control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "state256_cv16_until32_lr0.001",
+        "steps": 256
+      },
+      "reference": {
+        "method": "cv16_matched",
+        "steps": 256
+      },
+      "purpose": "Original CV16 at the same horizon and LR"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "state256_cv16_until32_lr0.001",
+        "steps": 256
+      },
+      "reference": {
+        "method": "zero_every4_lr0.001",
+        "steps": 256
+      },
+      "purpose": "Cheap no-predictor control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "state256_cv16_until32_lr0.001",
+        "steps": 256
+      },
+      "reference": {
+        "method": "graph_oracle32_lr0.0003",
+        "steps": 256
+      },
+      "purpose": "Higher-quality development graph Oracle control"
+    },
+    {
+      "family": "fullpool",
+      "actual": {
+        "method": "cv16_lr0.0003",
+        "steps": 512
+      },
+      "reference": {
+        "method": "graph_oracle32_lr0.0003",
+        "steps": 256
+      },
+      "purpose": "Higher-quality development graph Oracle control"
+    },
+    {
+      "family": "random",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "oracle16_matched",
+        "steps": 128
+      },
+      "purpose": "Matched true-gradient subset control"
+    },
+    {
+      "family": "random",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "oracle32_matched",
+        "steps": 64
+      },
+      "purpose": "Short Oracle with the same number of true training-example gradients"
+    },
+    {
+      "family": "random",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "zero_every4_lr0.0003",
+        "steps": 256
+      },
+      "purpose": "Cheap no-predictor control"
+    },
+    {
+      "family": "genre",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "oracle16_matched",
+        "steps": 128
+      },
+      "purpose": "Matched true-gradient subset control"
+    },
+    {
+      "family": "genre",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "oracle32_matched",
+        "steps": 64
+      },
+      "purpose": "Short Oracle with the same number of true training-example gradients"
+    },
+    {
+      "family": "genre",
+      "actual": {
+        "method": "cv16_matched",
+        "steps": 128
+      },
+      "reference": {
+        "method": "zero_every4_lr0.0003",
+        "steps": 256
+      },
+      "purpose": "Cheap no-predictor control"
+    }
+  ],
+  "direct_paired_controls_registration": {
+    "epoch": 1792088463.9946039,
+    "before_selection_outcomes": true,
+    "scope": "Paired uncertainty for already declared matched/cheap controls, plus the stronger-quality graph Oracle. Native Oracle remains the primary practical reference; no predictor choice is changed."
+  },
+  "random_family_train_all_control": {
+    "method": "oracle32_matched",
+    "kind": "oracle",
+    "steps": 256,
+    "lr": 0.001,
+    "subset": "update"
+  },
+  "random_family_train_all_control_registration": {
+    "epoch": 1792089137.21242,
+    "before_selection_outcomes": true,
+    "scope": "Practical no-selection alternative using the already available original4097-example pool. More training examples than a1024-example candidate, explicitly not a fixed-data-size comparison. Uses existing frozen fullpool adapters; no extra recipe search. This control does not cover the union of the five new genre datasets."
+  }
+}

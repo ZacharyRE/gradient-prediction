@@ -1,0 +1,436 @@
+[
+  {
+    "name": "oracle32_lr0.0003",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset4_lr0.0003",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset8_lr0.0003",
+    "kind": "subset",
+    "k": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset16_lr0.0003",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv4_lr0.0003",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv16_lr0.0003",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "table4_boot0_ema_lr0.0003",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table4_boot1_ema_lr0.0003",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table8_boot0_ema_lr0.0003",
+    "kind": "table",
+    "k": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table8_boot1_ema_lr0.0003",
+    "kind": "table",
+    "k": 8,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table16_boot0_ema_lr0.0003",
+    "kind": "table",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table16_boot1_ema_lr0.0003",
+    "kind": "table",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "oracle32_lr0.001",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset4_lr0.001",
+    "kind": "subset",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset8_lr0.001",
+    "kind": "subset",
+    "k": 8,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "subset16_lr0.001",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv4_lr0.001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "cv16_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32
+  },
+  {
+    "name": "table4_boot0_ema_lr0.001",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table4_boot1_ema_lr0.001",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table8_boot0_ema_lr0.001",
+    "kind": "table",
+    "k": 8,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table8_boot1_ema_lr0.001",
+    "kind": "table",
+    "k": 8,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table16_boot0_ema_lr0.001",
+    "kind": "table",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": false,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table16_boot1_ema_lr0.001",
+    "kind": "table",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true,
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "flat_table4_boot0_ema_lr0.001",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_mode": "factor",
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "flat_table16_boot0_ema_lr0.001",
+    "kind": "table",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_mode": "factor",
+    "lambda_mode": "ema"
+  },
+  {
+    "name": "table4_boot1_fixed_lr0.001",
+    "kind": "table",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 1024,
+    "save": [
+      32,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "micro": 32,
+    "table_bootstrap": true
+  }
+]

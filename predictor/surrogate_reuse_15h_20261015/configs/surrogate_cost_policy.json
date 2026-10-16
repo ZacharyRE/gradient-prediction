@@ -1,0 +1,87 @@
+{
+  "registered_epoch": 1792083338.3063195,
+  "time_units": "seconds",
+  "direct_training": {
+    "ready_predictor": "Prefix-cache construction, predictor loading, any bootstrap/capture/calibration, and updates through the frozen stop. Use exact-weight qualified standalone repeats for final speed claims; historical rollout components remain separately labeled.",
+    "standalone": "Fresh-process imports, model/data/predictor loading, preparation, updates and final save; common target warmup and offline predictor construction are separate. Require3 distinct repeats, exclude profiler-instrumented time.",
+    "offline": "Union of recorded preparation component dependencies, including source teacher trajectories and source warmups; do not sum shared dependencies twice. Historical sums are not measured cold-start pipelines or minimum achievable costs."
+  },
+  "data_selection": {
+    "candidates": 5,
+    "families": "Random and genre reported separately, one target warmup per pipeline.",
+    "oracle_exhaustive": "Adapt all5 reference-Oracle candidates and score all5 on selection_dev. Reuse the chosen already-trained Oracle adapter; do not add a sixth training run.",
+    "surrogate_selection": "Adapt all5 surrogate candidates, score all5, then add the chosen candidate reference-Oracle training cost.",
+    "oracle_reference_selector": "Any selector that has already trained the exact reference-Oracle candidates reuses its chosen adapter, regardless of generated, forced-teacher, or learned-behavior readout. Other surrogate recipes add one final reference-Oracle training run; check actual adapter/recipe identity rather than selector name.",
+    "readout": "Generated readout uses each recorded generation/grading/serialization timer. Forced readout uses recorded current-teacher or small-model/current-feature timers, plus one readout-prefix-cache construction and, for anchored models, one initial-teacher anchor per warmup/population.",
+    "initial_agent_selector": "A constant initial-agent score ties all candidates, so no candidate simulation or readout is necessary; select lexicographically and train only the chosen reference Oracle.",
+    "random_choice": "No screening; report expected reference-Oracle accuracy and mean training cost across the five candidates.",
+    "genre_metadata": "Choose matching genre for a genre-specific target without model-based search; charge only final reference training.",
+    "pipeline_status": "These are recorded component-sum estimates unless an entire pipeline is directly timed. Model-engine startup, pipeline transitions, data encoding and serialization outside existing timers must remain explicit exclusions/additional costs. Never label component sums measured end-to-end time.",
+    "evaluation_population": "Selection-dev readout costs are deployment selection costs. Selection-holdout and exhaustive ground-truth outcomes used only for research are excluded from hypothetical deployment but retained in total study overhead."
+  },
+  "amortization": {
+    "formula": "N*(reference_ready_cost-surrogate_ready_cost) > additional_once_only_preparation",
+    "conditions": "Only interpret a break-even at a declared comparable-quality point with demonstrated transfer. If ready cost is not lower there is no finite break-even. Include the final Oracle deployment run for candidate-selection pipelines.",
+    "warning": "A practical1pp target is not a statistical noninferiority result; show paired intervals and cheaper no-predictor alternatives."
+  },
+  "flops": {
+    "coverage": "Matrix/convolution operations only, actual graph replay/capture executions included.",
+    "not_inferred": "Offline or readout FLOPs not actually profiled are unavailable, never converted from seconds.",
+    "timing": "Profiled durations excluded from speed measurements."
+  },
+  "measured_selection_pipeline_plan": {
+    "registered_epoch": 1792087528.0710137,
+    "before_selection_outcomes": true,
+    "warmup_seed": 302,
+    "families": [
+      "random"
+    ],
+    "target": "all",
+    "repetitions": 3,
+    "conditions": [
+      {
+        "name": "oracle_generated",
+        "method": "oracle32_lr0.0003",
+        "steps": 128,
+        "selector": "generated_accuracy"
+      },
+      {
+        "name": "oracle_forced",
+        "method": "oracle32_lr0.0003",
+        "steps": 128,
+        "selector": "exact_teacher_gold_probability"
+      },
+      {
+        "name": "cv16_generated",
+        "method": "cv16_matched",
+        "steps": 128,
+        "selector": "generated_accuracy"
+      },
+      {
+        "name": "cv16_forced",
+        "method": "cv16_matched",
+        "steps": 128,
+        "selector": "exact_teacher_gold_probability"
+      },
+      {
+        "name": "cv16_behavior",
+        "method": "cv16_matched",
+        "steps": 128,
+        "selector": "mnli_behavior_anchored128_coverage:gold_probability"
+      },
+      {
+        "name": "short_oracle_forced",
+        "method": "oracle32_matched",
+        "steps": 64,
+        "selector": "exact_teacher_gold_probability"
+      }
+    ],
+    "scope": "Fresh full workflow: five independently launched adaptation processes, one fresh readout process, fixed candidate choice, and a final reference-Oracle adaptation if not already trained. Includes process/model startup, serialization and exact-weight/readout verification. Common target warmup and once-only predictor preparation excluded and charged separately. Representative start302 only; three timing repeats are not three scientific seed replications. Code uses existing subprocess boundaries rather than an optimized persistent model server.",
+    "qualification": "All freshly trained weights must be bitwise identical to frozen references. Readout logits/correctness and selected candidate must match frozen dev decisions exactly. No recipe or choice changes from timing outcomes. Separate exact-teacher-only scorer avoids charging learned-behavior features or initial anchors to the teacher control.",
+    "budget_scope_clarification": {
+      "epoch": 1792087705.0579786,
+      "before_outcomes": true,
+      "reason": "One representative random-family workflow, with six matched readout/short-Oracle controls and three repeats, reserves time for435 frozen readouts and144 independent training timings. Genre workflow costs remain component estimates."
+    }
+  }
+}

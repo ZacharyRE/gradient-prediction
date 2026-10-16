@@ -1,0 +1,19 @@
+{
+  "epoch": 1792099290.1267416,
+  "reason": "The frozen spec uses a default candidate oracle_reference plus a fullpool override; workflow/cost tools incorrectly indexed a missing explicit candidate override. Match the already-frozen analysis fallback without changing the spec or any recipe/choice.",
+  "failed_queue_receipt": {
+    "name": "surrogate_pipeline_random_oracle_generated_r1",
+    "signature": "3b3761bbec0891e5d70c0610c094433fab2b40724b1b849642d327ba938cdbb1",
+    "started": 1792099000.6763573,
+    "finished": 1792099169.4633682,
+    "returncode": 1
+  },
+  "checked_reference_populations": 33,
+  "checked_cost_decisions": 2340,
+  "oracle_reuse_vs_final_training_cost_verified": true,
+  "modified_files": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/benchmark_selection_pipeline.py": "453246c0de3a1d80932567f3aa73de1326ca15000e145e5f41d93729f83c5058",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/surrogate_cost_comparison.py": "ccca362075c7fb7a38ba83f296db10645aaf9a8b72991c348432999a3fabfadb"
+  },
+  "rerun_policy": "Fresh whole workflow; no partial failed timer is qualified."
+}

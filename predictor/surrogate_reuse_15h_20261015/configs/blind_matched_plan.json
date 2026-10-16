@@ -1,0 +1,110 @@
+{
+  "registered_epoch": 1792068770.4682896,
+  "purpose": "Blind generation of fixed matched-compute references; no heldout-start accuracy or selection readouts in this queue",
+  "jobs": [
+    {
+      "name": "oracle32_matched",
+      "kind": "oracle",
+      "k": 32,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false
+    },
+    {
+      "name": "oracle16_matched",
+      "kind": "subset",
+      "k": 16,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false
+    },
+    {
+      "name": "cv16_matched",
+      "kind": "cv",
+      "k": 16,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false
+    }
+  ],
+  "paired_starts": [
+    {
+      "warmup_seed": 302,
+      "update_seed": 401
+    },
+    {
+      "warmup_seed": 303,
+      "update_seed": 402
+    },
+    {
+      "warmup_seed": 304,
+      "update_seed": 403
+    }
+  ],
+  "primary_horizon": 256,
+  "long_horizon": 512,
+  "short_oracle_horizons": [
+    32,
+    64,
+    128
+  ],
+  "independently_tuned_oracle": "Additional recipe selected on development starts only; no blind results may tune recipes",
+  "cache_policy": "all",
+  "diagnostics": false,
+  "entry_sources": [
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_candidate_0_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_candidate_1_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_candidate_2_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_candidate_3_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_candidate_4_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_genre_fiction_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_genre_government_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_genre_slate_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_genre_telephone_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w302_genre_travel_u401_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_candidate_0_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_candidate_1_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_candidate_2_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_candidate_3_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_candidate_4_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_genre_fiction_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_genre_government_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_genre_slate_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_genre_telephone_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w303_genre_travel_u402_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_candidate_0_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_candidate_1_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_candidate_2_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_candidate_3_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_candidate_4_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_genre_fiction_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_genre_government_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_genre_slate_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_genre_telephone_u403_blindmatched.json",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w304_genre_travel_u403_blindmatched.json"
+  ]
+}

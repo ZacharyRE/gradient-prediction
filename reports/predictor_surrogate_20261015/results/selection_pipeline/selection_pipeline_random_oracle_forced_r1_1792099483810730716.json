@@ -1,0 +1,126 @@
+{
+  "complete": true,
+  "condition": "oracle_forced",
+  "family": "random",
+  "repeat": 1,
+  "warmup_seed": 302,
+  "method": "oracle32_lr0.0003",
+  "steps": 128,
+  "selector": "exact_teacher_gold_probability",
+  "selected_subset": "candidate_2",
+  "pipeline_script_seconds": 133.33436192804947,
+  "sum_child_process_seconds": 132.06908021611162,
+  "stages": [
+    {
+      "name": "candidate_0_training",
+      "seconds": 23.003852034918964,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/candidate_0_training.log"
+    },
+    {
+      "name": "candidate_1_training",
+      "seconds": 22.803240380017087,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/candidate_1_training.log"
+    },
+    {
+      "name": "candidate_2_training",
+      "seconds": 23.142554727150127,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/candidate_2_training.log"
+    },
+    {
+      "name": "candidate_3_training",
+      "seconds": 23.220815886044875,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/candidate_3_training.log"
+    },
+    {
+      "name": "candidate_4_training",
+      "seconds": 22.227141286013648,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/candidate_4_training.log"
+    },
+    {
+      "name": "selection_readout",
+      "seconds": 17.671475901966915,
+      "log": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/selection_pipeline_work/selection_pipeline_random_oracle_forced_r1_1792099483810730716/selection_readout.log"
+    }
+  ],
+  "training_receipts": [
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/pipeline_training/mnli__w302_candidate_0_oracle32_lr0.0003_u401_blindtunedcandidate__step128_r1_1792099484005528182.json",
+      "sha256": "fd8b4ce49405f7f022a8e1c574ec3fd82e856389e5076cc3861b8db807e96e54",
+      "reference_tag": "mnli__w302_candidate_0_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "actual_adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_0_replay_oracle32_lr0.0003_1792099484005528182_u401_standalone/step-128",
+      "weights_bitwise_equal": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/pipeline_training/mnli__w302_candidate_1_oracle32_lr0.0003_u401_blindtunedcandidate__step128_r1_1792099507126169058.json",
+      "sha256": "d4f8859d96870b0336fe84dbb8a8cfc253da36273634fc4ebe86653f0fefb402",
+      "reference_tag": "mnli__w302_candidate_1_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "actual_adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_1_replay_oracle32_lr0.0003_1792099507126169058_u401_standalone/step-128",
+      "weights_bitwise_equal": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/pipeline_training/mnli__w302_candidate_2_oracle32_lr0.0003_u401_blindtunedcandidate__step128_r1_1792099530129582525.json",
+      "sha256": "d105b9722191dcd069c4eb4667ca85b7f188aa61a5c464333a45a510fbe3835f",
+      "reference_tag": "mnli__w302_candidate_2_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "actual_adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_2_replay_oracle32_lr0.0003_1792099530129582525_u401_standalone/step-128",
+      "weights_bitwise_equal": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/pipeline_training/mnli__w302_candidate_3_oracle32_lr0.0003_u401_blindtunedcandidate__step128_r1_1792099553384158893.json",
+      "sha256": "ec99d2f2e7ebee1ea5398ba458c0c0ae423cbf027182c8788fed3dd69872fcc8",
+      "reference_tag": "mnli__w302_candidate_3_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "actual_adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_3_replay_oracle32_lr0.0003_1792099553384158893_u401_standalone/step-128",
+      "weights_bitwise_equal": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/pipeline_training/mnli__w302_candidate_4_oracle32_lr0.0003_u401_blindtunedcandidate__step128_r1_1792099576872534566.json",
+      "sha256": "dc33c6d2d6ac949863d14f92b704acb4efb282c56d3e3ceb435a9a863c3e2a31",
+      "reference_tag": "mnli__w302_candidate_4_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "actual_adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w302_candidate_4_replay_oracle32_lr0.0003_1792099576872534566_u401_standalone/step-128",
+      "weights_bitwise_equal": true
+    }
+  ],
+  "readout_checks": [
+    {
+      "tag": "mnli__w302_candidate_0_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "fresh_sha256": "0bfdf2f0bde5d2c499463cece69c22b4d402397698226a0999745ec9065642b2",
+      "reference_sha256": "0bfdf2f0bde5d2c499463cece69c22b4d402397698226a0999745ec9065642b2",
+      "predictions_equal": true
+    },
+    {
+      "tag": "mnli__w302_candidate_1_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "fresh_sha256": "951f3446842250e501f1b60bf285141e4cf84507668079a7986055309e51c0aa",
+      "reference_sha256": "951f3446842250e501f1b60bf285141e4cf84507668079a7986055309e51c0aa",
+      "predictions_equal": true
+    },
+    {
+      "tag": "mnli__w302_candidate_2_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "fresh_sha256": "c69595a3bbf6854182b8aa7119f4ecb858d9c32ac9de490b7b68c2e51939956b",
+      "reference_sha256": "c69595a3bbf6854182b8aa7119f4ecb858d9c32ac9de490b7b68c2e51939956b",
+      "predictions_equal": true
+    },
+    {
+      "tag": "mnli__w302_candidate_3_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "fresh_sha256": "3f164503d21f0cfd2af9d722763ce3435b126e4d02a1896d1b255e5330a204b5",
+      "reference_sha256": "3f164503d21f0cfd2af9d722763ce3435b126e4d02a1896d1b255e5330a204b5",
+      "predictions_equal": true
+    },
+    {
+      "tag": "mnli__w302_candidate_4_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+      "fresh_sha256": "7e72a7840465bedf5e39adb8a888513806c0e3d36557b0a9d679e80f40065fcc",
+      "reference_sha256": "7e72a7840465bedf5e39adb8a888513806c0e3d36557b0a9d679e80f40065fcc",
+      "predictions_equal": true
+    }
+  ],
+  "fresh_predictions_match": true,
+  "selected_candidate_matches": true,
+  "final_reference_already_trained": true,
+  "final_reference_tag": "mnli__w302_candidate_2_oracle32_lr0.0003_u401_blindtunedcandidate__step128",
+  "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b",
+  "decisions_sha256": "24722e9bb9496ed69404c0ca269e081425d9d70544d88d0e3060c518288fe45f",
+  "cost_policy_sha256": "e383effe4c44a00dd5a55753082f85f9848f3414b19f27876f3a42e6a907edcc",
+  "readout_protocol_sha256": "58d6b76a389734ba63351457851fc6f970b9bea3ae3cdb22d56d20678a9e8129",
+  "scope": "Fresh full workflow: five independently launched adaptation processes, one fresh readout process, fixed candidate choice, and a final reference-Oracle adaptation if not already trained. Includes process/model startup, serialization and exact-weight/readout verification. Common target warmup and once-only predictor preparation excluded and charged separately. Representative start302 only; three timing repeats are not three scientific seed replications. Code uses existing subprocess boundaries rather than an optimized persistent model server.",
+  "qualification": "All freshly trained weights must be bitwise identical to frozen references. Readout logits/correctness and selected candidate must match frozen dev decisions exactly. No recipe or choice changes from timing outcomes. Separate exact-teacher-only scorer avoids charging learned-behavior features or initial anchors to the teacher control.",
+  "artifact_aliasing": "Readout opens frozen reference adapter paths after every newly simulated adapter has passed bitwise tensor equality. Predictions are freshly computed; no saved outcomes are reused.",
+  "source_sha256": "d0f7c5da7db09b35972551fd7dca19afc7bc09d34ff4b39d9ed60b00d685df57"
+}

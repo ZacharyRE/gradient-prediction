@@ -1,0 +1,484 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "state": {
+        "name": "warmup301",
+        "warmup_seed": 301,
+        "step": 0,
+        "method": "warmup",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w301"
+      },
+      "adapter_sha256": "d26faf685aeec590739ecc053f3d7cf5b4470d873809e05a770c0d7151037dfb",
+      "label_seconds": 1.5494428309611976,
+      "gradient_reconstruction": {
+        "seconds": 1.545175552368164,
+        "max_reconstruction_relative_l2": 0.0026295757852494717,
+        "min_reconstruction_cosine": 0.999996542930603
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 0.895081102848053,
+          "relative_l2": 0.9531440734863281,
+          "centered_correlation": 0.32573652267456055,
+          "batch32_error_ratio": 1.2093368768692017,
+          "mean_gradient_cosine": 0.22584983706474304,
+          "mean_gradient_squared_error": 1.99222731590271,
+          "evaluation_seconds": 0.08430080488324165
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.8723467588424683,
+          "relative_l2": 0.9383360743522644,
+          "centered_correlation": 0.362405002117157,
+          "batch32_error_ratio": 1.0629249811172485,
+          "mean_gradient_cosine": 0.3494904041290283,
+          "mean_gradient_squared_error": 1.5309149026870728,
+          "evaluation_seconds": 0.026217264123260975
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "oracle32_lr0.001_step32",
+        "warmup_seed": 301,
+        "step": 32,
+        "method": "oracle32_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-32"
+      },
+      "adapter_sha256": "01714dd041c8ade2b51f6aedbae4e6f69acef655b4f8ecdf5c7e8d688c645a35",
+      "label_seconds": 0.5345313369762152,
+      "gradient_reconstruction": {
+        "seconds": 0.5344245433807373,
+        "max_reconstruction_relative_l2": 0.002609534887596965,
+        "min_reconstruction_cosine": 0.9999966621398926
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 0.9854531288146973,
+          "relative_l2": 1.0095981359481812,
+          "centered_correlation": 0.2096433788537979,
+          "batch32_error_ratio": 1.8495588302612305,
+          "mean_gradient_cosine": 0.22855594754219055,
+          "mean_gradient_squared_error": 1.4831466674804688,
+          "evaluation_seconds": 0.02646199706941843
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9429786801338196,
+          "relative_l2": 0.9740935564041138,
+          "centered_correlation": 0.23883186280727386,
+          "batch32_error_ratio": 1.0931317806243896,
+          "mean_gradient_cosine": 0.3084006905555725,
+          "mean_gradient_squared_error": 0.4807908535003662,
+          "evaluation_seconds": 0.026256744982674718
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "oracle32_lr0.001_step128",
+        "warmup_seed": 301,
+        "step": 128,
+        "method": "oracle32_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-128"
+      },
+      "adapter_sha256": "f35c8ca76f5ad9bc2be3aeb4b0daa2d871825b4cc0f0010c638998ca438c3b8c",
+      "label_seconds": 0.5848534910473973,
+      "gradient_reconstruction": {
+        "seconds": 0.5847501754760742,
+        "max_reconstruction_relative_l2": 0.0024684774689376354,
+        "min_reconstruction_cosine": 0.9999970197677612
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 0.9878286123275757,
+          "relative_l2": 1.0012773275375366,
+          "centered_correlation": 0.14701701700687408,
+          "batch32_error_ratio": 1.362448811531067,
+          "mean_gradient_cosine": 0.022498518228530884,
+          "mean_gradient_squared_error": 0.8435268402099609,
+          "evaluation_seconds": 0.026629696134477854
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9756971001625061,
+          "relative_l2": 0.9904004335403442,
+          "centered_correlation": 0.16022203862667084,
+          "batch32_error_ratio": 1.1078704595565796,
+          "mean_gradient_cosine": 0.16863864660263062,
+          "mean_gradient_squared_error": 0.48949211835861206,
+          "evaluation_seconds": 0.02630120189860463
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "oracle32_lr0.001_step256",
+        "warmup_seed": 301,
+        "step": 256,
+        "method": "oracle32_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-256"
+      },
+      "adapter_sha256": "e81af69d6f7a57e8318e0f41ec27ce4bb7669c64b4af65f6543ceca1205dd80c",
+      "label_seconds": 0.5888474190142006,
+      "gradient_reconstruction": {
+        "seconds": 0.5887527465820312,
+        "max_reconstruction_relative_l2": 0.002470077946782112,
+        "min_reconstruction_cosine": 0.9999969005584717
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.0781136751174927,
+          "relative_l2": 1.0679817199707031,
+          "centered_correlation": 0.1284884512424469,
+          "batch32_error_ratio": 2.721818447113037,
+          "mean_gradient_cosine": 0.11680032312870026,
+          "mean_gradient_squared_error": 1.4045493602752686,
+          "evaluation_seconds": 0.02648397907614708
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9734687805175781,
+          "relative_l2": 0.990393340587616,
+          "centered_correlation": 0.1634623110294342,
+          "batch32_error_ratio": 1.1684383153915405,
+          "mean_gradient_cosine": 0.09088047593832016,
+          "mean_gradient_squared_error": 0.28494971990585327,
+          "evaluation_seconds": 0.026309120934456587
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "oracle32_lr0.001_step512",
+        "warmup_seed": 301,
+        "step": 512,
+        "method": "oracle32_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/step-512"
+      },
+      "adapter_sha256": "f209efb36f529158cbd2861933b759cd64e9bc932f1e9ec4f2f7384e0c51213c",
+      "label_seconds": 0.5903398299124092,
+      "gradient_reconstruction": {
+        "seconds": 0.590238094329834,
+        "max_reconstruction_relative_l2": 0.002473441418260336,
+        "min_reconstruction_cosine": 0.9999969005584717
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.0422652959823608,
+          "relative_l2": 1.0287127494812012,
+          "centered_correlation": 0.04466232657432556,
+          "batch32_error_ratio": 1.4314448833465576,
+          "mean_gradient_cosine": -0.017268750816583633,
+          "mean_gradient_squared_error": 3.243281602859497,
+          "evaluation_seconds": 0.0265897901263088
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 1.0012946128845215,
+          "relative_l2": 1.0020626783370972,
+          "centered_correlation": 0.05313964933156967,
+          "batch32_error_ratio": 1.070318341255188,
+          "mean_gradient_cosine": 0.056081414222717285,
+          "mean_gradient_squared_error": 1.5863676071166992,
+          "evaluation_seconds": 0.02658138796687126
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "cv16_lr0.001_step32",
+        "warmup_seed": 301,
+        "step": 32,
+        "method": "cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_cv16_lr0.001_u401_fullpoolconfirm/step-32"
+      },
+      "adapter_sha256": "3b554d17f6556f81f99f95a27564addb55760d17a3f54bc72d4a598ff301c9c9",
+      "label_seconds": 0.5874236759264022,
+      "gradient_reconstruction": {
+        "seconds": 0.5872886180877686,
+        "max_reconstruction_relative_l2": 0.002682032296434045,
+        "min_reconstruction_cosine": 0.9999964237213135
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 0.9779118895530701,
+          "relative_l2": 1.0045396089553833,
+          "centered_correlation": 0.20547451078891754,
+          "batch32_error_ratio": 1.6785081624984741,
+          "mean_gradient_cosine": -0.149430051445961,
+          "mean_gradient_squared_error": 2.381316661834717,
+          "evaluation_seconds": 0.026606329949572682
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9584512114524841,
+          "relative_l2": 0.9816477298736572,
+          "centered_correlation": 0.20428915321826935,
+          "batch32_error_ratio": 1.0748311281204224,
+          "mean_gradient_cosine": 0.1625015139579773,
+          "mean_gradient_squared_error": 0.9778515100479126,
+          "evaluation_seconds": 0.026273479918017983
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "cv16_lr0.001_step128",
+        "warmup_seed": 301,
+        "step": 128,
+        "method": "cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_cv16_lr0.001_u401_fullpoolconfirm/step-128"
+      },
+      "adapter_sha256": "ad827d1dae8e2b8eec5aae7f3874cf8576f53737d8bcd4cfaf14b27c5181b039",
+      "label_seconds": 0.5685681840404868,
+      "gradient_reconstruction": {
+        "seconds": 0.5684759616851807,
+        "max_reconstruction_relative_l2": 0.002287190407514572,
+        "min_reconstruction_cosine": 0.9999973773956299
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.0477665662765503,
+          "relative_l2": 1.0327750444412231,
+          "centered_correlation": 0.1532229334115982,
+          "batch32_error_ratio": 1.4367175102233887,
+          "mean_gradient_cosine": 0.17158707976341248,
+          "mean_gradient_squared_error": 1.1069022417068481,
+          "evaluation_seconds": 0.02668651402927935
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9955103993415833,
+          "relative_l2": 1.0070264339447021,
+          "centered_correlation": 0.16251283884048462,
+          "batch32_error_ratio": 1.3789762258529663,
+          "mean_gradient_cosine": 0.2648640275001526,
+          "mean_gradient_squared_error": 1.0716100931167603,
+          "evaluation_seconds": 0.026284988969564438
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "cv16_lr0.001_step256",
+        "warmup_seed": 301,
+        "step": 256,
+        "method": "cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_cv16_lr0.001_u401_fullpoolconfirm/step-256"
+      },
+      "adapter_sha256": "61536bb3ae5682e03677c34a8e3abc012ee67b0c4cc2f30c8bca118d7e0f4463",
+      "label_seconds": 0.5862468949053437,
+      "gradient_reconstruction": {
+        "seconds": 0.5861525535583496,
+        "max_reconstruction_relative_l2": 0.002499970840290189,
+        "min_reconstruction_cosine": 0.9999970197677612
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.1083921194076538,
+          "relative_l2": 1.084748387336731,
+          "centered_correlation": 0.11674395203590393,
+          "batch32_error_ratio": 2.8542656898498535,
+          "mean_gradient_cosine": 0.10634288936853409,
+          "mean_gradient_squared_error": 1.9979984760284424,
+          "evaluation_seconds": 0.026542616076767445
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9907046556472778,
+          "relative_l2": 1.0001267194747925,
+          "centered_correlation": 0.14135634899139404,
+          "batch32_error_ratio": 1.2348390817642212,
+          "mean_gradient_cosine": 0.10252150148153305,
+          "mean_gradient_squared_error": 0.45476233959198,
+          "evaluation_seconds": 0.02632888499647379
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "cv16_lr0.001_step512",
+        "warmup_seed": 301,
+        "step": 512,
+        "method": "cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_cv16_lr0.001_u401_fullpoolconfirm/step-512"
+      },
+      "adapter_sha256": "4ef20df31b9e2a8b1cad596fe8e14086f0b9369d06dbe2dabd50384af25e1325",
+      "label_seconds": 0.5920287030749023,
+      "gradient_reconstruction": {
+        "seconds": 0.591935396194458,
+        "max_reconstruction_relative_l2": 0.002493612701073289,
+        "min_reconstruction_cosine": 0.9999967813491821
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.0915952920913696,
+          "relative_l2": 1.0718779563903809,
+          "centered_correlation": 0.06260917335748672,
+          "batch32_error_ratio": 2.518479108810425,
+          "mean_gradient_cosine": -0.022598858922719955,
+          "mean_gradient_squared_error": 3.9234766960144043,
+          "evaluation_seconds": 0.026555009186267853
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 1.0034456253051758,
+          "relative_l2": 1.0041221380233765,
+          "centered_correlation": 0.07661626487970352,
+          "batch32_error_ratio": 1.1233110427856445,
+          "mean_gradient_cosine": 0.10491377115249634,
+          "mean_gradient_squared_error": 0.818749725818634,
+          "evaluation_seconds": 0.026378912152722478
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "state256_cv16_lr0.001_step32",
+        "warmup_seed": 301,
+        "step": 32,
+        "method": "state256_cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_state256_cv16_lr0.001_u401_fullpoolconfirm/step-32"
+      },
+      "adapter_sha256": "6bd2ed7494593deb6b8c42fe5ee7a95a7f2a5ddebc98a31c3bc3f612cac8c62f",
+      "label_seconds": 0.5966798239387572,
+      "gradient_reconstruction": {
+        "seconds": 0.5965847969055176,
+        "max_reconstruction_relative_l2": 0.002570346463471651,
+        "min_reconstruction_cosine": 0.9999967813491821
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 0.9863659739494324,
+          "relative_l2": 1.007498025894165,
+          "centered_correlation": 0.19581833481788635,
+          "batch32_error_ratio": 1.6990880966186523,
+          "mean_gradient_cosine": 0.04283302649855614,
+          "mean_gradient_squared_error": 2.151003360748291,
+          "evaluation_seconds": 0.027610867051407695
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 0.9605627655982971,
+          "relative_l2": 0.9844822287559509,
+          "centered_correlation": 0.19864796102046967,
+          "batch32_error_ratio": 1.1752930879592896,
+          "mean_gradient_cosine": 0.006833021994680166,
+          "mean_gradient_squared_error": 0.9982722401618958,
+          "evaluation_seconds": 0.02673133509233594
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "state256_cv16_lr0.001_step128",
+        "warmup_seed": 301,
+        "step": 128,
+        "method": "state256_cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_state256_cv16_lr0.001_u401_fullpoolconfirm/step-128"
+      },
+      "adapter_sha256": "6b52ffe0b6d8abc4f89fcd2de4d6e7d53a729e7b7a71d5c58e0c92c6196206c0",
+      "label_seconds": 0.5922468991484493,
+      "gradient_reconstruction": {
+        "seconds": 0.5921552181243896,
+        "max_reconstruction_relative_l2": 0.0023619569838047028,
+        "min_reconstruction_cosine": 0.9999971389770508
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.066828727722168,
+          "relative_l2": 1.0437119007110596,
+          "centered_correlation": 0.1557423621416092,
+          "batch32_error_ratio": 1.6036443710327148,
+          "mean_gradient_cosine": 0.057688500732183456,
+          "mean_gradient_squared_error": 0.9867204427719116,
+          "evaluation_seconds": 0.026540867052972317
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 1.0083515644073486,
+          "relative_l2": 1.0170326232910156,
+          "centered_correlation": 0.1525525450706482,
+          "batch32_error_ratio": 1.6286016702651978,
+          "mean_gradient_cosine": 0.03636706992983818,
+          "mean_gradient_squared_error": 1.0689046382904053,
+          "evaluation_seconds": 0.026488778879866004
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "state256_cv16_lr0.001_step256",
+        "warmup_seed": 301,
+        "step": 256,
+        "method": "state256_cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_state256_cv16_lr0.001_u401_fullpoolconfirm/step-256"
+      },
+      "adapter_sha256": "cf54bc5bfd6c4ea923113d02ac856072f8a617e8001e31c5ab581d481c51d33f",
+      "label_seconds": 0.5950654300395399,
+      "gradient_reconstruction": {
+        "seconds": 0.594965934753418,
+        "max_reconstruction_relative_l2": 0.0025776326656341553,
+        "min_reconstruction_cosine": 0.999996542930603
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.0901302099227905,
+          "relative_l2": 1.0704524517059326,
+          "centered_correlation": 0.08107726275920868,
+          "batch32_error_ratio": 2.5871522426605225,
+          "mean_gradient_cosine": 0.0398099347949028,
+          "mean_gradient_squared_error": 1.8298876285552979,
+          "evaluation_seconds": 0.02689266507513821
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 1.0016647577285767,
+          "relative_l2": 1.0041464567184448,
+          "centered_correlation": 0.10176239162683487,
+          "batch32_error_ratio": 1.1801437139511108,
+          "mean_gradient_cosine": 0.0858369767665863,
+          "mean_gradient_squared_error": 0.3758510947227478,
+          "evaluation_seconds": 0.026385562028735876
+        }
+      }
+    },
+    {
+      "state": {
+        "name": "state256_cv16_lr0.001_step512",
+        "warmup_seed": 301,
+        "step": 512,
+        "method": "state256_cv16_lr0.001",
+        "adapter": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_state256_cv16_lr0.001_u401_fullpoolconfirm/step-512"
+      },
+      "adapter_sha256": "828e9c32c477a1c4c8c0f1b6f84a11be9e42d19f4abe5b60bf69cce76d66c462",
+      "label_seconds": 0.5930792950093746,
+      "gradient_reconstruction": {
+        "seconds": 0.5929856300354004,
+        "max_reconstruction_relative_l2": 0.0024295703042298555,
+        "min_reconstruction_cosine": 0.999997079372406
+      },
+      "predictors": {
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": {
+          "centered_cv_ratio": 1.124767780303955,
+          "relative_l2": 1.0921242237091064,
+          "centered_correlation": 0.05355635657906532,
+          "batch32_error_ratio": 2.8667848110198975,
+          "mean_gradient_cosine": -0.02390807308256626,
+          "mean_gradient_squared_error": 3.6746582984924316,
+          "evaluation_seconds": 0.026781935011968017
+        },
+        "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": {
+          "centered_cv_ratio": 1.0155078172683716,
+          "relative_l2": 1.013319730758667,
+          "centered_correlation": 0.0709332600235939,
+          "batch32_error_ratio": 1.305359959602356,
+          "mean_gradient_cosine": -0.011653656139969826,
+          "mean_gradient_squared_error": 0.928415060043335,
+          "evaluation_seconds": 0.029938176972791553
+        }
+      }
+    }
+  ],
+  "wall_seconds": 16.420422792434692,
+  "n": 129,
+  "data_sha256": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986",
+  "predictor_sha256": {
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt": "0398d160f6568dc8e4d085a7ecce3b74ad0426571775f97252ccdcf2d02bc928",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/best.pt": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4"
+  },
+  "states_sha256": "033b7f71d303397e1ee17f83a3789c9ac588688f3067fc4b664ea44865749c69",
+  "full_inputs": true,
+  "source_sha256": "cbc0e47333e2f4d6027ffaaa73ab4f74d34237edbee9a35ddc68ce55d028516b",
+  "scope": "Development-only gradient diagnostic on predictor_dev. No model fitting, no selection/final readouts. Compares actual Oracle/CV trajectories at matched update counts; gradient ratios are not downstream performance or timing claims."
+}

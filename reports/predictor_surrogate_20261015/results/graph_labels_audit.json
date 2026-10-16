@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "all_retained_fields_bitwise_equal": true
+    },
+    {
+      "indices": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "all_retained_fields_bitwise_equal": true
+    }
+  ],
+  "changed_weights_gradient_labels_match": true,
+  "retained_labels_do_not_alias_replay_buffers": true,
+  "native_factor_gradient_reconstruction": {
+    "cosine": 0.999997615814209,
+    "relative_l2": 0.002237414475530386,
+    "norm_ratio": 1.000028371810913
+  },
+  "full_inputs": true,
+  "source_sha256": "3abb8c833f8318950666cc5491ababcdd388355dd15b625ea806b25e1a58e18f"
+}

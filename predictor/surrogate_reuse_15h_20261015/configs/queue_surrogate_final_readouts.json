@@ -1,0 +1,107 @@
+[
+  {
+    "name": "surrogate_final_selection_dev",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_final_selection_dev",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/surrogate_final_entries.json",
+      "--name",
+      "surrogate_final_selection_dev",
+      "--split",
+      "selection_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "surrogate_final_behavior_selection_dev",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_final_behavior_selection_dev",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate_behavior.py",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/surrogate_final_entries.json",
+      "--predictors",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt",
+      "--name",
+      "surrogate_final_behavior_selection_dev",
+      "--split",
+      "selection_dev",
+      "--teacher"
+    ]
+  },
+  {
+    "name": "surrogate_final_freeze_choices",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/freeze_selection_decisions.py"
+    ]
+  },
+  {
+    "name": "surrogate_final_selection_holdout",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_final_selection_holdout",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/surrogate_final_entries.json",
+      "--name",
+      "surrogate_final_selection_holdout",
+      "--split",
+      "selection_holdout",
+      "--max-new-tokens",
+      "256"
+    ]
+  },
+  {
+    "name": "surrogate_final_behavior_selection_holdout",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "surrogate_final_behavior_selection_holdout",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate_behavior.py",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/surrogate_final_entries.json",
+      "--predictors",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt",
+      "--name",
+      "surrogate_final_behavior_selection_holdout",
+      "--split",
+      "selection_holdout",
+      "--teacher"
+    ]
+  },
+  {
+    "name": "surrogate_final_analysis",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/analyze_selection.py",
+      "--analysis-spec",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/surrogate_analysis_spec.json"
+    ]
+  },
+  {
+    "name": "surrogate_final_correctness_bundle",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/export_prediction_bundle.py"
+    ]
+  }
+]

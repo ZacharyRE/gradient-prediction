@@ -1,0 +1,53 @@
+{
+  "epoch": 1792075901.1157138,
+  "development_evidence": {
+    "warmup_seed": 301,
+    "subset": "update",
+    "lr": 0.001,
+    "steps": 256,
+    "accuracy_pct": 83.62573099415205,
+    "preparation_plus_online_seconds": 10.388609771151096,
+    "source_tag": "mnli__w301_update_zero_gradient_every4_u401_state__step256",
+    "adapter_sha256": "2ab81c17dafa2a88d9f6f7f0106403cf393055ab54b12f17af2636bd8439c160"
+  },
+  "interpretation": "No predictor: fullbatchtruegradient every4steps, zeros on othersteps; Adam still changes weights through momentum. Singledevelopmentresult, not a robustwin.",
+  "decision": "Add matching twoLRcontrol to the alreadyqueuedcandidate_0 confirmation on301/311/321. Preserve bothmatchedOracle16 andindependentlytunedOracle controls.",
+  "jobs": [
+    {
+      "name": "zero_every4_lr0.0003",
+      "kind": "zero_gradient",
+      "k": 32,
+      "true_every": 4,
+      "lr": 0.0003,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false
+    },
+    {
+      "name": "zero_every4_lr0.001",
+      "kind": "zero_gradient",
+      "k": 32,
+      "true_every": 4,
+      "lr": 0.001,
+      "steps": 512,
+      "save": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "micro": 32,
+      "diagnostics": false
+    }
+  ],
+  "no_new_predictor_family": true,
+  "no_selection_outcomes_used": true
+}

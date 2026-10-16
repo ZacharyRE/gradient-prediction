@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "best_epoch": 2,
+  "best_centered_cv_ratio": 2.9967080652713776,
+  "selection_metric": "centered_cv_ratio",
+  "best_selection_score": 2.9967080652713776,
+  "seconds": 295.10568813513964,
+  "mean_normalization_preparation_seconds": 0.0,
+  "optimizer_steps": 13200,
+  "best_sha256": "cda32f21cdb12d2f4876300055953c2a56d0987a702a3a7e442fd6a78c6e757e",
+  "value_and_gradient_supervision": {
+    "name": "token_kd128_nograd",
+    "kind": "token",
+    "width": 128,
+    "epochs": 50,
+    "gradient_weight": 0,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  },
+  "collection_cost_seconds": 43.25088133011013,
+  "teacher_trajectory_cost_additional": true
+}

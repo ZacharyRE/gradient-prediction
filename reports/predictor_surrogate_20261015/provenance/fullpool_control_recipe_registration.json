@@ -1,0 +1,136 @@
+{
+  "epoch": 1792078700.9176857,
+  "oracle_choices": {
+    "independent_oracle32": {
+      "ready": true,
+      "chosen": {
+        "method": "oracle32_lr0.001",
+        "steps": 256,
+        "lr": 0.001,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 83.95061728395062,
+        "accuracy_per_start": [
+          84.40545808966861,
+          83.04093567251462,
+          84.40545808966861
+        ],
+        "mean_preparation_plus_online_seconds": 27.426048262122396,
+        "seconds_per_start": [
+          27.319529517786577,
+          27.42398722982034,
+          27.534628038760275
+        ],
+        "tags": [
+          "mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm__step256",
+          "mnli__w311_update_oracle32_lr0.001_u411_reference__step256",
+          "mnli__w321_update_oracle32_lr0.001_u421_reference__step256"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    },
+    "short_oracle32": {
+      "ready": true,
+      "chosen": {
+        "method": "oracle32_lr0.001",
+        "steps": 128,
+        "lr": 0.001,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 82.26120857699804,
+        "accuracy_per_start": [
+          81.87134502923976,
+          84.21052631578947,
+          80.7017543859649
+        ],
+        "mean_preparation_plus_online_seconds": 15.628535003944611,
+        "seconds_per_start": [
+          15.564408023143187,
+          15.638927311403677,
+          15.682269677286968
+        ],
+        "tags": [
+          "mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm__step128",
+          "mnli__w311_update_oracle32_lr0.001_u411_reference__step128",
+          "mnli__w321_update_oracle32_lr0.001_u421_reference__step128"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    },
+    "independent_oracle16": {
+      "ready": true,
+      "chosen": {
+        "method": "subset16_lr0.0003",
+        "steps": 512,
+        "lr": 0.0003,
+        "complete": true,
+        "warmup_seeds": [
+          301,
+          311,
+          321
+        ],
+        "mean_accuracy_pct": 83.30084470435348,
+        "accuracy_per_start": [
+          83.4307992202729,
+          84.40545808966861,
+          82.06627680311891
+        ],
+        "mean_preparation_plus_online_seconds": 33.89604757710671,
+        "seconds_per_start": [
+          33.76402342924848,
+          33.908984309993684,
+          34.01513499207795
+        ],
+        "tags": [
+          "mnli__w301_update_subset16_lr0.0003_u401_fullpoolconfirm__step512",
+          "mnli__w311_update_subset16_lr0.0003_u411_reference__step512",
+          "mnli__w321_update_subset16_lr0.0003_u421_reference__step512"
+        ]
+      },
+      "rule": "Highest three-start mean accuracy; ties lower mean preparation+online time, then steps, then LR"
+    }
+  },
+  "zero_control": {
+    "method": "zero_every4_lr0.001",
+    "steps": 256,
+    "lr": 0.001,
+    "complete": true,
+    "warmup_seeds": [
+      301,
+      311,
+      321
+    ],
+    "mean_accuracy_pct": 83.17089018843404,
+    "accuracy_per_start": [
+      83.62573099415205,
+      83.4307992202729,
+      82.45614035087719
+    ],
+    "mean_preparation_plus_online_seconds": 10.08371865392352,
+    "seconds_per_start": [
+      10.079859131481498,
+      10.225601302227005,
+      9.94569552806206
+    ],
+    "tags": [
+      "mnli__w301_update_zero_every4_lr0.001_u401_fullpoolconfirm__step256",
+      "mnli__w311_update_zero_every4_lr0.001_u411_fullpoolconfirm__step256",
+      "mnli__w321_update_zero_every4_lr0.001_u421_fullpoolconfirm__step256"
+    ]
+  },
+  "rule": "Oracle32/16 andshortOracle followprespecified fullpool three-startgrid. Zeroevery4@256/.001 chosen as best-qualityzero point among replicatedfullpool horizons, also the fastestwithin1pp of tunedOracle32. All finaloutcomesunread.",
+  "source_sha256": "b0f92868aa22a5027642ba2b960ef9f49add38c25aa1e62ddbd12932352ddecf",
+  "existing_blindmatched_reuse": "TunedOracle32.001@256 andshortOracle32.001@128 alreadyinblind_fullpool; no duplicate training.",
+  "_publication_redaction": {
+    "original_sha256": "d40379125a37a817430883ab1478069a8bc2531d03df0653f9ff2741a331c6ca",
+    "scope": "Operational process identifiers omitted; scientific registration fields retained."
+  }
+}

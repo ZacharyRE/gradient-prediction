@@ -1,0 +1,27 @@
+{
+  "recorded_epoch": 1792076395.712637,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.13.0",
+    "transformers": "5.15.1",
+    "peft": "0.20.0",
+    "vllm": "0.27.1",
+    "triton": "3.7.1",
+    "numpy": "2.3.5",
+    "scipy": "1.18.0",
+    "safetensors": "0.8.0",
+    "datasets": "5.0.1",
+    "tokenizers": "0.22.2",
+    "accelerate": "1.14.0",
+    "huggingface-hub": "1.28.0",
+    "pyarrow": "25.0.1"
+  },
+  "gpu": "NVIDIA H200, 580.178.04, 143771 MiB",
+  "training_dtype": "FP32 trainable weights with BF16 autocast; math SDPA",
+  "evaluation_backend": "vLLM, greedy, serial adapters, full prompt token identity verified",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_snapshot": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "scope": "Versions observed in the live study environment; not a portable lockfile",
+  "supplemental_package_version_recorded_epoch": 1792094888.3800392
+}

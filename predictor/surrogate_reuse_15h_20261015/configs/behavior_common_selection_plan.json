@@ -1,0 +1,39 @@
+{
+  "registered_epoch": 1792082503.8820338,
+  "cache": "critic_coverage_hidden",
+  "models": [
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64_coverage/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta512/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256_nochange/best.pt",
+      "eligible": true
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_no_explicit_delta256/best.pt",
+      "eligible": false
+    }
+  ],
+  "selection": "Minimum normalized logit plus within-example state-change MSE on common12states and129 predictor_dev examples; ties lexicographic model name. Initial-teacher baseline mandatory."
+}

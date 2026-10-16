@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "name": "state256",
+      "optimizer_steps": 15840,
+      "seconds": 373.18817904102616,
+      "summary_sha256": "0d522a4f30c246d37f0bb29c50f0b6897879208b0d11c9b31cae7e60eca9db28"
+    },
+    {
+      "name": "state256_coverage_fast",
+      "optimizer_steps": 15840,
+      "seconds": 346.58689528913237,
+      "summary_sha256": "28b2fbca1870a83873eb773983e0190bb0ad7cf37d31dfb12f380aa5feb4c768"
+    }
+  ],
+  "scope": "Same architecture and exactly matched optimizer-step count. More teacher states and their collection/trajectory costs are additional; source distributions differ."
+}

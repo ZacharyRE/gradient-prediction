@@ -1,0 +1,182 @@
+[
+  {
+    "name": "oracle32_lr0.0003_cosine",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "oracle32_lr0.0003_linear",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "oracle32_lr0.001_cosine",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "oracle32_lr0.001_linear",
+    "kind": "oracle",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "subset16_lr0.0003_cosine",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "subset16_lr0.0003_linear",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "subset16_lr0.001_cosine",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "subset16_lr0.001_linear",
+    "kind": "subset",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "cv16_lr0.0003_cosine",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "cv16_lr0.0003_linear",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "cv16_lr0.001_cosine",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "cosine",
+    "lr_floor": 0.1
+  },
+  {
+    "name": "cv16_lr0.001_linear",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      32,
+      128,
+      256
+    ],
+    "micro": 32,
+    "schedule": "linear",
+    "lr_floor": 0.1
+  }
+]

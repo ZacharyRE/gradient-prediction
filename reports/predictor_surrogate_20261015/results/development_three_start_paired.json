@@ -1,0 +1,79 @@
+{
+  "scope": "Repeatedly inspected development data; descriptive intervals, not heldout confirmation. Three starts and one fixed513-example dataset.",
+  "rows": [
+    {
+      "lr": 0.0003,
+      "cv16_minus_oracle16": {
+        "mean": 0.005847953216374269,
+        "ci95": [
+          -0.003992015968063872,
+          0.015968063872255488
+        ],
+        "per_start": [
+          0.0,
+          0.009746588693957114,
+          0.007797270955165692
+        ],
+        "starts": 3,
+        "source_groups": 165,
+        "examples": 513,
+        "bootstrap_repetitions": 4000,
+        "scope": "Paired crossed start/source-group percentile bootstrap, conditional on frozen dev choices; three starts provide limited evidence and no automatic noninferiority claim"
+      },
+      "cv16_minus_oracle32": {
+        "mean": -0.015594541910331383,
+        "ci95": [
+          -0.030243261012491782,
+          -0.0013149243918474688
+        ],
+        "per_start": [
+          -0.007797270955165692,
+          -0.017543859649122806,
+          -0.021442495126705652
+        ],
+        "starts": 3,
+        "source_groups": 165,
+        "examples": 513,
+        "bootstrap_repetitions": 4000,
+        "scope": "Paired crossed start/source-group percentile bootstrap, conditional on frozen dev choices; three starts provide limited evidence and no automatic noninferiority claim"
+      }
+    },
+    {
+      "lr": 0.001,
+      "cv16_minus_oracle16": {
+        "mean": 0.000649772579597141,
+        "ci95": [
+          -0.01884580453659401,
+          0.01798330122029544
+        ],
+        "per_start": [
+          0.0,
+          -0.009746588693957114,
+          0.011695906432748537
+        ],
+        "starts": 3,
+        "source_groups": 165,
+        "examples": 513,
+        "bootstrap_repetitions": 4000,
+        "scope": "Paired crossed start/source-group percentile bootstrap, conditional on frozen dev choices; three starts provide limited evidence and no automatic noninferiority claim"
+      },
+      "cv16_minus_oracle32": {
+        "mean": -0.018193632228719947,
+        "ci95": [
+          -0.03550295857988166,
+          -0.00065359477124183
+        ],
+        "per_start": [
+          -0.01949317738791423,
+          -0.017543859649122806,
+          -0.017543859649122806
+        ],
+        "starts": 3,
+        "source_groups": 165,
+        "examples": 513,
+        "bootstrap_repetitions": 4000,
+        "scope": "Paired crossed start/source-group percentile bootstrap, conditional on frozen dev choices; three starts provide limited evidence and no automatic noninferiority claim"
+      }
+    }
+  ]
+}

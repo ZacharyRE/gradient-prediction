@@ -1,0 +1,199 @@
+[
+  {
+    "name": "burn32_subset4",
+    "kind": "subset",
+    "k": 4,
+    "burnin_steps": 32,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn32_transport4",
+    "kind": "transport",
+    "k": 4,
+    "burnin_steps": 32,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn32_transport4_frozen",
+    "kind": "transport",
+    "k": 4,
+    "burnin_steps": 32,
+    "burnin_k": 32,
+    "freeze_after_burnin": true,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn32_class_ema4",
+    "kind": "class_ema",
+    "k": 4,
+    "burnin_steps": 32,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn32_class_cov4",
+    "kind": "class_cov",
+    "k": 4,
+    "burnin_steps": 32,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "burn64_subset4",
+    "kind": "subset",
+    "k": 4,
+    "burnin_steps": 64,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn64_transport4",
+    "kind": "transport",
+    "k": 4,
+    "burnin_steps": 64,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn64_transport4_frozen",
+    "kind": "transport",
+    "k": 4,
+    "burnin_steps": 64,
+    "burnin_k": 32,
+    "freeze_after_burnin": true,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn64_class_ema4",
+    "kind": "class_ema",
+    "k": 4,
+    "burnin_steps": 64,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  },
+  {
+    "name": "burn64_class_cov4",
+    "kind": "class_cov",
+    "k": 4,
+    "burnin_steps": 64,
+    "burnin_k": 32,
+    "freeze_after_burnin": false,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/best.pt"
+  },
+  {
+    "name": "sum_oracle32_lr0.001",
+    "kind": "subset",
+    "k": 32,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "late_kd_rollout",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_kd_rollout",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/reuse_train.py",
+      "--warmup-seed",
+      "301",
+      "--jobs",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/configs/distill_rollout_jobs.json",
+      "--suffix",
+      "_latekd"
+    ]
+  },
+  {
+    "name": "late_kd_eval",
+    "command": [
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+      "--name",
+      "late_kd_eval",
+      "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/evaluate.py",
+      "--model",
+      "1p5b",
+      "--entries",
+      "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/entries_mnli_w301_update_u401_latekd.json",
+      "--name",
+      "late_kd",
+      "--split",
+      "accuracy_dev",
+      "--max-new-tokens",
+      "256"
+    ]
+  }
+]

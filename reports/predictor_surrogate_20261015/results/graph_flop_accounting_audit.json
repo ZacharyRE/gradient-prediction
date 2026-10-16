@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "graph_total_matrix_flops": 245528845762560,
+  "eager_total_matrix_flops": 201424637829120,
+  "extra_graph_warmup_and_audit_matrix_flops": 44104207933440,
+  "observed_difference": 44104207933440,
+  "weights_bitwise_equal": true,
+  "prefix_preparation_identical": true,
+  "sources": {
+    "eager_static": {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/reuse_flops/mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_eager_static__step24_r1_1792075161846646981.json",
+      "sha256": "961acb1648ede9b7ea85f1fa663c5b01b9cb889f150c35848abbcd2993dcd413"
+    },
+    "graph": {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/results/reuse_flops/mnli__w301_candidate_0_graph_cv4_u401_graph_smoke_graph__step24_r1_1792073352935738811.json",
+      "sha256": "6d4db7a396671fd8483d1b24981a79a169da474bd7cbaa4a7c15bd6717fc4c90"
+    }
+  },
+  "scope": "24-step same-padding CV4. Graph adjusted FLOPs equal separately profiled eager execution plus actually executed capture warmups and audits; tracing is excluded. Matrix/convolution arithmetic only; not latency or all scalar operations."
+}

@@ -1,0 +1,8 @@
+{
+  "epoch": 1792094229.8606398,
+  "reason": "Operational deadline guard: final-validation reserve can be ten minutes, but the absolute GPU cutoff is fifteen minutes before the authorized end. Explicit cutoff checks prevent admitting a new stage in that gap. No frozen scientific code, recipe or outcome changed.",
+  "previous_stage_sha256": "95792ed9d01ac7e263b000ed8049f260976e7ca636104aa924f585a20799af6e",
+  "stage_sha256": "d3b5a683de63822071865c7821ea4658283a83cecff899b8b74a0d42e50c1c9f",
+  "cpu_audit_passed": true,
+  "cpu_audit": "Past compute cutoff with future overall deadline and BENCH_FINAL_VALIDATION=1 rejects before creating any waiter, handshake or worker."
+}

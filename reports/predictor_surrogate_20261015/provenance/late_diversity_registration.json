@@ -1,0 +1,55 @@
+{
+  "registered_epoch": 1792108382.4133346,
+  "scope": "Post-freeze exploratory development only. No frozen recipe, predictor, selection decision or final comparison changes.",
+  "hypothesis": "More distinct fitting inputs may improve gradient generalization after step32.",
+  "source": "Existing original predictor_train split:2050 rows; fixed permutation seed314159, first2048; baseline first512 is a nested subset.",
+  "state_count": 12,
+  "state_sources": [
+    "critic_states.json",
+    "critic_fast_states.json"
+  ],
+  "baseline": {
+    "name": "state256_coverage_fast",
+    "unique_inputs": 512,
+    "epochs": 40
+  },
+  "new": {
+    "name": "state256_diversity2048",
+    "unique_inputs": 2048,
+    "epochs": 10
+  },
+  "matched_example_state_visits": 245760,
+  "not_exact_optimizer_step_matching": true,
+  "development_start": 301,
+  "development_split": "accuracy_dev",
+  "endpoints": [
+    "CV16 at256 and512",
+    "CV16 first32 thenOracle16 at256 and512"
+  ],
+  "secondary_checkpoints": [
+    32,
+    128
+  ],
+  "fit_selection": "Unchanged predictor_dev gradient metric; no downstream or selection holdout fitting",
+  "launch_after": "Complete18 registered workflow timing repetitions",
+  "cutoffs": "Original two-hour fitting reserve remains in force; do not delay mandatory reporting for this experiment",
+  "config_sha256": {
+    "diversity_states.json": "ddfa7b5576c66e3135457b617823eee5a37d8a97107731e08cfd2525572b51d4",
+    "diversity_fit_jobs.json": "43e3e7a72dcc4b15184bc016d9f392e3a1b45628f44f54a579c62c63ccb1eb18",
+    "diversity_rollout_jobs.json": "d07fa554510261b00786f57b205c00e10613668de45f9b44d102e1a59bd5bb06",
+    "queue_diversity2048.json": "64eedfbfbd627ec0c99f47d078fff1172b591c1425ed29588a76690cfd49f295"
+  },
+  "amended_before_execution_epoch": 1792108463.4674034,
+  "development_starts": [
+    301,
+    311,
+    321
+  ],
+  "paired_update_seeds": [
+    401,
+    411,
+    421
+  ],
+  "matched_control": "Same12-state State256 coverage fit with512 inputs and40 epochs; both fullCV16 and early32 recipes run at all three development starts. No outcome-gated replication.",
+  "primary_comparison": "2048vs512 at256/512, with fullCV16 and early32 separately"
+}

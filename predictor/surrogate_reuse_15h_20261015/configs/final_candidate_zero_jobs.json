@@ -1,0 +1,15 @@
+[
+  {
+    "name": "zero_every4_lr0.0003",
+    "kind": "zero_gradient",
+    "k": 32,
+    "true_every": 4,
+    "lr": 0.0003,
+    "steps": 256,
+    "save": [
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false
+  }
+]

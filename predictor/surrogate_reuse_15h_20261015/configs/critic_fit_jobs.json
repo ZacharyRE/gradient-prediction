@@ -1,0 +1,38 @@
+[
+  {
+    "name": "vector128",
+    "kind": "vector",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0
+  },
+  {
+    "name": "sobolev128",
+    "kind": "critic",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 1
+  },
+  {
+    "name": "sobolev128_value01",
+    "kind": "critic",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 1,
+    "value_weight": 0.1
+  },
+  {
+    "name": "value128",
+    "kind": "critic",
+    "width": 128,
+    "depth": 2,
+    "epochs": 30,
+    "gradient_weight": 0,
+    "value_weight": 1
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state512_diversity2048/best.pt",
+    "name": "capacity512_cv16_lr0.001",
+    "k": 16
+  },
+  {
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state512_diversity2048/best.pt",
+    "name": "capacity512_cv16_until32_lr0.001",
+    "k": 16,
+    "predictor_stop_step": 32
+  },
+  {
+    "kind": "cv",
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state512_diversity2048/best.pt",
+    "name": "capacity512_cv8_lr0.001",
+    "k": 8
+  }
+]

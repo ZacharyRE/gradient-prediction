@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "epoch": 1792092595.4266899,
+  "splits": {
+    "warmup": {
+      "examples": 258,
+      "source_groups": 84,
+      "labels": {
+        "C": 86,
+        "B": 86,
+        "A": 86
+      },
+      "sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593"
+    },
+    "predictor_train": {
+      "examples": 2050,
+      "source_groups": 670,
+      "labels": {
+        "A": 683,
+        "B": 683,
+        "C": 684
+      },
+      "sha256": "741bb803f93f78f2ed3d0f7ac33113904b7580433bea5f2ba16ec85db0e05728"
+    },
+    "predictor_dev": {
+      "examples": 129,
+      "source_groups": 42,
+      "labels": {
+        "B": 43,
+        "A": 43,
+        "C": 43
+      },
+      "sha256": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986"
+    },
+    "accuracy_dev": {
+      "examples": 513,
+      "source_groups": 165,
+      "labels": {
+        "A": 171,
+        "B": 171,
+        "C": 171
+      },
+      "sha256": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e"
+    },
+    "update": {
+      "examples": 4097,
+      "source_groups": 1333,
+      "labels": {
+        "B": 1366,
+        "A": 1365,
+        "C": 1366
+      },
+      "sha256": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4"
+    },
+    "selection_dev": {
+      "examples": 1026,
+      "source_groups": 338,
+      "labels": {
+        "B": 342,
+        "C": 342,
+        "A": 342
+      },
+      "sha256": "b7f65e892cc8b832829ea6a193d21ba7e7377f65d23f048210188856ee48d912"
+    },
+    "selection_holdout": {
+      "examples": 2049,
+      "source_groups": 662,
+      "labels": {
+        "A": 683,
+        "C": 683,
+        "B": 683
+      },
+      "sha256": "92f6b9014bd68975773f8970e46fc73afb79519f750ae8126154c077fd2a7dfe"
+    },
+    "candidate_0": {
+      "examples": 1024,
+      "source_groups": 776,
+      "labels": {
+        "B": 350,
+        "C": 336,
+        "A": 338
+      },
+      "sha256": "d87c313c61c378bdfe52854d283281e3646a78f10bfbfd59989d40edbaf9eb95"
+    },
+    "candidate_1": {
+      "examples": 1024,
+      "source_groups": 772,
+      "labels": {
+        "C": 335,
+        "B": 363,
+        "A": 326
+      },
+      "sha256": "602a1b28191ca82b342b81265842d4fe35e3eb5b08b16f0b39a345cb782661bc"
+    },
+    "candidate_2": {
+      "examples": 1024,
+      "source_groups": 778,
+      "labels": {
+        "B": 342,
+        "C": 353,
+        "A": 329
+      },
+      "sha256": "5f80461da1b45fc5be58b15f9dc2062f19eed75f559799830eaae53a7a76e245"
+    },
+    "candidate_3": {
+      "examples": 1024,
+      "source_groups": 788,
+      "labels": {
+        "A": 366,
+        "B": 324,
+        "C": 334
+      },
+      "sha256": "ee7a9801ca5346c8ae81ff821cfd3f1cb0d13f90a3b538993eaa66f4be5bea34"
+    },
+    "candidate_4": {
+      "examples": 1024,
+      "source_groups": 770,
+      "labels": {
+        "C": 333,
+        "B": 348,
+        "A": 343
+      },
+      "sha256": "62761fef1b7919ffc2f5d39d50f6ec4c031fbd6f4b93f432a5c1b07f494567dc"
+    },
+    "genre_fiction": {
+      "examples": 1024,
+      "source_groups": 1011,
+      "labels": {
+        "C": 341,
+        "B": 341,
+        "A": 342
+      },
+      "sha256": "49cb972d456d44e70a25d17d2c9a858ff8c64389522fb5b81194dcad23b0046a"
+    },
+    "genre_government": {
+      "examples": 1024,
+      "source_groups": 1010,
+      "labels": {
+        "A": 342,
+        "C": 341,
+        "B": 341
+      },
+      "sha256": "0a6316a0947ad3105bd31daddb2bc1f42c46a88791a1ec78e72432aa64fd1019"
+    },
+    "genre_slate": {
+      "examples": 1024,
+      "source_groups": 1008,
+      "labels": {
+        "C": 341,
+        "A": 342,
+        "B": 341
+      },
+      "sha256": "588dbd34fd634410b2f667f81c42ece0d65d6936e574d977ad89e2616716b402"
+    },
+    "genre_telephone": {
+      "examples": 1024,
+      "source_groups": 1011,
+      "labels": {
+        "B": 341,
+        "C": 341,
+        "A": 342
+      },
+      "sha256": "ac148a45bd519d9d1b0f16b1f45b4b6552bda2fa75987eda7a139508e195aac6"
+    },
+    "genre_travel": {
+      "examples": 1024,
+      "source_groups": 1009,
+      "labels": {
+        "A": 342,
+        "B": 341,
+        "C": 341
+      },
+      "sha256": "758d4b0ac19769250abd60aa0a76a4b42f0fbcbb83a4f6a56a0541f6ce9f4e32"
+    }
+  },
+  "allowed_overlap": [
+    {
+      "first": "update",
+      "second": "candidate_0",
+      "source_groups": 776,
+      "examples": 1024,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "update",
+      "second": "candidate_1",
+      "source_groups": 772,
+      "examples": 1024,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "update",
+      "second": "candidate_2",
+      "source_groups": 778,
+      "examples": 1024,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "update",
+      "second": "candidate_3",
+      "source_groups": 788,
+      "examples": 1024,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "update",
+      "second": "candidate_4",
+      "source_groups": 770,
+      "examples": 1024,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_0",
+      "second": "candidate_1",
+      "source_groups": 450,
+      "examples": 252,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_0",
+      "second": "candidate_2",
+      "source_groups": 462,
+      "examples": 282,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_0",
+      "second": "candidate_3",
+      "source_groups": 456,
+      "examples": 267,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_0",
+      "second": "candidate_4",
+      "source_groups": 458,
+      "examples": 264,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_1",
+      "second": "candidate_2",
+      "source_groups": 438,
+      "examples": 240,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_1",
+      "second": "candidate_3",
+      "source_groups": 461,
+      "examples": 242,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_1",
+      "second": "candidate_4",
+      "source_groups": 452,
+      "examples": 260,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_2",
+      "second": "candidate_3",
+      "source_groups": 474,
+      "examples": 272,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_2",
+      "second": "candidate_4",
+      "source_groups": 440,
+      "examples": 250,
+      "allowed_original_update_pool_overlap": true
+    },
+    {
+      "first": "candidate_3",
+      "second": "candidate_4",
+      "source_groups": 456,
+      "examples": 274,
+      "allowed_original_update_pool_overlap": true
+    }
+  ],
+  "excluded_source_receipts": [
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/predictor_dev.jsonl",
+      "sha256": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/update.jsonl",
+      "sha256": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/warmup.jsonl",
+      "sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/accuracy_dev.jsonl",
+      "sha256": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/test.jsonl",
+      "sha256": "f975a26d3ff10ab2e424f7daf74cbc85b33018ed8d02ef3d5d6eed1b531b48f0"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/predictor_train.jsonl",
+      "sha256": "741bb803f93f78f2ed3d0f7ac33113904b7580433bea5f2ba16ec85db0e05728"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/gradient_test.jsonl",
+      "sha256": "01d901807ecde0ef7bdb6d18241c15fb27a4d0c8f8c36c820ad6533169d0ebc4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_0p5b_16h_20261010/data/mnli/oracle_confirmation.jsonl",
+      "sha256": "1e4b0cca865dfd93f5de6026ae880d5f49cb3c242d9f62737486b4dbf45430fc"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/predictor_dev.jsonl",
+      "sha256": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/update.jsonl",
+      "sha256": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/warmup.jsonl",
+      "sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/accuracy_dev.jsonl",
+      "sha256": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/test.jsonl",
+      "sha256": "f975a26d3ff10ab2e424f7daf74cbc85b33018ed8d02ef3d5d6eed1b531b48f0"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/predictor_train.jsonl",
+      "sha256": "741bb803f93f78f2ed3d0f7ac33113904b7580433bea5f2ba16ec85db0e05728"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/gradient_test.jsonl",
+      "sha256": "01d901807ecde0ef7bdb6d18241c15fb27a4d0c8f8c36c820ad6533169d0ebc4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/data/mnli/oracle_confirmation.jsonl",
+      "sha256": "1e4b0cca865dfd93f5de6026ae880d5f49cb3c242d9f62737486b4dbf45430fc"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/predictor_dev.jsonl",
+      "sha256": "5548d8bd763337cb5ff777b5dde72b63127f6b405dc6d91c6c8d56d43ea88986"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/update.jsonl",
+      "sha256": "6fbb5e9cae6af4fdf1cb634418995d013ae1bc212e1016529f94320290e781a4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/warmup.jsonl",
+      "sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/accuracy_dev.jsonl",
+      "sha256": "124a0154c2481325844c98e8f5175928bad4930a4de291d9da52b020b34d5f5e"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/test.jsonl",
+      "sha256": "f975a26d3ff10ab2e424f7daf74cbc85b33018ed8d02ef3d5d6eed1b531b48f0"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/predictor_train.jsonl",
+      "sha256": "741bb803f93f78f2ed3d0f7ac33113904b7580433bea5f2ba16ec85db0e05728"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/gradient_test.jsonl",
+      "sha256": "01d901807ecde0ef7bdb6d18241c15fb27a4d0c8f8c36c820ad6533169d0ebc4"
+    },
+    {
+      "path": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/data/mnli/oracle_confirmation.jsonl",
+      "sha256": "1e4b0cca865dfd93f5de6026ae880d5f49cb3c242d9f62737486b4dbf45430fc"
+    }
+  ],
+  "scope": "Actual current inputs: disjoint source groups and whitespace-normalized problem identities outside the explicitly overlapping random-subset/original-pool family; exact registered random-subset membership; selection and genre groups excluded from all registered previous-study inputs. This does not establish absence from base-model pretraining.",
+  "freeze_sha256": "d1f28a3d3532444efded647cf65bf3db8bfa9d37f42f3347042c0639c62f734b"
+}

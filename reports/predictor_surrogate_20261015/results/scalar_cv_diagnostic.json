@@ -1,0 +1,400 @@
+{
+  "complete": true,
+  "source_sha256": "94747886ef1f7c1339863710350605b7b7a7aa4b3009737132440f66a027c7df",
+  "diagnostic_examples": 129,
+  "rows": [
+    {
+      "state": "warmup301",
+      "warmup_seed": 301,
+      "steps": 0,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.17993125319480896,
+      "actual_residual_variance_ratio": 1.0139321088790894,
+      "best_residual_ratio_with_one_scalar": 0.9676247441237456,
+      "maximum_variance_reduction_percent": 3.237525587625445
+    },
+    {
+      "state": "warmup301",
+      "warmup_seed": 301,
+      "steps": 0,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.33630654215812683,
+      "actual_residual_variance_ratio": 0.8869705200195312,
+      "best_residual_ratio_with_one_scalar": 0.8868979097016441,
+      "maximum_variance_reduction_percent": 11.310209029835594
+    },
+    {
+      "state": "warmup301",
+      "warmup_seed": 301,
+      "steps": 0,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.32573652267456055,
+      "actual_residual_variance_ratio": 0.895081102848053,
+      "best_residual_ratio_with_one_scalar": 0.8938957177958855,
+      "maximum_variance_reduction_percent": 10.61042822041145
+    },
+    {
+      "state": "oracle32_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.1643240600824356,
+      "actual_residual_variance_ratio": 1.023963212966919,
+      "best_residual_ratio_with_one_scalar": 0.9729976032780241,
+      "maximum_variance_reduction_percent": 2.7002396721975908
+    },
+    {
+      "state": "oracle32_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.200184628367424,
+      "actual_residual_variance_ratio": 0.9628980755805969,
+      "best_residual_ratio_with_one_scalar": 0.9599261145653963,
+      "maximum_variance_reduction_percent": 4.007388543460366
+    },
+    {
+      "state": "oracle32_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.2096433788537979,
+      "actual_residual_variance_ratio": 0.9854531288146973,
+      "best_residual_ratio_with_one_scalar": 0.956049653702763,
+      "maximum_variance_reduction_percent": 4.395034629723704
+    },
+    {
+      "state": "oracle32_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.0982348844408989,
+      "actual_residual_variance_ratio": 1.0244250297546387,
+      "best_residual_ratio_with_one_scalar": 0.9903499074788833,
+      "maximum_variance_reduction_percent": 0.9650092521116704
+    },
+    {
+      "state": "oracle32_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.12222976982593536,
+      "actual_residual_variance_ratio": 0.9905551075935364,
+      "best_residual_ratio_with_one_scalar": 0.9850598833682989,
+      "maximum_variance_reduction_percent": 1.494011663170114
+    },
+    {
+      "state": "oracle32_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.14701701700687408,
+      "actual_residual_variance_ratio": 0.9878286123275757,
+      "best_residual_ratio_with_one_scalar": 0.9783859967104005,
+      "maximum_variance_reduction_percent": 2.1614003289599504
+    },
+    {
+      "state": "oracle32_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.08338736742734909,
+      "actual_residual_variance_ratio": 1.107474684715271,
+      "best_residual_ratio_with_one_scalar": 0.9930465469535363,
+      "maximum_variance_reduction_percent": 0.6953453046463665
+    },
+    {
+      "state": "oracle32_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.10022301226854324,
+      "actual_residual_variance_ratio": 1.0118483304977417,
+      "best_residual_ratio_with_one_scalar": 0.9899553478118195,
+      "maximum_variance_reduction_percent": 1.0044652188180514
+    },
+    {
+      "state": "oracle32_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.1284884512424469,
+      "actual_residual_variance_ratio": 1.0781136751174927,
+      "best_residual_ratio_with_one_scalar": 0.9834907178973173,
+      "maximum_variance_reduction_percent": 1.6509282102682654
+    },
+    {
+      "state": "oracle32_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.020395297557115555,
+      "actual_residual_variance_ratio": 1.0284152030944824,
+      "best_residual_ratio_with_one_scalar": 0.9995840318375567,
+      "maximum_variance_reduction_percent": 0.041596816244326984
+    },
+    {
+      "state": "oracle32_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.03532591462135315,
+      "actual_residual_variance_ratio": 1.0170717239379883,
+      "best_residual_ratio_with_one_scalar": 0.9987520797561649,
+      "maximum_variance_reduction_percent": 0.12479202438351322
+    },
+    {
+      "state": "oracle32_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.04466232657432556,
+      "actual_residual_variance_ratio": 1.0422652959823608,
+      "best_residual_ratio_with_one_scalar": 0.9980052765849683,
+      "maximum_variance_reduction_percent": 0.19947234150317072
+    },
+    {
+      "state": "cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.1328749805688858,
+      "actual_residual_variance_ratio": 1.0162335634231567,
+      "best_residual_ratio_with_one_scalar": 0.9823442395388182,
+      "maximum_variance_reduction_percent": 1.765576046118178
+    },
+    {
+      "state": "cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.21624962985515594,
+      "actual_residual_variance_ratio": 0.9533349871635437,
+      "best_residual_ratio_with_one_scalar": 0.953236097587508,
+      "maximum_variance_reduction_percent": 4.676390241249195
+    },
+    {
+      "state": "cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.20547451078891754,
+      "actual_residual_variance_ratio": 0.9779118895530701,
+      "best_residual_ratio_with_one_scalar": 0.957780225416055,
+      "maximum_variance_reduction_percent": 4.221977458394499
+    },
+    {
+      "state": "cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.10359470546245575,
+      "actual_residual_variance_ratio": 1.2481638193130493,
+      "best_residual_ratio_with_one_scalar": 0.989268137000147,
+      "maximum_variance_reduction_percent": 1.073186299985296
+    },
+    {
+      "state": "cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.14660319685935974,
+      "actual_residual_variance_ratio": 0.9981299042701721,
+      "best_residual_ratio_with_one_scalar": 0.9785075026706158,
+      "maximum_variance_reduction_percent": 2.1492497329384186
+    },
+    {
+      "state": "cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.1532229334115982,
+      "actual_residual_variance_ratio": 1.0477665662765503,
+      "best_residual_ratio_with_one_scalar": 0.9765227326767449,
+      "maximum_variance_reduction_percent": 2.3477267323255058
+    },
+    {
+      "state": "cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.0863548070192337,
+      "actual_residual_variance_ratio": 1.1004772186279297,
+      "best_residual_ratio_with_one_scalar": 0.9925428473046709,
+      "maximum_variance_reduction_percent": 0.7457152695329095
+    },
+    {
+      "state": "cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.10341612249612808,
+      "actual_residual_variance_ratio": 1.0081638097763062,
+      "best_residual_ratio_with_one_scalar": 0.9893051056078659,
+      "maximum_variance_reduction_percent": 1.0694894392134113
+    },
+    {
+      "state": "cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.11674395203590393,
+      "actual_residual_variance_ratio": 1.1083921194076538,
+      "best_residual_ratio_with_one_scalar": 0.9863708496630386,
+      "maximum_variance_reduction_percent": 1.3629150336961438
+    },
+    {
+      "state": "cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.025400063022971153,
+      "actual_residual_variance_ratio": 1.1015459299087524,
+      "best_residual_ratio_with_one_scalar": 0.9993548367984291,
+      "maximum_variance_reduction_percent": 0.06451632015709308
+    },
+    {
+      "state": "cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.05697648227214813,
+      "actual_residual_variance_ratio": 1.0230129957199097,
+      "best_residual_ratio_with_one_scalar": 0.9967536804678916,
+      "maximum_variance_reduction_percent": 0.32463195321084104
+    },
+    {
+      "state": "cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.06260917335748672,
+      "actual_residual_variance_ratio": 1.0915952920913696,
+      "best_residual_ratio_with_one_scalar": 0.9960800914114922,
+      "maximum_variance_reduction_percent": 0.391990858850777
+    },
+    {
+      "state": "state256_cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.1372738629579544,
+      "actual_residual_variance_ratio": 1.0111212730407715,
+      "best_residual_ratio_with_one_scalar": 0.9811558865486008,
+      "maximum_variance_reduction_percent": 1.8844113451399247
+    },
+    {
+      "state": "state256_cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.20163187384605408,
+      "actual_residual_variance_ratio": 0.9593990445137024,
+      "best_residual_ratio_with_one_scalar": 0.9593445874493289,
+      "maximum_variance_reduction_percent": 4.065541255067107
+    },
+    {
+      "state": "state256_cv16_lr0.001_step32",
+      "warmup_seed": 301,
+      "steps": 32,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.19581833481788635,
+      "actual_residual_variance_ratio": 0.9863659739494324,
+      "best_residual_ratio_with_one_scalar": 0.9616551797491502,
+      "maximum_variance_reduction_percent": 3.8344820250849843
+    },
+    {
+      "state": "state256_cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.11670677363872528,
+      "actual_residual_variance_ratio": 1.2203972339630127,
+      "best_residual_ratio_with_one_scalar": 0.9863795289868393,
+      "maximum_variance_reduction_percent": 1.3620471013160662
+    },
+    {
+      "state": "state256_cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.14118023216724396,
+      "actual_residual_variance_ratio": 1.0078966617584229,
+      "best_residual_ratio_with_one_scalar": 0.9800681420452031,
+      "maximum_variance_reduction_percent": 1.9931857954796905
+    },
+    {
+      "state": "state256_cv16_lr0.001_step128",
+      "warmup_seed": 301,
+      "steps": 128,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.1557423621416092,
+      "actual_residual_variance_ratio": 1.066828727722168,
+      "best_residual_ratio_with_one_scalar": 0.9757443166345519,
+      "maximum_variance_reduction_percent": 2.4255683365448144
+    },
+    {
+      "state": "state256_cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.04279305413365364,
+      "actual_residual_variance_ratio": 1.0637712478637695,
+      "best_residual_ratio_with_one_scalar": 0.9981687545179142,
+      "maximum_variance_reduction_percent": 0.1831245482085797
+    },
+    {
+      "state": "state256_cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.07761136442422867,
+      "actual_residual_variance_ratio": 1.0172842741012573,
+      "best_residual_ratio_with_one_scalar": 0.9939764761122096,
+      "maximum_variance_reduction_percent": 0.6023523887790372
+    },
+    {
+      "state": "state256_cv16_lr0.001_step256",
+      "warmup_seed": 301,
+      "steps": 256,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.08107726275920868,
+      "actual_residual_variance_ratio": 1.0901302099227905,
+      "best_residual_ratio_with_one_scalar": 0.9934264774634742,
+      "maximum_variance_reduction_percent": 0.6573522536525767
+    },
+    {
+      "state": "state256_cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_predictor_globalfit_p123",
+      "centered_correlation": 0.038022201508283615,
+      "actual_residual_variance_ratio": 1.0791860818862915,
+      "best_residual_ratio_with_one_scalar": 0.9985543121924635,
+      "maximum_variance_reduction_percent": 0.1445687807536511
+    },
+    {
+      "state": "state256_cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state128",
+      "centered_correlation": 0.05356743931770325,
+      "actual_residual_variance_ratio": 1.0317778587341309,
+      "best_residual_ratio_with_one_scalar": 0.9971305294449442,
+      "maximum_variance_reduction_percent": 0.28694705550558197
+    },
+    {
+      "state": "state256_cv16_lr0.001_step512",
+      "warmup_seed": 301,
+      "steps": 512,
+      "predictor": "mnli_critic_state256",
+      "centered_correlation": 0.05355635657906532,
+      "actual_residual_variance_ratio": 1.124767780303955,
+      "best_residual_ratio_with_one_scalar": 0.997131716669976,
+      "maximum_variance_reduction_percent": 0.28682833300239796
+    }
+  ],
+  "identity": "For centered true/predicted gradient matrices Gc/Pc with nonzero norms: min_a ||Gc-a Pc||_F^2 / ||Gc||_F^2 = 1-rho^2. The single scalar is unrestricted and fitted with all true gradients from this diagnostic population.",
+  "scope": "Posthoc CPU calculation from existing development-only gradient diagnostics. An empirical best-scalar bound, not a fitted/deployable method, new GPU experiment, batch-by-batch guarantee, heldout confirmation or downstream-accuracy bound. More expressive or example-dependent corrections are not bounded by this calculation. Pure-update mean bias is not removed.",
+  "code_sha256": "8fb6d36f7777675512717d8676b6758421fcdb4ec716c72cf6c2d981dae9b8cf"
+}

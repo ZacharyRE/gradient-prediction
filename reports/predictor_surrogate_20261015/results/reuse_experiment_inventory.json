@@ -1,0 +1,96 @@
+{
+  "trajectories": 682,
+  "checkpoint_rows": 2473,
+  "development_readouts": 1842,
+  "failed_stage_attempts": [
+    {
+      "name": "pilot_transport",
+      "started": 1792062626.60565,
+      "finished": 1792062640.861527,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "graph_smoke_graph",
+      "started": 1792069902.823689,
+      "finished": 1792069916.1272602,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "pilot_factor_scale",
+      "started": 1792072042.5767245,
+      "finished": 1792072074.2241547,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "audit_graph_labels",
+      "started": 1792072197.7805545,
+      "finished": 1792072207.9530087,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "pilot_state_eval",
+      "started": 1792073370.8957565,
+      "finished": 1792075160.493939,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "intentional_screening_reprioritization"
+    },
+    {
+      "name": "state_candidate_w321_eval",
+      "started": 1792077361.1226513,
+      "finished": 1792077432.4003448,
+      "returncode": -15,
+      "reason": "unexpected_gpu_occupancy",
+      "classification": "owned_vllm_teardown_false_alarm_all_records_cleanly_reproduced"
+    },
+    {
+      "name": "fit_anchored_behavior",
+      "started": 1792080639.627973,
+      "finished": 1792080659.9475157,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "surrogate_pipeline_random_oracle_generated_r1",
+      "started": 1792099013.4923334,
+      "finished": 1792099169.435696,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "token_behavior_dev",
+      "started": 1792113020.46719,
+      "finished": 1792113030.590654,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "pilot_table",
+      "started": 1792113819.007805,
+      "finished": 1792113829.1336102,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "failed_attempt"
+    },
+    {
+      "name": "finish_controls_pilot_table",
+      "started": 1792113977.6998668,
+      "finished": 1792114999.4731696,
+      "returncode": 1,
+      "reason": "finished",
+      "classification": "registered_development_budget_cutoff_not_a_quality_failure"
+    }
+  ],
+  "scope": "All completed rollout recipes, excluding numerical/timing/profile replays. Blank development accuracy means not evaluated; heldout-start outcomes are not silently treated as development. Times are within-process historical components, not qualified standalone repeats. Failed attempts remain explicit. All source hash receipts retained locally."
+}

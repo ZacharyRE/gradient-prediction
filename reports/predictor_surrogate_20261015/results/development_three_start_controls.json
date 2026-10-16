@@ -1,0 +1,75 @@
+{
+  "scope": "Exploratory development; same513 evaluation examples and full4097 adaptation pool. Within-process preparation+updates exclude model startup and inherited predictor preparation. Not heldout confirmation.",
+  "rows": [
+    {
+      "lr": 0.0003,
+      "steps": 256,
+      "methods": {
+        "oracle32": {
+          "accuracy_mean_pct": 83.82066276803118,
+          "adaptation_seconds_mean": 27.6183772815081,
+          "by_start": {
+            "301": 82.84600389863547,
+            "311": 83.82066276803118,
+            "321": 84.7953216374269
+          }
+        },
+        "subset16": {
+          "accuracy_mean_pct": 81.67641325536063,
+          "adaptation_seconds_mean": 18.853846663531538,
+          "by_start": {
+            "301": 82.06627680311891,
+            "311": 81.0916179337232,
+            "321": 81.87134502923976
+          }
+        },
+        "cv16": {
+          "accuracy_mean_pct": 82.26120857699804,
+          "adaptation_seconds_mean": 20.761706549907103,
+          "by_start": {
+            "301": 82.06627680311891,
+            "311": 82.06627680311891,
+            "321": 82.65107212475633
+          }
+        }
+      },
+      "cv16_minus_subset16_pp": 0.5847953216374151,
+      "cv16_minus_oracle32_pp": -1.55945419103314
+    },
+    {
+      "lr": 0.001,
+      "steps": 256,
+      "methods": {
+        "oracle32": {
+          "accuracy_mean_pct": 83.95061728395062,
+          "adaptation_seconds_mean": 27.33006185029323,
+          "by_start": {
+            "301": 84.40545808966861,
+            "311": 83.04093567251462,
+            "321": 84.40545808966861
+          }
+        },
+        "subset16": {
+          "accuracy_mean_pct": 82.06627680311891,
+          "adaptation_seconds_mean": 18.908695169569302,
+          "by_start": {
+            "301": 82.45614035087719,
+            "311": 82.26120857699804,
+            "321": 81.48148148148148
+          }
+        },
+        "cv16": {
+          "accuracy_mean_pct": 82.13125406107862,
+          "adaptation_seconds_mean": 20.623572607447084,
+          "by_start": {
+            "301": 82.45614035087719,
+            "311": 81.28654970760235,
+            "321": 82.65107212475633
+          }
+        }
+      },
+      "cv16_minus_subset16_pp": 0.06497725795971121,
+      "cv16_minus_oracle32_pp": -1.8193632228719991
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "best_epoch": 3,
+  "best_centered_cv_ratio": 0.9820162430405617,
+  "selection_metric": "centered_cv_ratio",
+  "best_selection_score": 0.9820162430405617,
+  "seconds": 852.7090325590689,
+  "mean_normalization_preparation_seconds": 0.0,
+  "optimizer_steps": 13200,
+  "best_sha256": "428566315718b4c5627d594f57ede5d220cdcce27789b597858704dd892c3552",
+  "value_and_gradient_supervision": {
+    "name": "token_kd128",
+    "kind": "token",
+    "width": 128,
+    "epochs": 50,
+    "gradient_weight": 1,
+    "value_weight": 0,
+    "distillation_weight": 1,
+    "pretrained_readout": true
+  },
+  "collection_cost_seconds": 43.25088133011013,
+  "teacher_trajectory_cost_additional": true
+}

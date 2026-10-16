@@ -1,0 +1,210 @@
+[
+  {
+    "name": "cv4_head_cal16_lr1e-05",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 16,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "cal_scope": "head",
+    "replay_size": 4,
+    "cal_micro": 4
+  },
+  {
+    "name": "cv4_head_cal16_lr0.0001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 16,
+    "cal_epochs": 1,
+    "cal_lr": 0.0001,
+    "cal_scope": "head",
+    "replay_size": 4,
+    "cal_micro": 4
+  },
+  {
+    "name": "cv4_head_cal64_lr1e-05",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "cal_scope": "head",
+    "replay_size": 4,
+    "cal_micro": 4
+  },
+  {
+    "name": "cv4_head_cal64_lr0.0001",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 0.0001,
+    "cal_scope": "head",
+    "replay_size": 4,
+    "cal_micro": 4
+  },
+  {
+    "name": "cv4_full_cal64_lr1e-5",
+    "kind": "cv",
+    "k": 4,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "replay_size": 4,
+    "cal_micro": 4
+  },
+  {
+    "name": "cv16_head_cal16_lr1e-05",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 16,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "cal_scope": "head",
+    "replay_size": 16,
+    "cal_micro": 16
+  },
+  {
+    "name": "cv16_head_cal16_lr0.0001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 16,
+    "cal_epochs": 1,
+    "cal_lr": 0.0001,
+    "cal_scope": "head",
+    "replay_size": 16,
+    "cal_micro": 16
+  },
+  {
+    "name": "cv16_head_cal64_lr1e-05",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "cal_scope": "head",
+    "replay_size": 16,
+    "cal_micro": 16
+  },
+  {
+    "name": "cv16_head_cal64_lr0.0001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 0.0001,
+    "cal_scope": "head",
+    "replay_size": 16,
+    "cal_micro": 16
+  },
+  {
+    "name": "cv16_full_cal64_lr1e-5",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 512,
+    "save": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "micro": 32,
+    "cal_every": 64,
+    "cal_epochs": 1,
+    "cal_lr": 1e-05,
+    "replay_size": 16,
+    "cal_micro": 16
+  }
+]

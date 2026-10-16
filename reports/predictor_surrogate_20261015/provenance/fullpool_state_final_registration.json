@@ -1,0 +1,49 @@
+{
+  "epoch": 1792084599.1811185,
+  "selected": {
+    "backend": "native",
+    "method": "state256_cv16_until32_lr0.001",
+    "steps": 256,
+    "lr": 0.001,
+    "complete": true,
+    "warmup_seeds": [
+      301,
+      311,
+      321
+    ],
+    "mean_accuracy_pct": 83.36582196231319,
+    "accuracy_per_start": [
+      84.01559454191033,
+      82.84600389863547,
+      83.23586744639377
+    ],
+    "mean_preparation_plus_online_seconds": 20.026574421363573,
+    "seconds_per_start": [
+      20.004113841801882,
+      20.079078001668677,
+      19.99653142062016
+    ],
+    "tags": [
+      "mnli__w301_update_state256_cv16_until32_lr0.001_u401_earlycutoff__step256",
+      "mnli__w311_update_state256_cv16_until32_lr0.001_u411_earlycutoff__step256",
+      "mnli__w321_update_state256_cv16_until32_lr0.001_u421_earlycutoff__step256"
+    ]
+  },
+  "job": {
+    "name": "state256_cv16_until32_lr0.001",
+    "kind": "cv",
+    "k": 16,
+    "lr": 0.001,
+    "steps": 256,
+    "save": [
+      256
+    ],
+    "micro": 32,
+    "diagnostics": false,
+    "predictor_stop_step": 32,
+    "predictor_path": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/best.pt"
+  },
+  "reason": "One explicit-state variant for the final fullpool endpoint: cutoff32 matches fullstate256 meanaccuracy83.3658% with lower ready-predictor cost20.0266s versus20.9393s. Highest state-family mean with a lower-time tie break. Additionalcoverage andmean-aware pilots remain separatelyreported; no final outcomes used.",
+  "limitations": "Predictor preparation remains468.98s plus sourcewarmups; zero-every4 control is cheaper. This is a development-selected recipe, not a confirmed speed/quality win.",
+  "exact_prefix_audit": "results/early_predictor_cutoff_audit.json"
+}

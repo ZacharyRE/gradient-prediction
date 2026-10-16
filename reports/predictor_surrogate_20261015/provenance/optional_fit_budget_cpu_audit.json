@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "epoch": 1792107344.5192852,
+  "cases": [
+    "no_policy_keeps_original_reserve",
+    "missing_final_audit_rejected",
+    "validated_registered_fit_accepted",
+    "unrelated_fits_unchanged",
+    "incomplete_flop_profiles_rejected",
+    "incomplete_workflow_repetitions_rejected",
+    "incomplete_passed_rejected",
+    "expired_window_rejected",
+    "insufficient_report_reserve_rejected",
+    "recipe_hash_change_rejected"
+  ],
+  "policy_activated": false,
+  "source_sha256": {
+    "fit_critic.py": "8bb19957d8c14dd5e8633aa01d65f2d022cf2fe560e2cabc87557c48306640e3",
+    "optional_fit_budget.py": "6a8d39516d4e06709a27305a14247373fcdc3e83b1139990622f97c184ee4c13"
+  },
+  "scope": "CPU-only policy checks. No GPU allocation, existing fit change, or live policy activation. Default reserve remains active without a validated registered policy."
+}

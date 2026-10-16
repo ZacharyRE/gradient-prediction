@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "warmup_seed": 301,
+      "first32_weights_bitwise_equal": true,
+      "sampling_and_lr_identical": true,
+      "later_prediction_seconds_zero": true,
+      "true_gradient_examples": 8192,
+      "intervention_history_sha256": "8bb8b38d8037d485bfd7e33a99002ac113ed61cf177b163d4d96830c8dd4f968",
+      "reference_history_sha256": "a491a69222cd4c0fddfdede5096daf7ba9a4b73763c9ab9354d60e5a7ccb5af9"
+    },
+    {
+      "warmup_seed": 311,
+      "first32_weights_bitwise_equal": true,
+      "sampling_and_lr_identical": true,
+      "later_prediction_seconds_zero": true,
+      "true_gradient_examples": 8192,
+      "intervention_history_sha256": "f27592ea07fc7d82c5af7c9143ee13a7edbceae3d219077b5211d990f9363632",
+      "reference_history_sha256": "55158db9b34a24fef801d8d410bd5c03a5ee2f6dd34f94d69d5fb832da5ff0f3"
+    },
+    {
+      "warmup_seed": 321,
+      "first32_weights_bitwise_equal": true,
+      "sampling_and_lr_identical": true,
+      "later_prediction_seconds_zero": true,
+      "true_gradient_examples": 8192,
+      "intervention_history_sha256": "d527619d5b1e673e6c1b5e98a2d90fb077a2c6e38f8291a2b02b4bcbf61ad54d",
+      "reference_history_sha256": "aa53105318ca1b273ba0f0bef80e227db2f1922a9dce92ccd1a85cfa1ea9bb4a"
+    }
+  ],
+  "scope": "Exact first32 weights; unchanged sampling/LR; later teacher-only dispatch. Does not assert that the final adapters or downstream quality should agree."
+}

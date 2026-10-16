@@ -1,0 +1,7 @@
+family,condition,method,steps,selector,warmup_seed,qualified_repetitions,three_repeats_complete,pipeline_seconds_median,pipeline_seconds_min,pipeline_seconds_max
+random,oracle_generated,oracle32_lr0.0003,128,generated_accuracy,302,3,True,152.1547880540602,151.85477848700248,152.57491101208143
+random,oracle_forced,oracle32_lr0.0003,128,exact_teacher_gold_probability,302,3,True,132.04931184696034,131.51040611392818,133.33436192804947
+random,cv16_generated,cv16_matched,128,generated_accuracy,302,3,True,157.93440339295194,155.30621623503976,159.98240991216153
+random,cv16_forced,cv16_matched,128,exact_teacher_gold_probability,302,3,True,136.55536538222805,136.44113921606913,140.83631388517097
+random,cv16_behavior,cv16_matched,128,mnli_behavior_anchored128_coverage:gold_probability,302,3,True,133.650261961855,132.49956688517705,133.66390428389423
+random,short_oracle_forced,oracle32_matched,64,exact_teacher_gold_probability,302,3,True,123.92920964909717,123.79590444313362,124.77661831397563

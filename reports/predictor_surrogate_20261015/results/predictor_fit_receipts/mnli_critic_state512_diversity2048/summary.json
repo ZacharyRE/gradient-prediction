@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "best_epoch": 7,
+  "best_centered_cv_ratio": 0.9093775947888693,
+  "selection_metric": "centered_cv_ratio",
+  "best_selection_score": 0.9093775947888693,
+  "seconds": 356.11911136400886,
+  "mean_normalization_preparation_seconds": 0.0,
+  "optimizer_steps": 15652,
+  "best_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65",
+  "value_and_gradient_supervision": {
+    "name": "state512_diversity2048",
+    "kind": "state",
+    "width": 512,
+    "epochs": 10,
+    "gradient_weight": 1,
+    "value_weight": 0
+  },
+  "collection_cost_seconds": 215.85373743763193,
+  "teacher_trajectory_cost_additional": true
+}

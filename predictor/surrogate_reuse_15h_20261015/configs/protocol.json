@@ -1,0 +1,77 @@
+{
+  "start_epoch": 1792060698,
+  "deadline_epoch": 1792118298,
+  "compute_cutoff_epoch": 1792117398,
+  "gpu_index": 0,
+  "gpu_uuid": "GPU-dcbc7fd5-e3f0-efa9-a7d9-b3933e35790d",
+  "tasks": [
+    "mnli"
+  ],
+  "priority": "Reusable training surrogate: quality, candidate ranking, full wall time",
+  "source_study": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011",
+  "preserve_full_inputs": true,
+  "output_generation_cap": 256,
+  "primary_update_seeds": [
+    401,
+    402,
+    403
+  ],
+  "predictor_seeds": [
+    123
+  ],
+  "selection": "Freeze heldout warmup/subset conditions and selection protocols before final readouts. Previously inspected standard benchmarks remain exploratory.",
+  "quality_target": "Report gap and paired confidence intervals versus independently tuned Oracle32; within 1 percentage point is the predeclared practical target, not automatic evidence of noninferiority.",
+  "accounting": "Separate synchronized online updates including calibration; cached prefix preparation; original offline predictor fitting/label costs; selection/evaluation research overhead. Apply comparable optimizations to true-gradient baselines.",
+  "candidate_families": [
+    "CV4 with residual coefficient shrinkage",
+    "CV8/CV16",
+    "CV4 with delayed sparse calibration on already-paid correction labels",
+    "periodic full-batch true updates",
+    "cached frozen-prefix features",
+    "multi-state calibration if earlier diagnostics warrant"
+  ],
+  "no_guaranteed_success": true,
+  "previous_study": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014",
+  "new_warmup_seeds": [
+    301,
+    302,
+    303
+  ],
+  "development_warmup_seeds": [
+    201,
+    301,
+    311,
+    321
+  ],
+  "heldout_warmup_update_pairs": [
+    {
+      "warmup_seed": 302,
+      "update_seed": 401
+    },
+    {
+      "warmup_seed": 303,
+      "update_seed": 402
+    },
+    {
+      "warmup_seed": 304,
+      "update_seed": 403
+    }
+  ],
+  "amendments": [
+    {
+      "timestamp": 1792064934.162201,
+      "reason": "Explicit roles and paired seeds before any heldout-start downstream evaluation; original new_warmup_seeds field is initial planning metadata."
+    },
+    {
+      "timestamp": 1792082122.9470265,
+      "reason": "Clarify executed scope: this study runs1.5B/MNLI only. Initial PAWS task placeholder is not an executed benchmark; original scope metadata archived. No data, training, evaluation or final-selection rule changed."
+    },
+    {
+      "timestamp": 1792091771.6479166,
+      "reason": "User explicitly extended the original 15-hour authorization by one hour (16 hours total). Operational deadlines only; frozen scientific choices unchanged.",
+      "previous_deadline_epoch": 1792114698,
+      "new_deadline_epoch": 1792118298
+    }
+  ],
+  "model": "Qwen2.5-1.5B-Instruct"
+}

@@ -1,0 +1,354 @@
+{
+  "rows": [
+    {
+      "backend": "graph",
+      "method": "graph_subset4_lr0.001",
+      "steps": 128,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 74.13905133203379,
+      "accuracy_per_start": [
+        74.85380116959064,
+        78.16764132553607,
+        69.39571150097466
+      ],
+      "mean_preparation_plus_online_seconds": 5.882163976396744,
+      "seconds_per_start": [
+        5.731842351611704,
+        5.952994029736146,
+        5.961655547842383
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset4_lr0.001_u401_positioncandidate__step128",
+        "mnli__w311_candidate_0_graph_subset4_lr0.001_u411_positioncandidate__step128",
+        "mnli__w321_candidate_0_graph_subset4_lr0.001_u421_positioncandidate__step128"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "graph_subset4_lr0.001",
+      "steps": 256,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 78.10266406757634,
+      "accuracy_per_start": [
+        75.43859649122807,
+        78.16764132553607,
+        80.7017543859649
+      ],
+      "mean_preparation_plus_online_seconds": 8.3936465717076,
+      "seconds_per_start": [
+        8.228287808829919,
+        8.468409102642909,
+        8.484242803649977
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset4_lr0.001_u401_positioncandidate__step256",
+        "mnli__w311_candidate_0_graph_subset4_lr0.001_u411_positioncandidate__step256",
+        "mnli__w321_candidate_0_graph_subset4_lr0.001_u421_positioncandidate__step256"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "graph_subset4_lr0.001",
+      "steps": 512,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 78.29759584145548,
+      "accuracy_per_start": [
+        76.0233918128655,
+        79.14230019493176,
+        79.72709551656921
+      ],
+      "mean_preparation_plus_online_seconds": 13.407841037493199,
+      "seconds_per_start": [
+        13.268092011800036,
+        13.497781683225185,
+        13.457649417454377
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset4_lr0.001_u401_positioncandidate__step512",
+        "mnli__w311_candidate_0_graph_subset4_lr0.001_u411_positioncandidate__step512",
+        "mnli__w321_candidate_0_graph_subset4_lr0.001_u421_positioncandidate__step512"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "graph_subset8_lr0.001",
+      "steps": 128,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 80.05198180636778,
+      "accuracy_per_start": [
+        79.33723196881091,
+        80.31189083820662,
+        80.50682261208577
+      ],
+      "mean_preparation_plus_online_seconds": 7.315290810307488,
+      "seconds_per_start": [
+        7.3001516298390925,
+        7.044625456444919,
+        7.601095344638452
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset8_lr0.001_u401_positioncandidate__step128",
+        "mnli__w311_candidate_0_graph_subset8_lr0.001_u411_positioncandidate__step128",
+        "mnli__w321_candidate_0_graph_subset8_lr0.001_u421_positioncandidate__step128"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "graph_subset8_lr0.001",
+      "steps": 256,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 79.40220922677062,
+      "accuracy_per_start": [
+        78.16764132553607,
+        79.33723196881091,
+        80.7017543859649
+      ],
+      "mean_preparation_plus_online_seconds": 11.362581833576163,
+      "seconds_per_start": [
+        11.375078184064478,
+        11.052654099650681,
+        11.66001321701333
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset8_lr0.001_u401_positioncandidate__step256",
+        "mnli__w311_candidate_0_graph_subset8_lr0.001_u411_positioncandidate__step256",
+        "mnli__w321_candidate_0_graph_subset8_lr0.001_u421_positioncandidate__step256"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "graph_subset8_lr0.001",
+      "steps": 512,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 79.59714100064977,
+      "accuracy_per_start": [
+        78.3625730994152,
+        82.26120857699804,
+        78.16764132553607
+      ],
+      "mean_preparation_plus_online_seconds": 19.50993478919069,
+      "seconds_per_start": [
+        19.532730714883655,
+        19.147575586801395,
+        19.84949806588702
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_graph_subset8_lr0.001_u401_positioncandidate__step512",
+        "mnli__w311_candidate_0_graph_subset8_lr0.001_u411_positioncandidate__step512",
+        "mnli__w321_candidate_0_graph_subset8_lr0.001_u421_positioncandidate__step512"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_all_b4_cv8_lr0.001",
+      "steps": 128,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 79.07732293697205,
+      "accuracy_per_start": [
+        78.75243664717348,
+        78.75243664717348,
+        79.72709551656921
+      ],
+      "mean_preparation_plus_online_seconds": 7.662437100351478,
+      "seconds_per_start": [
+        7.333455018000677,
+        7.951134675880894,
+        7.702721607172862
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_all_b4_cv8_lr0.001_u401_positioncandidate__step128",
+        "mnli__w311_candidate_0_position_all_b4_cv8_lr0.001_u411_positioncandidate__step128",
+        "mnli__w321_candidate_0_position_all_b4_cv8_lr0.001_u421_positioncandidate__step128"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_all_b4_cv8_lr0.001",
+      "steps": 256,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 78.55750487329435,
+      "accuracy_per_start": [
+        79.14230019493176,
+        79.72709551656921,
+        76.80311890838206
+      ],
+      "mean_preparation_plus_online_seconds": 12.294198762315014,
+      "seconds_per_start": [
+        11.943669836502522,
+        12.567711056442931,
+        12.371215393999591
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_all_b4_cv8_lr0.001_u401_positioncandidate__step256",
+        "mnli__w311_candidate_0_position_all_b4_cv8_lr0.001_u411_positioncandidate__step256",
+        "mnli__w321_candidate_0_position_all_b4_cv8_lr0.001_u421_positioncandidate__step256"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_all_b4_cv8_lr0.001",
+      "steps": 512,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 79.7920727745289,
+      "accuracy_per_start": [
+        79.53216374269006,
+        79.53216374269006,
+        80.31189083820662
+      ],
+      "mean_preparation_plus_online_seconds": 21.688815295230597,
+      "seconds_per_start": [
+        21.368698040489107,
+        21.880797390593216,
+        21.81695045460947
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_all_b4_cv8_lr0.001_u401_positioncandidate__step512",
+        "mnli__w311_candidate_0_position_all_b4_cv8_lr0.001_u411_positioncandidate__step512",
+        "mnli__w321_candidate_0_position_all_b4_cv8_lr0.001_u421_positioncandidate__step512"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_w301_step0_b4_cv4_lr0.001",
+      "steps": 128,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 71.21507472384666,
+      "accuracy_per_start": [
+        70.76023391812866,
+        75.6335282651072,
+        67.2514619883041
+      ],
+      "mean_preparation_plus_online_seconds": 6.7705217083760845,
+      "seconds_per_start": [
+        6.842139560496435,
+        6.57940432545729,
+        6.89002123917453
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_w301_step0_b4_cv4_lr0.001_u401_positioncandidate__step128",
+        "mnli__w311_candidate_0_position_w301_step0_b4_cv4_lr0.001_u411_positioncandidate__step128",
+        "mnli__w321_candidate_0_position_w301_step0_b4_cv4_lr0.001_u421_positioncandidate__step128"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_w301_step0_b4_cv4_lr0.001",
+      "steps": 256,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 78.16764132553605,
+      "accuracy_per_start": [
+        78.16764132553607,
+        75.43859649122807,
+        80.89668615984405
+      ],
+      "mean_preparation_plus_online_seconds": 9.911578096371764,
+      "seconds_per_start": [
+        9.965498470002785,
+        9.721926832804456,
+        10.047308986308053
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_w301_step0_b4_cv4_lr0.001_u401_positioncandidate__step256",
+        "mnli__w311_candidate_0_position_w301_step0_b4_cv4_lr0.001_u411_positioncandidate__step256",
+        "mnli__w321_candidate_0_position_w301_step0_b4_cv4_lr0.001_u421_positioncandidate__step256"
+      ]
+    },
+    {
+      "backend": "graph",
+      "method": "position_w301_step0_b4_cv4_lr0.001",
+      "steps": 512,
+      "lr": 0.001,
+      "complete": true,
+      "warmup_seeds": [
+        301,
+        311,
+        321
+      ],
+      "mean_accuracy_pct": 79.85705003248863,
+      "accuracy_per_start": [
+        77.77777777777779,
+        81.48148148148148,
+        80.31189083820662
+      ],
+      "mean_preparation_plus_online_seconds": 16.182674444280565,
+      "seconds_per_start": [
+        16.24522069701925,
+        16.014391268836334,
+        16.28841136698611
+      ],
+      "tags": [
+        "mnli__w301_candidate_0_position_w301_step0_b4_cv4_lr0.001_u401_positioncandidate__step512",
+        "mnli__w311_candidate_0_position_w301_step0_b4_cv4_lr0.001_u411_positioncandidate__step512",
+        "mnli__w321_candidate_0_position_w301_step0_b4_cv4_lr0.001_u421_positioncandidate__step512"
+      ]
+    }
+  ],
+  "population": "candidate",
+  "scope": "Only registered graph/template and early-cutoff methods. Backend is part of method identity; do not merge padded graph and native trajectories. Three starts required for complete cells. Repeatedly inspected accuracy_dev, not final outcomes."
+}

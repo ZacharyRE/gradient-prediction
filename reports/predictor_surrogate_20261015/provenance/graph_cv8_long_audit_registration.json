@@ -1,0 +1,18 @@
+{
+  "epoch": 1792084369.714615,
+  "command": [
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/stage.py",
+    "--name",
+    "audit_graph_cv8_long",
+    "/mnt/micron/yixiaore/adapter/.venv/bin/python",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/scripts/replay_reuse.py",
+    "--reference-adapter",
+    "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_cv8_lr0.001_u401_graph/step-512",
+    "--repeat",
+    "1",
+    "--audit-backend",
+    "eager_static"
+  ],
+  "reason": "Before final use of graphCV8, qualify its actual8-example correction shapes by an exact512-update eager-static versus graph weight check, beyond existingCV4 long audit."
+}

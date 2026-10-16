@@ -1,0 +1,35 @@
+[
+  {
+    "name": "u32v64",
+    "rank_u": 32,
+    "rank_v": 64,
+    "width": 256,
+    "epochs": 100,
+    "lr": 0.0003
+  },
+  {
+    "name": "u64v128",
+    "rank_u": 64,
+    "rank_v": 128,
+    "width": 256,
+    "epochs": 100,
+    "lr": 0.0003
+  },
+  {
+    "name": "u128v256",
+    "rank_u": 128,
+    "rank_v": 256,
+    "width": 256,
+    "epochs": 100,
+    "lr": 0.0003
+  },
+  {
+    "name": "u64v128_honly",
+    "rank_u": 64,
+    "rank_v": 128,
+    "feature_mode": "h",
+    "width": 256,
+    "epochs": 100,
+    "lr": 0.0003
+  }
+]

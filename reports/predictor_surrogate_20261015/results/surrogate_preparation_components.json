@@ -1,0 +1,1150 @@
+{
+  "components": {
+    "original_predictor_labels": {
+      "seconds": 46.121195554733276,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/cache/mnli/complete.json",
+      "receipt_sha256": "6c64472781eac74b1630d35f785217c5159a1cf88be2dee47a44475ff69994a0",
+      "scope": "Training and predictor-dev gradient labels; separate gradient_test excluded"
+    },
+    "original_predictor_fit": {
+      "seconds": 62.314457416534424,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli_predictor_globalfit_p123/summary.json",
+      "receipt_sha256": "8184dd8ca8ad35faf8995d4d6f61fcbbb181cbcee08a1e1fb82fb6e5c468118b",
+      "scope": "Historical fit including checkpoint selection"
+    },
+    "critic_v1_labels": {
+      "seconds": 39.526340251322836,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_v1/complete.json",
+      "receipt_sha256": "167cc34e1c1e5b4dfc56f82a15c53578e2d77207b6e18e9a07ff052b1c079680",
+      "scope": "Training and predictor-dev label collection across all8 teacher states; same512 training examples repeated across states"
+    },
+    "teacher_trajectory_w201": {
+      "seconds": 28.917318175546825,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/cv4_effectiveness_9h_20261014/models/mnli__fast_oracle32_u101_p123/entries.json",
+      "receipt_sha256": "8cea681722d9a096308ac3a480bfe9648f4c10d65339ccc5054d8a7ca3a2ba45",
+      "scope": "Longest required teacher trajectory once, including recorded cache; do not sum intermediate checkpoints"
+    },
+    "teacher_trajectory_w301": {
+      "seconds": 27.348519053077325,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.0003_u401/entries.json",
+      "receipt_sha256": "95056012fa58d78635a7a0540f85f4bcdc64149b8e6e2b2edce9061f1174da98",
+      "scope": "Longest required teacher trajectory once, including recorded cache; do not sum intermediate checkpoints"
+    },
+    "critic_hidden_labels": {
+      "seconds": 43.25088133011013,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_hidden/complete.json",
+      "receipt_sha256": "dcb6349f9ece8c61b8f2b8b4aa58a83b260b37a4d0c4da3c2bbe8979b59aad1c",
+      "scope": "Training and predictor-dev label collection across all8 teacher states; same512 training examples repeated across states"
+    },
+    "factor_cache": {
+      "seconds": 21.620970683172345,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/factor_v1/complete.json",
+      "receipt_sha256": "79327e0c2c25d0a3000a418d6d9a178184985c2c456b3f922a2a183dbaebc52c",
+      "scope": "Training-only bases and covariance-cache preparation"
+    },
+    "critic_fast_v1_labels": {
+      "seconds": 23.685018726391718,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_fast_v1/complete.json",
+      "receipt_sha256": "cf336df17c1994d345136dbe08b57d19235fecf99988a7c47b0bc34ba757f13e",
+      "scope": "Four additional high-LR Oracle states; same fitting/development example IDs"
+    },
+    "teacher_fast_trajectory_w301": {
+      "seconds": 50.86794466432184,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli__w301_update_oracle32_lr0.001_u401_fullpoolconfirm/entries.json",
+      "receipt_sha256": "fe63dee6c8157ac7110b9b2069fdf02b738cc1d9945ea0013aacb88679aad7af",
+      "scope": "Additional LR0.001 trajectory through512. Separate from original LR0.0003 trajectory; charge both for expanded coverage."
+    },
+    "critic_fast_hidden_labels": {
+      "seconds": 22.312901723897085,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_fast_hidden/complete.json",
+      "receipt_sha256": "b447cb777808a2ebd5a8596137b1a16637df378620e02887bed88fca6ccf1b15",
+      "scope": "Four additional high-LR Oracle states; same fitting/development example IDs"
+    },
+    "critic_diversity2048_labels": {
+      "seconds": 215.85373743763193,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/cache/critic_diversity2048/complete.json",
+      "receipt_sha256": "371b61539062e1d5a64cc8fbb781174264126dbfbe91463fde8aa555d8bf0573",
+      "scope": "Post-freeze development collection:2048 distinct original predictor_train rows across12 previously declared teacher states; predictor_dev unchanged"
+    },
+    "fit_mnli_behavior_anchored128": {
+      "seconds": 20.95008423132822,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128/summary.json",
+      "receipt_sha256": "fddee12f15d7b0ec93cbcb2cdb1e741edb9059368f635ba848477c185f18fb62",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_anchored128_coverage": {
+      "seconds": 29.934672779869288,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored128_coverage/summary.json",
+      "receipt_sha256": "61b56bde0790bb047f6c5c6ff9bc5bc6a411a69391f008f114518ce49db64095",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_anchored64": {
+      "seconds": 21.08123352820985,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64/summary.json",
+      "receipt_sha256": "b44b10a139091485aa0e456b18e9402782d45f0248d35672f017eceb83dbc171",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_anchored64_coverage": {
+      "seconds": 29.962572955992073,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_anchored64_coverage/summary.json",
+      "receipt_sha256": "2986b5a32b3cfff7daf74fb06a24eb9bddaec525e8c9b9bf4bb1691ccaa2f8de",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_delta256": {
+      "seconds": 22.698392467806116,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256/summary.json",
+      "receipt_sha256": "7d5e954c9ad31dc5c2d9fe4dadb372857328535cd09a03e807c4488ddc35f2c6",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_delta256_nochange": {
+      "seconds": 22.787620048737153,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta256_nochange/summary.json",
+      "receipt_sha256": "a28587efdc5522f4f3c5a48b0cc1219d0f0b56453c60c5fb6d01c6fcb83bd82c",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_delta512": {
+      "seconds": 21.81147047970444,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_delta512/summary.json",
+      "receipt_sha256": "f9746af736a59a94457f1a4190983dabac5a8cac808d33deffee1de9961db3aa",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_behavior_no_explicit_delta256": {
+      "seconds": 23.197418184950948,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_behavior_no_explicit_delta256/summary.json",
+      "receipt_sha256": "0364960db7c91c26273604a5d0b89374db4890d691627e5c9d656de85a000753",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_copied2_distill": {
+      "seconds": 230.82971930503845,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_distill/summary.json",
+      "receipt_sha256": "f2bb1922977548b2f6a7dab38ecb9ddc2c267d4e5da40a450fd110e082d0627a",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_copied2_sobolev": {
+      "seconds": 527.2447238969617,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_copied2_sobolev/summary.json",
+      "receipt_sha256": "d3b43a68b5e4e9d3c5df7c3e01d4ed72730ef9df9e82deefbe3b2eb320355273",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_sobolev128": {
+      "seconds": 461.10237012500875,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_sobolev128/summary.json",
+      "receipt_sha256": "9d31594ab7da4e1b6b240802a81c49dcf8b7ef8a869cc7ac0283cbe871640fe0",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_sobolev128_value01": {
+      "seconds": 468.0227948031388,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_sobolev128_value01/summary.json",
+      "receipt_sha256": "5590c2cc646d48ce9cf1e978d502252f4d6fdf03fe38634342867ab2133268ab",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state128": {
+      "seconds": 359.5943384601269,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state128/summary.json",
+      "receipt_sha256": "9c204030a50739f30d6327ee7d26a4c1278f31bb9acb51635f280c5545ec0ab0",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state256": {
+      "seconds": 373.18817904102616,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256/summary.json",
+      "receipt_sha256": "0d522a4f30c246d37f0bb29c50f0b6897879208b0d11c9b31cae7e60eca9db28",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state256_coverage_fast": {
+      "seconds": 346.58689528913237,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_coverage_fast/summary.json",
+      "receipt_sha256": "28b2fbca1870a83873eb773983e0190bb0ad7cf37d31dfb12f380aa5feb4c768",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state256_diversity2048": {
+      "seconds": 395.5699692191556,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_diversity2048/summary.json",
+      "receipt_sha256": "6233bda6f8150581b8a451aa57b52a281b17d824ad26fd9bc797638fa99bf073",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state256_mean0": {
+      "seconds": 180.91700636735186,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean0/summary.json",
+      "receipt_sha256": "f5b7c2c2ff28b702360adf456160d371a340b26a3354429940928a551e9dad1f",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state256_mean4": {
+      "seconds": 186.70347357029095,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state256_mean4/summary.json",
+      "receipt_sha256": "b97f3aeb05be53dc0381317c2b032d7dc86c8303ac3612a8da43a598c68cbd67",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_state512_diversity2048": {
+      "seconds": 356.11911136400886,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_state512_diversity2048/summary.json",
+      "receipt_sha256": "f1b20fc4328fd8089f53e829a79d88157227cd0868c0dc2c5955062647290f41",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_kd128": {
+      "seconds": 852.7090325590689,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128/summary.json",
+      "receipt_sha256": "9d9447315a59ba7eea505ac7b993d73a9ea3cc13d1a5972e6a819e8d636845f5",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_kd128_nograd": {
+      "seconds": 295.10568813513964,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd128_nograd/summary.json",
+      "receipt_sha256": "f059d52451fc0bddcf87a74e3c53027621cb1645cf9ec6dc5821e4c5139e4ead",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_kd256": {
+      "seconds": 850.6332922331057,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_kd256/summary.json",
+      "receipt_sha256": "cf762f299c81ed221a18cd820b94b5d33f0f29e275904c8a2239f7a2e9f9007f",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_pre128": {
+      "seconds": 483.0105715789832,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_pre128/summary.json",
+      "receipt_sha256": "135a35c52ed4ce5daa7cfae568300b27852411f306860c76282d099a0569272d",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_pre256": {
+      "seconds": 479.39356152899563,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_pre256/summary.json",
+      "receipt_sha256": "7557f041bc440f31ac707c4fbdfdccabf6d0d9994e6a1cf36495d0c76c7e09a2",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_random128": {
+      "seconds": 457.14216062100604,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_random128/summary.json",
+      "receipt_sha256": "2be5a3ea46527c3faca07598b2283ebd6589f453d823ba4f3f5adb244b35854a",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_token_value128": {
+      "seconds": 173.4307873561047,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_token_value128/summary.json",
+      "receipt_sha256": "18caa533fc42fdd124ac3cd8281959dce70a54ab714c71f8f3038da89760f3f5",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_value128": {
+      "seconds": 172.58035168703645,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_value128/summary.json",
+      "receipt_sha256": "6266af4da659e825a50d56c751827b0a5a460ef91e336ca581b903e3da9b721f",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_critic_vector128": {
+      "seconds": 171.32653105910867,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_critic_vector128/summary.json",
+      "receipt_sha256": "166c1e3a256a5fe4f023389139b347fb5855d68c9504db84f00070ecfba7af7d",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_scale_q128": {
+      "seconds": 3.2742239229846746,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_scale_q128/summary.json",
+      "receipt_sha256": "86a463cc3aa214f2e467fe057c161104a88f1471329572a098f198e04f11876c",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_scale_q32": {
+      "seconds": 3.342643929179758,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_scale_q32/summary.json",
+      "receipt_sha256": "71d3e7f68fbf09eea8400246f560cf6b1131107f20ff70b4f8f3bfd612cdca86",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_scale_q64": {
+      "seconds": 3.2232992029748857,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_scale_q64/summary.json",
+      "receipt_sha256": "913b0bb86a91f0a7295aee3bd9af9e6d4166fa2a8d11fa140b931f6d5c6809f2",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_u128v256": {
+      "seconds": 31.814312362810597,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u128v256/summary.json",
+      "receipt_sha256": "d43eb635cf3205f1f002e53b90f2630d5bc18da77a66667c5f8e5fb1892e13cc",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_u32v64": {
+      "seconds": 30.44718773989007,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u32v64/summary.json",
+      "receipt_sha256": "e9ef1fb37332925aad2eb7b6bc30e0e056bb8089709acd85c523d2c7ad53d069",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_u64v128": {
+      "seconds": 28.18612759397365,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u64v128/summary.json",
+      "receipt_sha256": "d6d4ac4c7024e96bd086d7dcfedd1c764bd12d5f2ca3b785849edbf809cd159a",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_factor_u64v128_honly": {
+      "seconds": 30.052456823876128,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_factor_u64v128_honly/summary.json",
+      "receipt_sha256": "8045a170e2c1e38afba278e230002aada56246947aa126cfee3df33ae22734bf",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "position_all_train_labels": {
+      "seconds": 31.21414867695421,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_all_b8/summary.json",
+      "receipt_sha256": "7d2ecf3d840219c567a769de815b2b89b089fd4d89b9867c7a74c765c2ac68ad",
+      "scope": "Only training-label subset used by predeclared template construction; validation diagnostics are research overhead"
+    },
+    "fit_mnli_position_all_b0": {
+      "seconds": 2.6217106010299176,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_all_b0/summary.json",
+      "receipt_sha256": "f26ec930f6b485666e762c8e9d02b7a2017d57297fe7ffa241caae20f1ab99d9",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_all_b1": {
+      "seconds": 2.584980335086584,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_all_b1/summary.json",
+      "receipt_sha256": "d263113b6694b2ee68e12ebd1f095ed3bfbe39a1271b925ed7eaedef8d8df274",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_all_b4": {
+      "seconds": 2.6635222020559013,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_all_b4/summary.json",
+      "receipt_sha256": "d08a8854a7d465355131b0ac38b2b0f819d3d60a5be9af9c13ff7021dcc37522",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_all_b8": {
+      "seconds": 2.697470906889066,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_all_b8/summary.json",
+      "receipt_sha256": "7d2ecf3d840219c567a769de815b2b89b089fd4d89b9867c7a74c765c2ac68ad",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "position_w301_step0_train_labels": {
+      "seconds": 3.723903268808499,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b8/summary.json",
+      "receipt_sha256": "a3cfc97f9ad14b74c00160f9440425b374aa44547a29b56a1d2e921b4e364041",
+      "scope": "Only training-label subset used by predeclared template construction; validation diagnostics are research overhead"
+    },
+    "fit_mnli_position_w301_step0_b0": {
+      "seconds": 1.0491289650090039,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b0/summary.json",
+      "receipt_sha256": "da3febabedcb0516b9e047d4c81f7752849ac0479c6287a4c1cee9b58a672c6e",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_w301_step0_b1": {
+      "seconds": 0.7654593428596854,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b1/summary.json",
+      "receipt_sha256": "06bdffecb60c4d2d394ab4d13240848659d57a94790dba917a5552d574635012",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_w301_step0_b4": {
+      "seconds": 0.767264663008973,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b4/summary.json",
+      "receipt_sha256": "673ff1e82f08094642311f933828eac47e81ede3a4702070333af8aac281d635",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    },
+    "fit_mnli_position_w301_step0_b8": {
+      "seconds": 0.7952945579309016,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_position_w301_step0_b8/summary.json",
+      "receipt_sha256": "a3cfc97f9ad14b74c00160f9440425b374aa44547a29b56a1d2e921b4e364041",
+      "scope": "Historical fit/feature-preparation timer; reused label and trajectory costs are separate"
+    }
+  },
+  "source_warmups": {
+    "201": {
+      "seconds": 15.562033653259277,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/benchmark_1p5b_11h_20261011/models/mnli__warmup_lr0.001_s201/summary.json",
+      "receipt_sha256": "6acc15a937df376ebf5bbb17d90b7652013e313fb11b1368f3dafa463403d6af",
+      "scope": "Historical source warmup, distinct from a new target warmup; original timer boundaries apply"
+    },
+    "301": {
+      "seconds": 4.283310098107904,
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w301/summary.json",
+      "receipt_sha256": "35702a8645ca95cfbd754787742297350b5c2f77b9e66cc1c64df0b0dede0e09",
+      "scope": "Historical source warmup, distinct from a new target warmup; original timer boundaries apply"
+    }
+  },
+  "target_warmups": {
+    "302": {
+      "warmup_seed": 302,
+      "warmup_steps": 32,
+      "batch_size": 32,
+      "lr": 0.001,
+      "online_seconds": 4.26183769502677,
+      "recorded_wall_seconds": 10.414904594421387,
+      "adapter_sha256": "a0d3853a380322508e34d39b1ec2e0ecc74874c42c6c8fe42893060815166b22",
+      "data_sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593",
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w302/summary.json",
+      "receipt_sha256": "25228fa6c9caa2e9af041a3516d3bd5167c145118fd606c6aa698535085784cb",
+      "scope": "Shared target warmup excluded from incremental comparisons. One historical run per target start; wall timer includes setup/data encoding/save but excludes imports before main. Do not treat these as three timing repetitions of one start or add duplicated setup without qualification."
+    },
+    "303": {
+      "warmup_seed": 303,
+      "warmup_steps": 32,
+      "batch_size": 32,
+      "lr": 0.001,
+      "online_seconds": 4.2096316267270595,
+      "recorded_wall_seconds": 10.124692440032959,
+      "adapter_sha256": "d09c6c843677c34c7e33a29f33e7d61c2527caa650e206acb3e4285c46f79cbf",
+      "data_sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593",
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w303/summary.json",
+      "receipt_sha256": "7a469a55a658b71ae27fc3245f554451e0b750df8f1c749d43cd6eda4d43910d",
+      "scope": "Shared target warmup excluded from incremental comparisons. One historical run per target start; wall timer includes setup/data encoding/save but excludes imports before main. Do not treat these as three timing repetitions of one start or add duplicated setup without qualification."
+    },
+    "304": {
+      "warmup_seed": 304,
+      "warmup_steps": 32,
+      "batch_size": 32,
+      "lr": 0.001,
+      "online_seconds": 4.220956227509305,
+      "recorded_wall_seconds": 10.269525051116943,
+      "adapter_sha256": "82aad7bb4e8362fde4b03b4a92cdec5cc58985cc5aad5081656746dfe3f34e0e",
+      "data_sha256": "b3204ec308477eb32301d5b1f6543df2adb02ccdc4aedc4521c44b30838d4593",
+      "receipt": "/mnt/micron/yixiaore/adapter/predictor/surrogate_reuse_15h_20261015/models/mnli_warmup_w304/summary.json",
+      "receipt_sha256": "081aa2233500d526f4806d49a3c9c16f43d4d719da88625edee8e473fd0e7952",
+      "scope": "Shared target warmup excluded from incremental comparisons. One historical run per target start; wall timer includes setup/data encoding/save but excludes imports before main. Do not treat these as three timing repetitions of one start or add duplicated setup without qualification."
+    }
+  },
+  "predictors": [
+    {
+      "predictor": "mnli_predictor_globalfit_p123",
+      "predictor_sha256": "b27b0083056bc34fb34faf40b9cf5a24ba0574e0dd032602c461eb23caf3220d",
+      "components": [
+        "original_predictor_labels",
+        "original_predictor_fit"
+      ],
+      "source_warmup_seeds": [
+        201
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 108.4356529712677,
+      "recorded_source_warmup_seconds": 15.562033653259277,
+      "recorded_component_sum_seconds": 123.99768662452698
+    },
+    {
+      "predictor": "mnli_behavior_anchored128",
+      "predictor_sha256": "b061a3ec43e220c0004d4185b794f61faa4a1bcae15e9ea93c60276e3405197c",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_anchored128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 120.4668027900625,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 140.31214654142968
+    },
+    {
+      "predictor": "mnli_behavior_anchored128_coverage",
+      "predictor_sha256": "9b7801c77ff4c149d44c885d8c91e79c1f1943d06a492d4eb4217d547011b675",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "critic_fast_hidden_labels",
+        "teacher_fast_trajectory_w301",
+        "fit_mnli_behavior_anchored128_coverage"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 202.6322377268225,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 222.47758147818968
+    },
+    {
+      "predictor": "mnli_behavior_anchored64",
+      "predictor_sha256": "3eac2c249f51c00ee8a93cc1f8b22155104427832b91f3098849e67968c12276",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_anchored64"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 120.59795208694413,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 140.44329583831131
+    },
+    {
+      "predictor": "mnli_behavior_anchored64_coverage",
+      "predictor_sha256": "097d39a0d3db8d17e30633c79bc0c7901753f0984ae28404a57f62030e8397cf",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "critic_fast_hidden_labels",
+        "teacher_fast_trajectory_w301",
+        "fit_mnli_behavior_anchored64_coverage"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 202.66013790294528,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 222.50548165431246
+    },
+    {
+      "predictor": "mnli_behavior_delta256",
+      "predictor_sha256": "15c1eeae32dd3788a1092a6138c894a201e2cb69a0c983a63b4d50b3c2f468ab",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_delta256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 122.2151110265404,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 142.06045477790758
+    },
+    {
+      "predictor": "mnli_behavior_delta256_nochange",
+      "predictor_sha256": "dd971eb73d0c5798a5efc3c2eeaf48aea6977210cd72fb6ef8ecaff8ff5e6613",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_delta256_nochange"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 122.30433860747144,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 142.14968235883862
+    },
+    {
+      "predictor": "mnli_behavior_delta512",
+      "predictor_sha256": "8a27fa8f077e1d956b6749474bda86815fe9c59cfaa1faaeeb7056eacdae4937",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_delta512"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 121.32818903843872,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 141.1735327898059
+    },
+    {
+      "predictor": "mnli_behavior_no_explicit_delta256",
+      "predictor_sha256": "3e6eb1df6e5a5cf9f3559484f7accbc226edff6c681ef1a51c0c006262394b5a",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_behavior_no_explicit_delta256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 122.71413674368523,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 142.5594804950524
+    },
+    {
+      "predictor": "mnli_critic_copied2_distill",
+      "predictor_sha256": "6f366b84b4dc77a0cc8635b19ae7b2d541b572dfa790f3c52d6e0a88eab3e41e",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_copied2_distill"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 330.34643786377273,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 350.1917816151399
+    },
+    {
+      "predictor": "mnli_critic_copied2_sobolev",
+      "predictor_sha256": "9fdf1f7ac2dcbf84910bf15c42b3b6fd71717c1b0b17e6c8f1d0a82afe8d6470",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_copied2_sobolev"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 626.7614424556959,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 646.6067862070631
+    },
+    {
+      "predictor": "mnli_critic_sobolev128",
+      "predictor_sha256": "1d332373f3bfe967b7ebbc50f53094d7624c31256d47d61c2af6cbab2aa32f4e",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_sobolev128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 556.8945476049557,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 576.7398913563229
+    },
+    {
+      "predictor": "mnli_critic_sobolev128_value01",
+      "predictor_sha256": "09890fd132ee33a067328962da651b81bc97f8597b848d5b27aca99ad8311202",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_sobolev128_value01"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 563.8149722830858,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 583.660316034453
+    },
+    {
+      "predictor": "mnli_critic_state128",
+      "predictor_sha256": "0096432af21afd5e0b94a8c074b9e7f7dd7845aac873c002ac8a896df7ab1ce3",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_state128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 455.3865159400739,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 475.23185969144106
+    },
+    {
+      "predictor": "mnli_critic_state256",
+      "predictor_sha256": "0398d160f6568dc8e4d085a7ecce3b74ad0426571775f97252ccdcf2d02bc928",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_state256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 468.98035652097315,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 488.8257002723403
+    },
+    {
+      "predictor": "mnli_critic_state256_coverage_fast",
+      "predictor_sha256": "2dcac1d51e7cbab47d045a1bc011ca09452f6c606b76b061fc3a100062dd13a4",
+      "components": [
+        "critic_v1_labels",
+        "critic_fast_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "teacher_fast_trajectory_w301",
+        "fit_mnli_critic_state256_coverage_fast"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 516.9320361597929,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 536.7773799111601
+    },
+    {
+      "predictor": "mnli_critic_state256_diversity2048",
+      "predictor_sha256": "b8c94a3e9d6bc129716b6d33c617452ebe176bb3484d74cb21e666df72628e7d",
+      "components": [
+        "critic_diversity2048_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "teacher_fast_trajectory_w301",
+        "fit_mnli_critic_state256_diversity2048"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 718.5574885497335,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 738.4028323011007
+    },
+    {
+      "predictor": "mnli_critic_state256_mean0",
+      "predictor_sha256": "6daf476cc0e9936bff7b337fbf54122358d33104f16705d9271777975f61dffd",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_state256_mean0"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 276.70918384729885,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 296.554527598666
+    },
+    {
+      "predictor": "mnli_critic_state256_mean4",
+      "predictor_sha256": "09f02f817a3fe547289ad2042f15d76cdca6975db4b7dff1e0ce60fc297bbacd",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_state256_mean4"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 282.49565105023794,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 302.3409948016051
+    },
+    {
+      "predictor": "mnli_critic_state512_diversity2048",
+      "predictor_sha256": "c53cbd0567069664cfeb0b38c2365b8f76152240983c83de22c898104053ea65",
+      "components": [
+        "critic_diversity2048_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "teacher_fast_trajectory_w301",
+        "fit_mnli_critic_state512_diversity2048"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 679.1066306945868,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 698.951974445954
+    },
+    {
+      "predictor": "mnli_critic_token_kd128",
+      "predictor_sha256": "428566315718b4c5627d594f57ede5d220cdcce27789b597858704dd892c3552",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_kd128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 952.2257511178032,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 972.0710948691703
+    },
+    {
+      "predictor": "mnli_critic_token_kd128_nograd",
+      "predictor_sha256": "cda32f21cdb12d2f4876300055953c2a56d0987a702a3a7e442fd6a78c6e757e",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_kd128_nograd"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 394.6224066938739,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 414.4677504452411
+    },
+    {
+      "predictor": "mnli_critic_token_kd256",
+      "predictor_sha256": "9bf320056f7271bf5a4b89c171ce8a74bdfca9cc3df915c68ca16d35295aec02",
+      "components": [
+        "critic_hidden_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_kd256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 950.15001079184,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 969.9953545432072
+    },
+    {
+      "predictor": "mnli_critic_token_pre128",
+      "predictor_sha256": "8f62ca544aa8f62846166f2efeada48dbb6ec9bbbffab780659c8ef48200345d",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_pre128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 578.8027490589302,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 598.6480928102974
+    },
+    {
+      "predictor": "mnli_critic_token_pre256",
+      "predictor_sha256": "b14f7710cf735d93521d29dc3be419677af14c57c26bbbb8140ab3db620c189f",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_pre256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 575.1857390089426,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 595.0310827603098
+    },
+    {
+      "predictor": "mnli_critic_token_random128",
+      "predictor_sha256": "2c4e048410ddf7385b9fb1e81a072350a39456f5192ff5e86997807ac334582f",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_random128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 552.934338100953,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 572.7796818523202
+    },
+    {
+      "predictor": "mnli_critic_token_value128",
+      "predictor_sha256": "b69ed81b10d47301094edede6808367954abeccaceae27e8dec5c93e22148e52",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_token_value128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 269.2229648360517,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 289.06830858741887
+    },
+    {
+      "predictor": "mnli_critic_value128",
+      "predictor_sha256": "58eccb5877f5e49cabb21af541521d712e8f645243aca2e90c3012bf87591328",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_value128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 268.37252916698344,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 288.2178729183506
+    },
+    {
+      "predictor": "mnli_critic_vector128",
+      "predictor_sha256": "78a3b5b12795fbd84fc34db11b00408413ce6749babcd301a8733c5e6d42939d",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_critic_vector128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 267.11870853905566,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 286.96405229042284
+    },
+    {
+      "predictor": "mnli_factor_scale_q128",
+      "predictor_sha256": "70880b55869b2150898c055380b8b93da41657ef546a6c52dab691ea4cf5ad84",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u128v256",
+        "fit_mnli_factor_scale_q128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 152.5016844489146,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 172.34702820028178
+    },
+    {
+      "predictor": "mnli_factor_scale_q32",
+      "predictor_sha256": "051aa6ab6b587413cbb40537ca7c6eb6b124f746624068ffebc388a6b33ab73a",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u128v256",
+        "fit_mnli_factor_scale_q32"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 152.57010445510969,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 172.41544820647687
+    },
+    {
+      "predictor": "mnli_factor_scale_q64",
+      "predictor_sha256": "7810b938df801f2cae1a461b5c66174e7a7b15cfc3bbaf0e41ff6a64cba94d28",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u128v256",
+        "fit_mnli_factor_scale_q64"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 152.4507597289048,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 172.296103480272
+    },
+    {
+      "predictor": "mnli_factor_u128v256",
+      "predictor_sha256": "7232dc79a4c5a035a6ef5b6ee86aa317964953b251691aaac608006a694fddb6",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u128v256"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 149.22746052592993,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 169.0728042772971
+    },
+    {
+      "predictor": "mnli_factor_u32v64",
+      "predictor_sha256": "c1c882c6ff00064e6f9321dd2029216b90b693920e5c7627569c192e98c75f0d",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u32v64"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 147.8603359030094,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 167.70567965437658
+    },
+    {
+      "predictor": "mnli_factor_u64v128",
+      "predictor_sha256": "9a284b9421a3dc5cc086c74b33b889cd20ff73be452c17647750379859b36f76",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u64v128"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 145.59927575709298,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 165.44461950846016
+    },
+    {
+      "predictor": "mnli_factor_u64v128_honly",
+      "predictor_sha256": "d7c46e854564d1f17800fd0421cedc73c569546e3a78a6cc5383693a1c075206",
+      "components": [
+        "critic_v1_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "factor_cache",
+        "fit_mnli_factor_u64v128_honly"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 147.46560498699546,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 167.31094873836264
+    },
+    {
+      "predictor": "mnli_position_all_b0",
+      "predictor_sha256": "52c7ac7f4b66994598a83575715d134c8c59cca20e950afa8a4fa06da5ea2533",
+      "components": [
+        "position_all_train_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_position_all_b0"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 90.10169650660828,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 109.94704025797546
+    },
+    {
+      "predictor": "mnli_position_all_b1",
+      "predictor_sha256": "1bad203d95f8cd897481a731aa226813433e32e637180dfea93b6e6fbfff8a8e",
+      "components": [
+        "position_all_train_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_position_all_b1"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 90.06496624066494,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 109.91030999203213
+    },
+    {
+      "predictor": "mnli_position_all_b4",
+      "predictor_sha256": "6210d0c68d48331de5259b27eff3ba958c805cf9b2cc5b83c900a12baaa99c6b",
+      "components": [
+        "position_all_train_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_position_all_b4"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 90.14350810763426,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 109.98885185900144
+    },
+    {
+      "predictor": "mnli_position_all_b8",
+      "predictor_sha256": "53cc7d984a8071acf02f45f97ddbb66dc66c52832fb0a162eda57cdeb49c510c",
+      "components": [
+        "position_all_train_labels",
+        "teacher_trajectory_w201",
+        "teacher_trajectory_w301",
+        "fit_mnli_position_all_b8"
+      ],
+      "source_warmup_seeds": [
+        201,
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 90.17745681246743,
+      "recorded_source_warmup_seconds": 19.84534375136718,
+      "recorded_component_sum_seconds": 110.02280056383461
+    },
+    {
+      "predictor": "mnli_position_w301_step0_b0",
+      "predictor_sha256": "95ecbcb8530ad451ae1413916e3ca7ec22023864bba97572939fea9154609f8e",
+      "components": [
+        "position_w301_step0_train_labels",
+        "fit_mnli_position_w301_step0_b0"
+      ],
+      "source_warmup_seeds": [
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 4.773032233817503,
+      "recorded_source_warmup_seconds": 4.283310098107904,
+      "recorded_component_sum_seconds": 9.056342331925407
+    },
+    {
+      "predictor": "mnli_position_w301_step0_b1",
+      "predictor_sha256": "2b9977af3b43ab7943832480f483d3e3d3a279b1f0af83486857a04898f6f777",
+      "components": [
+        "position_w301_step0_train_labels",
+        "fit_mnli_position_w301_step0_b1"
+      ],
+      "source_warmup_seeds": [
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 4.489362611668184,
+      "recorded_source_warmup_seconds": 4.283310098107904,
+      "recorded_component_sum_seconds": 8.772672709776089
+    },
+    {
+      "predictor": "mnli_position_w301_step0_b4",
+      "predictor_sha256": "98bb80a5e38d9d155ef05a3b5b08584480db44a431d3928d1b3239d13dde9ac7",
+      "components": [
+        "position_w301_step0_train_labels",
+        "fit_mnli_position_w301_step0_b4"
+      ],
+      "source_warmup_seeds": [
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 4.491167931817472,
+      "recorded_source_warmup_seconds": 4.283310098107904,
+      "recorded_component_sum_seconds": 8.774478029925376
+    },
+    {
+      "predictor": "mnli_position_w301_step0_b8",
+      "predictor_sha256": "bfaad76e3b82a74c0001f9e1b325dd994e18804310dd62c84c4780e9eaf87299",
+      "components": [
+        "position_w301_step0_train_labels",
+        "fit_mnli_position_w301_step0_b8"
+      ],
+      "source_warmup_seeds": [
+        301
+      ],
+      "recorded_preparation_seconds_excluding_source_warmups": 4.519197826739401,
+      "recorded_source_warmup_seconds": 4.283310098107904,
+      "recorded_component_sum_seconds": 8.802507924847305
+    }
+  ],
+  "scope": "Historical receipt inventory, not a clean cold-start benchmark or minimum achievable construction cost. Models share dependencies: do not sum rows. Imports, model loading and unrecorded I/O remain additional. Current study research overhead includes unsuccessful fits, redundant cache collection, validation diagnostics and candidate search. Offline FLOPs are not inferred from elapsed time.",
+  "source_sha256": "66620b5e888ed3c0877aae7a521267d020eb3ca001dd778f8d9ec8df3efc8a91"
+}
