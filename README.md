@@ -4,7 +4,7 @@ Can a learned predictor estimate useful gradients and keep improving a model as 
 
 **Current focus:** predict LoRA gradients at lower cost while preserving downstream learning, then test whether the predictor can be reused across starting models and training datasets as a training surrogate.
 
-**Latest — reusable training surrogates (October 15):** early predictor use approaches Oracle accuracy, but no overall efficiency or data-selection advantage is established. Tests three new starting adapters, random and source-disjoint genre datasets, behavior prediction, matched/tuned/shorter Oracle controls and complete time/cost accounting. [Study, evidence and reproduction →](reports/predictor_surrogate_20261015/README.md)
+**Latest — training surrogate results (October 15; summary updated October 17):** early-use CV16 reaches **84.14% / 19.46 s**, versus original CV16 **82.43% / 20.76 s**. Short Oracle reaches **83.81% / 15.61 s**; a general efficiency win remains unproven. Includes CV4 development results, behavior/data-selection tests, and offline costs. [One-page English summary →](reports/predictor_surrogate_20261015/README.md)
 
 **Previous — nine-hour predictor efficiency study (October 14):** CV4 still misses the quality target. Online RLS8 approaches Oracle on MNLI without offline fitting, but early-stopped Oracle remains faster. A secondary MNLI CV16 result reaches **84.68% vs early Oracle's 84.97%**, using **23.20 vs 28.93 seconds** of adaptation with an already-fitted predictor; offline preparation is additional. PAWS's primary CV16 falls short. Includes 48 verified timing replays, FLOPs and long-run diagnostics. [Results and conclusions →](reports/predictor_efficiency_20261014/README.md)
 

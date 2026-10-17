@@ -1049,12 +1049,12 @@
     {
       "source": "report/README.md",
       "destination": "reports/predictor_surrogate_20261015/README.md",
-      "sha256": "ca0f0db7854d307dc66fdd77d7547469845ff6c67bd15b40c5728e113840c573"
+      "sha256": "613c4c6506227c64b3730d765618354d33b0787151efd23facf41e52b6411f42"
     },
     {
       "source": "report/REPRODUCING.md",
       "destination": "reports/predictor_surrogate_20261015/REPRODUCING.md",
-      "sha256": "c7d05429679985fbdb099705bc8dfe39707bac4327cc867a8f0de9a4ff9ede68"
+      "sha256": "b6ff7cdc68cfe209616cddc0f74ad964dc97bb716fef924ee74f14eb6b298f5c"
     },
     {
       "source": "report/RESULTS.md",
@@ -4847,7 +4847,7 @@
     {
       "source": "provenance/overview_render.json",
       "destination": "reports/predictor_surrogate_20261015/provenance/overview_render.json",
-      "sha256": "6019efb6f78d57e8cda8393c3b65786ffc948aed111a6ab7b3a90a1328d6e54a"
+      "sha256": "9274dd379eb54af885ae44a6dc51c906904927ca1470382a977f6addf3205849"
     },
     {
       "source": "provenance/optional_fit_budget_cpu_audit.json",
@@ -4917,7 +4917,13 @@
       "source": "generated selected training receipts",
       "destination": "reports/predictor_surrogate_20261015/results/selected_training_receipts.json",
       "sha256": "ce949dcd137b9dcc61012b48c2bc687ef9f94500bf6e59468f33ea8cbccf69e4"
+    },
+    {
+      "source": "report/STUDY_DETAILS.md",
+      "destination": "reports/predictor_surrogate_20261015/STUDY_DETAILS.md",
+      "sha256": "ca0f0db7854d307dc66fdd77d7547469845ff6c67bd15b40c5728e113840c573"
     }
   ],
-  "exclusions": "Model tensors, raw prompts/generated responses and operational resource/process logs remain local. Reproduction metadata reconstructs all full inputs from the specified original MNLI parquet. Compact correctness bundles support aggregate statistical reproduction, not independent response regrading. Historical absolute paths identify receipts and require relocation for rerunning. Current scripts are supplied; immutable per-stage snapshots and their hashes remain in local provenance."
+  "exclusions": "Model tensors, raw prompts/generated responses and operational resource/process logs remain local. Reproduction metadata reconstructs all full inputs from the specified original MNLI parquet. Compact correctness bundles support aggregate statistical reproduction, not independent response regrading. Historical absolute paths identify receipts and require relocation for rerunning. Current scripts are supplied; immutable per-stage snapshots and their hashes remain in local provenance. October 17 update: local cache tensor payloads were deleted at owner request; see REPRODUCING.md for current artifact availability.",
+  "updated_epoch": 1792245067.4023654
 }

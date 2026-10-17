@@ -2,6 +2,12 @@
 
 This repository contains recipes, source code, compact result tables and provenance. Large base-model weights, warmup adapters, learned predictor checkpoints and raw generated responses remain in the original experiment storage. A checkpoint hash identifies an artifact; it does not replace that artifact. Exact GPU reproduction additionally depends on the recorded software/hardware environment.
 
+## Cache availability — October 17, 2026
+
+At the owner's request, the local activation/gradient/fitting cache payloads for this study were deleted after publication: **2,637 tensor files, 73.93 GiB**. The four previously identified older-study caches were also cleared (56.27 GiB). Trained model weights, optimizer states, raw evaluation outputs, datasets and scientific result records were retained; large private artifacts are still not included in GitHub.
+
+Collection metadata and records were preserved. Within the cleared local cache directories, `complete.json` and `manifest.json` were renamed to `*.before_cleanup.json` to prevent collectors from skipping missing payloads. Rebuild the caches from the recorded data and teacher adapters before predictor refitting or per-example gradient analysis. Preserved cache checksums describe the historical artifacts, not currently available tensor files. The published compact correctness bundles and statistical replay do not require these caches.
+
 ## Reconstruct the input datasets
 
 `provenance/data_reproduction.json.gz` records the source parquet hash, selected original row indices and formatting metadata for all 17 used MNLI splits. The reconstruction audit checked byte-identical JSONL files, preserving complete evaluation problems. Generation separately verifies the full prompt token IDs. Obtain the matching MNLI training parquet and run the published `scripts/data_reproduction.py` with `--help` for its `--metadata`, `--raw-dir` and `--output-dir` options. It refuses a different source hash or an existing conflicting output.

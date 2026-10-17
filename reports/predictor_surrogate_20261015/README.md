@@ -1,77 +1,57 @@
-# LoRA gradient predictors as reusable training surrogates
+# Predictor → training surrogate: results at a glance
 
-**Hybrid predictor updates can approach Oracle accuracy, but this study does not establish an overall predictor efficiency win.** Shorter Oracle training and cheap true-gradient controls remain competitive. The separate behavior surrogate does not yet capture the trained agent's improvement.
+**Positive result:** the new early-use CV16 recipe improves accuracy over the original CV16. **Remaining gap:** it does not beat the best cheap Oracle controls on time versus quality, and reliable behavior prediction is not yet demonstrated.
 
-## Direct training
+## Setup
 
-Qwen2.5-1.5B-Instruct, MNLI, one H200. Generated accuracy averages **three new starts on 2,049 heldout examples**. Updates are additional to a shared 32-update warmup. Each time averages the three starts' medians from **three exact-weight timing repetitions**.
+Qwen2.5-1.5B-Instruct · MNLI · one H200 · single-layer LoRA (block 8, attention output projection, rank/alpha 64). Shared 32-update warmup; batch 32; AdamW. Final results average **3 new starts × 2,049 heldout examples** from the MNLI training population, not official validation. Full evaluation inputs are preserved. No new 0.5B/7B results in this study.
 
-| Method | Updates | LR | Accuracy % | Prep + updates, s | Fresh process, s |
-|---|---:|---:|---:|---:|---:|
-| Warmup only | 0 | — | 77.45 | 0 incremental | 0 incremental |
-| Short Oracle32 | 128 | 0.001 | 83.81 | 15.61 | 24.08 |
-| Primary Oracle32 | 256 | 0.001 | 83.72 | 27.38 | 36.09 |
-| Stronger Oracle32, graph | 256 | 0.0003 | 84.35 | 30.06 | 39.00 |
-| Matched Oracle16 | 256 | 0.001 | 83.78 | 18.86 | 27.51 |
-| Original CV16 | 256 | 0.001 | 82.43 | 20.76 | 29.27 |
-| State CV16 first 32, then Oracle16 | 256 | 0.001 | 84.14 | 19.46 | 28.03 |
-| Tuned original CV16 | 512 | 0.0003 | 84.69 | 37.44 | 46.19 |
-| Tuned Oracle16 | 512 | 0.0003 | 84.50 | 34.13 | 42.89 |
-| Original CV8, graph | 512 | 0.001 | 83.70 | 24.54 | 33.54 |
-| Matched Oracle8, graph | 512 | 0.001 | 83.52 | 21.11 | 30.03 |
-| Zero / Adam, true gradient every 4 | 256 | 0.001 | 83.37 | 10.17 | 18.62 |
+**CVk:** predict gradients for all 32 examples, correct using k true gradients. **Oraclek:** use k true gradients without a predictor.
 
-Times exclude shared target warmup, evaluation and offline predictor construction. Fresh-process time additionally includes imports/loading and final save. Recorded offline construction is **124.0s** for the original predictor and **488.8s** for State256, including source warmups/dependencies; these are historical component totals, not clean cold-start benchmarks. Reuse spreads construction cost but does not remove per-update predictor overhead. [All horizons, matrix FLOPs, costs and intervals](RESULTS.md).
+## Main heldout comparison
 
-**Fewer FLOPs need not mean less time:** on representative candidate0, CV16/128 costs **1.40 matrix PFLOPs / 10.20s**, versus short Oracle32/64's **1.48 PFLOPs / 7.76s**. FLOPs use start 302; times average all three starts' medians.
+Time = preparation + additional updates; excludes common warmup, evaluation and offline predictor construction. Each start uses the median of three exact-weight timing replays.
 
-The early state-predictor recipe improves over original CV16/256 by **+1.71 pp [+0.26, +3.34]**, but its difference from matched Oracle16 is **+0.36 pp [-0.30, +0.95]** and from the stronger graph Oracle32 is **-0.21 pp [-1.04, +0.59]**. These paired 95% intervals do not establish superiority or noninferiority to Oracle. The recipe changes both fitting and the duration of predictor use.
+| Method | Additional updates | LR | Accuracy | Time |
+|---|---:|---:|---:|---:|
+| Warmup baseline | 0 | — | 77.45% | 0 s |
+| Original CV16 | 256 | 0.001 | 82.43% | 20.76 s |
+| **State CV16 for 32 updates → Oracle16** | 256 | 0.001 | **84.14%** | **19.46 s** |
+| Matched Oracle16 | 256 | 0.001 | 83.78% | 18.86 s |
+| Short Oracle32 | 128 | 0.001 | 83.81% | 15.61 s |
+| Primary Oracle32 | 256 | 0.001 | 83.72% | 27.38 s |
+| Stronger Oracle32, graph backend | 256 | 0.0003 | 84.35% | 30.06 s |
+| Tuned original CV16 | 512 | 0.0003 | 84.69% | 37.44 s |
+| Tuned Oracle16 | 512 | 0.0003 | 84.50% | 34.13 s |
+| Adam, true gradient every 4 updates | 256 | 0.001 | 83.37% | 10.17 s |
 
-## Selecting training data
+- **Internal improvement:** early-use State CV16 gains **+1.71 percentage points** over original CV16 (paired 95% CI **+0.26 to +3.34**).
+- **Oracle advantage remains unproven:** versus matched Oracle16, the gain is +0.36 points (CI −0.30 to +0.95), with slightly more time.
+- **Beyond 32 updates remains unresolved:** the successful hybrid stops using the predictor after update 32.
+- **Construction matters:** recorded offline preparation is 124.0 s for the original predictor and 488.8 s for State256. These historical component totals are additional, amortizable costs.
 
-Screen five 1,024-example datasets on selection-dev, then deploy the **reference Oracle trained on the chosen dataset**. These are its heldout accuracies, not the simulator adapter's accuracy. Simulations use 128 updates, except short Oracle's 64; the reference is Oracle32/128/LR 0.0003.
+## CV4 was also tested
 
-| Screening method | Random candidates % | Genre candidates % |
+Development only: 3 starts, 513 examples, 512 updates, LR 0.0003, graph backend. These scores are **not directly comparable to the heldout table above**.
+
+| Method | Accuracy | Prep + updates |
 |---|---:|---:|
-| Oracle / generated accuracy | 83.44 | 83.93 |
-| Oracle / exact teacher probability | 83.65 | 83.94 |
-| Short Oracle / exact teacher probability | 83.29 | 83.75 |
-| CV16 / generated accuracy | 83.60 | 83.93 |
-| CV16 / exact teacher probability | 83.28 | 83.23 |
-| CV16 / learned behavior probability | 83.20 | 82.90 |
-| Random choice, expectation | 83.11 | 83.36 |
+| CV4 | **82.85%** | 18.97 s |
+| Matched Oracle4 | 81.35% | **15.88 s** |
 
-CV16/generated scoring gains **+0.49 pp [-0.14, +1.09]** over random choice on random candidates and **+0.57 pp [-0.33, +1.43]** on genre candidates. Neither establishes a selection advantage over random choice.
+CV4 gains 1.50 points over Oracle4, but adds time. This is promising development evidence, not independent final confirmation.
 
-The actual complete-workflow benchmark below uses **start 302, five random candidates and three timing repeats**. It charges fresh adaptations, scoring, process transitions/loading and final Oracle training when needed; exhaustive Oracle selection reuses its chosen adapter. Offline construction and common warmup remain additional.
+## Did it become a useful surrogate?
 
-| Complete workflow | Median seconds | Offline construction components, s |
-|---|---:|---:|
-| Oracle32 + generation | 152.15 | 0.0 |
-| Oracle32 + exact ABC score | 132.05 | 0.0 |
-| CV16 + generation | 157.93 | 124.0 |
-| CV16 + exact ABC score | 136.56 | 124.0 |
-| CV16 + learned behavior score | 133.65 | 330.9 |
-| Short Oracle32 + exact ABC score | 123.93 | 0.0 |
+| Question | Evidence | Conclusion |
+|---|---|---|
+| Less compute? | Candidate0: CV16/128 = 1.40 matrix PFLOPs / 10.20 s; short Oracle32/64 = 1.48 / 7.76 s | Fewer FLOPs did not imply lower latency. |
+| Better data selection? | CV16/generated scoring gains +0.49 / +0.57 points over random choice for random / genre candidates; both CIs include zero | No established selection advantage. |
+| Faster selection workflow? | CV16 + learned behavior: 133.65 s; short Oracle + exact scoring: 123.93 s | No end-to-end speed win; offline fitting is extra. |
+| Predict the trained agent's behavior? | Learned behavior: 76.96%; unchanged initial predictions: 77.62%; Oracle agent: 83.72% (forced ABC metric) | Changed-agent behavior is not captured reliably. |
 
-This implementation uses separate processes, not a persistent model server. Timing repeats are not independent scientific starts. Keeping the selected simulator adapter avoids final Oracle training, but changes the deployment endpoint; those frozen secondary quality results and component costs are separate in [RESULTS](RESULTS.md).
+State conditioning, additional training states/data, sparse calibration, token critics, copied teacher blocks and gradient memory were explored. None established a general time–quality win. [Attempts and failures](DEVELOPMENT.md) · [Late experiments](LATE_DEVELOPMENT.md).
 
-## What the surrogate learned
+**Next experiment:** compare CV4/CV16 hybrids with short Oracle at equal total time on new starts. Require sustained late-state usefulness before claiming long-horizon acceleration. For data selection, test direct prediction of training-data rankings.
 
-For the primary Oracle32/256 agent, forced-format ABC accuracy is **83.72%**; the learned behavior model reaches **76.96%**, versus **77.62%** for unchanged initial predictions. Its agreement gain with the changed agent is **-1.07 pp [-3.39, +0.85]**. Cheap inference alone has not produced a reliable behavior replacement.
-
-Late-state gradient correlation also weakens. State conditioning, additional state coverage, mean-aware fitting, sparse calibration, scalar/token critics, copied teacher blocks, gradient memory and local linearization were tested during development. [Attempt-by-attempt evidence and failures](DEVELOPMENT.md).
-
-![Frozen quality and cost tradeoffs; selection panels use component estimates](results/figures/frozen_surrogate_tradeoffs.png)
-
-## Setup and interpretation
-
-- Only decoder layer index 8 (ninth block), attention output-projection LoRA is trained: rank/alpha 64; fresh AdamW state after warmup, batch 32, clipping 1, no weight decay.
-- Final warmup/update seeds: 302/401, 303/402, 304/403. Fullpool adaptation uses 4,097 examples. Five random candidates may overlap; five genre candidates use disjoint source groups.
-- Selection-dev: 1,026 examples; holdout: 2,049. Recipes precede selection-dev results; choices precede holdout results. These are **MNLI training-population holdouts**, not the official validation benchmark. No new 0.5B, 7B or PAWS result is claimed.
-- All evaluation inputs are preserved. Greedy generation permits at most 256 **new output tokens**. Forced ABC scores are a separate metric.
-- **Oracle16/8** uses a true-gradient subset without a predictor. **CV16/8** predicts all 32 gradients and corrects with 16/8 true gradients. State256 names predictor width; its early-use recipe switches to Oracle16 after 32 updates. [Method definitions](METHODS.md).
-
-**Next priority:** beat short Oracle at equal total time. For gradient prediction, first improve late-state correlation on new starts. For Ben's data-selection use case, test a model that predicts which dataset yields a larger improvement; reconstructing every changed-agent logit may be unnecessary. That ranking model remains future work and must beat random selection and cheap Oracle controls with its construction cost charged.
-
-[Protocol](PROTOCOL.md) · [Literature](LITERATURE.md) · [Reproduction](REPRODUCING.md) · [Complete numerical results](RESULTS.md)
+[Complete tables, FLOPs and intervals](RESULTS.md) · [Detailed study](STUDY_DETAILS.md) · [Methods](METHODS.md) · [Reproduction and cache availability](REPRODUCING.md)
